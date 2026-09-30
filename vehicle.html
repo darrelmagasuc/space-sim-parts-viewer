@@ -16,13 +16,17 @@
 <h3>Staging</h3><div id="staging"><p class="muted">No staging.</p></div>
 <h3>Flight manual</h3><div id="manual" class="manual"><p class="muted">The manual shows up here.</p></div>
 <div class="tools" style="margin-top:12px"><label><input type="checkbox" id="tNodes" checked> Attach nodes</label><label><input type="checkbox" id="tGrid" checked> Grid</label><a class="btn sec" href="#" id="reset">Reset view</a></div>
-<details class="fold">
+<details class="fold" id="keys">
 <summary>API key — stays in your browser</summary>
-<p class="note">The key stays in your browser (localStorage on this device). It is sent only to the endpoint below when you press Generate, never to this site.</p>
+<p class="note">The key stays in your browser (localStorage on this device). It is sent only to the endpoint below when you press Generate, never to this site. Groq and xAI Grok are different providers.</p>
 <label class="fld"><span>Provider</span><select id="provider"></select></label>
+<p class="note" id="corsnote"></p>
 <label class="fld"><span>Base URL</span><input id="base" type="text" spellcheck="false" autocomplete="off"></label>
 <label class="fld"><span>Model</span><input id="model" type="text" spellcheck="false" autocomplete="off"></label>
 <label class="fld"><span>API key</span><input id="key" type="password" spellcheck="false" autocomplete="off"></label>
+<p class="warn" id="keyhint" hidden></p>
+<label class="fld"><span>CORS proxy URL (optional)</span><input id="proxy" type="text" spellcheck="false" autocomplete="off" placeholder="https://your-worker.workers.dev"></label>
+<p class="muted" style="font-size:12px;margin:0 0 8px">Leave this blank to call the provider directly. OpenAI blocks browsers. For a host that does, deploy tools/cors-proxy-worker.js and paste the worker URL here.</p>
 <div class="tools"><button class="btn sec" id="clearKey" type="button">Clear saved key</button></div>
 </details>
 <details class="fold">

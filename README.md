@@ -26,12 +26,26 @@ The planner checks the plan instead of throwing: unknown variants or nodes, dupl
 
 The system prompt is built from `manifest.json` (itself generated from each `models/<category>/<id>.nodes.json`). It lists every variant's category, size class, a few dimensions, state, and node names. A part added to the site later is usable with no change to the page.
 
-The key stays in `localStorage` in this browser. Generate sends it only to the endpoint you set. Clear saved key removes it. Providers:
+The key stays in `localStorage` in this browser. Generate sends it only to the endpoint you set. Clear saved key removes it. The default preset for a new browser is OpenRouter. A saved provider is left as-is, so an older OpenAI choice is not silently retargeted.
 
-- **OpenAI-compatible** chat completions (`/chat/completions`), with a base URL and model. The presets are OpenAI, xAI/Grok, and OpenRouter; Custom is the same protocol with your own URL.
-- **Anthropic** Messages (`/messages`), including the browser-access header that endpoint requires.
+Presets, and whether a browser on this page can read the reply (checked 2026-09-30 with a fake key: a readable HTTP 401/400 counts as direct; `Failed to fetch` does not):
 
-Many providers block browser CORS. A network failure, an HTTP error, or an empty reply is shown in the panel; the page does not pretend the craft assembled. If the reply is not valid JSON, or `assemble.js` reports errors, the page asks the model once more with those errors attached, then shows whatever came back.
+| Preset | Endpoint | Direct from a browser |
+| --- | --- | --- |
+| OpenRouter (default) | `https://openrouter.ai/api/v1/chat/completions` | Yes. Optional `HTTP-Referer` and `X-Title` are on their CORS allow list. |
+| Groq | `https://api.groq.com/openai/v1/chat/completions` | Yes. Preflight allows `authorization` and `content-type` only, so the page sends those and nothing else. Default model `openai/gpt-oss-120b` (Groq shut down `llama-3.3-70b-versatile` for developer keys on 2026-08-16). |
+| xAI Grok | `https://api.x.ai/v1/chat/completions` | Yes. This is xAI, not Groq. |
+| Anthropic | `https://api.anthropic.com/v1/messages` | Yes, with `anthropic-version` and `anthropic-dangerous-direct-browser-access: true`. Without that header the browser blocks the call. |
+| OpenAI | `https://api.openai.com/v1/chat/completions` | No. The preflight echoes the page origin, but the POST response omits `Access-Control-Allow-Origin`, so the browser reports `Failed to fetch`. |
+| Custom | whatever base URL you set | Depends on that host. |
+
+Groq keys start with `gsk_`. xAI keys start with `xai-`. If the pasted key’s prefix belongs to a different preset, or the base URL host is `api.groq.com` while xAI is selected (or the reverse), the form says so. The request is still sent.
+
+A network failure names the provider, says whether that preset is known to block browsers, and points at OpenRouter or the proxy. An HTTP error (a bad key, for example) shows that status instead. If the reply is not valid JSON, or `assemble.js` reports errors, the page asks the model once more with those errors attached, then shows whatever came back.
+
+### CORS proxy
+
+OpenAI, and any custom host that blocks browsers, needs a proxy you control. `tools/cors-proxy-worker.js` is a Cloudflare Worker: the page POSTs to the worker with the real URL in `X-Target-URL`, and the worker forwards only to `api.openai.com`, `api.groq.com`, `api.x.ai`, `openrouter.ai`, and `api.anthropic.com`. It adds `Access-Control-Allow-Origin: *` and does not log the key. Paste the worker URL into **CORS proxy URL**. Leave that field blank for OpenRouter, Groq, xAI, and Anthropic.
 
 ### Craft JSON
 
