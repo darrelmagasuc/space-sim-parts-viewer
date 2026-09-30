@@ -121,8 +121,10 @@ const badNode = assemble({
   connections: [{ child: 'eng', childNode: 'node_nope', parent: 'tank', parentNode: 'node_bottom' }],
   manual: 'm'
 }, cat);
-assert(!badNode.ok && /node_nope/.test(badNode.errors.map(e => e.message).join(' ')), 'unknown node is an error');
-assert(badNode.instances.some(i => i.id === 'tank'), 'root still placed when a child node is wrong');
+assert(badNode.ok, 'unknown node is repaired instead of dropping the part: ' + badNode.errors.map(e => e.message).join('; '));
+assert(badNode.instances.some(i => i.id === 'eng') && badNode.instances.some(i => i.id === 'tank'), 'both parts place when the node name is wrong');
+assert(badNode.instances.find(i => i.id === 'tank').position[1] > badNode.instances.find(i => i.id === 'eng').position[1], 'repaired engine sits under the tank');
+assert(badNode.warnings.some(w => /nose-to-tail|node_nope|Rebuilt/i.test(w.message)), 'repair is reported');
 
 let threw = false;
 try { assemble({ parts: [{ id: 'a', variant: 'nope' }], connections: [{ child: 'a', parent: 'a', childNode: 'node_top', parentNode: 'node_bottom' }] }, cat); }
@@ -166,6 +168,120 @@ const resolved = assemble({
 }, cat);
 assert(resolved.ok && resolved.instances[0].variant === 'tank00_kerolox_m', 'part id resolves to the primary variant');
 assert(resolved.warnings.some(w => /resolved/i.test(w.message)), 'resolution warns');
+
+const jumbled = assemble({
+  name: 'Jumbled hopper',
+  parts: [
+    { id: 'chute', variant: 'stage08_main_chute_m' },
+    { id: 'capsule', variant: 'cmd04_soyuz_descent' },
+    { id: 'uppertank', variant: 'tank00_kerolox_m' },
+    { id: 'tank', variant: 'tank00_kerolox_m' },
+    { id: 'engine', variant: 'prop08_merlin' },
+    { id: 'booster', variant: 'prop05_srb_small' },
+    { id: 'fin', variant: 'stage10_grid_fin_m_deployed' },
+    { id: 'antenna', variant: 'power10_omni_antenna' }
+  ],
+  connections: [
+    { child: 'capsule', childNode: 'node_top', parent: 'tank', parentNode: 'node_top' },
+    { child: 'uppertank', childNode: 'node_top', parent: 'capsule', parentNode: 'node_bottom' },
+    { child: 'engine', childNode: 'node_bottom', parent: 'tank', parentNode: 'node_bottom' },
+    { child: 'chute', childNode: 'node_top', parent: 'capsule', parentNode: 'node_top' },
+    { child: 'booster', childNode: 'node_bottom', parent: 'tank', parentNode: 'node_side_1', symmetry: 2 },
+    { child: 'fin', childNode: 'node_attach', parent: 'tank', parentNode: 'node_side_1', symmetry: 4 },
+    { child: 'antenna', childNode: 'node_bottom', parent: 'tank', parentNode: 'node_top' }
+  ],
+  manual: 'm'
+}, cat);
+const jy = id => jumbled.instances.find(i => i.id === id).position[1];
+assert(jumbled.ok && jumbled.instances.length >= 11, 'backwards joints still place the rocket: ' + jumbled.errors.map(e => e.message).join('; '));
+assert(jy('engine') < jy('tank') && jy('tank') < jy('uppertank') && jy('uppertank') < jy('capsule') && jy('capsule') < jy('chute'), 'rebuilt stack runs engine, tanks, capsule, chute');
+const jb = jumbled.instances.filter(i => i.seedId === 'booster');
+assert(jb.length === 2 && jb[0].position[0] * jb[1].position[0] < 0, 'boosters end up on opposite sides');
+assert(!jumbled.warnings.some(w => /40|through each other/.test(w.message)) && !jumbled.warnings.some(w => /overlap/i.test(w.message) && /tank and uppertank/.test(w.message)), 'tanks are not driven through each other');
+const heavy = jumbled.warnings.filter(w => /overlap/i.test(w.message) && parseFloat((w.message.match(/([\d.]+) m³/) || [])[1] || '0') > 1);
+assert(heavy.length === 0, 'no multi-cubic-metre overlaps: ' + jumbled.warnings.map(w => w.message).join(' | '));
+
+const stacked = assemble({
+  name: 'stack',
+  parts: [
+    { id: 'chute', variant: 'stage08_main_chute_m' },
+    { id: 'capsule', variant: 'cmd04_soyuz_descent' },
+    { id: 'tank', variant: 'tank00_kerolox_m' },
+    { id: 'engine', variant: 'prop08_merlin' },
+    { id: 'booster', variant: 'prop05_srb_small' },
+    { id: 'fin', variant: 'stage10_grid_fin_m_deployed' }
+  ],
+  stack: ['chute', 'capsule', 'tank', 'engine'],
+  attach: [
+    { part: 'booster', to: 'tank', symmetry: 2 },
+    { part: 'fin', to: 'tank', symmetry: 4, offset: 45 }
+  ],
+  manual: 'm'
+}, cat);
+const sy = id => stacked.instances.find(i => i.id === id).position[1];
+assert(stacked.ok && stacked.warnings.length === 0, 'explicit stack and attach need no repair notes: ' + stacked.warnings.map(w => w.message).join(' | '));
+assert(sy('engine') < sy('tank') && sy('tank') < sy('capsule') && sy('capsule') < sy('chute'), 'stack array is nose to tail');
+const finsS = stacked.instances.filter(i => i.seedId === 'fin');
+assert(finsS.length === 4 && finsS.every(f => Math.abs(f.position[0]) > 0.2 && Math.abs(f.position[2]) > 0.2), 'stack-schema fins stay clocked between the boosters');
+
+const bare = assemble({
+  name: 'bare',
+  parts: [
+    { id: 'nose', variant: 'cmd04_soyuz_descent' },
+    { id: 'tank', variant: 'tank00' },
+    { id: 'eng', variant: 'prop08_merlin' },
+    { id: 'booster', variant: 'prop05_srb_small' }
+  ],
+  connections: [
+    { child: 'eng', parent: 'tank' },
+    { child: 'nose', parent: 'tank' },
+    { child: 'booster', parent: 'tank', symmetry: '2' }
+  ],
+  manual: 'm'
+}, cat);
+assert(bare.ok, 'parent/child without nodes assembles');
+assert(bare.instances.find(i => i.id === 'nose').position[1] > bare.instances.find(i => i.id === 'tank').position[1], 'nose is placed above the tank');
+assert(bare.instances.find(i => i.id === 'eng').position[1] < bare.instances.find(i => i.id === 'tank').position[1], 'engine is placed under the tank');
+assert(bare.instances.filter(i => i.seedId === 'booster').length === 2, 'string symmetry still copies the booster');
+
+const sized = assemble({
+  name: 'sized',
+  parts: [
+    { id: 'tank', variant: 'tank00' },
+    { id: 'eng', variant: 'prop07_kestrel' }
+  ],
+  connections: [{ child: 'eng', parent: 'tank' }],
+  manual: 'm'
+}, cat);
+assert(sized.instances.find(i => i.id === 'tank').variant === 'tank00_kerolox_s', 'inexact tank id picks the engine size');
+
+const loose = assemble({
+  name: 'loose',
+  parts: [
+    { id: 'a', variant: 'tank00_kerolox_m' },
+    { id: 'b', variant: 'cmd04_soyuz_descent' },
+    { id: 'c', variant: 'power10_omni_antenna' }
+  ],
+  manual: 'm'
+}, cat);
+const xs = loose.instances.map(i => i.position[0]).sort((a, b) => a - b);
+assert(loose.ok && loose.instances.length === 3, 'unconnected parts are still shown');
+assert(xs[1] - xs[0] > 2 && xs[2] - xs[1] > 2, 'unconnected parts are spaced apart, not piled at the origin');
+assert(loose.warnings.some(w => /laid out beside/i.test(w.message)), 'unconnected parts warn');
+
+const wheels = assemble({
+  name: 'wheels',
+  parts: [
+    { id: 'chassis', variant: 'rover02_lrv' },
+    { id: 'wheel', variant: 'rover04_wheel_m' }
+  ],
+  connections: [{ child: 'wheel', parent: 'chassis', symmetry: 4 }],
+  manual: 'm'
+}, cat);
+assert(wheels.instances.filter(i => i.variant === 'rover04_wheel_m').length === 4, 'wheel symmetry is split onto the four hubs');
+const hubs = wheels.instances.filter(i => i.variant === 'rover04_wheel_m').map(i => [i.position[0], i.position[2]]);
+const signs = new Set(hubs.map(([x, z]) => (x > 0 ? 'R' : 'L') + (z > 0 ? 'F' : 'B')));
+assert(signs.size === 4, 'the four wheels sit in four quadrants');
 
 const fenced = parseCraftJSON('Here you go:\n```json\n{"name":"X","parts":[],"connections":[],"manual":"brace } inside"}\n```\nThanks');
 assert(fenced.name === 'X' && fenced.manual.includes('}'), 'parser strips fences and keeps braces inside strings');

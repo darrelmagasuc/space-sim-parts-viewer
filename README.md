@@ -20,7 +20,9 @@ The built-in plans are a two-stage rocket (Hopper II), an open rover (Mule), and
 
 Stack above: child `node_bottom` on parent `node_top`. Stack below: child `node_top` on parent `node_bottom`. Radial and surface parts (boosters, fins, wings, wheels, antennas) use child `node_attach`. Wheels are one connection per `node_wheel_N`, not one symmetry group, because the hubs are not evenly spaced around +Y. The rover preview hides a chassis `wheel_N` mesh when a part is snapped to that hub.
 
-The planner checks the plan instead of throwing: unknown variants or nodes, duplicate ids, cycles, and a part attached twice are errors (the valid remainder still places). A stack joint whose face diameters differ by more than about 8% is a warning. Overlapping bounding boxes are a warning when the clash is more than a glancing contact. `node tools/test_assemble.mjs` checks the examples and those cases.
+The planner checks the plan instead of throwing: unknown variants, duplicate ids, cycles, and a part attached twice are errors (the valid remainder still places). A stack joint whose face diameters differ by more than about 8% is a warning. Overlapping bounding boxes are a warning when the clash is more than a glancing contact.
+
+A smaller model often names nodes backwards, omits them, or leaves parts unattached. `assemble.js` repairs that before placing. `stack` is an ordered list from nose to tail and `attach` is the radial parts; the page picks `node_bottom`/`node_top` or `node_attach` itself. A `connections` list with missing or reversed nodes is rebuilt into the same nose-to-tail column when those joints would run parts through each other. An inexact part id such as `tank00` is swapped for the size that matches its neighbour. Parts that still cannot join are laid out in a row beside the craft, with a warning, instead of sitting on the origin. Generate sends those errors and overlap warnings back to the model once. The built-in examples are already explicit and are not rewritten. `node tools/test_assemble.mjs` checks the examples and a set of imperfect plans.
 
 ### Prompt to a plan
 

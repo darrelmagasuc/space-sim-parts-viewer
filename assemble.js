@@ -197,6 +197,523 @@ function emptyResult(errors, warnings, name) {
   return { ok: errors.length === 0, name: name || 'Untitled craft', errors, warnings, instances: [], joints: [] };
 }
 
+function canonicalNodeName(raw) {
+  if (typeof raw !== 'string') return '';
+  const trimmed = raw.trim();
+  if (!trimmed) return '';
+  const n = trimmed.toLowerCase().replace(/[\s-]+/g, '_');
+  if (n === 'top' || n === 'node_top') return 'node_top';
+  if (n === 'bottom' || n === 'node_bottom') return 'node_bottom';
+  if (n === 'attach' || n === 'node_attach') return 'node_attach';
+  if (n === 'payload' || n === 'node_payload') return 'node_payload';
+  const side = n.match(/^(?:node_)?side_?(\d+)$/);
+  if (side) return 'node_side_' + side[1];
+  const wheel = n.match(/^(?:node_)?wheel_?(\d+)$/);
+  if (wheel) return 'node_wheel_' + wheel[1];
+  return trimmed;
+}
+
+function resolveNode(variant, raw) {
+  if (!variant || typeof raw !== 'string' || !raw.trim()) return null;
+  return findNode(variant, raw.trim()) || findNode(variant, canonicalNodeName(raw));
+}
+
+function nodeList(variant) {
+  return (variant && variant.nodes) || [];
+}
+
+function isRadialPart(variant) {
+  const names = nodeList(variant).map(n => n.name);
+  return names.includes('node_attach') && !names.includes('node_top') && !names.includes('node_bottom');
+}
+
+function isWheelPart(variant) {
+  return /wheel/i.test(variant.vid + ' ' + variant.partName);
+}
+
+function stackRank(variant) {
+  const id = (variant.vid + ' ' + variant.partId + ' ' + variant.partName).toLowerCase();
+  if (/chute|parachute|fairing/.test(id)) return 0;
+  if (variant.category === 'cmd' || variant.category === 'cockpit' || /capsule|probe|nose/.test(id)) return 1;
+  if (variant.category === 'tank' || /tank|interstage|decoupler|separator/.test(id)) return 2;
+  if (variant.category === 'prop' || /engine|merlin|turbojet|nozzle|rocket/.test(id)) return 4;
+  return 3;
+}
+
+function uprightY(parentNode, childNode) {
+  const joint = mate(identityMatrix(), parentNode, childNode, 0, 0);
+  const up = transformDir(joint.matrix, [0, 1, 0]);
+  return up ? up[1] : 0;
+}
+
+function pairOverlap(parentVar, parentNode, childVar, childNode) {
+  const m = identityMatrix();
+  const joint = mate(m, parentNode, childNode, 0, 0);
+  const a = partAABB(parentVar, m);
+  const b = partAABB(childVar, joint.matrix);
+  if (!a || !b) return 0;
+  return overlapVolume(a, b, 0.02);
+}
+
+function boxVol(variant) {
+  const b = variant && variant.bbox;
+  if (!b || b.length < 3) return 1;
+  return Math.max(0.001, Math.abs(b[0] * b[1] * b[2]));
+}
+
+function stackJointOk(parentVar, parentNode, childVar, childNode) {
+  if (!parentNode || !childNode) return false;
+  if (!isStackNode(parentNode.name) || !isStackNode(childNode.name)) return false;
+  if (uprightY(parentNode, childNode) < 0.5) return false;
+  const overlap = pairOverlap(parentVar, parentNode, childVar, childNode);
+  return overlap < Math.max(0.35, 0.12 * Math.min(boxVol(parentVar), boxVol(childVar)));
+}
+
+function radialParentName(name) {
+  return /^node_side_\d+$/.test(name) || /^node_wheel_\d+$/.test(name) || name === 'node_top' || name === 'node_bottom';
+}
+
+function radialJointOk(parentVar, parentNode, childVar, childNode) {
+  if (!parentNode || !childNode || childNode.name !== 'node_attach') return false;
+  if (!radialParentName(parentNode.name)) return false;
+  const overlap = pairOverlap(parentVar, parentNode, childVar, childNode);
+  return overlap < Math.max(1.5, 0.35 * Math.min(boxVol(parentVar), boxVol(childVar)));
+}
+
+function asInt(value) {
+  if (typeof value === 'number' && Number.isInteger(value)) return value;
+  if (typeof value === 'string' && /^-?\d+$/.test(value.trim())) return Number(value.trim());
+  return value;
+}
+
+function asNum(value) {
+  if (typeof value === 'number' && Number.isFinite(value)) return value;
+  if (typeof value === 'string' && value.trim() && Number.isFinite(Number(value))) return Number(value);
+  return value;
+}
+
+function readId(obj, keys) {
+  if (!obj || typeof obj !== 'object') return '';
+  for (const key of keys) {
+    if (typeof obj[key] === 'string' && obj[key].trim()) return obj[key].trim();
+  }
+  return '';
+}
+
+function usableId(raw, used) {
+  let id = String(raw || '').trim();
+  if (!/^[A-Za-z][A-Za-z0-9_-]{0,40}$/.test(id)) id = 'p' + (used.size + 1);
+  const base = id;
+  let n = 2;
+  while (used.has(id)) {
+    id = (base + '_' + n).slice(0, 41);
+    n++;
+  }
+  used.add(id);
+  return id;
+}
+
+function faceDiameters(variant) {
+  const found = [];
+  for (const name of ['node_top', 'node_bottom']) {
+    const d = stackDiameter(variant, name);
+    if (d != null) found.push(d);
+  }
+  if (!found.length && CLASS_DIAMETER[variant.size]) found.push(CLASS_DIAMETER[variant.size]);
+  return found;
+}
+
+function siblingForDiameter(catalogue, variant, target) {
+  if (!catalogue || !catalogue.byVid || target == null) return null;
+  let best = null, bestDiff = Infinity;
+  for (const candidate of catalogue.byVid.values()) {
+    if (candidate.partId !== variant.partId) continue;
+    for (const d of faceDiameters(candidate)) {
+      const diff = Math.abs(d - target);
+      if (diff < bestDiff) { bestDiff = diff; best = candidate; }
+    }
+  }
+  if (!best || best.vid === variant.vid) return null;
+  if (bestDiff > Math.max(0.08, target * 0.08)) return null;
+  return best;
+}
+
+function componentGroups(ids, edges) {
+  const parent = new Map(ids.map(id => [id, id]));
+  const find = id => {
+    let root = id;
+    while (parent.get(root) !== root) root = parent.get(root);
+    let cursor = id;
+    while (parent.get(cursor) !== root) {
+      const next = parent.get(cursor);
+      parent.set(cursor, root);
+      cursor = next;
+    }
+    return root;
+  };
+  for (const edge of edges) {
+    if (parent.has(edge.child) && parent.has(edge.parent)) parent.set(find(edge.child), find(edge.parent));
+  }
+  const groups = new Map();
+  for (const id of ids) {
+    const root = find(id);
+    if (!groups.has(root)) groups.set(root, []);
+    groups.get(root).push(id);
+  }
+  return [...groups.values()];
+}
+
+/**
+ * Turn a sloppy model plan into connections the snapper can place.
+ * Accepts an ordered `stack` (nose to tail) plus `attach` list, fills in
+ * missing nodes, flips stack faces that run parts through each other, and
+ * keeps joints that were already right.
+ * Does not mutate `craft`.
+ */
+function repairCraft(craft, catalogue) {
+  const notes = [];
+  if (!craft || typeof craft !== 'object' || Array.isArray(craft)) return { craft, notes };
+  const plan = JSON.parse(JSON.stringify(craft));
+  if (!Array.isArray(plan.parts)) plan.parts = [];
+  if (!Array.isArray(plan.connections)) plan.connections = [];
+
+  const usedIds = new Set();
+  const byId = new Map();
+  for (const part of plan.parts) {
+    if (!part || typeof part !== 'object' || typeof part.id !== 'string') continue;
+    const id = part.id.trim();
+    if (!id || usedIds.has(id)) continue;
+    usedIds.add(id);
+    part.id = id;
+    byId.set(id, part);
+  }
+
+  function ensurePart(ref) {
+    if (byId.has(ref)) return ref;
+    const found = lookupVariant(catalogue, ref);
+    if (!found) return null;
+    const id = usableId(ref, usedIds);
+    const part = { id, variant: found.variant.vid };
+    plan.parts.push(part);
+    byId.set(id, part);
+    return id;
+  }
+
+  function variantOf(id) {
+    const part = byId.get(id);
+    if (!part) return null;
+    const ref = typeof part.variant === 'string' ? part.variant.trim() : '';
+    const found = ref ? lookupVariant(catalogue, ref) : null;
+    if (!found) return null;
+    return { part, variant: found.variant, inexact: !!found.via, ref };
+  }
+
+  function matchSize(id, neighbor) {
+    const info = variantOf(id);
+    if (!info || !info.inexact || !neighbor) return info && info.variant;
+    const targets = faceDiameters(neighbor);
+    if (!targets.length) return info.variant;
+    const next = siblingForDiameter(catalogue, info.variant, targets[0]);
+    if (!next) return info.variant;
+    info.part.variant = next.vid;
+    notes.push(`"${id}" used ${info.ref}; chose ${next.vid} so the stack face matches ${fmtM(targets[0])} m.`);
+    return next;
+  }
+
+  if (Array.isArray(plan.stack)) {
+    const ids = [];
+    for (const item of plan.stack) {
+      const ref = typeof item === 'string' ? item.trim() : readId(item, ['id', 'part', 'variant']);
+      if (!ref) continue;
+      const id = byId.has(ref) ? ref : ensurePart(ref);
+      if (id && !ids.includes(id)) ids.push(id);
+    }
+    for (let i = 0; i < ids.length - 1; i++) {
+      const upper = variantOf(ids[i]);
+      const lower = variantOf(ids[i + 1]);
+      if (upper && lower) {
+        matchSize(ids[i], lower.variant);
+        matchSize(ids[i + 1], upper.variant);
+      }
+      plan.connections = plan.connections.filter(c => {
+        const a = readId(c, ['child', 'part', 'from']);
+        const b = readId(c, ['parent', 'to', 'on']);
+        return !((a === ids[i] && b === ids[i + 1]) || (a === ids[i + 1] && b === ids[i]));
+      });
+      plan.connections.push({
+        child: ids[i], parent: ids[i + 1], childNode: 'node_bottom', parentNode: 'node_top', source: 'stack'
+      });
+    }
+  }
+
+  if (Array.isArray(plan.attach)) {
+    for (const item of plan.attach) {
+      if (!item || typeof item !== 'object') continue;
+      const childRef = readId(item, ['part', 'child', 'id']);
+      const parentRef = readId(item, ['to', 'parent', 'on']);
+      const child = byId.has(childRef) ? childRef : ensurePart(childRef);
+      const parent = byId.has(parentRef) ? parentRef : ensurePart(parentRef);
+      if (!child || !parent) continue;
+      const taken = plan.connections.some(c => readId(c, ['child', 'part', 'from']) === child);
+      if (taken) continue;
+      plan.connections.push({
+        child, parent,
+        childNode: readId(item, ['childNode', 'child_node']) || 'node_attach',
+        parentNode: readId(item, ['parentNode', 'parent_node']) || '',
+        symmetry: item.symmetry, rotation: item.rotation, offset: item.offset,
+        source: 'attach'
+      });
+    }
+  }
+
+  const normalized = [];
+  for (const raw of plan.connections) {
+    if (!raw || typeof raw !== 'object') continue;
+    const child = readId(raw, ['child', 'part', 'from']);
+    const parent = readId(raw, ['parent', 'to', 'on']);
+    if (!child || !parent) continue;
+    normalized.push({
+      child, parent,
+      childNode: readId(raw, ['childNode', 'child_node', 'fromNode']),
+      parentNode: readId(raw, ['parentNode', 'parent_node', 'toNode']),
+      symmetry: raw.symmetry == null ? 1 : asInt(raw.symmetry),
+      rotation: raw.rotation == null || raw.rotation === '' ? 0 : asNum(raw.rotation),
+      offset: raw.offset == null || raw.offset === '' ? null : asNum(raw.offset),
+      source: raw.source || 'connections'
+    });
+  }
+
+  const resolved = new Map();
+  for (const id of byId.keys()) {
+    const info = variantOf(id);
+    if (info) resolved.set(id, info.variant);
+  }
+
+  const stackEdges = [];
+  const radialEdges = [];
+  for (const edge of normalized) {
+    const childVar = resolved.get(edge.child);
+    const parentVar = resolved.get(edge.parent);
+    if (!childVar || !parentVar) {
+      stackEdges.push(edge);
+      continue;
+    }
+    const childNode = resolveNode(childVar, edge.childNode);
+    const parentNode = resolveNode(parentVar, edge.parentNode);
+    const radialPart = isRadialPart(childVar) || edge.source === 'attach';
+    if (radialPart || (childNode && childNode.name === 'node_attach')) {
+      if (edge.source === 'attach') {
+        const attachNode = findNode(childVar, 'node_attach');
+        const parentGuess = resolveNode(parentVar, edge.parentNode) || findNode(parentVar, 'node_side_1') || findNode(parentVar, 'node_top');
+        edge.sticky = !!(attachNode && parentGuess && radialJointOk(parentVar, parentGuess, childVar, attachNode));
+        if (edge.sticky) {
+          edge.childNode = attachNode.name;
+          edge.parentNode = parentGuess.name;
+        }
+      } else {
+        edge.sticky = edge.source === 'connections' && radialJointOk(parentVar, parentNode, childVar, childNode);
+      }
+      radialEdges.push(edge);
+    } else if (edge.source === 'stack') {
+      const upperNode = findNode(childVar, 'node_bottom') || findNode(childVar, 'node_top');
+      const lowerNode = findNode(parentVar, 'node_top') || findNode(parentVar, 'node_bottom');
+      edge.sticky = !!(upperNode && lowerNode && uprightY(lowerNode, upperNode) >= 0.5);
+      if (edge.sticky) {
+        edge.childNode = upperNode.name;
+        edge.parentNode = lowerNode.name;
+      }
+      stackEdges.push(edge);
+    } else {
+      edge.sticky = edge.source === 'connections' && stackJointOk(parentVar, parentNode, childVar, childNode);
+      if (edge.sticky) {
+        edge.childNode = childNode.name;
+        edge.parentNode = parentNode.name;
+      }
+      stackEdges.push(edge);
+    }
+  }
+
+  const finalEdges = [];
+  const stackIds = [...new Set(stackEdges.flatMap(e => [e.child, e.parent]))].filter(id => resolved.has(id));
+  for (const group of componentGroups(stackIds, stackEdges)) {
+    const edges = stackEdges.filter(e => group.includes(e.child) && group.includes(e.parent));
+    const loose = edges.filter(e => !e.sticky);
+    if (!loose.length) {
+      finalEdges.push(...edges);
+      continue;
+    }
+    // One backwards joint is enough to thread a tank through the capsule.
+    // Rebuild the whole column nose-to-tail instead of keeping the other links.
+    const tie = id => /upper|nose|fwd|forward/.test(id) ? 0 : /lower|aft|tail|bottom/.test(id) ? 2 : 1;
+    const ordered = group.slice().sort((a, b) => stackRank(resolved.get(a)) - stackRank(resolved.get(b)) || tie(a) - tie(b) || group.indexOf(a) - group.indexOf(b));
+    for (let i = 0; i < ordered.length - 1; i++) {
+      matchSize(ordered[i], resolved.get(ordered[i + 1]));
+      matchSize(ordered[i + 1], resolved.get(ordered[i]));
+      const upper = variantOf(ordered[i]);
+      const lower = variantOf(ordered[i + 1]);
+      if (upper) resolved.set(ordered[i], upper.variant);
+      if (lower) resolved.set(ordered[i + 1], lower.variant);
+    }
+    notes.push('Rebuilt the stack nose-to-tail (' + ordered.join(', ') + ') because the joints were missing or backwards.');
+    for (let i = 0; i < ordered.length - 1; i++) {
+      const upperVar = resolved.get(ordered[i]);
+      const lowerVar = resolved.get(ordered[i + 1]);
+      const childNode = findNode(upperVar, 'node_bottom') || findNode(upperVar, 'node_top');
+      const parentNode = findNode(lowerVar, 'node_top') || findNode(lowerVar, 'node_bottom');
+      if (!childNode || !parentNode) {
+        notes.push(`Could not stack "${ordered[i]}" on "${ordered[i + 1]}"; it is laid out beside the craft.`);
+        continue;
+      }
+      finalEdges.push({
+        child: ordered[i], parent: ordered[i + 1],
+        childNode: childNode.name, parentNode: parentNode.name,
+        symmetry: 1, rotation: 0, offset: 0, source: 'rebuilt'
+      });
+    }
+  }
+
+  const radialOut = [];
+  const usedWheels = new Map();
+  const usedSides = new Map();
+  const patterns = new Map();
+  const radialOrdered = [...radialEdges.filter(e => e.sticky), ...radialEdges.filter(e => !e.sticky)];
+  radialOrdered.sort((a, b) => Number(b.sticky) - Number(a.sticky) || (b.symmetry || 1) - (a.symmetry || 1));
+  for (const edge of radialOrdered) {
+    const childVar = resolved.get(edge.child);
+    const parentVar = resolved.get(edge.parent);
+    if (!childVar || !parentVar) continue;
+    if (isWheelPart(childVar)) {
+      const wheels = nodeList(parentVar).filter(n => /^node_wheel_\d+$/.test(n.name));
+      const symmetry = typeof edge.symmetry === 'number' ? edge.symmetry : 1;
+      if (wheels.length >= 2 && symmetry > 1 && !edge.sticky) {
+        const count = Math.min(symmetry, wheels.length);
+        for (let k = 0; k < count; k++) {
+          const id = k === 0 ? edge.child : usableId(edge.child + '_' + (k + 1), usedIds);
+          if (!byId.has(id)) {
+            plan.parts.push({ id, variant: childVar.vid });
+            byId.set(id, plan.parts[plan.parts.length - 1]);
+            resolved.set(id, childVar);
+          }
+          radialOut.push({
+            child: id, parent: edge.parent, childNode: 'node_attach', parentNode: wheels[k].name,
+            symmetry: 1, rotation: edge.rotation || 0, offset: 0, source: 'wheel'
+          });
+          if (!usedWheels.has(edge.parent)) usedWheels.set(edge.parent, new Set());
+          usedWheels.get(edge.parent).add(wheels[k].name);
+        }
+        notes.push(`Split "${edge.child}" across ${parentVar.vid} wheel nodes. Hubs are not evenly spaced, so symmetry would pile the wheels.`);
+        continue;
+      }
+    }
+    if (edge.sticky) {
+      let offset = edge.offset == null ? 0 : edge.offset;
+      const symmetry = typeof edge.symmetry === 'number' ? edge.symmetry : 1;
+      if (edge.offset == null && symmetry > 1) {
+        const clocked = freeOffset(patterns.get(edge.parent) || [], symmetry);
+        if (clocked !== 0) notes.push(`Clocked "${edge.child}" by ${clocked}° so it does not sit on another part of "${edge.parent}".`);
+        offset = clocked;
+      }
+      radialOut.push({ ...edge, symmetry, offset });
+      rememberPattern(patterns, edge.parent, symmetry, offset);
+      continue;
+    }
+    const attach = findNode(childVar, 'node_attach') || resolveNode(childVar, edge.childNode);
+    let parentNode = resolveNode(parentVar, edge.parentNode);
+    const sideNodes = nodeList(parentVar).filter(n => /^node_side_\d+$/.test(n.name));
+    const wheelNodes = nodeList(parentVar).filter(n => /^node_wheel_\d+$/.test(n.name));
+    const taken = nodeName => finalEdges.some(item => item.parent === edge.parent && item.parentNode === nodeName)
+      || radialOut.some(item => item.parent === edge.parent && item.parentNode === nodeName);
+    if (isWheelPart(childVar) && wheelNodes.length) {
+      const used = usedWheels.get(edge.parent) || new Set();
+      parentNode = wheelNodes.find(n => !used.has(n.name)) || wheelNodes[0];
+      if (!usedWheels.has(edge.parent)) usedWheels.set(edge.parent, used);
+      used.add(parentNode.name);
+    } else {
+      const symmetry = typeof edge.symmetry === 'number' ? edge.symmetry : 1;
+      const claimed = usedSides.get(edge.parent) || new Set();
+      const blocked = node => {
+        if (!node || !node.direction) return false;
+        const ang = (Math.atan2(node.direction[2], node.direction[0]) * 180 / Math.PI + 360) % 360;
+        return (patterns.get(edge.parent) || []).some(angles => anglesCollide([ang], angles));
+      };
+      const sideFree = sideNodes.find(n => !claimed.has(n.name) && !taken(n.name) && !blocked(n));
+      const proposedOk = parentNode && attach && !taken(parentNode.name) && !blocked(parentNode) && radialJointOk(parentVar, parentNode, childVar, attach);
+      if (!proposedOk) parentNode = (symmetry > 1 ? (sideNodes.find(n => !blocked(n)) || sideNodes[0]) : sideFree) || null;
+      if (symmetry <= 1 && parentNode && blocked(parentNode)) parentNode = sideFree || null;
+      if (parentNode && /^node_side_\d+$/.test(parentNode.name) && symmetry <= 1) {
+        if (!usedSides.has(edge.parent)) usedSides.set(edge.parent, claimed);
+        claimed.add(parentNode.name);
+      }
+    }
+    if (!attach || !parentNode) {
+      notes.push(`Could not attach "${edge.child}" to "${edge.parent}"; it is laid out beside the craft.`);
+      continue;
+    }
+    let offset = edge.offset == null ? 0 : edge.offset;
+    const symmetry = typeof edge.symmetry === 'number' ? edge.symmetry : 1;
+    if (edge.offset == null && symmetry > 1) offset = freeOffset(patterns.get(edge.parent) || [], symmetry);
+    rememberPattern(patterns, edge.parent, symmetry, offset);
+    const givenChild = resolveNode(childVar, edge.childNode);
+    const givenParent = resolveNode(parentVar, edge.parentNode);
+    const changed = !givenChild || givenChild.name !== attach.name || !givenParent || givenParent.name !== parentNode.name || (edge.offset != null && offset !== edge.offset) || (edge.offset == null && offset !== 0);
+    if (changed) {
+      const given = [edge.childNode, edge.parentNode].filter(Boolean).join(' → ');
+      notes.push(`Attached "${edge.child}" to "${edge.parent}" with ${attach.name} on ${parentNode.name}` + (given ? ` instead of ${given}` : '') + (offset ? `, clocked ${offset}°` : '') + '.');
+    }
+    radialOut.push({
+      child: edge.child, parent: edge.parent,
+      childNode: attach.name, parentNode: parentNode.name,
+      symmetry, rotation: typeof edge.rotation === 'number' ? edge.rotation : 0,
+      offset, source: edge.source
+    });
+  }
+
+  for (const edge of [...stackEdges, ...radialEdges]) {
+    if (resolved.has(edge.child) && resolved.has(edge.parent)) continue;
+    if (finalEdges.some(item => item.child === edge.child) || radialOut.some(item => item.child === edge.child)) continue;
+    finalEdges.push(edge);
+  }
+
+  plan.connections = [...finalEdges, ...radialOut].map(edge => ({
+    child: edge.child,
+    parent: edge.parent,
+    childNode: edge.childNode,
+    parentNode: edge.parentNode,
+    symmetry: edge.symmetry == null ? 1 : edge.symmetry,
+    rotation: edge.rotation || 0,
+    offset: edge.offset || 0
+  }));
+  return { craft: plan, notes };
+}
+
+function patternAngles(symmetry, offset) {
+  const angles = [];
+  const n = Math.max(1, symmetry || 1);
+  for (let k = 0; k < n; k++) angles.push(((k * 360 / n + (offset || 0)) % 360 + 360) % 360);
+  return angles;
+}
+
+function anglesCollide(a, b) {
+  return a.some(x => b.some(y => {
+    const d = Math.abs(x - y) % 360;
+    return Math.min(d, 360 - d) < 15;
+  }));
+}
+
+function freeOffset(existing, symmetry) {
+  const trials = [0, 45, 30, 90, 15, 60, 20, 10];
+  for (const offset of trials) {
+    const mine = patternAngles(symmetry, offset);
+    if (existing.every(other => !anglesCollide(mine, other))) return offset;
+  }
+  return 45;
+}
+
+function rememberPattern(patterns, parent, symmetry, offset) {
+  if (!patterns.has(parent)) patterns.set(parent, []);
+  patterns.get(parent).push(patternAngles(symmetry, offset));
+}
+
 /**
  * @param {object} craft plan: { name, parts, connections, staging, manual }
  * @param {{ lookup: (id: string) => { variant: object, via: string|null }|null }} catalogue
@@ -214,11 +731,17 @@ export function assemble(craft, catalogue) {
   }
   // Some models wrap the plan one level down.
   if (!Array.isArray(craft.parts) && craft.craft && typeof craft.craft === 'object') craft = craft.craft;
+  const repaired = repairCraft(craft, catalogue);
+  craft = repaired.craft;
+  for (const note of repaired.notes) warn(note);
 
   const name = typeof craft.name === 'string' && craft.name.trim() ? craft.name.trim() : 'Untitled craft';
   if (!Array.isArray(craft.parts)) err('Missing "parts" array.');
-  if (!Array.isArray(craft.connections)) err('Missing "connections" array.');
-  if (!Array.isArray(craft.parts) || !Array.isArray(craft.connections)) return emptyResult(errors, warnings, name);
+  if (!Array.isArray(craft.connections)) {
+    warn('No connections were given, so each part is laid out on its own.');
+    craft.connections = [];
+  }
+  if (!Array.isArray(craft.parts)) return emptyResult(errors, warnings, name);
 
   if (craft.manual == null || craft.manual === '') warn('No flight manual was included.');
   else if (typeof craft.manual !== 'string') warn('Flight manual should be a markdown string.');
@@ -334,7 +857,7 @@ export function assemble(craft, catalogue) {
     if (!onlyBadRoots) err('Every part is a child of another part, but the links do not form a tree.');
   }
   if (roots.length > 1) {
-    warn(`More than one root (${roots.join(', ')}). Extra roots are parked beside the main craft.`);
+    warn(`More than one root (${roots.join(', ')}). The extra parts are laid out beside the main craft instead of stacked at the origin.`);
   }
   if (craft.root && !roots.includes(craft.root)) {
     warn(`"root" is "${craft.root}", which is not an unattached part. Using "${roots[0] || '(none)'}".`);
@@ -417,15 +940,21 @@ export function assemble(craft, catalogue) {
     }
   }
 
-  // Park extra roots along +X so they stay visible and do not occupy the origin.
-  let parkX = 0;
+  // Extra roots go in a row along +X, clear of whatever was already placed.
   orderedRoots.forEach((id, i) => {
     const variant = seeds.get(id).variant;
-    const width = (variant && variant.bbox && variant.bbox[0]) || 2;
-    if (i > 0) parkX += width / 2 + 1.5;
+    const span = Math.max((variant && variant.bbox && variant.bbox[0]) || 2, (variant && variant.bbox && variant.bbox[2]) || 2);
+    let x = 0;
+    if (i > 0) {
+      let maxX = 0;
+      for (const inst of instances) {
+        const box = seeds.get(inst.seedId).variant.bbox;
+        maxX = Math.max(maxX, inst.position[0] + ((box && box[0]) || span) / 2);
+      }
+      x = maxX + 2 + span / 2;
+    }
     const matrix = identityMatrix();
-    matrix[12] = i === 0 ? 0 : parkX;
-    if (i > 0) parkX += width / 2 + 1.5;
+    matrix[12] = x;
     place(id, matrix, null, 1, id);
   });
   if (truncated) err(`Stopped at ${MAX_INSTANCES} instances. Lower symmetry or use fewer parts.`);
@@ -461,7 +990,7 @@ export function assemble(craft, catalogue) {
     }
   }
 
-  return { ok: errors.length === 0, name, errors, warnings, instances, joints };
+  return { ok: errors.length === 0, name, errors, warnings, instances, joints, plan: craft };
 }
 
 function fmtM(n) {

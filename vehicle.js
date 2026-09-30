@@ -265,8 +265,8 @@ function renderReport(result) {
 function showCraft(craft) {
   const plan = structuredClone(craft);
   if (Array.isArray(plan.manual)) plan.manual = plan.manual.join('\n');
-  currentCraft = plan;
   const result = assemble(plan, catalogue);
+  currentCraft = result.plan || plan;
   renderReport(result);
   renderAssembly(result);
   return result;
@@ -380,10 +380,15 @@ async function generate() {
       }
       result = showCraft(craft);
       $('json').value = JSON.stringify(currentCraft, null, 2);
-      if (result.errors.length && attempt === 0) {
+      const structural = result.warnings.filter(w => /overlap|laid out beside|size mismatch|could not attach/i.test(w.message));
+      if ((result.errors.length || structural.length) && attempt === 0) {
+        const lines = [
+          ...result.errors.map(e => '- ' + e.message),
+          ...structural.map(w => '- ' + w.message)
+        ];
         messages = [...messages, { role: 'assistant', content: lastText }, {
           role: 'user',
-          content: 'The plan failed validation:\n' + result.errors.map(e => '- ' + e.message).join('\n') + '\nReturn a corrected JSON object only, using variant ids and node names from the catalogue.'
+          content: 'The plan does not assemble cleanly:\n' + lines.join('\n') + '\nPrefer "stack": part ids from nose to tail, and "attach": [{"part","to","symmetry","offset"}] for boosters, fins, wings, and antennas. Do not invent node names. Every part should be in stack or attach. Return one JSON object only, using variant ids from the catalogue.'
         }];
         continue;
       }
