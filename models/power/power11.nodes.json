@@ -1,0 +1,79 @@
+{
+ "id": "power11",
+ "name": "COM-2 High-Gain Dish",
+ "category": "power",
+ "short_name": "hga_dish",
+ "sizes": [
+  "M"
+ ],
+ "primary": "power11_hga_dish",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.86,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power11_hga_dish": {
+   "vid": "power11_hga_dish",
+   "size": "M",
+   "state": "flight",
+   "label": "High-gain dish",
+   "primary": true,
+   "dims": {
+    "dish_diameter_m": 2.5,
+    "focal_length_m": 1.0,
+    "dish_depth_m": 0.391,
+    "length_m": 1.86
+   },
+   "notes": "boresight +X; reflector/feed are separate meshes for gimbal animation",
+   "bbox_cad_zup": [
+    [
+     -0.8600000000000001,
+     -1.2500001000000005,
+     -1.2500001000000005
+    ],
+    [
+     0.8600000000000001,
+     1.2500001000000005,
+     1.2500001000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.72,
+    2.5,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.86,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power11_hga_dish.step",
+    "glb": "glb/power11_hga_dish.glb",
+    "preview": "renders/power11_hga_dish.png"
+   }
+  }
+ }
+}

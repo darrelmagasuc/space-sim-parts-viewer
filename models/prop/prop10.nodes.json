@@ -1,0 +1,104 @@
+{
+ "id": "prop10",
+ "name": "LE-4 'Raptor' Full-Flow Methalox",
+ "category": "prop",
+ "short_name": "raptor",
+ "sizes": [
+  "M"
+ ],
+ "primary": "prop10_raptor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.55,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.55,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop10_raptor": {
+   "vid": "prop10_raptor",
+   "size": "M",
+   "state": "flight",
+   "label": "Full-flow staged-combustion methalox engine",
+   "primary": true,
+   "dims": {
+    "length_m": 3.1,
+    "exit_diameter_m": 1.3,
+    "expansion_ratio": 34
+   },
+   "notes": "Raptor 2: 1.3 m dia x 3.1 m",
+   "bbox_cad_zup": [
+    [
+     -0.6620001000000002,
+     -0.6620001000000002,
+     -1.5500000500000006
+    ],
+    [
+     0.6620001000000002,
+     0.6620001000000002,
+     1.5500000500000002
+    ]
+   ],
+   "bbox_godot_size": [
+    1.324,
+    3.1,
+    1.324
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.55,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.55,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop10_raptor.step",
+    "glb": "glb/prop10_raptor.glb",
+    "preview": "renders/prop10_raptor.png"
+   }
+  }
+ }
+}

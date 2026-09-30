@@ -1,0 +1,235 @@
+{
+ "id": "power05",
+ "name": "BAT-S/M/L Internal Battery Packs",
+ "category": "power",
+ "short_name": "battery",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "power05_battery_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2975,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.2,
+    -0.1775,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "power05_battery_s": {
+   "vid": "power05_battery_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Battery pack S",
+   "primary": false,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.3",
+    "slots": 1,
+    "energy_kwh": 5,
+    "mass_t": 0.05
+   },
+   "notes": "size letters are battery sizes (BAT-S/M/L), not stack classes; node_port_1 = power connector (-Y face)",
+   "bbox_cad_zup": [
+    [
+     -0.24,
+     -0.24,
+     -0.14750005
+    ],
+    [
+     0.24,
+     0.24,
+     0.14750005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.295,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.2,
+      -0.0275,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power05_battery_s.step",
+    "glb": "glb/power05_battery_s.glb",
+    "preview": "renders/power05_battery_s.png"
+   }
+  },
+  "power05_battery_m": {
+   "vid": "power05_battery_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Battery pack M",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "slots": 1,
+    "energy_kwh": 25,
+    "mass_t": 0.2
+   },
+   "notes": "size letters are battery sizes (BAT-S/M/L), not stack classes; node_port_1 = power connector (-Y face)",
+   "bbox_cad_zup": [
+    [
+     -0.24,
+     -0.24,
+     -0.29750005
+    ],
+    [
+     0.24,
+     0.24,
+     0.29750005000000007
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.595,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.2,
+      -0.1775,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power05_battery_m.step",
+    "glb": "glb/power05_battery_m.glb",
+    "preview": "renders/power05_battery_m.png"
+   }
+  },
+  "power05_battery_l": {
+   "vid": "power05_battery_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Battery pack L",
+   "primary": false,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slots": 4,
+    "energy_kwh": 120,
+    "mass_t": 1.0
+   },
+   "notes": "size letters are battery sizes (BAT-S/M/L), not stack classes; node_port_1 = power connector (-Y face)",
+   "bbox_cad_zup": [
+    [
+     -0.49,
+     -0.49,
+     -0.29750005
+    ],
+    [
+     0.49,
+     0.49,
+     0.29750005000000007
+    ]
+   ],
+   "bbox_godot_size": [
+    0.98,
+    0.595,
+    0.98
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.4,
+      -0.1775,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power05_battery_l.step",
+    "glb": "glb/power05_battery_l.glb",
+    "preview": "renders/power05_battery_l.png"
+   }
+  }
+ }
+}

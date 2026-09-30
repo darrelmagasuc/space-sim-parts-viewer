@@ -1,0 +1,129 @@
+{
+ "id": "tank07",
+ "name": "T-DP Drop Tanks",
+ "category": "tanks",
+ "short_name": "drop_tank",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "tank07_drop_tank_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.7375,
+    -0.6125,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank07_drop_tank_s": {
+   "vid": "tank07_drop_tank_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Drop tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 4.925,
+    "volume_m3": 5.21,
+    "kerolox_wet_t_if_filled": 5.2
+   },
+   "notes": "catalogue gives no volume/mass; sized 3.9 D long; attach side is -X (CAD & Godot)",
+   "bbox_cad_zup": [
+    [
+     -0.7375,
+     -0.64,
+     -2.4875000499999995
+    ],
+    [
+     0.64,
+     0.64,
+     2.4875000500000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.377,
+    4.975,
+    1.28
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.7375,
+      -0.6125,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank07_drop_tank_s.step",
+    "glb": "glb/tank07_drop_tank_s.glb"
+   }
+  },
+  "tank07_drop_tank_m": {
+   "vid": "tank07_drop_tank_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Drop tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 9.85,
+    "volume_m3": 41.68,
+    "kerolox_wet_t_if_filled": 42.0
+   },
+   "notes": "catalogue gives no volume/mass; sized 3.9 D long; attach side is -X (CAD & Godot)",
+   "bbox_cad_zup": [
+    [
+     -1.475,
+     -1.28,
+     -4.97500005
+    ],
+    [
+     1.28,
+     1.28,
+     4.97500005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.755,
+    9.95,
+    2.56
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.475,
+      -1.225,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank07_drop_tank_m.step",
+    "glb": "glb/tank07_drop_tank_m.glb"
+   }
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "prop00",
+ "name": "RCS-Q 'Quad' Thruster Block",
+ "category": "prop",
+ "short_name": "rcs_quad",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop00_rcs_quad",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.17,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop00_rcs_quad": {
+   "vid": "prop00_rcs_quad",
+   "size": "XS",
+   "state": "flight",
+   "label": "Monoprop RCS quad",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.34 x 0.74 x 0.74",
+    "thrusters": 4,
+    "nozzle_exit_diameter_m": 0.11
+   },
+   "notes": "radial part: node_attach on -X; thrusters fire +/-Z and +/-Y (Apollo quad layout)",
+   "bbox_cad_zup": [
+    [
+     -0.16999999999999998,
+     -0.35,
+     -0.37
+    ],
+    [
+     0.17,
+     0.35,
+     0.37
+    ]
+   ],
+   "bbox_godot_size": [
+    0.34,
+    0.74,
+    0.7
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.17,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop00_rcs_quad.step",
+    "glb": "glb/prop00_rcs_quad.glb",
+    "preview": "renders/prop00_rcs_quad.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "id": "jet04",
+ "name": "RJ-1 Ramjet",
+ "category": "jet",
+ "short_name": "ramjet",
+ "sizes": [
+  "S"
+ ],
+ "primary": "jet04_ramjet",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.62,
+    0.025,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.325,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet04_ramjet": {
+   "vid": "jet04_ramjet",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Ramjet",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.0,
+    "length_m": 4.65,
+    "inlet_dia_m": 0.84,
+    "exit_dia_m": 0.76
+   },
+   "notes": "pylon-mounted",
+   "bbox_cad_zup": [
+    [
+     -0.62,
+     -0.5,
+     -2.3249999999999997
+    ],
+    [
+     0.5,
+     0.5,
+     2.325
+    ]
+   ],
+   "bbox_godot_size": [
+    1.12,
+    4.65,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.62,
+      0.025,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.325,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet04_ramjet.step",
+    "glb": "glb/jet04_ramjet.glb"
+   }
+  }
+ }
+}

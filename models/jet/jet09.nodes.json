@@ -1,0 +1,1005 @@
+{
+ "id": "jet09",
+ "name": "CS-1 Control Surfaces (Elevon / Rudder / Canard)",
+ "category": "jet",
+ "short_name": "control_surface",
+ "sizes": [
+  "elevon-S",
+  "elevon-M",
+  "rudder-S",
+  "rudder-M",
+  "canard-S",
+  "canard-M"
+ ],
+ "primary": "jet09_control_surface_elevon_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.46,
+    0.0176
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet09_control_surface_elevon_s": {
+   "vid": "jet09_control_surface_elevon_s",
+   "size": "elevon-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "elevon",
+    "span_m": 1.5,
+    "root_chord_m": 0.4,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.6,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -0.7500001,
+     -0.04880005,
+     -0.29000005
+    ],
+    [
+     0.7500001,
+     0.04880005,
+     0.29000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    0.58,
+    0.098
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.23,
+      0.0088
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_s.step",
+    "glb": "glb/jet09_control_surface_elevon_s.glb"
+   }
+  },
+  "jet09_control_surface_elevon_s_defl_pos": {
+   "vid": "jet09_control_surface_elevon_s_defl_pos",
+   "size": "elevon-S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "elevon",
+    "span_m": 1.5,
+    "root_chord_m": 0.4,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.6,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.7500001,
+     -0.046009979365765785,
+     -0.25353744864283767
+    ],
+    [
+     0.7500001,
+     0.16242259338516776,
+     0.29000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    0.544,
+    0.208
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.23,
+      0.0088
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_s_defl_pos.step",
+    "glb": "glb/jet09_control_surface_elevon_s_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_elevon_s_defl_neg": {
+   "vid": "jet09_control_surface_elevon_s_defl_neg",
+   "size": "elevon-S",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "elevon",
+    "span_m": 1.5,
+    "root_chord_m": 0.4,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.6,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.7500001,
+     -0.18002249338516776,
+     -0.2535374486428377
+    ],
+    [
+     0.7500001,
+     0.04880005,
+     0.29000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    0.544,
+    0.229
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.23,
+      0.0088
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_s_defl_neg.step",
+    "glb": "glb/jet09_control_surface_elevon_s_defl_neg.glb"
+   }
+  },
+  "jet09_control_surface_elevon_m": {
+   "vid": "jet09_control_surface_elevon_m",
+   "size": "elevon-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": true,
+   "dims": {
+    "type": "elevon",
+    "span_m": 3.0,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.8,
+    "area_m2": 2.4,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -1.5000001,
+     -0.09760005,
+     -0.58000005
+    ],
+    [
+     1.5000001,
+     0.09760005,
+     0.58000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    1.16,
+    0.195
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.46,
+      0.0176
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_m.step",
+    "glb": "glb/jet09_control_surface_elevon_m.glb"
+   }
+  },
+  "jet09_control_surface_elevon_m_defl_pos": {
+   "vid": "jet09_control_surface_elevon_m_defl_pos",
+   "size": "elevon-M",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "elevon",
+    "span_m": 3.0,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.8,
+    "area_m2": 2.4,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.5000001,
+     -0.09201990873153157,
+     -0.5070748472856753
+    ],
+    [
+     1.5000001,
+     0.32484503677033555,
+     0.58000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    1.087,
+    0.417
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.46,
+      0.0176
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_m_defl_pos.step",
+    "glb": "glb/jet09_control_surface_elevon_m_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_elevon_m_defl_neg": {
+   "vid": "jet09_control_surface_elevon_m_defl_neg",
+   "size": "elevon-M",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "elevon",
+    "span_m": 3.0,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.8,
+    "area_m2": 2.4,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.5000001,
+     -0.3600449367703355,
+     -0.5070748472856754
+    ],
+    [
+     1.5000001,
+     0.09760005,
+     0.58000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    1.087,
+    0.458
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.46,
+      0.0176
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_elevon_m_defl_neg.step",
+    "glb": "glb/jet09_control_surface_elevon_m_defl_neg.glb"
+   }
+  },
+  "jet09_control_surface_rudder_s": {
+   "vid": "jet09_control_surface_rudder_s",
+   "size": "rudder-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 1.6,
+    "root_chord_m": 0.6,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.8,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -0.8000001,
+     -0.06100005,
+     -0.43500005
+    ],
+    [
+     0.8000001,
+     0.06100005,
+     0.43500004999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    0.87,
+    0.122
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.345,
+      0.011
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_s.step",
+    "glb": "glb/jet09_control_surface_rudder_s.glb"
+   }
+  },
+  "jet09_control_surface_rudder_s_defl_pos": {
+   "vid": "jet09_control_surface_rudder_s_defl_pos",
+   "size": "rudder-S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 1.6,
+    "root_chord_m": 0.6,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.8,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.8000001,
+     -0.057512461707207224,
+     -0.3803061479642565
+    ],
+    [
+     0.8000001,
+     0.24583381507775165,
+     0.43500004999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    0.815,
+    0.303
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.345,
+      0.011
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_s_defl_pos.step",
+    "glb": "glb/jet09_control_surface_rudder_s_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_rudder_s_defl_neg": {
+   "vid": "jet09_control_surface_rudder_s_defl_neg",
+   "size": "rudder-S",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 1.6,
+    "root_chord_m": 0.6,
+    "tip_chord_m": 0.4,
+    "area_m2": 0.8,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.8000001,
+     -0.2678337150777516,
+     -0.3803061479642565
+    ],
+    [
+     0.8000001,
+     0.06100005,
+     0.43500004999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    0.815,
+    0.329
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.345,
+      0.011
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_s_defl_neg.step",
+    "glb": "glb/jet09_control_surface_rudder_s_defl_neg.glb"
+   }
+  },
+  "jet09_control_surface_rudder_m": {
+   "vid": "jet09_control_surface_rudder_m",
+   "size": "rudder-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 3.2,
+    "root_chord_m": 1.2,
+    "tip_chord_m": 0.8,
+    "area_m2": 3.2,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -1.6000001000000001,
+     -0.12200005,
+     -0.8700000499999999
+    ],
+    [
+     1.6000001000000001,
+     0.12200005,
+     0.87000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.2,
+    1.74,
+    0.244
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.69,
+      0.022
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_m.step",
+    "glb": "glb/jet09_control_surface_rudder_m.glb"
+   }
+  },
+  "jet09_control_surface_rudder_m_defl_pos": {
+   "vid": "jet09_control_surface_rudder_m_defl_pos",
+   "size": "rudder-M",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 3.2,
+    "root_chord_m": 1.2,
+    "tip_chord_m": 0.8,
+    "area_m2": 3.2,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.6000001000000001,
+     -0.11502487341441445,
+     -0.7606122459285128
+    ],
+    [
+     1.6000001000000001,
+     0.49166748015550327,
+     0.87000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.2,
+    1.631,
+    0.607
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.69,
+      0.022
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_m_defl_pos.step",
+    "glb": "glb/jet09_control_surface_rudder_m_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_rudder_m_defl_neg": {
+   "vid": "jet09_control_surface_rudder_m_defl_neg",
+   "size": "rudder-M",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "rudder",
+    "span_m": 3.2,
+    "root_chord_m": 1.2,
+    "tip_chord_m": 0.8,
+    "area_m2": 3.2,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.6000001000000001,
+     -0.5356673801555032,
+     -0.7606122459285128
+    ],
+    [
+     1.6000001000000001,
+     0.12200005,
+     0.87000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.2,
+    1.631,
+    0.658
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.69,
+      0.022
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_rudder_m_defl_neg.step",
+    "glb": "glb/jet09_control_surface_rudder_m_defl_neg.glb"
+   }
+  },
+  "jet09_control_surface_canard_s": {
+   "vid": "jet09_control_surface_canard_s",
+   "size": "canard-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 1.1,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.35,
+    "area_m2": 0.63,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -0.6160000500000002,
+     -0.048,
+     -0.6365048971475039
+    ],
+    [
+     0.6160000500000002,
+     0.048,
+     0.636504897147504
+    ]
+   ],
+   "bbox_godot_size": [
+    1.232,
+    1.273,
+    0.096
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.616,
+      0.3165,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_s.step",
+    "glb": "glb/jet09_control_surface_canard_s.glb"
+   }
+  },
+  "jet09_control_surface_canard_s_defl_pos": {
+   "vid": "jet09_control_surface_canard_s_defl_pos",
+   "size": "canard-S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 1.1,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.35,
+    "area_m2": 0.63,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.6160000500000002,
+     -0.13791254262157737,
+     -0.547308506609414
+    ],
+    [
+     0.6160000500000002,
+     0.40295919903020705,
+     0.6067494454011514
+    ]
+   ],
+   "bbox_godot_size": [
+    1.232,
+    1.154,
+    0.541
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.616,
+      0.3165,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_s_defl_pos.step",
+    "glb": "glb/jet09_control_surface_canard_s_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_canard_s_defl_neg": {
+   "vid": "jet09_control_surface_canard_s_defl_neg",
+   "size": "canard-S",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 1.1,
+    "root_chord_m": 0.8,
+    "tip_chord_m": 0.35,
+    "area_m2": 0.63,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.6160000500000002,
+     -0.402959199030207,
+     -0.547308506609414
+    ],
+    [
+     0.6160000500000002,
+     0.13791254262157737,
+     0.6067494454011704
+    ]
+   ],
+   "bbox_godot_size": [
+    1.232,
+    1.154,
+    0.541
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.616,
+      0.3165,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_s_defl_neg.step",
+    "glb": "glb/jet09_control_surface_canard_s_defl_neg.glb"
+   }
+  },
+  "jet09_control_surface_canard_m": {
+   "vid": "jet09_control_surface_canard_m",
+   "size": "canard-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 2.2,
+    "root_chord_m": 1.6,
+    "tip_chord_m": 0.7,
+    "area_m2": 2.53,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "hinge/pivot axis = X; defl_pos = +25 deg about +X",
+   "bbox_cad_zup": [
+    [
+     -1.2320000500000003,
+     -0.096,
+     -1.273009694295008
+    ],
+    [
+     1.2320000500000008,
+     0.096,
+     1.273009694295008
+    ]
+   ],
+   "bbox_godot_size": [
+    2.464,
+    2.546,
+    0.192
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.232,
+      0.633,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_m.step",
+    "glb": "glb/jet09_control_surface_canard_m.glb"
+   }
+  },
+  "jet09_control_surface_canard_m_defl_pos": {
+   "vid": "jet09_control_surface_canard_m_defl_pos",
+   "size": "canard-M",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 2.2,
+    "root_chord_m": 1.6,
+    "tip_chord_m": 0.7,
+    "area_m2": 2.53,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2320000500000003,
+     -0.27582498524315474,
+     -1.0946169132188281
+    ],
+    [
+     1.2320000500000008,
+     0.805918298060414,
+     1.2134987908023913
+    ]
+   ],
+   "bbox_godot_size": [
+    2.464,
+    2.308,
+    1.082
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.232,
+      0.633,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_m_defl_pos.step",
+    "glb": "glb/jet09_control_surface_canard_m_defl_pos.glb"
+   }
+  },
+  "jet09_control_surface_canard_m_defl_neg": {
+   "vid": "jet09_control_surface_canard_m_defl_neg",
+   "size": "canard-M",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "Control surface",
+   "primary": false,
+   "dims": {
+    "type": "canard",
+    "span_m": 2.2,
+    "root_chord_m": 1.6,
+    "tip_chord_m": 0.7,
+    "area_m2": 2.53,
+    "max_deflection_deg": 25,
+    "hinge_axis": "CAD X (Godot X)"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2320000500000003,
+     -0.8059182980604139,
+     -1.0946169132188281
+    ],
+    [
+     1.2320000500000008,
+     0.27582498524315474,
+     1.2134987908023633
+    ]
+   ],
+   "bbox_godot_size": [
+    2.464,
+    2.308,
+    1.082
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.232,
+      0.633,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet09_control_surface_canard_m_defl_neg.step",
+    "glb": "glb/jet09_control_surface_canard_m_defl_neg.glb"
+   }
+  }
+ }
+}

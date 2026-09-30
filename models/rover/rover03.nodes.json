@@ -1,0 +1,448 @@
+{
+ "id": "rover03",
+ "name": "RV-4 Pressurised Rover",
+ "category": "rover",
+ "short_name": "pressurised_rover",
+ "sizes": [
+  "L"
+ ],
+ "primary": "rover03_pressurised_rover",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.4851,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5149,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    0.4648,
+    -3.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    1.45,
+    -0.9351,
+    2.1
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_2",
+   "position": [
+    1.45,
+    -0.9351,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_3",
+   "position": [
+    1.45,
+    -0.9351,
+    -2.1
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_4",
+   "position": [
+    -1.45,
+    -0.9351,
+    2.1
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_5",
+   "position": [
+    -1.45,
+    -0.9351,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_6",
+   "position": [
+    -1.45,
+    -0.9351,
+    -2.1
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover03_pressurised_rover": {
+   "vid": "rover03_pressurised_rover",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Pressurised rover",
+   "primary": true,
+   "dims": {
+    "length_m": 6.25,
+    "width_m": 3.35,
+    "height_m": 3.0,
+    "cabin_w_m": 2.4,
+    "wheel_dia_m": 1.1,
+    "wheels": 6,
+    "hatch_dia_m": 1.0
+   },
+   "notes": "6 wheels, front+rear axles steer; rear docking hatch",
+   "bbox_cad_zup": [
+    [
+     -1.6975,
+     -3.0,
+     -1.51485
+    ],
+    [
+     1.6975,
+     3.25,
+     1.51485
+    ]
+   ],
+   "bbox_godot_size": [
+    3.395,
+    3.03,
+    6.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4851,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5149,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.4648,
+      -3.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.45,
+      -0.9351,
+      2.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      1.45,
+      -0.9351,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      1.45,
+      -0.9351,
+      -2.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -1.45,
+      -0.9351,
+      2.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -1.45,
+      -0.9351,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -1.45,
+      -0.9351,
+      -2.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover03_pressurised_rover.step",
+    "glb": "glb/rover03_pressurised_rover.glb"
+   }
+  },
+  "rover03_pressurised_rover_steer_left": {
+   "vid": "rover03_pressurised_rover_steer_left",
+   "size": "L",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Pressurised rover",
+   "primary": false,
+   "dims": {
+    "length_m": 6.25,
+    "width_m": 3.35,
+    "height_m": 3.0,
+    "cabin_w_m": 2.4,
+    "wheel_dia_m": 1.1,
+    "wheels": 6,
+    "hatch_dia_m": 1.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.791025920048378,
+     -3.0,
+     -1.51485
+    ],
+    [
+     1.791025920048378,
+     3.25,
+     1.51485
+    ]
+   ],
+   "bbox_godot_size": [
+    3.582,
+    3.03,
+    6.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4851,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5149,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.4648,
+      -3.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.45,
+      -0.9351,
+      2.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      1.45,
+      -0.9351,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      1.45,
+      -0.9351,
+      -2.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -1.45,
+      -0.9351,
+      2.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -1.45,
+      -0.9351,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -1.45,
+      -0.9351,
+      -2.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover03_pressurised_rover_steer_left.step",
+    "glb": "glb/rover03_pressurised_rover_steer_left.glb"
+   }
+  }
+ }
+}

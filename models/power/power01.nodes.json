@@ -1,0 +1,129 @@
+{
+ "id": "power01",
+ "name": "SA-L Large Solar Wing",
+ "category": "power",
+ "short_name": "solar_wing",
+ "sizes": [
+  "L"
+ ],
+ "primary": "power01_solar_wing",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.4,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power01_solar_wing": {
+   "vid": "power01_solar_wing",
+   "size": "L",
+   "state": "stowed",
+   "label": "Large solar wing (stowed)",
+   "primary": true,
+   "dims": {
+    "envelope_m": "2.8 x 7.0 x 1.4",
+    "state": "stowed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.4,
+     -3.5,
+     -0.7
+    ],
+    [
+     1.4,
+     3.5,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    2.8,
+    1.4,
+    7.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.4,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power01_solar_wing.step",
+    "glb": "glb/power01_solar_wing.glb",
+    "preview": "renders/power01_solar_wing.png"
+   }
+  },
+  "power01_solar_wing_deployed": {
+   "vid": "power01_solar_wing_deployed",
+   "size": "L",
+   "state": "deployed",
+   "label": "Large solar wing deployed",
+   "primary": false,
+   "dims": {
+    "blanket_m": "2 x (3.0 x 20.0)",
+    "area_m2": 120,
+    "span_m": 23.0,
+    "width_m": 7.0,
+    "state": "deployed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.4,
+     -3.5,
+     -0.7
+    ],
+    [
+     21.8,
+     3.5,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    23.2,
+    1.4,
+    7.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.4,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power01_solar_wing_deployed.step",
+    "glb": "glb/power01_solar_wing_deployed.glb",
+    "preview": "renders/power01_solar_wing_deployed.png"
+   }
+  }
+ }
+}

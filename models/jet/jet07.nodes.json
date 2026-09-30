@@ -1,0 +1,233 @@
+{
+ "id": "jet07",
+ "name": "IN-2 Shock-Cone Intake",
+ "category": "jet",
+ "short_name": "shock_cone_intake",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "jet07_shock_cone_intake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.2188,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet07_shock_cone_intake_s": {
+   "vid": "jet07_shock_cone_intake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Shock-cone intake",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.438,
+    "spike_travel_m": 0.26,
+    "capture_dia_m": 1.0
+   },
+   "notes": "translating spike",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.21875
+    ],
+    [
+     0.625,
+     0.625,
+     1.21875
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.438,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2188,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet07_shock_cone_intake_s.step",
+    "glb": "glb/jet07_shock_cone_intake_s.glb"
+   }
+  },
+  "jet07_shock_cone_intake_s_spike_aft": {
+   "vid": "jet07_shock_cone_intake_s_spike_aft",
+   "size": "S",
+   "state": "spike_aft",
+   "default_state": false,
+   "label": "Shock-cone intake",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.178,
+    "spike_travel_m": 0.26,
+    "capture_dia_m": 1.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.21875
+    ],
+    [
+     0.625,
+     0.625,
+     0.9587500000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.178,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2188,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet07_shock_cone_intake_s_spike_aft.step",
+    "glb": "glb/jet07_shock_cone_intake_s_spike_aft.glb"
+   }
+  },
+  "jet07_shock_cone_intake_m": {
+   "vid": "jet07_shock_cone_intake_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Shock-cone intake",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 4.875,
+    "spike_travel_m": 0.52,
+    "capture_dia_m": 2.0
+   },
+   "notes": "translating spike",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.4375
+    ],
+    [
+     1.25,
+     1.25,
+     2.4375
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    4.875,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.4375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet07_shock_cone_intake_m.step",
+    "glb": "glb/jet07_shock_cone_intake_m.glb"
+   }
+  },
+  "jet07_shock_cone_intake_m_spike_aft": {
+   "vid": "jet07_shock_cone_intake_m_spike_aft",
+   "size": "M",
+   "state": "spike_aft",
+   "default_state": false,
+   "label": "Shock-cone intake",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 4.355,
+    "spike_travel_m": 0.52,
+    "capture_dia_m": 2.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.4375
+    ],
+    [
+     1.25,
+     1.25,
+     1.9175000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    4.355,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.4375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet07_shock_cone_intake_m_spike_aft.step",
+    "glb": "glb/jet07_shock_cone_intake_m_spike_aft.glb"
+   }
+  }
+ }
+}

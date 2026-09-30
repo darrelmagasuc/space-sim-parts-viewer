@@ -1,0 +1,446 @@
+{
+ "id": "tank00",
+ "name": "T-K1/K2/K3 LOX/RP-1 Tanks",
+ "category": "tanks",
+ "short_name": "kerolox",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "tank00_kerolox_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.4187,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.4187,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -0.0,
+    0.0,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank00_kerolox_s": {
+   "vid": "tank00_kerolox_s",
+   "size": "S",
+   "state": "flight",
+   "label": "LOX/RP-1 tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 3.419,
+    "barrel_m": 2.669,
+    "dome_h_m": 0.375,
+    "prop_volume_m3": 3.89,
+    "wet_t": 4
+   },
+   "notes": "common bulkhead band marks LOX(top)/RP-1(bottom) split",
+   "bbox_cad_zup": [
+    [
+     -0.635,
+     -0.635,
+     -1.7093553456937973
+    ],
+    [
+     0.635,
+     0.635,
+     1.7093553456937973
+    ]
+   ],
+   "bbox_godot_size": [
+    1.27,
+    3.419,
+    1.27
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.7094,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.7094,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank00_kerolox_s.step",
+    "glb": "glb/tank00_kerolox_s.glb"
+   }
+  },
+  "tank00_kerolox_m": {
+   "vid": "tank00_kerolox_m",
+   "size": "M",
+   "state": "flight",
+   "label": "LOX/RP-1 tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 6.837,
+    "barrel_m": 5.337,
+    "dome_h_m": 0.75,
+    "prop_volume_m3": 31.11,
+    "wet_t": 32
+   },
+   "notes": "common bulkhead band marks LOX(top)/RP-1(bottom) split",
+   "bbox_cad_zup": [
+    [
+     -1.27,
+     -1.27,
+     -3.4187105913875944
+    ],
+    [
+     1.27,
+     1.27,
+     3.4187105913875944
+    ]
+   ],
+   "bbox_godot_size": [
+    2.54,
+    6.837,
+    2.54
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.4187,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.4187,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank00_kerolox_m.step",
+    "glb": "glb/tank00_kerolox_m.glb"
+   }
+  },
+  "tank00_kerolox_l": {
+   "vid": "tank00_kerolox_l",
+   "size": "L",
+   "state": "flight",
+   "label": "LOX/RP-1 tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 10.432,
+    "barrel_m": 8.182,
+    "dome_h_m": 1.125,
+    "prop_volume_m3": 106.94,
+    "wet_t": 110
+   },
+   "notes": "common bulkhead band marks LOX(top)/RP-1(bottom) split",
+   "bbox_cad_zup": [
+    [
+     -1.905,
+     -1.905,
+     -5.2160855729532685
+    ],
+    [
+     1.905,
+     1.905,
+     5.2160855729532685
+    ]
+   ],
+   "bbox_godot_size": [
+    3.81,
+    10.432,
+    3.81
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.2161,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.2161,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank00_kerolox_l.step",
+    "glb": "glb/tank00_kerolox_l.glb"
+   }
+  }
+ }
+}

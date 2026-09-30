@@ -1,0 +1,207 @@
+{
+ "id": "rover11",
+ "name": "SH-2 'Hab' Inflatable Dome",
+ "category": "rover",
+ "short_name": "inflatable_dome",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "rover11_inflatable_dome",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.75,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.75,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    2.7,
+    0.05,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover11_inflatable_dome": {
+   "vid": "rover11_inflatable_dome",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "Inflatable dome hab",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 1.5,
+    "deployed_diameter_m": 8.0
+   },
+   "notes": "packed in XL core; deploys to 8 m dome",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -0.75000005
+    ],
+    [
+     2.6999999999999997,
+     2.5,
+     0.7500000499999999
+    ]
+   ],
+   "bbox_godot_size": [
+    5.2,
+    1.5,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      2.7,
+      0.05,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover11_inflatable_dome.step",
+    "glb": "glb/rover11_inflatable_dome.glb"
+   }
+  },
+  "rover11_inflatable_dome_deployed": {
+   "vid": "rover11_inflatable_dome_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "Inflatable dome hab",
+   "primary": false,
+   "dims": {
+    "dome_diameter_m": 8.0,
+    "dome_height_m": 3.0,
+    "overall_len_m": 9.7,
+    "volume_m3": 84.3
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -4.3000001,
+     -4.3000001,
+     -0.75000015
+    ],
+    [
+     5.7,
+     4.3000001,
+     2.2900000499999997
+    ]
+   ],
+   "bbox_godot_size": [
+    10.0,
+    3.04,
+    8.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      5.7,
+      0.35,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover11_inflatable_dome_deployed.step",
+    "glb": "glb/rover11_inflatable_dome_deployed.glb"
+   }
+  }
+ }
+}

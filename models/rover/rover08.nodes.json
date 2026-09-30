@@ -1,0 +1,130 @@
+{
+ "id": "rover08",
+ "name": "ISRU-S Sabatier Reactor",
+ "category": "rover",
+ "short_name": "sabatier",
+ "sizes": [
+  "M"
+ ],
+ "primary": "rover08_sabatier",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.1225,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -1.25,
+    -0.6225,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    1.25,
+    -0.6225,
+    -0.45
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover08_sabatier": {
+   "vid": "rover08_sabatier",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Sabatier plant skid",
+   "primary": true,
+   "dims": {
+    "footprint_m": "2.5 x 1.6",
+    "height_m": 2.2,
+    "reactor_dia_m": 0.7
+   },
+   "notes": "ground skid, M footprint",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -0.8,
+     -1.1224999999999998
+    ],
+    [
+     1.25,
+     0.8,
+     1.1225
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.245,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1225,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      -1.25,
+      -0.6225,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      1.25,
+      -0.6225,
+      -0.45
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover08_sabatier.step",
+    "glb": "glb/rover08_sabatier.glb"
+   }
+  }
+ }
+}

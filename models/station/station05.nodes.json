@@ -1,0 +1,170 @@
+{
+ "id": "station05",
+ "name": "DP-S/DP-M Docking Ports",
+ "category": "station",
+ "short_name": "docking_port",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "station05_docking_port_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.4527,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2083,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station05_docking_port_s": {
+   "vid": "station05_docking_port_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Androgynous docking port",
+   "primary": false,
+   "dims": {
+    "flange_diameter_m": 1.25,
+    "hatch_diameter_m": 0.8,
+    "capture_ring_diameter_m": 1.1,
+    "height_m": 0.616
+   },
+   "notes": "node_top = soft-capture ring face (mates with another DP of the same size; petals interleave)",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.3061032052777195
+    ],
+    [
+     0.625,
+     0.625,
+     0.3061032052777195
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.612,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3061,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1474,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station05_docking_port_s.step",
+    "glb": "glb/station05_docking_port_s.glb",
+    "preview": "renders/station05_docking_port_s.png"
+   }
+  },
+  "station05_docking_port_m": {
+   "vid": "station05_docking_port_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Androgynous docking port",
+   "primary": true,
+   "dims": {
+    "flange_diameter_m": 2.5,
+    "hatch_diameter_m": 1.2,
+    "capture_ring_diameter_m": 1.7,
+    "height_m": 0.913
+   },
+   "notes": "node_top = soft-capture ring face (mates with another DP of the same size; petals interleave)",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.4526507485110014
+    ],
+    [
+     1.25,
+     1.25,
+     0.4526507485110014
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.905,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4527,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2083,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station05_docking_port_m.step",
+    "glb": "glb/station05_docking_port_m.glb",
+    "preview": "renders/station05_docking_port_m.png"
+   }
+  }
+ }
+}

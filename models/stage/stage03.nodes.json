@@ -1,0 +1,552 @@
+{
+ "id": "stage03",
+ "name": "IS-1 Interstage Adapter",
+ "category": "stage",
+ "short_name": "interstage",
+ "sizes": [
+  "M-M",
+  "XS-S",
+  "S-M",
+  "M-L",
+  "L-XL",
+  "XL-XXL",
+  "S-L",
+  "M-XL"
+ ],
+ "primary": "stage03_interstage_m_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage03_interstage_m_m": {
+   "vid": "stage03_interstage_m_m",
+   "size": "M-M",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": true,
+   "dims": {
+    "top_diameter_m": 2.5,
+    "bottom_diameter_m": 2.5,
+    "length_m": 3.0,
+    "wall_m": 0.02
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -1.275,
+     -1.275,
+     -1.5
+    ],
+    [
+     1.26,
+     1.275,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.535,
+    3.0,
+    2.55
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_m_m.step",
+    "glb": "glb/stage03_interstage_m_m.glb"
+   }
+  },
+  "stage03_interstage_xs_s": {
+   "vid": "stage03_interstage_xs_s",
+   "size": "XS-S",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 0.625,
+    "bottom_diameter_m": 1.25,
+    "length_m": 0.8,
+    "wall_m": 0.02
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -0.63,
+     -0.63,
+     -0.4
+    ],
+    [
+     0.63,
+     0.63,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    1.26,
+    0.8,
+    1.26
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_xs_s.step",
+    "glb": "glb/stage03_interstage_xs_s.glb"
+   }
+  },
+  "stage03_interstage_s_m": {
+   "vid": "stage03_interstage_s_m",
+   "size": "S-M",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 1.25,
+    "bottom_diameter_m": 2.5,
+    "length_m": 1.5,
+    "wall_m": 0.02
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -1.26,
+     -0.75
+    ],
+    [
+     1.26,
+     1.26,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.5,
+    2.52
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_s_m.step",
+    "glb": "glb/stage03_interstage_s_m.glb"
+   }
+  },
+  "stage03_interstage_m_l": {
+   "vid": "stage03_interstage_m_l",
+   "size": "M-L",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 2.5,
+    "bottom_diameter_m": 3.75,
+    "length_m": 2.2,
+    "wall_m": 0.03
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -1.89,
+     -1.89,
+     -1.1
+    ],
+    [
+     1.89,
+     1.89,
+     1.1
+    ]
+   ],
+   "bbox_godot_size": [
+    3.78,
+    2.2,
+    3.78
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_m_l.step",
+    "glb": "glb/stage03_interstage_m_l.glb"
+   }
+  },
+  "stage03_interstage_l_xl": {
+   "vid": "stage03_interstage_l_xl",
+   "size": "L-XL",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 3.75,
+    "bottom_diameter_m": 5.0,
+    "length_m": 2.8,
+    "wall_m": 0.04
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -2.52,
+     -2.52,
+     -1.4
+    ],
+    [
+     2.52,
+     2.52,
+     1.4
+    ]
+   ],
+   "bbox_godot_size": [
+    5.04,
+    2.8,
+    5.04
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_l_xl.step",
+    "glb": "glb/stage03_interstage_l_xl.glb"
+   }
+  },
+  "stage03_interstage_xl_xxl": {
+   "vid": "stage03_interstage_xl_xxl",
+   "size": "XL-XXL",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 5.0,
+    "bottom_diameter_m": 7.5,
+    "length_m": 4.5,
+    "wall_m": 0.06
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -3.78,
+     -3.78,
+     -2.25
+    ],
+    [
+     3.78,
+     3.78,
+     2.25
+    ]
+   ],
+   "bbox_godot_size": [
+    7.56,
+    4.5,
+    7.56
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_xl_xxl.step",
+    "glb": "glb/stage03_interstage_xl_xxl.glb"
+   }
+  },
+  "stage03_interstage_s_l": {
+   "vid": "stage03_interstage_s_l",
+   "size": "S-L",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 1.25,
+    "bottom_diameter_m": 3.75,
+    "length_m": 2.4,
+    "wall_m": 0.03
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -1.89,
+     -1.89,
+     -1.2000000000000002
+    ],
+    [
+     1.89,
+     1.89,
+     1.2
+    ]
+   ],
+   "bbox_godot_size": [
+    3.78,
+    2.4,
+    3.78
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.2,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_s_l.step",
+    "glb": "glb/stage03_interstage_s_l.glb"
+   }
+  },
+  "stage03_interstage_m_xl": {
+   "vid": "stage03_interstage_m_xl",
+   "size": "M-XL",
+   "state": "flight",
+   "label": "Interstage adapter",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 2.5,
+    "bottom_diameter_m": 5.0,
+    "length_m": 3.2,
+    "wall_m": 0.04
+   },
+   "notes": "hollow; smaller diameter on top; cylindrical M-M variant encloses a vacuum bell",
+   "bbox_cad_zup": [
+    [
+     -2.52,
+     -2.52,
+     -1.6
+    ],
+    [
+     2.52,
+     2.52,
+     1.6
+    ]
+   ],
+   "bbox_godot_size": [
+    5.04,
+    3.2,
+    5.04
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.6,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.6,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage03_interstage_m_xl.step",
+    "glb": "glb/stage03_interstage_m_xl.glb"
+   }
+  }
+ }
+}

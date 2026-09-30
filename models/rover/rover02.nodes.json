@@ -1,0 +1,331 @@
+{
+ "id": "rover02",
+ "name": "RV-3 'LRV' Open Rover",
+ "category": "rover",
+ "short_name": "lrv",
+ "sizes": [
+  "M"
+ ],
+ "primary": "rover02_lrv",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.8476,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.0774,
+    -1.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    0.915,
+    -0.4376,
+    1.15
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_2",
+   "position": [
+    0.915,
+    -0.4376,
+    -1.15
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_3",
+   "position": [
+    -0.915,
+    -0.4376,
+    1.15
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_4",
+   "position": [
+    -0.915,
+    -0.4376,
+    -1.15
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover02_lrv": {
+   "vid": "rover02_lrv",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LRV open rover",
+   "primary": true,
+   "dims": {
+    "length_m": 3.1,
+    "wheelbase_m": 2.3,
+    "track_m": 1.83,
+    "width_m": 2.06,
+    "height_m": 1.71,
+    "wheel_dia_m": 0.82,
+    "wheels": 4
+   },
+   "notes": "4-wheel double-Ackermann",
+   "bbox_cad_zup": [
+    [
+     -1.07,
+     -1.65,
+     -0.86238
+    ],
+    [
+     1.07,
+     1.6260438530219667,
+     0.8623799999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.14,
+    1.725,
+    3.276
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8476,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0774,
+      -1.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.915,
+      -0.4376,
+      1.15
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      0.915,
+      -0.4376,
+      -1.15
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      -0.915,
+      -0.4376,
+      1.15
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -0.915,
+      -0.4376,
+      -1.15
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover02_lrv.step",
+    "glb": "glb/rover02_lrv.glb"
+   }
+  },
+  "rover02_lrv_steer_left": {
+   "vid": "rover02_lrv_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "LRV open rover",
+   "primary": false,
+   "dims": {
+    "length_m": 3.1,
+    "wheelbase_m": 2.3,
+    "track_m": 1.83,
+    "width_m": 2.06,
+    "height_m": 1.71,
+    "wheel_dia_m": 0.82,
+    "wheels": 4
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.1534769320404572,
+     -1.65,
+     -0.86238
+    ],
+    [
+     1.1534769320404572,
+     1.6260438530219667,
+     0.8623799999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.307,
+    1.725,
+    3.276
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8476,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0774,
+      -1.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.915,
+      -0.4376,
+      1.15
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      0.915,
+      -0.4376,
+      -1.15
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      -0.915,
+      -0.4376,
+      1.15
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -0.915,
+      -0.4376,
+      -1.15
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover02_lrv_steer_left.step",
+    "glb": "glb/rover02_lrv_steer_left.glb"
+   }
+  }
+ }
+}

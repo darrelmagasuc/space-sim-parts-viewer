@@ -1,0 +1,366 @@
+{
+ "id": "stage11",
+ "name": "LL-S/M/L Landing Legs",
+ "category": "stage",
+ "short_name": "landing_leg",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "stage11_landing_leg_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.2975,
+    -1.2475,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage11_landing_leg_s": {
+   "vid": "stage11_landing_leg_s",
+   "size": "S",
+   "state": "stowed",
+   "label": "Landing leg (stowed)",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 1.25,
+    "leg_length_m": 1.5,
+    "pad_dia_m": 0.325
+   },
+   "notes": "F9-style: hinge at bottom, folds up along body",
+   "bbox_cad_zup": [
+    [
+     -0.14875000000000008,
+     -0.1625,
+     -0.83375
+    ],
+    [
+     0.14875000000000005,
+     0.1625,
+     0.83375
+    ]
+   ],
+   "bbox_godot_size": [
+    0.298,
+    1.667,
+    0.325
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.1488,
+      -0.6238,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_s.step",
+    "glb": "glb/stage11_landing_leg_s.glb"
+   }
+  },
+  "stage11_landing_leg_s_deployed": {
+   "vid": "stage11_landing_leg_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Landing leg (deployed)",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 1.5,
+    "radial_reach_m": 1.123,
+    "drop_below_hinge_m": 1.279,
+    "splay_deg": 35
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.14875000000000008,
+     -0.1625,
+     -2.0374780664334877
+    ],
+    [
+     0.974114654526569,
+     0.1625,
+     -0.3087500000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.123,
+    1.729,
+    0.325
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.1488,
+      -0.6238,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.8116,
+      -2.0375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_s_deployed.step",
+    "glb": "glb/stage11_landing_leg_s_deployed.glb"
+   }
+  },
+  "stage11_landing_leg_m": {
+   "vid": "stage11_landing_leg_m",
+   "size": "M",
+   "state": "stowed",
+   "label": "Landing leg (stowed)",
+   "primary": true,
+   "dims": {
+    "class_diameter_m": 2.5,
+    "leg_length_m": 3.0,
+    "pad_dia_m": 0.65
+   },
+   "notes": "F9-style: hinge at bottom, folds up along body",
+   "bbox_cad_zup": [
+    [
+     -0.29750000000000015,
+     -0.325,
+     -1.6675
+    ],
+    [
+     0.2975000000000001,
+     0.325,
+     1.6675
+    ]
+   ],
+   "bbox_godot_size": [
+    0.595,
+    3.335,
+    0.65
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2975,
+      -1.2475,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_m.step",
+    "glb": "glb/stage11_landing_leg_m.glb"
+   }
+  },
+  "stage11_landing_leg_m_deployed": {
+   "vid": "stage11_landing_leg_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "label": "Landing leg (deployed)",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 3.0,
+    "radial_reach_m": 2.246,
+    "drop_below_hinge_m": 2.557,
+    "splay_deg": 35
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.29750000000000015,
+     -0.325,
+     -4.0749561328669754
+    ],
+    [
+     1.948229309053138,
+     0.325,
+     -0.6175000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.246,
+    3.457,
+    0.65
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2975,
+      -1.2475,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.6232,
+      -4.075,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_m_deployed.step",
+    "glb": "glb/stage11_landing_leg_m_deployed.glb"
+   }
+  },
+  "stage11_landing_leg_l": {
+   "vid": "stage11_landing_leg_l",
+   "size": "L",
+   "state": "stowed",
+   "label": "Landing leg (stowed)",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 3.75,
+    "leg_length_m": 4.5,
+    "pad_dia_m": 0.975
+   },
+   "notes": "F9-style: hinge at bottom, folds up along body",
+   "bbox_cad_zup": [
+    [
+     -0.44625000000000054,
+     -0.48750000000000004,
+     -2.50125
+    ],
+    [
+     0.44625000000000054,
+     0.48750000000000004,
+     2.5012499999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    0.893,
+    5.002,
+    0.975
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4463,
+      -1.8713,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_l.step",
+    "glb": "glb/stage11_landing_leg_l.glb"
+   }
+  },
+  "stage11_landing_leg_l_deployed": {
+   "vid": "stage11_landing_leg_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "label": "Landing leg (deployed)",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 4.5,
+    "radial_reach_m": 3.369,
+    "drop_below_hinge_m": 3.836,
+    "splay_deg": 35
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.44625000000000054,
+     -0.48750000000000004,
+     -6.112434199300463
+    ],
+    [
+     2.922343963579707,
+     0.48750000000000004,
+     -0.9262500000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    3.369,
+    5.186,
+    0.975
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4463,
+      -1.8713,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      2.4348,
+      -6.1124,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage11_landing_leg_l_deployed.step",
+    "glb": "glb/stage11_landing_leg_l_deployed.glb"
+   }
+  }
+ }
+}

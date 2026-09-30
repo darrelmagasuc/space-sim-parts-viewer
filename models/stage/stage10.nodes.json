@@ -1,0 +1,225 @@
+{
+ "id": "stage10",
+ "name": "GF-1 Titanium Grid Fins",
+ "category": "stage",
+ "short_name": "grid_fin",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "stage10_grid_fin_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.1225,
+    -0.355,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage10_grid_fin_s": {
+   "vid": "stage10_grid_fin_s",
+   "size": "S",
+   "state": "stowed",
+   "label": "Grid fin (stowed)",
+   "primary": false,
+   "dims": {
+    "span_m": 0.5,
+    "height_m": 0.45,
+    "chord_m": 0.08
+   },
+   "notes": "stowed: panel folded up flat against body",
+   "bbox_cad_zup": [
+    [
+     -0.065,
+     -0.25,
+     -0.3025
+    ],
+    [
+     0.065,
+     0.25,
+     0.3025
+    ]
+   ],
+   "bbox_godot_size": [
+    0.13,
+    0.605,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.065,
+      -0.1775,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage10_grid_fin_s.step",
+    "glb": "glb/stage10_grid_fin_s.glb"
+   }
+  },
+  "stage10_grid_fin_s_deployed": {
+   "vid": "stage10_grid_fin_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Grid fin (deployed)",
+   "primary": false,
+   "dims": {
+    "span_m": 0.5,
+    "radial_reach_m": 0.57,
+    "chord_m": 0.08
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.065,
+     -0.25,
+     -0.3025
+    ],
+    [
+     0.505,
+     0.25,
+     -0.10249999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    0.57,
+    0.2,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.065,
+      -0.1775,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage10_grid_fin_s_deployed.step",
+    "glb": "glb/stage10_grid_fin_s_deployed.glb"
+   }
+  },
+  "stage10_grid_fin_m": {
+   "vid": "stage10_grid_fin_m",
+   "size": "M",
+   "state": "stowed",
+   "label": "Grid fin (stowed)",
+   "primary": true,
+   "dims": {
+    "span_m": 1.0,
+    "height_m": 0.9,
+    "chord_m": 0.15
+   },
+   "notes": "stowed: panel folded up flat against body",
+   "bbox_cad_zup": [
+    [
+     -0.1225,
+     -0.5,
+     -0.605
+    ],
+    [
+     0.1225,
+     0.5,
+     0.605
+    ]
+   ],
+   "bbox_godot_size": [
+    0.245,
+    1.21,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.1225,
+      -0.355,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage10_grid_fin_m.step",
+    "glb": "glb/stage10_grid_fin_m.glb"
+   }
+  },
+  "stage10_grid_fin_m_deployed": {
+   "vid": "stage10_grid_fin_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "label": "Grid fin (deployed)",
+   "primary": false,
+   "dims": {
+    "span_m": 1.0,
+    "radial_reach_m": 1.13,
+    "chord_m": 0.15
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.1225,
+     -0.5,
+     -0.605
+    ],
+    [
+     1.0075,
+     0.5,
+     -0.20499999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.13,
+    0.4,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.1225,
+      -0.355,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage10_grid_fin_m_deployed.step",
+    "glb": "glb/stage10_grid_fin_m_deployed.glb"
+   }
+  }
+ }
+}

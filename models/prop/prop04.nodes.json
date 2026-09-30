@@ -1,0 +1,106 @@
+{
+ "id": "prop04",
+ "name": "IT-2 'Hermes' Heavy Ion Cluster",
+ "category": "prop",
+ "short_name": "ion_cluster",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop04_ion_cluster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.84,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.84,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop04_ion_cluster": {
+   "vid": "prop04_ion_cluster",
+   "size": "L",
+   "state": "flight",
+   "label": "Heavy ion/Hall cluster",
+   "primary": true,
+   "dims": {
+    "interface_diameter_m": 3.75,
+    "height_m": 1.68,
+    "thrusters": 7,
+    "thruster_diameter_m": 0.88,
+    "plate_across_corners_m": 3.5
+   },
+   "notes": "7 x ~28 kW nested-channel Hall thrusters (X3/AEPS-class)",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.8400000000000001
+    ],
+    [
+     1.875,
+     1.875,
+     0.8400000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.68,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.84,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.84,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop04_ion_cluster.step",
+    "glb": "glb/prop04_ion_cluster.glb",
+    "preview": "renders/prop04_ion_cluster.png"
+   }
+  }
+ }
+}

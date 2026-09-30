@@ -1,0 +1,172 @@
+{
+ "id": "tank05",
+ "name": "T-MP1/MP2 Monoprop (Hydrazine) Tanks",
+ "category": "tanks",
+ "short_name": "monoprop",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "tank05_monoprop_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5942,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5942,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank05_monoprop_xs": {
+   "vid": "tank05_monoprop_xs",
+   "size": "XS",
+   "state": "flight",
+   "label": "Monoprop diaphragm tank",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 0.625,
+    "sphere_diameter_m": 0.485,
+    "lug_span_m": 0.625,
+    "height_m": 0.594,
+    "volume_m3": 0.06,
+    "n2h4_t": 0.05
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.2981125817936571,
+     -0.26193893952236397,
+     -0.29710666751379244
+    ],
+    [
+     0.298112581793657,
+     0.32462680275566497,
+     0.29710666751379244
+    ]
+   ],
+   "bbox_godot_size": [
+    0.596,
+    0.594,
+    0.587
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2971,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2971,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank05_monoprop_xs.step",
+    "glb": "glb/tank05_monoprop_xs.glb"
+   }
+  },
+  "tank05_monoprop_s": {
+   "vid": "tank05_monoprop_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Monoprop diaphragm tank",
+   "primary": true,
+   "dims": {
+    "class_diameter_m": 1.25,
+    "sphere_diameter_m": 0.97,
+    "lug_span_m": 1.25,
+    "height_m": 1.188,
+    "volume_m3": 0.478,
+    "n2h4_t": 0.4
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.5962251635873143,
+     -0.5238778790447279,
+     -0.5942133350275849
+    ],
+    [
+     0.596225163587314,
+     0.6492536055113299,
+     0.5942133350275849
+    ]
+   ],
+   "bbox_godot_size": [
+    1.192,
+    1.188,
+    1.173
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5942,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5942,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank05_monoprop_s.step",
+    "glb": "glb/tank05_monoprop_s.glb"
+   }
+  }
+ }
+}

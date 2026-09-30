@@ -1,0 +1,129 @@
+{
+ "id": "station01",
+ "name": "HM-2 'BEAM' Expandable Module",
+ "category": "station",
+ "short_name": "beam",
+ "sizes": [
+  "M"
+ ],
+ "primary": "station01_beam",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.09,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station01_beam": {
+   "vid": "station01_beam",
+   "size": "M",
+   "state": "stowed",
+   "label": "Expandable module (packed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 2.18,
+    "state": "packed"
+   },
+   "notes": "packed for launch; only aft (M) interface",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.09
+    ],
+    [
+     1.25,
+     1.25,
+     1.09
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.18,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.09,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station01_beam.step",
+    "glb": "glb/station01_beam.glb",
+    "preview": "renders/station01_beam.png"
+   }
+  },
+  "station01_beam_deployed": {
+   "vid": "station01_beam_deployed",
+   "size": "M",
+   "state": "deployed",
+   "label": "Expandable module deployed",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 4.13,
+    "habitable_volume_m3": 16,
+    "state": "deployed"
+   },
+   "notes": "deploys forward (+Y); reuses packed origin",
+   "bbox_cad_zup": [
+    [
+     -1.8800001000000002,
+     -1.8800001000000002,
+     -1.09
+    ],
+    [
+     1.8800001000000002,
+     1.8800001000000002,
+     3.04
+    ]
+   ],
+   "bbox_godot_size": [
+    3.76,
+    4.13,
+    3.76
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.09,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station01_beam_deployed.step",
+    "glb": "glb/station01_beam_deployed.glb",
+    "preview": "renders/station01_beam_deployed.png"
+   }
+  }
+ }
+}

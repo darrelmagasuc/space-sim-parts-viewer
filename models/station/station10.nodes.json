@@ -1,0 +1,106 @@
+{
+ "id": "station10",
+ "name": "GR-SPK Spoke / Elevator Tube",
+ "category": "station",
+ "short_name": "spoke",
+ "sizes": [
+  "S"
+ ],
+ "primary": "station10_spoke",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    2.175,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    22.925,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station10_spoke": {
+   "vid": "station10_spoke",
+   "size": "S",
+   "state": "flight",
+   "label": "Spoke / elevator tube",
+   "primary": true,
+   "dims": {
+    "hull_diameter_m": 1.5,
+    "interface_diameter_m": 1.25,
+    "length_m": 20.75,
+    "inner_end_radius_m": 2.175,
+    "outer_end_radius_m": 22.925
+   },
+   "notes": "origin on hub axis (ring frame); node_top = hub end ('up' in spin gravity), node_bottom = ring end ('down')",
+   "bbox_cad_zup": [
+    [
+     2.175,
+     -0.8,
+     -0.8
+    ],
+    [
+     22.925,
+     0.8,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    20.75,
+    1.6,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      2.175,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      22.925,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station10_spoke.step",
+    "glb": "glb/station10_spoke.glb",
+    "preview": "renders/station10_spoke.png"
+   }
+  }
+ }
+}

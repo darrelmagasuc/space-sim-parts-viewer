@@ -1,0 +1,105 @@
+{
+ "id": "cmd03",
+ "name": "CM-1 'Gemini' Two-Seat Capsule",
+ "category": "cmd",
+ "short_name": "gemini_capsule",
+ "sizes": [
+  "S"
+ ],
+ "primary": "cmd03_gemini_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.7905,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.7905,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd03_gemini_capsule": {
+   "vid": "cmd03_gemini_capsule",
+   "size": "S",
+   "state": "flight",
+   "label": "Gemini-class two-seat capsule",
+   "primary": true,
+   "dims": {
+    "base_diameter_m": 2.3,
+    "cabin_top_diameter_m": 1.25,
+    "height_m": 3.581,
+    "crew": 2
+   },
+   "notes": "real Gemini base 2.3 m kept; S (1.25 m) is the cabin-top diameter; nose = R&R/RCS section",
+   "bbox_cad_zup": [
+    [
+     -1.15,
+     -1.15,
+     -1.7904981068168928
+    ],
+    [
+     1.15,
+     1.15,
+     1.7904981068168928
+    ]
+   ],
+   "bbox_godot_size": [
+    2.3,
+    3.581,
+    2.3
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.7905,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.7905,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd03_gemini_capsule.step",
+    "glb": "glb/cmd03_gemini_capsule.glb",
+    "preview": "renders/cmd03_gemini_capsule.png"
+   }
+  }
+ }
+}

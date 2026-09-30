@@ -1,0 +1,77 @@
+{
+ "id": "power09",
+ "name": "LT-1 Floodlight",
+ "category": "power",
+ "short_name": "floodlight",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "power09_floodlight",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.145,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power09_floodlight": {
+   "vid": "power09_floodlight",
+   "size": "XS",
+   "state": "flight",
+   "label": "Exterior floodlight",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.29 x 0.30 x 0.22",
+    "beam_deg": 60
+   },
+   "notes": "light points +X (outward); pan/tilt yoke",
+   "bbox_cad_zup": [
+    [
+     -0.145,
+     -0.15,
+     -0.11
+    ],
+    [
+     0.145,
+     0.15,
+     0.11
+    ]
+   ],
+   "bbox_godot_size": [
+    0.29,
+    0.22,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.145,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power09_floodlight.step",
+    "glb": "glb/power09_floodlight.glb",
+    "preview": "renders/power09_floodlight.png"
+   }
+  }
+ }
+}

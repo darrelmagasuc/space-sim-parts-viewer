@@ -1,0 +1,104 @@
+{
+ "id": "prop11",
+ "name": "LE-5 'Raptor-V' Vacuum Methalox",
+ "category": "prop",
+ "short_name": "raptor_vac",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop11_raptor_vac",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop11_raptor_vac": {
+   "vid": "prop11_raptor_vac",
+   "size": "L",
+   "state": "flight",
+   "label": "Vacuum methalox engine",
+   "primary": true,
+   "dims": {
+    "length_m": 4.6,
+    "exit_diameter_m": 2.3,
+    "expansion_ratio": 107
+   },
+   "notes": "Raptor Vacuum: 2.3 m exit; limited gimbal; M-class powerhead under an L stack",
+   "bbox_cad_zup": [
+    [
+     -1.1620000999999995,
+     -1.1620000999999995,
+     -2.3000000499999995
+    ],
+    [
+     1.1620000999999995,
+     1.1620000999999995,
+     2.30000005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.324,
+    4.6,
+    2.324
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop11_raptor_vac.step",
+    "glb": "glb/prop11_raptor_vac.glb",
+    "preview": "renders/prop11_raptor_vac.png"
+   }
+  }
+ }
+}

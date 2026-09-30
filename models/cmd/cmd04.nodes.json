@@ -1,0 +1,105 @@
+{
+ "id": "cmd04",
+ "name": "CM-2 'Soyuz' Three-Seat Descent Module",
+ "category": "cmd",
+ "short_name": "soyuz_descent",
+ "sizes": [
+  "M"
+ ],
+ "primary": "cmd04_soyuz_descent",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.4252,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.4252,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd04_soyuz_descent": {
+   "vid": "cmd04_soyuz_descent",
+   "size": "M",
+   "state": "flight",
+   "label": "Soyuz-class descent module",
+   "primary": true,
+   "dims": {
+    "max_diameter_m": 2.5,
+    "height_m": 2.85,
+    "top_hatch_diameter_m": 0.9,
+    "crew": 3
+   },
+   "notes": "Soyuz DM (2.17 m) scaled 1.15x to the M class; node_top = hatch to orbital module",
+   "bbox_cad_zup": [
+    [
+     -1.2546201904579897,
+     -1.2546201904579897,
+     -1.425227291513248
+    ],
+    [
+     1.2546201904579897,
+     1.2546201904579897,
+     1.425227291513248
+    ]
+   ],
+   "bbox_godot_size": [
+    2.509,
+    2.85,
+    2.509
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.4252,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4252,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd04_soyuz_descent.step",
+    "glb": "glb/cmd04_soyuz_descent.glb",
+    "preview": "renders/cmd04_soyuz_descent.png"
+   }
+  }
+ }
+}

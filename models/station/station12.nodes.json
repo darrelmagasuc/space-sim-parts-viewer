@@ -1,0 +1,418 @@
+{
+ "id": "station12",
+ "name": "GR-CR Counter-Rotating Ring",
+ "category": "station",
+ "short_name": "counter_ring_hub",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station12_counter_ring_hub",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    5.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -5.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    2.175,
+    3.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    1.0875,
+    3.0,
+    -1.8836
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.0875,
+    3.0,
+    -1.8836
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -2.175,
+    3.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_5",
+   "position": [
+    -1.0875,
+    3.0,
+    1.8836
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  },
+  {
+   "name": "node_side_6",
+   "position": [
+    1.0875,
+    3.0,
+    1.8836
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    0.866
+   ]
+  },
+  {
+   "name": "node_side_7",
+   "position": [
+    1.8836,
+    -3.0,
+    -1.0875
+   ],
+   "direction": [
+    0.866,
+    0.0,
+    -0.5
+   ]
+  },
+  {
+   "name": "node_side_8",
+   "position": [
+    0.0,
+    -3.0,
+    -2.175
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_9",
+   "position": [
+    -1.8836,
+    -3.0,
+    -1.0875
+   ],
+   "direction": [
+    -0.866,
+    0.0,
+    -0.5
+   ]
+  },
+  {
+   "name": "node_side_10",
+   "position": [
+    -1.8836,
+    -3.0,
+    1.0875
+   ],
+   "direction": [
+    -0.866,
+    0.0,
+    0.5
+   ]
+  },
+  {
+   "name": "node_side_11",
+   "position": [
+    0.0,
+    -3.0,
+    2.175
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_side_12",
+   "position": [
+    1.8836,
+    -3.0,
+    1.0875
+   ],
+   "direction": [
+    0.866,
+    0.0,
+    0.5
+   ]
+  }
+ ],
+ "variants": {
+  "station12_counter_ring_hub": {
+   "vid": "station12_counter_ring_hub",
+   "size": "L",
+   "state": "flight",
+   "label": "Counter-rotating ring hub (dual rotor)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 10.6,
+    "ring_plane_offset_m": 3.0,
+    "ring_gap_m": 2.25,
+    "spoke_ports": 12
+   },
+   "notes": "ring A (node_side_1..6) at z=+3 m spins +, ring B (node_side_7..12, 30 deg offset) at z=-3 m spins -; build each ring from station10 + station11 exactly as for station09; origin on hub axis mid-way",
+   "bbox_cad_zup": [
+    [
+     -2.325,
+     -2.325,
+     -5.3
+    ],
+    [
+     2.325,
+     2.325,
+     5.3
+    ]
+   ],
+   "bbox_godot_size": [
+    4.65,
+    10.6,
+    4.65
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.175,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      1.0875,
+      3.0,
+      -1.8836
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.0875,
+      3.0,
+      -1.8836
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -2.175,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_5",
+     "position": [
+      -1.0875,
+      3.0,
+      1.8836
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_side_6",
+     "position": [
+      1.0875,
+      3.0,
+      1.8836
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_side_7",
+     "position": [
+      1.8836,
+      -3.0,
+      -1.0875
+     ],
+     "direction": [
+      0.866,
+      0.0,
+      -0.5
+     ]
+    },
+    {
+     "name": "node_side_8",
+     "position": [
+      0.0,
+      -3.0,
+      -2.175
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_9",
+     "position": [
+      -1.8836,
+      -3.0,
+      -1.0875
+     ],
+     "direction": [
+      -0.866,
+      0.0,
+      -0.5
+     ]
+    },
+    {
+     "name": "node_side_10",
+     "position": [
+      -1.8836,
+      -3.0,
+      1.0875
+     ],
+     "direction": [
+      -0.866,
+      0.0,
+      0.5
+     ]
+    },
+    {
+     "name": "node_side_11",
+     "position": [
+      0.0,
+      -3.0,
+      2.175
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_side_12",
+     "position": [
+      1.8836,
+      -3.0,
+      1.0875
+     ],
+     "direction": [
+      0.866,
+      0.0,
+      0.5
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station12_counter_ring_hub.step",
+    "glb": "glb/station12_counter_ring_hub.glb",
+    "preview": "renders/station12_counter_ring_hub.png"
+   }
+  }
+ }
+}

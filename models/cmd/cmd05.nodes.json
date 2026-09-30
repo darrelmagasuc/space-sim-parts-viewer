@@ -1,0 +1,106 @@
+{
+ "id": "cmd05",
+ "name": "CM-3 'Dragon' Crew Capsule",
+ "category": "cmd",
+ "short_name": "dragon_capsule",
+ "sizes": [
+  "L"
+ ],
+ "primary": "cmd05_dragon_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.6943,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.2943,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd05_dragon_capsule": {
+   "vid": "cmd05_dragon_capsule",
+   "size": "L",
+   "state": "flight",
+   "label": "Dragon-class crew capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 4.589,
+    "sidewall_deg": 15.1,
+    "crew": 4,
+    "abort_engines": 8
+   },
+   "notes": "nosecone is a separate mesh (hinge it open in Godot); node_top = docking port face under the nosecone",
+   "bbox_cad_zup": [
+    [
+     -1.885,
+     -1.885,
+     -2.2943191362817705
+    ],
+    [
+     1.885,
+     1.885,
+     2.29431913628177
+    ]
+   ],
+   "bbox_godot_size": [
+    3.77,
+    4.589,
+    3.77
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.6943,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.2943,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd05_dragon_capsule.step",
+    "glb": "glb/cmd05_dragon_capsule.glb",
+    "preview": "renders/cmd05_dragon_capsule.png"
+   }
+  }
+ }
+}

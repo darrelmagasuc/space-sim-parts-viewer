@@ -1,0 +1,133 @@
+{
+ "id": "station11",
+ "name": "GR-SEG Ring Segment",
+ "category": "station",
+ "short_name": "ring_segment",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station11_ring_segment",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    24.1481,
+    0.0,
+    -6.4705
+   ],
+   "direction": [
+    -0.2588,
+    0.0,
+    -0.9659
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    24.1481,
+    0.0,
+    6.4705
+   ],
+   "direction": [
+    -0.2588,
+    0.0,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    22.925,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station11_ring_segment": {
+   "vid": "station11_ring_segment",
+   "size": "L",
+   "state": "flight",
+   "label": "Gravity ring segment",
+   "primary": true,
+   "dims": {
+    "ring_radius_m": 25.0,
+    "tube_diameter_m": 3.75,
+    "arc_deg": 30.0,
+    "arc_length_m": 13.09,
+    "segments_per_ring": 12,
+    "floor_radius_m": 26.52
+   },
+   "notes": "origin on hub axis in the ring plane: place segment k by rotating 30k deg about the hub axis; node_top/bottom = segment ends (tangential), node_side_1 = inward spoke port (cap if unused)",
+   "bbox_cad_zup": [
+    [
+     22.27907918335736,
+     -6.971290979836396,
+     -1.935
+    ],
+    [
+     26.904999999999998,
+     6.971290979836396,
+     1.935
+    ]
+   ],
+   "bbox_godot_size": [
+    4.626,
+    3.87,
+    13.943
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      24.1481,
+      0.0,
+      -6.4705
+     ],
+     "direction": [
+      -0.2588,
+      0.0,
+      -0.9659
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      24.1481,
+      0.0,
+      6.4705
+     ],
+     "direction": [
+      -0.2588,
+      0.0,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      22.925,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station11_ring_segment.step",
+    "glb": "glb/station11_ring_segment.glb",
+    "preview": "renders/station11_ring_segment.png"
+   }
+  }
+ }
+}

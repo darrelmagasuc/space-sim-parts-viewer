@@ -1,0 +1,105 @@
+{
+ "id": "cmd06",
+ "name": "CM-4 'Orion' Deep Space Capsule",
+ "category": "cmd",
+ "short_name": "orion_capsule",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "cmd06_orion_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.716,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.716,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd06_orion_capsule": {
+   "vid": "cmd06_orion_capsule",
+   "size": "XL",
+   "state": "flight",
+   "label": "Orion-class deep-space capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 3.432,
+    "sidewall_deg": 32.5,
+    "crew": 4
+   },
+   "notes": "Orion CM 5.02 m -> 5.0 m; heat-shield sphere R = 1.5 D",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.715972416333317
+    ],
+    [
+     2.500000000000004,
+     2.5,
+     1.7159724163333172
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    3.432,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.716,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.716,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd06_orion_capsule.step",
+    "glb": "glb/cmd06_orion_capsule.glb",
+    "preview": "renders/cmd06_orion_capsule.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "id": "station09",
+ "name": "GR-HUB Spin Hub & Bearing",
+ "category": "station",
+ "short_name": "spin_hub",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station09_spin_hub",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    2.175,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    1.0875,
+    0.0,
+    -1.8836
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.0875,
+    0.0,
+    -1.8836
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -2.175,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_5",
+   "position": [
+    -1.0875,
+    0.0,
+    1.8836
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  },
+  {
+   "name": "node_side_6",
+   "position": [
+    1.0875,
+    0.0,
+    1.8836
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    0.866
+   ]
+  }
+ ],
+ "variants": {
+  "station09_spin_hub": {
+   "vid": "station09_spin_hub",
+   "size": "L",
+   "state": "flight",
+   "label": "Spin hub & bearing",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 4.6,
+    "rotor_length_m": 2.3,
+    "spoke_ports": 6,
+    "port_face_radius_m": 2.175
+   },
+   "notes": "origin = ring plane on the hub axis; rotor_drum + spoke_ports spin, stators are despun (split meshes for Godot)",
+   "bbox_cad_zup": [
+    [
+     -2.325,
+     -2.325,
+     -2.3
+    ],
+    [
+     2.325,
+     2.325,
+     2.3000000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    4.65,
+    4.6,
+    4.65
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.175,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      1.0875,
+      0.0,
+      -1.8836
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.0875,
+      0.0,
+      -1.8836
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -2.175,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_5",
+     "position": [
+      -1.0875,
+      0.0,
+      1.8836
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_side_6",
+     "position": [
+      1.0875,
+      0.0,
+      1.8836
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      0.866
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station09_spin_hub.step",
+    "glb": "glb/station09_spin_hub.glb",
+    "preview": "renders/station09_spin_hub.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "id": "rover09",
+ "name": "ISRU-W Water Extractor",
+ "category": "rover",
+ "short_name": "water_extractor",
+ "sizes": [
+  "M"
+ ],
+ "primary": "rover09_water_extractor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0975,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    -0.35,
+    0.9025,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    1.25,
+    -0.5975,
+    0.45
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover09_water_extractor": {
+   "vid": "rover09_water_extractor",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Water extractor skid",
+   "primary": true,
+   "dims": {
+    "footprint_m": "2.5 x 1.8",
+    "height_m": 2.07,
+    "kiln_dia_m": 0.8,
+    "hopper_mouth_m": 0.95
+   },
+   "notes": "hopper -> rotary kiln -> condenser -> tank",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -0.9,
+     -1.0975
+    ],
+    [
+     1.25,
+     0.9,
+     1.0975
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.195,
+    1.8
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0975,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      -0.35,
+      0.9025,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      1.25,
+      -0.5975,
+      0.45
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover09_water_extractor.step",
+    "glb": "glb/rover09_water_extractor.glb"
+   }
+  }
+ }
+}

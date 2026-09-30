@@ -1,0 +1,157 @@
+{
+ "id": "rover12",
+ "name": "SH-3 Greenhouse Module",
+ "category": "rover",
+ "short_name": "greenhouse",
+ "sizes": [
+  "L"
+ ],
+ "primary": "rover12_greenhouse",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.125,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.115,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    3.25,
+    0.2,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -3.25,
+    0.2,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover12_greenhouse": {
+   "vid": "rover12_greenhouse",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Greenhouse module",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 6.5,
+    "height_m": 4.25,
+    "grow_area_m2": 15.0
+   },
+   "notes": "glazed L cylinder, 4 grow trays",
+   "bbox_cad_zup": [
+    [
+     -3.25,
+     -1.925,
+     -2.125
+    ],
+    [
+     3.25,
+     1.925,
+     2.125
+    ]
+   ],
+   "bbox_godot_size": [
+    6.5,
+    4.25,
+    3.85
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.125,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.115,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      3.25,
+      0.2,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -3.25,
+      0.2,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover12_greenhouse.step",
+    "glb": "glb/rover12_greenhouse.glb"
+   }
+  }
+ }
+}

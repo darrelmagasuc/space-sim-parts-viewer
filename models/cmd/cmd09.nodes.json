@@ -1,0 +1,209 @@
+{
+ "id": "cmd09",
+ "name": "CM-7 'Lander' Crew Cabin",
+ "category": "cmd",
+ "short_name": "lander_cabin",
+ "sizes": [
+  "M"
+ ],
+ "primary": "cmd09_lander_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.24,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.24,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.1548,
+    -0.74,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    -0.74,
+    -1.1548
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.1548,
+    -0.74,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    -0.74,
+    1.1548
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd09_lander_cabin": {
+   "vid": "cmd09_lander_cabin",
+   "size": "M",
+   "state": "flight",
+   "label": "Lander crew cabin",
+   "primary": true,
+   "dims": {
+    "across_corners_m": 2.5,
+    "across_flats_m": 2.31,
+    "height_m": 2.48,
+    "crew": 2
+   },
+   "notes": "no heat shield; forward (-Y) faceted windows + low landing window; top docking tunnel",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.24
+    ],
+    [
+     1.25,
+     1.25,
+     1.24
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.48,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.24,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.24,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.1548,
+      -0.74,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.74,
+      -1.1548
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.1548,
+      -0.74,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.74,
+      1.1548
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd09_lander_cabin.step",
+    "glb": "glb/cmd09_lander_cabin.glb",
+    "preview": "renders/cmd09_lander_cabin.png"
+   }
+  }
+ }
+}

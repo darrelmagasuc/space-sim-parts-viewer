@@ -1,0 +1,300 @@
+{
+ "id": "stage04",
+ "name": "FR-S/M/L/XL Payload Fairing",
+ "category": "stage",
+ "short_name": "fairing",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "stage04_fairing_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.5085,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_payload",
+   "position": [
+    0.0,
+    -3.3835,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage04_fairing_s": {
+   "vid": "stage04_fairing_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Payload fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 3.705,
+    "cyl_len_m": 1.8,
+    "ogive_len_m": 1.9,
+    "usable_dia_m": 1.18
+   },
+   "notes": "two clamshell halves split on CAD XZ plane (Godot XY); tangent ogive nose",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.6250001004854734,
+     -1.8527500499999998
+    ],
+    [
+     0.625,
+     0.6250001004854734,
+     1.85275005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    3.706,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.8528,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -1.7903,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage04_fairing_s.step",
+    "glb": "glb/stage04_fairing_s.glb"
+   }
+  },
+  "stage04_fairing_m": {
+   "vid": "stage04_fairing_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Payload fairing",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 7.017,
+    "cyl_len_m": 3.4,
+    "ogive_len_m": 3.6,
+    "usable_dia_m": 2.4
+   },
+   "notes": "two clamshell halves split on CAD XZ plane (Godot XY); tangent ogive nose",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.2500001011405997,
+     -3.5085000500000048
+    ],
+    [
+     1.25,
+     1.2500001011405997,
+     3.5085000500000043
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    7.017,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.5085,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -3.3835,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage04_fairing_m.step",
+    "glb": "glb/stage04_fairing_m.glb"
+   }
+  },
+  "stage04_fairing_l": {
+   "vid": "stage04_fairing_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Payload fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 10.529,
+    "cyl_len_m": 5.2,
+    "ogive_len_m": 5.3,
+    "usable_dia_m": 3.6
+   },
+   "notes": "two clamshell halves split on CAD XZ plane (Godot XY); tangent ogive nose",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.8750001018065412,
+     -5.264250050000015
+    ],
+    [
+     1.875,
+     1.8750001018065412,
+     5.264250050000016
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    10.529,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.2643,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -5.0768,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage04_fairing_l.step",
+    "glb": "glb/stage04_fairing_l.glb"
+   }
+  },
+  "stage04_fairing_xl": {
+   "vid": "stage04_fairing_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Payload fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 13.446,
+    "cyl_len_m": 6.6,
+    "ogive_len_m": 6.8,
+    "usable_dia_m": 4.8
+   },
+   "notes": "two clamshell halves split on CAD XZ plane (Godot XY); tangent ogive nose",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5000001026881224,
+     -6.723000050000019
+    ],
+    [
+     2.5,
+     2.5000001026881224,
+     6.72300005000002
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    13.446,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.723,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -6.473,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage04_fairing_xl.step",
+    "glb": "glb/stage04_fairing_xl.glb"
+   }
+  }
+ }
+}

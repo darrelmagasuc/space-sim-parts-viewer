@@ -1,0 +1,105 @@
+{
+ "id": "cmd07",
+ "name": "CM-5 'MAV' Ascent Cabin",
+ "category": "cmd",
+ "short_name": "mav_cabin",
+ "sizes": [
+  "M"
+ ],
+ "primary": "cmd07_mav_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.805,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.805,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd07_mav_cabin": {
+   "vid": "cmd07_mav_cabin",
+   "size": "M",
+   "state": "flight",
+   "label": "MAV ascent cabin",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "hull_diameter_m": 2.4,
+    "height_m": 3.61,
+    "crew": 6
+   },
+   "notes": "no heat shield; concept pill laid along the stack axis, cockpit windows below the docking nose",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.8050000500000003
+    ],
+    [
+     1.25,
+     1.25,
+     1.80500005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.61,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.805,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.805,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd07_mav_cabin.step",
+    "glb": "glb/cmd07_mav_cabin.glb",
+    "preview": "renders/cmd07_mav_cabin.png"
+   }
+  }
+ }
+}

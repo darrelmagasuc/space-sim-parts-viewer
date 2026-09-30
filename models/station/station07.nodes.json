@@ -1,0 +1,326 @@
+{
+ "id": "station07",
+ "name": "TR-1 Integrated Truss",
+ "category": "station",
+ "short_name": "truss",
+ "sizes": [
+  "L",
+  "XL"
+ ],
+ "primary": "station07_truss_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    5.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -5.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "station07_truss_l": {
+   "vid": "station07_truss_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Integrated truss segment",
+   "primary": true,
+   "dims": {
+    "class_diameter_m": 3.75,
+    "section_m": 3.0,
+    "length_m": 10.0,
+    "service_bays": 4
+   },
+   "notes": "square section 0.8 D fits inside the class circle; service bay boxes are the 4 internal bays",
+   "bbox_cad_zup": [
+    [
+     -1.5750001,
+     -1.5750001,
+     -5.0000001
+    ],
+    [
+     1.5750001,
+     1.5750001,
+     5.0000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.15,
+    10.0,
+    3.15
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station07_truss_l.step",
+    "glb": "glb/station07_truss_l.glb",
+    "preview": "renders/station07_truss_l.png"
+   }
+  },
+  "station07_truss_xl": {
+   "vid": "station07_truss_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Integrated truss segment",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 5.0,
+    "section_m": 4.0,
+    "length_m": 10.0,
+    "service_bays": 4
+   },
+   "notes": "square section 0.8 D fits inside the class circle; service bay boxes are the 4 internal bays",
+   "bbox_cad_zup": [
+    [
+     -2.1000001,
+     -2.1000001,
+     -5.0000001
+    ],
+    [
+     2.1000001,
+     2.1000001,
+     5.0000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.2,
+    10.0,
+    4.2
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station07_truss_xl.step",
+    "glb": "glb/station07_truss_xl.glb",
+    "preview": "renders/station07_truss_xl.png"
+   }
+  }
+ }
+}

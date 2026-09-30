@@ -1,0 +1,176 @@
+{
+ "id": "tank03",
+ "name": "T-HG1/HG2 Hypergolic Tanks",
+ "category": "tanks",
+ "short_name": "hypergol",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "tank03_hypergol_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.1431,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.1431,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank03_hypergol_xs": {
+   "vid": "tank03_hypergol_xs",
+   "size": "XS",
+   "state": "flight",
+   "label": "Hypergolic tank pack",
+   "primary": false,
+   "dims": {
+    "stack_diameter_m": 0.625,
+    "frame_w_m": 1.18,
+    "frame_d_m": 0.62,
+    "height_m": 1.457,
+    "tank_radius_m": 0.25,
+    "tank_cyl_len_m": 0.749,
+    "prop_volume_m3_total": 0.425,
+    "wet_t": 0.5
+   },
+   "notes": "frame envelope exceeds class diameter; stack rings at class diameter",
+   "bbox_cad_zup": [
+    [
+     -0.594,
+     -0.314,
+     -0.7284669646718105
+    ],
+    [
+     0.594,
+     0.314,
+     0.7284669646718105
+    ]
+   ],
+   "bbox_godot_size": [
+    1.188,
+    1.457,
+    0.628
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7285,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7285,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank03_hypergol_xs.step",
+    "glb": "glb/tank03_hypergol_xs.glb"
+   }
+  },
+  "tank03_hypergol_s": {
+   "vid": "tank03_hypergol_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Hypergolic tank pack",
+   "primary": true,
+   "dims": {
+    "stack_diameter_m": 1.25,
+    "frame_w_m": 2.076,
+    "frame_d_m": 1.084,
+    "height_m": 2.286,
+    "tank_radius_m": 0.45,
+    "tank_cyl_len_m": 1.07,
+    "prop_volume_m3_total": 2.125,
+    "wet_t": 2.5
+   },
+   "notes": "frame envelope exceeds class diameter; stack rings at class diameter",
+   "bbox_cad_zup": [
+    [
+     -1.044,
+     -0.625,
+     -1.1430827644112302
+    ],
+    [
+     1.044,
+     0.625,
+     1.1430827644112302
+    ]
+   ],
+   "bbox_godot_size": [
+    2.088,
+    2.286,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1431,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1431,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank03_hypergol_s.step",
+    "glb": "glb/tank03_hypergol_s.glb"
+   }
+  }
+ }
+}

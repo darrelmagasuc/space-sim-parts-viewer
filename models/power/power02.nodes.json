@@ -1,0 +1,129 @@
+{
+ "id": "power02",
+ "name": "SA-X Ion-Tug Solar Array",
+ "category": "power",
+ "short_name": "iontug_array",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "power02_iontug_array",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -2.1,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power02_iontug_array": {
+   "vid": "power02_iontug_array",
+   "size": "XL",
+   "state": "stowed",
+   "label": "Ion-tug array (stowed)",
+   "primary": true,
+   "dims": {
+    "envelope_m": "4.2 x 2.4 x 2.4",
+    "folds": "8 x 8 panels 2.4 m",
+    "state": "stowed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -2.1,
+     -1.2,
+     -1.2
+    ],
+    [
+     2.1,
+     1.2,
+     1.2
+    ]
+   ],
+   "bbox_godot_size": [
+    4.2,
+    2.4,
+    2.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.1,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power02_iontug_array.step",
+    "glb": "glb/power02_iontug_array.glb",
+    "preview": "renders/power02_iontug_array.png"
+   }
+  },
+  "power02_iontug_array_deployed": {
+   "vid": "power02_iontug_array_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "label": "Ion-tug array deployed",
+   "primary": false,
+   "dims": {
+    "array_m": "19 x 19",
+    "area_m2": 361,
+    "span_m": 23.2,
+    "state": "deployed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -2.1,
+     -9.65,
+     -0.8
+    ],
+    [
+     21.2,
+     9.65,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    23.3,
+    1.6,
+    19.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.1,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power02_iontug_array_deployed.step",
+    "glb": "glb/power02_iontug_array_deployed.glb",
+    "preview": "renders/power02_iontug_array_deployed.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "jet06",
+ "name": "IN-1 Pitot Intake",
+ "category": "jet",
+ "short_name": "pitot_intake",
+ "sizes": [
+  "S"
+ ],
+ "primary": "jet06_pitot_intake",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.72,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet06_pitot_intake": {
+   "vid": "jet06_pitot_intake",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Pitot intake",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.44,
+    "capture_dia_m": 0.94
+   },
+   "notes": "inline, mates engine node_top",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.72
+    ],
+    [
+     0.625,
+     0.625,
+     0.72
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.44,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.72,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet06_pitot_intake.step",
+    "glb": "glb/jet06_pitot_intake.glb"
+   }
+  }
+ }
+}

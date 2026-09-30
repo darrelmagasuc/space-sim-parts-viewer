@@ -1,0 +1,156 @@
+{
+ "id": "power04",
+ "name": "FC-1 Fuel Cell Stack",
+ "category": "power",
+ "short_name": "fuel_cell",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "power04_fuel_cell",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.12,
+    0.3,
+    -0.08
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.0,
+    0.3,
+    -0.08
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_3",
+   "position": [
+    0.25,
+    -0.1,
+    0.1
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power04_fuel_cell": {
+   "vid": "power04_fuel_cell",
+   "size": "slot",
+   "state": "flight",
+   "label": "Fuel cell stack (slot item)",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "slots": 1,
+    "power_kw": 5
+   },
+   "notes": "node_port_1 H2 in, node_port_2 O2 in, node_port_3 water out",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.3
+    ],
+    [
+     0.25,
+     0.25,
+     0.30000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.6,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.12,
+      0.3,
+      -0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.0,
+      0.3,
+      -0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_3",
+     "position": [
+      0.25,
+      -0.1,
+      0.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power04_fuel_cell.step",
+    "glb": "glb/power04_fuel_cell.glb",
+    "preview": "renders/power04_fuel_cell.png"
+   }
+  }
+ }
+}

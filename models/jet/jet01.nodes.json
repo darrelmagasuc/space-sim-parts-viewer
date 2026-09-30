@@ -1,0 +1,169 @@
+{
+ "id": "jet01",
+ "name": "JT-2 High-Bypass Turbofan",
+ "category": "jet",
+ "short_name": "turbofan",
+ "sizes": [
+  "M"
+ ],
+ "primary": "jet01_turbofan",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.75,
+    0.635,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.665,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet01_turbofan": {
+   "vid": "jet01_turbofan",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "High-bypass turbofan nacelle",
+   "primary": true,
+   "dims": {
+    "nacelle_dia_m": 2.24,
+    "fan_dia_m": 1.9,
+    "length_m": 4.63,
+    "pylon_m": 0.65
+   },
+   "notes": "pylon-mounted; reverser sleeve translates aft",
+   "bbox_cad_zup": [
+    [
+     -1.75,
+     -1.12,
+     -2.2649999999999997
+    ],
+    [
+     1.12,
+     1.12,
+     2.265
+    ]
+   ],
+   "bbox_godot_size": [
+    2.87,
+    4.53,
+    2.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.75,
+      0.635,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.665,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet01_turbofan.step",
+    "glb": "glb/jet01_turbofan.glb"
+   }
+  },
+  "jet01_turbofan_reverser": {
+   "vid": "jet01_turbofan_reverser",
+   "size": "M",
+   "state": "reverser",
+   "default_state": false,
+   "label": "High-bypass turbofan nacelle",
+   "primary": false,
+   "dims": {
+    "nacelle_dia_m": 2.24,
+    "fan_dia_m": 1.9,
+    "length_m": 4.63,
+    "pylon_m": 0.65
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.75,
+     -1.12,
+     -2.2649999999999997
+    ],
+    [
+     1.12,
+     1.12,
+     2.265
+    ]
+   ],
+   "bbox_godot_size": [
+    2.87,
+    4.53,
+    2.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.75,
+      0.635,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.665,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet01_turbofan_reverser.step",
+    "glb": "glb/jet01_turbofan_reverser.glb"
+   }
+  }
+ }
+}

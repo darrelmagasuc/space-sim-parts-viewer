@@ -1,0 +1,81 @@
+{
+ "id": "prop06",
+ "name": "SRB-L 'Atlas' Large Solid",
+ "category": "prop",
+ "short_name": "srb_large",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop06_srb_large",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -2.175,
+    -1.75,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop06_srb_large": {
+   "vid": "prop06_srb_large",
+   "size": "L",
+   "state": "flight",
+   "label": "Large segmented strap-on solid",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 28.5,
+    "casing_m": 17.0,
+    "segments": 2,
+    "aft_skirt_diameter_m": 4.9,
+    "nozzle_exit_diameter_m": 2.7
+   },
+   "notes": "2-segment Shuttle-SRB derivative (Shuttle SRB = 4 segments, 45.5 m); length set by the 250 t wet mass",
+   "bbox_cad_zup": [
+    [
+     -2.45,
+     -2.45,
+     -14.250000099999996
+    ],
+    [
+     2.45,
+     2.45,
+     14.250000100000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.9,
+    28.5,
+    4.9
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.175,
+      -1.75,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop06_srb_large.step",
+    "glb": "glb/prop06_srb_large.glb",
+    "preview": "renders/prop06_srb_large.png"
+   }
+  }
+ }
+}

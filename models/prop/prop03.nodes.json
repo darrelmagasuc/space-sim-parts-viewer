@@ -1,0 +1,104 @@
+{
+ "id": "prop03",
+ "name": "IT-1 'NEXT' Gridded Ion Engine",
+ "category": "prop",
+ "short_name": "ion_engine",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop03_ion_engine",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.23,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.23,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop03_ion_engine": {
+   "vid": "prop03_ion_engine",
+   "size": "S",
+   "state": "flight",
+   "label": "Gridded ion engine",
+   "primary": true,
+   "dims": {
+    "outer_diameter_m": 0.58,
+    "length_m": 0.46,
+    "beam_diameter_m": 0.36
+   },
+   "notes": "real NEXT scale; cluster up to 8 on a thruster plate",
+   "bbox_cad_zup": [
+    [
+     -0.29,
+     -0.29,
+     -0.23
+    ],
+    [
+     0.32999999999999996,
+     0.29,
+     0.23
+    ]
+   ],
+   "bbox_godot_size": [
+    0.62,
+    0.46,
+    0.58
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.23,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.23,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop03_ion_engine.step",
+    "glb": "glb/prop03_ion_engine.glb",
+    "preview": "renders/prop03_ion_engine.png"
+   }
+  }
+ }
+}

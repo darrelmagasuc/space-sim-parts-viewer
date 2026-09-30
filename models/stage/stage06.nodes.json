@@ -1,0 +1,290 @@
+{
+ "id": "stage06",
+ "name": "HIAD Inflatable Decelerator",
+ "category": "stage",
+ "short_name": "hiad",
+ "sizes": [
+  "L",
+  "XL"
+ ],
+ "primary": "stage06_hiad_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.9375,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9375,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage06_hiad_l": {
+   "vid": "stage06_hiad_l",
+   "size": "L",
+   "state": "stowed",
+   "label": "HIAD inflatable decelerator (stowed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 1.875,
+    "deployed_diameter_m": 11.25
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.9375
+    ],
+    [
+     1.875,
+     1.875,
+     0.9375000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.875,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage06_hiad_l.step",
+    "glb": "glb/stage06_hiad_l.glb"
+   }
+  },
+  "stage06_hiad_l_deployed": {
+   "vid": "stage06_hiad_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "label": "HIAD inflatable decelerator (deployed)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 11.963,
+    "cone_half_angle_deg": 70,
+    "tori": 8
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -5.8594445882398585,
+     -5.859444488239858,
+     -1.0875
+    ],
+    [
+     5.859444488239858,
+     5.8594445882398585,
+     1.4935194291040335
+    ]
+   ],
+   "bbox_godot_size": [
+    11.719,
+    2.581,
+    11.719
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0875,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage06_hiad_l_deployed.step",
+    "glb": "glb/stage06_hiad_l_deployed.glb"
+   }
+  },
+  "stage06_hiad_xl": {
+   "vid": "stage06_hiad_xl",
+   "size": "XL",
+   "state": "stowed",
+   "label": "HIAD inflatable decelerator (stowed)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 2.5,
+    "deployed_diameter_m": 15.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.25
+    ],
+    [
+     2.5,
+     2.5,
+     1.25
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    2.5,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage06_hiad_xl.step",
+    "glb": "glb/stage06_hiad_xl.glb"
+   }
+  },
+  "stage06_hiad_xl_deployed": {
+   "vid": "stage06_hiad_xl_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "label": "HIAD inflatable decelerator (deployed)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 15.95,
+    "cone_half_angle_deg": 70,
+    "tori": 8
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -7.812592650986478,
+     -7.812592750986478,
+     -1.4500000000000002
+    ],
+    [
+     7.812592650986478,
+     7.812592650986478,
+     1.9913592054720444
+    ]
+   ],
+   "bbox_godot_size": [
+    15.625,
+    3.441,
+    15.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.45,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage06_hiad_xl_deployed.step",
+    "glb": "glb/stage06_hiad_xl_deployed.glb"
+   }
+  }
+ }
+}

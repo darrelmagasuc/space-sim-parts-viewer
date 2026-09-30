@@ -1,0 +1,77 @@
+{
+ "id": "power10",
+ "name": "COM-1 Omni Antenna",
+ "category": "power",
+ "short_name": "omni_antenna",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "power10_omni_antenna",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.2375,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power10_omni_antenna": {
+   "vid": "power10_omni_antenna",
+   "size": "XS",
+   "state": "flight",
+   "label": "Omni antenna",
+   "primary": true,
+   "dims": {
+    "length_m": 0.475,
+    "radome_diameter_m": 0.12
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.23750000000000002,
+     -0.1,
+     -0.1
+    ],
+    [
+     0.23750000000000002,
+     0.1,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.475,
+    0.2,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2375,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power10_omni_antenna.step",
+    "glb": "glb/power10_omni_antenna.glb",
+    "preview": "renders/power10_omni_antenna.png"
+   }
+  }
+ }
+}

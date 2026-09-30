@@ -1,0 +1,128 @@
+{
+ "id": "stage09",
+ "name": "PC-SS Supersonic Mars Chute",
+ "category": "stage",
+ "short_name": "dgb_chute",
+ "sizes": [
+  "M"
+ ],
+ "primary": "stage09_dgb_chute",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.4,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage09_dgb_chute": {
+   "vid": "stage09_dgb_chute",
+   "size": "M",
+   "state": "stowed",
+   "label": "Supersonic DGB chute (packed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.91,
+    "height_m": 0.8,
+    "nominal_D0_m": 16.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.45499999999999996,
+     -0.45499999999999996,
+     -0.39999999999999997
+    ],
+    [
+     0.45499999999999996,
+     0.45499999999999996,
+     0.39999999999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    0.91,
+    0.8,
+    0.91
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage09_dgb_chute.step",
+    "glb": "glb/stage09_dgb_chute.glb"
+   }
+  },
+  "stage09_dgb_chute_deployed": {
+   "vid": "stage09_dgb_chute_deployed",
+   "size": "M",
+   "state": "deployed",
+   "label": "Supersonic DGB chute (deployed)",
+   "primary": false,
+   "dims": {
+    "nominal_D0_m": 16.0,
+    "disk_dia_m": 11.68,
+    "gap_m": 0.67,
+    "band_h_m": 1.94,
+    "overall_h_m": 36.29
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -5.88,
+     -5.88,
+     -0.39999999999999997
+    ],
+    [
+     5.88,
+     5.88,
+     35.88683644901915
+    ]
+   ],
+   "bbox_godot_size": [
+    11.76,
+    36.287,
+    11.76
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage09_dgb_chute_deployed.step",
+    "glb": "glb/stage09_dgb_chute_deployed.glb"
+   }
+  }
+ }
+}

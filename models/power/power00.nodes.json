@@ -1,0 +1,129 @@
+{
+ "id": "power00",
+ "name": "SA-S Roll-Out Solar Array",
+ "category": "power",
+ "short_name": "rosa_array",
+ "sizes": [
+  "S"
+ ],
+ "primary": "power00_rosa_array",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.355,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power00_rosa_array": {
+   "vid": "power00_rosa_array",
+   "size": "S",
+   "state": "stowed",
+   "label": "Roll-out array (stowed)",
+   "primary": true,
+   "dims": {
+    "canister_length_m": 1.7,
+    "envelope_x_m": 0.71,
+    "state": "stowed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.35500000000000004,
+     -0.85,
+     -0.15
+    ],
+    [
+     0.355,
+     0.85,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.71,
+    0.3,
+    1.7
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.355,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power00_rosa_array.step",
+    "glb": "glb/power00_rosa_array.glb",
+    "preview": "renders/power00_rosa_array.png"
+   }
+  },
+  "power00_rosa_array_deployed": {
+   "vid": "power00_rosa_array_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Roll-out array deployed",
+   "primary": false,
+   "dims": {
+    "blanket_m": "1.5 x 3.4",
+    "area_m2": 5.1,
+    "span_m": 4.12,
+    "state": "deployed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.35500000000000004,
+     -0.85,
+     -0.15
+    ],
+    [
+     3.7649999999999992,
+     0.85,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    4.12,
+    0.3,
+    1.7
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.355,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power00_rosa_array_deployed.step",
+    "glb": "glb/power00_rosa_array_deployed.glb",
+    "preview": "renders/power00_rosa_array_deployed.png"
+   }
+  }
+ }
+}

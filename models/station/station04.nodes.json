@@ -1,0 +1,106 @@
+{
+ "id": "station04",
+ "name": "AL-1 EVA Airlock",
+ "category": "station",
+ "short_name": "airlock",
+ "sizes": [
+  "M"
+ ],
+ "primary": "station04_airlock",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station04_airlock": {
+   "vid": "station04_airlock",
+   "size": "M",
+   "state": "flight",
+   "label": "EVA airlock",
+   "primary": true,
+   "dims": {
+    "equipment_lock_diameter_m": 2.5,
+    "crew_lock_diameter_m": 2.0,
+    "length_m": 5.5,
+    "eva_hatch_m": "0.9 x 1.0",
+    "suits": 2
+   },
+   "notes": "EVA hatch on crew lock +X side; node_top on the crew-lock dome (optional light/antenna mount)",
+   "bbox_cad_zup": [
+    [
+     -1.6150104602052655,
+     -1.6150104602052655,
+     -2.7500000716158546
+    ],
+    [
+     1.6150104602052653,
+     1.6150104602052653,
+     2.7500000716158537
+    ]
+   ],
+   "bbox_godot_size": [
+    3.23,
+    5.5,
+    3.23
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station04_airlock.step",
+    "glb": "glb/station04_airlock.glb",
+    "preview": "renders/station04_airlock.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "rover05",
+ "name": "DR-1 Core Drill",
+ "category": "rover",
+ "short_name": "core_drill",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover05_core_drill",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.185,
+    0.035,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_tool",
+   "position": [
+    0.085,
+    -0.515,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover05_core_drill": {
+   "vid": "rover05_core_drill",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "Core drill",
+   "primary": true,
+   "dims": {
+    "height_m": 1.37,
+    "depth_m": 0.37,
+    "width_m": 0.36,
+    "max_depth_m": 2.0,
+    "bit_below_base_m": -0.1
+   },
+   "notes": "surface-mount; deployed = 2 m drill string extended",
+   "bbox_cad_zup": [
+    [
+     -0.185,
+     -0.18,
+     -0.685
+    ],
+    [
+     0.18500000000000003,
+     0.18,
+     0.685
+    ]
+   ],
+   "bbox_godot_size": [
+    0.37,
+    1.37,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.185,
+      0.035,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.085,
+      -0.515,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover05_core_drill.step",
+    "glb": "glb/rover05_core_drill.glb"
+   }
+  },
+  "rover05_core_drill_deployed": {
+   "vid": "rover05_core_drill_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "Core drill",
+   "primary": false,
+   "dims": {
+    "height_m": 1.37,
+    "depth_m": 0.37,
+    "width_m": 0.36,
+    "max_depth_m": 2.0,
+    "bit_below_base_m": 1.95
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.185,
+     -0.18,
+     -2.565
+    ],
+    [
+     0.18500000000000003,
+     0.18,
+     0.685
+    ]
+   ],
+   "bbox_godot_size": [
+    0.37,
+    3.25,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.185,
+      0.035,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.085,
+      -2.565,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover05_core_drill_deployed.step",
+    "glb": "glb/rover05_core_drill_deployed.glb"
+   }
+  }
+ }
+}

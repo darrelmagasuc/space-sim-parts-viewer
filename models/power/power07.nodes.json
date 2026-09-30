@@ -1,0 +1,236 @@
+{
+ "id": "power07",
+ "name": "FR-2 Megawatt-Class Reactor",
+ "category": "power",
+ "short_name": "mw_reactor",
+ "sizes": [
+  "L"
+ ],
+ "primary": "power07_mw_reactor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -10.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.9,
+    -5.1,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.9,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.45,
+    -5.1,
+    -0.7794
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -0.45,
+    0.9,
+    -0.7794
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_5",
+   "position": [
+    -0.45,
+    -5.1,
+    0.7794
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  },
+  {
+   "name": "node_side_6",
+   "position": [
+    -0.45,
+    0.9,
+    0.7794
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  }
+ ],
+ "variants": {
+  "power07_mw_reactor": {
+   "vid": "power07_mw_reactor",
+   "size": "L",
+   "state": "flight",
+   "label": "Megawatt-class reactor",
+   "primary": true,
+   "dims": {
+    "base_diameter_m": 3.75,
+    "height_m": 20.2,
+    "boom_m": 14.25,
+    "shield_diameter_m": 3.75,
+    "power_mwe": 1.0
+   },
+   "notes": "radiators (power08 L, ~600 m2 needed) attach to node_side_1..6 on the boom longerons; shield cone protects the ship below",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -10.1
+    ],
+    [
+     1.875,
+     1.875,
+     10.100000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    20.2,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -10.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.9,
+      -5.1,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.9,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.45,
+      -5.1,
+      -0.7794
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.45,
+      0.9,
+      -0.7794
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_5",
+     "position": [
+      -0.45,
+      -5.1,
+      0.7794
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_side_6",
+     "position": [
+      -0.45,
+      0.9,
+      0.7794
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power07_mw_reactor.step",
+    "glb": "glb/power07_mw_reactor.glb",
+    "preview": "renders/power07_mw_reactor.png"
+   }
+  }
+ }
+}

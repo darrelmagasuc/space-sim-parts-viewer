@@ -1,0 +1,758 @@
+{
+ "id": "rover04",
+ "name": "WH-S/M/L Wheels",
+ "category": "rover",
+ "short_name": "wheel",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover04_wheel_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.2079,
+    0.0689,
+    -0.1566
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    0.0929,
+    -0.0131,
+    -0.1566
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_foot",
+   "position": [
+    0.0929,
+    -0.4231,
+    -0.1566
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover04_wheel_s": {
+   "vid": "rover04_wheel_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 0.4,
+    "tyre_width_m": 0.16,
+    "type": "rigid",
+    "rated_load_kg_1g": 50,
+    "hub_offset_m": 0.186
+   },
+   "notes": "trailing arm + damper + hub motor; S rigid / M mesh / L pneumatic",
+   "bbox_cad_zup": [
+    [
+     -0.133,
+     -0.28500000000000003,
+     -0.21500000000000002
+    ],
+    [
+     0.13300000000000003,
+     0.28500000000000003,
+     0.21500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.266,
+    0.43,
+    0.57
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.133,
+      0.035,
+      -0.075
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.053,
+      -0.005,
+      -0.075
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.053,
+      -0.205,
+      -0.075
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_s.step",
+    "glb": "glb/rover04_wheel_s.glb"
+   }
+  },
+  "rover04_wheel_s_steer_left": {
+   "vid": "rover04_wheel_s_steer_left",
+   "size": "S",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 0.4,
+    "tyre_width_m": 0.16,
+    "type": "rigid",
+    "rated_load_kg_1g": 50,
+    "hub_offset_m": 0.186
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.133,
+     -0.28500000000000003,
+     -0.21500000000000002
+    ],
+    [
+     0.2142544579284789,
+     0.29913409621695247,
+     0.21500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.347,
+    0.43,
+    0.584
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.133,
+      0.035,
+      -0.075
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.053,
+      -0.005,
+      -0.075
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.053,
+      -0.205,
+      -0.075
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_s_steer_left.step",
+    "glb": "glb/rover04_wheel_s_steer_left.glb"
+   }
+  },
+  "rover04_wheel_s_susp_up": {
+   "vid": "rover04_wheel_s_susp_up",
+   "size": "S",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 0.4,
+    "tyre_width_m": 0.16,
+    "type": "rigid",
+    "rated_load_kg_1g": 50,
+    "hub_offset_m": 0.186
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.133,
+     -0.28500000000000003,
+     -0.14607369828313294
+    ],
+    [
+     0.13300000000000003,
+     0.2863596791812657,
+     0.2739263017168671
+    ]
+   ],
+   "bbox_godot_size": [
+    0.266,
+    0.42,
+    0.571
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.133,
+      0.035,
+      -0.075
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.053,
+      0.0639,
+      -0.0764
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.053,
+      -0.1361,
+      -0.0764
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_s_susp_up.step",
+    "glb": "glb/rover04_wheel_s_susp_up.glb"
+   }
+  },
+  "rover04_wheel_m": {
+   "vid": "rover04_wheel_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wheel module",
+   "primary": true,
+   "dims": {
+    "wheel_dia_m": 0.82,
+    "tyre_width_m": 0.23,
+    "type": "mesh",
+    "rated_load_kg_1g": 500,
+    "hub_offset_m": 0.301
+   },
+   "notes": "trailing arm + damper + hub motor; S rigid / M mesh / L pneumatic",
+   "bbox_cad_zup": [
+    [
+     -0.2079,
+     -0.58138,
+     -0.43788
+    ],
+    [
+     0.2079,
+     0.58138,
+     0.43788
+    ]
+   ],
+   "bbox_godot_size": [
+    0.416,
+    0.876,
+    1.163
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2079,
+      0.0689,
+      -0.1566
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.0929,
+      -0.0131,
+      -0.1566
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.0929,
+      -0.4231,
+      -0.1566
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_m.step",
+    "glb": "glb/rover04_wheel_m.glb"
+   }
+  },
+  "rover04_wheel_m_steer_left": {
+   "vid": "rover04_wheel_m_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 0.82,
+    "tyre_width_m": 0.23,
+    "type": "mesh",
+    "rated_load_kg_1g": 500,
+    "hub_offset_m": 0.301
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.2079,
+     -0.58138,
+     -0.43788
+    ],
+    [
+     0.3618151315619892,
+     0.5828869162629526,
+     0.43788
+    ]
+   ],
+   "bbox_godot_size": [
+    0.57,
+    0.876,
+    1.164
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2079,
+      0.0689,
+      -0.1566
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.0929,
+      -0.0131,
+      -0.1566
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.0929,
+      -0.4231,
+      -0.1566
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_m_steer_left.step",
+    "glb": "glb/rover04_wheel_m_steer_left.glb"
+   }
+  },
+  "rover04_wheel_m_susp_up": {
+   "vid": "rover04_wheel_m_susp_up",
+   "size": "M",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 0.82,
+    "tyre_width_m": 0.23,
+    "type": "mesh",
+    "rated_load_kg_1g": 500,
+    "hub_offset_m": 0.301
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.2079,
+     -0.58138,
+     -0.30012
+    ],
+    [
+     0.2079,
+     0.5841673423215947,
+     0.5529389185195774
+    ]
+   ],
+   "bbox_godot_size": [
+    0.416,
+    0.853,
+    1.166
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2079,
+      0.0689,
+      -0.1566
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.0929,
+      0.1282,
+      -0.1594
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.0929,
+      -0.2818,
+      -0.1594
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_m_susp_up.step",
+    "glb": "glb/rover04_wheel_m_susp_up.glb"
+   }
+  },
+  "rover04_wheel_l": {
+   "vid": "rover04_wheel_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 1.2,
+    "tyre_width_m": 0.45,
+    "type": "pneumatic",
+    "rated_load_kg_1g": 3000,
+    "hub_offset_m": 0.483
+   },
+   "notes": "trailing arm + damper + hub motor; S rigid / M mesh / L pneumatic",
+   "bbox_cad_zup": [
+    [
+     -0.36525,
+     -0.8562000000000001,
+     -0.6462000000000001
+    ],
+    [
+     0.36525,
+     0.8562000000000001,
+     0.6462000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.731,
+    1.292,
+    1.712
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3653,
+      0.1062,
+      -0.2238
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.1177,
+      -0.0138,
+      -0.2238
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.1177,
+      -0.6138,
+      -0.2238
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_l.step",
+    "glb": "glb/rover04_wheel_l.glb"
+   }
+  },
+  "rover04_wheel_l_steer_left": {
+   "vid": "rover04_wheel_l_steer_left",
+   "size": "L",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 1.2,
+    "tyre_width_m": 0.45,
+    "type": "pneumatic",
+    "rated_load_kg_1g": 3000,
+    "hub_offset_m": 0.483
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.36525,
+     -0.8562000000000001,
+     -0.6462000000000001
+    ],
+    [
+     0.5535548385262185,
+     0.8709240959331884,
+     0.6462000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.919,
+    1.292,
+    1.727
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3653,
+      0.1062,
+      -0.2238
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.1177,
+      -0.0138,
+      -0.2238
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.1177,
+      -0.6138,
+      -0.2238
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_l_steer_left.step",
+    "glb": "glb/rover04_wheel_l_steer_left.glb"
+   }
+  },
+  "rover04_wheel_l_susp_up": {
+   "vid": "rover04_wheel_l_susp_up",
+   "size": "L",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "Wheel module",
+   "primary": false,
+   "dims": {
+    "wheel_dia_m": 1.2,
+    "tyre_width_m": 0.45,
+    "type": "pneumatic",
+    "rated_load_kg_1g": 3000,
+    "hub_offset_m": 0.483
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.36525,
+     -0.8562000000000001,
+     -0.4394210948493988
+    ],
+    [
+     0.36525,
+     0.8602790375437972,
+     0.8253789051506011
+    ]
+   ],
+   "bbox_godot_size": [
+    0.731,
+    1.265,
+    1.716
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3653,
+      0.1062,
+      -0.2238
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.1177,
+      0.193,
+      -0.2279
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.1177,
+      -0.407,
+      -0.2279
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover04_wheel_l_susp_up.step",
+    "glb": "glb/rover04_wheel_l_susp_up.glb"
+   }
+  }
+ }
+}

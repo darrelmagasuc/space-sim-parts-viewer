@@ -1,0 +1,210 @@
+{
+ "id": "station03",
+ "name": "NM-1 Node (6-port)",
+ "category": "station",
+ "short_name": "node_6port",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station03_node_6port",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    2.55,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -2.55
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -2.55,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    2.55
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "station03_node_6port": {
+   "vid": "station03_node_6port",
+   "size": "L",
+   "state": "flight",
+   "label": "6-port node",
+   "primary": true,
+   "dims": {
+    "hull_diameter_m": 4.2,
+    "length_m": 5.5,
+    "radial_port_diameter_m": 2.0,
+    "ports": 6,
+    "internal_slots": 4
+   },
+   "notes": "node_side_1..4 = radial berthing ports (+X,+Y,-X,-Y)",
+   "bbox_cad_zup": [
+    [
+     -2.5500000000000003,
+     -2.5500000000000007,
+     -2.75
+    ],
+    [
+     2.5500000000000003,
+     2.5500000000000003,
+     2.75
+    ]
+   ],
+   "bbox_godot_size": [
+    5.1,
+    5.5,
+    5.1
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.55,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.55
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.55,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.55
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station03_node_6port.step",
+    "glb": "glb/station03_node_6port.glb",
+    "preview": "renders/station03_node_6port.png"
+   }
+  }
+ }
+}

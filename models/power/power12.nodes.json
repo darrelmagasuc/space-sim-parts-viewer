@@ -1,0 +1,104 @@
+{
+ "id": "power12",
+ "name": "LS-1 Life Support Rack",
+ "category": "power",
+ "short_name": "life_support_rack",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "power12_life_support_rack",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.6,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "power12_life_support_rack": {
+   "vid": "power12_life_support_rack",
+   "size": "slot",
+   "state": "flight",
+   "label": "Life support rack (rack slot)",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 1.8",
+    "slot_units": "2 x 2 x 3",
+    "crew_supported": 3
+   },
+   "notes": "rack slot (pressurised only); door is its own mesh (hinge on the -X/-Y edge; modelled closed so the rack stays inside its envelope); node_port_1 = utility connector on the rear",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.9
+    ],
+    [
+     0.5000000000000001,
+     0.5,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.8,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.6,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power12_life_support_rack.step",
+    "glb": "glb/power12_life_support_rack.glb",
+    "preview": "renders/power12_life_support_rack.png"
+   }
+  }
+ }
+}

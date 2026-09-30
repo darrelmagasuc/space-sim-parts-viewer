@@ -1,0 +1,132 @@
+{
+ "id": "tank09",
+ "name": "T-ISRU Surface Storage Tank",
+ "category": "tanks",
+ "short_name": "isru_storage",
+ "sizes": [
+  "L"
+ ],
+ "primary": "tank09_isru_storage",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.48,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.48,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    3.8266,
+    -0.005,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank09_isru_storage": {
+   "vid": "tank09_isru_storage",
+   "size": "L",
+   "state": "flight",
+   "label": "ISRU surface storage tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 6.453,
+    "overall_l_m": 7.053,
+    "height_m": 4.96,
+    "volume_m3": 63.0,
+    "methalox_t": 50
+   },
+   "notes": "horizontal on stand, long axis = X; node_bottom = ground contact plane; node_port_1 = hose coupling",
+   "bbox_cad_zup": [
+    [
+     -3.226639864207594,
+     -1.89,
+     -2.4800000499999997
+    ],
+    [
+     3.826639764207594,
+     1.89,
+     2.4800000499999997
+    ]
+   ],
+   "bbox_godot_size": [
+    7.053,
+    4.96,
+    3.78
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.48,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.48,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      3.8266,
+      -0.005,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank09_isru_storage.step",
+    "glb": "glb/tank09_isru_storage.glb"
+   }
+  }
+ }
+}

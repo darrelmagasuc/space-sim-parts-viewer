@@ -1,0 +1,125 @@
+{
+ "id": "stage07",
+ "name": "PC-D Drogue Parachute",
+ "category": "stage",
+ "short_name": "drogue_chute",
+ "sizes": [
+  "S"
+ ],
+ "primary": "stage07_drogue_chute",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.365,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage07_drogue_chute": {
+   "vid": "stage07_drogue_chute",
+   "size": "S",
+   "state": "stowed",
+   "label": "Drogue parachute (packed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.468,
+    "height_m": 0.73,
+    "canopy_dia_m": 5.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.23399999999999999,
+     -0.23399999999999999,
+     -0.365
+    ],
+    [
+     0.23399999999999999,
+     0.23399999999999999,
+     0.365
+    ]
+   ],
+   "bbox_godot_size": [
+    0.468,
+    0.73,
+    0.468
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.365,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage07_drogue_chute.step",
+    "glb": "glb/stage07_drogue_chute.glb"
+   }
+  },
+  "stage07_drogue_chute_deployed": {
+   "vid": "stage07_drogue_chute_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Drogue parachute (deployed)",
+   "primary": false,
+   "dims": {
+    "canopy_dia_m": 5.0,
+    "overall_h_m": 11.11
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -2.50001323694414,
+     -2.50001323694414,
+     -0.365
+    ],
+    [
+     2.50001323694414,
+     2.50001323694414,
+     10.735530660009438
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    11.101,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.365,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage07_drogue_chute_deployed.step",
+    "glb": "glb/stage07_drogue_chute_deployed.glb"
+   }
+  }
+ }
+}

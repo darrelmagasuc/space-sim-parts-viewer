@@ -1,0 +1,171 @@
+{
+ "id": "jet03",
+ "name": "JT-4 Turbo-Ramjet",
+ "category": "jet",
+ "short_name": "turbo_ramjet",
+ "sizes": [
+  "M"
+ ],
+ "primary": "jet03_turbo_ramjet",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.575,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.125,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet03_turbo_ramjet": {
+   "vid": "jet03_turbo_ramjet",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Turbo-ramjet (J58-type)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.6,
+    "casing_dia_m": 1.5,
+    "length_m": 6.25,
+    "nozzle_exit_dia_m": 1.04,
+    "bypass_tubes": 6
+   },
+   "notes": "inline; 6 external bypass tubes",
+   "bbox_cad_zup": [
+    [
+     -0.8247818472546172,
+     -0.94,
+     -3.1250000000000004
+    ],
+    [
+     0.8247818472546172,
+     0.94,
+     3.1250000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.65,
+    6.25,
+    1.88
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.575,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.125,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet03_turbo_ramjet.step",
+    "glb": "glb/jet03_turbo_ramjet.glb"
+   }
+  },
+  "jet03_turbo_ramjet_ab": {
+   "vid": "jet03_turbo_ramjet_ab",
+   "size": "M",
+   "state": "ab",
+   "default_state": false,
+   "label": "Turbo-ramjet (J58-type)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.6,
+    "casing_dia_m": 1.5,
+    "length_m": 6.25,
+    "nozzle_exit_dia_m": 1.32,
+    "bypass_tubes": 6
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.8247818472546172,
+     -0.94,
+     -3.1250000000000004
+    ],
+    [
+     0.8247818472546172,
+     0.94,
+     3.1250000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.65,
+    6.25,
+    1.88
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.575,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.125,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet03_turbo_ramjet_ab.step",
+    "glb": "glb/jet03_turbo_ramjet_ab.glb"
+   }
+  }
+ }
+}

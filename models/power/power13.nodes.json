@@ -1,0 +1,79 @@
+{
+ "id": "power13",
+ "name": "LS-2 Consumables Pallet",
+ "category": "power",
+ "short_name": "consumables_pallet",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "power13_consumables_pallet",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.26,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power13_consumables_pallet": {
+   "vid": "power13_consumables_pallet",
+   "size": "slot",
+   "state": "flight",
+   "label": "Consumables pallet",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slot_units": "2 x 2 x 1",
+    "crew_days": 30,
+    "mass_t": 0.3
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.26
+    ],
+    [
+     0.5,
+     0.5,
+     0.26
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.52,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.26,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power13_consumables_pallet.step",
+    "glb": "glb/power13_consumables_pallet.glb",
+    "preview": "renders/power13_consumables_pallet.png"
+   }
+  }
+ }
+}

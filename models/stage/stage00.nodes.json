@@ -1,0 +1,292 @@
+{
+ "id": "stage00",
+ "name": "DC-S/M/L/XL Stack Decoupler",
+ "category": "stage",
+ "short_name": "decoupler",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "stage00_decoupler_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.175,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.175,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage00_decoupler_s": {
+   "vid": "stage00_decoupler_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Stack decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.25,
+    "sep_plane_from_bottom_m": 0.138
+   },
+   "notes": "lower_ring stays on lower stage",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.125
+    ],
+    [
+     0.625,
+     0.625,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.25,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.125,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.125,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage00_decoupler_s.step",
+    "glb": "glb/stage00_decoupler_s.glb"
+   }
+  },
+  "stage00_decoupler_m": {
+   "vid": "stage00_decoupler_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Stack decoupler",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.35,
+    "sep_plane_from_bottom_m": 0.193
+   },
+   "notes": "lower_ring stays on lower stage",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.3499999999999999,
+     -0.175
+    ],
+    [
+     1.25,
+     1.3499999999999999,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.35,
+    2.7
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.175,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.175,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage00_decoupler_m.step",
+    "glb": "glb/stage00_decoupler_m.glb"
+   }
+  },
+  "stage00_decoupler_l": {
+   "vid": "stage00_decoupler_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Stack decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 0.45,
+    "sep_plane_from_bottom_m": 0.248
+   },
+   "notes": "lower_ring stays on lower stage",
+   "bbox_cad_zup": [
+    [
+     -1.906732625119583,
+     -1.9067326251195824,
+     -0.22500000000000003
+    ],
+    [
+     1.9067326251195826,
+     1.9067326251195829,
+     0.22500000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    3.813,
+    0.45,
+    3.813
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.225,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.225,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage00_decoupler_l.step",
+    "glb": "glb/stage00_decoupler_l.glb"
+   }
+  },
+  "stage00_decoupler_xl": {
+   "vid": "stage00_decoupler_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Stack decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 0.55,
+    "sep_plane_from_bottom_m": 0.303
+   },
+   "notes": "lower_ring stays on lower stage",
+   "bbox_cad_zup": [
+    [
+     -2.5423101668261103,
+     -2.54231016682611,
+     -0.275
+    ],
+    [
+     2.5423101668261103,
+     2.5423101668261103,
+     0.275
+    ]
+   ],
+   "bbox_godot_size": [
+    5.085,
+    0.55,
+    5.085
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.275,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.275,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage00_decoupler_xl.step",
+    "glb": "glb/stage00_decoupler_xl.glb"
+   }
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "power03",
+ "name": "RTG-1 MMRTG",
+ "category": "power",
+ "short_name": "mmrtg",
+ "sizes": [
+  "S"
+ ],
+ "primary": "power03_mmrtg",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.34,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power03_mmrtg": {
+   "vid": "power03_mmrtg",
+   "size": "S",
+   "state": "flight",
+   "label": "MMRTG",
+   "primary": true,
+   "dims": {
+    "length_m": 0.68,
+    "fin_span_m": 0.64,
+    "body_diameter_m": 0.4
+   },
+   "notes": "real scale; mounts on RTG pads (cmd02 node_side_*)",
+   "bbox_cad_zup": [
+    [
+     -0.34,
+     -0.29870291786253256,
+     -0.2987029178625325
+    ],
+    [
+     0.34,
+     0.29870291786253256,
+     0.2987029178625325
+    ]
+   ],
+   "bbox_godot_size": [
+    0.68,
+    0.597,
+    0.597
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.34,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power03_mmrtg.step",
+    "glb": "glb/power03_mmrtg.glb",
+    "preview": "renders/power03_mmrtg.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "id": "stage05",
+ "name": "HS-S/M/L/XL Ablative Heat Shield",
+ "category": "stage",
+ "short_name": "heatshield",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "stage05_heatshield_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2114,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2114,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage05_heatshield_s": {
+   "vid": "stage05_heatshield_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Ablative heat shield",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.211,
+    "sphere_radius_m": 1.5,
+    "dish_depth_m": 0.136
+   },
+   "notes": "spherical-section forebody R=1.2D (Apollo/Orion-like)",
+   "bbox_cad_zup": [
+    [
+     -0.635,
+     -0.635,
+     -0.10570549283526787
+    ],
+    [
+     0.635,
+     0.635,
+     0.1057054928352679
+    ]
+   ],
+   "bbox_godot_size": [
+    1.27,
+    0.211,
+    1.27
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1057,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1057,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage05_heatshield_s.step",
+    "glb": "glb/stage05_heatshield_s.glb"
+   }
+  },
+  "stage05_heatshield_m": {
+   "vid": "stage05_heatshield_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Ablative heat shield",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.423,
+    "sphere_radius_m": 3.0,
+    "dish_depth_m": 0.273
+   },
+   "notes": "spherical-section forebody R=1.2D (Apollo/Orion-like)",
+   "bbox_cad_zup": [
+    [
+     -1.27,
+     -1.27,
+     -0.21141098567053573
+    ],
+    [
+     1.27,
+     1.27,
+     0.2114109856705358
+    ]
+   ],
+   "bbox_godot_size": [
+    2.54,
+    0.423,
+    2.54
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2114,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2114,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage05_heatshield_m.step",
+    "glb": "glb/stage05_heatshield_m.glb"
+   }
+  },
+  "stage05_heatshield_l": {
+   "vid": "stage05_heatshield_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Ablative heat shield",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 0.634,
+    "sphere_radius_m": 4.5,
+    "dish_depth_m": 0.409
+   },
+   "notes": "spherical-section forebody R=1.2D (Apollo/Orion-like)",
+   "bbox_cad_zup": [
+    [
+     -1.905,
+     -1.905,
+     -0.3171164785058034
+    ],
+    [
+     1.905,
+     1.905,
+     0.31711647850580355
+    ]
+   ],
+   "bbox_godot_size": [
+    3.81,
+    0.634,
+    3.81
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3171,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3171,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage05_heatshield_l.step",
+    "glb": "glb/stage05_heatshield_l.glb"
+   }
+  },
+  "stage05_heatshield_xl": {
+   "vid": "stage05_heatshield_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Ablative heat shield",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 0.846,
+    "sphere_radius_m": 6.0,
+    "dish_depth_m": 0.546
+   },
+   "notes": "spherical-section forebody R=1.2D (Apollo/Orion-like)",
+   "bbox_cad_zup": [
+    [
+     -2.54,
+     -2.54,
+     -0.42282197134107147
+    ],
+    [
+     2.54,
+     2.54,
+     0.4228219713410716
+    ]
+   ],
+   "bbox_godot_size": [
+    5.08,
+    0.846,
+    5.08
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4228,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4228,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage05_heatshield_xl.step",
+    "glb": "glb/stage05_heatshield_xl.glb"
+   }
+  }
+ }
+}

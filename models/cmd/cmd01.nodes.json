@@ -1,0 +1,158 @@
+{
+ "id": "cmd01",
+ "name": "PC-2 'Surveyor' Probe Bus",
+ "category": "cmd",
+ "short_name": "probe_bus",
+ "sizes": [
+  "S"
+ ],
+ "primary": "cmd01_probe_bus",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.0,
+    0.0,
+    -0.6213
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    0.5413
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd01_probe_bus": {
+   "vid": "cmd01_probe_bus",
+   "size": "S",
+   "state": "flight",
+   "label": "Hexagonal probe bus",
+   "primary": true,
+   "dims": {
+    "across_corners_m": 1.25,
+    "across_flats_m": 1.083,
+    "height_m": 1.0,
+    "internal_slots": 4,
+    "slot_bay_m": "0.5 x 0.5 x 0.6 (depth 0.45)"
+   },
+   "notes": "4 open slot bays on alternate hex faces; reaction wheel housing on +Y face",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.5
+    ],
+    [
+     0.625,
+     0.625,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.0,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0,
+      0.0,
+      -0.6213
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      0.5413
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd01_probe_bus.step",
+    "glb": "glb/cmd01_probe_bus.glb",
+    "preview": "renders/cmd01_probe_bus.png"
+   }
+  }
+ }
+}

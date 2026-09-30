@@ -1,0 +1,225 @@
+{
+ "id": "stage08",
+ "name": "PC-M Main Parachute",
+ "category": "stage",
+ "short_name": "main_chute",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "stage08_main_chute_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.315,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage08_main_chute_s": {
+   "vid": "stage08_main_chute_s",
+   "size": "S",
+   "state": "stowed",
+   "label": "Main parachute (packed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.78,
+    "height_m": 0.63,
+    "canopy_inflated_dia_m": 21.0,
+    "rated_mass_t": 3
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.39,
+     -0.39,
+     -0.31500000000000006
+    ],
+    [
+     0.39,
+     0.39,
+     0.31500000000000006
+    ]
+   ],
+   "bbox_godot_size": [
+    0.78,
+    0.63,
+    0.78
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.315,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage08_main_chute_s.step",
+    "glb": "glb/stage08_main_chute_s.glb"
+   }
+  },
+  "stage08_main_chute_s_deployed": {
+   "vid": "stage08_main_chute_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Main parachute (deployed)",
+   "primary": false,
+   "dims": {
+    "canopy_inflated_dia_m": 21.0,
+    "overall_h_m": 34.14
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -10.500055847920875,
+     -10.500055847920875,
+     -0.31500000000000006
+    ],
+    [
+     10.500055847920875,
+     10.500055847920875,
+     33.81955754437946
+    ]
+   ],
+   "bbox_godot_size": [
+    21.0,
+    34.135,
+    21.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.315,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage08_main_chute_s_deployed.step",
+    "glb": "glb/stage08_main_chute_s_deployed.glb"
+   }
+  },
+  "stage08_main_chute_m": {
+   "vid": "stage08_main_chute_m",
+   "size": "M",
+   "state": "stowed",
+   "label": "Main parachute (packed)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.092,
+    "height_m": 0.83,
+    "canopy_inflated_dia_m": 30.0,
+    "rated_mass_t": 6
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.546,
+     -0.546,
+     -0.41500000000000004
+    ],
+    [
+     0.546,
+     0.546,
+     0.41500000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.092,
+    0.83,
+    1.092
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.415,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage08_main_chute_m.step",
+    "glb": "glb/stage08_main_chute_m.glb"
+   }
+  },
+  "stage08_main_chute_m_deployed": {
+   "vid": "stage08_main_chute_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "label": "Main parachute (deployed)",
+   "primary": false,
+   "dims": {
+    "canopy_inflated_dia_m": 30.0,
+    "overall_h_m": 46.13
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -15.000079739886964,
+     -15.000079739886964,
+     -0.41500000000000004
+    ],
+    [
+     15.000079739886964,
+     15.000079739886964,
+     45.70722502054209
+    ]
+   ],
+   "bbox_godot_size": [
+    30.0,
+    46.122,
+    30.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.415,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage08_main_chute_m_deployed.step",
+    "glb": "glb/stage08_main_chute_m_deployed.glb"
+   }
+  }
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "id": "station08",
+ "name": "RA-1 Robotic Arm",
+ "category": "station",
+ "short_name": "robotic_arm",
+ "sizes": [
+  "17 m"
+ ],
+ "primary": "station08_robotic_arm",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -8.8,
+    0.0,
+    0.3
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    8.8,
+    0.0,
+    -0.3
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station08_robotic_arm": {
+   "vid": "station08_robotic_arm",
+   "size": "17 m",
+   "state": "flight",
+   "label": "Station robotic arm",
+   "primary": true,
+   "dims": {
+    "length_m": 17.6,
+    "boom_diameter_m": 0.36,
+    "joints": 7,
+    "boom_offset_m": 0.6
+   },
+   "notes": "straight (stowed/reference) pose; node_attach = base LEE on a grapple fixture, node_port_1 = tip LEE (walks to next fixture)",
+   "bbox_cad_zup": [
+    [
+     -8.8,
+     -0.6599999999999999,
+     -0.36
+    ],
+    [
+     8.8,
+     0.6599999999999999,
+     0.36
+    ]
+   ],
+   "bbox_godot_size": [
+    17.6,
+    0.72,
+    1.32
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -8.8,
+      0.0,
+      0.3
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      8.8,
+      0.0,
+      -0.3
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station08_robotic_arm.step",
+    "glb": "glb/station08_robotic_arm.glb",
+    "preview": "renders/station08_robotic_arm.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "id": "rover10",
+ "name": "SH-1 Surface Hab (Rigid)",
+ "category": "rover",
+ "short_name": "surface_hab",
+ "sizes": [
+  "L"
+ ],
+ "primary": "rover10_surface_hab",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.4375,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.4375,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    4.4562,
+    0.3375,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -4.4562,
+    0.3375,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover10_surface_hab": {
+   "vid": "rover10_surface_hab",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Rigid surface hab",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 8.31,
+    "length_with_collars_m": 8.91,
+    "height_m": 4.88,
+    "hull_clearance_m": 0.9,
+    "pressurised_volume_m3": 87.0
+   },
+   "notes": "horizontal L hull, regolith tray, 4 leveling legs",
+   "bbox_cad_zup": [
+    [
+     -4.45625,
+     -2.525,
+     -2.4375
+    ],
+    [
+     4.45625,
+     2.525,
+     2.4375
+    ]
+   ],
+   "bbox_godot_size": [
+    8.912,
+    4.875,
+    5.05
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.4375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.4375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      4.4562,
+      0.3375,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -4.4562,
+      0.3375,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover10_surface_hab.step",
+    "glb": "glb/rover10_surface_hab.glb"
+   }
+  },
+  "rover10_surface_hab_stowed": {
+   "vid": "rover10_surface_hab_stowed",
+   "size": "L",
+   "state": "stowed",
+   "default_state": false,
+   "label": "Rigid surface hab",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 8.31,
+    "length_with_collars_m": 8.91,
+    "height_m": 4.21,
+    "hull_clearance_m": 0.23,
+    "pressurised_volume_m3": 87.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -4.45625,
+     -2.525,
+     -1.7675
+    ],
+    [
+     4.45625,
+     2.525,
+     2.4375
+    ]
+   ],
+   "bbox_godot_size": [
+    8.912,
+    4.205,
+    5.05
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.7675,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.4375,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      4.4562,
+      0.3375,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -4.4562,
+      0.3375,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover10_surface_hab_stowed.step",
+    "glb": "glb/rover10_surface_hab_stowed.glb"
+   }
+  }
+ }
+}

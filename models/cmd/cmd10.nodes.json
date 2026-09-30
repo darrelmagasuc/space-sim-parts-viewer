@@ -1,0 +1,446 @@
+{
+ "id": "cmd10",
+ "name": "SM-1 Service Module Bay",
+ "category": "cmd",
+ "short_name": "service_bay",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "cmd10_service_bay_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.8,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.8,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.6993,
+    -1.08,
+    0.7924
+   ],
+   "direction": [
+    0.9063,
+    0.0,
+    0.4226
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.7924,
+    -1.08,
+    -1.6993
+   ],
+   "direction": [
+    0.4226,
+    0.0,
+    -0.9063
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.6993,
+    -1.08,
+    -0.7924
+   ],
+   "direction": [
+    -0.9063,
+    0.0,
+    -0.4226
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -0.7924,
+    -1.08,
+    1.6993
+   ],
+   "direction": [
+    -0.4226,
+    0.0,
+    0.9063
+   ]
+  }
+ ],
+ "variants": {
+  "cmd10_service_bay_m": {
+   "vid": "cmd10_service_bay_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Service module bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 2.4,
+    "internal_slots": 6,
+    "sectors": 6,
+    "slot_m": "0.5 x 0.5 x 0.6"
+   },
+   "notes": "open-top (capsule shield nests on top ring); slot racks are 0.5x0.5x0.6 envelopes in 6 Apollo-style sectors",
+   "bbox_cad_zup": [
+    [
+     -1.262,
+     -1.262,
+     -1.2
+    ],
+    [
+     1.262,
+     1.262,
+     1.2
+    ]
+   ],
+   "bbox_godot_size": [
+    2.524,
+    2.4,
+    2.524
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.1329,
+      -0.72,
+      0.5283
+     ],
+     "direction": [
+      0.9063,
+      0.0,
+      0.4226
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.5283,
+      -0.72,
+      -1.1329
+     ],
+     "direction": [
+      0.4226,
+      0.0,
+      -0.9063
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.1329,
+      -0.72,
+      -0.5283
+     ],
+     "direction": [
+      -0.9063,
+      0.0,
+      -0.4226
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.5283,
+      -0.72,
+      1.1329
+     ],
+     "direction": [
+      -0.4226,
+      0.0,
+      0.9063
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd10_service_bay_m.step",
+    "glb": "glb/cmd10_service_bay_m.glb",
+    "preview": "renders/cmd10_service_bay_m.png"
+   }
+  },
+  "cmd10_service_bay_l": {
+   "vid": "cmd10_service_bay_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Service module bay",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 3.6,
+    "internal_slots": 9,
+    "sectors": 6,
+    "slot_m": "0.5 x 0.5 x 0.6"
+   },
+   "notes": "open-top (capsule shield nests on top ring); slot racks are 0.5x0.5x0.6 envelopes in 6 Apollo-style sectors",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -1.8
+    ],
+    [
+     1.887,
+     1.887,
+     1.8
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    3.6,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.6993,
+      -1.08,
+      0.7924
+     ],
+     "direction": [
+      0.9063,
+      0.0,
+      0.4226
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.7924,
+      -1.08,
+      -1.6993
+     ],
+     "direction": [
+      0.4226,
+      0.0,
+      -0.9063
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.6993,
+      -1.08,
+      -0.7924
+     ],
+     "direction": [
+      -0.9063,
+      0.0,
+      -0.4226
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.7924,
+      -1.08,
+      1.6993
+     ],
+     "direction": [
+      -0.4226,
+      0.0,
+      0.9063
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd10_service_bay_l.step",
+    "glb": "glb/cmd10_service_bay_l.glb",
+    "preview": "renders/cmd10_service_bay_l.png"
+   }
+  },
+  "cmd10_service_bay_xl": {
+   "vid": "cmd10_service_bay_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Service module bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 4.0,
+    "internal_slots": 12,
+    "sectors": 6,
+    "slot_m": "0.5 x 0.5 x 0.6"
+   },
+   "notes": "open-top (capsule shield nests on top ring); slot racks are 0.5x0.5x0.6 envelopes in 6 Apollo-style sectors",
+   "bbox_cad_zup": [
+    [
+     -2.512,
+     -2.512,
+     -2.0
+    ],
+    [
+     2.512,
+     2.512,
+     2.0
+    ]
+   ],
+   "bbox_godot_size": [
+    5.024,
+    4.0,
+    5.024
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.2658,
+      -1.2,
+      1.0565
+     ],
+     "direction": [
+      0.9063,
+      0.0,
+      0.4226
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      1.0565,
+      -1.2,
+      -2.2658
+     ],
+     "direction": [
+      0.4226,
+      0.0,
+      -0.9063
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.2658,
+      -1.2,
+      -1.0565
+     ],
+     "direction": [
+      -0.9063,
+      0.0,
+      -0.4226
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -1.0565,
+      -1.2,
+      2.2658
+     ],
+     "direction": [
+      -0.4226,
+      0.0,
+      0.9063
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd10_service_bay_xl.step",
+    "glb": "glb/cmd10_service_bay_xl.glb",
+    "preview": "renders/cmd10_service_bay_xl.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "id": "stage01",
+ "name": "DC-R Radial Decoupler",
+ "category": "stage",
+ "short_name": "radial_decoupler",
+ "sizes": [
+  "S"
+ ],
+ "primary": "stage01_radial_decoupler",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.275,
+    0.038,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.275,
+    0.038,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage01_radial_decoupler": {
+   "vid": "stage01_radial_decoupler",
+   "size": "S",
+   "state": "flight",
+   "label": "Radial decoupler",
+   "primary": true,
+   "dims": {
+    "standoff_m": 0.55,
+    "plate_w_m": 0.32,
+    "plate_h_m": 0.45
+   },
+   "notes": "node_attach on core side (-X); node_side_1 = booster side (+X)",
+   "bbox_cad_zup": [
+    [
+     -0.275,
+     -0.16,
+     -0.26296690311434817
+    ],
+    [
+     0.275,
+     0.16,
+     0.26296690311434817
+    ]
+   ],
+   "bbox_godot_size": [
+    0.55,
+    0.526,
+    0.32
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.275,
+      0.038,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.275,
+      0.038,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/stage01_radial_decoupler.step",
+    "glb": "glb/stage01_radial_decoupler.glb"
+   }
+  }
+ }
+}

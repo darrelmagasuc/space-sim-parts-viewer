@@ -1,0 +1,104 @@
+{
+ "id": "prop07",
+ "name": "LE-1 'Kestrel' Pressure-Fed Hypergolic",
+ "category": "prop",
+ "short_name": "kestrel",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop07_kestrel",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.11,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.11,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop07_kestrel": {
+   "vid": "prop07_kestrel",
+   "size": "S",
+   "state": "flight",
+   "label": "Pressure-fed hypergolic engine",
+   "primary": true,
+   "dims": {
+    "length_m": 2.22,
+    "exit_diameter_m": 1.2,
+    "throat_diameter_m": 0.18
+   },
+   "notes": "AJ10-118K proportions (real exit ~1.5 m) with exit held to 1.2 m to sit on an S stack",
+   "bbox_cad_zup": [
+    [
+     -0.6120001,
+     -0.6120001,
+     -1.1100000500000002
+    ],
+    [
+     0.6120001,
+     0.6120001,
+     1.11000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.224,
+    2.22,
+    1.224
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.11,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.11,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop07_kestrel.step",
+    "glb": "glb/prop07_kestrel.glb",
+    "preview": "renders/prop07_kestrel.png"
+   }
+  }
+ }
+}

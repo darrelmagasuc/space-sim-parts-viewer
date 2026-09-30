@@ -1,0 +1,446 @@
+{
+ "id": "tank01",
+ "name": "T-M1/M2/M3 Methalox Tanks",
+ "category": "tanks",
+ "short_name": "methalox",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "tank01_methalox_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    5.679,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -5.679,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank01_methalox_m": {
+   "vid": "tank01_methalox_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Methalox tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 7.66,
+    "barrel_m": 6.16,
+    "dome_h_m": 0.75,
+    "prop_volume_m3": 35.15,
+    "wet_t": 30
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.266,
+     -1.266,
+     -3.8302338239626343
+    ],
+    [
+     1.266,
+     1.266,
+     3.8302338239626343
+    ]
+   ],
+   "bbox_godot_size": [
+    2.532,
+    7.66,
+    2.532
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.8302,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.8302,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank01_methalox_m.step",
+    "glb": "glb/tank01_methalox_m.glb"
+   }
+  },
+  "tank01_methalox_l": {
+   "vid": "tank01_methalox_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Methalox tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 11.358,
+    "barrel_m": 9.108,
+    "dome_h_m": 1.125,
+    "prop_volume_m3": 117.16,
+    "wet_t": 100
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.899,
+     -1.899,
+     -5.679050061426126
+    ],
+    [
+     1.899,
+     1.899,
+     5.679050061426126
+    ]
+   ],
+   "bbox_godot_size": [
+    3.798,
+    11.358,
+    3.798
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.679,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.679,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank01_methalox_l.step",
+    "glb": "glb/tank01_methalox_l.glb"
+   }
+  },
+  "tank01_methalox_xl": {
+   "vid": "tank01_methalox_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Methalox tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 24.868,
+    "barrel_m": 21.868,
+    "dome_h_m": 1.5,
+    "prop_volume_m3": 468.65,
+    "wet_t": 400
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -2.532,
+     -2.532,
+     -12.434112513208781
+    ],
+    [
+     2.532,
+     2.532,
+     12.434112513208781
+    ]
+   ],
+   "bbox_godot_size": [
+    5.064,
+    24.868,
+    5.064
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      12.4341,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -12.4341,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank01_methalox_xl.step",
+    "glb": "glb/tank01_methalox_xl.glb"
+   }
+  }
+ }
+}

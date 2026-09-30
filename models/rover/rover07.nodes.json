@@ -1,0 +1,131 @@
+{
+ "id": "rover07",
+ "name": "ISRU-O2 MOXIE Oxygen Plant",
+ "category": "rover",
+ "short_name": "moxie",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "rover07_moxie",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.33,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.15,
+    0.33,
+    -0.12
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.2,
+    0.33,
+    -0.17
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover07_moxie": {
+   "vid": "rover07_moxie",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "MOXIE O2 slot unit",
+   "primary": true,
+   "dims": {
+    "w_m": 0.5,
+    "d_m": 0.5,
+    "h_m": 0.6,
+    "h_with_ports_m": 0.66
+   },
+   "notes": "0.5 x 0.5 x 0.6 m slot envelope",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.32999999999999996
+    ],
+    [
+     0.25,
+     0.25,
+     0.33
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.66,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.33,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.15,
+      0.33,
+      -0.12
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.2,
+      0.33,
+      -0.17
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover07_moxie.step",
+    "glb": "glb/rover07_moxie.glb"
+   }
+  }
+ }
+}

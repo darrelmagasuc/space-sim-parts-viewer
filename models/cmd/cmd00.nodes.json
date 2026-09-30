@@ -1,0 +1,208 @@
+{
+ "id": "cmd00",
+ "name": "PC-1 'Pathfinder' Probe Core",
+ "category": "cmd",
+ "short_name": "probe_core",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "cmd00_probe_core",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.3125,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.3125
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.3125,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.3125
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd00_probe_core": {
+   "vid": "cmd00_probe_core",
+   "size": "XS",
+   "state": "flight",
+   "label": "Probe core puck",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.3,
+    "internal_slots": 2
+   },
+   "notes": "2 x 0.5x0.5x0.6 m slots cannot physically fit in an XS puck; slot count is abstract",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.15000000000000002
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.15000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.3,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd00_probe_core.step",
+    "glb": "glb/cmd00_probe_core.glb",
+    "preview": "renders/cmd00_probe_core.png"
+   }
+  }
+ }
+}

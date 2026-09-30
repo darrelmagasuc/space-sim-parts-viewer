@@ -1,0 +1,522 @@
+{
+ "id": "jet08",
+ "name": "WG-1 Wing Panels (Straight / Swept / Delta)",
+ "category": "jet",
+ "short_name": "wing",
+ "sizes": [
+  "straight-S",
+  "straight-M",
+  "straight-L",
+  "swept-S",
+  "swept-M",
+  "swept-L",
+  "delta-S",
+  "delta-M",
+  "delta-L"
+ ],
+ "primary": "jet08_wing_delta_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.8,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet08_wing_straight_s": {
+   "vid": "jet08_wing_straight_s",
+   "size": "straight-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "straight",
+    "semi_span_m": 3.0,
+    "root_chord_m": 1.25,
+    "tip_chord_m": 0.75,
+    "area_m2": 3.0,
+    "mass_t_at_25kg_m2": 0.075,
+    "root_thickness_m": 0.15
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -1.5250000500000005,
+     -0.07503569297929719,
+     -0.6250001
+    ],
+    [
+     1.5250000500000003,
+     0.07503569297929719,
+     0.6250001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.05,
+    1.25,
+    0.15
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.525,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_straight_s.step",
+    "glb": "glb/jet08_wing_straight_s.glb"
+   }
+  },
+  "jet08_wing_straight_m": {
+   "vid": "jet08_wing_straight_m",
+   "size": "straight-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "straight",
+    "semi_span_m": 6.0,
+    "root_chord_m": 2.5,
+    "tip_chord_m": 1.5,
+    "area_m2": 12.0,
+    "mass_t_at_25kg_m2": 0.3,
+    "root_thickness_m": 0.3
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -3.0500000500000013,
+     -0.1500712859585944,
+     -1.2500001
+    ],
+    [
+     3.05000005,
+     0.1500712859585944,
+     1.2500001
+    ]
+   ],
+   "bbox_godot_size": [
+    6.1,
+    2.5,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -3.05,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_straight_m.step",
+    "glb": "glb/jet08_wing_straight_m.glb"
+   }
+  },
+  "jet08_wing_straight_l": {
+   "vid": "jet08_wing_straight_l",
+   "size": "straight-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "straight",
+    "semi_span_m": 9.0,
+    "root_chord_m": 3.75,
+    "tip_chord_m": 2.25,
+    "area_m2": 27.0,
+    "mass_t_at_25kg_m2": 0.675,
+    "root_thickness_m": 0.45
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -4.575000050000001,
+     -0.22510687893789158,
+     -1.8750001000000096
+    ],
+    [
+     4.575000050000002,
+     0.22510687893789158,
+     1.8750001000000098
+    ]
+   ],
+   "bbox_godot_size": [
+    9.15,
+    3.75,
+    0.45
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -4.575,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_straight_l.step",
+    "glb": "glb/jet08_wing_straight_l.glb"
+   }
+  },
+  "jet08_wing_swept_s": {
+   "vid": "jet08_wing_swept_s",
+   "size": "swept-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "swept",
+    "semi_span_m": 3.0,
+    "root_chord_m": 1.375,
+    "tip_chord_m": 0.5,
+    "area_m2": 2.81,
+    "mass_t_at_25kg_m2": 0.07,
+    "root_thickness_m": 0.138
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -1.5250000500000005,
+     -0.06878953450119096,
+     -1.3003114073145647
+    ],
+    [
+     1.5250000500000005,
+     0.06878953450119098,
+     1.300311407314565
+    ]
+   ],
+   "bbox_godot_size": [
+    3.05,
+    2.601,
+    0.138
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.525,
+      0.6128,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_swept_s.step",
+    "glb": "glb/jet08_wing_swept_s.glb"
+   }
+  },
+  "jet08_wing_swept_m": {
+   "vid": "jet08_wing_swept_m",
+   "size": "swept-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "swept",
+    "semi_span_m": 6.0,
+    "root_chord_m": 2.75,
+    "tip_chord_m": 1.0,
+    "area_m2": 11.25,
+    "mass_t_at_25kg_m2": 0.281,
+    "root_thickness_m": 0.275
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -3.0500000500000013,
+     -0.13757896900238192,
+     -2.600622714629129
+    ],
+    [
+     3.0500000500000004,
+     0.13757896900238195,
+     2.600622714629129
+    ]
+   ],
+   "bbox_godot_size": [
+    6.1,
+    5.201,
+    0.275
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -3.05,
+      1.2256,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_swept_m.step",
+    "glb": "glb/jet08_wing_swept_m.glb"
+   }
+  },
+  "jet08_wing_swept_l": {
+   "vid": "jet08_wing_swept_l",
+   "size": "swept-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "swept",
+    "semi_span_m": 9.0,
+    "root_chord_m": 4.125,
+    "tip_chord_m": 1.5,
+    "area_m2": 25.31,
+    "mass_t_at_25kg_m2": 0.633,
+    "root_thickness_m": 0.413
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -4.575000050000001,
+     -0.20636840350357294,
+     -3.900934021943693
+    ],
+    [
+     4.575000050000002,
+     0.20636840350357297,
+     3.900934021943694
+    ]
+   ],
+   "bbox_godot_size": [
+    9.15,
+    7.802,
+    0.413
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -4.575,
+      1.8384,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_swept_l.step",
+    "glb": "glb/jet08_wing_swept_l.glb"
+   }
+  },
+  "jet08_wing_delta_s": {
+   "vid": "jet08_wing_delta_s",
+   "size": "delta-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "delta",
+    "semi_span_m": 1.75,
+    "root_chord_m": 3.25,
+    "tip_chord_m": 0.62,
+    "area_m2": 3.01,
+    "mass_t_at_25kg_m2": 0.075,
+    "root_thickness_m": 0.26
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -0.9000000500000003,
+     -0.1300925587361164,
+     -1.6250001000000114
+    ],
+    [
+     0.90000005,
+     0.1300925587361164,
+     1.6250001000000116
+    ]
+   ],
+   "bbox_godot_size": [
+    1.8,
+    3.25,
+    0.26
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.9,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_delta_s.step",
+    "glb": "glb/jet08_wing_delta_s.glb"
+   }
+  },
+  "jet08_wing_delta_m": {
+   "vid": "jet08_wing_delta_m",
+   "size": "delta-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": true,
+   "dims": {
+    "type": "delta",
+    "semi_span_m": 3.5,
+    "root_chord_m": 6.5,
+    "tip_chord_m": 1.24,
+    "area_m2": 12.02,
+    "mass_t_at_25kg_m2": 0.301,
+    "root_thickness_m": 0.52
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -1.8000000500000004,
+     -0.26018501747223277,
+     -3.2500001000000225
+    ],
+    [
+     1.8000000500000004,
+     0.26018501747223277,
+     3.250000100000023
+    ]
+   ],
+   "bbox_godot_size": [
+    3.6,
+    6.5,
+    0.52
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.8,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_delta_m.step",
+    "glb": "glb/jet08_wing_delta_m.glb"
+   }
+  },
+  "jet08_wing_delta_l": {
+   "vid": "jet08_wing_delta_l",
+   "size": "delta-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "Wing panel",
+   "primary": false,
+   "dims": {
+    "type": "delta",
+    "semi_span_m": 5.25,
+    "root_chord_m": 9.75,
+    "tip_chord_m": 1.86,
+    "area_m2": 27.05,
+    "mass_t_at_25kg_m2": 0.676,
+    "root_thickness_m": 0.78
+   },
+   "notes": "radial: root on -X, span +X, leading edge +Z",
+   "bbox_cad_zup": [
+    [
+     -2.7000000500000003,
+     -0.3902774762083492,
+     -4.87500010000001
+    ],
+    [
+     2.7000000500000003,
+     0.3902774762083492,
+     4.87500010000001
+    ]
+   ],
+   "bbox_godot_size": [
+    5.4,
+    9.75,
+    0.781
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.7,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet08_wing_delta_l.step",
+    "glb": "glb/jet08_wing_delta_l.glb"
+   }
+  }
+ }
+}

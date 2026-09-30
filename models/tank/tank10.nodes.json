@@ -1,0 +1,211 @@
+{
+ "id": "tank10",
+ "name": "T-H2O Water / Consumables Tank",
+ "category": "tanks",
+ "short_name": "water_wall",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "tank10_water_wall_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    1.825,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    1.675,
+    2.5338,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    1.675,
+    -2.5338,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank10_water_wall_s": {
+   "vid": "tank10_water_wall_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Water wall panel",
+   "primary": false,
+   "dims": {
+    "host_hull": "M",
+    "outer_radius_m": 1.2,
+    "thickness_m": 0.2,
+    "arc_deg": 90.0,
+    "height_m": 2.894,
+    "water_m3": 1.0
+   },
+   "notes": "lines a M-class hull; origin on hull axis (not panel centroid)",
+   "bbox_cad_zup": [
+    [
+     0.6682159082212875,
+     -0.8522246154874392,
+     -1.4468631190172307
+    ],
+    [
+     1.2,
+     0.8874190103891172,
+     1.4468631190172307
+    ]
+   ],
+   "bbox_godot_size": [
+    0.532,
+    2.894,
+    1.74
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.2,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      1.1,
+      1.4469,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      1.1,
+      -1.4469,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank10_water_wall_s.step",
+    "glb": "glb/tank10_water_wall_s.glb"
+   }
+  },
+  "tank10_water_wall_m": {
+   "vid": "tank10_water_wall_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Water wall panel",
+   "primary": true,
+   "dims": {
+    "host_hull": "L",
+    "outer_radius_m": 1.825,
+    "thickness_m": 0.3,
+    "arc_deg": 180.0,
+    "height_m": 5.068,
+    "water_m3": 8.0
+   },
+   "notes": "lines a L-class hull; origin on hull axis (not panel centroid)",
+   "bbox_cad_zup": [
+    [
+     -0.1199999999999999,
+     -1.8252280199380935,
+     -2.5338100392739547
+    ],
+    [
+     1.825,
+     1.8252280199380935,
+     2.5338100392739547
+    ]
+   ],
+   "bbox_godot_size": [
+    1.945,
+    5.068,
+    3.65
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.825,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      1.675,
+      2.5338,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      1.675,
+      -2.5338,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank10_water_wall_m.step",
+    "glb": "glb/tank10_water_wall_m.glb"
+   }
+  }
+ }
+}

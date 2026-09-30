@@ -1,0 +1,210 @@
+{
+ "id": "cmd08",
+ "name": "CM-6 'Hermes' Flight Deck",
+ "category": "cmd",
+ "short_name": "flight_deck",
+ "sizes": [
+  "L"
+ ],
+ "primary": "cmd08_flight_deck",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.3258,
+    -1.1,
+    -1.3258
+   ],
+   "direction": [
+    0.7071,
+    0.0,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    -1.3258,
+    -1.1,
+    -1.3258
+   ],
+   "direction": [
+    -0.7071,
+    0.0,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.3258,
+    -1.1,
+    1.3258
+   ],
+   "direction": [
+    -0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    1.3258,
+    -1.1,
+    1.3258
+   ],
+   "direction": [
+    0.7071,
+    0.0,
+    0.7071
+   ]
+  }
+ ],
+ "variants": {
+  "cmd08_flight_deck": {
+   "vid": "cmd08_flight_deck",
+   "size": "L",
+   "state": "flight",
+   "label": "Hermes-class flight deck",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 6.2,
+    "barrel_m": 4.5,
+    "berthing_ring_diameter_m": 2.0,
+    "crew_stations": 2
+   },
+   "notes": "bridge windows face -Y (front); berthing rings both ends; side nodes at 45/135/225/315 deg",
+   "bbox_cad_zup": [
+    [
+     -1.895,
+     -1.895,
+     -3.1
+    ],
+    [
+     1.895,
+     1.895,
+     3.1
+    ]
+   ],
+   "bbox_godot_size": [
+    3.79,
+    6.2,
+    3.79
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.3258,
+      -1.1,
+      -1.3258
+     ],
+     "direction": [
+      0.7071,
+      0.0,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      -1.3258,
+      -1.1,
+      -1.3258
+     ],
+     "direction": [
+      -0.7071,
+      0.0,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.3258,
+      -1.1,
+      1.3258
+     ],
+     "direction": [
+      -0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      1.3258,
+      -1.1,
+      1.3258
+     ],
+     "direction": [
+      0.7071,
+      0.0,
+      0.7071
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd08_flight_deck.step",
+    "glb": "glb/cmd08_flight_deck.glb",
+    "preview": "renders/cmd08_flight_deck.png"
+   }
+  }
+ }
+}

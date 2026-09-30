@@ -1,0 +1,405 @@
+{
+ "id": "rover00",
+ "name": "RV-1 'Sojourner' Micro Rover",
+ "category": "rover",
+ "short_name": "micro_rover",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "rover00_micro_rover",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.1959,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.0551,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    0.245,
+    -0.1309,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_2",
+   "position": [
+    0.245,
+    -0.1309,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_3",
+   "position": [
+    0.245,
+    -0.1309,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_4",
+   "position": [
+    -0.245,
+    -0.1309,
+    0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_5",
+   "position": [
+    -0.245,
+    -0.1309,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_6",
+   "position": [
+    -0.245,
+    -0.1309,
+    -0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover00_micro_rover": {
+   "vid": "rover00_micro_rover",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "Micro rover",
+   "primary": true,
+   "dims": {
+    "length_m": 0.63,
+    "width_m": 0.56,
+    "height_m": 0.4,
+    "wheel_dia_m": 0.13,
+    "wheels": 6
+   },
+   "notes": "6-wheel rocker-bogie, solar deck",
+   "bbox_cad_zup": [
+    [
+     -0.28,
+     -0.31825000000000003,
+     -0.19912500000000002
+    ],
+    [
+     0.28,
+     0.31825000000000003,
+     0.199125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.56,
+    0.398,
+    0.637
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1959,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0551,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.245,
+      -0.1309,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      0.245,
+      -0.1309,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      0.245,
+      -0.1309,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -0.245,
+      -0.1309,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -0.245,
+      -0.1309,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -0.245,
+      -0.1309,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover00_micro_rover.step",
+    "glb": "glb/rover00_micro_rover.glb"
+   }
+  },
+  "rover00_micro_rover_steer_left": {
+   "vid": "rover00_micro_rover_steer_left",
+   "size": "XS",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Micro rover",
+   "primary": false,
+   "dims": {
+    "length_m": 0.63,
+    "width_m": 0.56,
+    "height_m": 0.4,
+    "wheel_dia_m": 0.13,
+    "wheels": 6
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.3055644689100855,
+     -0.32664714562617586,
+     -0.19912500000000002
+    ],
+    [
+     0.3055644689100855,
+     0.32664714562617586,
+     0.199125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.611,
+    0.398,
+    0.653
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1959,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0551,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.245,
+      -0.1309,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      0.245,
+      -0.1309,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      0.245,
+      -0.1309,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -0.245,
+      -0.1309,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -0.245,
+      -0.1309,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -0.245,
+      -0.1309,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover00_micro_rover_steer_left.step",
+    "glb": "glb/rover00_micro_rover_steer_left.glb"
+   }
+  }
+ }
+}

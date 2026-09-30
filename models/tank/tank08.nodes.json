@@ -1,0 +1,130 @@
+{
+ "id": "tank08",
+ "name": "T-CRYO Cryocooler Upgrade",
+ "category": "tanks",
+ "short_name": "cryocooler",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "tank08_cryocooler",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.34,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.12,
+    0.34,
+    -0.12
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.12,
+    0.34,
+    0.02
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank08_cryocooler": {
+   "vid": "tank08_cryocooler",
+   "size": "slot",
+   "state": "flight",
+   "label": "Cryocooler slot module",
+   "primary": true,
+   "dims": {
+    "w_m": 0.5,
+    "d_m": 0.5,
+    "h_m": 0.6,
+    "h_with_ports_m": 0.6799999999999999
+   },
+   "notes": "internal-slot item; assumed standard slot envelope 0.5 x 0.5 x 0.6 m",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.33999999999999997
+    ],
+    [
+     0.25000000000000006,
+     0.25000000000000006,
+     0.34
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.68,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.34,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.12,
+      0.34,
+      -0.12
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.12,
+      0.34,
+      0.02
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank08_cryocooler.step",
+    "glb": "glb/tank08_cryocooler.glb"
+   }
+  }
+ }
+}

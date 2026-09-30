@@ -1,0 +1,78 @@
+{
+ "id": "prop01",
+ "name": "RCS-B Bipropellant RCS",
+ "category": "prop",
+ "short_name": "rcs_biprop",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop01_rcs_biprop",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.156,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop01_rcs_biprop": {
+   "vid": "prop01_rcs_biprop",
+   "size": "XS",
+   "state": "flight",
+   "label": "Bipropellant RCS pod",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.35 x 0.94 x 0.94",
+    "thrusters": 4,
+    "nozzle_exit_diameter_m": 0.15
+   },
+   "notes": "radial part: node_attach on -X; 4 Draco/R-4D-class thrusters with fuel/ox valve pairs",
+   "bbox_cad_zup": [
+    [
+     -0.156,
+     -0.47,
+     -0.47
+    ],
+    [
+     0.156,
+     0.47,
+     0.47
+    ]
+   ],
+   "bbox_godot_size": [
+    0.312,
+    0.94,
+    0.94
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.156,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop01_rcs_biprop.step",
+    "glb": "glb/prop01_rcs_biprop.glb",
+    "preview": "renders/prop01_rcs_biprop.png"
+   }
+  }
+ }
+}

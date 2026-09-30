@@ -1,0 +1,472 @@
+{
+ "id": "jet10",
+ "name": "LG-S/M/L Landing Gear",
+ "category": "jet",
+ "short_name": "landing_gear",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "jet10_landing_gear_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.4027,
+    -0.4976,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    -0.1927,
+    1.0024,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet10_landing_gear_s": {
+   "vid": "jet10_landing_gear_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "Landing gear",
+   "primary": false,
+   "dims": {
+    "strut_len_m": 0.9,
+    "wheel_dia_m": 0.45,
+    "wheels": 1,
+    "rated_aircraft_t": 5,
+    "extension_m": 1.247
+   },
+   "notes": "radial: attach on -X; stowed leg folds forward (+Z) into the bay",
+   "bbox_cad_zup": [
+    [
+     -0.35206784085156656,
+     -0.185,
+     -0.838575
+    ],
+    [
+     0.3520678408515666,
+     0.185,
+     0.838575
+    ]
+   ],
+   "bbox_godot_size": [
+    0.704,
+    1.677,
+    0.37
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2369,
+      -0.2986,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.1149,
+      0.6014,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_s.step",
+    "glb": "glb/jet10_landing_gear_s.glb"
+   }
+  },
+  "jet10_landing_gear_s_deployed": {
+   "vid": "jet10_landing_gear_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "Landing gear",
+   "primary": false,
+   "dims": {
+    "strut_len_m": 0.9,
+    "wheel_dia_m": 0.45,
+    "wheels": 1,
+    "rated_aircraft_t": 5,
+    "extension_m": 1.247
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.23691784085156667,
+     -0.185,
+     -0.838575
+    ],
+    [
+     1.0222321591484334,
+     0.185,
+     0.8264250000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.259,
+    1.665,
+    0.37
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2369,
+      -0.2986,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.7851,
+      -0.2986,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.0101,
+      -0.2986,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_s_deployed.step",
+    "glb": "glb/jet10_landing_gear_s_deployed.glb"
+   }
+  },
+  "jet10_landing_gear_m": {
+   "vid": "jet10_landing_gear_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "Landing gear",
+   "primary": true,
+   "dims": {
+    "strut_len_m": 1.5,
+    "wheel_dia_m": 0.75,
+    "wheels": 2,
+    "rated_aircraft_t": 30,
+    "extension_m": 2.085
+   },
+   "notes": "radial: attach on -X; stowed leg folds forward (+Z) into the bay",
+   "bbox_cad_zup": [
+    [
+     -0.5879625517224116,
+     -0.42,
+     -1.397625
+    ],
+    [
+     0.5879625517224116,
+     0.42,
+     1.397625
+    ]
+   ],
+   "bbox_godot_size": [
+    1.176,
+    2.795,
+    0.84
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4027,
+      -0.4976,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.1927,
+      1.0024,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_m.step",
+    "glb": "glb/jet10_landing_gear_m.glb"
+   }
+  },
+  "jet10_landing_gear_m_deployed": {
+   "vid": "jet10_landing_gear_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "Landing gear",
+   "primary": false,
+   "dims": {
+    "strut_len_m": 1.5,
+    "wheel_dia_m": 0.75,
+    "wheels": 2,
+    "rated_aircraft_t": 30,
+    "extension_m": 2.085
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.4027125517224117,
+     -0.42,
+     -1.397625
+    ],
+    [
+     1.7025374482775881,
+     0.42,
+     1.377375
+    ]
+   ],
+   "bbox_godot_size": [
+    2.105,
+    2.775,
+    0.84
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4027,
+      -0.4976,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.3073,
+      -0.4976,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.6823,
+      -0.4976,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_m_deployed.step",
+    "glb": "glb/jet10_landing_gear_m_deployed.glb"
+   }
+  },
+  "jet10_landing_gear_l": {
+   "vid": "jet10_landing_gear_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "Landing gear",
+   "primary": false,
+   "dims": {
+    "strut_len_m": 2.3,
+    "wheel_dia_m": 1.14,
+    "wheels": 2,
+    "rated_aircraft_t": 150,
+    "extension_m": 3.194
+   },
+   "notes": "radial: attach on -X; stowed leg folds forward (+Z) into the bay",
+   "bbox_cad_zup": [
+    [
+     -0.8992636438517717,
+     -0.6000000000000001,
+     -2.14039
+    ],
+    [
+     0.8992636438517716,
+     0.6000000000000001,
+     2.14039
+    ]
+   ],
+   "bbox_godot_size": [
+    1.799,
+    4.281,
+    1.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.6225,
+      -0.7604,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.2985,
+      1.5396,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_l.step",
+    "glb": "glb/jet10_landing_gear_l.glb"
+   }
+  },
+  "jet10_landing_gear_l_deployed": {
+   "vid": "jet10_landing_gear_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "Landing gear",
+   "primary": false,
+   "dims": {
+    "strut_len_m": 2.3,
+    "wheel_dia_m": 1.14,
+    "wheels": 2,
+    "rated_aircraft_t": 150,
+    "extension_m": 3.194
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.622483643851772,
+     -0.6000000000000001,
+     -2.14039
+    ],
+    [
+     2.602296356148228,
+     0.6000000000000001,
+     2.10961
+    ]
+   ],
+   "bbox_godot_size": [
+    3.225,
+    4.25,
+    1.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.6225,
+      -0.7604,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      2.0015,
+      -0.7604,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      2.5715,
+      -0.7604,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet10_landing_gear_l_deployed.step",
+    "glb": "glb/jet10_landing_gear_l_deployed.glb"
+   }
+  }
+ }
+}

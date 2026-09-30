@@ -1,0 +1,184 @@
+{
+ "id": "cmd02",
+ "name": "PC-3 'Voyager' Deep Space Bus",
+ "category": "cmd",
+ "short_name": "deep_space_bus",
+ "sizes": [
+  "M"
+ ],
+ "primary": "cmd02_deep_space_bus",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.6918,
+    -0.35,
+    -0.5497
+   ],
+   "direction": [
+    0.9511,
+    0.0,
+    -0.309
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    -1.0456,
+    -0.35,
+    -1.4391
+   ],
+   "direction": [
+    -0.5878,
+    0.0,
+    -0.809
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.0456,
+    -0.35,
+    1.4391
+   ],
+   "direction": [
+    -0.5878,
+    0.0,
+    0.809
+   ]
+  }
+ ],
+ "variants": {
+  "cmd02_deep_space_bus": {
+   "vid": "cmd02_deep_space_bus",
+   "size": "M",
+   "state": "flight",
+   "label": "Deep-space probe bus",
+   "primary": true,
+   "dims": {
+    "across_corners_m": 2.5,
+    "height_m": 1.8,
+    "bus_height_m": 1.5,
+    "internal_slots": 8,
+    "rtg_mounts": 3
+   },
+   "notes": "decagonal Cassini-style bus; 8 slot-bay doors (0.5 x 0.6 m); 3 RTG mounting pads = node_side_1..3; node_top on the upper equipment module ring (HGA/stack)",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.55665318250698,
+     -0.9
+    ],
+    [
+     1.753562364973472,
+     1.5566531825069805,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    3.004,
+    1.8,
+    3.113
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.6918,
+      -0.35,
+      -0.5497
+     ],
+     "direction": [
+      0.9511,
+      0.0,
+      -0.309
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      -1.0456,
+      -0.35,
+      -1.4391
+     ],
+     "direction": [
+      -0.5878,
+      0.0,
+      -0.809
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.0456,
+      -0.35,
+      1.4391
+     ],
+     "direction": [
+      -0.5878,
+      0.0,
+      0.809
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cmd02_deep_space_bus.step",
+    "glb": "glb/cmd02_deep_space_bus.glb",
+    "preview": "renders/cmd02_deep_space_bus.png"
+   }
+  }
+ }
+}

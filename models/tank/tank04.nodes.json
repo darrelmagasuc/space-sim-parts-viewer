@@ -1,0 +1,238 @@
+{
+ "id": "tank04",
+ "name": "T-XE1/XE2/XE3 Xenon COPV",
+ "category": "tanks",
+ "short_name": "xenon_copv",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "tank04_xenon_copv_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5549,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5667,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank04_xenon_copv_xs": {
+   "vid": "tank04_xenon_copv_xs",
+   "size": "XS",
+   "state": "flight",
+   "label": "Xenon COPV",
+   "primary": false,
+   "dims": {
+    "stack_diameter_m": 0.625,
+    "vessel_diameter_m": 0.457,
+    "vessel_height_m": 0.571,
+    "height_m": 0.656,
+    "xe_volume_m3": 0.062,
+    "xe_t": 0.1
+   },
+   "notes": "Xe at ~1.6 t/m3 supercritical",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.33138165855721036
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.3313816585572104
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.663,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3245,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3314,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank04_xenon_copv_xs.step",
+    "glb": "glb/tank04_xenon_copv_xs.glb"
+   }
+  },
+  "tank04_xenon_copv_s": {
+   "vid": "tank04_xenon_copv_s",
+   "size": "S",
+   "state": "flight",
+   "label": "Xenon COPV",
+   "primary": true,
+   "dims": {
+    "stack_diameter_m": 1.25,
+    "vessel_diameter_m": 0.782,
+    "vessel_height_m": 0.977,
+    "height_m": 1.122,
+    "xe_volume_m3": 0.312,
+    "xe_t": 0.5
+   },
+   "notes": "Xe at ~1.6 t/m3 supercritical",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.5666546653026598
+    ],
+    [
+     0.625,
+     0.625,
+     0.5666546653026598
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.133,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5549,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5667,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank04_xenon_copv_s.step",
+    "glb": "glb/tank04_xenon_copv_s.glb"
+   }
+  },
+  "tank04_xenon_copv_m": {
+   "vid": "tank04_xenon_copv_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Xenon COPV",
+   "primary": false,
+   "dims": {
+    "stack_diameter_m": 2.5,
+    "vessel_diameter_m": 1.563,
+    "vessel_height_m": 1.954,
+    "height_m": 2.243,
+    "xe_volume_m3": 2.5,
+    "xe_t": 4.0
+   },
+   "notes": "Xe at ~1.6 t/m3 supercritical",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.1333093306053197
+    ],
+    [
+     1.25,
+     1.25,
+     1.1333093306053197
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.267,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1099,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1333,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank04_xenon_copv_m.step",
+    "glb": "glb/tank04_xenon_copv_m.glb"
+   }
+  }
+ }
+}

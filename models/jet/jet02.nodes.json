@@ -1,0 +1,167 @@
+{
+ "id": "jet02",
+ "name": "JT-3 Low-Bypass Turbofan",
+ "category": "jet",
+ "short_name": "low_bypass_fan",
+ "sizes": [
+  "S"
+ ],
+ "primary": "jet02_low_bypass_fan",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.425,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.425,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet02_low_bypass_fan": {
+   "vid": "jet02_low_bypass_fan",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Low-bypass afterburning turbofan",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.18,
+    "length_m": 4.85,
+    "nozzle_exit_dia_m": 0.72
+   },
+   "notes": "inline",
+   "bbox_cad_zup": [
+    [
+     -0.59,
+     -0.59,
+     -2.425
+    ],
+    [
+     0.59,
+     0.7,
+     2.425
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    4.85,
+    1.29
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.425,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.425,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet02_low_bypass_fan.step",
+    "glb": "glb/jet02_low_bypass_fan.glb"
+   }
+  },
+  "jet02_low_bypass_fan_ab": {
+   "vid": "jet02_low_bypass_fan_ab",
+   "size": "S",
+   "state": "ab",
+   "default_state": false,
+   "label": "Low-bypass afterburning turbofan",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.18,
+    "length_m": 4.85,
+    "nozzle_exit_dia_m": 1.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.59,
+     -0.59,
+     -2.425
+    ],
+    [
+     0.59,
+     0.7,
+     2.425
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    4.85,
+    1.29
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.425,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.425,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet02_low_bypass_fan_ab.step",
+    "glb": "glb/jet02_low_bypass_fan_ab.glb"
+   }
+  }
+ }
+}

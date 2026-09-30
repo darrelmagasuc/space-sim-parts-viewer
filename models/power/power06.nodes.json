@@ -1,0 +1,79 @@
+{
+ "id": "power06",
+ "name": "FR-1 'Kilopower' Fission Reactor",
+ "category": "power",
+ "short_name": "kilopower",
+ "sizes": [
+  "M"
+ ],
+ "primary": "power06_kilopower",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.55,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power06_kilopower": {
+   "vid": "power06_kilopower",
+   "size": "M",
+   "state": "flight",
+   "label": "Kilopower-class fission reactor",
+   "primary": true,
+   "dims": {
+    "base_diameter_m": 2.5,
+    "height_m": 3.1,
+    "stirling_units": 8,
+    "power_kwe": 10
+   },
+   "notes": "shield widens toward the ship (node_bottom): crew safe inside the shadow cone; fins are the integral radiator skirt",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.5499999999999998
+    ],
+    [
+     1.25,
+     1.25,
+     1.55
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.1,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.55,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power06_kilopower.step",
+    "glb": "glb/power06_kilopower.glb",
+    "preview": "renders/power06_kilopower.png"
+   }
+  }
+ }
+}

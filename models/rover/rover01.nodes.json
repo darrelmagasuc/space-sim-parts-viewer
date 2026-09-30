@@ -1,0 +1,564 @@
+{
+ "id": "rover01",
+ "name": "RV-2 'Curiosity' Science Rover",
+ "category": "rover",
+ "short_name": "science_rover",
+ "sizes": [
+  "M"
+ ],
+ "primary": "rover01_science_rover",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.1087,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.1413,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    1.2,
+    -0.8587,
+    1.1
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_2",
+   "position": [
+    1.2,
+    -0.8587,
+    -0.05
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_3",
+   "position": [
+    1.2,
+    -0.8587,
+    -1.05
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_4",
+   "position": [
+    -1.2,
+    -0.8587,
+    1.1
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_5",
+   "position": [
+    -1.2,
+    -0.8587,
+    -0.05
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_6",
+   "position": [
+    -1.2,
+    -0.8587,
+    -1.05
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover01_science_rover": {
+   "vid": "rover01_science_rover",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Science rover",
+   "primary": true,
+   "dims": {
+    "length_m": 3.0,
+    "width_m": 2.8,
+    "height_m": 2.23,
+    "wheel_dia_m": 0.5,
+    "wheels": 6,
+    "arm_reach_m": 1.7
+   },
+   "notes": "rocker-bogie, MMRTG at rear, mast, 5-DOF arm",
+   "bbox_cad_zup": [
+    [
+     -1.4,
+     -1.3625000000000003,
+     -1.1212499999999999
+    ],
+    [
+     1.4000000000000001,
+     1.7303166622750072,
+     1.12125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.8,
+    2.242,
+    3.093
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1087,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1413,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover01_science_rover.step",
+    "glb": "glb/rover01_science_rover.glb"
+   }
+  },
+  "rover01_science_rover_steer_left": {
+   "vid": "rover01_science_rover_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "Science rover",
+   "primary": false,
+   "dims": {
+    "length_m": 3.0,
+    "width_m": 2.8,
+    "height_m": 2.23,
+    "wheel_dia_m": 0.5,
+    "wheels": 6,
+    "arm_reach_m": 1.7
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.4921988511142636,
+     -1.4224294464452607,
+     -1.1212499999999999
+    ],
+    [
+     1.4921988511142636,
+     1.7303166622750072,
+     1.12125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.984,
+    2.242,
+    3.153
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1087,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1413,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover01_science_rover_steer_left.step",
+    "glb": "glb/rover01_science_rover_steer_left.glb"
+   }
+  },
+  "rover01_science_rover_arm_deployed": {
+   "vid": "rover01_science_rover_arm_deployed",
+   "size": "M",
+   "state": "arm_deployed",
+   "default_state": false,
+   "label": "Science rover",
+   "primary": false,
+   "dims": {
+    "length_m": 3.0,
+    "width_m": 2.8,
+    "height_m": 2.23,
+    "wheel_dia_m": 0.5,
+    "wheels": 6,
+    "arm_reach_m": 1.7
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.4,
+     -2.7600000000000002,
+     -1.1212499999999999
+    ],
+    [
+     1.4000000000000001,
+     1.7303166622750072,
+     1.12125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.8,
+    2.242,
+    4.49
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1087,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1413,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_3",
+     "position": [
+      1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_4",
+     "position": [
+      -1.2,
+      -0.8587,
+      1.1
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_5",
+     "position": [
+      -1.2,
+      -0.8587,
+      -0.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_6",
+     "position": [
+      -1.2,
+      -0.8587,
+      -1.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.35,
+      -0.8187,
+      2.62
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/rover01_science_rover_arm_deployed.step",
+    "glb": "glb/rover01_science_rover_arm_deployed.glb"
+   }
+  }
+ }
+}

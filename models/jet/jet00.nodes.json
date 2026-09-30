@@ -1,0 +1,169 @@
+{
+ "id": "jet00",
+ "name": "JT-1 Turbojet",
+ "category": "jet",
+ "short_name": "turbojet",
+ "sizes": [
+  "S"
+ ],
+ "primary": "jet00_turbojet",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.65,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.65,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet00_turbojet": {
+   "vid": "jet00_turbojet",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Afterburning turbojet",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.06,
+    "casing_dia_m": 1.0,
+    "length_m": 5.3,
+    "nozzle_exit_dia_m": 0.66
+   },
+   "notes": "inline; intake face = node_top",
+   "bbox_cad_zup": [
+    [
+     -0.53,
+     -0.53,
+     -2.65
+    ],
+    [
+     0.53,
+     0.6799999999999999,
+     2.65
+    ]
+   ],
+   "bbox_godot_size": [
+    1.06,
+    5.3,
+    1.21
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.65,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.65,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet00_turbojet.step",
+    "glb": "glb/jet00_turbojet.glb"
+   }
+  },
+  "jet00_turbojet_ab": {
+   "vid": "jet00_turbojet_ab",
+   "size": "S",
+   "state": "ab",
+   "default_state": false,
+   "label": "Afterburning turbojet",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.06,
+    "casing_dia_m": 1.0,
+    "length_m": 5.3,
+    "nozzle_exit_dia_m": 0.84
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.53,
+     -0.53,
+     -2.65
+    ],
+    [
+     0.53,
+     0.6799999999999999,
+     2.65
+    ]
+   ],
+   "bbox_godot_size": [
+    1.06,
+    5.3,
+    1.21
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.65,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.65,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet00_turbojet_ab.step",
+    "glb": "glb/jet00_turbojet_ab.glb"
+   }
+  }
+ }
+}

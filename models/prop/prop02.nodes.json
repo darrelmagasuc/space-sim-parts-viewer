@@ -1,0 +1,104 @@
+{
+ "id": "prop02",
+ "name": "HT-1 'Hall' Hall-Effect Thruster",
+ "category": "prop",
+ "short_name": "hall_thruster",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop02_hall_thruster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.1217,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.1183,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop02_hall_thruster": {
+   "vid": "prop02_hall_thruster",
+   "size": "XS",
+   "state": "flight",
+   "label": "Hall-effect thruster",
+   "primary": true,
+   "dims": {
+    "body_diameter_m": 0.24,
+    "length_m": 0.24,
+    "channel_od_m": 0.17
+   },
+   "notes": "real SPT-100 scale (~0.23 m); mounts on node_top, plume along -Z",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.16,
+     -0.12169774937525434
+    ],
+    [
+     0.18358199500203462,
+     0.16,
+     0.12169774937525435
+    ]
+   ],
+   "bbox_godot_size": [
+    0.384,
+    0.243,
+    0.32
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1217,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1183,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop02_hall_thruster.step",
+    "glb": "glb/prop02_hall_thruster.glb",
+    "preview": "renders/prop02_hall_thruster.png"
+   }
+  }
+ }
+}

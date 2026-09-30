@@ -1,0 +1,139 @@
+{
+ "id": "jet11",
+ "name": "TPS-T Thermal Tile Kit",
+ "category": "jet",
+ "short_name": "tps_tiles",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "jet11_tps_tiles_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    1.25,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet11_tps_tiles_m": {
+   "vid": "jet11_tps_tiles_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TPS tile panel sample",
+   "primary": true,
+   "dims": {
+    "host_hull": "M",
+    "hull_radius_m": 1.25,
+    "arc_deg": 60.0,
+    "height_m": 1.6,
+    "tile_m": 0.152,
+    "tile_thickness_m": 0.05,
+    "tiles": 72,
+    "areal_mass_kg_m2": 12
+   },
+   "notes": "60 deg patch of a hull; tiles are individual meshes",
+   "bbox_cad_zup": [
+    [
+     1.0825317547305482,
+     -0.6624999999999999,
+     -0.8
+    ],
+    [
+     1.325,
+     0.6625000000000001,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.242,
+    1.6,
+    1.325
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet11_tps_tiles_m.step",
+    "glb": "glb/jet11_tps_tiles_m.glb"
+   }
+  },
+  "jet11_tps_tiles_l": {
+   "vid": "jet11_tps_tiles_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "TPS tile panel sample",
+   "primary": false,
+   "dims": {
+    "host_hull": "L",
+    "hull_radius_m": 1.875,
+    "arc_deg": 60.0,
+    "height_m": 1.6,
+    "tile_m": 0.152,
+    "tile_thickness_m": 0.05,
+    "tiles": 117,
+    "areal_mass_kg_m2": 12
+   },
+   "notes": "60 deg patch of a hull; tiles are individual meshes",
+   "bbox_cad_zup": [
+    [
+     1.6237976320958225,
+     -0.9749999999999999,
+     -0.8
+    ],
+    [
+     1.95,
+     0.9750000000000001,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.326,
+    1.6,
+    1.95
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet11_tps_tiles_l.step",
+    "glb": "glb/jet11_tps_tiles_l.glb"
+   }
+  }
+ }
+}

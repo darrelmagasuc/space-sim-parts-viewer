@@ -1,0 +1,106 @@
+{
+ "id": "jet05",
+ "name": "SJ-1 Experimental Scramjet",
+ "category": "jet",
+ "short_name": "scramjet",
+ "sizes": [
+  "S"
+ ],
+ "primary": "jet05_scramjet",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.305,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    -0.045,
+    -1.8,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet05_scramjet": {
+   "vid": "jet05_scramjet",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Scramjet test article",
+   "primary": true,
+   "dims": {
+    "length_m": 3.6,
+    "width_m": 1.0,
+    "width_fins_m": 1.8,
+    "height_m": 0.6100000000000001,
+    "inlet_gap_m": 0.08
+   },
+   "notes": "underslung module, attach on -X",
+   "bbox_cad_zup": [
+    [
+     -0.30500000000000005,
+     -0.9,
+     -1.8
+    ],
+    [
+     0.30500000000000005,
+     0.9,
+     1.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.61,
+    3.6,
+    1.8
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.305,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -0.045,
+      -1.8,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/jet05_scramjet.step",
+    "glb": "glb/jet05_scramjet.glb"
+   }
+  }
+ }
+}

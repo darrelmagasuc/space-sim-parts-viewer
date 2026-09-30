@@ -1,0 +1,105 @@
+{
+ "id": "station06",
+ "name": "CBM Berthing Ring",
+ "category": "station",
+ "short_name": "cbm",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station06_cbm",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5238,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2262,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station06_cbm": {
+   "vid": "station06_cbm",
+   "size": "L",
+   "state": "flight",
+   "label": "Common berthing ring",
+   "primary": true,
+   "dims": {
+    "flange_diameter_m": 3.75,
+    "ring_diameter_m": 2.4,
+    "hatch_m": "1.27 x 1.27",
+    "height_m": 1.05
+   },
+   "notes": "passive/active halves identical in blockout; arm-berthed only",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.5238012570182485
+    ],
+    [
+     1.875,
+     1.875,
+     0.5238012570182486
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.048,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5238,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2262,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station06_cbm.step",
+    "glb": "glb/station06_cbm.glb",
+    "preview": "renders/station06_cbm.png"
+   }
+  }
+ }
+}

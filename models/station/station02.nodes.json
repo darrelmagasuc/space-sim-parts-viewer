@@ -1,0 +1,169 @@
+{
+ "id": "station02",
+ "name": "HM-3 'B330' Large Inflatable",
+ "category": "station",
+ "short_name": "b330",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "station02_b330",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    6.85,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -6.85,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station02_b330": {
+   "vid": "station02_b330",
+   "size": "XL",
+   "state": "stowed",
+   "label": "Large inflatable (packed)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 13.7,
+    "state": "packed"
+   },
+   "notes": "packed inside an XL (5 m) fairing",
+   "bbox_cad_zup": [
+    [
+     -2.52,
+     -2.52,
+     -6.85
+    ],
+    [
+     2.52,
+     2.52,
+     6.85
+    ]
+   ],
+   "bbox_godot_size": [
+    5.04,
+    13.7,
+    5.04
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station02_b330.step",
+    "glb": "glb/station02_b330.glb",
+    "preview": "renders/station02_b330.png"
+   }
+  },
+  "station02_b330_deployed": {
+   "vid": "station02_b330_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "label": "Large inflatable deployed",
+   "primary": false,
+   "dims": {
+    "diameter_m": 6.7,
+    "length_m": 13.7,
+    "gross_volume_m3": 424.0,
+    "habitable_volume_m3": 330,
+    "state": "deployed"
+   },
+   "notes": "expands radially around the full-length rigid core; L rings each end for NM-1 nodes",
+   "bbox_cad_zup": [
+    [
+     -3.3900001,
+     -3.3900001,
+     -6.85
+    ],
+    [
+     3.3900001,
+     3.3900001,
+     6.85
+    ]
+   ],
+   "bbox_godot_size": [
+    6.78,
+    13.7,
+    6.78
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station02_b330_deployed.step",
+    "glb": "glb/station02_b330_deployed.glb",
+    "preview": "renders/station02_b330_deployed.png"
+   }
+  }
+ }
+}

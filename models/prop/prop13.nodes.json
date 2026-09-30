@@ -1,0 +1,104 @@
+{
+ "id": "prop13",
+ "name": "LE-7 'RL10' Expander Hydrolox",
+ "category": "prop",
+ "short_name": "rl10",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop13_rl10",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.145,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.145,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop13_rl10": {
+   "vid": "prop13_rl10",
+   "size": "S",
+   "state": "flight",
+   "label": "Expander-cycle hydrolox upper-stage engine",
+   "primary": true,
+   "dims": {
+    "length_m": 2.29,
+    "exit_diameter_m": 1.17,
+    "expansion_ratio": 84
+   },
+   "notes": "RL10A-4-2: 2.29 m long, 1.17 m exit; columbium extension = nozzle_extension",
+   "bbox_cad_zup": [
+    [
+     -0.5934000999999998,
+     -0.5934000999999998,
+     -1.1450000500000002
+    ],
+    [
+     0.5934000999999998,
+     0.5934000999999998,
+     1.14500005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.187,
+    2.29,
+    1.187
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.145,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.145,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop13_rl10.step",
+    "glb": "glb/prop13_rl10.glb",
+    "preview": "renders/prop13_rl10.png"
+   }
+  }
+ }
+}

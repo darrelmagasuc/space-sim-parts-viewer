@@ -1,0 +1,79 @@
+{
+ "id": "prop05",
+ "name": "SRB-S 'Castor' Small Solid",
+ "category": "prop",
+ "short_name": "srb_small",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop05_srb_small",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.705,
+    -0.325,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop05_srb_small": {
+   "vid": "prop05_srb_small",
+   "size": "S",
+   "state": "flight",
+   "label": "Small strap-on solid",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 7.45,
+    "casing_m": 4.9,
+    "nozzle_exit_diameter_m": 0.9
+   },
+   "notes": "length from the catalogue 7 t wet (~3.5 m3 HTPB, 85 % loading); node_attach on -X at casing mid-height",
+   "bbox_cad_zup": [
+    [
+     -0.705,
+     -0.6325,
+     -3.7250001000000013
+    ],
+    [
+     0.653125,
+     0.6325,
+     3.725000100000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.358,
+    7.45,
+    1.265
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.705,
+      -0.325,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop05_srb_small.step",
+    "glb": "glb/prop05_srb_small.glb",
+    "preview": "renders/prop05_srb_small.png"
+   }
+  }
+ }
+}

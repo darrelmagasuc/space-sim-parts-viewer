@@ -1,0 +1,183 @@
+{
+ "id": "station13",
+ "name": "GR-DS Despun Core Section",
+ "category": "station",
+ "short_name": "despun_core",
+ "sizes": [
+  "L"
+ ],
+ "primary": "station13_despun_core",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    2.525,
+    -2.1,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    -1.2625,
+    -2.1,
+    -2.1867
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.2625,
+    -2.1,
+    2.1867
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  }
+ ],
+ "variants": {
+  "station13_despun_core": {
+   "vid": "station13_despun_core",
+   "size": "L",
+   "state": "flight",
+   "label": "Despun core section",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 9.0,
+    "docking_ports": 3,
+    "docking_port_face_radius_m": 2.525
+   },
+   "notes": "node_top -> hub node_bottom; node_side_1..3 = docking ports (DP-M); node_bottom = bridge/engine stack",
+   "bbox_cad_zup": [
+    [
+     -2.0419228634059956,
+     -2.6367141445557074,
+     -4.5
+    ],
+    [
+     2.525,
+     2.6367141445557074,
+     4.5
+    ]
+   ],
+   "bbox_godot_size": [
+    4.567,
+    9.0,
+    5.273
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.525,
+      -2.1,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      -1.2625,
+      -2.1,
+      -2.1867
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.2625,
+      -2.1,
+      2.1867
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/station13_despun_core.step",
+    "glb": "glb/station13_despun_core.glb",
+    "preview": "renders/station13_despun_core.png"
+   }
+  }
+ }
+}

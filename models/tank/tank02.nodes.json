@@ -1,0 +1,446 @@
+{
+ "id": "tank02",
+ "name": "T-H1/H2/H3 Hydrolox Tanks",
+ "category": "tanks",
+ "short_name": "hydrolox",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "tank02_hydrolox_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    8.6501,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -8.6501,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    -0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    -0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank02_hydrolox_m": {
+   "vid": "tank02_hydrolox_m",
+   "size": "M",
+   "state": "flight",
+   "label": "Hydrolox tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 11.139,
+    "barrel_m": 9.639,
+    "dome_h_m": 0.75,
+    "prop_volume_m3": 52.23,
+    "wet_t": 20
+   },
+   "notes": "separate LOX (top) / LH2 (bottom) with ribbed intertank; external LOX feedline",
+   "bbox_cad_zup": [
+    [
+     -1.4874999999999998,
+     -1.295,
+     -5.569721312990828
+    ],
+    [
+     1.295,
+     1.295,
+     5.56972131299083
+    ]
+   ],
+   "bbox_godot_size": [
+    2.782,
+    11.139,
+    2.59
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.5697,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.5697,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank02_hydrolox_m.step",
+    "glb": "glb/tank02_hydrolox_m.glb"
+   }
+  },
+  "tank02_hydrolox_l": {
+   "vid": "tank02_hydrolox_l",
+   "size": "L",
+   "state": "flight",
+   "label": "Hydrolox tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 17.3,
+    "barrel_m": 15.05,
+    "dome_h_m": 1.125,
+    "prop_volume_m3": 182.79,
+    "wet_t": 70
+   },
+   "notes": "separate LOX (top) / LH2 (bottom) with ribbed intertank; external LOX feedline",
+   "bbox_cad_zup": [
+    [
+     -2.23125,
+     -1.9425000000000001,
+     -8.650121986874622
+    ],
+    [
+     1.9425000000000001,
+     1.9425000000000001,
+     8.650121986874622
+    ]
+   ],
+   "bbox_godot_size": [
+    4.174,
+    17.3,
+    3.885
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      8.6501,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -8.6501,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank02_hydrolox_l.step",
+    "glb": "glb/tank02_hydrolox_l.glb"
+   }
+  },
+  "tank02_hydrolox_xl": {
+   "vid": "tank02_hydrolox_xl",
+   "size": "XL",
+   "state": "flight",
+   "label": "Hydrolox tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 40.898,
+    "barrel_m": 37.898,
+    "dome_h_m": 1.5,
+    "prop_volume_m3": 783.39,
+    "wet_t": 300
+   },
+   "notes": "separate LOX (top) / LH2 (bottom) with ribbed intertank; external LOX feedline",
+   "bbox_cad_zup": [
+    [
+     -2.9749999999999996,
+     -2.59,
+     -20.448954648715613
+    ],
+    [
+     2.59,
+     2.59,
+     20.448954648715603
+    ]
+   ],
+   "bbox_godot_size": [
+    5.565,
+    40.898,
+    5.18
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      20.449,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -20.449,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      -0.0,
+      -0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      -0.0,
+      -0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -0.0,
+      -0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/tank02_hydrolox_xl.step",
+    "glb": "glb/tank02_hydrolox_xl.glb"
+   }
+  }
+ }
+}

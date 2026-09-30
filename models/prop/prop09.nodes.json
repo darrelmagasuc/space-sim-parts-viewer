@@ -1,0 +1,104 @@
+{
+ "id": "prop09",
+ "name": "LE-3 'Merlin-V' Vacuum Kerolox",
+ "category": "prop",
+ "short_name": "merlin_vac",
+ "sizes": [
+  "M"
+ ],
+ "primary": "prop09_merlin_vac",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.95,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.95,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop09_merlin_vac": {
+   "vid": "prop09_merlin_vac",
+   "size": "M",
+   "state": "flight",
+   "label": "Vacuum kerolox engine",
+   "primary": true,
+   "dims": {
+    "length_m": 3.9,
+    "exit_diameter_m": 2.45,
+    "expansion_ratio": 113
+   },
+   "notes": "MVac with the shorter-extension proportions: 2.45 m exit to fit an M stack (full MVac 3.3 m); niobium extension = nozzle_extension",
+   "bbox_cad_zup": [
+    [
+     -1.2334001,
+     -1.2334001,
+     -1.95000005
+    ],
+    [
+     1.2334001,
+     1.2334001,
+     1.95000005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.467,
+    3.9,
+    2.467
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.95,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.95,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop09_merlin_vac.step",
+    "glb": "glb/prop09_merlin_vac.glb",
+    "preview": "renders/prop09_merlin_vac.png"
+   }
+  }
+ }
+}

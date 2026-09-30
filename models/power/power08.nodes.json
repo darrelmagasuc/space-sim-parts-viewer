@@ -1,0 +1,233 @@
+{
+ "id": "power08",
+ "name": "RAD-S/L Radiator Panels",
+ "category": "power",
+ "short_name": "radiator",
+ "sizes": [
+  "S",
+  "L"
+ ],
+ "primary": "power08_radiator_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.825,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power08_radiator_s": {
+   "vid": "power08_radiator_s",
+   "size": "S",
+   "state": "stowed",
+   "label": "Radiator (stowed)",
+   "primary": false,
+   "dims": {
+    "panels": 3,
+    "panel_m": "1.0 x 1.0",
+    "state": "stowed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.675,
+     -0.55,
+     -0.15
+    ],
+    [
+     0.675,
+     0.55,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    1.35,
+    0.3,
+    1.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.675,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power08_radiator_s.step",
+    "glb": "glb/power08_radiator_s.glb",
+    "preview": "renders/power08_radiator_s.png"
+   }
+  },
+  "power08_radiator_s_deployed": {
+   "vid": "power08_radiator_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "label": "Radiator deployed",
+   "primary": false,
+   "dims": {
+    "panels": 3,
+    "panel_m": "1.0 x 1.0",
+    "span_m": 3.55,
+    "area_m2_one_side": 3.0,
+    "state": "deployed"
+   },
+   "notes": "panels accordion-deploy along +X on a scissor mechanism",
+   "bbox_cad_zup": [
+    [
+     -0.675,
+     -0.55,
+     -0.16374244967276128
+    ],
+    [
+     2.878506577182439,
+     0.55,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    3.554,
+    0.314,
+    1.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.675,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power08_radiator_s_deployed.step",
+    "glb": "glb/power08_radiator_s_deployed.glb",
+    "preview": "renders/power08_radiator_s_deployed.png"
+   }
+  },
+  "power08_radiator_l": {
+   "vid": "power08_radiator_l",
+   "size": "L",
+   "state": "stowed",
+   "label": "Radiator (stowed)",
+   "primary": true,
+   "dims": {
+    "panels": 8,
+    "panel_m": "2.6 x 3.4",
+    "state": "stowed"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.8250000000000002,
+     -1.8,
+     -0.36
+    ],
+    [
+     1.8250000000000004,
+     1.8,
+     0.36
+    ]
+   ],
+   "bbox_godot_size": [
+    3.65,
+    0.72,
+    3.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.825,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power08_radiator_l.step",
+    "glb": "glb/power08_radiator_l.glb",
+    "preview": "renders/power08_radiator_l.png"
+   }
+  },
+  "power08_radiator_l_deployed": {
+   "vid": "power08_radiator_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "label": "Radiator deployed",
+   "primary": false,
+   "dims": {
+    "panels": 8,
+    "panel_m": "2.6 x 3.4",
+    "span_m": 23.67,
+    "area_m2_one_side": 70.7,
+    "state": "deployed"
+   },
+   "notes": "panels accordion-deploy along +X on a scissor mechanism",
+   "bbox_cad_zup": [
+    [
+     -1.8250000000000002,
+     -1.8,
+     -0.40228846269265073
+    ],
+    [
+     21.85062082063702,
+     1.8,
+     0.36
+    ]
+   ],
+   "bbox_godot_size": [
+    23.676,
+    0.762,
+    3.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.825,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/power08_radiator_l_deployed.step",
+    "glb": "glb/power08_radiator_l_deployed.glb",
+    "preview": "renders/power08_radiator_l_deployed.png"
+   }
+  }
+ }
+}

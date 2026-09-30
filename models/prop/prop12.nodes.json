@@ -1,0 +1,104 @@
+{
+ "id": "prop12",
+ "name": "LE-6 'RS-25' Staged-Combustion Hydrolox",
+ "category": "prop",
+ "short_name": "rs25",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop12_rs25",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop12_rs25": {
+   "vid": "prop12_rs25",
+   "size": "L",
+   "state": "flight",
+   "label": "Staged-combustion hydrolox engine",
+   "primary": true,
+   "dims": {
+    "length_m": 4.3,
+    "exit_diameter_m": 2.3,
+    "expansion_ratio": 69
+   },
+   "notes": "RS-25: 4.3 m long, 2.3 m exit, 3.1 m nozzle with hatband rings",
+   "bbox_cad_zup": [
+    [
+     -1.1620001,
+     -1.1620001,
+     -2.15000005
+    ],
+    [
+     1.1620001,
+     1.1620001,
+     2.1500000500000005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.324,
+    4.3,
+    2.324
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/prop12_rs25.step",
+    "glb": "glb/prop12_rs25.glb",
+    "preview": "renders/prop12_rs25.png"
+   }
+  }
+ }
+}
