@@ -38,47 +38,45 @@ function nodeKey(nodes) {
 }
 
 export const CRAFT_SCHEMA = `{
-  "name": "short craft name",
-  "summary": "one sentence",
+  "name": "Hopper",
+  "summary": "Two-stage M-class rocket with side boosters and grid fins.",
   "parts": [
-    { "id": "core", "variant": "tank00_kerolox_m", "note": "optional role" }
+    { "id": "chute", "variant": "stage08_main_chute_m" },
+    { "id": "capsule", "variant": "cmd04_soyuz_descent" },
+    { "id": "tank", "variant": "tank00_kerolox_m" },
+    { "id": "engine", "variant": "prop08_merlin" },
+    { "id": "booster", "variant": "prop05_srb_small" },
+    { "id": "fin", "variant": "stage10_grid_fin_m_deployed" }
   ],
-  "connections": [
-    {
-      "child": "engine",
-      "childNode": "node_top",
-      "parent": "core",
-      "parentNode": "node_bottom",
-      "symmetry": 1,
-      "rotation": 0,
-      "offset": 0
-    }
+  "stack": ["chute", "capsule", "tank", "engine"],
+  "attach": [
+    { "part": "booster", "to": "tank", "symmetry": 2 },
+    { "part": "fin", "to": "tank", "symmetry": 4, "offset": 45 }
   ],
   "staging": [
-    { "stage": 1, "title": "Liftoff", "parts": ["engine"], "note": "what happens" }
+    { "stage": 1, "title": "Liftoff", "parts": ["engine", "booster"], "note": "Light the core and both solids." }
   ],
   "manual": "# Flight guide\\nmarkdown for a pilot"
 }`;
 
-const SYSTEM_RULES = `You design vehicles for a Kerbal-like space simulator with grounded sizes. Parts are metres, Godot Y-up. For rockets and aircraft the nose / flight direction is +Y. For rovers and surface modules, up is +Y and forward is +Z.
+const SYSTEM_RULES = `You design vehicles for a Kerbal-like space simulator. Parts are metres, Godot Y-up. Nose and flight direction are +Y. Rovers: up is +Y, forward is +Z.
 
-Reply with ONE JSON object only. No markdown fences, no commentary. The object must match this schema:
+Reply with ONE JSON object and nothing else. No markdown fences. Use this shape. "stack" is the column from nose to tail (first id is highest, last id is the engine or the aft end). "attach" is only for parts that stick out of the side: boosters, fins, wings, legs, antennas, solar panels.
+
 ${CRAFT_SCHEMA}
 
-How a joint works: the child's node is moved onto the parent's node so the two outward normals point at each other (they are opposite). "rotation" is extra twist in degrees, right-handed about the parent's node direction. "offset" clocks a radial pattern around the parent's +Y in degrees (use it so boosters and fins do not occupy the same angle). "symmetry" N copies the child (and anything later attached to that child) N times around the parent's +Y, starting at parentNode plus offset. List a symmetric child once in parts.
+The page mates each stack neighbour itself: the upper part's node_bottom sits on the lower part's node_top. It mates each attach part by node_attach onto a side node, and clocks the next pattern so boosters and fins do not share an angle. You do not need to name nodes. If you do send "connections" anyway, each needs child, parent, and optionally childNode and parentNode. Wrong or missing node names are repaired. Do not put the engine's nozzle node on the tank, and do not put two stack faces that both point +Y against each other.
 
-Attachment habits that fit these parts:
-- Stack something above: child node_bottom on parent node_top.
-- Stack something below (engine, decoupler under a tank): child node_top on parent node_bottom. Engine node_top is the forward / mounting face; node_bottom is the nozzle.
-- Fairing: its node_bottom sits on the tank's node_top. Payload uses the fairing's node_payload only if you really need a part inside.
-- Radial and surface parts (SRBs, grid fins, landing legs, RCS, wings, solar arrays, antennas, wheels) use child node_attach. Put it on parent node_side_N, node_wheel_N, or another outward node.
-- symmetry 2 is a left/right or booster pair. symmetry 4 is a cross. Wheels are NOT one symmetry group: each node_wheel_N is a separate connection, because they sit at different stations.
-- Size classes must match on node_top / node_bottom joints: XS 0.625, S 1.25, M 2.5, L 3.75, XL 5, XXL 7.5 metres. Adapter variants are named top-class then bottom-class (stage03_interstage_s_m: node_top is S, node_bottom is M).
-- Aircraft: cockpit node_bottom is the aft face. A jet's node_top faces forward and mates a fuselage node_bottom. Wings use node_attach and symmetry 2 on a fuselage node_side_1; the copy spun 180° about Y keeps the leading edge forward.
-- Rovers already in the catalogue include their own wheels. To use the separate WH wheels, attach rover04 node_attach to a chassis node_wheel_N. The preview hides the chassis mesh wheel that was replaced.
+Rules that keep the craft in one piece:
+- One size along a stack. XS 0.625, S 1.25, M 2.5, L 3.75, XL 5, XXL 7.5 metres. Adapters are named top-class then bottom-class, such as stage03_interstage_s_m.
+- symmetry 2 is a left/right pair. symmetry 4 is a cross. List that part once. offset 45 puts a cross between a pair.
+- Wheels are not a symmetry group. A chassis already includes wheels. Extra wheels use one attach per node_wheel_N.
+- Aircraft: put the cockpit, then the fuselage tank, then the jet engine in stack. Wings go in attach with symmetry 2.
+- A gravity ship (a long spine and a rotating ring, like the Hermes) is not laid out on the ground. Put the spine in stack from nose to tail: truss sections such as station07_truss_l, the spin hub, then the engines last. Use one station09_spin_hub in that stack. Add one station10_spoke and one station11_ring_segment, and "ring": { "hub": "<hub id>", "spokes": 6, "segments": 12 }. The page radiates the spokes from the hub and rotates the segments into a ring about the hub axis. Do not put spokes or ring segments in stack, and do not copy them once per angle. Solar wings and radiators go in attach on a truss with symmetry 2. Use the deployed variants (power01_solar_wing_deployed, power08_radiator_l_deployed) when the arrays should be open.
 - Prefer state "flight". Use a "_deployed" variant only when the user wants that pose.
-- Use only variant ids from the catalogue. Instance ids are short names you invent (letter first). Exactly one root: the part with no connection.
-- staging is the flight sequence, earliest first. manual is markdown a pilot can follow: what the craft is, staging, how to fly or drive it, and one or two tips. Mention real instance ids.`;
+- variant must be an id from the catalogue below. Instance ids are short names you invent, a letter first.
+- staging is earliest first. manual is markdown a pilot can follow, and it should mention the instance ids.
+- Every part in parts should appear in stack or attach. Parts left out are lined up beside the vehicle.`;
 
 export function buildCatalogue(manifest) {
   const exactVid = new Map();

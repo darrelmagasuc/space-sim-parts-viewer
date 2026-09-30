@@ -1,22 +1,18 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { assemble, parseCraftJSON } from './assemble.js';
+import { assemble, parseCraftJSON, planNeedsAnotherTry } from './assemble.js';
 import { buildCatalogue } from './catalogue.js';
 import { EXAMPLES } from './examples.js';
+import {
+  DEFAULT_PROVIDER, PRESETS, LS, optionLabel, browserNote, settingsHint,
+  describeFetchFailure, buildProviderRequest
+} from './providers.js';
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const NODE_COL = n => n === 'node_top' ? 0x00aa00 : n === 'node_bottom' ? 0xdd0000 : n === 'node_attach' ? 0xc800c8 : n.startsWith('node_side') ? 0x005ae6 : 0xff8c00;
 
-const PRESETS = {
-  openai: { label: 'OpenAI-compatible', base: 'https://api.openai.com/v1', model: 'gpt-4o-mini', kind: 'openai' },
-  xai: { label: 'xAI / Grok', base: 'https://api.x.ai/v1', model: 'grok-3', kind: 'openai' },
-  openrouter: { label: 'OpenRouter', base: 'https://openrouter.ai/api/v1', model: 'openai/gpt-4o-mini', kind: 'openai' },
-  anthropic: { label: 'Anthropic', base: 'https://api.anthropic.com/v1', model: 'claude-sonnet-4-5', kind: 'anthropic' },
-  custom: { label: 'Custom OpenAI-compatible', base: 'https://api.openai.com/v1', model: '', kind: 'openai' }
-};
-const LS = { provider: 'space-sim-vehicle-provider', base: 'space-sim-vehicle-base', model: 'space-sim-vehicle-model', key: 'space-sim-vehicle-key' };
 
 const stage = $('stage');
 let renderer;
@@ -255,7 +251,9 @@ function renderReport(result) {
     const link = `<a href="view.html?part=${encodeURIComponent(inst.variant)}">${esc(inst.variant)}</a>`;
     const joint = j
       ? `${esc(j.childNode)} → ${esc(j.parentId)}.${esc(j.parentNode)}${j.symmetryIndex > 1 ? ' · copy ' + j.symmetryIndex : ''}`
-      : 'root';
+      : inst.layout === 'ring' && inst.parentId
+        ? `ring around ${esc(inst.parentId)}${inst.symmetryIndex > 1 ? ' · copy ' + inst.symmetryIndex : ''}`
+        : inst.parentId ? `on ${esc(inst.parentId)}` : 'root';
     return `<div class="partrow"><b>${esc(inst.id)}</b> <span class="muted">${esc(inst.partName || '')}</span><div>${link}${inst.size ? ' · ' + esc(inst.size) : ''}</div><div class="muted">${joint}</div></div>`;
   }).join('') : '<p class="muted">No parts placed.</p>';
   const stages = currentCraft && Array.isArray(currentCraft.staging) ? currentCraft.staging : [];
@@ -269,8 +267,8 @@ function renderReport(result) {
 function showCraft(craft) {
   const plan = structuredClone(craft);
   if (Array.isArray(plan.manual)) plan.manual = plan.manual.join('\n');
-  currentCraft = plan;
   const result = assemble(plan, catalogue);
+  currentCraft = result.plan || plan;
   renderReport(result);
   renderAssembly(result);
   return result;
@@ -314,16 +312,6 @@ function store(key, value) {
   }
 }
 
-function providerKind() {
-  return (PRESETS[$('provider').value] || PRESETS.custom).kind;
-}
-
-function chatUrl(base, kind) {
-  const b = String(base || '').trim().replace(/\/+$/, '');
-  if (kind === 'anthropic') return /\/messages$/.test(b) ? b : b + '/messages';
-  return /\/chat\/completions$/.test(b) ? b : b + '/chat/completions';
-}
-
 function messageText(data, kind) {
   if (kind === 'anthropic') return (data.content || []).map(c => c.text || '').join('');
   const msg = data.choices && data.choices[0] && data.choices[0].message;
@@ -334,45 +322,31 @@ function messageText(data, kind) {
 }
 
 async function callProvider(system, messages) {
-  const kind = providerKind();
-  const base = $('base').value.trim();
-  const model = $('model').value.trim();
-  const key = $('key').value;
-  if (!key.trim()) throw new Error('Add an API key first. It stays in this browser and is only sent to the endpoint you set.');
-  if (!model) throw new Error('Enter a model name.');
-  let url;
-  try { url = new URL(chatUrl(base, kind)); }
-  catch { throw new Error('Base URL is not a valid URL.'); }
-  if (url.protocol !== 'https:' && url.protocol !== 'http:') throw new Error('Base URL must start with http:// or https://.');
-  const headers = { 'Content-Type': 'application/json' };
-  let body;
-  if (kind === 'anthropic') {
-    headers['x-api-key'] = key.trim();
-    headers['anthropic-version'] = '2023-06-01';
-    headers['anthropic-dangerous-direct-browser-access'] = 'true';
-    body = { model, max_tokens: 8192, temperature: 0.2, system, messages };
-  } else {
-    headers.Authorization = 'Bearer ' + key.trim();
-    if (/openrouter\.ai$/i.test(url.hostname)) {
-      headers['HTTP-Referer'] = location.href;
-      headers['X-Title'] = 'Space Sim Vehicle Creation';
-    }
-    body = { model, temperature: 0.2, max_tokens: 8192, messages: [{ role: 'system', content: system }, ...messages] };
-  }
+  const providerId = $('provider').value;
+  const built = buildProviderRequest({
+    providerId,
+    base: $('base').value,
+    model: $('model').value,
+    key: $('key').value,
+    proxy: $('proxy').value,
+    pageUrl: location.href,
+    system,
+    messages
+  });
   let res;
-  try { res = await fetch(url.href, { method: 'POST', headers, body: JSON.stringify(body) }); }
+  try { res = await fetch(built.url, { method: 'POST', headers: built.headers, body: JSON.stringify(built.body) }); }
   catch (e) {
-    throw new Error('Could not reach the provider (' + (e.message || e) + '). The browser may have blocked it (CORS), or the host is down. The key stayed in this browser.');
+    throw new Error(describeFetchFailure(providerId, e, { proxy: $('proxy').value }));
   }
   const text = await res.text();
   let data = null;
   try { data = JSON.parse(text); } catch { /* body kept as text */ }
   if (!res.ok) {
     const msg = (data && (data.error && (data.error.message || (data.error.error && data.error.error.message)) || data.message)) || text.slice(0, 500);
-    throw new Error('Provider returned HTTP ' + res.status + '. ' + msg);
+    throw new Error((PRESETS[providerId] || PRESETS.custom).label + ' returned HTTP ' + res.status + '. ' + msg);
   }
   if (!data) throw new Error('Provider returned a non-JSON body: ' + text.slice(0, 300));
-  const content = messageText(data, kind);
+  const content = messageText(data, built.kind);
   if (!content || !content.trim()) throw new Error('The provider returned an empty message. ' + text.slice(0, 300));
   return content;
 }
@@ -408,10 +382,14 @@ async function generate() {
       }
       result = showCraft(craft);
       $('json').value = JSON.stringify(currentCraft, null, 2);
-      if (result.errors.length && attempt === 0) {
+      if (planNeedsAnotherTry(result) && attempt === 0) {
+        const lines = [
+          ...result.errors.map(e => '- ' + e.message),
+          ...result.warnings.map(w => '- ' + w.message)
+        ].slice(0, 12);
         messages = [...messages, { role: 'assistant', content: lastText }, {
           role: 'user',
-          content: 'The plan failed validation:\n' + result.errors.map(e => '- ' + e.message).join('\n') + '\nReturn a corrected JSON object only, using variant ids and node names from the catalogue.'
+          content: 'The plan does not assemble cleanly:\n' + lines.join('\n') + '\nBuild the ship along +Y, nose to tail, not flat on the ground. Prefer "stack" for the spine and "attach" for solar panels, radiators, wings, and boosters. For a gravity ring use one spin hub (station09_spin_hub), one spoke (station10_spoke), and one ring segment (station11_ring_segment), plus "ring": {"hub":"<hub id>","spokes":6,"segments":12}. Do not stack spokes or ring segments. Return one JSON object only, using variant ids from the catalogue.'
         }];
         continue;
       }
@@ -422,27 +400,39 @@ async function generate() {
       : 'Assembled the model’s plan' + (result.warnings.length ? ' with warnings.' : '.');
   } catch (e) {
     $('status').textContent = '';
-    setLlmError(e.message || String(e));
+    const hint = settingsHint($('provider').value, $('key').value, $('base').value);
+    const msg = e.message || String(e);
+    setLlmError(hint ? hint + ' ' + msg : msg);
   } finally {
     setBusy(false);
   }
 }
 
+function refreshHints() {
+  $('corsnote').textContent = browserNote($('provider').value);
+  const hint = settingsHint($('provider').value, $('key').value, $('base').value);
+  $('keyhint').hidden = !hint;
+  $('keyhint').textContent = hint;
+  if (hint) $('keys').open = true;
+}
+
 function loadSettings() {
   const sel = $('provider');
-  sel.innerHTML = Object.entries(PRESETS).map(([id, p]) => `<option value="${id}">${esc(p.label)}</option>`).join('');
-  let provider = 'openai';
-  try { provider = localStorage.getItem(LS.provider) || 'openai'; } catch { /* private mode */ }
-  if (!PRESETS[provider]) provider = 'openai';
+  sel.innerHTML = Object.entries(PRESETS).map(([id, p]) => `<option value="${id}">${esc(optionLabel(p))}</option>`).join('');
+  let provider = DEFAULT_PROVIDER;
+  try { provider = localStorage.getItem(LS.provider) || DEFAULT_PROVIDER; } catch { /* private mode */ }
+  if (!PRESETS[provider]) provider = DEFAULT_PROVIDER;
   sel.value = provider;
   try {
     $('base').value = localStorage.getItem(LS.base) || PRESETS[provider].base;
     $('model').value = localStorage.getItem(LS.model) || PRESETS[provider].model;
     $('key').value = localStorage.getItem(LS.key) || '';
+    $('proxy').value = localStorage.getItem(LS.proxy) || '';
   } catch {
     $('base').value = PRESETS[provider].base;
     $('model').value = PRESETS[provider].model;
   }
+  refreshHints();
 }
 
 function saveSettings() {
@@ -450,6 +440,8 @@ function saveSettings() {
   store(LS.base, $('base').value.trim());
   store(LS.model, $('model').value.trim());
   store(LS.key, $('key').value);
+  store(LS.proxy, $('proxy').value.trim());
+  refreshHints();
 }
 
 $('provider').onchange = () => {
@@ -461,9 +453,11 @@ $('provider').onchange = () => {
 $('base').oninput = saveSettings;
 $('model').oninput = saveSettings;
 $('key').oninput = saveSettings;
+$('proxy').oninput = saveSettings;
 $('clearKey').onclick = () => {
   $('key').value = '';
   try { localStorage.removeItem(LS.key); } catch { /* ignore */ }
+  refreshHints();
   setLlmError('');
   $('status').textContent = 'Saved key cleared from this browser.';
 };
