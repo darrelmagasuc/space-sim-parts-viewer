@@ -2,14 +2,15 @@
 <title>Space Sim part blockouts – GLB viewer</title><link rel="stylesheet" href="app.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%231f5fbf%22/%3E%3C/svg%3E"></head><body>
 <header><h1>Space Sim part blockouts</h1><span class="muted" id="count" style="color:#aab"></span><span class="sp"></span>
 <input id="q" type="search" placeholder="Filter parts (id, name, size)…" aria-label="Filter parts">
-<a href="space_sim_glb_v2.zip" download>Download all GLBs (.zip)</a><a href="CONVENTIONS.md">Conventions</a></header>
+<a href="space_sim_glb_v2.zip" download>Download all GLBs (.zip)</a><a href="vehicle.html">Vehicle Creation</a><a href="CONVENTIONS.md">Conventions</a></header>
 <nav class="cats" id="cats"></nav><main id="main"><p class="muted">Loading…</p></main>
 <script>
 (async()=>{
  const m=await (await fetch('manifest.json')).json(), main=document.getElementById('main'), nav=document.getElementById('cats');
  document.getElementById('count').textContent=`${m.part_count} parts · ${m.glb_count} GLB variants · Godot Y-up, metres`;
  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
- let h='';nav.innerHTML=m.categories.map(c=>`<a href="#${c.key}">${c.key} <span class="muted">(${c.parts.length})</span></a>`).join('');
+ nav.innerHTML=`<a href="vehicle.html">Vehicle Creation</a>`+m.categories.map(c=>`<a href="#${c.key}">${c.key} <span class="muted">(${c.parts.length})</span></a>`).join('');
+ let h=`<section class="banner" id="vehicle"><h2>Vehicle Creation <small>— build a craft from a prompt</small></h2><p>Assemble these parts into a rocket, rover, or spaceplane. A prompt (your own API key, kept in this browser) returns a plan; the page snaps the GLBs together and writes a flight manual. The built-in examples need no key. <a href="vehicle.html">Open Vehicle Creation</a>.</p></section>`;
  for(const c of m.categories){h+=`<section data-cat="${c.key}"><h2 id="${c.key}">${esc(c.key)} <small>— ${esc(c.title)}</small></h2><div class="grid">`;
   for(const p of c.parts){const pv=p.variants.find(v=>v.vid===p.primary)||p.variants[0];
    const sizes=[...new Set(p.variants.map(v=>v.size))].join(' / '), poses=[...new Set(p.variants.map(v=>v.state))].filter(s=>s!=='flight');
@@ -21,6 +22,6 @@
  main.innerHTML=h;
  const q=document.getElementById('q');q.oninput=()=>{const t=q.value.trim().toLowerCase();
   document.querySelectorAll('.card').forEach(a=>a.style.display=!t||a.dataset.k.includes(t)?'':'none');
-  document.querySelectorAll('section').forEach(s=>s.style.display=[...s.querySelectorAll('.card')].some(a=>a.style.display!=='none')?'':'none');};
+  document.querySelectorAll('section[data-cat]').forEach(s=>s.style.display=[...s.querySelectorAll('.card')].some(a=>a.style.display!=='none')?'':'none');};
 })().catch(e=>{document.getElementById('main').innerHTML='<p>Could not load manifest.json: '+e+'</p>'});
 </script></body></html>
