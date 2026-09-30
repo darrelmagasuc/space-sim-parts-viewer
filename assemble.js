@@ -328,7 +328,11 @@ export function assemble(craft, catalogue) {
 
   const roots = [...seeds.keys()].filter(id => !childToConn.has(id) && !seeds.get(id).bad);
   if (!seeds.size) err('The plan has no parts.');
-  else if (!roots.length && !cyclic) err('Every part is a child of another part, but the links do not form a tree.');
+  else if (!roots.length && !cyclic) {
+    const unattached = [...seeds.keys()].filter(id => !childToConn.has(id));
+    const onlyBadRoots = unattached.length > 0 && unattached.every(id => seeds.get(id).bad);
+    if (!onlyBadRoots) err('Every part is a child of another part, but the links do not form a tree.');
+  }
   if (roots.length > 1) {
     warn(`More than one root (${roots.join(', ')}). Extra roots are parked beside the main craft.`);
   }

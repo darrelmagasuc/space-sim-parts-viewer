@@ -43,9 +43,14 @@ let catalogue = null, currentCraft = null;
 
 function resize() {
   const w = stage.clientWidth, h = stage.clientHeight;
-  renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix();
+  if (w < 2 || h < 2) return;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
 }
-addEventListener('resize', resize); resize();
+addEventListener('resize', resize);
+if (typeof ResizeObserver !== 'undefined') new ResizeObserver(() => resize()).observe(stage);
+resize();
 renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
 
 function niceStep(span) {
@@ -167,6 +172,7 @@ async function renderAssembly(result) {
     g.name = inst.id;
     g.matrixAutoUpdate = false;
     g.matrix.fromArray(inst.matrix);
+    g.matrixWorldNeedsUpdate = true;
     const markers = buildMarkers(inst);
     g.add(markers);
     g.userData.markers = markers;
@@ -190,6 +196,7 @@ async function renderAssembly(result) {
     craftGroup.add(g);
     if (g.userData.markers) markerGroups.push(g.userData.markers);
   }
+  craftGroup.updateMatrixWorld(true);
   const box = new THREE.Box3().setFromObject(craftGroup);
   if (box.isEmpty()) { $('msg').textContent = 'The craft has no geometry.'; return; }
   setGrid(box);

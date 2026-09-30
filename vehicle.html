@@ -7,26 +7,30 @@
 <p class="lead">Describe a craft. The page snaps real blockout parts at their attach nodes and writes a flight manual. The examples run with no API key.</p>
 <div class="vars" id="examples"></div>
 <h3>Prompt</h3>
-<textarea id="prompt" rows="4" placeholder="A two-stage M-class rocket with a capsule, side boosters, and grid fins. Ctrl+Enter to generate."></textarea>
+<textarea id="prompt" rows="3" placeholder="A two-stage M-class rocket with a capsule, side boosters, and grid fins. Ctrl+Enter to generate."></textarea>
 <div class="tools"><button class="btn" id="generate" type="button">Generate</button><span id="status" class="muted"></span></div>
 <div id="llmerr"></div>
-<h3>API key</h3>
-<p class="note">The key stays in your browser (localStorage on this device). It is sent only to the endpoint below when you press Generate, never to this site.</p>
-<label class="fld"><span>Provider</span><select id="provider"></select></label>
-<label class="fld"><span>Base URL</span><input id="base" type="text" spellcheck="false" autocomplete="off"></label>
-<label class="fld"><span>Model</span><input id="model" type="text" spellcheck="false" autocomplete="off"></label>
-<label class="fld"><span>API key</span><input id="key" type="password" spellcheck="false" autocomplete="off"></label>
-<div class="tools"><button class="btn sec" id="clearKey" type="button">Clear saved key</button></div>
-<h3>Craft JSON</h3>
-<p class="muted" style="font-size:12px;margin:0 0 6px">Paste a plan to assemble it without a key, or export the current one.</p>
-<textarea id="json" rows="8" spellcheck="false" placeholder='{"name":"…","parts":[],"connections":[],"manual":""}'></textarea>
-<div class="tools"><button class="btn" id="assembleBtn" type="button">Assemble pasted JSON</button><button class="btn sec" id="exportBtn" type="button">Export</button><label class="btn sec filebtn">Import<input id="importFile" type="file" accept="application/json,.json"></label></div>
 <p id="summary" class="lead"></p>
 <div id="issues"></div>
 <h3>Parts</h3><div id="parts"><p class="muted">Nothing assembled yet.</p></div>
 <h3>Staging</h3><div id="staging"><p class="muted">No staging.</p></div>
 <h3>Flight manual</h3><div id="manual" class="manual"><p class="muted">The manual shows up here.</p></div>
 <div class="tools" style="margin-top:12px"><label><input type="checkbox" id="tNodes" checked> Attach nodes</label><label><input type="checkbox" id="tGrid" checked> Grid</label><a class="btn sec" href="#" id="reset">Reset view</a></div>
+<details class="fold">
+<summary>API key — stays in your browser</summary>
+<p class="note">The key stays in your browser (localStorage on this device). It is sent only to the endpoint below when you press Generate, never to this site.</p>
+<label class="fld"><span>Provider</span><select id="provider"></select></label>
+<label class="fld"><span>Base URL</span><input id="base" type="text" spellcheck="false" autocomplete="off"></label>
+<label class="fld"><span>Model</span><input id="model" type="text" spellcheck="false" autocomplete="off"></label>
+<label class="fld"><span>API key</span><input id="key" type="password" spellcheck="false" autocomplete="off"></label>
+<div class="tools"><button class="btn sec" id="clearKey" type="button">Clear saved key</button></div>
+</details>
+<details class="fold">
+<summary>Craft JSON — paste, import, or export</summary>
+<p class="muted" style="font-size:12px;margin:8px 0 6px">Paste a plan to assemble it without a key, or export the current one.</p>
+<textarea id="json" rows="8" spellcheck="false" placeholder='{"name":"…","parts":[],"connections":[],"manual":""}'></textarea>
+<div class="tools"><button class="btn" id="assembleBtn" type="button">Assemble pasted JSON</button><button class="btn sec" id="exportBtn" type="button">Export</button><label class="btn sec filebtn">Import<input id="importFile" type="file" accept="application/json,.json"></label></div>
+</details>
 <p class="muted footnote">Left-drag orbit · right-drag pan · wheel zoom. A joint puts the child node on the parent node with the normals opposed. Y is up.</p>
 </aside></div>
 <script type="module" src="vehicle.js"></script></body></html>
