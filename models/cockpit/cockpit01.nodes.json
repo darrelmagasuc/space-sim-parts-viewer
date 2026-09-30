@@ -1,0 +1,138 @@
+{
+ "id": "cockpit01",
+ "name": "CK-2 Tandem Two-Seat Cockpit",
+ "category": "cockpit",
+ "short_name": "tandem_canopy",
+ "sizes": [
+  "S"
+ ],
+ "primary": "cockpit01_tandem_canopy",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.4,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit01_tandem_canopy": {
+   "vid": "cockpit01_tandem_canopy",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Tandem two-seat cockpit",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 6.8,
+    "length_without_pitot_m": 6.05,
+    "canopy_length_m": 3.8,
+    "crew": 2,
+    "rear_seat_raise_m": 0.12,
+    "canopy_open_deg": 0
+   },
+   "notes": "rear seat raised; separate front and rear canopies, each hinged at its rear edge",
+   "bbox_cad_zup": [
+    [
+     -0.6250001000000001,
+     -0.9600184112275829,
+     -3.4000000499999996
+    ],
+    [
+     0.6251484170891983,
+     0.6250000999999971,
+     3.40000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    6.8,
+    1.585
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit01_tandem_canopy.step",
+    "glb": "glb/cockpit01_tandem_canopy.glb",
+    "preview": "renders/cockpit01_tandem_canopy.png"
+   }
+  },
+  "cockpit01_tandem_canopy_open": {
+   "vid": "cockpit01_tandem_canopy_open",
+   "size": "S",
+   "state": "open",
+   "default_state": false,
+   "label": "Tandem two-seat cockpit",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 6.8,
+    "length_without_pitot_m": 6.05,
+    "canopy_length_m": 3.8,
+    "crew": 2,
+    "rear_seat_raise_m": 0.12,
+    "canopy_open_deg": 40
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.6250001000000001,
+     -2.047980450912618,
+     -3.4000000499999996
+    ],
+    [
+     0.6251484170891983,
+     0.6250000999999971,
+     3.40000005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    6.8,
+    2.673
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.4,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit01_tandem_canopy_open.step",
+    "glb": "glb/cockpit01_tandem_canopy_open.glb",
+    "preview": "renders/cockpit01_tandem_canopy_open.png"
+   }
+  }
+ }
+}

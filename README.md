@@ -4,7 +4,7 @@ A static site (no build step, no server code): `index.html` is the gallery, and 
 
 - `models/<category>/<variant>.glb`: the original GLBs (Godot Y-up, metres, `node_*` empties), uncompressed. `models/<category>/<id>.nodes.json` holds the node data.
 - `thumbs/<variant>.jpg`: gallery thumbnails. `manifest.json`: the part/variant index the pages read.
-- `space_sim_glb_v1.zip`: the full Godot package. `CONVENTIONS.md`: the modelling conventions.
+- `space_sim_glb_v2.zip`: the full Godot package. `CONVENTIONS.md`: the modelling conventions.
 
 Deep links: `view.html?part=<variant id>` (e.g. `station02_b330_deployed`). Aliases work too: `?part=station10` gives the primary variant, and `?part=tank00_l` or `?part=station02_deployed` match by size or pose.
 

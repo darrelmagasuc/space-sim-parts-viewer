@@ -1,0 +1,136 @@
+{
+ "id": "cockpit00",
+ "name": "CK-1 Single-Seat Jet Cockpit",
+ "category": "cockpit",
+ "short_name": "fighter_canopy",
+ "sizes": [
+  "S"
+ ],
+ "primary": "cockpit00_fighter_canopy",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.575,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit00_fighter_canopy": {
+   "vid": "cockpit00_fighter_canopy",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Single-seat jet cockpit",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 5.15,
+    "length_without_pitot_m": 4.45,
+    "canopy_length_m": 2.6,
+    "crew": 1,
+    "canopy_open_deg": 0
+   },
+   "notes": "bubble canopy hinged at the rear (canopy_glass + canopy_frame move together)",
+   "bbox_cad_zup": [
+    [
+     -0.6261436600817065,
+     -0.922098683799293,
+     -2.57500005
+    ],
+    [
+     0.6260875213716061,
+     0.6255884664609755,
+     2.5750000500000003
+    ]
+   ],
+   "bbox_godot_size": [
+    1.252,
+    5.15,
+    1.548
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.575,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit00_fighter_canopy.step",
+    "glb": "glb/cockpit00_fighter_canopy.glb",
+    "preview": "renders/cockpit00_fighter_canopy.png"
+   }
+  },
+  "cockpit00_fighter_canopy_open": {
+   "vid": "cockpit00_fighter_canopy_open",
+   "size": "S",
+   "state": "open",
+   "default_state": false,
+   "label": "Single-seat jet cockpit",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 5.15,
+    "length_without_pitot_m": 4.45,
+    "canopy_length_m": 2.6,
+    "crew": 1,
+    "canopy_open_deg": 40
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.6261436600817065,
+     -2.122608296261057,
+     -2.57500005
+    ],
+    [
+     0.6260875213716061,
+     0.6255884664609755,
+     2.5750000500000003
+    ]
+   ],
+   "bbox_godot_size": [
+    1.252,
+    5.15,
+    2.748
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.575,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit00_fighter_canopy_open.step",
+    "glb": "glb/cockpit00_fighter_canopy_open.glb",
+    "preview": "renders/cockpit00_fighter_canopy_open.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "id": "cockpit04",
+ "name": "CK-5 Inline Cockpit (Droop Nose)",
+ "category": "cockpit",
+ "short_name": "inline_droop_cockpit",
+ "sizes": [
+  "M"
+ ],
+ "primary": "cockpit04_inline_droop_cockpit",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.6,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.6,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit04_inline_droop_cockpit": {
+   "vid": "cockpit04_inline_droop_cockpit",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "Inline cockpit section",
+   "primary": true,
+   "dims": {
+    "rear_diameter_m": 2.5,
+    "front_interface_diameter_m": 1.25,
+    "length_m": 5.2,
+    "crew": 3,
+    "droop_deg": 0,
+    "visor": "raised"
+   },
+   "notes": "M rear / S front; node_top droops 12.5 deg with the hinge section; visor lowers",
+   "bbox_cad_zup": [
+    [
+     -1.2586109019399117,
+     -1.2606538337453441,
+     -2.600000100000001
+    ],
+    [
+     1.2585881955804907,
+     1.261315205269935,
+     2.6000001000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    2.517,
+    5.2,
+    2.522
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.6,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.6,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit04_inline_droop_cockpit.step",
+    "glb": "glb/cockpit04_inline_droop_cockpit.glb",
+    "preview": "renders/cockpit04_inline_droop_cockpit.png"
+   }
+  },
+  "cockpit04_inline_droop_cockpit_droop": {
+   "vid": "cockpit04_inline_droop_cockpit_droop",
+   "size": "M",
+   "state": "droop",
+   "default_state": false,
+   "label": "Inline cockpit section",
+   "primary": false,
+   "dims": {
+    "rear_diameter_m": 2.5,
+    "front_interface_diameter_m": 1.25,
+    "length_m": 5.2,
+    "crew": 3,
+    "droop_deg": 12.5,
+    "visor": "lowered"
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2586109019399117,
+     -1.2606538337453441,
+     -2.600000100000001
+    ],
+    [
+     1.2585881955804907,
+     1.261315205269935,
+     3.278525612782699
+    ]
+   ],
+   "bbox_godot_size": [
+    2.517,
+    5.879,
+    2.522
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.6,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.7416,
+      -0.1469
+     ],
+     "direction": [
+      0.0,
+      0.9763,
+      -0.2164
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit04_inline_droop_cockpit_droop.step",
+    "glb": "glb/cockpit04_inline_droop_cockpit_droop.glb",
+    "preview": "renders/cockpit04_inline_droop_cockpit_droop.png"
+   }
+  }
+ }
+}

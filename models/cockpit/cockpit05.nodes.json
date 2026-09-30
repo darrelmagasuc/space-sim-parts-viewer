@@ -1,0 +1,81 @@
+{
+ "id": "cockpit05",
+ "name": "CK-6 Uncrewed Avionics Nose",
+ "category": "cockpit",
+ "short_name": "drone_avionics_nose",
+ "sizes": [
+  "S"
+ ],
+ "primary": "cockpit05_drone_avionics_nose",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.775,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit05_drone_avionics_nose": {
+   "vid": "cockpit05_drone_avionics_nose",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "Uncrewed avionics nose",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 3.55,
+    "radome_height_m": 0.88,
+    "sensor_ball_dia_m": 0.38,
+    "crew": 0
+   },
+   "notes": "satcom radome hump, chin EO/IR sensor ball",
+   "bbox_cad_zup": [
+    [
+     -0.625006749369215,
+     -0.8910702538657509,
+     -1.7750000500000003
+    ],
+    [
+     0.6314666695081718,
+     1.03,
+     1.7750000499999998
+    ]
+   ],
+   "bbox_godot_size": [
+    1.256,
+    3.55,
+    1.921
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.775,
+      -0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "files": {
+    "step": "step/cockpit05_drone_avionics_nose.step",
+    "glb": "glb/cockpit05_drone_avionics_nose.glb",
+    "preview": "renders/cockpit05_drone_avionics_nose.png"
+   }
+  }
+ }
+}
