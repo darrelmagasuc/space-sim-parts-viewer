@@ -6,10 +6,11 @@
 <aside id="side"><div id="warn"></div>
 <div class="tools"><label><input type="checkbox" id="tNodes" checked> Attach nodes</label><label><input type="checkbox" id="tGrid" checked> Grid</label>
 <label><input type="checkbox" id="tAxes"> Axes</label><a class="btn sec" href="#" id="reset">Reset view</a></div>
+<h3>Model</h3><div class="vars lod" id="lod"></div>
 <h3>Size / pose variants</h3><div class="vars" id="vars"></div>
 <h3>Download</h3><div class="tools" id="dl"></div>
 <h3>Dimensions</h3><table id="dims"></table>
 <h3>Attach nodes <span class="muted" style="text-transform:none">(Godot Y-up, m)</span></h3><table id="nodes"></table>
-<p class="muted" style="font-size:12px;margin-top:14px">Y-up, metres. Node markers show the empty's position; the arrow is its local +Y = the outward normal of the mating face. Left-drag orbit · right-drag pan · wheel zoom.</p>
+<p class="muted" style="font-size:12px;margin-top:14px">Y-up, metres. Node markers show the empty's position; the arrow is its local +Y = the outward normal of the mating face. Low-poly = game-ready mesh (≤5,000 tris, shared PBR materials); CAD = the original blockout (add <code>&amp;lod=cad</code> to a link). Left-drag orbit · right-drag pan · wheel zoom.</p>
 </aside></div>
 <script type="module" src="viewer.js"></script></body></html>

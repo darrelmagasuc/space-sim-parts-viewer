@@ -2,12 +2,14 @@
 <title>Space Sim part blockouts – GLB viewer</title><link rel="stylesheet" href="app.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%231f5fbf%22/%3E%3C/svg%3E"></head><body>
 <header><h1>Space Sim part blockouts</h1><span class="muted" id="count" style="color:#aab"></span><span class="sp"></span>
 <input id="q" type="search" placeholder="Filter parts (id, name, size)…" aria-label="Filter parts">
-<a href="space_sim_glb_v2.zip" download>Download all GLBs (.zip)</a><a href="vehicle.html">Vehicle Creation</a><a href="CONVENTIONS.md">Conventions</a></header>
+<span class="seg" id="lodsw"><button data-l="lp" class="on">Low-poly</button><button data-l="cad">CAD</button></span>
+<a href="space_sim_lowpoly_glb_v1.zip" download>Low-poly zip</a><a href="space_sim_glb_v2.zip" download>CAD zip</a><a href="vehicle.html">Vehicle Creation</a><a href="CONVENTIONS.md">Conventions</a></header>
 <nav class="cats" id="cats"></nav><main id="main"><p class="muted">Loading…</p></main>
 <script>
 (async()=>{
+ let lod=new URLSearchParams(location.search).get('lod')==='cad'?'cad':'lp';
  const m=await (await fetch('manifest.json')).json(), main=document.getElementById('main'), nav=document.getElementById('cats');
- document.getElementById('count').textContent=`${m.part_count} parts · ${m.glb_count} GLB variants · Godot Y-up, metres`;
+ document.getElementById('count').textContent=`${m.part_count} parts · ${m.glb_count} GLB variants (low-poly + CAD) · Godot Y-up, metres`;
  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
  nav.innerHTML=`<a href="vehicle.html">Vehicle Creation</a>`+m.categories.map(c=>`<a href="#${c.key}">${c.key} <span class="muted">(${c.parts.length})</span></a>`).join('');
  let h=`<section class="banner" id="vehicle"><h2>Vehicle Creation <small>— build a craft from a prompt</small></h2><p>Assemble these parts into a rocket, rover, or spaceplane. A prompt (your own API key, kept in this browser) returns a plan; the page snaps the GLBs together and writes a flight manual. The built-in examples need no key. <a href="vehicle.html">Open Vehicle Creation</a>.</p></section>`;
@@ -15,11 +17,15 @@
   for(const p of c.parts){const pv=p.variants.find(v=>v.vid===p.primary)||p.variants[0];
    const sizes=[...new Set(p.variants.map(v=>v.size))].join(' / '), poses=[...new Set(p.variants.map(v=>v.state))].filter(s=>s!=='flight');
    const key=(p.id+' '+p.name+' '+p.variants.map(v=>v.vid+' '+v.size+' '+v.state).join(' ')).toLowerCase();
-   h+=`<a class="card" data-k="${esc(key)}" href="view.html?part=${encodeURIComponent(pv.vid)}"><img loading="lazy" src="${pv.thumb}" alt="${esc(p.name)}" width="320" height="320">
+   h+=`<a class="card" data-k="${esc(key)}" data-v="${esc(pv.vid)}" data-lp="${pv.thumb_lp||''}" data-cad="${pv.thumb}" href="view.html?part=${encodeURIComponent(pv.vid)}${lod==='cad'?'&lod=cad':''}"><img loading="lazy" src="${lod==='cad'||!pv.thumb_lp?pv.thumb:pv.thumb_lp}" alt="${esc(p.name)}" width="320" height="320">
    <div class="t"><b>${esc(p.id)} · ${esc(p.name)}</b><span>${esc(sizes)} · ${p.variants.length} variant${p.variants.length>1?'s':''}${poses.length?' · '+esc(poses.join(', ')):''}</span></div></a>`;}
   h+='</div></section>';}
- h+=`<p class="foot">Generated ${esc(m.generated)}. Click a part to orbit / zoom it, toggle attach nodes and switch sizes or poses. Every variant has its own link (<code>view.html?part=&lt;variant&gt;</code>).</p>`;
+ h+=`<p class="foot">Generated ${esc(m.generated)}. Click a part to orbit / zoom it, toggle attach nodes and switch sizes or poses. Every variant has its own link (<code>view.html?part=&lt;variant&gt;</code>). Models open as the game-ready low-poly mesh (≤5,000 triangles, shared PBR materials); switch to the original CAD blockout with the toggle or <code>&amp;lod=cad</code>.</p>`;
  main.innerHTML=h;
+ const sw=document.getElementById('lodsw'),setLod=l=>{lod=l;sw.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  document.querySelectorAll('.card').forEach(a=>{a.querySelector('img').src=l==='cad'||!a.dataset.lp?a.dataset.cad:a.dataset.lp;a.href='view.html?part='+encodeURIComponent(a.dataset.v)+(l==='cad'?'&lod=cad':'');});
+  history.replaceState(null,'',l==='cad'?'?lod=cad'+location.hash:location.pathname+location.hash);};
+ sw.querySelectorAll('button').forEach(b=>b.onclick=()=>setLod(b.dataset.l)); setLod(lod);
  const q=document.getElementById('q');q.oninput=()=>{const t=q.value.trim().toLowerCase();
   document.querySelectorAll('.card').forEach(a=>a.style.display=!t||a.dataset.k.includes(t)?'':'none');
   document.querySelectorAll('section[data-cat]').forEach(s=>s.style.display=[...s.querySelectorAll('.card')].some(a=>a.style.display!=='none')?'':'none');};

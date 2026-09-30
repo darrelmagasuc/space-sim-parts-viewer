@@ -8,7 +8,7 @@ main{padding:10px 20px 40px}h2{margin:26px 0 10px;font-size:17px}h2 small{color:
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
 .card{background:#fff;border:1px solid #dde1e8;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;color:inherit}
 .card:hover{border-color:#1f5fbf;box-shadow:0 2px 8px rgba(0,0,0,.08);text-decoration:none}
-.card img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;display:block}
+.card img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff;display:block}
 .card .t{padding:6px 9px 9px;border-top:1px solid #eef0f3}.card b{display:block;font-size:13px}.card span{font-size:12px;color:#5b6577}
 .muted{color:#667}.foot{margin-top:30px;font-size:12px;color:#667}
 /* viewer */
@@ -57,3 +57,5 @@ details.fold summary{cursor:pointer;font-weight:600;font-size:13px}
   #side{width:auto;height:auto;max-height:none;flex:1 1 46vh;min-height:0;border-left:0;border-top:1px solid #dde1e8}
   body.craft #side{width:auto;height:auto;max-height:none}
 }
+.vars button:disabled{opacity:.45;cursor:default}.lod button{font-size:13px;padding:5px 10px}
+.seg{display:inline-flex;border-radius:6px;overflow:hidden;border:1px solid #4a5570}.seg button{background:transparent;color:#cfd8ea;border:0;padding:5px 10px;cursor:pointer;font-size:13px}.seg button.on{background:#1f5fbf;color:#fff}

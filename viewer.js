@@ -16,9 +16,16 @@ renderer.toneMapping = THREE.NeutralToneMapping;
 stage.prepend(renderer.domElement);
 const labels = new CSS2DRenderer(); labels.domElement.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none'; stage.append(labels.domElement);
 const scene = new THREE.Scene(); scene.background = new THREE.Color(0xdfe4ea);
-scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8f99, 2.2));
-const sun = new THREE.DirectionalLight(0xffffff, 2.2); sun.position.set(3, 5, 4); scene.add(sun);
-const fill = new THREE.DirectionalLight(0xffffff, 0.8); fill.position.set(-4, 2, -3); scene.add(fill);
+// studio environment (gradient sky + softboxes) so metallic PBR materials have something to reflect
+const envScene = new THREE.Scene();
+envScene.add(new THREE.Mesh(new THREE.SphereGeometry(50, 32, 16), new THREE.ShaderMaterial({ side: THREE.BackSide,
+  vertexShader: 'varying vec3 p; void main(){p=normalize(position); gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+  fragmentShader: 'varying vec3 p; void main(){float t=p.y*.5+.5; gl_FragColor=vec4(mix(vec3(.25,.25,.27),vec3(1.,1.,1.02),t),1.);}' })));
+for (const [x, y, z] of [[20, 25, 10], [-25, 10, 20], [0, 5, -30]]) { const m = new THREE.Mesh(new THREE.PlaneGeometry(18, 12), new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide })); m.position.set(x, y, z); m.lookAt(0, 0, 0); envScene.add(m); }
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(envScene, 0.02).texture; scene.environmentIntensity = 0.9;
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8f99, 1.0));
+const sun = new THREE.DirectionalLight(0xffffff, 1.8); sun.position.set(3, 5, 4); scene.add(sun);
+const fill = new THREE.DirectionalLight(0xffffff, 0.5); fill.position.set(-4, 2, -3); scene.add(fill);
 const camera = new THREE.PerspectiveCamera(35, 1, 0.01, 5000);
 const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
 const loader = new GLTFLoader();
@@ -58,7 +65,7 @@ function frame(box) {
   controls.target.copy(c); controls.update(); homeView = { p: camera.position.clone(), t: c.clone() };
 }
 
-let man, cur;
+let man, cur, lod = new URLSearchParams(location.search).get('lod') === 'cad' ? 'cad' : 'lp';
 async function init() {
   man = await (await fetch('manifest.json')).json();
   const idx = new Map(); const parts = [];
@@ -80,21 +87,27 @@ async function init() {
 }
 
 function show(p, v, push = true) {
-  cur = { p, v };
-  if (push) history.replaceState(null, '', '?part=' + encodeURIComponent(v.vid));
+  const keepView = cur && cur.v === v; cur = { p, v };
+  if (!v.glb_lp) lod = 'cad';
+  if (push) history.replaceState(null, '', '?part=' + encodeURIComponent(v.vid) + (lod === 'cad' ? '&lod=cad' : ''));
+  document.querySelector('header a').href = 'index.html' + (lod === 'cad' ? '?lod=cad' : '');
+  const lp = lod === 'lp', url = lp ? v.glb_lp : v.glb, bytes = lp ? v.bytes_lp : v.bytes;
+  $('lod').innerHTML = `<button data-l="lp" class="${lp ? 'on' : ''}" ${v.glb_lp ? '' : 'disabled'}>Low-poly${v.tris_lp ? ' · ' + v.tris_lp.toLocaleString('en') + ' tris' : ''}</button><button data-l="cad" class="${lp ? '' : 'on'}">CAD blockout${v.tris_cad ? ' · ' + v.tris_cad.toLocaleString('en') + ' tris' : ''}</button>`;
+  $('lod').querySelectorAll('button').forEach(b => b.onclick = () => { if (b.dataset.l !== lod) { lod = b.dataset.l; show(p, v); } });
   document.title = `${v.vid} – Space Sim part viewer`;
-  $('title').textContent = `${p.id} · ${p.name}`; $('sub').textContent = `${p.cat} · ${v.vid}`;
+  $('title').textContent = `${p.id} · ${p.name}`; $('sub').textContent = `${p.cat} · ${v.vid} · ${lp ? 'low-poly' : 'CAD'}`;
   $('vars').innerHTML = p.variants.map(x => `<button data-v="${esc(x.vid)}" class="${x.vid === v.vid ? 'on' : ''}" title="${esc(x.vid)}">${esc(x.size)}${x.state !== 'flight' ? ' · ' + esc(x.state) : ''}${x.primary ? ' ★' : ''}</button>`).join('');
   $('vars').querySelectorAll('button').forEach(b => b.onclick = () => show(p, p.variants.find(x => x.vid === b.dataset.v)));
-  const mb = (v.bytes / 1e6).toFixed(2);
-  $('dl').innerHTML = `<a class="btn" href="${v.glb}" download>GLB (${mb} MB)</a><a class="btn sec" href="${p.json}" download>nodes.json</a><a class="btn sec" href="${man.zip}" download>All (.zip, ${(man.zip_bytes / 1e6).toFixed(1)} MB)</a>`;
+  const mb = (bytes / 1e6).toFixed(2), zmb = b => (b / 1e6).toFixed(1);
+  $('dl').innerHTML = (v.glb_lp ? `<a class="btn${lp ? '' : ' sec'}" href="${v.glb_lp}" download>Low-poly GLB (${(v.bytes_lp / 1e6).toFixed(2)} MB)</a>` : '') + `<a class="btn${lp ? ' sec' : ''}" href="${v.glb}" download>CAD GLB (${(v.bytes / 1e6).toFixed(2)} MB)</a><a class="btn sec" href="${p.json}" download>nodes.json</a>`
+    + (man.zip_lp ? `<a class="btn sec" href="${man.zip_lp}" download>All low-poly (.zip, ${zmb(man.zip_lp_bytes)} MB)</a>` : '') + `<a class="btn sec" href="${man.zip}" download>All CAD (.zip, ${zmb(man.zip_bytes)} MB)</a>`;
   const dimRows = Object.entries(v.dims || {}).map(([k, x]) => `<tr><td>${esc(k.replace(/_m$/, ' (m)').replace(/_/g, ' '))}</td><td>${esc(typeof x === 'number' ? fmt(x) : x)}</td></tr>`).join('');
   $('dims').innerHTML = (v.bbox ? `<tr><th>bbox X × Y × Z</th><th>${v.bbox.map(fmt).join(' × ')} m</th></tr>` : '') + dimRows;
   $('nodes').innerHTML = v.nodes ? '<tr><th>node</th><th>position</th><th>dir</th></tr>' + v.nodes.map(n => `<tr><td>${esc(n.name)}</td><td>${n.position.map(fmt).join(', ')}</td><td>${n.direction.map(x => +x.toFixed(2)).join(', ')}</td></tr>`).join('') : '<tr><td class="muted">see the assembly GLB (node empties included)</td></tr>';
   $('msg').textContent = `Loading ${v.vid}.glb (${mb} MB)…`; $('msg').style.display = '';
-  const want = v.vid;
-  loader.load(v.glb, gltf => {
-    if (cur.v.vid !== want) return;
+  const want = v.vid + lod;
+  loader.load(url, gltf => {
+    if (cur.v.vid + lod !== want) return;
     clearModel(); model = gltf.scene; scene.add(model);
     const box = new THREE.Box3().setFromObject(model), size = box.getSize(new THREE.Vector3()), span = Math.max(size.x, size.y, size.z) || 1;
     nodeGroup = buildNodes(model, span); nodeGroup.visible = $('tNodes').checked; scene.add(nodeGroup);
@@ -102,9 +115,9 @@ function show(p, v, push = true) {
     grid = new THREE.GridHelper(n * step, n, 0x6b7485, 0xa3abb8); grid.position.set((box.min.x + box.max.x) / 2, box.min.y, (box.min.z + box.max.z) / 2); grid.visible = $('tGrid').checked; scene.add(grid);
     axes = new THREE.AxesHelper(span * 0.35); axes.visible = $('tAxes').checked; axes.renderOrder = 9; scene.add(axes);
     $('hud').innerHTML = `<b>${size.x.toFixed(2)} × ${size.y.toFixed(2)} × ${size.z.toFixed(2)} m</b> (X × Y × Z)<br>grid square = ${fmt(step)} m · origin = axes (X red, Y green, Z blue)`;
-    const k = frame(box); $('msg').style.display = 'none';
+    if (!(keepView && homeView)) frame(box); $('msg').style.display = 'none';
   }, ev => { if (ev.total) $('msg').textContent = `Loading ${v.vid}.glb… ${Math.round(ev.loaded / ev.total * 100)}%`; },
-    err => { $('msg').textContent = 'Failed to load ' + v.glb + ': ' + (err.message || err); });
+    err => { $('msg').textContent = 'Failed to load ' + url + ': ' + (err.message || err); });
 }
 $('tNodes').onchange = e => nodeGroup && (nodeGroup.visible = e.target.checked);
 $('tGrid').onchange = e => grid && (grid.visible = e.target.checked);
