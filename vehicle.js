@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { assemble, parseCraftJSON } from './assemble.js';
+import { assemble, parseCraftJSON, planNeedsAnotherTry } from './assemble.js';
 import { buildCatalogue } from './catalogue.js';
 import { EXAMPLES } from './examples.js';
 import {
@@ -251,7 +251,9 @@ function renderReport(result) {
     const link = `<a href="view.html?part=${encodeURIComponent(inst.variant)}">${esc(inst.variant)}</a>`;
     const joint = j
       ? `${esc(j.childNode)} → ${esc(j.parentId)}.${esc(j.parentNode)}${j.symmetryIndex > 1 ? ' · copy ' + j.symmetryIndex : ''}`
-      : 'root';
+      : inst.layout === 'ring' && inst.parentId
+        ? `ring around ${esc(inst.parentId)}${inst.symmetryIndex > 1 ? ' · copy ' + inst.symmetryIndex : ''}`
+        : inst.parentId ? `on ${esc(inst.parentId)}` : 'root';
     return `<div class="partrow"><b>${esc(inst.id)}</b> <span class="muted">${esc(inst.partName || '')}</span><div>${link}${inst.size ? ' · ' + esc(inst.size) : ''}</div><div class="muted">${joint}</div></div>`;
   }).join('') : '<p class="muted">No parts placed.</p>';
   const stages = currentCraft && Array.isArray(currentCraft.staging) ? currentCraft.staging : [];
@@ -380,15 +382,14 @@ async function generate() {
       }
       result = showCraft(craft);
       $('json').value = JSON.stringify(currentCraft, null, 2);
-      const structural = result.warnings.filter(w => /overlap|laid out beside|size mismatch|could not attach/i.test(w.message));
-      if ((result.errors.length || structural.length) && attempt === 0) {
+      if (planNeedsAnotherTry(result) && attempt === 0) {
         const lines = [
           ...result.errors.map(e => '- ' + e.message),
-          ...structural.map(w => '- ' + w.message)
-        ];
+          ...result.warnings.map(w => '- ' + w.message)
+        ].slice(0, 12);
         messages = [...messages, { role: 'assistant', content: lastText }, {
           role: 'user',
-          content: 'The plan does not assemble cleanly:\n' + lines.join('\n') + '\nPrefer "stack": part ids from nose to tail, and "attach": [{"part","to","symmetry","offset"}] for boosters, fins, wings, and antennas. Do not invent node names. Every part should be in stack or attach. Return one JSON object only, using variant ids from the catalogue.'
+          content: 'The plan does not assemble cleanly:\n' + lines.join('\n') + '\nBuild the ship along +Y, nose to tail, not flat on the ground. Prefer "stack" for the spine and "attach" for solar panels, radiators, wings, and boosters. For a gravity ring use one spin hub (station09_spin_hub), one spoke (station10_spoke), and one ring segment (station11_ring_segment), plus "ring": {"hub":"<hub id>","spokes":6,"segments":12}. Do not stack spokes or ring segments. Return one JSON object only, using variant ids from the catalogue.'
         }];
         continue;
       }

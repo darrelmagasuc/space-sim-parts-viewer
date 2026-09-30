@@ -75,6 +75,22 @@ export function identityMatrix() {
   return [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
 }
 
+function rotYMatrix(angle) {
+  const c = Math.cos(angle), s = Math.sin(angle);
+  // Column-major. Matches rotY: x' = c x + s z, z' = -s x + c z.
+  return [c, 0, -s, 0, 0, 1, 0, 0, s, 0, c, 0, 0, 0, 0, 1];
+}
+
+function mulMat(a, b) {
+  const out = new Array(16);
+  for (let col = 0; col < 4; col++) {
+    for (let row = 0; row < 4; row++) {
+      out[col * 4 + row] = a[row] * b[col * 4] + a[4 + row] * b[col * 4 + 1] + a[8 + row] * b[col * 4 + 2] + a[12 + row] * b[col * 4 + 3];
+    }
+  }
+  return out;
+}
+
 function compose(p, q) {
   const [x, y, z, w] = q;
   const x2 = x + x, y2 = y + y, z2 = z + z;
@@ -172,10 +188,31 @@ function instanceIdFor(seedId, parentInstanceId, parentSeedId, k) {
 function partAABB(variant, matrix) {
   const b = variant.bbox;
   if (!b || b.length < 3) return null;
+  let cx = 0, cy = 0, cz = 0;
+  const nodes = variant.nodes || [];
+  const attach = isRadialPart(variant) ? findNode(variant, 'node_attach') : null;
+  if (attach && attach.direction && norm(attach.direction)) {
+    // The mating face sits on the node. A centred box is right when that node is
+    // already on the face; a one-sided wing (origin near the root) shifts out along the body.
+    const dir = norm(attach.direction);
+    const ax = Math.abs(dir[0]), ay = Math.abs(dir[1]), az = Math.abs(dir[2]);
+    const extent = ax >= ay && ax >= az ? b[0] : ay >= az ? b[1] : b[2];
+    cx = attach.position[0] - dir[0] * extent / 2;
+    cy = attach.position[1] - dir[1] * extent / 2;
+    cz = attach.position[2] - dir[2] * extent / 2;
+  } else if (nodes.length) {
+    for (const node of nodes) { cx += node.position[0]; cy += node.position[1]; cz += node.position[2]; }
+    cx /= nodes.length; cy /= nodes.length; cz /= nodes.length;
+    // Spokes and ring segments are authored with the origin on the hub axis, so the
+    // mesh sits many metres from the part origin. A centred box would swallow the hub.
+    if (Math.hypot(cx, cy, cz) <= Math.max(b[0], b[1], b[2]) * 0.5) cx = cy = cz = 0;
+  }
   const hx = b[0] / 2, hy = b[1] / 2, hz = b[2] / 2;
   const corners = [
-    [-hx, -hy, -hz], [hx, -hy, -hz], [-hx, hy, -hz], [hx, hy, -hz],
-    [-hx, -hy, hz], [hx, -hy, hz], [-hx, hy, hz], [hx, hy, hz]
+    [-hx + cx, -hy + cy, -hz + cz], [hx + cx, -hy + cy, -hz + cz],
+    [-hx + cx, hy + cy, -hz + cz], [hx + cx, hy + cy, -hz + cz],
+    [-hx + cx, -hy + cy, hz + cz], [hx + cx, -hy + cy, hz + cz],
+    [-hx + cx, hy + cy, hz + cz], [hx + cx, hy + cy, hz + cz]
   ].map(c => transformPoint(matrix, c));
   const min = [Infinity, Infinity, Infinity], max = [-Infinity, -Infinity, -Infinity];
   for (const c of corners) for (let i = 0; i < 3; i++) {
@@ -235,9 +272,45 @@ function stackRank(variant) {
   const id = (variant.vid + ' ' + variant.partId + ' ' + variant.partName).toLowerCase();
   if (/chute|parachute|fairing/.test(id)) return 0;
   if (variant.category === 'cmd' || variant.category === 'cockpit' || /capsule|probe|nose/.test(id)) return 1;
-  if (variant.category === 'tank' || /tank|interstage|decoupler|separator/.test(id)) return 2;
+  if (variant.category === 'tank' || /tank|interstage|decoupler|separator|truss|spin_hub|hab/.test(id)) return 2;
   if (variant.category === 'prop' || /engine|merlin|turbojet|nozzle|rocket/.test(id)) return 4;
   return 3;
+}
+
+function horizontalFaceDot(variant) {
+  const top = findNode(variant, 'node_top');
+  const bot = findNode(variant, 'node_bottom');
+  if (!top || !bot) return null;
+  if (Math.abs(top.direction[1]) > 0.45 || Math.abs(bot.direction[1]) > 0.45) return null;
+  return dot(top.direction, bot.direction);
+}
+
+function isSpokePart(variant) {
+  const align = horizontalFaceDot(variant);
+  return align != null && align < -0.95;
+}
+
+function isArcPart(variant) {
+  const align = horizontalFaceDot(variant);
+  const side = findNode(variant, 'node_side_1');
+  return align != null && align >= -0.95 && side && Math.abs(side.direction[1]) < 0.45;
+}
+
+function clampCount(value, fallback, min = 1) {
+  const n = typeof value === 'number' ? value : Number(value);
+  if (!Number.isInteger(n) || n < min) return fallback;
+  return Math.min(MAX_SYMMETRY, n);
+}
+
+function hubScore(variant) {
+  const sides = nodeList(variant).filter(n => /^node_side_\d+$/.test(n.name) && Math.abs(n.direction[1]) < 0.45);
+  const top = findNode(variant, 'node_top');
+  if (sides.length < 4 || !top || Math.abs(top.direction[1]) < 0.7) return 0;
+  const id = (variant.vid + ' ' + variant.partId + ' ' + variant.partName).toLowerCase();
+  let score = sides.length;
+  if (/spin_hub|station09/.test(id)) score += 100;
+  else if (/counter_ring|station12/.test(id)) score += 50;
+  return score;
 }
 
 function uprightY(parentNode, childNode) {
@@ -489,6 +562,86 @@ function repairCraft(craft, catalogue) {
     if (info) resolved.set(id, info.variant);
   }
 
+  const ringEdges = [];
+  const spokeIds = [];
+  const arcIds = [];
+  for (const [id, variant] of resolved) {
+    if (isSpokePart(variant)) spokeIds.push(id);
+    else if (isArcPart(variant)) arcIds.push(id);
+  }
+  const consumed = new Set();
+  let hubId = null;
+  if (spokeIds.length || arcIds.length) {
+    const ringSpec = plan.ring && typeof plan.ring === 'object' ? plan.ring : null;
+    const named = ringSpec && typeof ringSpec.hub === 'string' ? ringSpec.hub.trim() : '';
+    if (named && resolved.has(named) && !spokeIds.includes(named) && !arcIds.includes(named)) hubId = named;
+    else {
+      let best = 0;
+      for (const [id, variant] of resolved) {
+        if (spokeIds.includes(id) || arcIds.includes(id)) continue;
+        const score = hubScore(variant);
+        if (score > best) { best = score; hubId = id; }
+      }
+    }
+    if (hubId) {
+      for (const id of [...spokeIds, ...arcIds]) consumed.add(id);
+      for (let i = normalized.length - 1; i >= 0; i--) {
+        if (consumed.has(normalized[i].child) || consumed.has(normalized[i].parent)) normalized.splice(i, 1);
+      }
+      const dropIds = [];
+      if (spokeIds.length) {
+        const keep = spokeIds[0];
+        const symmetry = spokeIds.length === 1
+          ? clampCount(ringSpec && ringSpec.spokes, 6)
+          : Math.min(MAX_SYMMETRY, spokeIds.length);
+        dropIds.push(...spokeIds.slice(1));
+        ringEdges.push({
+          child: keep, parent: hubId,
+          childNode: 'node_top', parentNode: 'node_side_1',
+          symmetry, rotation: 0, offset: 0, source: 'spoke', layout: 'spoke'
+        });
+      }
+      if (arcIds.length) {
+        const keep = arcIds[0];
+        const symmetry = clampCount(ringSpec && ringSpec.segments, 12, 3);
+        dropIds.push(...arcIds.slice(1));
+        ringEdges.push({
+          child: keep, parent: hubId,
+          childNode: 'node_side_1', parentNode: 'node_side_1',
+          symmetry, rotation: 0, offset: 0, source: 'ring', layout: 'ring'
+        });
+      }
+      if (dropIds.length) {
+        const gone = new Set(dropIds);
+        plan.parts = plan.parts.filter(part => !part || !gone.has(part.id));
+        for (const id of dropIds) {
+          byId.delete(id);
+          resolved.delete(id);
+          consumed.delete(id);
+        }
+        notes.push('Dropped extra spoke and ring copies (' + dropIds.join(', ') + '). One of each is patterned around the hub.');
+      }
+    }
+  }
+
+  const trussId = [...resolved.keys()].find(id => !consumed.has(id) && /truss/i.test(resolved.get(id).vid + ' ' + resolved.get(id).partId));
+  const spineId = trussId || (hubId && resolved.has(hubId) ? hubId : null);
+  if (spineId) {
+    let powerN = 0;
+    for (const [id, variant] of resolved) {
+      if (id === spineId || consumed.has(id)) continue;
+      if (variant.category !== 'power' || !isRadialPart(variant)) continue;
+      if (normalized.some(edge => edge.child === id) || ringEdges.some(edge => edge.child === id)) continue;
+      normalized.push({
+        child: id, parent: spineId,
+        childNode: 'node_attach', parentNode: 'node_side_1',
+        symmetry: 2, rotation: 0, offset: powerN * 45, source: 'attach'
+      });
+      powerN += 1;
+      notes.push(`Put "${id}" on the spine ("${spineId}") instead of leaving it floating.`);
+    }
+  }
+
   const stackEdges = [];
   const radialEdges = [];
   for (const edge of normalized) {
@@ -674,15 +827,19 @@ function repairCraft(craft, catalogue) {
     finalEdges.push(edge);
   }
 
-  plan.connections = [...finalEdges, ...radialOut].map(edge => ({
-    child: edge.child,
-    parent: edge.parent,
-    childNode: edge.childNode,
-    parentNode: edge.parentNode,
-    symmetry: edge.symmetry == null ? 1 : edge.symmetry,
-    rotation: edge.rotation || 0,
-    offset: edge.offset || 0
-  }));
+  plan.connections = [...finalEdges, ...radialOut, ...ringEdges].map(edge => {
+    const out = {
+      child: edge.child,
+      parent: edge.parent,
+      childNode: edge.childNode,
+      parentNode: edge.parentNode,
+      symmetry: edge.symmetry == null ? 1 : edge.symmetry,
+      rotation: edge.rotation || 0,
+      offset: edge.offset || 0
+    };
+    if (edge.layout === 'ring' || edge.layout === 'spoke') out.layout = edge.layout;
+    return out;
+  });
   return { craft: plan, notes };
 }
 
@@ -827,7 +984,9 @@ export function assemble(craft, catalogue) {
     childToConn.set(child, true);
     conns.push({
       child, parent, childNodeName, parentNodeName, childNode, parentNode,
-      symmetry, rotation: num(c.rotation, 0), offset: num(c.offset, 0), bad, index: i
+      symmetry, rotation: num(c.rotation, 0), offset: num(c.offset, 0),
+      layout: c.layout === 'ring' || c.layout === 'spoke' ? c.layout : null,
+      bad, index: i
     });
   });
 
@@ -885,7 +1044,7 @@ export function assemble(craft, catalogue) {
   const placedSeeds = new Set();
   let truncated = false;
 
-  function place(seedId, matrix, parentInstanceId, symmetryIndex, instanceId) {
+  function place(seedId, matrix, parentInstanceId, symmetryIndex, instanceId, layout) {
     if (instances.length >= MAX_INSTANCES) { truncated = true; return; }
     const seed = seeds.get(seedId);
     if (!seed || seed.bad || !seed.variant) return;
@@ -908,7 +1067,8 @@ export function assemble(craft, catalogue) {
       position: [matrix[12], matrix[13], matrix[14]],
       quaternion: q,
       parentId: parentInstanceId,
-      symmetryIndex
+      symmetryIndex,
+      layout: layout || null
     });
     for (const c of conns) {
       if (c.parent !== seedId || c.bad) continue;
@@ -916,6 +1076,11 @@ export function assemble(craft, catalogue) {
         if (instances.length >= MAX_INSTANCES) { truncated = true; return; }
         const childInstanceId = instanceIdFor(c.child, id, seedId, k);
         const angle = (k * 360 / c.symmetry + c.offset) * Math.PI / 180;
+        if (c.layout === 'ring') {
+          // Ring segments share the hub origin. Mating the spoke port would pull the tube inward.
+          place(c.child, mulMat(matrix, rotYMatrix(angle)), id, k + 1, childInstanceId, 'ring');
+          continue;
+        }
         const joint = mate(matrix, c.parentNode, c.childNode, angle, c.rotation);
         joints.push({
           parentId: id,
@@ -928,14 +1093,14 @@ export function assemble(craft, catalogue) {
           angleRad: angle,
           symmetryIndex: k + 1
         });
-        if (k === 0 && id === seedId) {
+        if (c.layout !== 'spoke' && k === 0 && id === seedId) {
           const dParent = stackDiameter(seeds.get(c.parent).variant, c.parentNodeName);
           const dChild = stackDiameter(seeds.get(c.child).variant, c.childNodeName);
           if (dParent != null && dChild != null && Math.abs(dParent - dChild) > Math.max(0.05, 0.08 * Math.max(dParent, dChild))) {
             warn(`Stack size mismatch on ${c.parent}.${c.parentNodeName} (${fmtM(dParent)} m, ${seeds.get(c.parent).variant.size}) and ${c.child}.${c.childNodeName} (${fmtM(dChild)} m, ${seeds.get(c.child).variant.size}).`);
           }
         }
-        place(c.child, joint.matrix, id, k + 1, childInstanceId);
+        place(c.child, joint.matrix, id, k + 1, childInstanceId, c.layout === 'spoke' ? 'spoke' : null);
       }
     }
   }
@@ -982,6 +1147,8 @@ export function assemble(craft, catalogue) {
     for (let j = i + 1; j < boxes.length; j++) {
       const a = boxes[i].inst, b = boxes[j].inst;
       if (skipPair.has(`${a.id}|${b.id}`) || skipPair.has(`${b.id}|${a.id}`)) continue;
+      if (a.layout === 'ring' && (b.layout === 'ring' || b.layout === 'spoke')) continue;
+      if (b.layout === 'ring' && a.layout === 'spoke') continue;
       const vol = overlapVolume(boxes[i].box, boxes[j].box, 0.05);
       // Skin-mounted neighbours graze by a few litres of AABB. Only flag a real clash.
       if (vol > 0.2) {
@@ -991,6 +1158,18 @@ export function assemble(craft, catalogue) {
   }
 
   return { ok: errors.length === 0, name, errors, warnings, instances, joints, plan: craft };
+}
+
+/** A clean rocket can carry a note or two. A pile of warnings, or joints that never landed, should be sent back to the model. */
+export function planNeedsAnotherTry(result) {
+  if (!result) return false;
+  const errors = result.errors || [];
+  const warnings = result.warnings || [];
+  if (errors.length) return true;
+  if (warnings.length >= 8) return true;
+  const overlaps = warnings.filter(w => /overlap/i.test(w.message || ''));
+  if (overlaps.length >= 3) return true;
+  return warnings.some(w => /laid out beside|size mismatch|could not attach/i.test(w.message || ''));
 }
 
 function fmtM(n) {

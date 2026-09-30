@@ -72,6 +72,7 @@ Rules that keep the craft in one piece:
 - symmetry 2 is a left/right pair. symmetry 4 is a cross. List that part once. offset 45 puts a cross between a pair.
 - Wheels are not a symmetry group. A chassis already includes wheels. Extra wheels use one attach per node_wheel_N.
 - Aircraft: put the cockpit, then the fuselage tank, then the jet engine in stack. Wings go in attach with symmetry 2.
+- A gravity ship (a long spine and a rotating ring, like the Hermes) is not laid out on the ground. Put the spine in stack from nose to tail: truss sections such as station07_truss_l, the spin hub, then the engines last. Use one station09_spin_hub in that stack. Add one station10_spoke and one station11_ring_segment, and "ring": { "hub": "<hub id>", "spokes": 6, "segments": 12 }. The page radiates the spokes from the hub and rotates the segments into a ring about the hub axis. Do not put spokes or ring segments in stack, and do not copy them once per angle. Solar wings and radiators go in attach on a truss with symmetry 2. Use the deployed variants (power01_solar_wing_deployed, power08_radiator_l_deployed) when the arrays should be open.
 - Prefer state "flight". Use a "_deployed" variant only when the user wants that pose.
 - variant must be an id from the catalogue below. Instance ids are short names you invent, a letter first.
 - staging is earliest first. manual is markdown a pilot can follow, and it should mention the instance ids.
