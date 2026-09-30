@@ -1,0 +1,253 @@
+{
+ "id": "aero07",
+ "name": "AB-2 Airbrake",
+ "category": "aero",
+ "short_name": "airbrake",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "aero07_airbrake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.0364,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero07_airbrake_s": {
+   "vid": "aero07_airbrake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "AB-2 Airbrake",
+   "primary": true,
+   "dims": {
+    "panel_m": "0.6 x 0.8",
+    "deflection_deg": 0
+   },
+   "notes": "Hinged perforated airbrake panel (panel_*), hinge at the forward (+Z) edge; deploys 60 deg outward.",
+   "bbox_cad_zup": [
+    [
+     -0.03643050089042301,
+     -0.32999999999999996,
+     -0.43000000000000005
+    ],
+    [
+     0.03643050089042301,
+     0.32999999999999996,
+     0.43000000000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.073,
+    0.86,
+    0.66
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0364,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_brake",
+    "panel_perforations",
+    "panel_actuator"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero07_airbrake_s.step",
+    "glb": "glb/aero07_airbrake_s.glb",
+    "preview": "renders/aero07_airbrake_s.png"
+   }
+  },
+  "aero07_airbrake_s_deployed": {
+   "vid": "aero07_airbrake_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "AB-2 Airbrake",
+   "primary": false,
+   "dims": {
+    "panel_m": "0.6 x 0.8",
+    "deflection_deg": 60
+   },
+   "notes": "Hinged perforated airbrake panel (panel_*), hinge at the forward (+Z) edge; deploys 60 deg outward.",
+   "bbox_cad_zup": [
+    [
+     -0.03643050089042301,
+     -0.32999999999999996,
+     -0.43000000000000005
+    ],
+    [
+     0.7163898221371279,
+     0.32999999999999996,
+     0.43000000000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.753,
+    0.86,
+    0.66
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0364,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_brake",
+    "panel_perforations",
+    "panel_actuator"
+   ],
+   "default_of": "aero07_airbrake_s",
+   "files": {
+    "step": "step/aero07_airbrake_s_deployed.step",
+    "glb": "glb/aero07_airbrake_s_deployed.glb",
+    "preview": "renders/aero07_airbrake_s_deployed.png"
+   }
+  },
+  "aero07_airbrake_m": {
+   "vid": "aero07_airbrake_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "AB-2 Airbrake",
+   "primary": false,
+   "dims": {
+    "panel_m": "1.2 x 1.5",
+    "deflection_deg": 0
+   },
+   "notes": "Hinged perforated airbrake panel (panel_*), hinge at the forward (+Z) edge; deploys 60 deg outward.",
+   "bbox_cad_zup": [
+    [
+     -0.04144684378855861,
+     -0.63,
+     -0.78
+    ],
+    [
+     0.04144684378855861,
+     0.63,
+     0.78
+    ]
+   ],
+   "bbox_godot_size": [
+    0.083,
+    1.56,
+    1.26
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0375,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_brake",
+    "panel_perforations",
+    "panel_actuator"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero07_airbrake_m.step",
+    "glb": "glb/aero07_airbrake_m.glb",
+    "preview": "renders/aero07_airbrake_m.png"
+   }
+  },
+  "aero07_airbrake_m_deployed": {
+   "vid": "aero07_airbrake_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "AB-2 Airbrake",
+   "primary": false,
+   "dims": {
+    "panel_m": "1.2 x 1.5",
+    "deflection_deg": 60
+   },
+   "notes": "Hinged perforated airbrake panel (panel_*), hinge at the forward (+Z) edge; deploys 60 deg outward.",
+   "bbox_cad_zup": [
+    [
+     -0.03750000000000001,
+     -0.63,
+     -0.78
+    ],
+    [
+     1.321538105676658,
+     0.63,
+     0.78
+    ]
+   ],
+   "bbox_godot_size": [
+    1.359,
+    1.56,
+    1.26
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0375,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_brake",
+    "panel_perforations",
+    "panel_actuator"
+   ],
+   "default_of": "aero07_airbrake_m",
+   "files": {
+    "step": "step/aero07_airbrake_m_deployed.step",
+    "glb": "glb/aero07_airbrake_m_deployed.glb",
+    "preview": "renders/aero07_airbrake_m_deployed.png"
+   }
+  }
+ }
+}

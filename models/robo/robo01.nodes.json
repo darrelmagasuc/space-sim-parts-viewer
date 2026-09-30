@@ -1,0 +1,463 @@
+{
+ "id": "robo01",
+ "name": "RT-1 Rotor / Rotation Servo",
+ "category": "robo",
+ "short_name": "rotor",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "robo01_rotor_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.075,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.075,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "robo01_rotor_xs": {
+   "vid": "robo01_rotor_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.3,
+    "height_m": 0.15,
+    "torque_nm": 20,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -0.075
+    ],
+    [
+     0.152,
+     0.1514138575870718,
+     0.075
+    ]
+   ],
+   "bbox_godot_size": [
+    0.302,
+    0.15,
+    0.301
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo01_rotor_xs.step",
+    "glb": "glb/robo01_rotor_xs.glb",
+    "preview": "renders/robo01_rotor_xs.png"
+   }
+  },
+  "robo01_rotor_s": {
+   "vid": "robo01_rotor_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.25,
+    "torque_nm": 400,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.125
+    ],
+    [
+     0.3145,
+     0.3131317808109944,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.627,
+    0.25,
+    0.626
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo01_rotor_s.step",
+    "glb": "glb/robo01_rotor_s.glb",
+    "preview": "renders/robo01_rotor_s.png"
+   }
+  },
+  "robo01_rotor_m": {
+   "vid": "robo01_rotor_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.4,
+    "torque_nm": 4000,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.2
+    ],
+    [
+     0.627,
+     0.625,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.252,
+    0.4,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo01_rotor_m.step",
+    "glb": "glb/robo01_rotor_m.glb",
+    "preview": "renders/robo01_rotor_m.png"
+   }
+  },
+  "robo01_rotor_xs_rot90": {
+   "vid": "robo01_rotor_xs_rot90",
+   "size": "XS",
+   "state": "rot90",
+   "default_state": false,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.3,
+    "height_m": 0.15,
+    "torque_nm": 20,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -0.075
+    ],
+    [
+     0.15,
+     0.152,
+     0.075
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.15,
+    0.302
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": "robo01_rotor_xs",
+   "files": {
+    "step": "step/robo01_rotor_xs_rot90.step",
+    "glb": "glb/robo01_rotor_xs_rot90.glb",
+    "preview": "renders/robo01_rotor_xs_rot90.png"
+   }
+  },
+  "robo01_rotor_s_rot90": {
+   "vid": "robo01_rotor_s_rot90",
+   "size": "S",
+   "state": "rot90",
+   "default_state": false,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.25,
+    "torque_nm": 400,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.125
+    ],
+    [
+     0.3125,
+     0.3145,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.25,
+    0.627
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": "robo01_rotor_s",
+   "files": {
+    "step": "step/robo01_rotor_s_rot90.step",
+    "glb": "glb/robo01_rotor_s_rot90.glb",
+    "preview": "renders/robo01_rotor_s_rot90.png"
+   }
+  },
+  "robo01_rotor_m_rot90": {
+   "vid": "robo01_rotor_m_rot90",
+   "size": "M",
+   "state": "rot90",
+   "default_state": false,
+   "label": "RT-1 Rotor / Rotation Servo",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.4,
+    "torque_nm": 4000,
+    "max_rpm": 60
+   },
+   "notes": "Continuous rotation servo: rotor (half_b_*) turns about the stack axis; yellow index mark shows the angle (rot90 reference pose).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.2
+    ],
+    [
+     0.625,
+     0.627,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.4,
+    1.252
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_rotor",
+    "half_b_mark"
+   ],
+   "default_of": "robo01_rotor_m",
+   "files": {
+    "step": "step/robo01_rotor_m_rot90.step",
+    "glb": "glb/robo01_rotor_m_rot90.glb",
+    "preview": "renders/robo01_rotor_m_rot90.png"
+   }
+  }
+ }
+}

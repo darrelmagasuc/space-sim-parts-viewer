@@ -1,0 +1,330 @@
+{
+ "id": "rover15",
+ "name": "CH-J Articulated Chassis Joint",
+ "category": "rover",
+ "short_name": "articulated_joint",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover15_articulated_joint_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    0.0,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover15_articulated_joint_s": {
+   "vid": "rover15_articulated_joint_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "CH-J Articulated Chassis Joint",
+   "primary": true,
+   "dims": {
+    "width_m": 0.5,
+    "length_m": 0.5,
+    "height_m": 0.2,
+    "yaw_deg": 35,
+    "roll_deg": 15
+   },
+   "notes": "Front half (half_b_*) yaws +-35 deg about the vertical bearing and rolls +-15 deg about the roll bearing.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.1
+    ],
+    [
+     0.25,
+     0.25,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.2,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_flange",
+    "half_b_roll",
+    "half_b_clevis"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover15_articulated_joint_s.step",
+    "glb": "glb/rover15_articulated_joint_s.glb",
+    "preview": "renders/rover15_articulated_joint_s.png"
+   }
+  },
+  "rover15_articulated_joint_m": {
+   "vid": "rover15_articulated_joint_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CH-J Articulated Chassis Joint",
+   "primary": false,
+   "dims": {
+    "width_m": 0.8,
+    "length_m": 0.8,
+    "height_m": 0.3,
+    "yaw_deg": 35,
+    "roll_deg": 15
+   },
+   "notes": "Front half (half_b_*) yaws +-35 deg about the vertical bearing and rolls +-15 deg about the roll bearing.",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.4,
+     -0.15
+    ],
+    [
+     0.4,
+     0.4,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.8,
+    0.3,
+    0.8
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_flange",
+    "half_b_roll",
+    "half_b_clevis"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover15_articulated_joint_m.step",
+    "glb": "glb/rover15_articulated_joint_m.glb",
+    "preview": "renders/rover15_articulated_joint_m.png"
+   }
+  },
+  "rover15_articulated_joint_s_steer_left": {
+   "vid": "rover15_articulated_joint_s_steer_left",
+   "size": "S",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "CH-J Articulated Chassis Joint",
+   "primary": false,
+   "dims": {
+    "width_m": 0.5,
+    "length_m": 0.5,
+    "height_m": 0.2,
+    "yaw_deg": 35,
+    "roll_deg": 15
+   },
+   "notes": "Front half (half_b_*) yaws +-35 deg about the vertical bearing and rolls +-15 deg about the roll bearing.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.3481821201600095,
+     -0.1
+    ],
+    [
+     0.3481821201600095,
+     0.25,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.598,
+    0.2,
+    0.598
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.1434,
+      0.0,
+      0.2048
+     ],
+     "direction": [
+      0.5736,
+      0.0,
+      0.8192
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_flange",
+    "half_b_roll",
+    "half_b_clevis"
+   ],
+   "default_of": "rover15_articulated_joint_s",
+   "files": {
+    "step": "step/rover15_articulated_joint_s_steer_left.step",
+    "glb": "glb/rover15_articulated_joint_s_steer_left.glb",
+    "preview": "renders/rover15_articulated_joint_s_steer_left.png"
+   }
+  },
+  "rover15_articulated_joint_m_steer_left": {
+   "vid": "rover15_articulated_joint_m_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "CH-J Articulated Chassis Joint",
+   "primary": false,
+   "dims": {
+    "width_m": 0.8,
+    "length_m": 0.8,
+    "height_m": 0.3,
+    "yaw_deg": 35,
+    "roll_deg": 15
+   },
+   "notes": "Front half (half_b_*) yaws +-35 deg about the vertical bearing and rolls +-15 deg about the roll bearing.",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.5570913922560152,
+     -0.15
+    ],
+    [
+     0.5570913922560152,
+     0.4,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.957,
+    0.3,
+    0.957
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.2294,
+      0.0,
+      0.3277
+     ],
+     "direction": [
+      0.5736,
+      0.0,
+      0.8192
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_flange",
+    "half_b_roll",
+    "half_b_clevis"
+   ],
+   "default_of": "rover15_articulated_joint_m",
+   "files": {
+    "step": "step/rover15_articulated_joint_m_steer_left.step",
+    "glb": "glb/rover15_articulated_joint_m_steer_left.glb",
+    "preview": "renders/rover15_articulated_joint_m_steer_left.png"
+   }
+  }
+ }
+}

@@ -5,7 +5,7 @@ A static site (no build step, no server code): `index.html` is the gallery, and 
 - `models/<category>/lowpoly/<variant>.glb`: the game-ready low-poly GLBs (≤5,000 triangles per variant, shared PBR material library, same axes, origin and nodes). The viewer and gallery show these by default; add `&lod=cad` (or use the toggle) for the CAD version.
 - `models/<category>/<variant>.glb`: the original CAD blockout GLBs (Godot Y-up, metres, `node_*` empties), uncompressed. `models/<category>/<id>.nodes.json` holds the node data.
 - `thumbs/<variant>.jpg` (CAD) and `thumbs/lp/<variant>.jpg` (low-poly): gallery thumbnails. `manifest.json`: the part/variant index the pages read.
-- `space_sim_lowpoly_glb_v1.zip`: the low-poly Godot package. `space_sim_glb_v2.zip`: the CAD Godot package. `CONVENTIONS.md`: the modelling conventions.
+- `space_sim_lowpoly_glb_v2.zip`: the low-poly Godot package. `space_sim_glb_v3.zip`: the CAD Godot package (188 parts). `CONVENTIONS.md`: the modelling conventions.
 
 Deep links: `view.html?part=<variant id>` (e.g. `station02_b330_deployed`). Aliases work too: `?part=station10` gives the primary variant, and `?part=tank00_l` or `?part=station02_deployed` match by size or pose.
 
@@ -86,4 +86,4 @@ OpenAI, and any custom host that blocks browsers, needs a proxy you control. `to
 2. `python3 tools/make_thumbs.py` (CadQuery venv python; reuses `renders/<variant>.png` or renders from `_cache/`), then `python3 tools/make_thumbs_lp.py` (low-poly thumbs from `/workspace/space-sim/parts_lowpoly`), then `python3 tools/build_site.py`. That rewrites `models/`, `manifest.json` and the zip copy.
 3. Commit and push. GitHub Pages serves the branch root (`.nojekyll` is present).
 
-A new category needs a line in `CATS` in `tools/build_site.py`; its folder must follow `<cat>NN.nodes.json` + `glb/<variant>.glb`.
+A new category needs a line in `CATS` in `tools/build_site.py` (and in `make_thumbs.py`'s folder list for CAD thumbnails). Parts are found in any part folder as `parts/*/<cat>NN.nodes.json`, with each variant's GLB at its `files.glb` path; `interiors/` and `np_lib/` are skipped. Sub-groups inside a category (for example the rover kit) come from `group` in `new_parts_spec.json` (the `GROUPS` map).

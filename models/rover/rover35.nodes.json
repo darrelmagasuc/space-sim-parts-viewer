@@ -1,0 +1,139 @@
+{
+ "id": "rover35",
+ "name": "LB-1 Rover Light Bar",
+ "category": "rover",
+ "short_name": "light_bar",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "rover35_light_bar_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.075,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover35_light_bar_xs": {
+   "vid": "rover35_light_bar_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LB-1 Rover Light Bar",
+   "primary": true,
+   "dims": {
+    "length_m": 0.5,
+    "height_m": 0.15,
+    "depth_m": 0.12,
+    "power_w": 40,
+    "spot_range_m": 60
+   },
+   "notes": "LED flood / spot light bar on two brackets; lamps face the vehicle front (-Y CAD, Godot +Z).",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.06,
+     -0.07500000000000001
+    ],
+    [
+     0.25,
+     0.060000000000000005,
+     0.075
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.15,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover35_light_bar_xs.step",
+    "glb": "glb/rover35_light_bar_xs.glb",
+    "preview": "renders/rover35_light_bar_xs.png"
+   }
+  },
+  "rover35_light_bar_s": {
+   "vid": "rover35_light_bar_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LB-1 Rover Light Bar",
+   "primary": false,
+   "dims": {
+    "length_m": 1.0,
+    "height_m": 0.15,
+    "depth_m": 0.12,
+    "power_w": 120,
+    "spot_range_m": 60
+   },
+   "notes": "LED flood / spot light bar on two brackets; lamps face the vehicle front (-Y CAD, Godot +Z).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.06,
+     -0.07500000000000001
+    ],
+    [
+     0.5,
+     0.060000000000000005,
+     0.075
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.15,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover35_light_bar_s.step",
+    "glb": "glb/rover35_light_bar_s.glb",
+    "preview": "renders/rover35_light_bar_s.png"
+   }
+  }
+ }
+}

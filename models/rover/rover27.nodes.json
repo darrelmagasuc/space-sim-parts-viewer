@@ -1,0 +1,269 @@
+{
+ "id": "rover27",
+ "name": "RD-R Rover Radiator",
+ "category": "rover",
+ "short_name": "rover_radiator",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover27_rover_radiator_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.06,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover27_rover_radiator_s": {
+   "vid": "rover27_rover_radiator_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-R Rover Radiator",
+   "primary": true,
+   "dims": {
+    "footprint_m": "0.5 x 1.0",
+    "height_m": 0.12,
+    "footprint_cells": [
+     1,
+     2
+    ],
+    "reject_kw": 0.5,
+    "cover_deg": 0
+   },
+   "notes": "Deck-mounted OSR radiator with a hinged dust cover (cover) that opens 110 deg to the rear.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.5,
+     -0.06
+    ],
+    [
+     0.25,
+     0.512,
+     0.06
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.12,
+    1.012
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "cover"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover27_rover_radiator_s.step",
+    "glb": "glb/rover27_rover_radiator_s.glb",
+    "preview": "renders/rover27_rover_radiator_s.png"
+   }
+  },
+  "rover27_rover_radiator_s_open": {
+   "vid": "rover27_rover_radiator_s_open",
+   "size": "S",
+   "state": "open",
+   "default_state": false,
+   "label": "RD-R Rover Radiator",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 1.0",
+    "height_m": 0.12,
+    "footprint_cells": [
+     1,
+     2
+    ],
+    "reject_kw": 0.5,
+    "cover_deg": 110
+   },
+   "notes": "Deck-mounted OSR radiator with a hinged dust cover (cover) that opens 110 deg to the rear.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.5,
+     -0.06
+    ],
+    [
+     0.25,
+     0.8551758400166714,
+     0.9796926207859085
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    1.04,
+    1.355
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "cover"
+   ],
+   "default_of": "rover27_rover_radiator_s",
+   "files": {
+    "step": "step/rover27_rover_radiator_s_open.step",
+    "glb": "glb/rover27_rover_radiator_s_open.glb",
+    "preview": "renders/rover27_rover_radiator_s_open.png"
+   }
+  },
+  "rover27_rover_radiator_m": {
+   "vid": "rover27_rover_radiator_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-R Rover Radiator",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.5",
+    "height_m": 0.12,
+    "footprint_cells": [
+     2,
+     3
+    ],
+    "reject_kw": 2.0,
+    "cover_deg": 0
+   },
+   "notes": "Deck-mounted OSR radiator with a hinged dust cover (cover) that opens 110 deg to the rear.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.75,
+     -0.06
+    ],
+    [
+     0.5,
+     0.762,
+     0.06
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.12,
+    1.512
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "cover"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover27_rover_radiator_m.step",
+    "glb": "glb/rover27_rover_radiator_m.glb",
+    "preview": "renders/rover27_rover_radiator_m.png"
+   }
+  },
+  "rover27_rover_radiator_m_open": {
+   "vid": "rover27_rover_radiator_m_open",
+   "size": "M",
+   "state": "open",
+   "default_state": false,
+   "label": "RD-R Rover Radiator",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.5",
+    "height_m": 0.12,
+    "footprint_cells": [
+     2,
+     3
+    ],
+    "reject_kw": 2.0,
+    "cover_deg": 110
+   },
+   "notes": "Deck-mounted OSR radiator with a hinged dust cover (cover) that opens 110 deg to the rear.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.75,
+     -0.06
+    ],
+    [
+     0.5,
+     1.2761859116795058,
+     1.4495389311788625
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.51,
+    2.026
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "cover"
+   ],
+   "default_of": "rover27_rover_radiator_m",
+   "files": {
+    "step": "step/rover27_rover_radiator_m_open.step",
+    "glb": "glb/rover27_rover_radiator_m_open.glb",
+    "preview": "renders/rover27_rover_radiator_m_open.png"
+   }
+  }
+ }
+}

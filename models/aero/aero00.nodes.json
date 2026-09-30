@@ -1,0 +1,817 @@
+{
+ "id": "aero00",
+ "name": "FS-2 Mk2 Lens Fuselage Sections",
+ "category": "aero",
+ "short_name": "mk2_fuselage",
+ "sizes": [
+  "M (Mk2)"
+ ],
+ "primary": "aero00_mk2_fuselage_tank_125",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.625,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.625,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.7
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero00_mk2_fuselage_tank_125": {
+   "vid": "aero00_mk2_fuselage_tank_125",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": true,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 1.25,
+    "volume_m3": 2.5
+   },
+   "notes": "Mk2 lens fuselage tank (LF/LOX); white upper tiles, black belly tiles.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -0.6250000000000001
+    ],
+    [
+     1.26,
+     0.51,
+     0.6250000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.25,
+    1.22
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_tank_125.step",
+    "glb": "glb/aero00_mk2_fuselage_tank_125.glb",
+    "preview": "renders/aero00_mk2_fuselage_tank_125.png"
+   }
+  },
+  "aero00_mk2_fuselage_tank_250": {
+   "vid": "aero00_mk2_fuselage_tank_250",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": false,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 2.5,
+    "volume_m3": 5.0
+   },
+   "notes": "Mk2 lens fuselage tank (LF/LOX); white upper tiles, black belly tiles.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -1.2500000000000002
+    ],
+    [
+     1.26,
+     0.51,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    2.5,
+    1.22
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_tank_250.step",
+    "glb": "glb/aero00_mk2_fuselage_tank_250.glb",
+    "preview": "renders/aero00_mk2_fuselage_tank_250.png"
+   }
+  },
+  "aero00_mk2_fuselage_tank_500": {
+   "vid": "aero00_mk2_fuselage_tank_500",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": false,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 5.0,
+    "volume_m3": 10.0
+   },
+   "notes": "Mk2 lens fuselage tank (LF/LOX); white upper tiles, black belly tiles.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -2.5000000000000004
+    ],
+    [
+     1.26,
+     0.51,
+     2.5000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    5.0,
+    1.22
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_tank_500.step",
+    "glb": "glb/aero00_mk2_fuselage_tank_500.glb",
+    "preview": "renders/aero00_mk2_fuselage_tank_500.png"
+   }
+  },
+  "aero00_mk2_fuselage_structural_250": {
+   "vid": "aero00_mk2_fuselage_structural_250",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": false,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 2.5
+   },
+   "notes": "Mk2 structural section with ring frames.",
+   "bbox_cad_zup": [
+    [
+     -1.262,
+     -0.712,
+     -1.2500000000000002
+    ],
+    [
+     1.262,
+     0.512,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.524,
+    2.5,
+    1.224
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_structural_250.step",
+    "glb": "glb/aero00_mk2_fuselage_structural_250.glb",
+    "preview": "renders/aero00_mk2_fuselage_structural_250.png"
+   }
+  },
+  "aero00_mk2_fuselage_crew_250": {
+   "vid": "aero00_mk2_fuselage_crew_250",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": false,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 2.5,
+    "crew": 4,
+    "slots_small": 2
+   },
+   "notes": "Mk2 crew cabin: 4 seats, side hatch (node_hatch_1), dorsal windows.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -1.2500000000000002
+    ],
+    [
+     1.27,
+     0.51,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.53,
+    2.5,
+    1.22
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.2699,
+      0.0,
+      -0.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_crew_250.step",
+    "glb": "glb/aero00_mk2_fuselage_crew_250.glb",
+    "preview": "renders/aero00_mk2_fuselage_crew_250.png"
+   }
+  },
+  "aero00_mk2_fuselage_service_125": {
+   "vid": "aero00_mk2_fuselage_service_125",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2 Mk2 Lens Fuselage Sections",
+   "primary": false,
+   "dims": {
+    "profile": "Mk2 lens: 2.5 m wide, +0.70 / -0.50 m about the axis (Godot +Z = top), flat belly; matches cockpit02 node_bottom",
+    "length_m": 1.25,
+    "slots_small": 4
+   },
+   "notes": "Mk2 service bay: dorsal door over 4 Small slots.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.714,
+     -0.6250000000000001
+    ],
+    [
+     1.26,
+     0.51,
+     0.6250000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.25,
+    1.224
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door",
+    "door_seams"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero00_mk2_fuselage_service_125.step",
+    "glb": "glb/aero00_mk2_fuselage_service_125.glb",
+    "preview": "renders/aero00_mk2_fuselage_service_125.png"
+   }
+  }
+ }
+}

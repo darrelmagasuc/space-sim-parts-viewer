@@ -1,0 +1,148 @@
+{
+ "id": "prop21",
+ "name": "SRB-M 'Castor-M' Medium Solid",
+ "category": "prop",
+ "short_name": "srb_medium",
+ "sizes": [
+  "M"
+ ],
+ "primary": "prop21_srb_medium_strapon",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.254,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop21_srb_medium_strapon": {
+   "vid": "prop21_srb_medium_strapon",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SRB-M 'Castor-M' Medium Solid",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 13.0,
+    "wet_t": 55
+   },
+   "notes": "Strap-on solid: 4-segment case, ogive nose, fixed canted nozzle; forward/aft attach fittings on -X (node_attach).",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -6.5
+    ],
+    [
+     1.254,
+     1.254,
+     6.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    13.0,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.254,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop21_srb_medium_strapon.step",
+    "glb": "glb/prop21_srb_medium_strapon.glb",
+    "preview": "renders/prop21_srb_medium_strapon.png"
+   }
+  },
+  "prop21_srb_medium_core": {
+   "vid": "prop21_srb_medium_core",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SRB-M 'Castor-M' Medium Solid",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 12.0,
+    "wet_t": 55,
+    "tvc_deg": 5
+   },
+   "notes": "Core-stage solid (first stage): forward skirt with node_top, flexseal TVC nozzle (+-5 deg).",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -6.0
+    ],
+    [
+     1.254,
+     1.254,
+     6.0
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    12.0,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop21_srb_medium_core.step",
+    "glb": "glb/prop21_srb_medium_core.glb",
+    "preview": "renders/prop21_srb_medium_core.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,829 @@
+{
+ "id": "aero02",
+ "name": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+ "category": "aero",
+ "short_name": "mk3_fuselage",
+ "sizes": [
+  "L (Mk3)"
+ ],
+ "primary": "aero02_mk3_fuselage_tank_250",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero02_mk3_fuselage_tank_250": {
+   "vid": "aero02_mk3_fuselage_tank_250",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 2.5,
+    "volume_m3": 25
+   },
+   "notes": "Mk3 (3.75 m) fuselage tank.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -1.25
+    ],
+    [
+     1.887,
+     1.887,
+     1.25
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    2.5,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_tank_250.step",
+    "glb": "glb/aero02_mk3_fuselage_tank_250.glb",
+    "preview": "renders/aero02_mk3_fuselage_tank_250.png"
+   }
+  },
+  "aero02_mk3_fuselage_tank_500": {
+   "vid": "aero02_mk3_fuselage_tank_500",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 5.0,
+    "volume_m3": 50
+   },
+   "notes": "Mk3 (3.75 m) fuselage tank.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -2.5
+    ],
+    [
+     1.887,
+     1.887,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    5.0,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_tank_500.step",
+    "glb": "glb/aero02_mk3_fuselage_tank_500.glb",
+    "preview": "renders/aero02_mk3_fuselage_tank_500.png"
+   }
+  },
+  "aero02_mk3_fuselage_tank_1000": {
+   "vid": "aero02_mk3_fuselage_tank_1000",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 10.0,
+    "volume_m3": 100
+   },
+   "notes": "Mk3 (3.75 m) fuselage tank.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -5.0
+    ],
+    [
+     1.887,
+     1.887,
+     5.0
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    10.0,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_tank_1000.step",
+    "glb": "glb/aero02_mk3_fuselage_tank_1000.glb",
+    "preview": "renders/aero02_mk3_fuselage_tank_1000.png"
+   }
+  },
+  "aero02_mk3_fuselage_structural_500": {
+   "vid": "aero02_mk3_fuselage_structural_500",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 5.0
+   },
+   "notes": "Mk3 structural section.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -2.5
+    ],
+    [
+     1.887,
+     1.887,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    5.0,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_structural_500.step",
+    "glb": "glb/aero02_mk3_fuselage_structural_500.glb",
+    "preview": "renders/aero02_mk3_fuselage_structural_500.png"
+   }
+  },
+  "aero02_mk3_fuselage_crew_500": {
+   "vid": "aero02_mk3_fuselage_crew_500",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 5.0,
+    "crew": 12
+   },
+   "notes": "Mk3 passenger cabin (12 crew), side hatches node_hatch_1/2, window rows.",
+   "bbox_cad_zup": [
+    [
+     -1.895,
+     -1.887,
+     -2.5
+    ],
+    [
+     1.8950000000000002,
+     1.887,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.79,
+    5.0,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.895,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -1.895,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_crew_500.step",
+    "glb": "glb/aero02_mk3_fuselage_crew_500.glb",
+    "preview": "renders/aero02_mk3_fuselage_crew_500.png"
+   }
+  },
+  "aero02_mk3_fuselage_service_250": {
+   "vid": "aero02_mk3_fuselage_service_250",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 2.5,
+    "slots_small": 8
+   },
+   "notes": "Mk3 service bay (8 Small slots) under a dorsal door.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.891,
+     -1.25
+    ],
+    [
+     1.887,
+     1.887,
+     1.25
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    2.5,
+    3.778
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door",
+    "door_seams"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero02_mk3_fuselage_service_250.step",
+    "glb": "glb/aero02_mk3_fuselage_service_250.glb",
+    "preview": "renders/aero02_mk3_fuselage_service_250.png"
+   }
+  }
+ }
+}

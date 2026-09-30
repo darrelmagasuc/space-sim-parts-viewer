@@ -1,0 +1,243 @@
+{
+ "id": "power14",
+ "name": "RW-1 Reaction Wheel Units",
+ "category": "power",
+ "short_name": "reaction_wheel",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "power14_reaction_wheel_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power14_reaction_wheel_s": {
+   "vid": "power14_reaction_wheel_s",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1 Reaction Wheel Units",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.3",
+    "torque_nm": 5
+   },
+   "notes": "Reaction wheel unit: vacuum wheel housing + drive electronics; needs bus power (no internal battery).",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.15
+    ],
+    [
+     0.25,
+     0.25,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.3,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_housing"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power14_reaction_wheel_s.step",
+    "glb": "glb/power14_reaction_wheel_s.glb",
+    "preview": "renders/power14_reaction_wheel_s.png"
+   }
+  },
+  "power14_reaction_wheel_m": {
+   "vid": "power14_reaction_wheel_m",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1 Reaction Wheel Units",
+   "primary": false,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "torque_nm": 40
+   },
+   "notes": "Reaction wheel unit: vacuum wheel housing + drive electronics; needs bus power (no internal battery).",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.3
+    ],
+    [
+     0.25,
+     0.25,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.6,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_housing"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power14_reaction_wheel_m.step",
+    "glb": "glb/power14_reaction_wheel_m.glb",
+    "preview": "renders/power14_reaction_wheel_m.png"
+   }
+  },
+  "power14_reaction_wheel_l": {
+   "vid": "power14_reaction_wheel_l",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1 Reaction Wheel Units",
+   "primary": false,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slot_class": "Medium",
+    "torque_nm": 200
+   },
+   "notes": "Reaction wheel unit: vacuum wheel housing + drive electronics; needs bus power (no internal battery).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.3
+    ],
+    [
+     0.5,
+     0.5,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.6,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_housing"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power14_reaction_wheel_l.step",
+    "glb": "glb/power14_reaction_wheel_l.glb",
+    "preview": "renders/power14_reaction_wheel_l.png"
+   }
+  }
+ }
+}

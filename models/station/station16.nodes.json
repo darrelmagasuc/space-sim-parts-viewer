@@ -1,0 +1,334 @@
+{
+ "id": "station16",
+ "name": "CL-1 Capture Claw",
+ "category": "station",
+ "short_name": "capture_claw",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "station16_capture_claw_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.6,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.6,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station16_capture_claw_s": {
+   "vid": "station16_capture_claw_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "CL-1 Capture Claw",
+   "primary": true,
+   "dims": {
+    "ring_diameter_m": 1.25,
+    "finger_length_m": 1.0,
+    "height_m": 1.2
+   },
+   "notes": "4-finger capture claw on a ring with a central sensor boom (node_bottom at its tip); fingers (finger_N) swing 35 deg out open, curl inward closed.",
+   "bbox_cad_zup": [
+    [
+     -0.9692017305387777,
+     -0.9692017305387777,
+     -0.6
+    ],
+    [
+     0.9692017305387777,
+     0.9692017305387777,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    1.938,
+    1.2,
+    1.938
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "boom_tip",
+    "finger_1",
+    "finger_2",
+    "finger_3",
+    "finger_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/station16_capture_claw_s.step",
+    "glb": "glb/station16_capture_claw_s.glb",
+    "preview": "renders/station16_capture_claw_s.png"
+   }
+  },
+  "station16_capture_claw_s_closed": {
+   "vid": "station16_capture_claw_s_closed",
+   "size": "S",
+   "state": "closed",
+   "default_state": false,
+   "label": "CL-1 Capture Claw",
+   "primary": false,
+   "dims": {
+    "ring_diameter_m": 1.25,
+    "finger_length_m": 1.0,
+    "height_m": 1.2
+   },
+   "notes": "4-finger capture claw on a ring with a central sensor boom (node_bottom at its tip); fingers (finger_N) swing 35 deg out open, curl inward closed.",
+   "bbox_cad_zup": [
+    [
+     -0.67625,
+     -0.67625,
+     -0.6
+    ],
+    [
+     0.67625,
+     0.67625,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    1.353,
+    1.2,
+    1.353
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "boom_tip",
+    "finger_1",
+    "finger_2",
+    "finger_3",
+    "finger_4"
+   ],
+   "default_of": "station16_capture_claw_s",
+   "files": {
+    "step": "step/station16_capture_claw_s_closed.step",
+    "glb": "glb/station16_capture_claw_s_closed.glb",
+    "preview": "renders/station16_capture_claw_s_closed.png"
+   }
+  },
+  "station16_capture_claw_m": {
+   "vid": "station16_capture_claw_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CL-1 Capture Claw",
+   "primary": false,
+   "dims": {
+    "ring_diameter_m": 2.5,
+    "finger_length_m": 1.8,
+    "height_m": 2.2
+   },
+   "notes": "4-finger capture claw on a ring with a central sensor boom (node_bottom at its tip); fingers (finger_N) swing 35 deg out open, curl inward closed.",
+   "bbox_cad_zup": [
+    [
+     -1.8653153781065221,
+     -1.8653153781065221,
+     -1.1
+    ],
+    [
+     1.8653153781065221,
+     1.8653153781065221,
+     1.1
+    ]
+   ],
+   "bbox_godot_size": [
+    3.731,
+    2.2,
+    3.731
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "boom_tip",
+    "finger_1",
+    "finger_2",
+    "finger_3",
+    "finger_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/station16_capture_claw_m.step",
+    "glb": "glb/station16_capture_claw_m.glb",
+    "preview": "renders/station16_capture_claw_m.png"
+   }
+  },
+  "station16_capture_claw_m_closed": {
+   "vid": "station16_capture_claw_m_closed",
+   "size": "M",
+   "state": "closed",
+   "default_state": false,
+   "label": "CL-1 Capture Claw",
+   "primary": false,
+   "dims": {
+    "ring_diameter_m": 2.5,
+    "finger_length_m": 1.8,
+    "height_m": 2.2
+   },
+   "notes": "4-finger capture claw on a ring with a central sensor boom (node_bottom at its tip); fingers (finger_N) swing 35 deg out open, curl inward closed.",
+   "bbox_cad_zup": [
+    [
+     -1.3325,
+     -1.3325,
+     -1.1
+    ],
+    [
+     1.3325,
+     1.3325,
+     1.1
+    ]
+   ],
+   "bbox_godot_size": [
+    2.665,
+    2.2,
+    2.665
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "boom_tip",
+    "finger_1",
+    "finger_2",
+    "finger_3",
+    "finger_4"
+   ],
+   "default_of": "station16_capture_claw_m",
+   "files": {
+    "step": "step/station16_capture_claw_m_closed.step",
+    "glb": "glb/station16_capture_claw_m_closed.glb",
+    "preview": "renders/station16_capture_claw_m_closed.png"
+   }
+  }
+ }
+}

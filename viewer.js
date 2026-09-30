@@ -95,7 +95,8 @@ function show(p, v, push = true) {
   $('lod').innerHTML = `<button data-l="lp" class="${lp ? 'on' : ''}" ${v.glb_lp ? '' : 'disabled'}>Low-poly${v.tris_lp ? ' · ' + v.tris_lp.toLocaleString('en') + ' tris' : ''}</button><button data-l="cad" class="${lp ? '' : 'on'}">CAD blockout${v.tris_cad ? ' · ' + v.tris_cad.toLocaleString('en') + ' tris' : ''}</button>`;
   $('lod').querySelectorAll('button').forEach(b => b.onclick = () => { if (b.dataset.l !== lod) { lod = b.dataset.l; show(p, v); } });
   document.title = `${v.vid} – Space Sim part viewer`;
-  $('title').textContent = `${p.id} · ${p.name}`; $('sub').textContent = `${p.cat} · ${v.vid} · ${lp ? 'low-poly' : 'CAD'}`;
+  $('title').textContent = `${p.id} · ${p.name}`; $('sub').textContent = `${p.cat}${p.group ? ' · ' + p.group : ''} · ${v.vid} · ${lp ? 'low-poly' : 'CAD'}`;
+  $('summary').hidden = !p.summary; $('summary').innerHTML = p.summary ? `${p.new ? '<em class="new">new</em> ' : ''}${esc(p.summary)}` : '';
   $('vars').innerHTML = p.variants.map(x => `<button data-v="${esc(x.vid)}" class="${x.vid === v.vid ? 'on' : ''}" title="${esc(x.vid)}">${esc(x.size)}${x.state !== 'flight' ? ' · ' + esc(x.state) : ''}${x.primary ? ' ★' : ''}</button>`).join('');
   $('vars').querySelectorAll('button').forEach(b => b.onclick = () => show(p, p.variants.find(x => x.vid === b.dataset.v)));
   const mb = (bytes / 1e6).toFixed(2), zmb = b => (b / 1e6).toFixed(1);
@@ -111,6 +112,8 @@ function show(p, v, push = true) {
     clearModel(); model = gltf.scene; scene.add(model);
     const box = new THREE.Box3().setFromObject(model), size = box.getSize(new THREE.Vector3()), span = Math.max(size.x, size.y, size.z) || 1;
     nodeGroup = buildNodes(model, span); nodeGroup.visible = $('tNodes').checked; scene.add(nodeGroup);
+    const nlab = nodeGroup.children.filter(c => c.isCSS2DObject).length;           // big node grids (rover kit decks): labels off by default
+    if (!keepView) $('tLabels').checked = nlab <= 24; setLabels();
     const step = niceStep(Math.max(size.x, size.z) * 1.6 || span), n = Math.max(4, Math.ceil(Math.max(size.x, size.z) * 1.6 / step / 2) * 2);
     grid = new THREE.GridHelper(n * step, n, 0x6b7485, 0xa3abb8); grid.position.set((box.min.x + box.max.x) / 2, box.min.y, (box.min.z + box.max.z) / 2); grid.visible = $('tGrid').checked; scene.add(grid);
     axes = new THREE.AxesHelper(span * 0.35); axes.visible = $('tAxes').checked; axes.renderOrder = 9; scene.add(axes);
@@ -119,7 +122,9 @@ function show(p, v, push = true) {
   }, ev => { if (ev.total) $('msg').textContent = `Loading ${v.vid}.glb… ${Math.round(ev.loaded / ev.total * 100)}%`; },
     err => { $('msg').textContent = 'Failed to load ' + url + ': ' + (err.message || err); });
 }
-$('tNodes').onchange = e => nodeGroup && (nodeGroup.visible = e.target.checked);
+$('tNodes').onchange = e => { if (nodeGroup) { nodeGroup.visible = e.target.checked; setLabels(); } };
+function setLabels() { if (nodeGroup) nodeGroup.children.forEach(c => { if (c.isCSS2DObject) { c.visible = $('tLabels').checked; c.element.style.display = $('tLabels').checked && nodeGroup.visible ? '' : 'none'; } }); }
+$('tLabels').onchange = setLabels;
 $('tGrid').onchange = e => grid && (grid.visible = e.target.checked);
 $('tAxes').onchange = e => axes && (axes.visible = e.target.checked);
 $('reset').onclick = e => { e.preventDefault(); if (homeView) { camera.position.copy(homeView.p); controls.target.copy(homeView.t); } };

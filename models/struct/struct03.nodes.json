@@ -1,0 +1,385 @@
+{
+ "id": "struct03",
+ "name": "LD-1 Ladders & Handrails",
+ "category": "struct",
+ "short_name": "ladder_handrail",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "struct03_ladder_handrail_ladder_1",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.049,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "struct03_ladder_handrail_ladder_1": {
+   "vid": "struct03_ladder_handrail_ladder_1",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": true,
+   "dims": {
+    "length_m": 1.0
+   },
+   "notes": "Fixed crew ladder, stand-offs to the hull.",
+   "bbox_cad_zup": [
+    [
+     -0.049,
+     -0.24000000000000002,
+     -0.5
+    ],
+    [
+     0.049,
+     0.24000000000000002,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.098,
+    1.0,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.049,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_ladder_1.step",
+    "glb": "glb/struct03_ladder_handrail_ladder_1.glb",
+    "preview": "renders/struct03_ladder_handrail_ladder_1.png"
+   }
+  },
+  "struct03_ladder_handrail_ladder_2": {
+   "vid": "struct03_ladder_handrail_ladder_2",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 2.0
+   },
+   "notes": "Fixed crew ladder, stand-offs to the hull.",
+   "bbox_cad_zup": [
+    [
+     -0.049,
+     -0.24000000000000002,
+     -1.0
+    ],
+    [
+     0.049,
+     0.24000000000000002,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    0.098,
+    2.0,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.049,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_ladder_2.step",
+    "glb": "glb/struct03_ladder_handrail_ladder_2.glb",
+    "preview": "renders/struct03_ladder_handrail_ladder_2.png"
+   }
+  },
+  "struct03_ladder_handrail_telescoping": {
+   "vid": "struct03_ladder_handrail_telescoping",
+   "size": "XS",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 1.2
+   },
+   "notes": "Crew ladder (rungs 0.3 m); telescoping version extends its lower section to 4 m.",
+   "bbox_cad_zup": [
+    [
+     -0.052500000000000005,
+     -0.24000000000000002,
+     -0.6
+    ],
+    [
+     0.052500000000000005,
+     0.24000000000000002,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    0.105,
+    1.2,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0525,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_telescoping.step",
+    "glb": "glb/struct03_ladder_handrail_telescoping.glb",
+    "preview": "renders/struct03_ladder_handrail_telescoping.png"
+   }
+  },
+  "struct03_ladder_handrail_telescoping_deployed": {
+   "vid": "struct03_ladder_handrail_telescoping_deployed",
+   "size": "XS",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 4.0
+   },
+   "notes": "Crew ladder (rungs 0.3 m); telescoping version extends its lower section to 4 m.",
+   "bbox_cad_zup": [
+    [
+     -0.052500000000000005,
+     -0.24000000000000002,
+     -3.38
+    ],
+    [
+     0.052500000000000005,
+     0.24000000000000002,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    0.105,
+    3.98,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0525,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "struct03_ladder_handrail_telescoping",
+   "files": {
+    "step": "step/struct03_ladder_handrail_telescoping_deployed.step",
+    "glb": "glb/struct03_ladder_handrail_telescoping_deployed.glb",
+    "preview": "renders/struct03_ladder_handrail_telescoping_deployed.png"
+   }
+  },
+  "struct03_ladder_handrail_handrail_1": {
+   "vid": "struct03_ladder_handrail_handrail_1",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 1.0
+   },
+   "notes": "ISS-style yellow EVA handrail on two stand-offs.",
+   "bbox_cad_zup": [
+    [
+     -0.0445,
+     -0.03,
+     -0.5
+    ],
+    [
+     0.0445,
+     0.03,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.089,
+    1.0,
+    0.06
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0445,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_handrail_1.step",
+    "glb": "glb/struct03_ladder_handrail_handrail_1.glb",
+    "preview": "renders/struct03_ladder_handrail_handrail_1.png"
+   }
+  },
+  "struct03_ladder_handrail_handrail_2": {
+   "vid": "struct03_ladder_handrail_handrail_2",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 2.0
+   },
+   "notes": "ISS-style yellow EVA handrail on two stand-offs.",
+   "bbox_cad_zup": [
+    [
+     -0.0445,
+     -0.03,
+     -1.0
+    ],
+    [
+     0.0445,
+     0.03,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    0.089,
+    2.0,
+    0.06
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0445,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_handrail_2.step",
+    "glb": "glb/struct03_ladder_handrail_handrail_2.glb",
+    "preview": "renders/struct03_ladder_handrail_handrail_2.png"
+   }
+  },
+  "struct03_ladder_handrail_foot_restraint": {
+   "vid": "struct03_ladder_handrail_foot_restraint",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LD-1 Ladders & Handrails",
+   "primary": false,
+   "dims": {
+    "length_m": 0.6
+   },
+   "notes": "Portable foot restraint (EVA worksite).",
+   "bbox_cad_zup": [
+    [
+     -0.07100000000000001,
+     -0.2,
+     -0.3
+    ],
+    [
+     0.07100000000000001,
+     0.2,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.142,
+    0.6,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.071,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct03_ladder_handrail_foot_restraint.step",
+    "glb": "glb/struct03_ladder_handrail_foot_restraint.glb",
+    "preview": "renders/struct03_ladder_handrail_foot_restraint.png"
+   }
+  }
+ }
+}

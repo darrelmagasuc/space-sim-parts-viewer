@@ -1,0 +1,189 @@
+{
+ "id": "aero04",
+ "name": "SK-1 Strakes & LERX",
+ "category": "aero",
+ "short_name": "strake",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "aero04_strake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero04_strake_s": {
+   "vid": "aero04_strake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SK-1 Strakes & LERX",
+   "primary": true,
+   "dims": {
+    "length_m": 1.5,
+    "span_m": 0.3,
+    "thickness_m": 0.05
+   },
+   "notes": "Leading-edge root extension / chine strake (lift at high AoA). Radial: root on -X, leading edge +Z.",
+   "bbox_cad_zup": [
+    [
+     -0.15000000000000002,
+     -0.05,
+     -0.75
+    ],
+    [
+     0.15,
+     0.05,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    1.5,
+    0.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero04_strake_s.step",
+    "glb": "glb/aero04_strake_s.glb",
+    "preview": "renders/aero04_strake_s.png"
+   }
+  },
+  "aero04_strake_m": {
+   "vid": "aero04_strake_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SK-1 Strakes & LERX",
+   "primary": false,
+   "dims": {
+    "length_m": 3.0,
+    "span_m": 0.6,
+    "thickness_m": 0.08
+   },
+   "notes": "Leading-edge root extension / chine strake (lift at high AoA). Radial: root on -X, leading edge +Z.",
+   "bbox_cad_zup": [
+    [
+     -0.30000000000000004,
+     -0.08,
+     -1.5
+    ],
+    [
+     0.3,
+     0.08,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    3.0,
+    0.16
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero04_strake_m.step",
+    "glb": "glb/aero04_strake_m.glb",
+    "preview": "renders/aero04_strake_m.png"
+   }
+  },
+  "aero04_strake_l": {
+   "vid": "aero04_strake_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SK-1 Strakes & LERX",
+   "primary": false,
+   "dims": {
+    "length_m": 5.0,
+    "span_m": 1.0,
+    "thickness_m": 0.12
+   },
+   "notes": "Leading-edge root extension / chine strake (lift at high AoA). Radial: root on -X, leading edge +Z.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.12,
+     -2.5
+    ],
+    [
+     0.5,
+     0.12,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    5.0,
+    0.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero04_strake_l.step",
+    "glb": "glb/aero04_strake_l.glb",
+    "preview": "renders/aero04_strake_l.png"
+   }
+  }
+ }
+}

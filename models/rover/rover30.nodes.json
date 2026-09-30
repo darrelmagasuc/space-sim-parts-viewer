@@ -1,0 +1,342 @@
+{
+ "id": "rover30",
+ "name": "TA-1 Rover Robotic Arm",
+ "category": "rover",
+ "short_name": "robotic_arm",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover30_robotic_arm_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3281,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_tool",
+   "position": [
+    0.0,
+    0.2581,
+    0.2334
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover30_robotic_arm_s": {
+   "vid": "rover30_robotic_arm_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "TA-1 Rover Robotic Arm",
+   "primary": true,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "reach_m": 1.8,
+    "joints": 5,
+    "payload_kg": 5
+   },
+   "notes": "5-DOF arm: turret, shoulder, elbow, wrist, tool (drill / scoop / camera). Stowed folded back over the base; deployed = full reach forward, tool pointing down.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.32813082411317973
+    ],
+    [
+     0.25,
+     0.96628,
+     0.3281308241131798
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.656,
+    1.216
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3281,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      0.2581,
+      0.2334
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_turret",
+    "arm_link1",
+    "arm_elbow",
+    "arm_link2",
+    "arm_wrist",
+    "arm_tool",
+    "arm_cable"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover30_robotic_arm_s.step",
+    "glb": "glb/rover30_robotic_arm_s.glb",
+    "preview": "renders/rover30_robotic_arm_s.png"
+   }
+  },
+  "rover30_robotic_arm_s_deployed": {
+   "vid": "rover30_robotic_arm_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "TA-1 Rover Robotic Arm",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "reach_m": 1.8,
+    "joints": 5,
+    "payload_kg": 5
+   },
+   "notes": "5-DOF arm: turret, shoulder, elbow, wrist, tool (drill / scoop / camera). Stowed folded back over the base; deployed = full reach forward, tool pointing down.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -1.87,
+     -0.32813082411317973
+    ],
+    [
+     0.25,
+     0.25,
+     0.2373691758868203
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.566,
+    2.12
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3281,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      -0.0281,
+      1.8
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_turret",
+    "arm_link1",
+    "arm_elbow",
+    "arm_link2",
+    "arm_wrist",
+    "arm_tool",
+    "arm_cable"
+   ],
+   "default_of": "rover30_robotic_arm_s",
+   "files": {
+    "step": "step/rover30_robotic_arm_s_deployed.step",
+    "glb": "glb/rover30_robotic_arm_s_deployed.glb",
+    "preview": "renders/rover30_robotic_arm_s_deployed.png"
+   }
+  },
+  "rover30_robotic_arm_m": {
+   "vid": "rover30_robotic_arm_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "TA-1 Rover Robotic Arm",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "reach_m": 3.0,
+    "joints": 5,
+    "payload_kg": 20
+   },
+   "notes": "5-DOF arm: turret, shoulder, elbow, wrist, tool (drill / scoop / camera). Stowed folded back over the base; deployed = full reach forward, tool pointing down.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.39021804018863304
+    ],
+    [
+     0.25,
+     1.5988,
+     0.3902180401886331
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.78,
+    1.849
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3902,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      0.3202,
+      0.248
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_turret",
+    "arm_link1",
+    "arm_elbow",
+    "arm_link2",
+    "arm_wrist",
+    "arm_tool",
+    "arm_cable"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover30_robotic_arm_m.step",
+    "glb": "glb/rover30_robotic_arm_m.glb",
+    "preview": "renders/rover30_robotic_arm_m.png"
+   }
+  },
+  "rover30_robotic_arm_m_deployed": {
+   "vid": "rover30_robotic_arm_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "TA-1 Rover Robotic Arm",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "reach_m": 3.0,
+    "joints": 5,
+    "payload_kg": 20
+   },
+   "notes": "5-DOF arm: turret, shoulder, elbow, wrist, tool (drill / scoop / camera). Stowed folded back over the base; deployed = full reach forward, tool pointing down.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -3.07,
+     -0.4632345585573622
+    ],
+    [
+     0.25,
+     0.25,
+     0.19478195981136698
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.658,
+    3.32
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3902,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      -0.0902,
+      3.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_turret",
+    "arm_link1",
+    "arm_elbow",
+    "arm_link2",
+    "arm_wrist",
+    "arm_tool",
+    "arm_cable"
+   ],
+   "default_of": "rover30_robotic_arm_m",
+   "files": {
+    "step": "step/rover30_robotic_arm_m_deployed.step",
+    "glb": "glb/rover30_robotic_arm_m_deployed.glb",
+    "preview": "renders/rover30_robotic_arm_m_deployed.png"
+   }
+  }
+ }
+}

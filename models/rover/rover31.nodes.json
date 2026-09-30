@@ -1,0 +1,266 @@
+{
+ "id": "rover31",
+ "name": "TD-1 Drill Mast",
+ "category": "rover",
+ "short_name": "drill_mast",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover31_drill_mast",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.295,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_tool",
+   "position": [
+    0.38,
+    0.015,
+    0.3
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover31_drill_mast": {
+   "vid": "rover31_drill_mast",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "TD-1 Drill Mast",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "mast_height_m": 2.0,
+    "depth_m": 3.0
+   },
+   "notes": "Telescoping 2 m drill mast with drill-string carousel. Stowed: mast folded flat over the base; deployed: vertical, head at top; drilling: head at the bottom, bit below ground level.",
+   "bbox_cad_zup": [
+    [
+     -0.5900000000000001,
+     -0.37,
+     -0.29500000000000004
+    ],
+    [
+     0.5,
+     0.25,
+     0.29500000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.09,
+    0.59,
+    0.62
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.295,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.38,
+      0.015,
+      0.3
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_outer",
+    "mast_inner",
+    "mast_head",
+    "mast_drill_string"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover31_drill_mast.step",
+    "glb": "glb/rover31_drill_mast.glb",
+    "preview": "renders/rover31_drill_mast.png"
+   }
+  },
+  "rover31_drill_mast_deployed": {
+   "vid": "rover31_drill_mast_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "TD-1 Drill Mast",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "mast_height_m": 2.0,
+    "depth_m": 3.0
+   },
+   "notes": "Telescoping 2 m drill mast with drill-string carousel. Stowed: mast folded flat over the base; deployed: vertical, head at top; drilling: head at the bottom, bit below ground level.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.37,
+     -0.29500000000000004
+    ],
+    [
+     0.5,
+     0.25,
+     1.955
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    2.25,
+    0.62
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.295,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.35,
+      0.685,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_outer",
+    "mast_inner",
+    "mast_head",
+    "mast_drill_string"
+   ],
+   "default_of": "rover31_drill_mast",
+   "files": {
+    "step": "step/rover31_drill_mast_deployed.step",
+    "glb": "glb/rover31_drill_mast_deployed.glb",
+    "preview": "renders/rover31_drill_mast_deployed.png"
+   }
+  },
+  "rover31_drill_mast_drilling": {
+   "vid": "rover31_drill_mast_drilling",
+   "size": "S",
+   "state": "drilling",
+   "default_state": false,
+   "label": "TD-1 Drill Mast",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "mast_height_m": 2.0,
+    "depth_m": 3.0
+   },
+   "notes": "Telescoping 2 m drill mast with drill-string carousel. Stowed: mast folded flat over the base; deployed: vertical, head at top; drilling: head at the bottom, bit below ground level.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.37,
+     -0.765
+    ],
+    [
+     0.5,
+     0.25,
+     1.955
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    2.72,
+    0.62
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.295,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.35,
+      -0.765,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_outer",
+    "mast_inner",
+    "mast_head",
+    "mast_drill_string"
+   ],
+   "default_of": "rover31_drill_mast",
+   "files": {
+    "step": "step/rover31_drill_mast_drilling.step",
+    "glb": "glb/rover31_drill_mast_drilling.glb",
+    "preview": "renders/rover31_drill_mast_drilling.png"
+   }
+  }
+ }
+}

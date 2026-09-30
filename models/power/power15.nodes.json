@@ -1,0 +1,110 @@
+{
+ "id": "power15",
+ "name": "CMG-1 Control Moment Gyro",
+ "category": "power",
+ "short_name": "control_moment_gyro",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "power15_control_moment_gyro",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power15_control_moment_gyro": {
+   "vid": "power15_control_moment_gyro",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "CMG-1 Control Moment Gyro",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 1.8",
+    "slot_class": "Rack",
+    "torque_nm": 250,
+    "momentum_nms": 4800
+   },
+   "notes": "Rack-slot double-gimbal CMG (ISS class): spherical rotor housing on a gimbal ring with torque motors.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.9
+    ],
+    [
+     0.5,
+     0.5,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.8,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rotor_sphere"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power15_control_moment_gyro.step",
+    "glb": "glb/power15_control_moment_gyro.glb",
+    "preview": "renders/power15_control_moment_gyro.png"
+   }
+  }
+ }
+}

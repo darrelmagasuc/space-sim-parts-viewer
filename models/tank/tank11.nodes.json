@@ -1,0 +1,332 @@
+{
+ "id": "tank11",
+ "name": "T-TOR Toroidal Tanks",
+ "category": "tank",
+ "short_name": "toroidal_tank",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "tank11_toroidal_tank_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.4201,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.4299,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0049,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0049,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0049,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0049,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank11_toroidal_tank_m": {
+   "vid": "tank11_toroidal_tank_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-TOR Toroidal Tanks",
+   "primary": true,
+   "dims": {
+    "outer_diameter_m": 2.5,
+    "hole_diameter_m": 1.1,
+    "height_m": 0.85,
+    "volume_m3": 2.2
+   },
+   "notes": "Toroidal tank around an open centre (engine/nozzle can sit inside); stack nodes on the axis at the band-ring planes.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.4298718144331381
+    ],
+    [
+     1.25,
+     1.25,
+     0.42987181443313816
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.86,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4201,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4299,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0049,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0049,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0049,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0049,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank11_toroidal_tank_m.step",
+    "glb": "glb/tank11_toroidal_tank_m.glb",
+    "preview": "renders/tank11_toroidal_tank_m.png"
+   }
+  },
+  "tank11_toroidal_tank_l": {
+   "vid": "tank11_toroidal_tank_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-TOR Toroidal Tanks",
+   "primary": false,
+   "dims": {
+    "outer_diameter_m": 3.75,
+    "hole_diameter_m": 1.6,
+    "height_m": 1.2,
+    "volume_m3": 7.7
+   },
+   "notes": "Toroidal tank around an open centre (engine/nozzle can sit inside); stack nodes on the axis at the band-ring planes.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.6049603149550894
+    ],
+    [
+     1.875,
+     1.875,
+     0.6049603149550894
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.21,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.595,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.605,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.005,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.005,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.005,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.005,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank11_toroidal_tank_l.step",
+    "glb": "glb/tank11_toroidal_tank_l.glb",
+    "preview": "renders/tank11_toroidal_tank_l.png"
+   }
+  }
+ }
+}

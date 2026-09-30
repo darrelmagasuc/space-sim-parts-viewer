@@ -11,8 +11,8 @@ spec = importlib.util.spec_from_file_location("sp_render", os.path.join(PARTS, "
 sys.path.insert(0, os.path.join(PARTS, "station_power"))
 R = importlib.util.module_from_spec(spec); spec.loader.exec_module(R)
 jobs = []
-for d in ("cmd_prop", "tank_stage", "station_power", "rover_jet", "cockpit"):
-    for f in sorted(glob.glob(f"{PARTS}/{d}/*.nodes.json")):
+for d in ("cmd_prop", "tank_stage", "station_power", "rover_jet", "cockpit", "rover_kit", "prop_stage_ext", "aero", "struct_robo", "sci_power"):
+    for f in sorted(glob.glob(f"{PARTS}/{d}/*[0-9][0-9].nodes.json")):
         for vid in json.load(open(f))["variants"]: jobs.append((d, vid, os.path.join(PARTS, d, "renders", vid + ".png")))
 for vid in ("gravity_ring_assembly", "counter_rotating_assembly"):
     jobs.append(("station_power", vid, os.path.join(PARTS, "station_power", "assembly", vid + ".png")))

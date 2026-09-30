@@ -1,0 +1,395 @@
+{
+ "id": "rover26",
+ "name": "BB-1 Rover Battery Bay",
+ "category": "rover",
+ "short_name": "battery_bay",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover26_battery_bay_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.35,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.35,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    -0.2,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover26_battery_bay_s": {
+   "vid": "rover26_battery_bay_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "BB-1 Rover Battery Bay",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "height_m": 0.7,
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "slots": "2 Small"
+   },
+   "notes": "Insulated battery bay (vents, heater-controlled), hinged lid with a mount on top (node_top), charge/umbilical port on the rear face (node_port_1).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.25,
+     -0.35
+    ],
+    [
+     0.5,
+     0.25,
+     0.35
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.7,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover26_battery_bay_s.step",
+    "glb": "glb/rover26_battery_bay_s.glb",
+    "preview": "renders/rover26_battery_bay_s.png"
+   }
+  },
+  "rover26_battery_bay_m": {
+   "vid": "rover26_battery_bay_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "BB-1 Rover Battery Bay",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.0",
+    "height_m": 0.7,
+    "footprint_cells": [
+     2,
+     2
+    ],
+    "slots": "4 Small or 1 Medium"
+   },
+   "notes": "Insulated battery bay (vents, heater-controlled), hinged lid with a mount on top (node_top), charge/umbilical port on the rear face (node_port_1).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.35
+    ],
+    [
+     0.5,
+     0.5,
+     0.35
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.7,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      -0.2,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover26_battery_bay_m.step",
+    "glb": "glb/rover26_battery_bay_m.glb",
+    "preview": "renders/rover26_battery_bay_m.png"
+   }
+  },
+  "rover26_battery_bay_s_lid_open": {
+   "vid": "rover26_battery_bay_s_lid_open",
+   "size": "S",
+   "state": "lid_open",
+   "default_state": false,
+   "label": "BB-1 Rover Battery Bay",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "height_m": 0.7,
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "slots": "2 Small"
+   },
+   "notes": "Insulated battery bay (vents, heater-controlled), hinged lid with a mount on top (node_top), charge/umbilical port on the rear face (node_port_1).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.25,
+     -0.35
+    ],
+    [
+     0.5,
+     0.4069263001910952,
+     0.762403876506104
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.112,
+    0.657
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5023,
+      -0.3722
+     ],
+     "direction": [
+      0.0,
+      -0.1736,
+      -0.9848
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": "rover26_battery_bay_s",
+   "files": {
+    "step": "step/rover26_battery_bay_s_lid_open.step",
+    "glb": "glb/rover26_battery_bay_s_lid_open.glb",
+    "preview": "renders/rover26_battery_bay_s_lid_open.png"
+   }
+  },
+  "rover26_battery_bay_m_lid_open": {
+   "vid": "rover26_battery_bay_m_lid_open",
+   "size": "M",
+   "state": "lid_open",
+   "default_state": false,
+   "label": "BB-1 Rover Battery Bay",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.0",
+    "height_m": 0.7,
+    "footprint_cells": [
+     2,
+     2
+    ],
+    "slots": "4 Small or 1 Medium"
+   },
+   "notes": "Insulated battery bay (vents, heater-controlled), hinged lid with a mount on top (node_top), charge/umbilical port on the rear face (node_port_1).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.35
+    ],
+    [
+     0.5,
+     0.7437503890245604,
+     1.2548077530122081
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.605,
+    1.244
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7485,
+      -0.6656
+     ],
+     "direction": [
+      0.0,
+      -0.1736,
+      -0.9848
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      -0.2,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": "rover26_battery_bay_m",
+   "files": {
+    "step": "step/rover26_battery_bay_m_lid_open.step",
+    "glb": "glb/rover26_battery_bay_m_lid_open.glb",
+    "preview": "renders/rover26_battery_bay_m_lid_open.png"
+   }
+  }
+ }
+}

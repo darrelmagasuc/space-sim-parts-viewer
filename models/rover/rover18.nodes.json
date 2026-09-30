@@ -1,0 +1,673 @@
+{
+ "id": "rover18",
+ "name": "ST-1 Steering Module",
+ "category": "rover",
+ "short_name": "steering_module",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover18_steering_module_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.06,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.06,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover18_steering_module_s": {
+   "vid": "rover18_steering_module_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "ST-1 Steering Module",
+   "primary": true,
+   "dims": {
+    "length_m": 0.12,
+    "diameter_m": 0.2,
+    "steer_deg": 0,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.06,
+     -0.1,
+     -0.1
+    ],
+    [
+     0.06,
+     0.1,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.12,
+    0.2,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover18_steering_module_s.step",
+    "glb": "glb/rover18_steering_module_s.glb",
+    "preview": "renders/rover18_steering_module_s.png"
+   }
+  },
+  "rover18_steering_module_s_steer_left": {
+   "vid": "rover18_steering_module_s_steer_left",
+   "size": "S",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.12,
+    "diameter_m": 0.2,
+    "steer_deg": 35,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.06,
+     -0.1,
+     -0.1
+    ],
+    [
+     0.10077100192893367,
+     0.10813827016707205,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.161,
+    0.2,
+    0.208
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.0491,
+      0.0,
+      -0.0344
+     ],
+     "direction": [
+      0.8192,
+      0.0,
+      -0.5736
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_s",
+   "files": {
+    "step": "step/rover18_steering_module_s_steer_left.step",
+    "glb": "glb/rover18_steering_module_s_steer_left.glb",
+    "preview": "renders/rover18_steering_module_s_steer_left.png"
+   }
+  },
+  "rover18_steering_module_s_crab": {
+   "vid": "rover18_steering_module_s_crab",
+   "size": "S",
+   "state": "crab",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.12,
+    "diameter_m": 0.2,
+    "steer_deg": 90,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.09000000000000001,
+     -0.1,
+     -0.1
+    ],
+    [
+     0.09000000000000001,
+     0.1,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.2,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.0,
+      0.0,
+      -0.06
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_s",
+   "files": {
+    "step": "step/rover18_steering_module_s_crab.step",
+    "glb": "glb/rover18_steering_module_s_crab.glb",
+    "preview": "renders/rover18_steering_module_s_crab.png"
+   }
+  },
+  "rover18_steering_module_m": {
+   "vid": "rover18_steering_module_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.18,
+    "diameter_m": 0.3,
+    "steer_deg": 0,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.15,
+     -0.15
+    ],
+    [
+     0.09,
+     0.15,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.3,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover18_steering_module_m.step",
+    "glb": "glb/rover18_steering_module_m.glb",
+    "preview": "renders/rover18_steering_module_m.png"
+   }
+  },
+  "rover18_steering_module_m_steer_left": {
+   "vid": "rover18_steering_module_m_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.18,
+    "diameter_m": 0.3,
+    "steer_deg": 35,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.15,
+     -0.15
+    ],
+    [
+     0.1511565028934005,
+     0.16220740525060806,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.241,
+    0.3,
+    0.312
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.0737,
+      0.0,
+      -0.0516
+     ],
+     "direction": [
+      0.8192,
+      0.0,
+      -0.5736
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_m",
+   "files": {
+    "step": "step/rover18_steering_module_m_steer_left.step",
+    "glb": "glb/rover18_steering_module_m_steer_left.glb",
+    "preview": "renders/rover18_steering_module_m_steer_left.png"
+   }
+  },
+  "rover18_steering_module_m_crab": {
+   "vid": "rover18_steering_module_m_crab",
+   "size": "M",
+   "state": "crab",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.18,
+    "diameter_m": 0.3,
+    "steer_deg": 90,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.135,
+     -0.15,
+     -0.15
+    ],
+    [
+     0.135,
+     0.15,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.27,
+    0.3,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.0,
+      0.0,
+      -0.09
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_m",
+   "files": {
+    "step": "step/rover18_steering_module_m_crab.step",
+    "glb": "glb/rover18_steering_module_m_crab.glb",
+    "preview": "renders/rover18_steering_module_m_crab.png"
+   }
+  },
+  "rover18_steering_module_l": {
+   "vid": "rover18_steering_module_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.25,
+    "diameter_m": 0.45,
+    "steer_deg": 0,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.225,
+     -0.225
+    ],
+    [
+     0.125,
+     0.225,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.45,
+    0.45
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover18_steering_module_l.step",
+    "glb": "glb/rover18_steering_module_l.glb",
+    "preview": "renders/rover18_steering_module_l.png"
+   }
+  },
+  "rover18_steering_module_l_steer_left": {
+   "vid": "rover18_steering_module_l_steer_left",
+   "size": "L",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.25,
+    "diameter_m": 0.45,
+    "steer_deg": 35,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.225,
+     -0.225
+    ],
+    [
+     0.2185432338972108,
+     0.23757534351240162,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.344,
+    0.45,
+    0.463
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.1024,
+      0.0,
+      -0.0717
+     ],
+     "direction": [
+      0.8192,
+      0.0,
+      -0.5736
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_l",
+   "files": {
+    "step": "step/rover18_steering_module_l_steer_left.step",
+    "glb": "glb/rover18_steering_module_l_steer_left.glb",
+    "preview": "renders/rover18_steering_module_l_steer_left.png"
+   }
+  },
+  "rover18_steering_module_l_crab": {
+   "vid": "rover18_steering_module_l_crab",
+   "size": "L",
+   "state": "crab",
+   "default_state": false,
+   "label": "ST-1 Steering Module",
+   "primary": false,
+   "dims": {
+    "length_m": 0.25,
+    "diameter_m": 0.45,
+    "steer_deg": 90,
+    "steer_axis": "Godot +Y through module centre, right-hand rule"
+   },
+   "notes": "Slewing-ring steering: output flange + boot (half_b_*) rotate about the vertical axis through the module centre.",
+   "bbox_cad_zup": [
+    [
+     -0.2025,
+     -0.225,
+     -0.225
+    ],
+    [
+     0.2025,
+     0.225,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.405,
+    0.45,
+    0.45
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.0,
+      0.0,
+      -0.125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_neck",
+    "half_b_flange"
+   ],
+   "default_of": "rover18_steering_module_l",
+   "files": {
+    "step": "step/rover18_steering_module_l_crab.step",
+    "glb": "glb/rover18_steering_module_l_crab.glb",
+    "preview": "renders/rover18_steering_module_l_crab.png"
+   }
+  }
+ }
+}

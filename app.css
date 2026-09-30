@@ -59,3 +59,7 @@ details.fold summary{cursor:pointer;font-weight:600;font-size:13px}
 }
 .vars button:disabled{opacity:.45;cursor:default}.lod button{font-size:13px;padding:5px 10px}
 .seg{display:inline-flex;border-radius:6px;overflow:hidden;border:1px solid #4a5570}.seg button{background:transparent;color:#cfd8ea;border:0;padding:5px 10px;cursor:pointer;font-size:13px}.seg button.on{background:#1f5fbf;color:#fff}
+h3.grp{margin:18px 0 8px;font-size:15px}h3.grp small{color:#667;font-weight:400}
+.card em.new{font-style:normal;font-size:10px;font-weight:600;background:#1f5fbf;color:#fff;border-radius:3px;padding:0 4px;vertical-align:1px}
+.summary{font-size:13px;margin:0 0 10px;color:#334}.summary em.new{font-style:normal;font-size:10px;font-weight:600;background:#1f5fbf;color:#fff;border-radius:3px;padding:0 4px}
+h2[id],h3.grp{scroll-margin-top:52px}

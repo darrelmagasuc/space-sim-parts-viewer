@@ -1,0 +1,81 @@
+{
+ "id": "power17",
+ "name": "COM-4 Optical Comms Terminal",
+ "category": "power",
+ "short_name": "optical_comms",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "power17_optical_comms",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power17_optical_comms": {
+   "vid": "power17_optical_comms",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "COM-4 Optical Comms Terminal",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.35 x 0.35 x 0.5",
+    "aperture_m": 0.22,
+    "power_w": 60
+   },
+   "notes": "Laser comms terminal (LCRD / OCTL class): 0.22 m telescope on an az/el gimbal pointing outboard (+X).",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.175,
+     -0.175
+    ],
+    [
+     0.25,
+     0.175,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.35,
+    0.35
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/power17_optical_comms.step",
+    "glb": "glb/power17_optical_comms.glb",
+    "preview": "renders/power17_optical_comms.png"
+   }
+  }
+ }
+}

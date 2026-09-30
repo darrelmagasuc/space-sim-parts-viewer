@@ -1,0 +1,562 @@
+{
+ "id": "struct01",
+ "name": "LT-1 Lattice Trusses (S / M)",
+ "category": "struct",
+ "short_name": "lattice_truss",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "struct01_lattice_truss_s_2",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "struct01_lattice_truss_s_2": {
+   "vid": "struct01_lattice_truss_s_2",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LT-1 Lattice Trusses (S / M)",
+   "primary": true,
+   "dims": {
+    "section_m": 1.25,
+    "length_m": 2.0
+   },
+   "notes": "Octagonal lattice truss (ISS ITS-style), ring frames every ~0.8 D, alternating diagonals; central end rings for stack nodes.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.007757264855914
+    ],
+    [
+     0.625,
+     0.625,
+     1.007757264855914
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.016,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct01_lattice_truss_s_2.step",
+    "glb": "glb/struct01_lattice_truss_s_2.glb",
+    "preview": "renders/struct01_lattice_truss_s_2.png"
+   }
+  },
+  "struct01_lattice_truss_s_4": {
+   "vid": "struct01_lattice_truss_s_4",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LT-1 Lattice Trusses (S / M)",
+   "primary": false,
+   "dims": {
+    "section_m": 1.25,
+    "length_m": 4.0
+   },
+   "notes": "Octagonal lattice truss (ISS ITS-style), ring frames every ~0.8 D, alternating diagonals; central end rings for stack nodes.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -2.007757264855914
+    ],
+    [
+     0.625,
+     0.625,
+     2.0077572648559143
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    4.016,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct01_lattice_truss_s_4.step",
+    "glb": "glb/struct01_lattice_truss_s_4.glb",
+    "preview": "renders/struct01_lattice_truss_s_4.png"
+   }
+  },
+  "struct01_lattice_truss_m_250": {
+   "vid": "struct01_lattice_truss_m_250",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LT-1 Lattice Trusses (S / M)",
+   "primary": false,
+   "dims": {
+    "section_m": 2.5,
+    "length_m": 2.5
+   },
+   "notes": "Octagonal lattice truss (ISS ITS-style), ring frames every ~0.8 D, alternating diagonals; central end rings for stack nodes.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.2628126535552402
+    ],
+    [
+     1.25,
+     1.25,
+     1.2628126535552402
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.526,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct01_lattice_truss_m_250.step",
+    "glb": "glb/struct01_lattice_truss_m_250.glb",
+    "preview": "renders/struct01_lattice_truss_m_250.png"
+   }
+  },
+  "struct01_lattice_truss_m_500": {
+   "vid": "struct01_lattice_truss_m_500",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LT-1 Lattice Trusses (S / M)",
+   "primary": false,
+   "dims": {
+    "section_m": 2.5,
+    "length_m": 5.0
+   },
+   "notes": "Octagonal lattice truss (ISS ITS-style), ring frames every ~0.8 D, alternating diagonals; central end rings for stack nodes.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.51281265355524
+    ],
+    [
+     1.25,
+     1.25,
+     2.51281265355524
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    5.026,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct01_lattice_truss_m_500.step",
+    "glb": "glb/struct01_lattice_truss_m_500.glb",
+    "preview": "renders/struct01_lattice_truss_m_500.png"
+   }
+  }
+ }
+}

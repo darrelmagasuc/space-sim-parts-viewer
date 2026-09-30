@@ -1,0 +1,664 @@
+{
+ "id": "aero05",
+ "name": "VT-1 Tail Fins",
+ "category": "aero",
+ "short_name": "tail_fin",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "aero05_tail_fin_s_vertical",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.75,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.0,
+    -0.5925,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero05_tail_fin_s_vertical": {
+   "vid": "aero05_tail_fin_s_vertical",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": true,
+   "dims": {
+    "height_m": 1.5,
+    "root_chord_m": 1.5,
+    "tip_chord_m": 0.6,
+    "cant_deg": 0
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 0 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -0.75,
+     -0.09,
+     -0.75
+    ],
+    [
+     0.75,
+     0.09,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    1.5,
+    0.18
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0,
+      -0.5925,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_s_vertical.step",
+    "glb": "glb/aero05_tail_fin_s_vertical.glb",
+    "preview": "renders/aero05_tail_fin_s_vertical.png"
+   }
+  },
+  "aero05_tail_fin_s_canted": {
+   "vid": "aero05_tail_fin_s_canted",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 1.5,
+    "root_chord_m": 1.5,
+    "tip_chord_m": 0.6,
+    "cant_deg": 20
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 20 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -0.7282405979251554,
+     -0.3210015135956845,
+     -0.75
+    ],
+    [
+     0.7282405979251554,
+     0.3210015135956845,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    1.456,
+    1.5,
+    0.642
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.6975,
+      0.0,
+      0.2364
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0073,
+      -0.5925,
+      -0.0201
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_s_canted.step",
+    "glb": "glb/aero05_tail_fin_s_canted.glb",
+    "preview": "renders/aero05_tail_fin_s_canted.png"
+   }
+  },
+  "aero05_tail_fin_s_vtail": {
+   "vid": "aero05_tail_fin_s_vtail",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 1.5,
+    "root_chord_m": 1.5,
+    "tip_chord_m": 0.6,
+    "cant_deg": 45
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 45 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -0.5788552887488376,
+     -0.5788552887488375,
+     -0.75
+    ],
+    [
+     0.5788552887488376,
+     0.5788552887488374,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    1.158,
+    1.5,
+    1.158
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.5152,
+      0.0,
+      0.5152
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0151,
+      -0.5925,
+      -0.0151
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_s_vtail.step",
+    "glb": "glb/aero05_tail_fin_s_vtail.glb",
+    "preview": "renders/aero05_tail_fin_s_vtail.png"
+   }
+  },
+  "aero05_tail_fin_m_vertical": {
+   "vid": "aero05_tail_fin_m_vertical",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 3.0,
+    "root_chord_m": 3.0,
+    "tip_chord_m": 1.2,
+    "cant_deg": 0
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 0 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -0.18,
+     -1.5
+    ],
+    [
+     1.5,
+     0.18,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    3.0,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0,
+      -1.185,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_m_vertical.step",
+    "glb": "glb/aero05_tail_fin_m_vertical.glb",
+    "preview": "renders/aero05_tail_fin_m_vertical.png"
+   }
+  },
+  "aero05_tail_fin_m_canted": {
+   "vid": "aero05_tail_fin_m_canted",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 3.0,
+    "root_chord_m": 3.0,
+    "tip_chord_m": 1.2,
+    "cant_deg": 20
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 20 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -1.4564811958503108,
+     -0.642003027191369,
+     -1.5
+    ],
+    [
+     1.4564811958503108,
+     0.642003027191369,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.913,
+    3.0,
+    1.284
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.3949,
+      0.0,
+      0.4729
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0146,
+      -1.185,
+      -0.0402
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_m_canted.step",
+    "glb": "glb/aero05_tail_fin_m_canted.glb",
+    "preview": "renders/aero05_tail_fin_m_canted.png"
+   }
+  },
+  "aero05_tail_fin_m_vtail": {
+   "vid": "aero05_tail_fin_m_vtail",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 3.0,
+    "root_chord_m": 3.0,
+    "tip_chord_m": 1.2,
+    "cant_deg": 45
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 45 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -1.1577105774976753,
+     -1.157710577497675,
+     -1.5
+    ],
+    [
+     1.1577105774976753,
+     1.1577105774976748,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.315,
+    3.0,
+    2.315
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.0304,
+      0.0,
+      1.0304
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0302,
+      -1.185,
+      -0.0302
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_m_vtail.step",
+    "glb": "glb/aero05_tail_fin_m_vtail.glb",
+    "preview": "renders/aero05_tail_fin_m_vtail.png"
+   }
+  },
+  "aero05_tail_fin_l_vertical": {
+   "vid": "aero05_tail_fin_l_vertical",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 5.0,
+    "root_chord_m": 5.0,
+    "tip_chord_m": 2.0,
+    "cant_deg": 0
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 0 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -0.3,
+     -2.5
+    ],
+    [
+     2.5,
+     0.3,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    5.0,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0,
+      -1.975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_l_vertical.step",
+    "glb": "glb/aero05_tail_fin_l_vertical.glb",
+    "preview": "renders/aero05_tail_fin_l_vertical.png"
+   }
+  },
+  "aero05_tail_fin_l_canted": {
+   "vid": "aero05_tail_fin_l_canted",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 5.0,
+    "root_chord_m": 5.0,
+    "tip_chord_m": 2.0,
+    "cant_deg": 20
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 20 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -2.427468659750518,
+     -1.0700050453189487,
+     -2.5
+    ],
+    [
+     2.427468659750518,
+     1.0700050453189487,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    4.855,
+    5.0,
+    2.14
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.3249,
+      0.0,
+      0.7881
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0244,
+      -1.975,
+      -0.067
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_l_canted.step",
+    "glb": "glb/aero05_tail_fin_l_canted.glb",
+    "preview": "renders/aero05_tail_fin_l_canted.png"
+   }
+  },
+  "aero05_tail_fin_l_vtail": {
+   "vid": "aero05_tail_fin_l_vtail",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "VT-1 Tail Fins",
+   "primary": false,
+   "dims": {
+    "height_m": 5.0,
+    "root_chord_m": 5.0,
+    "tip_chord_m": 2.0,
+    "cant_deg": 45
+   },
+   "notes": "Tail fin with 25% chord rudder (surface_rudder), cant 45 deg about the root; node_side_1 on the rudder trailing edge (for extra control surfaces).",
+   "bbox_cad_zup": [
+    [
+     -1.9295176291627918,
+     -1.9295176291627916,
+     -2.5
+    ],
+    [
+     1.9295176291627918,
+     1.9295176291627918,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.859,
+    5.0,
+    3.859
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.7174,
+      0.0,
+      1.7174
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0504,
+      -1.975,
+      -0.0504
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/aero05_tail_fin_l_vtail.step",
+    "glb": "glb/aero05_tail_fin_l_vtail.glb",
+    "preview": "renders/aero05_tail_fin_l_vtail.png"
+   }
+  }
+ }
+}

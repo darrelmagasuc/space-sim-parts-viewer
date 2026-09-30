@@ -1,0 +1,173 @@
+{
+ "id": "prop15",
+ "name": "LE-9 'Rutherford' Electric-Pump Kerolox",
+ "category": "prop",
+ "short_name": "electric_pump_kerolox",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop15_electric_pump_kerolox_sl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.45,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.45,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop15_electric_pump_kerolox_sl": {
+   "vid": "prop15_electric_pump_kerolox_sl",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-9 'Rutherford' Electric-Pump Kerolox",
+   "primary": true,
+   "dims": {
+    "length_m": 0.9,
+    "exit_diameter_m": 0.35,
+    "thrust_kn_sl": 25
+   },
+   "notes": "Electric-pump-fed kerolox: twin BLDC pumps + inverter fed from the vehicle bus (no battery pack in the engine). Sea-level bell.",
+   "bbox_cad_zup": [
+    [
+     -0.1946,
+     -0.17937499999999998,
+     -0.45
+    ],
+    [
+     0.1946,
+     0.1896,
+     0.44999999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    0.389,
+    0.9,
+    0.369
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop15_electric_pump_kerolox_sl.step",
+    "glb": "glb/prop15_electric_pump_kerolox_sl.glb",
+    "preview": "renders/prop15_electric_pump_kerolox_sl.png"
+   }
+  },
+  "prop15_electric_pump_kerolox_vac": {
+   "vid": "prop15_electric_pump_kerolox_vac",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-9 'Rutherford' Electric-Pump Kerolox",
+   "primary": false,
+   "dims": {
+    "length_m": 1.35,
+    "exit_diameter_m": 0.7,
+    "thrust_kn_vac": 26
+   },
+   "notes": "Electric-pump-fed kerolox: twin BLDC pumps + inverter fed from the vehicle bus (no battery pack in the engine). Vacuum bell.",
+   "bbox_cad_zup": [
+    [
+     -0.35874999999999996,
+     -0.35874999999999996,
+     -0.675
+    ],
+    [
+     0.35874999999999996,
+     0.35874999999999996,
+     0.675
+    ]
+   ],
+   "bbox_godot_size": [
+    0.717,
+    1.35,
+    0.717
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.675,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.675,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop15_electric_pump_kerolox_vac.step",
+    "glb": "glb/prop15_electric_pump_kerolox_vac.glb",
+    "preview": "renders/prop15_electric_pump_kerolox_vac.png"
+   }
+  }
+ }
+}

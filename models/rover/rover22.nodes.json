@@ -1,0 +1,185 @@
+{
+ "id": "rover22",
+ "name": "SE-1 Suited Crew Seat",
+ "category": "rover",
+ "short_name": "crew_seat",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "rover22_crew_seat",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.435,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_crew_1",
+   "position": [
+    0.0,
+    -0.085,
+    -0.03
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover22_crew_seat": {
+   "vid": "rover22_crew_seat",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "SE-1 Suited Crew Seat",
+   "primary": true,
+   "dims": {
+    "footprint_m": "0.5 x 1.0",
+    "height_m": 0.9,
+    "footprint_cells": [
+     1,
+     2
+    ],
+    "crew": 1
+   },
+   "notes": "Suited-crew seat: slatted backrest (seat_back) folds flat onto the pan for the stowed pose; node_crew_1 on the cushion (crew faces -Y = vehicle front).",
+   "bbox_cad_zup": [
+    [
+     -0.22,
+     -0.5,
+     -0.435
+    ],
+    [
+     0.245,
+     0.5,
+     0.435
+    ]
+   ],
+   "bbox_godot_size": [
+    0.465,
+    0.87,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.435,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_crew_1",
+     "position": [
+      0.0,
+      -0.085,
+      -0.03
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "seat_back",
+    "seat_back_belts",
+    "armrest"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover22_crew_seat.step",
+    "glb": "glb/rover22_crew_seat.glb",
+    "preview": "renders/rover22_crew_seat.png"
+   }
+  },
+  "rover22_crew_seat_stowed": {
+   "vid": "rover22_crew_seat_stowed",
+   "size": "XS",
+   "state": "stowed",
+   "default_state": false,
+   "label": "SE-1 Suited Crew Seat",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 1.0",
+    "height_m": 0.9,
+    "folded_height_m": 0.15
+   },
+   "notes": "Suited-crew seat: slatted backrest (seat_back) folds flat onto the pan for the stowed pose; node_crew_1 on the cushion (crew faces -Y = vehicle front).",
+   "bbox_cad_zup": [
+    [
+     -0.22,
+     -0.5,
+     -0.435
+    ],
+    [
+     0.245,
+     0.5,
+     -0.019999999999999962
+    ]
+   ],
+   "bbox_godot_size": [
+    0.465,
+    0.415,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.435,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_crew_1",
+     "position": [
+      0.0,
+      -0.355,
+      -0.03
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "seat_back",
+    "seat_back_belts",
+    "armrest"
+   ],
+   "default_of": "rover22_crew_seat",
+   "files": {
+    "step": "step/rover22_crew_seat_stowed.step",
+    "glb": "glb/rover22_crew_seat_stowed.glb",
+    "preview": "renders/rover22_crew_seat_stowed.png"
+   }
+  }
+ }
+}

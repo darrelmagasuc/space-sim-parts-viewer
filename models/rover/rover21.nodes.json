@@ -1,0 +1,112 @@
+{
+ "id": "rover21",
+ "name": "RC-1 Rover Control Core",
+ "category": "rover",
+ "short_name": "control_core",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover21_control_core",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.325,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.325,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover21_control_core": {
+   "vid": "rover21_control_core",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RC-1 Rover Control Core",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "height_m": 0.65,
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "slots_small": 1,
+    "power_w": 60
+   },
+   "notes": "Avionics / battery / thermal core with hazard cameras on the front face and a mast mount (node_top) on top.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.25,
+     -0.32500000000000007
+    ],
+    [
+     0.5,
+     0.25,
+     0.325
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.65,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.325,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.325,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover21_control_core.step",
+    "glb": "glb/rover21_control_core.glb",
+    "preview": "renders/rover21_control_core.png"
+   }
+  }
+ }
+}

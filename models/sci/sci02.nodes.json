@@ -1,0 +1,158 @@
+{
+ "id": "sci02",
+ "name": "SC-SEI Seismometer Package",
+ "category": "sci",
+ "short_name": "seismometer",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "sci02_seismometer",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.3,
+    -0.42
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci02_seismometer": {
+   "vid": "sci02_seismometer",
+   "size": "slot",
+   "state": "stowed",
+   "default_state": true,
+   "label": "SC-SEI Seismometer Package",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slot_class": "Medium"
+   },
+   "notes": "InSight-style seismometer: sensor sphere under a wind/thermal shield dome on a levelling tripod, tether to the lander; stowed in its Medium slot carrier, deployed on the ground by arm or crew.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.3
+    ],
+    [
+     0.5,
+     0.5,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.6,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.3,
+      -0.42
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci02_seismometer.step",
+    "glb": "glb/sci02_seismometer.glb",
+    "preview": "renders/sci02_seismometer.png"
+   }
+  },
+  "sci02_seismometer_deployed": {
+   "vid": "sci02_seismometer_deployed",
+   "size": "slot",
+   "state": "deployed",
+   "default_state": false,
+   "label": "SC-SEI Seismometer Package",
+   "primary": false,
+   "dims": {
+    "dome_diameter_m": 0.7,
+    "height_m": 0.45
+   },
+   "notes": "InSight-style seismometer: sensor sphere under a wind/thermal shield dome on a levelling tripod, tether to the lander; stowed in its Medium slot carrier, deployed on the ground by arm or crew.",
+   "bbox_cad_zup": [
+    [
+     -0.37,
+     -0.37,
+     -0.30960276599496717
+    ],
+    [
+     0.5013216372009102,
+     0.37,
+     0.17000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.871,
+    0.48,
+    0.74
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "sci02_seismometer",
+   "files": {
+    "step": "step/sci02_seismometer_deployed.step",
+    "glb": "glb/sci02_seismometer_deployed.glb",
+    "preview": "renders/sci02_seismometer_deployed.png"
+   }
+  }
+ }
+}

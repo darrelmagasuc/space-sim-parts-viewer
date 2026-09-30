@@ -1,0 +1,251 @@
+{
+ "id": "stage17",
+ "name": "PC-R Radial Recovery Chute Pack",
+ "category": "stage",
+ "short_name": "radial_recovery_chute",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "stage17_radial_recovery_chute_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.2,
+    -0.05,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage17_radial_recovery_chute_s": {
+   "vid": "stage17_radial_recovery_chute_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PC-R Radial Recovery Chute Pack",
+   "primary": true,
+   "dims": {
+    "canister_diameter_m": 0.4,
+    "length_m": 1.0,
+    "stage_mass_t": 5
+   },
+   "notes": "Side-mounted recovery chute canister (for booster / stage recovery).",
+   "bbox_cad_zup": [
+    [
+     -0.20400000000000001,
+     -0.20400000000000001,
+     -0.5
+    ],
+    [
+     0.20400000000000001,
+     0.20400000000000001,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.408,
+    1.0,
+    0.408
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2,
+      -0.05,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage17_radial_recovery_chute_s.step",
+    "glb": "glb/stage17_radial_recovery_chute_s.glb",
+    "preview": "renders/stage17_radial_recovery_chute_s.png"
+   }
+  },
+  "stage17_radial_recovery_chute_s_deployed": {
+   "vid": "stage17_radial_recovery_chute_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PC-R Radial Recovery Chute Pack",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 0.4,
+    "length_m": 1.0,
+    "stage_mass_t": 5
+   },
+   "notes": "Side-mounted recovery chute canister (for booster / stage recovery); deployed main canopy (18 m).",
+   "bbox_cad_zup": [
+    [
+     -9.013797301854828,
+     -9.013797301854828,
+     -0.5
+    ],
+    [
+     9.013797301854828,
+     9.013797301854828,
+     26.949999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    18.028,
+    27.45,
+    18.028
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2,
+      -0.05,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canopy",
+    "canopy_bands"
+   ],
+   "default_of": "stage17_radial_recovery_chute_s",
+   "files": {
+    "step": "step/stage17_radial_recovery_chute_s_deployed.step",
+    "glb": "glb/stage17_radial_recovery_chute_s_deployed.glb",
+    "preview": "renders/stage17_radial_recovery_chute_s_deployed.png"
+   }
+  },
+  "stage17_radial_recovery_chute_m": {
+   "vid": "stage17_radial_recovery_chute_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PC-R Radial Recovery Chute Pack",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 0.6,
+    "length_m": 1.6,
+    "stage_mass_t": 20
+   },
+   "notes": "Side-mounted recovery chute canister (for booster / stage recovery).",
+   "bbox_cad_zup": [
+    [
+     -0.304,
+     -0.304,
+     -0.8
+    ],
+    [
+     0.304,
+     0.304,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.608,
+    1.6,
+    0.608
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3,
+      -0.08,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage17_radial_recovery_chute_m.step",
+    "glb": "glb/stage17_radial_recovery_chute_m.glb",
+    "preview": "renders/stage17_radial_recovery_chute_m.png"
+   }
+  },
+  "stage17_radial_recovery_chute_m_deployed": {
+   "vid": "stage17_radial_recovery_chute_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PC-R Radial Recovery Chute Pack",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 0.6,
+    "length_m": 1.6,
+    "stage_mass_t": 20
+   },
+   "notes": "Side-mounted recovery chute canister (for booster / stage recovery); deployed main canopy (32 m).",
+   "bbox_cad_zup": [
+    [
+     -16.013819033753926,
+     -16.013819033753926,
+     -0.8
+    ],
+    [
+     16.013819033753926,
+     16.013819033753926,
+     47.84
+    ]
+   ],
+   "bbox_godot_size": [
+    32.028,
+    48.64,
+    32.028
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3,
+      -0.08,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canopy",
+    "canopy_bands"
+   ],
+   "default_of": "stage17_radial_recovery_chute_m",
+   "files": {
+    "step": "step/stage17_radial_recovery_chute_m_deployed.step",
+    "glb": "glb/stage17_radial_recovery_chute_m_deployed.glb",
+    "preview": "renders/stage17_radial_recovery_chute_m_deployed.png"
+   }
+  }
+ }
+}

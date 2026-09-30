@@ -1,0 +1,447 @@
+{
+ "id": "stage13",
+ "name": "NC-1 Nose Cones",
+ "category": "stage",
+ "short_name": "nose_cone",
+ "sizes": [
+  "XS",
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "stage13_nose_cone_ogive_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.63,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage13_nose_cone_ogive_xs": {
+   "vid": "stage13_nose_cone_ogive_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.625,
+    "length_m": 1.25
+   },
+   "notes": "Tangent ogive (L/D 2).",
+   "bbox_cad_zup": [
+    [
+     -0.3165,
+     -0.3165,
+     -0.63
+    ],
+    [
+     0.3165,
+     0.3165,
+     0.6300000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.633,
+    1.26,
+    0.633
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.63,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_ogive_xs.step",
+    "glb": "glb/stage13_nose_cone_ogive_xs.glb",
+    "preview": "renders/stage13_nose_cone_ogive_xs.png"
+   }
+  },
+  "stage13_nose_cone_ogive_s": {
+   "vid": "stage13_nose_cone_ogive_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.5
+   },
+   "notes": "Tangent ogive (L/D 2).",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -1.2550000000000001
+    ],
+    [
+     0.629,
+     0.629,
+     1.2550000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    2.51,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.255,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_ogive_s.step",
+    "glb": "glb/stage13_nose_cone_ogive_s.glb",
+    "preview": "renders/stage13_nose_cone_ogive_s.png"
+   }
+  },
+  "stage13_nose_cone_ogive_m": {
+   "vid": "stage13_nose_cone_ogive_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 5.0
+   },
+   "notes": "Tangent ogive (L/D 2).",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -2.5050000000000003
+    ],
+    [
+     1.254,
+     1.254,
+     2.505
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    5.01,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.505,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_ogive_m.step",
+    "glb": "glb/stage13_nose_cone_ogive_m.glb",
+    "preview": "renders/stage13_nose_cone_ogive_m.png"
+   }
+  },
+  "stage13_nose_cone_ogive_l": {
+   "vid": "stage13_nose_cone_ogive_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 7.5
+   },
+   "notes": "Tangent ogive (L/D 2).",
+   "bbox_cad_zup": [
+    [
+     -1.879,
+     -1.879,
+     -3.755
+    ],
+    [
+     1.879,
+     1.879,
+     3.7550000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    3.758,
+    7.51,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.755,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_ogive_l.step",
+    "glb": "glb/stage13_nose_cone_ogive_l.glb",
+    "preview": "renders/stage13_nose_cone_ogive_l.png"
+   }
+  },
+  "stage13_nose_cone_conic_s": {
+   "vid": "stage13_nose_cone_conic_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.9
+   },
+   "notes": "Straight cone (~1.5 L/D).",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -0.955
+    ],
+    [
+     0.629,
+     0.629,
+     0.9550000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    1.91,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.955,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_conic_s.step",
+    "glb": "glb/stage13_nose_cone_conic_s.glb",
+    "preview": "renders/stage13_nose_cone_conic_s.png"
+   }
+  },
+  "stage13_nose_cone_conic_m": {
+   "vid": "stage13_nose_cone_conic_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 3.75
+   },
+   "notes": "Straight cone (~1.5 L/D).",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -1.8800000000000001
+    ],
+    [
+     1.254,
+     1.254,
+     1.88
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    3.76,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.88,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_conic_m.step",
+    "glb": "glb/stage13_nose_cone_conic_m.glb",
+    "preview": "renders/stage13_nose_cone_conic_m.png"
+   }
+  },
+  "stage13_nose_cone_blunt_s": {
+   "vid": "stage13_nose_cone_blunt_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 0.6
+   },
+   "notes": "Blunt elliptical cap for capsules/probes.",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -0.3
+    ],
+    [
+     0.629,
+     0.629,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    0.6,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_blunt_s.step",
+    "glb": "glb/stage13_nose_cone_blunt_s.glb",
+    "preview": "renders/stage13_nose_cone_blunt_s.png"
+   }
+  },
+  "stage13_nose_cone_blunt_m": {
+   "vid": "stage13_nose_cone_blunt_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1 Nose Cones",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 1.2
+   },
+   "notes": "Blunt elliptical cap for capsules/probes.",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -0.6
+    ],
+    [
+     1.254,
+     1.254,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    1.2,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage13_nose_cone_blunt_m.step",
+    "glb": "glb/stage13_nose_cone_blunt_m.glb",
+    "preview": "renders/stage13_nose_cone_blunt_m.png"
+   }
+  }
+ }
+}

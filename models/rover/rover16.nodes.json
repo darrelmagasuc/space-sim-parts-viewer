@@ -1,0 +1,645 @@
+{
+ "id": "rover16",
+ "name": "SU-RB Rocker-Bogie Suspension",
+ "category": "rover",
+ "short_name": "rocker_bogie",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "rover16_rocker_bogie_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.06,
+    0.1105,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard_1",
+   "position": [
+    0.06,
+    -0.0687,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard_2",
+   "position": [
+    0.06,
+    -0.0687,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard_3",
+   "position": [
+    0.06,
+    -0.0687,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover16_rocker_bogie_xs": {
+   "vid": "rover16_rocker_bogie_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": true,
+   "dims": {
+    "length_m": 0.5,
+    "height_m": 0.25,
+    "width_m": 0.12,
+    "rated_load_t_per_pair": 0.1,
+    "max_obstacle_m": 0.13
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.06,
+     -0.3125,
+     -0.13124999999999998
+    ],
+    [
+     0.06,
+     0.3125,
+     0.13125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.12,
+    0.262,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.1105,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.06,
+      -0.0687,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.06,
+      -0.0687,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.06,
+      -0.0687,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover16_rocker_bogie_xs.step",
+    "glb": "glb/rover16_rocker_bogie_xs.glb",
+    "preview": "renders/rover16_rocker_bogie_xs.png"
+   }
+  },
+  "rover16_rocker_bogie_s": {
+   "vid": "rover16_rocker_bogie_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": false,
+   "dims": {
+    "length_m": 1.4,
+    "height_m": 0.55,
+    "width_m": 0.18,
+    "rated_load_t_per_pair": 0.5,
+    "max_obstacle_m": 0.5
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.7625,
+     -0.28125
+    ],
+    [
+     0.09,
+     0.7625,
+     0.28125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.562,
+    1.525
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.25,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.09,
+      -0.2188,
+      0.7
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.09,
+      -0.2188,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.09,
+      -0.2188,
+      -0.7
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover16_rocker_bogie_s.step",
+    "glb": "glb/rover16_rocker_bogie_s.glb",
+    "preview": "renders/rover16_rocker_bogie_s.png"
+   }
+  },
+  "rover16_rocker_bogie_m": {
+   "vid": "rover16_rocker_bogie_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": false,
+   "dims": {
+    "length_m": 2.6,
+    "height_m": 0.9,
+    "width_m": 0.25,
+    "rated_load_t_per_pair": 2.0,
+    "max_obstacle_m": 0.8
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -1.3625,
+     -0.45625000000000004
+    ],
+    [
+     0.125,
+     1.3625,
+     0.45625000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.913,
+    2.725
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.4127,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.125,
+      -0.3938,
+      1.3
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.125,
+      -0.3938,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.125,
+      -0.3938,
+      -1.3
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover16_rocker_bogie_m.step",
+    "glb": "glb/rover16_rocker_bogie_m.glb",
+    "preview": "renders/rover16_rocker_bogie_m.png"
+   }
+  },
+  "rover16_rocker_bogie_xs_susp_up": {
+   "vid": "rover16_rocker_bogie_xs_susp_up",
+   "size": "XS",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": false,
+   "dims": {
+    "length_m": 0.5,
+    "height_m": 0.25,
+    "width_m": 0.12,
+    "rated_load_t_per_pair": 0.1,
+    "max_obstacle_m": 0.13
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.06,
+     -0.3125,
+     -0.16784362681346948
+    ],
+    [
+     0.06,
+     0.27003277046110463,
+     0.13125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.12,
+    0.299,
+    0.583
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.1105,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.06,
+      -0.0687,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.06,
+      -0.0198,
+      0.0274
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.06,
+      -0.1053,
+      -0.2075
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": "rover16_rocker_bogie_xs",
+   "files": {
+    "step": "step/rover16_rocker_bogie_xs_susp_up.step",
+    "glb": "glb/rover16_rocker_bogie_xs_susp_up.glb",
+    "preview": "renders/rover16_rocker_bogie_xs_susp_up.png"
+   }
+  },
+  "rover16_rocker_bogie_s_susp_up": {
+   "vid": "rover16_rocker_bogie_s_susp_up",
+   "size": "S",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": false,
+   "dims": {
+    "length_m": 1.4,
+    "height_m": 0.55,
+    "width_m": 0.18,
+    "rated_load_t_per_pair": 0.5,
+    "max_obstacle_m": 0.5
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.7625,
+     -0.3851640552322939
+    ],
+    [
+     0.09,
+     0.6518258922416584,
+     0.28125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.666,
+    1.414
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.25,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.09,
+      -0.2188,
+      0.7
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.09,
+      -0.0832,
+      0.0685
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.09,
+      -0.3227,
+      -0.5893
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": "rover16_rocker_bogie_s",
+   "files": {
+    "step": "step/rover16_rocker_bogie_s_susp_up.step",
+    "glb": "glb/rover16_rocker_bogie_s_susp_up.glb",
+    "preview": "renders/rover16_rocker_bogie_s_susp_up.png"
+   }
+  },
+  "rover16_rocker_bogie_m_susp_up": {
+   "vid": "rover16_rocker_bogie_m_susp_up",
+   "size": "M",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-RB Rocker-Bogie Suspension",
+   "primary": false,
+   "dims": {
+    "length_m": 2.6,
+    "height_m": 0.9,
+    "width_m": 0.25,
+    "rated_load_t_per_pair": 2.0,
+    "max_obstacle_m": 0.8
+   },
+   "notes": "Rocker (front leg) + bogie (middle and rear flanges, bogie_*) on a pivot boss; differential link to the chassis. susp_up: bogie rotated 20 deg (middle wheel raised).",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -1.3625,
+     -0.6515303104289681
+    ],
+    [
+     0.125,
+     1.1699896742651097,
+     0.45625000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    1.108,
+    2.532
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.4127,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_1",
+     "position": [
+      0.125,
+      -0.3938,
+      1.3
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_2",
+     "position": [
+      0.125,
+      -0.1444,
+      0.1141
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard_3",
+     "position": [
+      0.125,
+      -0.589,
+      -1.1075
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_flange_1"
+   ],
+   "default_of": "rover16_rocker_bogie_m",
+   "files": {
+    "step": "step/rover16_rocker_bogie_m_susp_up.step",
+    "glb": "glb/rover16_rocker_bogie_m_susp_up.glb",
+    "preview": "renders/rover16_rocker_bogie_m_susp_up.png"
+   }
+  }
+ }
+}

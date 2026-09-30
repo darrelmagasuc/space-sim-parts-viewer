@@ -1,0 +1,149 @@
+{
+ "id": "rover36",
+ "name": "AM-1 Antenna Mast",
+ "category": "rover",
+ "short_name": "antenna_mast",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover36_antenna_mast",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.4283,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover36_antenna_mast": {
+   "vid": "rover36_antenna_mast",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "AM-1 Antenna Mast",
+   "primary": true,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "height_m": 0.8,
+    "dish_m": 0.6
+   },
+   "notes": "3-section telescoping mast with a 0.6 m high-gain dish on a gimbal; extended pose raises the dish to 3 m.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3098076211353316,
+     -0.4283012701892219
+    ],
+    [
+     0.3,
+     0.21480762113533164,
+     0.428301270189222
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    0.857,
+    0.525
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4283,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_1",
+    "mast_2",
+    "mast_3",
+    "mast_collars",
+    "head_dish",
+    "head_gimbal"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover36_antenna_mast.step",
+    "glb": "glb/rover36_antenna_mast.glb",
+    "preview": "renders/rover36_antenna_mast.png"
+   }
+  },
+  "rover36_antenna_mast_extended": {
+   "vid": "rover36_antenna_mast_extended",
+   "size": "S",
+   "state": "extended",
+   "default_state": false,
+   "label": "AM-1 Antenna Mast",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "height_m": 3.0,
+    "dish_m": 0.6
+   },
+   "notes": "3-section telescoping mast with a 0.6 m high-gain dish on a gimbal; extended pose raises the dish to 3 m.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3098076211353316,
+     -0.4283012701892219
+    ],
+    [
+     0.3,
+     0.21480762113533164,
+     2.6783012701892215
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    3.107,
+    0.525
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4283,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_1",
+    "mast_2",
+    "mast_3",
+    "mast_collars",
+    "head_dish",
+    "head_gimbal",
+    "head_whip"
+   ],
+   "default_of": "rover36_antenna_mast",
+   "files": {
+    "step": "step/rover36_antenna_mast_extended.step",
+    "glb": "glb/rover36_antenna_mast_extended.glb",
+    "preview": "renders/rover36_antenna_mast_extended.png"
+   }
+  }
+ }
+}

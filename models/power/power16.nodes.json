@@ -1,0 +1,245 @@
+{
+ "id": "power16",
+ "name": "COM-3 Unfurlable Mesh Relay Antenna",
+ "category": "power",
+ "short_name": "mesh_antenna",
+ "sizes": [
+  "L",
+  "XL"
+ ],
+ "primary": "power16_mesh_antenna_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "power16_mesh_antenna_l": {
+   "vid": "power16_mesh_antenna_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "COM-3 Unfurlable Mesh Relay Antenna",
+   "primary": true,
+   "dims": {
+    "dish_diameter_m": 5.0,
+    "stowed_length_m": 2.0
+   },
+   "notes": "Unfurlable gold-moly mesh relay antenna (TDRS / SkyTerra style) on a hinged boom; stowed as a rib bundle, deployed as a 5 m paraboloid.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -0.33,
+     -0.33
+    ],
+    [
+     1.25,
+     0.33,
+     0.33
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.66,
+    0.66
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power16_mesh_antenna_l.step",
+    "glb": "glb/power16_mesh_antenna_l.glb",
+    "preview": "renders/power16_mesh_antenna_l.png"
+   }
+  },
+  "power16_mesh_antenna_l_deployed": {
+   "vid": "power16_mesh_antenna_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "COM-3 Unfurlable Mesh Relay Antenna",
+   "primary": false,
+   "dims": {
+    "dish_diameter_m": 5.0,
+    "stowed_length_m": 2.0
+   },
+   "notes": "Unfurlable gold-moly mesh relay antenna (TDRS / SkyTerra style) on a hinged boom; stowed as a rib bundle, deployed as a 5 m paraboloid.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -2.5101615840481823,
+     -2.5101615840481823
+    ],
+    [
+     2.5999999999999996,
+     2.5101615840481823,
+     2.5101615840481823
+    ]
+   ],
+   "bbox_godot_size": [
+    3.85,
+    5.02,
+    5.02
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom"
+   ],
+   "default_of": "power16_mesh_antenna_l",
+   "files": {
+    "step": "step/power16_mesh_antenna_l_deployed.step",
+    "glb": "glb/power16_mesh_antenna_l_deployed.glb",
+    "preview": "renders/power16_mesh_antenna_l_deployed.png"
+   }
+  },
+  "power16_mesh_antenna_xl": {
+   "vid": "power16_mesh_antenna_xl",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "COM-3 Unfurlable Mesh Relay Antenna",
+   "primary": false,
+   "dims": {
+    "dish_diameter_m": 12.0,
+    "stowed_length_m": 3.5
+   },
+   "notes": "Unfurlable gold-moly mesh relay antenna (TDRS / SkyTerra style) on a hinged boom; stowed as a rib bundle, deployed as a 12 m paraboloid.",
+   "bbox_cad_zup": [
+    [
+     -2.0,
+     -0.55,
+     -0.55
+    ],
+    [
+     2.0,
+     0.55,
+     0.55
+    ]
+   ],
+   "bbox_godot_size": [
+    4.0,
+    1.1,
+    1.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/power16_mesh_antenna_xl.step",
+    "glb": "glb/power16_mesh_antenna_xl.glb",
+    "preview": "renders/power16_mesh_antenna_xl.png"
+   }
+  },
+  "power16_mesh_antenna_xl_deployed": {
+   "vid": "power16_mesh_antenna_xl_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "COM-3 Unfurlable Mesh Relay Antenna",
+   "primary": false,
+   "dims": {
+    "dish_diameter_m": 12.0,
+    "stowed_length_m": 3.5
+   },
+   "notes": "Unfurlable gold-moly mesh relay antenna (TDRS / SkyTerra style) on a hinged boom; stowed as a rib bundle, deployed as a 12 m paraboloid.",
+   "bbox_cad_zup": [
+    [
+     -2.0,
+     -6.010161584048182,
+     -6.010161584048182
+    ],
+    [
+     6.819999999999999,
+     6.010161584048182,
+     6.010161584048182
+    ]
+   ],
+   "bbox_godot_size": [
+    8.82,
+    12.02,
+    12.02
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom"
+   ],
+   "default_of": "power16_mesh_antenna_xl",
+   "files": {
+    "step": "step/power16_mesh_antenna_xl_deployed.step",
+    "glb": "glb/power16_mesh_antenna_xl_deployed.glb",
+    "preview": "renders/power16_mesh_antenna_xl_deployed.png"
+   }
+  }
+ }
+}

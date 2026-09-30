@@ -1,0 +1,691 @@
+{
+ "id": "rover17",
+ "name": "SU-A Independent Suspension Arm",
+ "category": "rover",
+ "short_name": "suspension_arm",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover17_suspension_arm_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover17_suspension_arm_s": {
+   "vid": "rover17_suspension_arm_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": true,
+   "dims": {
+    "arm_length_m": 0.3,
+    "height_m": 0.25,
+    "depth_m": 0.2,
+    "travel_m": 0.1,
+    "rated_load_t": 0.05
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.1,
+     -0.125
+    ],
+    [
+     0.15,
+     0.1,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.25,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover17_suspension_arm_s.step",
+    "glb": "glb/rover17_suspension_arm_s.glb",
+    "preview": "renders/rover17_suspension_arm_s.png"
+   }
+  },
+  "rover17_suspension_arm_s_susp_up": {
+   "vid": "rover17_suspension_arm_s_susp_up",
+   "size": "S",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.3,
+    "height_m": 0.25,
+    "depth_m": 0.2,
+    "travel_m": 0.1,
+    "rated_load_t": 0.05
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.1,
+     -0.125
+    ],
+    [
+     0.15,
+     0.1,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.25,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.15,
+      0.05,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_s",
+   "files": {
+    "step": "step/rover17_suspension_arm_s_susp_up.step",
+    "glb": "glb/rover17_suspension_arm_s_susp_up.glb",
+    "preview": "renders/rover17_suspension_arm_s_susp_up.png"
+   }
+  },
+  "rover17_suspension_arm_s_susp_down": {
+   "vid": "rover17_suspension_arm_s_susp_down",
+   "size": "S",
+   "state": "susp_down",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.3,
+    "height_m": 0.25,
+    "depth_m": 0.2,
+    "travel_m": 0.1,
+    "rated_load_t": 0.05
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.1,
+     -0.125
+    ],
+    [
+     0.15,
+     0.1,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.25,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.15,
+      -0.05,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_s",
+   "files": {
+    "step": "step/rover17_suspension_arm_s_susp_down.step",
+    "glb": "glb/rover17_suspension_arm_s_susp_down.glb",
+    "preview": "renders/rover17_suspension_arm_s_susp_down.png"
+   }
+  },
+  "rover17_suspension_arm_m": {
+   "vid": "rover17_suspension_arm_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.5,
+    "height_m": 0.4,
+    "depth_m": 0.3,
+    "travel_m": 0.2,
+    "rated_load_t": 0.5
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.15,
+     -0.2
+    ],
+    [
+     0.25,
+     0.15,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.4,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover17_suspension_arm_m.step",
+    "glb": "glb/rover17_suspension_arm_m.glb",
+    "preview": "renders/rover17_suspension_arm_m.png"
+   }
+  },
+  "rover17_suspension_arm_m_susp_up": {
+   "vid": "rover17_suspension_arm_m_susp_up",
+   "size": "M",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.5,
+    "height_m": 0.4,
+    "depth_m": 0.3,
+    "travel_m": 0.2,
+    "rated_load_t": 0.5
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.15,
+     -0.2
+    ],
+    [
+     0.25,
+     0.15,
+     0.22
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.42,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.25,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_m",
+   "files": {
+    "step": "step/rover17_suspension_arm_m_susp_up.step",
+    "glb": "glb/rover17_suspension_arm_m_susp_up.glb",
+    "preview": "renders/rover17_suspension_arm_m_susp_up.png"
+   }
+  },
+  "rover17_suspension_arm_m_susp_down": {
+   "vid": "rover17_suspension_arm_m_susp_down",
+   "size": "M",
+   "state": "susp_down",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.5,
+    "height_m": 0.4,
+    "depth_m": 0.3,
+    "travel_m": 0.2,
+    "rated_load_t": 0.5
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.15,
+     -0.22
+    ],
+    [
+     0.25,
+     0.15,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.42,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.25,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_m",
+   "files": {
+    "step": "step/rover17_suspension_arm_m_susp_down.step",
+    "glb": "glb/rover17_suspension_arm_m_susp_down.glb",
+    "preview": "renders/rover17_suspension_arm_m_susp_down.png"
+   }
+  },
+  "rover17_suspension_arm_l": {
+   "vid": "rover17_suspension_arm_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.7,
+    "height_m": 0.6,
+    "depth_m": 0.4,
+    "travel_m": 0.3,
+    "rated_load_t": 3.0
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.35,
+     -0.2,
+     -0.3
+    ],
+    [
+     0.35,
+     0.2,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.7,
+    0.6,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover17_suspension_arm_l.step",
+    "glb": "glb/rover17_suspension_arm_l.glb",
+    "preview": "renders/rover17_suspension_arm_l.png"
+   }
+  },
+  "rover17_suspension_arm_l_susp_up": {
+   "vid": "rover17_suspension_arm_l_susp_up",
+   "size": "L",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.7,
+    "height_m": 0.6,
+    "depth_m": 0.4,
+    "travel_m": 0.3,
+    "rated_load_t": 3.0
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.35,
+     -0.2,
+     -0.3
+    ],
+    [
+     0.35,
+     0.2,
+     0.32999999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    0.7,
+    0.63,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.35,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_l",
+   "files": {
+    "step": "step/rover17_suspension_arm_l_susp_up.step",
+    "glb": "glb/rover17_suspension_arm_l_susp_up.glb",
+    "preview": "renders/rover17_suspension_arm_l_susp_up.png"
+   }
+  },
+  "rover17_suspension_arm_l_susp_down": {
+   "vid": "rover17_suspension_arm_l_susp_down",
+   "size": "L",
+   "state": "susp_down",
+   "default_state": false,
+   "label": "SU-A Independent Suspension Arm",
+   "primary": false,
+   "dims": {
+    "arm_length_m": 0.7,
+    "height_m": 0.6,
+    "depth_m": 0.4,
+    "travel_m": 0.3,
+    "rated_load_t": 3.0
+   },
+   "notes": "Double-wishbone arm with coil-over; the upright (arm_upright) and node_outboard move +-travel/2 in the susp poses.",
+   "bbox_cad_zup": [
+    [
+     -0.35,
+     -0.2,
+     -0.32999999999999996
+    ],
+    [
+     0.35,
+     0.2,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.7,
+    0.63,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.35,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_upright",
+    "arm_upper",
+    "arm_lower"
+   ],
+   "default_of": "rover17_suspension_arm_l",
+   "files": {
+    "step": "step/rover17_suspension_arm_l_susp_down.step",
+    "glb": "glb/rover17_suspension_arm_l_susp_down.glb",
+    "preview": "renders/rover17_suspension_arm_l_susp_down.png"
+   }
+  }
+ }
+}

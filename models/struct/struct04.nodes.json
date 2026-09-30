@@ -1,0 +1,172 @@
+{
+ "id": "struct04",
+ "name": "HP-1 Radial Pylon / Hardpoint",
+ "category": "struct",
+ "short_name": "radial_pylon",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "struct04_radial_pylon_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.3,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.3,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "struct04_radial_pylon_s": {
+   "vid": "struct04_radial_pylon_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "HP-1 Radial Pylon / Hardpoint",
+   "primary": true,
+   "dims": {
+    "standoff_m": 0.6,
+    "rated_t": 5
+   },
+   "notes": "Radial pylon: stand-off the next radial part (tank, booster, pod) by the pylon length; node_outboard on the hardpoint face.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.144,
+     -0.33
+    ],
+    [
+     0.3,
+     0.144,
+     0.33
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    0.66,
+    0.288
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct04_radial_pylon_s.step",
+    "glb": "glb/struct04_radial_pylon_s.glb",
+    "preview": "renders/struct04_radial_pylon_s.png"
+   }
+  },
+  "struct04_radial_pylon_m": {
+   "vid": "struct04_radial_pylon_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "HP-1 Radial Pylon / Hardpoint",
+   "primary": false,
+   "dims": {
+    "standoff_m": 1.2,
+    "rated_t": 40
+   },
+   "notes": "Radial pylon: stand-off the next radial part (tank, booster, pod) by the pylon length; node_outboard on the hardpoint face.",
+   "bbox_cad_zup": [
+    [
+     -0.6,
+     -0.288,
+     -0.66
+    ],
+    [
+     0.6,
+     0.288,
+     0.66
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    1.32,
+    0.576
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.6,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.6,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct04_radial_pylon_m.step",
+    "glb": "glb/struct04_radial_pylon_m.glb",
+    "preview": "renders/struct04_radial_pylon_m.png"
+   }
+  }
+ }
+}

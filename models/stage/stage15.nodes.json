@@ -1,0 +1,318 @@
+{
+ "id": "stage15",
+ "name": "AB-1 Landing Airbags",
+ "category": "stage",
+ "short_name": "landing_airbags",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "stage15_landing_airbags_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage15_landing_airbags_s": {
+   "vid": "stage15_landing_airbags_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "AB-1 Landing Airbags",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.4,
+    "deployed_diameter_m": 5.2
+   },
+   "notes": "Airbags stowed (folded lobes between two plates).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.2
+    ],
+    [
+     0.625,
+     0.625,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.4,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bag_stowed"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage15_landing_airbags_s.step",
+    "glb": "glb/stage15_landing_airbags_s.glb",
+    "preview": "renders/stage15_landing_airbags_s.png"
+   }
+  },
+  "stage15_landing_airbags_s_deployed": {
+   "vid": "stage15_landing_airbags_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "AB-1 Landing Airbags",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.4,
+    "deployed_diameter_m": 5.2
+   },
+   "notes": "Mars Pathfinder-style airbag cluster (Vectran lobes) inflated by gas generators; retract/cut away after landing.",
+   "bbox_cad_zup": [
+    [
+     -2.6,
+     -2.380678623973044,
+     -2.0703703703703704
+    ],
+    [
+     2.6,
+     2.3806786239730444,
+     2.0703703703703704
+    ]
+   ],
+   "bbox_godot_size": [
+    5.2,
+    4.141,
+    4.761
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bag_ring",
+    "bag_bottom",
+    "bag_tendons"
+   ],
+   "default_of": "stage15_landing_airbags_s",
+   "files": {
+    "step": "step/stage15_landing_airbags_s_deployed.step",
+    "glb": "glb/stage15_landing_airbags_s_deployed.glb",
+    "preview": "renders/stage15_landing_airbags_s_deployed.png"
+   }
+  },
+  "stage15_landing_airbags_m": {
+   "vid": "stage15_landing_airbags_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "AB-1 Landing Airbags",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.6,
+    "deployed_diameter_m": 9.0
+   },
+   "notes": "Airbags stowed (folded lobes between two plates).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.3
+    ],
+    [
+     1.25,
+     1.25,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.6,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bag_stowed"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage15_landing_airbags_m.step",
+    "glb": "glb/stage15_landing_airbags_m.glb",
+    "preview": "renders/stage15_landing_airbags_m.png"
+   }
+  },
+  "stage15_landing_airbags_m_deployed": {
+   "vid": "stage15_landing_airbags_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "AB-1 Landing Airbags",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.6,
+    "deployed_diameter_m": 9.0
+   },
+   "notes": "Mars Pathfinder-style airbag cluster (Vectran lobes) inflated by gas generators; retract/cut away after landing.",
+   "bbox_cad_zup": [
+    [
+     -4.5,
+     -4.120405310722576,
+     -3.583333333333333
+    ],
+    [
+     4.5,
+     4.120405310722576,
+     3.583333333333333
+    ]
+   ],
+   "bbox_godot_size": [
+    9.0,
+    7.167,
+    8.241
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bag_ring",
+    "bag_bottom",
+    "bag_tendons"
+   ],
+   "default_of": "stage15_landing_airbags_m",
+   "files": {
+    "step": "step/stage15_landing_airbags_m_deployed.step",
+    "glb": "glb/stage15_landing_airbags_m_deployed.glb",
+    "preview": "renders/stage15_landing_airbags_m_deployed.png"
+   }
+  }
+ }
+}

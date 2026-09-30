@@ -1,0 +1,173 @@
+{
+ "id": "station14",
+ "name": "DP-XS Probe-and-Drogue Docking Port",
+ "category": "station",
+ "short_name": "probe_drogue_port",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "station14_probe_drogue_port_active",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station14_probe_drogue_port_active": {
+   "vid": "station14_probe_drogue_port_active",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-XS Probe-and-Drogue Docking Port",
+   "primary": true,
+   "dims": {
+    "flange_diameter_m": 0.625,
+    "height_m": 0.45,
+    "half": "probe"
+   },
+   "notes": "Probe (active) half: extendable probe with capture latches + 8 hook latches on the ring.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.225
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.45,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/station14_probe_drogue_port_active.step",
+    "glb": "glb/station14_probe_drogue_port_active.glb",
+    "preview": "renders/station14_probe_drogue_port_active.png"
+   }
+  },
+  "station14_probe_drogue_port_passive": {
+   "vid": "station14_probe_drogue_port_passive",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-XS Probe-and-Drogue Docking Port",
+   "primary": false,
+   "dims": {
+    "flange_diameter_m": 0.625,
+    "height_m": 0.3,
+    "half": "drogue"
+   },
+   "notes": "Drogue (passive) half: conical receiving funnel with the probe socket at its apex.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.15000000000000002
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.15000000000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.3,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/station14_probe_drogue_port_passive.step",
+    "glb": "glb/station14_probe_drogue_port_passive.glb",
+    "preview": "renders/station14_probe_drogue_port_passive.png"
+   }
+  }
+ }
+}

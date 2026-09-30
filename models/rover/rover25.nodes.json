@@ -1,0 +1,915 @@
+{
+ "id": "rover25",
+ "name": "CG-1 Cargo Bed",
+ "category": "rover",
+ "short_name": "cargo_bed",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover25_cargo_bed_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_grid_0_0",
+   "position": [
+    0.25,
+    -0.15,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_1",
+   "position": [
+    -0.25,
+    -0.15,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_0",
+   "position": [
+    0.25,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_1",
+   "position": [
+    -0.25,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_0",
+   "position": [
+    0.25,
+    -0.15,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_1",
+   "position": [
+    -0.25,
+    -0.15,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover25_cargo_bed_s": {
+   "vid": "rover25_cargo_bed_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "CG-1 Cargo Bed",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 1.5",
+    "height_m": 0.4,
+    "footprint_cells": [
+     2,
+     3
+    ],
+    "payload_t": 0.3
+   },
+   "notes": "Walled cargo bed: floor socket grid (node_grid_*) with tie-down rails; rear tailgate hinged at the floor, opens 105 deg into a ramp.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.75,
+     -0.2
+    ],
+    [
+     0.5,
+     0.75,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.4,
+    1.5
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.25,
+      -0.15,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      -0.25,
+      -0.15,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.25,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      -0.25,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.25,
+      -0.15,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      -0.25,
+      -0.15,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "tailgate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover25_cargo_bed_s.step",
+    "glb": "glb/rover25_cargo_bed_s.glb",
+    "preview": "renders/rover25_cargo_bed_s.png"
+   }
+  },
+  "rover25_cargo_bed_s_tailgate_open": {
+   "vid": "rover25_cargo_bed_s_tailgate_open",
+   "size": "S",
+   "state": "tailgate_open",
+   "default_state": false,
+   "label": "CG-1 Cargo Bed",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.5",
+    "height_m": 0.4,
+    "footprint_cells": [
+     2,
+     3
+    ],
+    "payload_t": 0.3
+   },
+   "notes": "Walled cargo bed: floor socket grid (node_grid_*) with tie-down rails; rear tailgate hinged at the floor, opens 105 deg into a ramp.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.75,
+     -0.24058666578588223
+    ],
+    [
+     0.5,
+     1.0958386105542495,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.441,
+    1.846
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.25,
+      -0.15,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      -0.25,
+      -0.15,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.25,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      -0.25,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.25,
+      -0.15,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      -0.25,
+      -0.15,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "tailgate"
+   ],
+   "default_of": "rover25_cargo_bed_s",
+   "files": {
+    "step": "step/rover25_cargo_bed_s_tailgate_open.step",
+    "glb": "glb/rover25_cargo_bed_s_tailgate_open.glb",
+    "preview": "renders/rover25_cargo_bed_s_tailgate_open.png"
+   }
+  },
+  "rover25_cargo_bed_m": {
+   "vid": "rover25_cargo_bed_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CG-1 Cargo Bed",
+   "primary": false,
+   "dims": {
+    "footprint_m": "2.0 x 2.0",
+    "height_m": 0.5,
+    "footprint_cells": [
+     4,
+     4
+    ],
+    "payload_t": 1.5
+   },
+   "notes": "Walled cargo bed: floor socket grid (node_grid_*) with tie-down rails; rear tailgate hinged at the floor, opens 105 deg into a ramp.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -1.0,
+     -0.25
+    ],
+    [
+     1.0,
+     1.0,
+     0.25
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.5,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.75,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.25,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      -0.25,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.75,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.25,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      -0.25,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.75,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.25,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      -0.25,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.75,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.75,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.25,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      -0.25,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.75,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "tailgate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover25_cargo_bed_m.step",
+    "glb": "glb/rover25_cargo_bed_m.glb",
+    "preview": "renders/rover25_cargo_bed_m.png"
+   }
+  },
+  "rover25_cargo_bed_m_tailgate_open": {
+   "vid": "rover25_cargo_bed_m_tailgate_open",
+   "size": "M",
+   "state": "tailgate_open",
+   "default_state": false,
+   "label": "CG-1 Cargo Bed",
+   "primary": false,
+   "dims": {
+    "footprint_m": "2.0 x 2.0",
+    "height_m": 0.5,
+    "footprint_cells": [
+     4,
+     4
+    ],
+    "payload_t": 1.5
+   },
+   "notes": "Walled cargo bed: floor socket grid (node_grid_*) with tie-down rails; rear tailgate hinged at the floor, opens 105 deg into a ramp.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -1.0,
+     -0.31646857029613445
+    ],
+    [
+     1.0,
+     1.4424311931831564,
+     0.25
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.566,
+    2.442
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.75,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.25,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      -0.25,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.75,
+      -0.2,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.25,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      -0.25,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      -0.2,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.75,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.25,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      -0.25,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.75,
+      -0.2,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.75,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.25,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      -0.25,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.75,
+      -0.2,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "tailgate"
+   ],
+   "default_of": "rover25_cargo_bed_m",
+   "files": {
+    "step": "step/rover25_cargo_bed_m_tailgate_open.step",
+    "glb": "glb/rover25_cargo_bed_m_tailgate_open.glb",
+    "preview": "renders/rover25_cargo_bed_m_tailgate_open.png"
+   }
+  }
+ }
+}

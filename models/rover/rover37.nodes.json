@@ -1,0 +1,177 @@
+{
+ "id": "rover37",
+ "name": "HC-1 Hitch / Trailer Coupler",
+ "category": "rover",
+ "short_name": "hitch_coupler",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "rover37_hitch_coupler_active",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    -0.2
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_hitch",
+   "position": [
+    0.0,
+    0.0,
+    0.2
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover37_hitch_coupler_active": {
+   "vid": "rover37_hitch_coupler_active",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "HC-1 Hitch / Trailer Coupler",
+   "primary": true,
+   "dims": {
+    "length_m": 0.4,
+    "width_m": 0.25,
+    "height_m": 0.25,
+    "tow_t": 10,
+    "half": "active"
+   },
+   "notes": "Active half: tow ball + powered umbilical plug. Mount plate takes a chassis node_front/node_rear.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.2,
+     -0.125
+    ],
+    [
+     0.125,
+     0.2,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.25,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hitch",
+     "position": [
+      0.0,
+      0.0,
+      0.2
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover37_hitch_coupler_active.step",
+    "glb": "glb/rover37_hitch_coupler_active.glb",
+    "preview": "renders/rover37_hitch_coupler_active.png"
+   }
+  },
+  "rover37_hitch_coupler_passive": {
+   "vid": "rover37_hitch_coupler_passive",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "HC-1 Hitch / Trailer Coupler",
+   "primary": false,
+   "dims": {
+    "length_m": 0.4,
+    "width_m": 0.25,
+    "height_m": 0.25,
+    "tow_t": 10,
+    "half": "passive"
+   },
+   "notes": "Passive half: ball socket with latch + umbilical receptacle. Mount plate takes a chassis node_front/node_rear.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.2,
+     -0.125
+    ],
+    [
+     0.125,
+     0.2,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.25,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hitch",
+     "position": [
+      0.0,
+      0.0,
+      0.2
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover37_hitch_coupler_passive.step",
+    "glb": "glb/rover37_hitch_coupler_passive.glb",
+    "preview": "renders/rover37_hitch_coupler_passive.png"
+   }
+  }
+ }
+}

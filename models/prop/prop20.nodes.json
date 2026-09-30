@@ -1,0 +1,107 @@
+{
+ "id": "prop20",
+ "name": "AE-1 'LEROS' Apogee Engine",
+ "category": "prop",
+ "short_name": "apogee_engine",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop20_apogee_engine",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.325,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.325,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop20_apogee_engine": {
+   "vid": "prop20_apogee_engine",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "AE-1 'LEROS' Apogee Engine",
+   "primary": true,
+   "dims": {
+    "length_m": 0.65,
+    "exit_diameter_m": 0.28,
+    "thrust_kn_vac": 0.64
+   },
+   "notes": "LEROS-class MON/hydrazine apogee engine: small chamber, long radiation-cooled niobium nozzle.",
+   "bbox_cad_zup": [
+    [
+     -0.14400000000000002,
+     -0.14400000000000002,
+     -0.325
+    ],
+    [
+     0.14400000000000002,
+     0.14400000000000002,
+     0.32499999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    0.288,
+    0.65,
+    0.288
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.325,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.325,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop20_apogee_engine.step",
+    "glb": "glb/prop20_apogee_engine.glb",
+    "preview": "renders/prop20_apogee_engine.png"
+   }
+  }
+ }
+}

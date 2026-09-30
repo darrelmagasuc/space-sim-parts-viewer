@@ -1,0 +1,165 @@
+{
+ "id": "rover23",
+ "name": "CB-O Open Cab Frame",
+ "category": "rover",
+ "short_name": "open_cab",
+ "sizes": [
+  "M"
+ ],
+ "primary": "rover23_open_cab",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.7,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_0",
+   "position": [
+    0.75,
+    -0.65,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_3",
+   "position": [
+    -0.75,
+    -0.65,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.7,
+    0.42
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover23_open_cab": {
+   "vid": "rover23_open_cab",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CB-O Open Cab Frame",
+   "primary": true,
+   "dims": {
+    "footprint_m": "2.0 x 1.5",
+    "height_m": 1.4,
+    "footprint_cells": [
+     4,
+     3
+    ],
+    "seat_nodes": 2
+   },
+   "notes": "LRV-style open cab: floor pan with 2 seat sockets (rover22), roll cage, control console with T-handle controllers and displays, mast plate on the cage roof (node_top).",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.75,
+     -0.7
+    ],
+    [
+     1.0,
+     0.75,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    1.4,
+    1.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      -0.65,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      -0.65,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7,
+      0.42
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover23_open_cab.step",
+    "glb": "glb/rover23_open_cab.glb",
+    "preview": "renders/rover23_open_cab.png"
+   }
+  }
+ }
+}

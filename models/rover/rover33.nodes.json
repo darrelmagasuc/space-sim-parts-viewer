@@ -1,0 +1,180 @@
+{
+ "id": "rover33",
+ "name": "SC-T Science Turret",
+ "category": "rover",
+ "short_name": "science_turret",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover33_science_turret",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_tool",
+   "position": [
+    0.0,
+    0.15,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover33_science_turret": {
+   "vid": "rover33_science_turret",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "SC-T Science Turret",
+   "primary": true,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "mast_height_m": 0.4,
+    "range_m": 7
+   },
+   "notes": "Pan/tilt mast head: stereo cameras + laser/spectrometer aperture on the front face (node_tool); stowed low, deployed on a 1.8 m mast.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.25
+    ],
+    [
+     0.25,
+     0.25,
+     0.25
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      0.15,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "head",
+    "head_optics"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover33_science_turret.step",
+    "glb": "glb/rover33_science_turret.glb",
+    "preview": "renders/rover33_science_turret.png"
+   }
+  },
+  "rover33_science_turret_deployed": {
+   "vid": "rover33_science_turret_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "SC-T Science Turret",
+   "primary": false,
+   "dims": {
+    "footprint_m": "0.5 x 0.5",
+    "mast_height_m": 1.8,
+    "range_m": 7
+   },
+   "notes": "Pan/tilt mast head: stereo cameras + laser/spectrometer aperture on the front face (node_tool); stowed low, deployed on a 1.8 m mast.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.25
+    ],
+    [
+     0.25,
+     0.25,
+     1.6500000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    1.9,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      1.55,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "head",
+    "head_optics"
+   ],
+   "default_of": "rover33_science_turret",
+   "files": {
+    "step": "step/rover33_science_turret_deployed.step",
+    "glb": "glb/rover33_science_turret_deployed.glb",
+    "preview": "renders/rover33_science_turret_deployed.png"
+   }
+  }
+ }
+}

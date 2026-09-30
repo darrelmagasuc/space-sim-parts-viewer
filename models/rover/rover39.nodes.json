@@ -1,0 +1,160 @@
+{
+ "id": "rover39",
+ "name": "ISRU-E Water Electrolyser",
+ "category": "rover",
+ "short_name": "water_electrolyser",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "rover39_water_electrolyser",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.3,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_3",
+   "position": [
+    0.3,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover39_water_electrolyser": {
+   "vid": "rover39_water_electrolyser",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "ISRU-E Water Electrolyser",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slot_class": "Medium",
+    "power_kw": 5,
+    "water_kg_h": 0.9
+   },
+   "notes": "PEM electrolyser slot unit: cell stack, H2/O2 buffer tanks, three top couplings (water in, H2 out, O2 out). Needs 5 kW from the rover bus - no internal power source.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.3
+    ],
+    [
+     0.5,
+     0.5,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.6,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.3,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_3",
+     "position": [
+      0.3,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover39_water_electrolyser.step",
+    "glb": "glb/rover39_water_electrolyser.glb",
+    "preview": "renders/rover39_water_electrolyser.png"
+   }
+  }
+ }
+}

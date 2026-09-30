@@ -1,0 +1,107 @@
+{
+ "id": "sci00",
+ "name": "SC-ENV Environment Sensor Suite",
+ "category": "sci",
+ "short_name": "environment_suite",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "sci00_environment_suite",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.18,
+    0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci00_environment_suite": {
+   "vid": "sci00_environment_suite",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-ENV Environment Sensor Suite",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.3",
+    "slot_class": "Small (half height)",
+    "power_w": 15
+   },
+   "notes": "Half-height slot suite: pressure / temperature / wind / dust / radiation sensors + context camera.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.15
+    ],
+    [
+     0.25,
+     0.25,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.3,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.18,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci00_environment_suite.step",
+    "glb": "glb/sci00_environment_suite.glb",
+    "preview": "renders/sci00_environment_suite.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,366 @@
+{
+ "id": "prop24",
+ "name": "LES-1 Launch Escape Tower",
+ "category": "prop",
+ "short_name": "launch_escape_tower",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "prop24_launch_escape_tower_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.67,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop24_launch_escape_tower_m": {
+   "vid": "prop24_launch_escape_tower_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": true,
+   "dims": {
+    "capsule_diameter_m": 2.5,
+    "length_m": 7.0,
+    "abort_thrust_kn": 700
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -3.67
+    ],
+    [
+     1.25,
+     1.25,
+     3.6700000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    7.34,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.67,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/prop24_launch_escape_tower_m.step",
+    "glb": "glb/prop24_launch_escape_tower_m.glb",
+    "preview": "renders/prop24_launch_escape_tower_m.png"
+   }
+  },
+  "prop24_launch_escape_tower_m_canards": {
+   "vid": "prop24_launch_escape_tower_m_canards",
+   "size": "M",
+   "state": "canards",
+   "default_state": false,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": false,
+   "dims": {
+    "capsule_diameter_m": 2.5,
+    "length_m": 7.0,
+    "abort_thrust_kn": 700
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -3.67
+    ],
+    [
+     1.25,
+     1.25,
+     3.67
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    7.34,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.67,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": "prop24_launch_escape_tower_m",
+   "files": {
+    "step": "step/prop24_launch_escape_tower_m_canards.step",
+    "glb": "glb/prop24_launch_escape_tower_m_canards.glb",
+    "preview": "renders/prop24_launch_escape_tower_m_canards.png"
+   }
+  },
+  "prop24_launch_escape_tower_l": {
+   "vid": "prop24_launch_escape_tower_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": false,
+   "dims": {
+    "capsule_diameter_m": 3.75,
+    "length_m": 10.0,
+    "abort_thrust_kn": 1000
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -5.2875
+    ],
+    [
+     1.875,
+     1.875,
+     5.2875
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    10.575,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.2875,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/prop24_launch_escape_tower_l.step",
+    "glb": "glb/prop24_launch_escape_tower_l.glb",
+    "preview": "renders/prop24_launch_escape_tower_l.png"
+   }
+  },
+  "prop24_launch_escape_tower_l_canards": {
+   "vid": "prop24_launch_escape_tower_l_canards",
+   "size": "L",
+   "state": "canards",
+   "default_state": false,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": false,
+   "dims": {
+    "capsule_diameter_m": 3.75,
+    "length_m": 10.0,
+    "abort_thrust_kn": 1000
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -5.2875
+    ],
+    [
+     1.875,
+     1.875,
+     5.2875
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    10.575,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.2875,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": "prop24_launch_escape_tower_l",
+   "files": {
+    "step": "step/prop24_launch_escape_tower_l_canards.step",
+    "glb": "glb/prop24_launch_escape_tower_l_canards.glb",
+    "preview": "renders/prop24_launch_escape_tower_l_canards.png"
+   }
+  },
+  "prop24_launch_escape_tower_xl": {
+   "vid": "prop24_launch_escape_tower_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": false,
+   "dims": {
+    "capsule_diameter_m": 5.0,
+    "length_m": 13.5,
+    "abort_thrust_kn": 1800
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -7.1225
+    ],
+    [
+     2.5,
+     2.5,
+     7.1225
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    14.245,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -7.1225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/prop24_launch_escape_tower_xl.step",
+    "glb": "glb/prop24_launch_escape_tower_xl.glb",
+    "preview": "renders/prop24_launch_escape_tower_xl.png"
+   }
+  },
+  "prop24_launch_escape_tower_xl_canards": {
+   "vid": "prop24_launch_escape_tower_xl_canards",
+   "size": "XL",
+   "state": "canards",
+   "default_state": false,
+   "label": "LES-1 Launch Escape Tower",
+   "primary": false,
+   "dims": {
+    "capsule_diameter_m": 5.0,
+    "length_m": 13.5,
+    "abort_thrust_kn": 1800
+   },
+   "notes": "Apollo/Orion-style tractor LES: boost protective cover, truss tower, 4-nozzle abort motor, jettison motor, canards (canard_*) that deploy for re-orientation.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -7.1225
+    ],
+    [
+     2.5,
+     2.5,
+     7.1225
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    14.245,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -7.1225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canard_1",
+    "canard_2"
+   ],
+   "default_of": "prop24_launch_escape_tower_xl",
+   "files": {
+    "step": "step/prop24_launch_escape_tower_xl_canards.step",
+    "glb": "glb/prop24_launch_escape_tower_xl_canards.glb",
+    "preview": "renders/prop24_launch_escape_tower_xl_canards.png"
+   }
+  }
+ }
+}

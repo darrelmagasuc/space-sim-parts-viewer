@@ -1,0 +1,1268 @@
+{
+ "id": "tank13",
+ "name": "T-LEN Tank Length & Diameter Series",
+ "category": "tank",
+ "short_name": "tank_length_series",
+ "sizes": [
+  "XS",
+  "S",
+  "M",
+  "L",
+  "XL",
+  "XXL"
+ ],
+ "primary": "tank13_tank_length_series_xs_short",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.3125,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.3125
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.3125,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.3125
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank13_tank_length_series_xs_short": {
+   "vid": "tank13_tank_length_series_xs_short",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.625,
+    "length_m": 0.6
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -0.3165,
+     -0.3165,
+     -0.3
+    ],
+    [
+     0.3165,
+     0.3165,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.633,
+    0.6,
+    0.633
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_xs_short.step",
+    "glb": "glb/tank13_tank_length_series_xs_short.glb",
+    "preview": "renders/tank13_tank_length_series_xs_short.png"
+   }
+  },
+  "tank13_tank_length_series_xs_long": {
+   "vid": "tank13_tank_length_series_xs_long",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "length_m": 1.2
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -0.3165,
+     -0.3165,
+     -0.6
+    ],
+    [
+     0.3165,
+     0.3165,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    0.633,
+    1.2,
+    0.633
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.3125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3125
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_xs_long.step",
+    "glb": "glb/tank13_tank_length_series_xs_long.glb",
+    "preview": "renders/tank13_tank_length_series_xs_long.png"
+   }
+  },
+  "tank13_tank_length_series_s_half": {
+   "vid": "tank13_tank_length_series_s_half",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.8
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -0.9
+    ],
+    [
+     0.629,
+     0.629,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    1.8,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_s_half.step",
+    "glb": "glb/tank13_tank_length_series_s_half.glb",
+    "preview": "renders/tank13_tank_length_series_s_half.png"
+   }
+  },
+  "tank13_tank_length_series_s_double": {
+   "vid": "tank13_tank_length_series_s_double",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 6.8
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -3.4
+    ],
+    [
+     0.629,
+     0.629,
+     3.4
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    6.8,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_s_double.step",
+    "glb": "glb/tank13_tank_length_series_s_double.glb",
+    "preview": "renders/tank13_tank_length_series_s_double.png"
+   }
+  },
+  "tank13_tank_length_series_m_half": {
+   "vid": "tank13_tank_length_series_m_half",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 3.5
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -1.258,
+     -1.258,
+     -1.75
+    ],
+    [
+     1.258,
+     1.258,
+     1.75
+    ]
+   ],
+   "bbox_godot_size": [
+    2.516,
+    3.5,
+    2.516
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_m_half.step",
+    "glb": "glb/tank13_tank_length_series_m_half.glb",
+    "preview": "renders/tank13_tank_length_series_m_half.png"
+   }
+  },
+  "tank13_tank_length_series_m_double": {
+   "vid": "tank13_tank_length_series_m_double",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 13.7
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -1.258,
+     -1.258,
+     -6.85
+    ],
+    [
+     1.258,
+     1.258,
+     6.85
+    ]
+   ],
+   "bbox_godot_size": [
+    2.516,
+    13.7,
+    2.516
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_m_double.step",
+    "glb": "glb/tank13_tank_length_series_m_double.glb",
+    "preview": "renders/tank13_tank_length_series_m_double.png"
+   }
+  },
+  "tank13_tank_length_series_l_half": {
+   "vid": "tank13_tank_length_series_l_half",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 5.3
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -1.887,
+     -1.887,
+     -2.65
+    ],
+    [
+     1.887,
+     1.887,
+     2.65
+    ]
+   ],
+   "bbox_godot_size": [
+    3.774,
+    5.3,
+    3.774
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.65,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.65,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_l_half.step",
+    "glb": "glb/tank13_tank_length_series_l_half.glb",
+    "preview": "renders/tank13_tank_length_series_l_half.png"
+   }
+  },
+  "tank13_tank_length_series_xl_half": {
+   "vid": "tank13_tank_length_series_xl_half",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 12.5
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -2.516,
+     -2.516,
+     -6.25
+    ],
+    [
+     2.516,
+     2.516,
+     6.25
+    ]
+   ],
+   "bbox_godot_size": [
+    5.032,
+    12.5,
+    5.032
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_xl_half.step",
+    "glb": "glb/tank13_tank_length_series_xl_half.glb",
+    "preview": "renders/tank13_tank_length_series_xl_half.png"
+   }
+  },
+  "tank13_tank_length_series_xxl_half": {
+   "vid": "tank13_tank_length_series_xxl_half",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "length_m": 15.0
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -3.774,
+     -3.774,
+     -7.5
+    ],
+    [
+     3.774,
+     3.774,
+     7.5
+    ]
+   ],
+   "bbox_godot_size": [
+    7.548,
+    15.0,
+    7.548
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_xxl_half.step",
+    "glb": "glb/tank13_tank_length_series_xxl_half.glb",
+    "preview": "renders/tank13_tank_length_series_xxl_half.png"
+   }
+  },
+  "tank13_tank_length_series_xxl": {
+   "vid": "tank13_tank_length_series_xxl",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LEN Tank Length & Diameter Series",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "length_m": 30.0
+   },
+   "notes": "Generic kerolox barrel (length/diameter series); ring frames every ~0.7 D.",
+   "bbox_cad_zup": [
+    [
+     -3.774,
+     -3.774,
+     -15.0
+    ],
+    [
+     3.774,
+     3.774,
+     15.0
+    ]
+   ],
+   "bbox_godot_size": [
+    7.548,
+    30.0,
+    7.548
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -15.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      15.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank13_tank_length_series_xxl.step",
+    "glb": "glb/tank13_tank_length_series_xxl.glb",
+    "preview": "renders/tank13_tank_length_series_xxl.png"
+   }
+  }
+ }
+}

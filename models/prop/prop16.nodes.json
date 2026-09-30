@@ -1,0 +1,177 @@
+{
+ "id": "prop16",
+ "name": "LE-10 'Spike' Methalox Aerospike",
+ "category": "prop",
+ "short_name": "aerospike",
+ "sizes": [
+  "M"
+ ],
+ "primary": "prop16_aerospike_toroidal",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop16_aerospike_toroidal": {
+   "vid": "prop16_aerospike_toroidal",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-10 'Spike' Methalox Aerospike",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 1.8,
+    "chambers": 18
+   },
+   "notes": "Toroidal aerospike: ring of 18 chambers firing along a truncated plug (altitude compensating).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.9
+    ],
+    [
+     1.25,
+     1.25,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.8,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop16_aerospike_toroidal.step",
+    "glb": "glb/prop16_aerospike_toroidal.glb",
+    "preview": "renders/prop16_aerospike_toroidal.png"
+   }
+  },
+  "prop16_aerospike_linear": {
+   "vid": "prop16_aerospike_linear",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-10 'Spike' Methalox Aerospike",
+   "primary": false,
+   "dims": {
+    "width_m": 2.5,
+    "depth_m": 1.2,
+    "length_m": 1.6,
+    "chambers": 10
+   },
+   "notes": "Linear aerospike (XRS-2200 style): 10 chambers in two rows firing down two cooled ramps.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -0.6799999999999999,
+     -0.8
+    ],
+    [
+     1.25,
+     0.6,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.6,
+    1.28
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "ramps",
+    "ramp_ribs"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/prop16_aerospike_linear.step",
+    "glb": "glb/prop16_aerospike_linear.glb",
+    "preview": "renders/prop16_aerospike_linear.png"
+   }
+  }
+ }
+}

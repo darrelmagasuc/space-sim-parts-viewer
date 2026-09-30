@@ -1,0 +1,174 @@
+{
+ "id": "sci06",
+ "name": "SC-SRC Sample Cache",
+ "category": "sci",
+ "short_name": "sample_cache",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "sci06_sample_cache_cache",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.2,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci06_sample_cache_cache": {
+   "vid": "sci06_sample_cache_cache",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-SRC Sample Cache",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "slot_class": "Small",
+    "tubes": 20
+   },
+   "notes": "Sample-cache rack: 20 sealed sample tubes (Mars 2020 style).",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.3
+    ],
+    [
+     0.25,
+     0.25,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.6,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.2,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid_frame"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/sci06_sample_cache_cache.step",
+    "glb": "glb/sci06_sample_cache_cache.glb",
+    "preview": "renders/sci06_sample_cache_cache.png"
+   }
+  },
+  "sci06_sample_cache_orbiting_container": {
+   "vid": "sci06_sample_cache_orbiting_container",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-SRC Sample Cache",
+   "primary": false,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "sphere_diameter_m": 0.3
+   },
+   "notes": "Orbiting sample container (0.3 m sphere) in its launch cradle, for Mars-sample-return style missions.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.3
+    ],
+    [
+     0.25,
+     0.25,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.6,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.2,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci06_sample_cache_orbiting_container.step",
+    "glb": "glb/sci06_sample_cache_orbiting_container.glb",
+    "preview": "renders/sci06_sample_cache_orbiting_container.png"
+   }
+  }
+ }
+}

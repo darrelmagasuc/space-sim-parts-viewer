@@ -1,0 +1,1503 @@
+{
+ "id": "rover14",
+ "name": "CH-P Chassis Deck Plate",
+ "category": "rover",
+ "short_name": "deck_plate",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover14_deck_plate_1x1",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_grid_0_0",
+   "position": [
+    0.25,
+    0.025,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_1",
+   "position": [
+    -0.25,
+    0.025,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_0",
+   "position": [
+    0.25,
+    0.025,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_1",
+   "position": [
+    -0.25,
+    0.025,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_0",
+   "position": [
+    0.25,
+    -0.025,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_1",
+   "position": [
+    -0.25,
+    -0.025,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_0",
+   "position": [
+    0.25,
+    -0.025,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_1",
+   "position": [
+    -0.25,
+    -0.025,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_0",
+   "position": [
+    0.5,
+    0.0,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_0",
+   "position": [
+    -0.5,
+    0.0,
+    0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_1",
+   "position": [
+    0.5,
+    0.0,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_1",
+   "position": [
+    -0.5,
+    0.0,
+    -0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_c",
+   "position": [
+    0.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_c",
+   "position": [
+    -0.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover14_deck_plate_1x1": {
+   "vid": "rover14_deck_plate_1x1",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "CH-P Chassis Deck Plate",
+   "primary": true,
+   "dims": {
+    "width_m": 1.0,
+    "length_m": 1.0,
+    "thickness_m": 0.05,
+    "grid_cells": [
+     2,
+     2
+    ],
+    "mass_t": 0.012
+   },
+   "notes": "Bolt-on deck plate: same socket grid top and bottom, flush edge hardpoints.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.025
+    ],
+    [
+     0.5,
+     0.5,
+     0.025
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.05,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      -0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      -0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      -0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      -0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      0.5,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -0.5,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      0.5,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -0.5,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover14_deck_plate_1x1.step",
+    "glb": "glb/rover14_deck_plate_1x1.glb",
+    "preview": "renders/rover14_deck_plate_1x1.png"
+   }
+  },
+  "rover14_deck_plate_1x2": {
+   "vid": "rover14_deck_plate_1x2",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CH-P Chassis Deck Plate",
+   "primary": false,
+   "dims": {
+    "width_m": 1.0,
+    "length_m": 2.0,
+    "thickness_m": 0.05,
+    "grid_cells": [
+     2,
+     4
+    ],
+    "mass_t": 0.024
+   },
+   "notes": "Bolt-on deck plate: same socket grid top and bottom, flush edge hardpoints.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -1.0,
+     -0.025
+    ],
+    [
+     0.5,
+     1.0,
+     0.025
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.05,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.25,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      -0.25,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      -0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      -0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.25,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      -0.25,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.25,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      -0.25,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      -0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      -0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_0",
+     "position": [
+      0.25,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_1",
+     "position": [
+      -0.25,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      0.5,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -0.5,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      0.5,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -0.5,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      0.5,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -0.5,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_3",
+     "position": [
+      0.5,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_3",
+     "position": [
+      -0.5,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover14_deck_plate_1x2.step",
+    "glb": "glb/rover14_deck_plate_1x2.glb",
+    "preview": "renders/rover14_deck_plate_1x2.png"
+   }
+  },
+  "rover14_deck_plate_2x2": {
+   "vid": "rover14_deck_plate_2x2",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CH-P Chassis Deck Plate",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "length_m": 2.0,
+    "thickness_m": 0.05,
+    "grid_cells": [
+     4,
+     4
+    ],
+    "mass_t": 0.048
+   },
+   "notes": "Bolt-on deck plate: same socket grid top and bottom, flush edge hardpoints.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -1.0,
+     -0.025
+    ],
+    [
+     1.0,
+     1.0,
+     0.025
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.05,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.75,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.25,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      -0.25,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.75,
+      0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      -0.25,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.75,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      -0.25,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.75,
+      0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.75,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.25,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      -0.25,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.75,
+      0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.75,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      0.25,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_2",
+     "position": [
+      -0.25,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_3",
+     "position": [
+      -0.75,
+      -0.025,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.75,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_2",
+     "position": [
+      -0.25,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_3",
+     "position": [
+      -0.75,
+      -0.025,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      0.75,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_2",
+     "position": [
+      -0.25,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_3",
+     "position": [
+      -0.75,
+      -0.025,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_0",
+     "position": [
+      0.75,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_1",
+     "position": [
+      0.25,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_2",
+     "position": [
+      -0.25,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_3",
+     "position": [
+      -0.75,
+      -0.025,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      1.0,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -1.0,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      1.0,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -1.0,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      1.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -1.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_3",
+     "position": [
+      1.0,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_3",
+     "position": [
+      -1.0,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover14_deck_plate_2x2.step",
+    "glb": "glb/rover14_deck_plate_2x2.glb",
+    "preview": "renders/rover14_deck_plate_2x2.png"
+   }
+  }
+ }
+}

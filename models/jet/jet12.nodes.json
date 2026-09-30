@@ -1,0 +1,179 @@
+{
+ "id": "jet12",
+ "name": "CC-1 'SABRE' Precooled Combined-Cycle Engine",
+ "category": "jet",
+ "short_name": "precooled_combined_cycle",
+ "sizes": [
+  "M"
+ ],
+ "primary": "jet12_precooled_combined_cycle",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "jet12_precooled_combined_cycle": {
+   "vid": "jet12_precooled_combined_cycle",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CC-1 'SABRE' Precooled Combined-Cycle Engine",
+   "primary": true,
+   "dims": {
+    "length_m": 6.0,
+    "intake_diameter_m": 1.6,
+    "mode": "air-breathing"
+   },
+   "notes": "SABRE-class precooled combined cycle: translating inlet spike (spike), helium-loop precooler, core, bypass burners, 4 rocket chambers. rocket pose: spike forward, inlet closed.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.8,
+     -3.0
+    ],
+    [
+     0.8,
+     0.8,
+     3.0
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    6.0,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "spike",
+    "spike_strut"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/jet12_precooled_combined_cycle.step",
+    "glb": "glb/jet12_precooled_combined_cycle.glb",
+    "preview": "renders/jet12_precooled_combined_cycle.png"
+   }
+  },
+  "jet12_precooled_combined_cycle_rocket": {
+   "vid": "jet12_precooled_combined_cycle_rocket",
+   "size": "M",
+   "state": "rocket",
+   "default_state": false,
+   "label": "CC-1 'SABRE' Precooled Combined-Cycle Engine",
+   "primary": false,
+   "dims": {
+    "length_m": 6.0,
+    "intake_diameter_m": 1.6,
+    "mode": "closed-cycle rocket, spike closed"
+   },
+   "notes": "SABRE-class precooled combined cycle: translating inlet spike (spike), helium-loop precooler, core, bypass burners, 4 rocket chambers. rocket pose: spike forward, inlet closed.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.8,
+     -3.0
+    ],
+    [
+     0.8,
+     0.8,
+     3.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    6.3,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "spike",
+    "spike_strut"
+   ],
+   "default_of": "jet12_precooled_combined_cycle",
+   "files": {
+    "step": "step/jet12_precooled_combined_cycle_rocket.step",
+    "glb": "glb/jet12_precooled_combined_cycle_rocket.glb",
+    "preview": "renders/jet12_precooled_combined_cycle_rocket.png"
+   }
+  }
+ }
+}

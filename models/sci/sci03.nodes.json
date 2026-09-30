@@ -1,0 +1,574 @@
+{
+ "id": "sci03",
+ "name": "SB-1 Science Instrument Bay",
+ "category": "sci",
+ "short_name": "science_bay",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "sci03_science_bay_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci03_science_bay_s": {
+   "vid": "sci03_science_bay_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1 Science Instrument Bay",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 1.0,
+    "slots": "4 Small"
+   },
+   "notes": "Stack science bay: instrument decks behind a single side door (door) hinged on a vertical edge, opens 120 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.5
+    ],
+    [
+     0.6300000000000001,
+     0.625,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.255,
+    1.0,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/sci03_science_bay_s.step",
+    "glb": "glb/sci03_science_bay_s.glb",
+    "preview": "renders/sci03_science_bay_s.png"
+   }
+  },
+  "sci03_science_bay_s_door_open": {
+   "vid": "sci03_science_bay_s_door_open",
+   "size": "S",
+   "state": "door_open",
+   "default_state": false,
+   "label": "SB-1 Science Instrument Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 1.0,
+    "slots": "4 Small"
+   },
+   "notes": "Stack science bay: instrument decks behind a single side door (door) hinged on a vertical edge, opens 120 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.6935788705784551,
+     -0.5
+    ],
+    [
+     1.1386011496714792,
+     0.625,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.764,
+    1.0,
+    1.319
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": "sci03_science_bay_s",
+   "files": {
+    "step": "step/sci03_science_bay_s_door_open.step",
+    "glb": "glb/sci03_science_bay_s_door_open.glb",
+    "preview": "renders/sci03_science_bay_s_door_open.png"
+   }
+  },
+  "sci03_science_bay_m": {
+   "vid": "sci03_science_bay_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1 Science Instrument Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 1.6,
+    "slots": "8 Small or 2 Medium"
+   },
+   "notes": "Stack science bay: instrument decks behind a single side door (door) hinged on a vertical edge, opens 120 deg.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.8
+    ],
+    [
+     1.2550000000000001,
+     1.25,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    2.505,
+    1.6,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/sci03_science_bay_m.step",
+    "glb": "glb/sci03_science_bay_m.glb",
+    "preview": "renders/sci03_science_bay_m.png"
+   }
+  },
+  "sci03_science_bay_m_door_open": {
+   "vid": "sci03_science_bay_m_door_open",
+   "size": "M",
+   "state": "door_open",
+   "default_state": false,
+   "label": "SB-1 Science Instrument Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 1.6,
+    "slots": "8 Small or 2 Medium"
+   },
+   "notes": "Stack science bay: instrument decks behind a single side door (door) hinged on a vertical edge, opens 120 deg.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.3821577411569104,
+     -0.8
+    ],
+    [
+     2.255827264330883,
+     1.25,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    3.506,
+    1.6,
+    2.632
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": "sci03_science_bay_m",
+   "files": {
+    "step": "step/sci03_science_bay_m_door_open.step",
+    "glb": "glb/sci03_science_bay_m_door_open.glb",
+    "preview": "renders/sci03_science_bay_m_door_open.png"
+   }
+  }
+ }
+}

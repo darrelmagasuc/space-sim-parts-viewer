@@ -1,0 +1,576 @@
+{
+ "id": "stage12",
+ "name": "CP-1 Multi-Engine Couplers & Thrust Structure",
+ "category": "stage",
+ "short_name": "multi_coupler",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "stage12_multi_coupler_bi_s_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_1",
+   "position": [
+    0.3125,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_2",
+   "position": [
+    -0.3125,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage12_multi_coupler_bi_s_xs": {
+   "vid": "stage12_multi_coupler_bi_s_xs",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "CP-1 Multi-Engine Couplers & Thrust Structure",
+   "primary": true,
+   "dims": {
+    "height_m": 0.4,
+    "engine_mounts": 2
+   },
+   "notes": "Thrust structure: 2 engine mount rings (node_bottom_N) on thrust beams under a thrust plate.",
+   "bbox_cad_zup": [
+    [
+     -0.631,
+     -0.631,
+     -0.2
+    ],
+    [
+     0.631,
+     0.631,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.262,
+    0.4,
+    1.262
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.3125,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.3125,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage12_multi_coupler_bi_s_xs.step",
+    "glb": "glb/stage12_multi_coupler_bi_s_xs.glb",
+    "preview": "renders/stage12_multi_coupler_bi_s_xs.png"
+   }
+  },
+  "stage12_multi_coupler_bi_m_s": {
+   "vid": "stage12_multi_coupler_bi_m_s",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CP-1 Multi-Engine Couplers & Thrust Structure",
+   "primary": false,
+   "dims": {
+    "height_m": 0.8,
+    "engine_mounts": 2
+   },
+   "notes": "Thrust structure: 2 engine mount rings (node_bottom_N) on thrust beams under a thrust plate.",
+   "bbox_cad_zup": [
+    [
+     -1.256,
+     -1.256,
+     -0.4
+    ],
+    [
+     1.256,
+     1.256,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    2.512,
+    0.8,
+    2.512
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.625,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.625,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage12_multi_coupler_bi_m_s.step",
+    "glb": "glb/stage12_multi_coupler_bi_m_s.glb",
+    "preview": "renders/stage12_multi_coupler_bi_m_s.png"
+   }
+  },
+  "stage12_multi_coupler_tri_l_s": {
+   "vid": "stage12_multi_coupler_tri_l_s",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CP-1 Multi-Engine Couplers & Thrust Structure",
+   "primary": false,
+   "dims": {
+    "height_m": 1.0,
+    "engine_mounts": 3
+   },
+   "notes": "Thrust structure: 3 engine mount rings (node_bottom_N) on thrust beams under a thrust plate.",
+   "bbox_cad_zup": [
+    [
+     -1.881,
+     -1.881,
+     -0.5
+    ],
+    [
+     1.881,
+     1.881,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.762,
+    1.0,
+    3.762
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      1.1,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.55,
+      -0.5,
+      -0.9526
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -0.55,
+      -0.5,
+      0.9526
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage12_multi_coupler_tri_l_s.step",
+    "glb": "glb/stage12_multi_coupler_tri_l_s.glb",
+    "preview": "renders/stage12_multi_coupler_tri_l_s.png"
+   }
+  },
+  "stage12_multi_coupler_quad_l_s": {
+   "vid": "stage12_multi_coupler_quad_l_s",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CP-1 Multi-Engine Couplers & Thrust Structure",
+   "primary": false,
+   "dims": {
+    "height_m": 1.0,
+    "engine_mounts": 4
+   },
+   "notes": "Thrust structure: 4 engine mount rings (node_bottom_N) on thrust beams under a thrust plate.",
+   "bbox_cad_zup": [
+    [
+     -1.881,
+     -1.881,
+     -0.5
+    ],
+    [
+     1.881,
+     1.881,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.762,
+    1.0,
+    3.762
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      1.2,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      0.0,
+      -0.5,
+      -1.2
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -1.2,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      0.0,
+      -0.5,
+      1.2
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage12_multi_coupler_quad_l_s.step",
+    "glb": "glb/stage12_multi_coupler_quad_l_s.glb",
+    "preview": "renders/stage12_multi_coupler_quad_l_s.png"
+   }
+  },
+  "stage12_multi_coupler_nine_l": {
+   "vid": "stage12_multi_coupler_nine_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CP-1 Multi-Engine Couplers & Thrust Structure",
+   "primary": false,
+   "dims": {
+    "height_m": 1.4,
+    "engine_mounts": 9
+   },
+   "notes": "Thrust structure: 9 engine mount rings (node_bottom_N) on thrust beams under a thrust plate.",
+   "bbox_cad_zup": [
+    [
+     -1.881,
+     -1.881,
+     -0.7
+    ],
+    [
+     1.881,
+     1.881,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    3.762,
+    1.4,
+    3.762
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.0,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      1.25,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      0.8839,
+      -0.7,
+      -0.8839
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      0.0,
+      -0.7,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_5",
+     "position": [
+      -0.8839,
+      -0.7,
+      -0.8839
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_6",
+     "position": [
+      -1.25,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_7",
+     "position": [
+      -0.8839,
+      -0.7,
+      0.8839
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_8",
+     "position": [
+      0.0,
+      -0.7,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_9",
+     "position": [
+      0.8839,
+      -0.7,
+      0.8839
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage12_multi_coupler_nine_l.step",
+    "glb": "glb/stage12_multi_coupler_nine_l.glb",
+    "preview": "renders/stage12_multi_coupler_nine_l.png"
+   }
+  }
+ }
+}

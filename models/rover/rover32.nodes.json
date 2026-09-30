@@ -1,0 +1,570 @@
+{
+ "id": "rover32",
+ "name": "TS-1 Dozer Blade & Scoop",
+ "category": "rover",
+ "short_name": "dozer_scoop",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover32_dozer_scoop_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.01,
+    -0.3025
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover32_dozer_scoop_s": {
+   "vid": "rover32_dozer_scoop_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": true,
+   "dims": {
+    "width_m": 1.0,
+    "depth_m": 0.6,
+    "height_m": 0.5,
+    "bucket_m3": 0.1
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.3025,
+     -0.19583876537773892
+    ],
+    [
+     0.5,
+     0.3025,
+     0.19583876537773892
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.392,
+    0.605
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.3025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover32_dozer_scoop_s.step",
+    "glb": "glb/rover32_dozer_scoop_s.glb",
+    "preview": "renders/rover32_dozer_scoop_s.png"
+   }
+  },
+  "rover32_dozer_scoop_s_lowered": {
+   "vid": "rover32_dozer_scoop_s_lowered",
+   "size": "S",
+   "state": "lowered",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 1.0,
+    "depth_m": 0.6,
+    "height_m": 0.5,
+    "bucket_m3": 0.1
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.3551348543057668,
+     -0.3498052147626293
+    ],
+    [
+     0.5,
+     0.3025,
+     0.15999999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.51,
+    0.658
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.3025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_s",
+   "files": {
+    "step": "step/rover32_dozer_scoop_s_lowered.step",
+    "glb": "glb/rover32_dozer_scoop_s_lowered.glb",
+    "preview": "renders/rover32_dozer_scoop_s_lowered.png"
+   }
+  },
+  "rover32_dozer_scoop_s_scoop": {
+   "vid": "rover32_dozer_scoop_s_scoop",
+   "size": "S",
+   "state": "scoop",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 1.0,
+    "depth_m": 0.6,
+    "height_m": 0.5,
+    "bucket_m3": 0.1
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.3599207847528389,
+     -0.1914016132058151
+    ],
+    [
+     0.5,
+     0.3025,
+     0.15999999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.351,
+    0.662
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.3025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_s",
+   "files": {
+    "step": "step/rover32_dozer_scoop_s_scoop.step",
+    "glb": "glb/rover32_dozer_scoop_s_scoop.glb",
+    "preview": "renders/rover32_dozer_scoop_s_scoop.png"
+   }
+  },
+  "rover32_dozer_scoop_m": {
+   "vid": "rover32_dozer_scoop_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "depth_m": 1.0,
+    "height_m": 0.7,
+    "bucket_m3": 0.3
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.5025,
+     -0.2701742715288345
+    ],
+    [
+     1.0,
+     0.5025,
+     0.2701742715288345
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.54,
+    1.005
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover32_dozer_scoop_m.step",
+    "glb": "glb/rover32_dozer_scoop_m.glb",
+    "preview": "renders/rover32_dozer_scoop_m.png"
+   }
+  },
+  "rover32_dozer_scoop_m_lowered": {
+   "vid": "rover32_dozer_scoop_m_lowered",
+   "size": "M",
+   "state": "lowered",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "depth_m": 1.0,
+    "height_m": 0.7,
+    "bucket_m3": 0.3
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.5651497944643924,
+     -0.49578123477747704
+    ],
+    [
+     1.0,
+     0.5025,
+     0.22
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.716,
+    1.068
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_m",
+   "files": {
+    "step": "step/rover32_dozer_scoop_m_lowered.step",
+    "glb": "glb/rover32_dozer_scoop_m_lowered.glb",
+    "preview": "renders/rover32_dozer_scoop_m_lowered.png"
+   }
+  },
+  "rover32_dozer_scoop_m_scoop": {
+   "vid": "rover32_dozer_scoop_m_scoop",
+   "size": "M",
+   "state": "scoop",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "depth_m": 1.0,
+    "height_m": 0.7,
+    "bucket_m3": 0.3
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.591601491953375,
+     -0.3223706104010781
+    ],
+    [
+     1.0,
+     0.5025,
+     0.22
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.542,
+    1.094
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_m",
+   "files": {
+    "step": "step/rover32_dozer_scoop_m_scoop.step",
+    "glb": "glb/rover32_dozer_scoop_m_scoop.glb",
+    "preview": "renders/rover32_dozer_scoop_m_scoop.png"
+   }
+  },
+  "rover32_dozer_scoop_l": {
+   "vid": "rover32_dozer_scoop_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 3.0,
+    "depth_m": 1.0,
+    "height_m": 0.9000000000000001,
+    "bucket_m3": 0.8
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -0.5025,
+     -0.34450977767993013
+    ],
+    [
+     1.5,
+     0.5025,
+     0.34450977767993013
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    0.689,
+    1.005
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover32_dozer_scoop_l.step",
+    "glb": "glb/rover32_dozer_scoop_l.glb",
+    "preview": "renders/rover32_dozer_scoop_l.png"
+   }
+  },
+  "rover32_dozer_scoop_l_lowered": {
+   "vid": "rover32_dozer_scoop_l_lowered",
+   "size": "L",
+   "state": "lowered",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 3.0,
+    "depth_m": 1.0,
+    "height_m": 0.9000000000000001,
+    "bucket_m3": 0.8
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -0.6077293995521404,
+     -0.6263781329382128
+    ],
+    [
+     1.5,
+     0.5025,
+     0.28
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    0.906,
+    1.11
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_l",
+   "files": {
+    "step": "step/rover32_dozer_scoop_l_lowered.step",
+    "glb": "glb/rover32_dozer_scoop_l_lowered.glb",
+    "preview": "renders/rover32_dozer_scoop_l_lowered.png"
+   }
+  },
+  "rover32_dozer_scoop_l_scoop": {
+   "vid": "rover32_dozer_scoop_l_scoop",
+   "size": "L",
+   "state": "scoop",
+   "default_state": false,
+   "label": "TS-1 Dozer Blade & Scoop",
+   "primary": false,
+   "dims": {
+    "width_m": 3.0,
+    "depth_m": 1.0,
+    "height_m": 0.9000000000000001,
+    "bucket_m3": 0.8
+   },
+   "notes": "Front-mounted dozer blade on push arms + lift rams; lowered pose drops the blade, scoop pose curls it 55 deg into a bucket.",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -0.617929376274462,
+     -0.4521498428967953
+    ],
+    [
+     1.5,
+     0.5025,
+     0.28
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    0.732,
+    1.12
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.01,
+      -0.5025
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_push",
+    "arm_rams",
+    "blade",
+    "blade_edge",
+    "blade_ribs"
+   ],
+   "default_of": "rover32_dozer_scoop_l",
+   "files": {
+    "step": "step/rover32_dozer_scoop_l_scoop.step",
+    "glb": "glb/rover32_dozer_scoop_l_scoop.glb",
+    "preview": "renders/rover32_dozer_scoop_l_scoop.png"
+   }
+  }
+ }
+}

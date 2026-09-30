@@ -1,0 +1,574 @@
+{
+ "id": "sci05",
+ "name": "TM-1 Survey Telescope Module",
+ "category": "sci",
+ "short_name": "survey_telescope",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "sci05_survey_telescope_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci05_survey_telescope_s": {
+   "vid": "sci05_survey_telescope_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TM-1 Survey Telescope Module",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.5,
+    "aperture_m": 0.5
+   },
+   "notes": "Survey telescope module: primary mirror, black baffle, aperture door (door) hinged at the rim (opens 100 deg). node_top on the door face (shared by the open pose).",
+   "bbox_cad_zup": [
+    [
+     -0.631,
+     -0.631,
+     -1.25
+    ],
+    [
+     0.675,
+     0.631,
+     1.25
+    ]
+   ],
+   "bbox_godot_size": [
+    1.306,
+    2.5,
+    1.262
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/sci05_survey_telescope_s.step",
+    "glb": "glb/sci05_survey_telescope_s.glb",
+    "preview": "renders/sci05_survey_telescope_s.png"
+   }
+  },
+  "sci05_survey_telescope_s_door_open": {
+   "vid": "sci05_survey_telescope_s_door_open",
+   "size": "S",
+   "state": "door_open",
+   "default_state": false,
+   "label": "TM-1 Survey Telescope Module",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.5,
+    "aperture_m": 0.5
+   },
+   "notes": "Survey telescope module: primary mirror, black baffle, aperture door (door) hinged at the rim (opens 100 deg). node_top on the door face (shared by the open pose).",
+   "bbox_cad_zup": [
+    [
+     -0.631,
+     -0.631,
+     -1.25
+    ],
+    [
+     0.675,
+     0.9159208035595784,
+     2.4060096912652598
+    ]
+   ],
+   "bbox_godot_size": [
+    1.306,
+    3.656,
+    1.547
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": "sci05_survey_telescope_s",
+   "files": {
+    "step": "step/sci05_survey_telescope_s_door_open.step",
+    "glb": "glb/sci05_survey_telescope_s_door_open.glb",
+    "preview": "renders/sci05_survey_telescope_s_door_open.png"
+   }
+  },
+  "sci05_survey_telescope_m": {
+   "vid": "sci05_survey_telescope_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TM-1 Survey Telescope Module",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 5.0,
+    "aperture_m": 1.3
+   },
+   "notes": "Survey telescope module: primary mirror, black baffle, aperture door (door) hinged at the rim (opens 100 deg). node_top on the door face (shared by the open pose).",
+   "bbox_cad_zup": [
+    [
+     -1.256,
+     -1.256,
+     -2.5
+    ],
+    [
+     1.35,
+     1.256,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.606,
+    5.0,
+    2.512
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/sci05_survey_telescope_m.step",
+    "glb": "glb/sci05_survey_telescope_m.glb",
+    "preview": "renders/sci05_survey_telescope_m.png"
+   }
+  },
+  "sci05_survey_telescope_m_door_open": {
+   "vid": "sci05_survey_telescope_m_door_open",
+   "size": "M",
+   "state": "door_open",
+   "default_state": false,
+   "label": "TM-1 Survey Telescope Module",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 5.0,
+    "aperture_m": 1.3
+   },
+   "notes": "Survey telescope module: primary mirror, black baffle, aperture door (door) hinged at the rim (opens 100 deg). node_top on the door face (shared by the open pose).",
+   "bbox_cad_zup": [
+    [
+     -1.256,
+     -1.256,
+     -2.5
+    ],
+    [
+     1.35,
+     1.8318416071191568,
+     4.8120193825305195
+    ]
+   ],
+   "bbox_godot_size": [
+    2.606,
+    7.312,
+    3.088
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door"
+   ],
+   "default_of": "sci05_survey_telescope_m",
+   "files": {
+    "step": "step/sci05_survey_telescope_m_door_open.step",
+    "glb": "glb/sci05_survey_telescope_m_door_open.glb",
+    "preview": "renders/sci05_survey_telescope_m_door_open.png"
+   }
+  }
+ }
+}

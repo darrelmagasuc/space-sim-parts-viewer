@@ -1,0 +1,190 @@
+{
+ "id": "prop17",
+ "name": "VN-1 Vernier Thruster",
+ "category": "prop",
+ "short_name": "vernier",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop17_vernier",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.0995,
+    0.1112,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop17_vernier": {
+   "vid": "prop17_vernier",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "VN-1 Vernier Thruster",
+   "primary": true,
+   "dims": {
+    "length_m": 0.45,
+    "exit_diameter_m": 0.14,
+    "width_m": 0.25,
+    "swivel_deg": 0
+   },
+   "notes": "Atlas/Soyuz-style vernier on a single-axis swivel (about the tangential axle, CAD Y): the nozzle_* meshes rotate +-45 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.0995,
+     -0.08,
+     -0.23879104458927902
+    ],
+    [
+     0.0995,
+     0.08,
+     0.238791044589279
+    ]
+   ],
+   "bbox_godot_size": [
+    0.199,
+    0.478,
+    0.16
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0995,
+      0.1112,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop17_vernier.step",
+    "glb": "glb/prop17_vernier.glb",
+    "preview": "renders/prop17_vernier.png"
+   }
+  },
+  "prop17_vernier_swivel_pos": {
+   "vid": "prop17_vernier_swivel_pos",
+   "size": "XS",
+   "state": "swivel_pos",
+   "default_state": false,
+   "label": "VN-1 Vernier Thruster",
+   "primary": false,
+   "dims": {
+    "length_m": 0.45,
+    "exit_diameter_m": 0.14,
+    "width_m": 0.25,
+    "swivel_deg": 45
+   },
+   "notes": "Atlas/Soyuz-style vernier on a single-axis swivel (about the tangential axle, CAD Y): the nozzle_* meshes rotate +-45 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.2743132752230962,
+     -0.08,
+     -0.1886043198123752
+    ],
+    [
+     0.13863708498984761,
+     0.08,
+     0.238791044589279
+    ]
+   ],
+   "bbox_godot_size": [
+    0.413,
+    0.427,
+    0.16
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0995,
+      0.1112,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "prop17_vernier",
+   "files": {
+    "step": "step/prop17_vernier_swivel_pos.step",
+    "glb": "glb/prop17_vernier_swivel_pos.glb",
+    "preview": "renders/prop17_vernier_swivel_pos.png"
+   }
+  },
+  "prop17_vernier_swivel_neg": {
+   "vid": "prop17_vernier_swivel_neg",
+   "size": "XS",
+   "state": "swivel_neg",
+   "default_state": false,
+   "label": "VN-1 Vernier Thruster",
+   "primary": false,
+   "dims": {
+    "length_m": 0.45,
+    "exit_diameter_m": 0.14,
+    "width_m": 0.25,
+    "swivel_deg": -45
+   },
+   "notes": "Atlas/Soyuz-style vernier on a single-axis swivel (about the tangential axle, CAD Y): the nozzle_* meshes rotate +-45 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.0995,
+     -0.08,
+     -0.18860431981237516
+    ],
+    [
+     0.32531327522309617,
+     0.08,
+     0.238791044589279
+    ]
+   ],
+   "bbox_godot_size": [
+    0.425,
+    0.427,
+    0.16
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0995,
+      0.1112,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "prop17_vernier",
+   "files": {
+    "step": "step/prop17_vernier_swivel_neg.step",
+    "glb": "glb/prop17_vernier_swivel_neg.glb",
+    "preview": "renders/prop17_vernier_swivel_neg.png"
+   }
+  }
+ }
+}

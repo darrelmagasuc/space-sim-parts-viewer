@@ -1,0 +1,173 @@
+{
+ "id": "prop23",
+ "name": "KS-1 'Star-48' Kick Motor",
+ "category": "prop",
+ "short_name": "kick_motor",
+ "sizes": [
+  "S"
+ ],
+ "primary": "prop23_kick_motor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop23_kick_motor": {
+   "vid": "prop23_kick_motor",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "KS-1 'Star-48' Kick Motor",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.24,
+    "length_m": 2.0,
+    "wet_t": 2.1
+   },
+   "notes": "Star-48 class solid kick motor.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.0
+    ],
+    [
+     0.625,
+     0.625,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.0,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop23_kick_motor.step",
+    "glb": "glb/prop23_kick_motor.glb",
+    "preview": "renders/prop23_kick_motor.png"
+   }
+  },
+  "prop23_kick_motor_spin": {
+   "vid": "prop23_kick_motor_spin",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "KS-1 'Star-48' Kick Motor",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.24,
+    "length_m": 2.4,
+    "spin_rpm": 60
+   },
+   "notes": "Star-48 class solid kick motor on a spin table with 4 spin-up rockets (spin-stabilised upper stage).",
+   "bbox_cad_zup": [
+    [
+     -0.655,
+     -0.655,
+     -1.2
+    ],
+    [
+     0.655,
+     0.655,
+     1.2
+    ]
+   ],
+   "bbox_godot_size": [
+    1.31,
+    2.4,
+    1.31
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop23_kick_motor_spin.step",
+    "glb": "glb/prop23_kick_motor_spin.glb",
+    "preview": "renders/prop23_kick_motor_spin.png"
+   }
+  }
+ }
+}

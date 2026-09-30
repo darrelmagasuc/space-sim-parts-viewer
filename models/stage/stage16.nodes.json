@@ -1,0 +1,306 @@
+{
+ "id": "stage16",
+ "name": "HS-D 'ADEPT' Deployable Heat Shield",
+ "category": "stage",
+ "short_name": "deployable_heat_shield",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "stage16_deployable_heat_shield_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage16_deployable_heat_shield_s": {
+   "vid": "stage16_deployable_heat_shield_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HS-D 'ADEPT' Deployable Heat Shield",
+   "primary": true,
+   "dims": {
+    "stowed_diameter_m": 0.625,
+    "deployed_diameter_m": 2.0,
+    "height_m": 0.6
+   },
+   "notes": "ADEPT-style stowed: ribs and carbon fabric folded like an umbrella around the payload ring.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.3
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.6,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage16_deployable_heat_shield_s.step",
+    "glb": "glb/stage16_deployable_heat_shield_s.glb",
+    "preview": "renders/stage16_deployable_heat_shield_s.png"
+   }
+  },
+  "stage16_deployable_heat_shield_s_deployed": {
+   "vid": "stage16_deployable_heat_shield_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HS-D 'ADEPT' Deployable Heat Shield",
+   "primary": false,
+   "dims": {
+    "stowed_diameter_m": 0.625,
+    "deployed_diameter_m": 2.0,
+    "height_m": 0.6
+   },
+   "notes": "ADEPT-style deployed 70-deg sphere-cone: 3D-woven carbon fabric on 12 ribs pushed out by struts.",
+   "bbox_cad_zup": [
+    [
+     -1.0047882820065595,
+     -1.0047882820065595,
+     -0.3
+    ],
+    [
+     1.0047882820065595,
+     1.0047882820065595,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    2.01,
+    0.6,
+    2.01
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "stage16_deployable_heat_shield_s",
+   "files": {
+    "step": "step/stage16_deployable_heat_shield_s_deployed.step",
+    "glb": "glb/stage16_deployable_heat_shield_s_deployed.glb",
+    "preview": "renders/stage16_deployable_heat_shield_s_deployed.png"
+   }
+  },
+  "stage16_deployable_heat_shield_m": {
+   "vid": "stage16_deployable_heat_shield_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HS-D 'ADEPT' Deployable Heat Shield",
+   "primary": false,
+   "dims": {
+    "stowed_diameter_m": 1.25,
+    "deployed_diameter_m": 6.0,
+    "height_m": 1.4
+   },
+   "notes": "ADEPT-style stowed: ribs and carbon fabric folded like an umbrella around the payload ring.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.7
+    ],
+    [
+     0.625,
+     0.625,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.4,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/stage16_deployable_heat_shield_m.step",
+    "glb": "glb/stage16_deployable_heat_shield_m.glb",
+    "preview": "renders/stage16_deployable_heat_shield_m.png"
+   }
+  },
+  "stage16_deployable_heat_shield_m_deployed": {
+   "vid": "stage16_deployable_heat_shield_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HS-D 'ADEPT' Deployable Heat Shield",
+   "primary": false,
+   "dims": {
+    "stowed_diameter_m": 1.25,
+    "deployed_diameter_m": 6.0,
+    "height_m": 1.4
+   },
+   "notes": "ADEPT-style deployed 70-deg sphere-cone: 3D-woven carbon fabric on 12 ribs pushed out by struts.",
+   "bbox_cad_zup": [
+    [
+     -3.007524443153165,
+     -3.007524443153165,
+     -0.7
+    ],
+    [
+     3.007524443153165,
+     3.007524443153165,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    6.015,
+    1.4,
+    6.015
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "stage16_deployable_heat_shield_m",
+   "files": {
+    "step": "step/stage16_deployable_heat_shield_m_deployed.step",
+    "glb": "glb/stage16_deployable_heat_shield_m_deployed.glb",
+    "preview": "renders/stage16_deployable_heat_shield_m_deployed.png"
+   }
+  }
+ }
+}

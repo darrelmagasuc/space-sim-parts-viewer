@@ -1,0 +1,1458 @@
+{
+ "id": "rover38",
+ "name": "TF-1 Trailer Frame",
+ "category": "rover",
+ "short_name": "trailer_frame",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover38_trailer_frame_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_grid_0_0",
+   "position": [
+    0.25,
+    0.1,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_1",
+   "position": [
+    -0.25,
+    0.1,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_0",
+   "position": [
+    0.25,
+    0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_1",
+   "position": [
+    -0.25,
+    0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_0",
+   "position": [
+    0.25,
+    0.1,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_1",
+   "position": [
+    -0.25,
+    0.1,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_0",
+   "position": [
+    0.25,
+    -0.1,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_1",
+   "position": [
+    -0.25,
+    -0.1,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_0",
+   "position": [
+    0.25,
+    -0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_1",
+   "position": [
+    -0.25,
+    -0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_0",
+   "position": [
+    0.25,
+    -0.1,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_1",
+   "position": [
+    -0.25,
+    -0.1,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_0",
+   "position": [
+    0.5,
+    0.0,
+    0.5
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_0",
+   "position": [
+    -0.5,
+    0.0,
+    0.5
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_1",
+   "position": [
+    0.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_1",
+   "position": [
+    -0.5,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_2",
+   "position": [
+    0.5,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_2",
+   "position": [
+    -0.5,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hitch",
+   "position": [
+    0.0,
+    0.0,
+    1.55
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover38_trailer_frame_s": {
+   "vid": "rover38_trailer_frame_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TF-1 Trailer Frame",
+   "primary": true,
+   "dims": {
+    "width_m": 1.0,
+    "length_m": 1.5,
+    "height_m": 0.2,
+    "tongue_m": 0.8,
+    "grid_cells": [
+     2,
+     3
+    ]
+   },
+   "notes": "Unpowered trailer frame (same rails + socket grid as rover13) with an A-frame tongue ending in a passive hitch socket (node_hitch).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -1.55,
+     -0.1
+    ],
+    [
+     0.5,
+     0.75,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.2,
+    2.3
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.25,
+      0.1,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      -0.25,
+      0.1,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.25,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      -0.25,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.25,
+      0.1,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      -0.25,
+      0.1,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.25,
+      -0.1,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      -0.25,
+      -0.1,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.25,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      -0.25,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      0.25,
+      -0.1,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      -0.25,
+      -0.1,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      0.5,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -0.5,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      0.5,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -0.5,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hitch",
+     "position": [
+      0.0,
+      0.0,
+      1.55
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover38_trailer_frame_s.step",
+    "glb": "glb/rover38_trailer_frame_s.glb",
+    "preview": "renders/rover38_trailer_frame_s.png"
+   }
+  },
+  "rover38_trailer_frame_m": {
+   "vid": "rover38_trailer_frame_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TF-1 Trailer Frame",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "length_m": 3.0,
+    "height_m": 0.25,
+    "tongue_m": 1.2,
+    "grid_cells": [
+     4,
+     6
+    ]
+   },
+   "notes": "Unpowered trailer frame (same rails + socket grid as rover13) with an A-frame tongue ending in a passive hitch socket (node_hitch).",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -2.7,
+     -0.125
+    ],
+    [
+     1.0,
+     1.5,
+     0.125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.25,
+    4.2
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.75,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.25,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      -0.25,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.75,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.25,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      -0.25,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.75,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.25,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      -0.25,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.75,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.75,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.25,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      -0.25,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.75,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_4_0",
+     "position": [
+      0.75,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_4_1",
+     "position": [
+      0.25,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_4_2",
+     "position": [
+      -0.25,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_4_3",
+     "position": [
+      -0.75,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_5_0",
+     "position": [
+      0.75,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_5_1",
+     "position": [
+      0.25,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_5_2",
+     "position": [
+      -0.25,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_5_3",
+     "position": [
+      -0.75,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.75,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      0.25,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_2",
+     "position": [
+      -0.25,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_3",
+     "position": [
+      -0.75,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.75,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      0.25,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_2",
+     "position": [
+      -0.25,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_3",
+     "position": [
+      -0.75,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      0.75,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      0.25,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_2",
+     "position": [
+      -0.25,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_3",
+     "position": [
+      -0.75,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_0",
+     "position": [
+      0.75,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_1",
+     "position": [
+      0.25,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_4_0",
+     "position": [
+      0.75,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_4_1",
+     "position": [
+      0.25,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_4_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_4_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_5_0",
+     "position": [
+      0.75,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_5_1",
+     "position": [
+      0.25,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_5_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_5_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      1.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -1.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      1.0,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -1.0,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      1.0,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -1.0,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_3",
+     "position": [
+      1.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_3",
+     "position": [
+      -1.0,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_4",
+     "position": [
+      1.0,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_4",
+     "position": [
+      -1.0,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_5",
+     "position": [
+      1.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_5",
+     "position": [
+      -1.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hitch",
+     "position": [
+      0.0,
+      0.0,
+      2.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover38_trailer_frame_m.step",
+    "glb": "glb/rover38_trailer_frame_m.glb",
+    "preview": "renders/rover38_trailer_frame_m.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,457 @@
+{
+ "id": "robo02",
+ "name": "PS-2 Linear Piston",
+ "category": "robo",
+ "short_name": "piston",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "robo02_piston_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "robo02_piston_xs": {
+   "vid": "robo02_piston_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-2 Linear Piston",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.15,
+    "length_m": 0.4,
+    "force_kn": 1
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 0.4 m, extended 1.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.075,
+     -0.075,
+     -0.2
+    ],
+    [
+     0.075,
+     0.075,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.15,
+    0.4,
+    0.15
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo02_piston_xs.step",
+    "glb": "glb/robo02_piston_xs.glb",
+    "preview": "renders/robo02_piston_xs.png"
+   }
+  },
+  "robo02_piston_xs_extended": {
+   "vid": "robo02_piston_xs_extended",
+   "size": "XS",
+   "state": "extended",
+   "default_state": false,
+   "label": "PS-2 Linear Piston",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.15,
+    "length_m": 1.0,
+    "force_kn": 1
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 0.4 m, extended 1.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.075,
+     -0.075,
+     -0.2
+    ],
+    [
+     0.075,
+     0.075,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.15,
+    1.0,
+    0.15
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": "robo02_piston_xs",
+   "files": {
+    "step": "step/robo02_piston_xs_extended.step",
+    "glb": "glb/robo02_piston_xs_extended.glb",
+    "preview": "renders/robo02_piston_xs_extended.png"
+   }
+  },
+  "robo02_piston_s": {
+   "vid": "robo02_piston_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-2 Linear Piston",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.3,
+    "length_m": 0.8,
+    "force_kn": 10
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 0.8 m, extended 2.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -0.4
+    ],
+    [
+     0.15,
+     0.15,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.8,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo02_piston_s.step",
+    "glb": "glb/robo02_piston_s.glb",
+    "preview": "renders/robo02_piston_s.png"
+   }
+  },
+  "robo02_piston_s_extended": {
+   "vid": "robo02_piston_s_extended",
+   "size": "S",
+   "state": "extended",
+   "default_state": false,
+   "label": "PS-2 Linear Piston",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.3,
+    "length_m": 2.0,
+    "force_kn": 10
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 0.8 m, extended 2.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -0.4
+    ],
+    [
+     0.15,
+     0.15,
+     1.6
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    2.0,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": "robo02_piston_s",
+   "files": {
+    "step": "step/robo02_piston_s_extended.step",
+    "glb": "glb/robo02_piston_s_extended.glb",
+    "preview": "renders/robo02_piston_s_extended.png"
+   }
+  },
+  "robo02_piston_m": {
+   "vid": "robo02_piston_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-2 Linear Piston",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.6,
+    "length_m": 1.6,
+    "force_kn": 100
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 1.6 m, extended 4.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3,
+     -0.8
+    ],
+    [
+     0.3,
+     0.3,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    1.6,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo02_piston_m.step",
+    "glb": "glb/robo02_piston_m.glb",
+    "preview": "renders/robo02_piston_m.png"
+   }
+  },
+  "robo02_piston_m_extended": {
+   "vid": "robo02_piston_m_extended",
+   "size": "M",
+   "state": "extended",
+   "default_state": false,
+   "label": "PS-2 Linear Piston",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.6,
+    "length_m": 4.0,
+    "force_kn": 100
+   },
+   "notes": "Linear actuator: rod (rod, rod_plate) extends along the stack axis; retracted length 1.6 m, extended 4.0 m.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3,
+     -0.8
+    ],
+    [
+     0.3,
+     0.3,
+     3.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    4.0,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_plate"
+   ],
+   "default_of": "robo02_piston_m",
+   "files": {
+    "step": "step/robo02_piston_m_extended.step",
+    "glb": "glb/robo02_piston_m_extended.glb",
+    "preview": "renders/robo02_piston_m_extended.png"
+   }
+  }
+ }
+}

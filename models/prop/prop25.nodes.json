@@ -1,0 +1,81 @@
+{
+ "id": "prop25",
+ "name": "CG-1 Cold-Gas Thruster Block",
+ "category": "prop",
+ "short_name": "cold_gas_block",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop25_cold_gas_block",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.0965,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop25_cold_gas_block": {
+   "vid": "prop25_cold_gas_block",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "CG-1 Cold-Gas Thruster Block",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.2 x 0.3 x 0.3",
+    "thrusters": 4,
+    "thrust_n_each": 20
+   },
+   "notes": "Nitrogen cold-gas block: 5 nozzles (4 tangential + 1 radial), solenoid valves; fed from the vehicle's gas tank.",
+   "bbox_cad_zup": [
+    [
+     -0.10353553390593274,
+     -0.15000000000000002,
+     -0.15000000000000002
+    ],
+    [
+     0.10353553390593274,
+     0.15000000000000002,
+     0.15000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.207,
+    0.3,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.0965,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop25_cold_gas_block.step",
+    "glb": "glb/prop25_cold_gas_block.glb",
+    "preview": "renders/prop25_cold_gas_block.png"
+   }
+  }
+ }
+}

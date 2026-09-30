@@ -49,6 +49,13 @@ Adapters exist for XS-S, S-M, M-L, L-XL, XL-XXL plus S-L and M-XL skips (catalog
   - `node_wheel_N`: wheel hub centre (spin pivot); direction = axle, pointing outboard
   - `node_hatch_N`: pressurised crew hatch / docking collar face (habs, pressurised rovers, airlocks)
   - `node_tool`: working tip of an arm or drill (deployed pose)
+  - `node_outboard` / `node_outboard_N`: outer mounting face of a radial chain module (suspension arm, rocker-bogie, steering, drive motor, pylon); direction +X; mates the next part's `node_attach` (rover kit, see below)
+  - `node_bottom_N`: extra bottom mounts beside `node_bottom` on couplers / tails (stage12, aero01); direction −Y
+  - `node_attach_2`: second end of a two-ended strut (struct02); points toward the second parent
+  - `node_front` / `node_rear`: frame end faces of ground vehicles (+Z / −Z Godot)
+  - `node_hitch`: tow coupling point (rover37, trailer tongues); direction outward
+  - `node_crew_N`: seated crew reference point on open rover seats (rover22)
+  - `node_grid_R_C` / `node_under_R_C`, `node_rail_l_K` / `node_rail_r_K` (+ `node_rail_l_c` / `node_rail_r_c`): rover kit deck grid and side rails (see "Rover kit grid")
 - **Direction** = outward unit normal of the mating face (points away from this part, toward the part that attaches there). `node_top` → +Y (Godot), `node_bottom` → −Y. `node_attach` points toward the parent: −X for radial parts; +Z for trailing-edge control surfaces (elevons, rudders), whose parent is the wing ahead of them.
 - Node data: per part, `<id>.nodes.json` in Godot Y-up metres. In the GLB, every node is also an empty `Node3D` with the same name, positioned there, with its **local +Y along the node direction**.
 
@@ -67,6 +74,17 @@ JSON schema (`<id>.nodes.json`):
                                    "default_state": true, "files": {"step": "...", "glb": "..."} } } }
 ```
 `state` is `flight` for the default pose of any part (including ground parts); other values name the pose (see Naming).
+
+### Rover kit grid (rover13–39, added 2026-09-30)
+Ground frame as above (up = Godot +Y, forward = +Z, vehicle left = +X; chassis origin = footprint centre at bbox mid-height).
+- **Deck grid, 0.5 m pitch:** frames (rover13), deck plates (rover14), trailers (rover38) and cargo floors (rover25) carry `node_grid_R_C` at the centre of every 0.5 × 0.5 m cell on the top face (direction +Y) and `node_under_R_C` on the underside (−Y). R = row counted from the front (R = 0 at +Z), C = column from vehicle left (C = 0 at +X): x = W/2 − (C + 0.5)·0.5, z = L/2 − (R + 0.5)·0.5, y = ±H/2. Deck parts have whole-cell footprints with `node_bottom` at the footprint centre (odd footprints snap to a grid node, even ones to the midpoint of the central nodes).
+- **Side rails:** `node_rail_l_K` (x = +W/2, direction +X) and `node_rail_r_K` (x = −W/2, −X) every 0.5 m, K = grid row. When the row count is even there is also a mid-length pair `node_rail_l_c` / `node_rail_r_c` at z = 0 so symmetric rocker-bogies / centre axles can mount.
+- **Wheel chain:** rail node → rover17 suspension arm (or rover16 rocker-bogie, `node_outboard_1..3`) → rover18 steering (optional) → rover19 hub motor → rover04 wheel; each `node_outboard` mates the next `node_attach` (−X). On the right rail the same parts mount rotated 180° about Y.
+- **Front / rear:** `node_front` (+Z) / `node_rear` (−Z) take bumpers, blades, hitches, the articulated joint (rover15) or another frame; parts mounted there use `node_attach` pointing toward the parent.
+- Every grid, rail and end node carries power, data and coolant (rover bus). No external battery packs: energy storage lives in the frame/bay parts.
+
+### Wings & fins (aero04 strakes, aero05 tail fins, aero06 rocket fins; same frame as jet08)
+Span along +X (root at the `node_attach` end), chord along CAD Z = Godot +Y (leading edge toward +Y, the flight direction), thickness along CAD Y. Aircraft fuselages (aero00–03) stack along Y like rockets; dorsal side = Godot +Z, belly = −Z (`node_side_2`).
 
 ## Naming
 - Part / file names: `<id>_<short_name>` in lower snake case, e.g. `tank00_kerolox`.
@@ -93,3 +111,25 @@ Model: correct silhouette, diameters and lengths, and the key recognisable featu
   - **Medium** = 2 × 2 × 1 units, 1.0 × 1.0 × 0.6 m, 0.6 m³ (catalogue 0.5 m³). Examples: power13, power05 L.
   - **Rack** = 2 × 2 × 3 units, 1.0 × 1.0 × 1.8 m, 1.8 m³, pressurised only (catalogue 1.5 m³). Example: power12.
   - Slot bays expose a grid of units; a Medium or Rack occupies the corresponding block. The catalogue §2.1 volumes will be updated to 0.15 / 0.6 / 1.8 m³ in the next doc revision.
+
+## Interiors (IVA)
+Blockout crew interiors for crewed command pods and cockpits live in `parts/interiors/` (details and per-part tables in its README). They never modify the exterior files.
+- **Files per exterior variant `<vid>`:** `glb/<vid>_interior.glb` (interior only), `glb/<vid>_combined.glb` (interior + ghosted exterior, alpha 0.22), `glb/<vid>_cutaway.glb` (exterior + pressure vessel sliced through the axis), `step/<vid>_interior.step` (Z-up, props as sub-assemblies). One `<id>_interior.nodes.json` per part (same schema as `<id>.nodes.json`, variants keyed `<vid>_interior`).
+- **Origin:** identical to the exterior GLB of the same variant, so the interior drops in at the exterior's transform with no offset. Open / droop variants reuse it too.
+- **Pressure vessel:** mesh `pressure_vessel`, inner skin offset inward by the wall thickness (recorded as `wall_t_m`), outer skin 5 mm inside the exterior; windows and hatch openings are cut through it.
+- **Crew nodes** (node empty basis: local +Y = direction, local +Z = crew "up", i.e. toward the head):
+  - `node_seat_N`: seat reference point (SRP, where the spine meets the seat pan); direction = the way the occupant faces, up = along the spine.
+  - `node_camera_N`: eye point, 0.75 m above the seat pan along the spine (+0.14 m forward); direction = view direction. For a Godot `Camera3D` child (which looks down its −Z), rotate it +90° about local X.
+  - `node_hatch_N`: centre of the **inner** face of the hatch opening; direction points outward (through the hatch), up = the door's up.
+  - N = 1… per part; seat N and camera N belong to the same crew member.
+- **Moving meshes** are separate, named nodes: `hatch_door_N`, `stick_N`, `throttle_N`, `yoke_N`, `hand_controller_N{l,r}`, `canopy_frame_inner` (listed under `moving_meshes` in the nodes JSON). `canopy_frame_inner` meshes follow the exterior canopy; the `_open` interior variants hold the open key-frame.
+- **Exterior meshes to hide** when an interior is loaded (the exterior's own seats/panels in cockpit00/01) are listed per variant in the README.
+- **Crew envelope for checks:** 1.8 m occupant: torso 0.48 m wide to 0.66 m above the pan, head 0.22 m wide to 0.93 m sitting height, plus thighs, shins and feet. Checks are written under `checks` in the nodes JSON.
+
+### Interior equipment props (`parts/interiors/props/`)
+- IDs `eq00`…`eqNN`, files `glb/<eqvid>.glb`, `step/<eqvid>.step`, `<eqvid>.nodes.json`, index `props.index.json`.
+- **Local frame:** origin = bounding-box centre; up = CAD +Z / Godot +Y; the front (service face) = CAD −Y / Godot +Z; the back (wall side) = CAD +Y / Godot −Z.
+- **Sizes** follow the slot grid (1 unit = 0.5 × 0.5 × 0.6 m): Small 1 unit, Medium 2 × 2 × 1, Rack 2 × 2 × 3. Smaller items are wall-mount sizes. The `slot` field names the class.
+- `node_mount`: centre of the mounting face, pointing away from the prop into the structure. For floor/slot items this is the bottom face (Godot −Y), and the same point is also published as `node_bottom` (per "Internal slots"). For wall items it is the back face (Godot −Z). Up: floor items = the front (+Z); wall items = +Y.
+- `node_port_N` (`kind`: `power`, `data`, `fluid`, `air`, `rf`) sit on the port faces, pointing outward.
+- **Placement in an interior:** each placed prop is a parent node `<eq>_<k>` (for example `eq08_1`), with the prop's sub-meshes as children named `<eq>_<k>_<sub>`. Swapping means replacing the children or re-instancing the prop GLB at that node's transform. The nodes JSON lists every instance with its position and basis.

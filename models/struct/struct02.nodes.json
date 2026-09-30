@@ -1,0 +1,107 @@
+{
+ "id": "struct02",
+ "name": "SR-1 Structural Strut",
+ "category": "struct",
+ "short_name": "strut",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "struct02_strut",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_attach_2",
+   "position": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "struct02_strut": {
+   "vid": "struct02_strut",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "SR-1 Structural Strut",
+   "primary": true,
+   "dims": {
+    "length_m": "0.3-6.0 (stretched)",
+    "diameter_m": 0.05,
+    "break_kn": 50
+   },
+   "notes": "EAS strut shown at 1 m (in game the tube stretches 0.3-6 m between node_attach and node_attach_2); ball-jointed end pads.",
+   "bbox_cad_zup": [
+    [
+     -0.05,
+     -0.5,
+     -0.05
+    ],
+    [
+     0.05,
+     0.5,
+     0.05
+    ]
+   ],
+   "bbox_godot_size": [
+    0.1,
+    0.1,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_attach_2",
+     "position": [
+      0.0,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct02_strut.step",
+    "glb": "glb/struct02_strut.glb",
+    "preview": "renders/struct02_strut.png"
+   }
+  }
+ }
+}

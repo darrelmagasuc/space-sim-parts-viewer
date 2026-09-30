@@ -1,0 +1,324 @@
+{
+ "id": "rover19",
+ "name": "DM-1 Hub Drive Motor",
+ "category": "rover",
+ "short_name": "hub_drive_motor",
+ "sizes": [
+  "XS",
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover19_hub_drive_motor_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.025,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.025,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover19_hub_drive_motor_xs": {
+   "vid": "rover19_hub_drive_motor_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "DM-1 Hub Drive Motor",
+   "primary": true,
+   "dims": {
+    "length_m": 0.05,
+    "diameter_m": 0.06,
+    "peak_kw": 0.005,
+    "torque_nm": 1,
+    "top_speed_ms": 0.01
+   },
+   "notes": "In-hub motor: square mount plate, finned stator, rotating hub (wheel_hub) whose face takes a rover04 wheel node_attach.",
+   "bbox_cad_zup": [
+    [
+     -0.025,
+     -0.03,
+     -0.03003709327776897
+    ],
+    [
+     0.025,
+     0.03,
+     0.030037093277768965
+    ]
+   ],
+   "bbox_godot_size": [
+    0.05,
+    0.06,
+    0.06
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.025,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.025,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_hub"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover19_hub_drive_motor_xs.step",
+    "glb": "glb/rover19_hub_drive_motor_xs.glb",
+    "preview": "renders/rover19_hub_drive_motor_xs.png"
+   }
+  },
+  "rover19_hub_drive_motor_s": {
+   "vid": "rover19_hub_drive_motor_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "DM-1 Hub Drive Motor",
+   "primary": false,
+   "dims": {
+    "length_m": 0.12,
+    "diameter_m": 0.18,
+    "peak_kw": 0.1,
+    "torque_nm": 30,
+    "top_speed_ms": 1.0
+   },
+   "notes": "In-hub motor: square mount plate, finned stator, rotating hub (wheel_hub) whose face takes a rover04 wheel node_attach.",
+   "bbox_cad_zup": [
+    [
+     -0.06,
+     -0.09,
+     -0.09
+    ],
+    [
+     0.06,
+     0.09,
+     0.09
+    ]
+   ],
+   "bbox_godot_size": [
+    0.12,
+    0.18,
+    0.18
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_hub"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover19_hub_drive_motor_s.step",
+    "glb": "glb/rover19_hub_drive_motor_s.glb",
+    "preview": "renders/rover19_hub_drive_motor_s.png"
+   }
+  },
+  "rover19_hub_drive_motor_m": {
+   "vid": "rover19_hub_drive_motor_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "DM-1 Hub Drive Motor",
+   "primary": false,
+   "dims": {
+    "length_m": 0.18,
+    "diameter_m": 0.3,
+    "peak_kw": 0.5,
+    "torque_nm": 250,
+    "top_speed_ms": 4.0
+   },
+   "notes": "In-hub motor: square mount plate, finned stator, rotating hub (wheel_hub) whose face takes a rover04 wheel node_attach.",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.15,
+     -0.15
+    ],
+    [
+     0.09,
+     0.15,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.3,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.09,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_hub"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover19_hub_drive_motor_m.step",
+    "glb": "glb/rover19_hub_drive_motor_m.glb",
+    "preview": "renders/rover19_hub_drive_motor_m.png"
+   }
+  },
+  "rover19_hub_drive_motor_l": {
+   "vid": "rover19_hub_drive_motor_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "DM-1 Hub Drive Motor",
+   "primary": false,
+   "dims": {
+    "length_m": 0.25,
+    "diameter_m": 0.45,
+    "peak_kw": 2.5,
+    "torque_nm": 1500,
+    "top_speed_ms": 5.0
+   },
+   "notes": "In-hub motor: square mount plate, finned stator, rotating hub (wheel_hub) whose face takes a rover04 wheel node_attach.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.225,
+     -0.225
+    ],
+    [
+     0.125,
+     0.225,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.45,
+    0.45
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_hub"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover19_hub_drive_motor_l.step",
+    "glb": "glb/rover19_hub_drive_motor_l.glb",
+    "preview": "renders/rover19_hub_drive_motor_l.png"
+   }
+  }
+ }
+}

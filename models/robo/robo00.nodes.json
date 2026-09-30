@@ -1,0 +1,457 @@
+{
+ "id": "robo00",
+ "name": "HG-1 Powered Hinge",
+ "category": "robo",
+ "short_name": "hinge",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "robo00_hinge_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "robo00_hinge_xs": {
+   "vid": "robo00_hinge_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "HG-1 Powered Hinge",
+   "primary": true,
+   "dims": {
+    "block_m": 0.2,
+    "angle_deg": 0,
+    "torque_nm": 50
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.1,
+     -0.10400000000000001,
+     -0.1
+    ],
+    [
+     0.1,
+     0.10400000000000001,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.2,
+    0.2,
+    0.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo00_hinge_xs.step",
+    "glb": "glb/robo00_hinge_xs.glb",
+    "preview": "renders/robo00_hinge_xs.png"
+   }
+  },
+  "robo00_hinge_xs_bent": {
+   "vid": "robo00_hinge_xs_bent",
+   "size": "XS",
+   "state": "bent",
+   "default_state": false,
+   "label": "HG-1 Powered Hinge",
+   "primary": false,
+   "dims": {
+    "block_m": 0.2,
+    "angle_deg": 90,
+    "torque_nm": 50
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.1,
+     -0.10400000000000001,
+     -0.1
+    ],
+    [
+     0.10000000000000003,
+     0.10400000000000001,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.2,
+    0.2,
+    0.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.1,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": "robo00_hinge_xs",
+   "files": {
+    "step": "step/robo00_hinge_xs_bent.step",
+    "glb": "glb/robo00_hinge_xs_bent.glb",
+    "preview": "renders/robo00_hinge_xs_bent.png"
+   }
+  },
+  "robo00_hinge_s": {
+   "vid": "robo00_hinge_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "HG-1 Powered Hinge",
+   "primary": false,
+   "dims": {
+    "block_m": 0.4,
+    "angle_deg": 0,
+    "torque_nm": 500
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.20400000000000001,
+     -0.2
+    ],
+    [
+     0.2,
+     0.20400000000000001,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    0.4,
+    0.408
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo00_hinge_s.step",
+    "glb": "glb/robo00_hinge_s.glb",
+    "preview": "renders/robo00_hinge_s.png"
+   }
+  },
+  "robo00_hinge_s_bent": {
+   "vid": "robo00_hinge_s_bent",
+   "size": "S",
+   "state": "bent",
+   "default_state": false,
+   "label": "HG-1 Powered Hinge",
+   "primary": false,
+   "dims": {
+    "block_m": 0.4,
+    "angle_deg": 90,
+    "torque_nm": 500
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.20400000000000001,
+     -0.2
+    ],
+    [
+     0.20000000000000007,
+     0.20400000000000001,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    0.4,
+    0.408
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.2,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": "robo00_hinge_s",
+   "files": {
+    "step": "step/robo00_hinge_s_bent.step",
+    "glb": "glb/robo00_hinge_s_bent.glb",
+    "preview": "renders/robo00_hinge_s_bent.png"
+   }
+  },
+  "robo00_hinge_m": {
+   "vid": "robo00_hinge_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "HG-1 Powered Hinge",
+   "primary": false,
+   "dims": {
+    "block_m": 0.8,
+    "angle_deg": 0,
+    "torque_nm": 5000
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.404,
+     -0.4
+    ],
+    [
+     0.4,
+     0.404,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.8,
+    0.8,
+    0.808
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo00_hinge_m.step",
+    "glb": "glb/robo00_hinge_m.glb",
+    "preview": "renders/robo00_hinge_m.png"
+   }
+  },
+  "robo00_hinge_m_bent": {
+   "vid": "robo00_hinge_m_bent",
+   "size": "M",
+   "state": "bent",
+   "default_state": false,
+   "label": "HG-1 Powered Hinge",
+   "primary": false,
+   "dims": {
+    "block_m": 0.8,
+    "angle_deg": 90,
+    "torque_nm": 5000
+   },
+   "notes": "Powered hinge: rotation axis CAD Y through the block centre; the upper block (half_b_*) and node_top swing up to +-90 deg.",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.404,
+     -0.4
+    ],
+    [
+     0.40000000000000013,
+     0.404,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.8,
+    0.8,
+    0.808
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.4,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_block",
+    "half_b_foil"
+   ],
+   "default_of": "robo00_hinge_m",
+   "files": {
+    "step": "step/robo00_hinge_m_bent.step",
+    "glb": "glb/robo00_hinge_m_bent.glb",
+    "preview": "renders/robo00_hinge_m_bent.png"
+   }
+  }
+ }
+}

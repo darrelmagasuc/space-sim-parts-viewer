@@ -1,0 +1,328 @@
+{
+ "id": "aero01",
+ "name": "FA-2 Mk2 Adapters & Tail",
+ "category": "aero",
+ "short_name": "mk2_adapter",
+ "sizes": [
+  "M (Mk2)",
+  "S",
+  "M"
+ ],
+ "primary": "aero01_mk2_adapter_mk2_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero01_mk2_adapter_mk2_m": {
+   "vid": "aero01_mk2_adapter_mk2_m",
+   "size": "Mk2-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FA-2 Mk2 Adapters & Tail",
+   "primary": true,
+   "dims": {
+    "length_m": 2.0,
+    "bottom_diameter_m": 2.5
+   },
+   "notes": "Lofted Mk2 (top) to 2.5 m round (bottom) adapter.",
+   "bbox_cad_zup": [
+    [
+     -1.255,
+     -1.255,
+     -1.0000001000000236
+    ],
+    [
+     1.255,
+     1.255,
+     1.0000001000000165
+    ]
+   ],
+   "bbox_godot_size": [
+    2.51,
+    2.0,
+    2.51
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero01_mk2_adapter_mk2_m.step",
+    "glb": "glb/aero01_mk2_adapter_mk2_m.glb",
+    "preview": "renders/aero01_mk2_adapter_mk2_m.png"
+   }
+  },
+  "aero01_mk2_adapter_mk2_s": {
+   "vid": "aero01_mk2_adapter_mk2_s",
+   "size": "Mk2-S",
+   "state": "flight",
+   "default_state": true,
+   "label": "FA-2 Mk2 Adapters & Tail",
+   "primary": false,
+   "dims": {
+    "length_m": 1.8,
+    "bottom_diameter_m": 1.25
+   },
+   "notes": "Lofted Mk2 (top) to 1.25 m round (bottom) adapter.",
+   "bbox_cad_zup": [
+    [
+     -1.2507886502449317,
+     -0.7000001,
+     -0.900000100000005
+    ],
+    [
+     1.2501171859383913,
+     0.63,
+     0.9000001000000042
+    ]
+   ],
+   "bbox_godot_size": [
+    2.501,
+    1.8,
+    1.33
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero01_mk2_adapter_mk2_s.step",
+    "glb": "glb/aero01_mk2_adapter_mk2_s.glb",
+    "preview": "renders/aero01_mk2_adapter_mk2_s.png"
+   }
+  },
+  "aero01_mk2_adapter_mk2_bi_s": {
+   "vid": "aero01_mk2_adapter_mk2_bi_s",
+   "size": "Mk2-2xS",
+   "state": "flight",
+   "default_state": true,
+   "label": "FA-2 Mk2 Adapters & Tail",
+   "primary": false,
+   "dims": {
+    "length_m": 1.25
+   },
+   "notes": "Mk2 to 2 x 1.25 m bicoupler (two S engine mounts).",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -0.6250000000000001
+    ],
+    [
+     1.26,
+     0.605,
+     0.6250000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.25,
+    1.315
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.625,
+      -0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.625,
+      -0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero01_mk2_adapter_mk2_bi_s.step",
+    "glb": "glb/aero01_mk2_adapter_mk2_bi_s.glb",
+    "preview": "renders/aero01_mk2_adapter_mk2_bi_s.png"
+   }
+  },
+  "aero01_mk2_adapter_mk2_tail_oms": {
+   "vid": "aero01_mk2_adapter_mk2_tail_oms",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "FA-2 Mk2 Adapters & Tail",
+   "primary": false,
+   "dims": {
+    "length_m": 3.0,
+    "engine_mounts": 2
+   },
+   "notes": "Mk2 tail with twin OMS pods (engine mounts node_bottom_1/2 on the pod ends), black body flap.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -0.71,
+     -1.525
+    ],
+    [
+     1.26,
+     0.51,
+     1.525
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    3.05,
+    1.22
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.8,
+      -1.525,
+      0.35
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.8,
+      -1.525,
+      0.35
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero01_mk2_adapter_mk2_tail_oms.step",
+    "glb": "glb/aero01_mk2_adapter_mk2_tail_oms.glb",
+    "preview": "renders/aero01_mk2_adapter_mk2_tail_oms.png"
+   }
+  }
+ }
+}

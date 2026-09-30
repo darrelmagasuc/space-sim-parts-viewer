@@ -1,0 +1,189 @@
+{
+ "id": "aero06",
+ "name": "FN-1 Rocket Stabiliser Fins",
+ "category": "aero",
+ "short_name": "rocket_fin",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "aero06_rocket_fin_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "aero06_rocket_fin_xs": {
+   "vid": "aero06_rocket_fin_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "FN-1 Rocket Stabiliser Fins",
+   "primary": true,
+   "dims": {
+    "span_m": 0.3,
+    "root_chord_m": 0.5,
+    "thickness_m": 0.02
+   },
+   "notes": "Clipped-delta rocket stabiliser fin (passive), leading edge +Z (toward the nose).",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.03,
+     -0.25
+    ],
+    [
+     0.15,
+     0.03,
+     0.25
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.5,
+    0.06
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero06_rocket_fin_xs.step",
+    "glb": "glb/aero06_rocket_fin_xs.glb",
+    "preview": "renders/aero06_rocket_fin_xs.png"
+   }
+  },
+  "aero06_rocket_fin_s": {
+   "vid": "aero06_rocket_fin_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "FN-1 Rocket Stabiliser Fins",
+   "primary": false,
+   "dims": {
+    "span_m": 0.6,
+    "root_chord_m": 1.0,
+    "thickness_m": 0.04
+   },
+   "notes": "Clipped-delta rocket stabiliser fin (passive), leading edge +Z (toward the nose).",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.06,
+     -0.5
+    ],
+    [
+     0.3,
+     0.06,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    1.0,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero06_rocket_fin_s.step",
+    "glb": "glb/aero06_rocket_fin_s.glb",
+    "preview": "renders/aero06_rocket_fin_s.png"
+   }
+  },
+  "aero06_rocket_fin_m": {
+   "vid": "aero06_rocket_fin_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "FN-1 Rocket Stabiliser Fins",
+   "primary": false,
+   "dims": {
+    "span_m": 1.2,
+    "root_chord_m": 2.0,
+    "thickness_m": 0.08
+   },
+   "notes": "Clipped-delta rocket stabiliser fin (passive), leading edge +Z (toward the nose).",
+   "bbox_cad_zup": [
+    [
+     -0.6,
+     -0.12,
+     -1.0
+    ],
+    [
+     0.6,
+     0.12,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    2.0,
+    0.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.6,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/aero06_rocket_fin_m.step",
+    "glb": "glb/aero06_rocket_fin_m.glb",
+    "preview": "renders/aero06_rocket_fin_m.png"
+   }
+  }
+ }
+}

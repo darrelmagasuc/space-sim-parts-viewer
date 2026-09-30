@@ -1,0 +1,244 @@
+{
+ "id": "rover34",
+ "name": "BP-1 Bumper / Push Bar",
+ "category": "rover",
+ "short_name": "bumper",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "rover34_bumper_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.175,
+    0.1
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover34_bumper_s": {
+   "vid": "rover34_bumper_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "BP-1 Bumper / Push Bar",
+   "primary": true,
+   "dims": {
+    "width_m": 1.0,
+    "depth_m": 0.3,
+    "height_m": 0.35,
+    "absorb_ms": 3
+   },
+   "notes": "Push bar + crush boxes on a mount plate (node_attach, faces the chassis end hardpoint); light/camera mount on the top tube (node_top).",
+   "bbox_cad_zup": [
+    [
+     -0.49615384615384617,
+     -0.15,
+     -0.175
+    ],
+    [
+     0.49615384615384617,
+     0.15,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    0.992,
+    0.35,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.175,
+      0.1
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover34_bumper_s.step",
+    "glb": "glb/rover34_bumper_s.glb",
+    "preview": "renders/rover34_bumper_s.png"
+   }
+  },
+  "rover34_bumper_m": {
+   "vid": "rover34_bumper_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "BP-1 Bumper / Push Bar",
+   "primary": false,
+   "dims": {
+    "width_m": 2.0,
+    "depth_m": 0.3,
+    "height_m": 0.35,
+    "absorb_ms": 3
+   },
+   "notes": "Push bar + crush boxes on a mount plate (node_attach, faces the chassis end hardpoint); light/camera mount on the top tube (node_top).",
+   "bbox_cad_zup": [
+    [
+     -0.9961538461538462,
+     -0.15,
+     -0.175
+    ],
+    [
+     0.9961538461538462,
+     0.15,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    1.992,
+    0.35,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.175,
+      0.1
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover34_bumper_m.step",
+    "glb": "glb/rover34_bumper_m.glb",
+    "preview": "renders/rover34_bumper_m.png"
+   }
+  },
+  "rover34_bumper_l": {
+   "vid": "rover34_bumper_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "BP-1 Bumper / Push Bar",
+   "primary": false,
+   "dims": {
+    "width_m": 3.0,
+    "depth_m": 0.3,
+    "height_m": 0.35,
+    "absorb_ms": 3
+   },
+   "notes": "Push bar + crush boxes on a mount plate (node_attach, faces the chassis end hardpoint); light/camera mount on the top tube (node_top).",
+   "bbox_cad_zup": [
+    [
+     -1.4961538461538462,
+     -0.15,
+     -0.175
+    ],
+    [
+     1.4961538461538462,
+     0.15,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    2.992,
+    0.35,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.175,
+      0.1
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover34_bumper_l.step",
+    "glb": "glb/rover34_bumper_l.glb",
+    "preview": "renders/rover34_bumper_l.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,247 @@
+{
+ "id": "stage14",
+ "name": "PS-1 Clamp-Band Payload Separator",
+ "category": "stage",
+ "short_name": "clamp_band_separator",
+ "sizes": [
+  "XS",
+  "S",
+  "M"
+ ],
+ "primary": "stage14_clamp_band_separator_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.05,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.05,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "stage14_clamp_band_separator_xs": {
+   "vid": "stage14_clamp_band_separator_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-1 Clamp-Band Payload Separator",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.1,
+    "sep_velocity_ms": 0.6
+   },
+   "notes": "Marman clamp-band separation system: V-band with two bolt catchers/cutters, 4 separation springs; upper ring (half_b_ring) leaves with the payload.",
+   "bbox_cad_zup": [
+    [
+     -0.3245,
+     -0.37250000000000005,
+     -0.05
+    ],
+    [
+     0.3245,
+     0.37250000000000005,
+     0.05
+    ]
+   ],
+   "bbox_godot_size": [
+    0.649,
+    0.1,
+    0.745
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.05,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.05,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_ring"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage14_clamp_band_separator_xs.step",
+    "glb": "glb/stage14_clamp_band_separator_xs.glb",
+    "preview": "renders/stage14_clamp_band_separator_xs.png"
+   }
+  },
+  "stage14_clamp_band_separator_s": {
+   "vid": "stage14_clamp_band_separator_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-1 Clamp-Band Payload Separator",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.15,
+    "sep_velocity_ms": 0.6
+   },
+   "notes": "Marman clamp-band separation system: V-band with two bolt catchers/cutters, 4 separation springs; upper ring (half_b_ring) leaves with the payload.",
+   "bbox_cad_zup": [
+    [
+     -0.637,
+     -0.685,
+     -0.075
+    ],
+    [
+     0.637,
+     0.685,
+     0.075
+    ]
+   ],
+   "bbox_godot_size": [
+    1.274,
+    0.15,
+    1.37
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_ring"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage14_clamp_band_separator_s.step",
+    "glb": "glb/stage14_clamp_band_separator_s.glb",
+    "preview": "renders/stage14_clamp_band_separator_s.png"
+   }
+  },
+  "stage14_clamp_band_separator_m": {
+   "vid": "stage14_clamp_band_separator_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PS-1 Clamp-Band Payload Separator",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.2,
+    "sep_velocity_ms": 0.6
+   },
+   "notes": "Marman clamp-band separation system: V-band with two bolt catchers/cutters, 4 separation springs; upper ring (half_b_ring) leaves with the payload.",
+   "bbox_cad_zup": [
+    [
+     -1.262,
+     -1.31,
+     -0.1
+    ],
+    [
+     1.262,
+     1.31,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    2.524,
+    0.2,
+    2.62
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_ring"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/stage14_clamp_band_separator_m.step",
+    "glb": "glb/stage14_clamp_band_separator_m.glb",
+    "preview": "renders/stage14_clamp_band_separator_m.png"
+   }
+  }
+ }
+}

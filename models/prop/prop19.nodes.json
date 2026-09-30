@@ -1,0 +1,174 @@
+{
+ "id": "prop19",
+ "name": "LE-12 'LMDE' Deep-Throttle Descent Engine",
+ "category": "prop",
+ "short_name": "descent_engine",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "prop19_descent_engine_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.561,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.539,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop19_descent_engine_s": {
+   "vid": "prop19_descent_engine_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-12 'LMDE' Deep-Throttle Descent Engine",
+   "primary": true,
+   "dims": {
+    "length_m": 1.1,
+    "exit_diameter_m": 0.7,
+    "thrust_kn_vac": 15
+   },
+   "notes": "LMDE-style deep-throttle pressure-fed engine: pintle injector, gimbal ring, gold-foil thermal cover, ablative bell.",
+   "bbox_cad_zup": [
+    [
+     -0.35874999999999996,
+     -0.35874999999999996,
+     -0.561
+    ],
+    [
+     0.35874999999999996,
+     0.35874999999999996,
+     0.561
+    ]
+   ],
+   "bbox_godot_size": [
+    0.717,
+    1.122,
+    0.717
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.561,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.539,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop19_descent_engine_s.step",
+    "glb": "glb/prop19_descent_engine_s.glb",
+    "preview": "renders/prop19_descent_engine_s.png"
+   }
+  },
+  "prop19_descent_engine_m": {
+   "vid": "prop19_descent_engine_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-12 'LMDE' Deep-Throttle Descent Engine",
+   "primary": false,
+   "dims": {
+    "length_m": 2.3,
+    "exit_diameter_m": 1.5,
+    "thrust_kn_vac": 45
+   },
+   "notes": "LMDE-style deep-throttle pressure-fed engine: pintle injector, gimbal ring, gold-foil thermal cover, ablative bell.",
+   "bbox_cad_zup": [
+    [
+     -0.76875,
+     -0.76875,
+     -1.1729999999999998
+    ],
+    [
+     0.76875,
+     0.76875,
+     1.1729999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    1.538,
+    2.346,
+    1.538
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.173,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.127,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop19_descent_engine_m.step",
+    "glb": "glb/prop19_descent_engine_m.glb",
+    "preview": "renders/prop19_descent_engine_m.png"
+   }
+  }
+ }
+}

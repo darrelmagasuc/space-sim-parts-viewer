@@ -1,0 +1,140 @@
+{
+ "id": "prop22",
+ "name": "UM-1 Ullage / Retro Motor Pack",
+ "category": "prop",
+ "short_name": "ullage_motor_pack",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "prop22_ullage_motor_pack_ullage",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.125,
+    0.0057,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop22_ullage_motor_pack_ullage": {
+   "vid": "prop22_ullage_motor_pack_ullage",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "UM-1 Ullage / Retro Motor Pack",
+   "primary": true,
+   "dims": {
+    "height_m": 0.95,
+    "width_m": 0.35,
+    "depth_m": 0.25,
+    "motors": 3,
+    "thrust_kn_each": 10,
+    "cant": "aft"
+   },
+   "notes": "Ullage pack: 3 solids firing aft, canted 15 deg outward.",
+   "bbox_cad_zup": [
+    [
+     -0.12500000000000003,
+     -0.179,
+     -0.41423378482216777
+    ],
+    [
+     0.125,
+     0.179,
+     0.41423378482216777
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.828,
+    0.358
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0057,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop22_ullage_motor_pack_ullage.step",
+    "glb": "glb/prop22_ullage_motor_pack_ullage.glb",
+    "preview": "renders/prop22_ullage_motor_pack_ullage.png"
+   }
+  },
+  "prop22_ullage_motor_pack_retro": {
+   "vid": "prop22_ullage_motor_pack_retro",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "UM-1 Ullage / Retro Motor Pack",
+   "primary": false,
+   "dims": {
+    "height_m": 0.95,
+    "width_m": 0.35,
+    "depth_m": 0.25,
+    "motors": 3,
+    "thrust_kn_each": 10,
+    "cant": "forward 30 deg"
+   },
+   "notes": "Retro pack: 3 solids canted 30 deg forward (outward).",
+   "bbox_cad_zup": [
+    [
+     -0.12500000000000003,
+     -0.179,
+     -0.41556088913245537
+    ],
+    [
+     0.125,
+     0.179,
+     0.41556088913245537
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.831,
+    0.358
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      -0.0071,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop22_ullage_motor_pack_retro.step",
+    "glb": "glb/prop22_ullage_motor_pack_retro.glb",
+    "preview": "renders/prop22_ullage_motor_pack_retro.png"
+   }
+  }
+ }
+}

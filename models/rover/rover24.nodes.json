@@ -1,0 +1,309 @@
+{
+ "id": "rover24",
+ "name": "CB-P Pressurised Rover Cab",
+ "category": "rover",
+ "short_name": "pressurised_cab",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "rover24_pressurised_cab_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.5,
+    0.0,
+    -1.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -0.5,
+    0.0,
+    -1.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_hatch_3",
+   "position": [
+    0.0,
+    1.15,
+    -0.9
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover24_pressurised_cab_m": {
+   "vid": "rover24_pressurised_cab_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CB-P Pressurised Rover Cab",
+   "primary": true,
+   "dims": {
+    "footprint_m": "2.5 x 3.0",
+    "height_m": 2.3,
+    "footprint_cells": [
+     5,
+     6
+    ],
+    "crew": 2,
+    "volume_m3": 10,
+    "slots": "4 Small + 1 Medium",
+    "suitports": 2
+   },
+   "notes": "SEV-style pressurised cab: sloped windscreen nose, two rear suitports (suit backpacks = hatches, node_hatch_1/2), docking hatch on the roof (node_hatch_3), mast plate (node_top).",
+   "bbox_cad_zup": [
+    [
+     -1.245,
+     -1.4163103311696967,
+     -1.15
+    ],
+    [
+     1.245,
+     1.5,
+     1.15
+    ]
+   ],
+   "bbox_godot_size": [
+    2.49,
+    2.3,
+    2.916
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.5,
+      0.0,
+      -1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -0.5,
+      0.0,
+      -1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_3",
+     "position": [
+      0.0,
+      1.15,
+      -0.9
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover24_pressurised_cab_m.step",
+    "glb": "glb/rover24_pressurised_cab_m.glb",
+    "preview": "renders/rover24_pressurised_cab_m.png"
+   }
+  },
+  "rover24_pressurised_cab_l": {
+   "vid": "rover24_pressurised_cab_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CB-P Pressurised Rover Cab",
+   "primary": false,
+   "dims": {
+    "footprint_m": "3.0 x 4.5",
+    "height_m": 2.6,
+    "footprint_cells": [
+     6,
+     9
+    ],
+    "crew": 4,
+    "volume_m3": 22,
+    "slots": "8 Small + 2 Medium + 1 Rack",
+    "suitports": 2
+   },
+   "notes": "SEV-style pressurised cab: sloped windscreen nose, two rear suitports (suit backpacks = hatches, node_hatch_1/2), docking hatch on the roof (node_hatch_3), mast plate (node_top).",
+   "bbox_cad_zup": [
+    [
+     -1.495,
+     -2.1671744004614215,
+     -1.3
+    ],
+    [
+     1.495,
+     2.25,
+     1.3
+    ]
+   ],
+   "bbox_godot_size": [
+    2.99,
+    2.6,
+    4.417
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.5,
+      0.0,
+      -2.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -0.5,
+      0.0,
+      -2.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_3",
+     "position": [
+      0.0,
+      1.3,
+      -1.65
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.3,
+      1.125
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover24_pressurised_cab_l.step",
+    "glb": "glb/rover24_pressurised_cab_l.glb",
+    "preview": "renders/rover24_pressurised_cab_l.png"
+   }
+  }
+ }
+}

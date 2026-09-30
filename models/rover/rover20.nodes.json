@@ -1,0 +1,186 @@
+{
+ "id": "rover20",
+ "name": "TK-1 Track Unit",
+ "category": "rover",
+ "short_name": "track_unit",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover20_track_unit_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.125,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_foot",
+   "position": [
+    0.015,
+    -0.225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover20_track_unit_s": {
+   "vid": "rover20_track_unit_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TK-1 Track Unit",
+   "primary": true,
+   "dims": {
+    "length_m": 1.2,
+    "height_m": 0.45,
+    "width_m": 0.25,
+    "power_kw": 0.4,
+    "rated_load_t": 1.5
+   },
+   "notes": "Triangular track: top drive sprocket, two idlers, four road rollers, rubber belt with grousers; mount plate on -X.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.6,
+     -0.225
+    ],
+    [
+     0.125,
+     0.6,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    0.25,
+    0.45,
+    1.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.125,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.015,
+      -0.225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_sprocket",
+    "wheel_idlers",
+    "wheel_rollers"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover20_track_unit_s.step",
+    "glb": "glb/rover20_track_unit_s.glb",
+    "preview": "renders/rover20_track_unit_s.png"
+   }
+  },
+  "rover20_track_unit_m": {
+   "vid": "rover20_track_unit_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TK-1 Track Unit",
+   "primary": false,
+   "dims": {
+    "length_m": 2.2,
+    "height_m": 0.8,
+    "width_m": 0.45,
+    "power_kw": 2.0,
+    "rated_load_t": 6.0
+   },
+   "notes": "Triangular track: top drive sprocket, two idlers, four road rollers, rubber belt with grousers; mount plate on -X.",
+   "bbox_cad_zup": [
+    [
+     -0.22500000000000003,
+     -1.1,
+     -0.4
+    ],
+    [
+     0.22500000000000003,
+     1.1,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.45,
+    0.8,
+    2.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.225,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.027,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_sprocket",
+    "wheel_idlers",
+    "wheel_rollers"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover20_track_unit_m.step",
+    "glb": "glb/rover20_track_unit_m.glb",
+    "preview": "renders/rover20_track_unit_m.png"
+   }
+  }
+ }
+}

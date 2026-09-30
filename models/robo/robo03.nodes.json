@@ -1,0 +1,317 @@
+{
+ "id": "robo03",
+ "name": "TB-1 Deployable Boom",
+ "category": "robo",
+ "short_name": "deployable_boom",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "robo03_deployable_boom_xs",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "robo03_deployable_boom_xs": {
+   "vid": "robo03_deployable_boom_xs",
+   "size": "XS",
+   "state": "stowed",
+   "default_state": true,
+   "label": "TB-1 Deployable Boom",
+   "primary": true,
+   "dims": {
+    "canister_diameter_m": 0.4,
+    "length_m": 0.6
+   },
+   "notes": "Deployable boom, stowed in its canister (tip plate = node_top).",
+   "bbox_cad_zup": [
+    [
+     -0.20400000000000001,
+     -0.20400000000000001,
+     -0.3
+    ],
+    [
+     0.20400000000000001,
+     0.20400000000000001,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.408,
+    0.6,
+    0.408
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_tip",
+    "boom_lid"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo03_deployable_boom_xs.step",
+    "glb": "glb/robo03_deployable_boom_xs.glb",
+    "preview": "renders/robo03_deployable_boom_xs.png"
+   }
+  },
+  "robo03_deployable_boom_xs_deployed": {
+   "vid": "robo03_deployable_boom_xs_deployed",
+   "size": "XS",
+   "state": "deployed",
+   "default_state": false,
+   "label": "TB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 0.4,
+    "length_m": 10.0
+   },
+   "notes": "STEM tube boom deploying from the canister to 10 m; tip plate = node_top.",
+   "bbox_cad_zup": [
+    [
+     -0.20400000000000001,
+     -0.20400000000000001,
+     -0.3
+    ],
+    [
+     0.20400000000000001,
+     0.20400000000000001,
+     9.7
+    ]
+   ],
+   "bbox_godot_size": [
+    0.408,
+    10.0,
+    0.408
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      9.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_stem",
+    "boom_tip",
+    "boom_lid"
+   ],
+   "default_of": "robo03_deployable_boom_xs",
+   "files": {
+    "step": "step/robo03_deployable_boom_xs_deployed.step",
+    "glb": "glb/robo03_deployable_boom_xs_deployed.glb",
+    "preview": "renders/robo03_deployable_boom_xs_deployed.png"
+   }
+  },
+  "robo03_deployable_boom_s": {
+   "vid": "robo03_deployable_boom_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "TB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 1.0,
+    "length_m": 1.5
+   },
+   "notes": "Deployable boom, stowed in its canister (tip plate = node_top).",
+   "bbox_cad_zup": [
+    [
+     -0.51,
+     -0.51,
+     -0.75
+    ],
+    [
+     0.51,
+     0.51,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    1.02,
+    1.5,
+    1.02
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_lid",
+    "boom_tip"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/robo03_deployable_boom_s.step",
+    "glb": "glb/robo03_deployable_boom_s.glb",
+    "preview": "renders/robo03_deployable_boom_s.png"
+   }
+  },
+  "robo03_deployable_boom_s_deployed": {
+   "vid": "robo03_deployable_boom_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "TB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "canister_diameter_m": 1.0,
+    "length_m": 30.0
+   },
+   "notes": "Coilable lattice mast (3 longerons) deploying from the canister to 30 m; tip plate = node_top.",
+   "bbox_cad_zup": [
+    [
+     -0.51,
+     -0.51,
+     -0.75
+    ],
+    [
+     0.51,
+     0.51,
+     29.25
+    ]
+   ],
+   "bbox_godot_size": [
+    1.02,
+    30.0,
+    1.02
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      29.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_lid",
+    "boom_longerons",
+    "boom_battens",
+    "boom_tip"
+   ],
+   "default_of": "robo03_deployable_boom_s",
+   "files": {
+    "step": "step/robo03_deployable_boom_s_deployed.step",
+    "glb": "glb/robo03_deployable_boom_s_deployed.glb",
+    "preview": "renders/robo03_deployable_boom_s_deployed.png"
+   }
+  }
+ }
+}

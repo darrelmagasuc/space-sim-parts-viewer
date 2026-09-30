@@ -1,0 +1,133 @@
+{
+ "id": "sci04",
+ "name": "SC-RK Experiment Rack",
+ "category": "sci",
+ "short_name": "experiment_rack",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "sci04_experiment_rack",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.25,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.25,
+    0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci04_experiment_rack": {
+   "vid": "sci04_experiment_rack",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-RK Experiment Rack",
+   "primary": true,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 1.8",
+    "slot_class": "Rack",
+    "power_kw": 2
+   },
+   "notes": "Rack-slot experiment rack: sample drawers, glovebox window, control panel; crew-serviced (Rack slot).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.9
+    ],
+    [
+     0.5,
+     0.5,
+     0.9
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.8,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.25,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.25,
+      0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci04_experiment_rack.step",
+    "glb": "glb/sci04_experiment_rack.glb",
+    "preview": "renders/sci04_experiment_rack.png"
+   }
+  }
+ }
+}

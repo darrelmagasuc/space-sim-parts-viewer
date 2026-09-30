@@ -1,0 +1,107 @@
+{
+ "id": "prop18",
+ "name": "LE-11 'F-1' Heavy Gas-Generator Kerolox",
+ "category": "prop",
+ "short_name": "heavy_kerolox",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop18_heavy_kerolox",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.9,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop18_heavy_kerolox": {
+   "vid": "prop18_heavy_kerolox",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-11 'F-1' Heavy Gas-Generator Kerolox",
+   "primary": true,
+   "dims": {
+    "length_m": 5.8,
+    "exit_diameter_m": 3.7,
+    "thrust_kn_sl": 6770
+   },
+   "notes": "F-1 class gas-generator kerolox: tube-wall bell with turbine-exhaust-cooled nozzle extension (dark), side turbopump and heat exchanger.",
+   "bbox_cad_zup": [
+    [
+     -1.89625,
+     -1.89625,
+     -2.9
+    ],
+    [
+     1.8968,
+     1.89625,
+     2.9
+    ]
+   ],
+   "bbox_godot_size": [
+    3.793,
+    5.8,
+    3.792
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.9,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop18_heavy_kerolox.step",
+    "glb": "glb/prop18_heavy_kerolox.glb",
+    "preview": "renders/prop18_heavy_kerolox.png"
+   }
+  }
+ }
+}

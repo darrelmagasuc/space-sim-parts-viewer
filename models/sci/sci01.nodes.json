@@ -1,0 +1,186 @@
+{
+ "id": "sci01",
+ "name": "SC-SPC Spectrometer Pack",
+ "category": "sci",
+ "short_name": "spectrometer",
+ "sizes": [
+  "slot"
+ ],
+ "primary": "sci01_spectrometer_small",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "sci01_spectrometer_small": {
+   "vid": "sci01_spectrometer_small",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-SPC Spectrometer Pack",
+   "primary": true,
+   "dims": {
+    "envelope_m": "0.5 x 0.5 x 0.6",
+    "slot_class": "Small",
+    "power_w": 25
+   },
+   "notes": "Reflectance / Raman spectrometer pack with cryocooler fins and a front optical window.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.3
+    ],
+    [
+     0.25,
+     0.25,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.6,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci01_spectrometer_small.step",
+    "glb": "glb/sci01_spectrometer_small.glb",
+    "preview": "renders/sci01_spectrometer_small.png"
+   }
+  },
+  "sci01_spectrometer_medium": {
+   "vid": "sci01_spectrometer_medium",
+   "size": "slot",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-SPC Spectrometer Pack",
+   "primary": false,
+   "dims": {
+    "envelope_m": "1.0 x 1.0 x 0.6",
+    "slot_class": "Medium",
+    "power_w": 60
+   },
+   "notes": "Reflectance / Raman spectrometer pack with cryocooler fins and a front optical window.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.3
+    ],
+    [
+     0.5,
+     0.5,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.6,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.25,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.25,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/sci01_spectrometer_medium.step",
+    "glb": "glb/sci01_spectrometer_medium.glb",
+    "preview": "renders/sci01_spectrometer_medium.png"
+   }
+  }
+ }
+}

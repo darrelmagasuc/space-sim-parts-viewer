@@ -1,0 +1,112 @@
+{
+ "id": "rover29",
+ "name": "RM-1 RTG Mount",
+ "category": "rover",
+ "short_name": "rtg_mount",
+ "sizes": [
+  "S"
+ ],
+ "primary": "rover29_rtg_mount",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.4,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3,
+    -0.1
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    -0.5
+   ]
+  }
+ ],
+ "variants": {
+  "rover29_rtg_mount": {
+   "vid": "rover29_rtg_mount",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RM-1 RTG Mount",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 0.5",
+    "height_m": 0.8,
+    "footprint_cells": [
+     2,
+     1
+    ],
+    "tilt_deg": 30,
+    "heat_to_loop_kw": 1.5
+   },
+   "notes": "MMRTG cradle tilted 30 deg to the rear (node_top), heat-exchanger fins and coolant loop, reflective thermal/radiation shield toward the cab (front).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.25,
+     -0.4
+    ],
+    [
+     0.5,
+     0.25588457268119896,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.8,
+    0.506
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      -0.1
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      -0.5
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/rover29_rtg_mount.step",
+    "glb": "glb/rover29_rtg_mount.glb",
+    "preview": "renders/rover29_rtg_mount.png"
+   }
+  }
+ }
+}

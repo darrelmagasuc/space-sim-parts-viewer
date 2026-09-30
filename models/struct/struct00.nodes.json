@@ -1,0 +1,679 @@
+{
+ "id": "struct00",
+ "name": "GD-1 Box Girders",
+ "category": "struct",
+ "short_name": "box_girder",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "struct00_box_girder_xs_1",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.15
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.15,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "struct00_box_girder_xs_1": {
+   "vid": "struct00_box_girder_xs_1",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "GD-1 Box Girders",
+   "primary": true,
+   "dims": {
+    "section_m": 0.3,
+    "length_m": 1.0
+   },
+   "notes": "Square box girder: 4 corner longerons, alternating diagonal lacing, end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -0.5067053264863072
+    ],
+    [
+     0.15,
+     0.15,
+     0.5067053264863072
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    1.013,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct00_box_girder_xs_1.step",
+    "glb": "glb/struct00_box_girder_xs_1.glb",
+    "preview": "renders/struct00_box_girder_xs_1.png"
+   }
+  },
+  "struct00_box_girder_xs_2": {
+   "vid": "struct00_box_girder_xs_2",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "GD-1 Box Girders",
+   "primary": false,
+   "dims": {
+    "section_m": 0.3,
+    "length_m": 2.0
+   },
+   "notes": "Square box girder: 4 corner longerons, alternating diagonal lacing, end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -1.0073293776426717
+    ],
+    [
+     0.15,
+     0.15,
+     1.0073293776426713
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    2.015,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct00_box_girder_xs_2.step",
+    "glb": "glb/struct00_box_girder_xs_2.glb",
+    "preview": "renders/struct00_box_girder_xs_2.png"
+   }
+  },
+  "struct00_box_girder_xs_4": {
+   "vid": "struct00_box_girder_xs_4",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "GD-1 Box Girders",
+   "primary": false,
+   "dims": {
+    "section_m": 0.3,
+    "length_m": 4.0
+   },
+   "notes": "Square box girder: 4 corner longerons, alternating diagonal lacing, end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.15,
+     -2.007032596010758
+    ],
+    [
+     0.15,
+     0.15,
+     2.007032596010758
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    4.014,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.15,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct00_box_girder_xs_4.step",
+    "glb": "glb/struct00_box_girder_xs_4.glb",
+    "preview": "renders/struct00_box_girder_xs_4.png"
+   }
+  },
+  "struct00_box_girder_s_4": {
+   "vid": "struct00_box_girder_s_4",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "GD-1 Box Girders",
+   "primary": false,
+   "dims": {
+    "section_m": 0.6,
+    "length_m": 4.0
+   },
+   "notes": "Square box girder: 4 corner longerons, alternating diagonal lacing, end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3,
+     -2.0146587552853434
+    ],
+    [
+     0.3,
+     0.3,
+     2.0146587552853426
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    4.029,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct00_box_girder_s_4.step",
+    "glb": "glb/struct00_box_girder_s_4.glb",
+    "preview": "renders/struct00_box_girder_s_4.png"
+   }
+  },
+  "struct00_box_girder_s_8": {
+   "vid": "struct00_box_girder_s_8",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "GD-1 Box Girders",
+   "primary": false,
+   "dims": {
+    "section_m": 0.6,
+    "length_m": 8.0
+   },
+   "notes": "Square box girder: 4 corner longerons, alternating diagonal lacing, end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.3,
+     -4.014065192021516
+    ],
+    [
+     0.3,
+     0.3,
+     4.014065192021516
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    8.028,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.3,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/struct00_box_girder_s_8.step",
+    "glb": "glb/struct00_box_girder_s_8.glb",
+    "preview": "renders/struct00_box_girder_s_8.png"
+   }
+  }
+ }
+}

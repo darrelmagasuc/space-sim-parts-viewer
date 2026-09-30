@@ -1,0 +1,244 @@
+{
+ "id": "tank12",
+ "name": "T-ADP Tank Adapters",
+ "category": "tank",
+ "short_name": "tank_adapter",
+ "sizes": [
+  "S-M",
+  "M-L",
+  "L-XL"
+ ],
+ "primary": "tank12_tank_adapter_s_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "tank12_tank_adapter_s_m": {
+   "vid": "tank12_tank_adapter_s_m",
+   "size": "S-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-ADP Tank Adapters",
+   "primary": true,
+   "dims": {
+    "top_diameter_m": 1.25,
+    "bottom_diameter_m": 2.5,
+    "length_m": 1.5,
+    "volume_m3": 3.6
+   },
+   "notes": "Conical tank-adapter (propellant carrying) between two diameters.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -1.26,
+     -0.75
+    ],
+    [
+     1.26,
+     1.26,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.5,
+    2.52
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank12_tank_adapter_s_m.step",
+    "glb": "glb/tank12_tank_adapter_s_m.glb",
+    "preview": "renders/tank12_tank_adapter_s_m.png"
+   }
+  },
+  "tank12_tank_adapter_m_l": {
+   "vid": "tank12_tank_adapter_m_l",
+   "size": "M-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-ADP Tank Adapters",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 2.5,
+    "bottom_diameter_m": 3.75,
+    "length_m": 2.2,
+    "volume_m3": 14.5
+   },
+   "notes": "Conical tank-adapter (propellant carrying) between two diameters.",
+   "bbox_cad_zup": [
+    [
+     -1.885,
+     -1.885,
+     -1.1
+    ],
+    [
+     1.885,
+     1.885,
+     1.1
+    ]
+   ],
+   "bbox_godot_size": [
+    3.77,
+    2.2,
+    3.77
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank12_tank_adapter_m_l.step",
+    "glb": "glb/tank12_tank_adapter_m_l.glb",
+    "preview": "renders/tank12_tank_adapter_m_l.png"
+   }
+  },
+  "tank12_tank_adapter_l_xl": {
+   "vid": "tank12_tank_adapter_l_xl",
+   "size": "L-XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-ADP Tank Adapters",
+   "primary": false,
+   "dims": {
+    "top_diameter_m": 3.75,
+    "bottom_diameter_m": 5.0,
+    "length_m": 2.8,
+    "volume_m3": 36.0
+   },
+   "notes": "Conical tank-adapter (propellant carrying) between two diameters.",
+   "bbox_cad_zup": [
+    [
+     -2.51,
+     -2.51,
+     -1.4000000000000001
+    ],
+    [
+     2.51,
+     2.51,
+     1.4000000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    5.02,
+    2.8,
+    5.02
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/tank12_tank_adapter_l_xl.step",
+    "glb": "glb/tank12_tank_adapter_l_xl.glb",
+    "preview": "renders/tank12_tank_adapter_l_xl.png"
+   }
+  }
+ }
+}

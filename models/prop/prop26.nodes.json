@@ -1,0 +1,108 @@
+{
+ "id": "prop26",
+ "name": "NTR-1 'NERVA' Nuclear Thermal Rocket",
+ "category": "prop",
+ "short_name": "nuclear_thermal",
+ "sizes": [
+  "L"
+ ],
+ "primary": "prop26_nuclear_thermal",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "prop26_nuclear_thermal": {
+   "vid": "prop26_nuclear_thermal",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "NTR-1 'NERVA' Nuclear Thermal Rocket",
+   "primary": true,
+   "dims": {
+    "length_m": 7.0,
+    "exit_diameter_m": 2.2,
+    "shield_diameter_m": 1.5,
+    "thrust_kn_vac": 330
+   },
+   "notes": "NERVA-class solid-core NTR: graphite-fuel reactor vessel, internal shield, hydrogen turbopump, regeneratively cooled bell.",
+   "bbox_cad_zup": [
+    [
+     -1.1390001,
+     -1.1390001,
+     -3.5000000499999997
+    ],
+    [
+     1.1390001,
+     1.1390001,
+     3.50000005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.278,
+    7.0,
+    2.278
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/prop26_nuclear_thermal.step",
+    "glb": "glb/prop26_nuclear_thermal.glb",
+    "preview": "renders/prop26_nuclear_thermal.png"
+   }
+  }
+ }
+}

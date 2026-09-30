@@ -1,0 +1,277 @@
+{
+ "id": "rover28",
+ "name": "SA-R Rover Solar Mount",
+ "category": "rover",
+ "short_name": "solar_mount",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "rover28_solar_mount_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover28_solar_mount_s": {
+   "vid": "rover28_solar_mount_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "SA-R Rover Solar Mount",
+   "primary": true,
+   "dims": {
+    "footprint_m": "1.0 x 1.0",
+    "footprint_cells": [
+     2,
+     2
+    ],
+    "stowed_height_m": 0.3,
+    "deployed_span_m": 2.0,
+    "kw_1au": 0.35
+   },
+   "notes": "Fan-folded solar wing on a tilt mast; stowed as a panel stack clamped to the deck plate.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.15000000000000002
+    ],
+    [
+     0.5,
+     0.5,
+     0.15000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.3,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_stack",
+    "panel_frames"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover28_solar_mount_s.step",
+    "glb": "glb/rover28_solar_mount_s.glb",
+    "preview": "renders/rover28_solar_mount_s.png"
+   }
+  },
+  "rover28_solar_mount_s_deployed": {
+   "vid": "rover28_solar_mount_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "SA-R Rover Solar Mount",
+   "primary": false,
+   "dims": {
+    "footprint_m": "1.0 x 1.0",
+    "footprint_cells": [
+     2,
+     2
+    ],
+    "stowed_height_m": 0.3,
+    "deployed_span_m": 2.0,
+    "kw_1au": 0.35
+   },
+   "notes": "Fan-folded solar wing on a tilt mast; stowed as a panel stack clamped to the deck plate.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.5,
+     -0.15000000000000002
+    ],
+    [
+     1.012,
+     0.5,
+     0.6403966116564466
+    ]
+   ],
+   "bbox_godot_size": [
+    2.012,
+    0.79,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_wing",
+    "panel_frames"
+   ],
+   "default_of": "rover28_solar_mount_s",
+   "files": {
+    "step": "step/rover28_solar_mount_s_deployed.step",
+    "glb": "glb/rover28_solar_mount_s_deployed.glb",
+    "preview": "renders/rover28_solar_mount_s_deployed.png"
+   }
+  },
+  "rover28_solar_mount_m": {
+   "vid": "rover28_solar_mount_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "SA-R Rover Solar Mount",
+   "primary": false,
+   "dims": {
+    "footprint_m": "2.0 x 1.0",
+    "footprint_cells": [
+     4,
+     2
+    ],
+    "stowed_height_m": 0.3,
+    "deployed_span_m": 4.0,
+    "kw_1au": 1.2
+   },
+   "notes": "Fan-folded solar wing on a tilt mast; stowed as a panel stack clamped to the deck plate.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.5,
+     -0.15000000000000002
+    ],
+    [
+     1.0,
+     0.5,
+     0.15000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.3,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_stack",
+    "panel_frames"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/rover28_solar_mount_m.step",
+    "glb": "glb/rover28_solar_mount_m.glb",
+    "preview": "renders/rover28_solar_mount_m.png"
+   }
+  },
+  "rover28_solar_mount_m_deployed": {
+   "vid": "rover28_solar_mount_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "SA-R Rover Solar Mount",
+   "primary": false,
+   "dims": {
+    "footprint_m": "2.0 x 1.0",
+    "footprint_cells": [
+     4,
+     2
+    ],
+    "stowed_height_m": 0.3,
+    "deployed_span_m": 4.0,
+    "kw_1au": 1.2
+   },
+   "notes": "Fan-folded solar wing on a tilt mast; stowed as a panel stack clamped to the deck plate.",
+   "bbox_cad_zup": [
+    [
+     -2.0,
+     -0.5,
+     -0.15000000000000002
+    ],
+    [
+     2.012,
+     0.5,
+     1.0903966116564465
+    ]
+   ],
+   "bbox_godot_size": [
+    4.012,
+    1.24,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_wing",
+    "panel_frames"
+   ],
+   "default_of": "rover28_solar_mount_m",
+   "files": {
+    "step": "step/rover28_solar_mount_m_deployed.step",
+    "glb": "glb/rover28_solar_mount_m_deployed.glb",
+    "preview": "renders/rover28_solar_mount_m_deployed.png"
+   }
+  }
+ }
+}
