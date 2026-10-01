@@ -1,0 +1,339 @@
+{
+ "_note": "Shared PBR library. color = sRGB base colour factor (multiplied with the greyscale detail map), tile_m = metres per texture repeat (box-mapped UVs). Entries with 'base' inherit from another entry and override fields (same textures, different colour).",
+ "mli_gold": {
+  "color": [
+   0.95,
+   0.72,
+   0.33
+  ],
+  "metallic": 1.0,
+  "roughness": 0.32,
+  "base_tex": "mli_c.jpg",
+  "normal_tex": "mli_n.jpg",
+  "normal_strength": 0.7,
+  "tile_m": 0.7
+ },
+ "beta_cloth": {
+  "color": [
+   0.92,
+   0.91,
+   0.87
+  ],
+  "metallic": 0.0,
+  "roughness": 0.9,
+  "base_tex": "cloth_c.jpg",
+  "normal_tex": "cloth_n.jpg",
+  "normal_strength": 1.0,
+  "tile_m": 0.5
+ },
+ "tile_black": {
+  "color": [
+   0.075,
+   0.075,
+   0.08
+  ],
+  "metallic": 0.0,
+  "roughness": 0.85,
+  "base_tex": "tile_c.jpg",
+  "normal_tex": "tile_n.jpg",
+  "normal_strength": 1.0,
+  "tile_m": 0.3
+ },
+ "tile_white": {
+  "base": "tile_black",
+  "color": [
+   0.9,
+   0.89,
+   0.85
+  ],
+  "roughness": 0.8
+ },
+ "aluminium": {
+  "color": [
+   0.8,
+   0.81,
+   0.83
+  ],
+  "metallic": 1.0,
+  "roughness": 0.33,
+  "base_tex": "mottle_c.jpg",
+  "normal_tex": "mottle_n.jpg",
+  "normal_strength": 0.15,
+  "tile_m": 1.5
+ },
+ "anodised_dark": {
+  "color": [
+   0.13,
+   0.13,
+   0.14
+  ],
+  "metallic": 0.8,
+  "roughness": 0.45
+ },
+ "paint_white": {
+  "color": [
+   0.9,
+   0.9,
+   0.88
+  ],
+  "metallic": 0.0,
+  "roughness": 0.5
+ },
+ "glass_tinted": {
+  "color": [
+   0.3,
+   0.37,
+   0.42
+  ],
+  "metallic": 0.0,
+  "roughness": 0.05,
+  "alpha": 0.28
+ },
+ "nozzle_copper": {
+  "color": [
+   0.93,
+   0.62,
+   0.48
+  ],
+  "metallic": 1.0,
+  "roughness": 0.35,
+  "base_tex": "mottle_c.jpg",
+  "tile_m": 0.8
+ },
+ "radiator_black": {
+  "color": [
+   0.06,
+   0.06,
+   0.07
+  ],
+  "metallic": 0.2,
+  "roughness": 0.6,
+  "base_tex": "radiator_c.jpg",
+  "normal_tex": "radiator_n.jpg",
+  "normal_strength": 1.0,
+  "tile_m": 0.8
+ },
+ "solar_blue": {
+  "color": [
+   0.16,
+   0.2,
+   0.42
+  ],
+  "metallic": 0.3,
+  "roughness": 0.25,
+  "base_tex": "solar_c.jpg",
+  "normal_tex": "solar_n.jpg",
+  "normal_strength": 0.6,
+  "tile_m": 0.6
+ },
+ "rubber_tyre": {
+  "color": [
+   0.05,
+   0.05,
+   0.05
+  ],
+  "metallic": 0.0,
+  "roughness": 0.95,
+  "normal_tex": "tread_n.jpg",
+  "normal_strength": 1.0,
+  "tile_m": 0.4
+ },
+ "ablator": {
+  "color": [
+   0.26,
+   0.19,
+   0.14
+  ],
+  "metallic": 0.0,
+  "roughness": 0.9,
+  "base_tex": "char_c.jpg",
+  "normal_tex": "mottle_n.jpg",
+  "normal_strength": 0.6,
+  "tile_m": 0.7
+ },
+ "paint_grey": {
+  "base": "paint_white",
+  "color": [
+   0.5,
+   0.53,
+   0.56
+  ],
+  "roughness": 0.55
+ },
+ "paint_grey_dark": {
+  "base": "paint_white",
+  "color": [
+   0.33,
+   0.35,
+   0.38
+  ],
+  "roughness": 0.55
+ },
+ "paint_black_matte": {
+  "base": "paint_white",
+  "color": [
+   0.05,
+   0.05,
+   0.055
+  ],
+  "roughness": 0.9
+ },
+ "paint_yellow": {
+  "base": "paint_white",
+  "color": [
+   0.92,
+   0.72,
+   0.1
+  ]
+ },
+ "paint_orange": {
+  "base": "paint_white",
+  "color": [
+   0.85,
+   0.42,
+   0.12
+  ],
+  "roughness": 0.8
+ },
+ "paint_tan": {
+  "base": "paint_white",
+  "color": [
+   0.72,
+   0.62,
+   0.45
+  ],
+  "roughness": 0.7
+ },
+ "paint_green": {
+  "base": "paint_white",
+  "color": [
+   0.25,
+   0.5,
+   0.2
+  ],
+  "roughness": 0.7
+ },
+ "seat_fabric": {
+  "base": "beta_cloth",
+  "color": [
+   0.17,
+   0.18,
+   0.16
+  ],
+  "tile_m": 0.3
+ },
+ "titanium": {
+  "base": "aluminium",
+  "color": [
+   0.52,
+   0.51,
+   0.5
+  ],
+  "roughness": 0.4
+ },
+ "carbon": {
+  "base": "anodised_dark",
+  "color": [
+   0.07,
+   0.07,
+   0.075
+  ],
+  "metallic": 0.1,
+  "roughness": 0.4
+ },
+ "rcc_grey": {
+  "base": "ablator",
+  "color": [
+   0.32,
+   0.32,
+   0.33
+  ]
+ },
+ "regolith": {
+  "base": "ablator",
+  "color": [
+   0.5,
+   0.45,
+   0.38
+  ]
+ },
+ "radiator_white": {
+  "base": "radiator_black",
+  "color": [
+   0.9,
+   0.9,
+   0.88
+  ],
+  "metallic": 0.0,
+  "roughness": 0.5
+ },
+ "nozzle_hot": {
+  "base": "nozzle_copper",
+  "color": [
+   0.36,
+   0.31,
+   0.29
+  ],
+  "roughness": 0.5
+ },
+ "steel_dark": {
+  "base": "aluminium",
+  "color": [
+   0.42,
+   0.42,
+   0.43
+  ],
+  "roughness": 0.45
+ },
+ "nozzle_gold": {
+  "base": "nozzle_copper",
+  "color": [
+   0.95,
+   0.76,
+   0.42
+  ],
+  "roughness": 0.3
+ },
+ "nozzle_steel": {
+  "base": "aluminium",
+  "color": [
+   0.66,
+   0.65,
+   0.63
+  ],
+  "roughness": 0.3
+ },
+ "solar_bronze": {
+  "base": "solar_blue",
+  "color": [
+   0.62,
+   0.38,
+   0.2
+  ]
+ },
+ "mirror": {
+  "color": [
+   0.93,
+   0.94,
+   0.96
+  ],
+  "metallic": 1.0,
+  "roughness": 0.06
+ },
+ "paint_red": {
+  "base": "paint_orange",
+  "color": [
+   0.62,
+   0.1,
+   0.08
+  ]
+ },
+ "paint_blue": {
+  "base": "paint_grey",
+  "color": [
+   0.12,
+   0.25,
+   0.55
+  ]
+ }
+}

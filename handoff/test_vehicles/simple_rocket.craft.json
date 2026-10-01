@@ -1,0 +1,67 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test Rocket A",
+  "summary": "Single-stage M-class kerolox rocket: ogive nose cone, one tank, one Merlin, four fins clocked 45 degrees.",
+  "root": "tank",
+  "parts": [
+    {
+      "id": "tank",
+      "variant": "tank00_kerolox_m",
+      "note": "root"
+    },
+    {
+      "id": "nose",
+      "variant": "stage13_nose_cone_ogive_m"
+    },
+    {
+      "id": "engine",
+      "variant": "prop08_merlin"
+    },
+    {
+      "id": "fin",
+      "variant": "aero06_rocket_fin_m",
+      "note": "symmetry 4, offset 45"
+    }
+  ],
+  "connections": [
+    {
+      "child": "nose",
+      "childNode": "node_bottom",
+      "parent": "tank",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "engine",
+      "childNode": "node_top",
+      "parent": "tank",
+      "parentNode": "node_bottom",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "fin",
+      "childNode": "node_attach",
+      "parent": "tank",
+      "parentNode": "node_side_1",
+      "symmetry": 4,
+      "rotation": 0,
+      "offset": 45
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Liftoff",
+      "parts": [
+        "engine"
+      ],
+      "note": "Single stage."
+    }
+  ],
+  "manual": "# Test Rocket A\nStack along +Y: nose, tank, engine. Fins on the tank skin at 45/135/225/315 degrees."
+}

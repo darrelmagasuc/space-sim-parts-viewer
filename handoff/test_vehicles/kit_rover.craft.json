@@ -1,0 +1,226 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test Kit Rover D",
+  "summary": "Rover kit: M chassis frame, four suspension arm -> hub motor -> wheel chains on the side rails, control core and antenna mast on the deck grid, a light bar hung under the deck.",
+  "root": "frame",
+  "parts": [
+    {
+      "id": "frame",
+      "variant": "rover13_chassis_frame_m",
+      "note": "root"
+    },
+    {
+      "id": "armFL",
+      "variant": "rover17_suspension_arm_m"
+    },
+    {
+      "id": "motorFL",
+      "variant": "rover19_hub_drive_motor_m"
+    },
+    {
+      "id": "wheelFL",
+      "variant": "rover04_wheel_m"
+    },
+    {
+      "id": "armRL",
+      "variant": "rover17_suspension_arm_m"
+    },
+    {
+      "id": "motorRL",
+      "variant": "rover19_hub_drive_motor_m"
+    },
+    {
+      "id": "wheelRL",
+      "variant": "rover04_wheel_m"
+    },
+    {
+      "id": "armFR",
+      "variant": "rover17_suspension_arm_m"
+    },
+    {
+      "id": "motorFR",
+      "variant": "rover19_hub_drive_motor_m"
+    },
+    {
+      "id": "wheelFR",
+      "variant": "rover04_wheel_m"
+    },
+    {
+      "id": "armRR",
+      "variant": "rover17_suspension_arm_m"
+    },
+    {
+      "id": "motorRR",
+      "variant": "rover19_hub_drive_motor_m"
+    },
+    {
+      "id": "wheelRR",
+      "variant": "rover04_wheel_m"
+    },
+    {
+      "id": "core",
+      "variant": "rover21_control_core"
+    },
+    {
+      "id": "mast",
+      "variant": "rover36_antenna_mast"
+    },
+    {
+      "id": "bellyLight",
+      "variant": "rover35_light_bar_xs",
+      "note": "hung under the deck: exercises the +/-Y antiparallel case"
+    }
+  ],
+  "connections": [
+    {
+      "child": "core",
+      "childNode": "node_bottom",
+      "parent": "frame",
+      "parentNode": "node_grid_2_1",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "mast",
+      "childNode": "node_bottom",
+      "parent": "frame",
+      "parentNode": "node_grid_5_2",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "bellyLight",
+      "childNode": "node_bottom",
+      "parent": "frame",
+      "parentNode": "node_under_0_2",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "armFL",
+      "childNode": "node_attach",
+      "parent": "frame",
+      "parentNode": "node_rail_l_0",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "motorFL",
+      "childNode": "node_attach",
+      "parent": "armFL",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "wheelFL",
+      "childNode": "node_attach",
+      "parent": "motorFL",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "armRL",
+      "childNode": "node_attach",
+      "parent": "frame",
+      "parentNode": "node_rail_l_5",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "motorRL",
+      "childNode": "node_attach",
+      "parent": "armRL",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "wheelRL",
+      "childNode": "node_attach",
+      "parent": "motorRL",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "armFR",
+      "childNode": "node_attach",
+      "parent": "frame",
+      "parentNode": "node_rail_r_0",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "motorFR",
+      "childNode": "node_attach",
+      "parent": "armFR",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "wheelFR",
+      "childNode": "node_attach",
+      "parent": "motorFR",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "armRR",
+      "childNode": "node_attach",
+      "parent": "frame",
+      "parentNode": "node_rail_r_5",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "motorRR",
+      "childNode": "node_attach",
+      "parent": "armRR",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "wheelRR",
+      "childNode": "node_attach",
+      "parent": "motorRR",
+      "parentNode": "node_outboard",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Drive",
+      "parts": [
+        "wheelFL",
+        "wheelRL",
+        "wheelFR",
+        "wheelRR"
+      ],
+      "note": "Ground vehicle: up +Y, forward +Z, left +X."
+    }
+  ],
+  "manual": "# Test Kit Rover D\nLeft rail = +X (node_rail_l_K), right rail = -X (node_rail_r_K). Each wheel chain is rail -> arm -> motor -> wheel, one connection per link."
+}

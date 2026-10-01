@@ -1,0 +1,73 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test Station Segment C",
+  "summary": "L-class station segment: 6-port node, hab module on top, integrated truss below with a pair of deployed solar wings, and a radial omni antenna on a node port.",
+  "root": "node",
+  "parts": [
+    {
+      "id": "node",
+      "variant": "station03_node_6port",
+      "note": "root"
+    },
+    {
+      "id": "hab",
+      "variant": "station00_hab_module"
+    },
+    {
+      "id": "truss",
+      "variant": "station07_truss_l",
+      "note": "truss under the node"
+    },
+    {
+      "id": "solar",
+      "variant": "power01_solar_wing_deployed",
+      "note": "symmetry 2 on the hab"
+    },
+    {
+      "id": "antenna",
+      "variant": "power10_omni_antenna",
+      "note": "radial part on a node side port"
+    }
+  ],
+  "connections": [
+    {
+      "child": "hab",
+      "childNode": "node_bottom",
+      "parent": "node",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "truss",
+      "childNode": "node_top",
+      "parent": "node",
+      "parentNode": "node_bottom",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "solar",
+      "childNode": "node_attach",
+      "parent": "truss",
+      "parentNode": "node_side_1",
+      "symmetry": 2,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "antenna",
+      "childNode": "node_attach",
+      "parent": "node",
+      "parentNode": "node_side_2",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    }
+  ],
+  "staging": [],
+  "manual": "# Test Station Segment C\nThe node is the root; the hab stacks on node_top, the truss hangs under node_bottom, the wings sit on the truss at +X / -X."
+}

@@ -1,0 +1,2407 @@
+{
+ "craft": "ring_ship.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 27,
+  "joints": 14,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "engine",
+   "seedId": "engine",
+   "variant": "prop04_ion_cluster",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      0.84,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -0.84,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aft",
+   "seedId": "aft",
+   "variant": "station07_truss_l",
+   "parentId": "engine",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    5.84,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      10.84,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      0.84,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5,
+      5.84,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      5.84,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5,
+      5.84,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      5.84,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hub",
+   "seedId": "hub",
+   "variant": "station09_spin_hub",
+   "parentId": "aft",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      15.44,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      10.84,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.175,
+      13.14,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      1.0875,
+      13.14,
+      -1.8836
+     ],
+     "direction": [
+      0.500011,
+      0,
+      -0.866019
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.0875,
+      13.14,
+      -1.8836
+     ],
+     "direction": [
+      -0.500011,
+      0,
+      -0.866019
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      -2.175,
+      13.14,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_5",
+     "position": [
+      -1.0875,
+      13.14,
+      1.8836
+     ],
+     "direction": [
+      -0.500011,
+      0,
+      0.866019
+     ]
+    },
+    {
+     "name": "node_side_6",
+     "position": [
+      1.0875,
+      13.14,
+      1.8836
+     ],
+     "direction": [
+      0.500011,
+      0,
+      0.866019
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fwd",
+   "seedId": "fwd",
+   "variant": "station07_truss_l",
+   "parentId": "hub",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    20.44,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      25.44,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      15.44,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5,
+      20.44,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      20.44,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5,
+      20.44,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      20.44,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nose",
+   "seedId": "nose",
+   "variant": "station07_truss_l",
+   "parentId": "fwd",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    30.44,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      35.44,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      25.44,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5,
+      30.44,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      30.44,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5,
+      30.44,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      30.44,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "solar",
+   "seedId": "solar",
+   "variant": "power01_solar_wing_deployed",
+   "parentId": "fwd",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    2.9,
+    20.44,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.5,
+      20.44,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "solar@2",
+   "seedId": "solar",
+   "variant": "power01_solar_wing_deployed",
+   "parentId": "fwd",
+   "symmetryIndex": 2,
+   "layout": null,
+   "origin": [
+    -2.9,
+    20.44,
+    0
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.5,
+      20.44,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 1,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      2.175,
+      13.14,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      22.925,
+      13.14,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke@2",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 2,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.5,
+    0,
+    0.866025
+   ],
+   "basis": [
+    [
+     0.5,
+     0,
+     -0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.866025,
+     0,
+     0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      1.0875,
+      13.14,
+      -1.883605
+     ],
+     "direction": [
+      -0.5,
+      0,
+      0.866025
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      11.4625,
+      13.14,
+      -19.853632
+     ],
+     "direction": [
+      0.5,
+      0,
+      -0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke@3",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 3,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.866025,
+    0,
+    0.5
+   ],
+   "basis": [
+    [
+     -0.5,
+     0,
+     -0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.866025,
+     0,
+     -0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -1.0875,
+      13.14,
+      -1.883605
+     ],
+     "direction": [
+      0.5,
+      0,
+      0.866025
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -11.4625,
+      13.14,
+      -19.853632
+     ],
+     "direction": [
+      -0.5,
+      0,
+      -0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke@4",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 4,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -2.175,
+      13.14,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -22.925,
+      13.14,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke@5",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 5,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.866025,
+    0,
+    -0.5
+   ],
+   "basis": [
+    [
+     -0.5,
+     0,
+     0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.866025,
+     0,
+     -0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -1.0875,
+      13.14,
+      1.883605
+     ],
+     "direction": [
+      0.5,
+      0,
+      -0.866025
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -11.4625,
+      13.14,
+      19.853632
+     ],
+     "direction": [
+      -0.5,
+      0,
+      0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoke@6",
+   "seedId": "spoke",
+   "variant": "station10_spoke",
+   "parentId": "hub",
+   "symmetryIndex": 6,
+   "layout": "spoke",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    -0.5,
+    0,
+    0.866025
+   ],
+   "basis": [
+    [
+     0.5,
+     0,
+     0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.866025,
+     0,
+     0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      1.0875,
+      13.14,
+      1.883605
+     ],
+     "direction": [
+      -0.5,
+      0,
+      -0.866025
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      11.4625,
+      13.14,
+      19.853632
+     ],
+     "direction": [
+      0.5,
+      0,
+      0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 1,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      24.1481,
+      13.14,
+      -6.4705
+     ],
+     "direction": [
+      -0.258808,
+      0,
+      -0.965929
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      24.1481,
+      13.14,
+      6.4705
+     ],
+     "direction": [
+      -0.258808,
+      0,
+      0.965929
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      22.925,
+      13.14,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@2",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 2,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.258819,
+    0,
+    0.965926
+   ],
+   "basis": [
+    [
+     0.866025,
+     0,
+     -0.5
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.5,
+     0,
+     0.866025
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      17.677618,
+      13.14,
+      -17.677667
+     ],
+     "direction": [
+      -0.707098,
+      0,
+      -0.707115
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      24.148118,
+      13.14,
+      -6.470433
+     ],
+     "direction": [
+      0.25883,
+      0,
+      0.965923
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      19.853632,
+      13.14,
+      -11.4625
+     ],
+     "direction": [
+      -0.866025,
+      0,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@3",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 3,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.5,
+    0,
+    0.866025
+   ],
+   "basis": [
+    [
+     0.5,
+     0,
+     -0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.866025,
+     0,
+     0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      6.470433,
+      13.14,
+      -24.148118
+     ],
+     "direction": [
+      -0.965923,
+      0,
+      -0.25883
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      17.677667,
+      13.14,
+      -17.677618
+     ],
+     "direction": [
+      0.707115,
+      0,
+      0.707098
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      11.4625,
+      13.14,
+      -19.853632
+     ],
+     "direction": [
+      -0.5,
+      0,
+      0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@4",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 4,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -6.4705,
+      13.14,
+      -24.1481
+     ],
+     "direction": [
+      -0.965929,
+      0,
+      0.258808
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      6.4705,
+      13.14,
+      -24.1481
+     ],
+     "direction": [
+      0.965929,
+      0,
+      0.258808
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0,
+      13.14,
+      -22.925
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@5",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 5,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.866025,
+    0,
+    0.5
+   ],
+   "basis": [
+    [
+     -0.5,
+     0,
+     -0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.866025,
+     0,
+     -0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -17.677667,
+      13.14,
+      -17.677618
+     ],
+     "direction": [
+      -0.707115,
+      0,
+      0.707098
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -6.470433,
+      13.14,
+      -24.148118
+     ],
+     "direction": [
+      0.965923,
+      0,
+      -0.25883
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      -11.4625,
+      13.14,
+      -19.853632
+     ],
+     "direction": [
+      0.5,
+      0,
+      0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@6",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 6,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.965926,
+    0,
+    0.258819
+   ],
+   "basis": [
+    [
+     -0.866025,
+     0,
+     -0.5
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.5,
+     0,
+     -0.866025
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -24.148118,
+      13.14,
+      -6.470433
+     ],
+     "direction": [
+      -0.25883,
+      0,
+      0.965923
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -17.677618,
+      13.14,
+      -17.677667
+     ],
+     "direction": [
+      0.707098,
+      0,
+      -0.707115
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      -19.853632,
+      13.14,
+      -11.4625
+     ],
+     "direction": [
+      0.866025,
+      0,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@7",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 7,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -24.1481,
+      13.14,
+      6.4705
+     ],
+     "direction": [
+      0.258808,
+      0,
+      0.965929
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -24.1481,
+      13.14,
+      -6.4705
+     ],
+     "direction": [
+      0.258808,
+      0,
+      -0.965929
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      -22.925,
+      13.14,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@8",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 8,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.965926,
+    0,
+    -0.258819
+   ],
+   "basis": [
+    [
+     -0.866025,
+     0,
+     0.5
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.5,
+     0,
+     -0.866025
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -17.677618,
+      13.14,
+      17.677667
+     ],
+     "direction": [
+      0.707098,
+      0,
+      0.707115
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -24.148118,
+      13.14,
+      6.470433
+     ],
+     "direction": [
+      -0.25883,
+      0,
+      -0.965923
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      -19.853632,
+      13.14,
+      11.4625
+     ],
+     "direction": [
+      0.866025,
+      0,
+      -0.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@9",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 9,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    0.866025,
+    0,
+    -0.5
+   ],
+   "basis": [
+    [
+     -0.5,
+     0,
+     0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.866025,
+     0,
+     -0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      -6.470433,
+      13.14,
+      24.148118
+     ],
+     "direction": [
+      0.965923,
+      0,
+      0.25883
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -17.677667,
+      13.14,
+      17.677618
+     ],
+     "direction": [
+      -0.707115,
+      0,
+      -0.707098
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      -11.4625,
+      13.14,
+      19.853632
+     ],
+     "direction": [
+      0.5,
+      0,
+      -0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@10",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 10,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    -0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      6.4705,
+      13.14,
+      24.1481
+     ],
+     "direction": [
+      0.965929,
+      0,
+      -0.258808
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      -6.4705,
+      13.14,
+      24.1481
+     ],
+     "direction": [
+      -0.965929,
+      0,
+      -0.258808
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0,
+      13.14,
+      22.925
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@11",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 11,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    -0.5,
+    0,
+    0.866025
+   ],
+   "basis": [
+    [
+     0.5,
+     0,
+     0.866025
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.866025,
+     0,
+     0.5
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      17.677667,
+      13.14,
+      17.677618
+     ],
+     "direction": [
+      0.707115,
+      0,
+      -0.707098
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      6.470433,
+      13.14,
+      24.148118
+     ],
+     "direction": [
+      -0.965923,
+      0,
+      0.25883
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      11.4625,
+      13.14,
+      19.853632
+     ],
+     "direction": [
+      -0.5,
+      0,
+      -0.866025
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ring@12",
+   "seedId": "ring",
+   "variant": "station11_ring_segment",
+   "parentId": "hub",
+   "symmetryIndex": 12,
+   "layout": "ring",
+   "origin": [
+    0,
+    13.14,
+    0
+   ],
+   "quaternion": [
+    0,
+    -0.258819,
+    0,
+    0.965926
+   ],
+   "basis": [
+    [
+     0.866025,
+     0,
+     0.5
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.5,
+     0,
+     0.866025
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      24.148118,
+      13.14,
+      6.470433
+     ],
+     "direction": [
+      0.25883,
+      0,
+      -0.965923
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      17.677618,
+      13.14,
+      17.677667
+     ],
+     "direction": [
+      -0.707098,
+      0,
+      0.707115
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      19.853632,
+      13.14,
+      11.4625
+     ],
+     "direction": [
+      -0.866025,
+      0,
+      -0.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rad",
+   "seedId": "rad",
+   "variant": "power08_radiator_l_deployed",
+   "parentId": "aft",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    5.84,
+    -3.325
+   ],
+   "quaternion": [
+    0,
+    0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0,
+      5.84,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rad@2",
+   "seedId": "rad",
+   "variant": "power08_radiator_l_deployed",
+   "parentId": "aft",
+   "symmetryIndex": 2,
+   "layout": null,
+   "origin": [
+    0,
+    5.84,
+    3.325
+   ],
+   "quaternion": [
+    0,
+    -0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0,
+      5.84,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "engine",
+   "parentNode": "node_top",
+   "childId": "aft",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    0.84,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "aft",
+   "parentNode": "node_top",
+   "childId": "hub",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    10.84,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_top",
+   "childId": "fwd",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    15.44,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "fwd",
+   "parentNode": "node_top",
+   "childId": "nose",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    25.44,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "fwd",
+   "parentNode": "node_side_1",
+   "childId": "solar",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.5,
+    20.44,
+    0
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "fwd",
+   "parentNode": "node_side_1",
+   "childId": "solar@2",
+   "childNode": "node_attach",
+   "symmetryIndex": 2,
+   "angle_deg": 180,
+   "position": [
+    -1.5,
+    20.44,
+    0
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke",
+   "childNode": "node_top",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    2.175,
+    13.14,
+    0
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke@2",
+   "childNode": "node_top",
+   "symmetryIndex": 2,
+   "angle_deg": 60,
+   "position": [
+    1.0875,
+    13.14,
+    -1.883605
+   ],
+   "parentDirection": [
+    0.5,
+    0,
+    -0.866025
+   ],
+   "childDirection": [
+    -0.5,
+    0,
+    0.866025
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke@3",
+   "childNode": "node_top",
+   "symmetryIndex": 3,
+   "angle_deg": 120,
+   "position": [
+    -1.0875,
+    13.14,
+    -1.883605
+   ],
+   "parentDirection": [
+    -0.5,
+    0,
+    -0.866025
+   ],
+   "childDirection": [
+    0.5,
+    0,
+    0.866025
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke@4",
+   "childNode": "node_top",
+   "symmetryIndex": 4,
+   "angle_deg": 180,
+   "position": [
+    -2.175,
+    13.14,
+    0
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke@5",
+   "childNode": "node_top",
+   "symmetryIndex": 5,
+   "angle_deg": 240,
+   "position": [
+    -1.0875,
+    13.14,
+    1.883605
+   ],
+   "parentDirection": [
+    -0.5,
+    0,
+    0.866025
+   ],
+   "childDirection": [
+    0.5,
+    0,
+    -0.866025
+   ]
+  },
+  {
+   "parentId": "hub",
+   "parentNode": "node_side_1",
+   "childId": "spoke@6",
+   "childNode": "node_top",
+   "symmetryIndex": 6,
+   "angle_deg": 300,
+   "position": [
+    1.0875,
+    13.14,
+    1.883605
+   ],
+   "parentDirection": [
+    0.5,
+    0,
+    0.866025
+   ],
+   "childDirection": [
+    -0.5,
+    0,
+    -0.866025
+   ]
+  },
+  {
+   "parentId": "aft",
+   "parentNode": "node_side_1",
+   "childId": "rad",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 90,
+   "position": [
+    0,
+    5.84,
+    -1.5
+   ],
+   "parentDirection": [
+    0,
+    0,
+    -1
+   ],
+   "childDirection": [
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "parentId": "aft",
+   "parentNode": "node_side_1",
+   "childId": "rad@2",
+   "childNode": "node_attach",
+   "symmetryIndex": 2,
+   "angle_deg": 270,
+   "position": [
+    0,
+    5.84,
+    1.5
+   ],
+   "parentDirection": [
+    0,
+    0,
+    1
+   ],
+   "childDirection": [
+    0,
+    0,
+    -1
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

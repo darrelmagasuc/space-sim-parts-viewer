@@ -1,0 +1,1666 @@
+{
+ "cmd00": {
+  "name": "PC-1 'Pathfinder' Probe Core",
+  "size_text": "XS (0.625 m)",
+  "summary": "Minimal avionics puck for small satellites and landers.",
+  "in_game": "0.08 t. 5 W idle. Hosts 2 internal slots (battery/computer). Basic SAS (stability only). Needs comms link for control beyond 2 km of a crewed vessel.",
+  "real_life": "CubeSat/SmallSat bus avionics (e.g. Blue Canyon XACT-class).",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd01": {
+  "name": "PC-2 'Surveyor' Probe Bus",
+  "size_text": "S (1.25 m)",
+  "summary": "Hexagonal probe bus with internal bays for science, batteries and reaction wheels.",
+  "in_game": "0.35 t. 4 internal slots, 15 W idle. Full SAS incl. prograde/target hold. Integrated 50 Nm reaction wheel.",
+  "real_life": "Generic planetary probe bus (MRO, Juno-class).",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd02": {
+  "name": "PC-3 'Voyager' Deep Space Bus",
+  "size_text": "M (2.5 m)",
+  "summary": "Large probe bus with RTG mounting points, heavy thermal control and long-life avionics.",
+  "in_game": "1.1 t. 8 internal slots. Radiation-hardened: no avionics faults beyond Jupiter. Autonomy level 3 (executes stored manoeuvre plans without link).",
+  "real_life": "Cassini / Europa Clipper bus.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd03": {
+  "name": "CM-1 'Gemini' Two-Seat Capsule",
+  "size_text": "S (1.25 m)",
+  "summary": "Cramped two-seat capsule for short LEO missions and early career.",
+  "in_game": "2.3 t (approx). Crew 2. 3 internal slots. Life support 2 crew-days built in. Ablative shield rated for LEO re-entry only (~8 km/s).",
+  "real_life": "NASA Gemini.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd04": {
+  "name": "CM-2 'Soyuz' Three-Seat Descent Module",
+  "size_text": "M (2.5 m)",
+  "summary": "Bell-shaped descent module; pairs with an orbital module and service module.",
+  "in_game": "2.9 t. Crew 3. 4 internal slots. Semi-ballistic re-entry with lift offset. Soft-landing retro-rockets fire at 1 m above ground.",
+  "real_life": "Soyuz descent module.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd05": {
+  "name": "CM-3 'Dragon' Crew Capsule",
+  "size_text": "L (3.75 m)",
+  "summary": "Four-seat capsule with side-mounted abort engines and a nose-cone-covered docking port.",
+  "in_game": "7.5 t dry (approx). Crew 4 (up to 7 in LEO config). 6 slots. Integrated abort engines (8x ~70 kN, hypergolic). Docking port under hinged nosecone.",
+  "real_life": "SpaceX Crew Dragon (SuperDraco abort system).",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd06": {
+  "name": "CM-4 'Orion' Deep Space Capsule",
+  "size_text": "XL (5 m)",
+  "summary": "Deep-space capsule with heavier shield for lunar-return velocities.",
+  "in_game": "9.3 t (approx). Crew 4. 8 slots, 21-day crew consumables. Shield rated to ~11 km/s re-entry. Requires a service module for power beyond 6 h.",
+  "real_life": "NASA Orion MPCV (with ESA European Service Module).",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd07": {
+  "name": "CM-5 'MAV' Ascent Cabin",
+  "size_text": "M (2.5 m)",
+  "summary": "Minimal pressurised cockpit for a Mars Ascent Vehicle. No heat shield: it is never meant to re-enter.",
+  "in_game": "2.0 t. Crew 6 seated tight. 2 slots. 2 crew-days life support only. Cannot survive re-entry; must dock to orbiting ship.",
+  "real_life": "MAV from The Martian; NASA Mars Ascent Vehicle concepts.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd08": {
+  "name": "CM-6 'Hermes' Flight Deck",
+  "size_text": "L (3.75 m)",
+  "summary": "Command deck for large interplanetary ships: bridge, flight computers, crew stations.",
+  "in_game": "4.8 t. Crew 2 at stations (other crew live in hab). 10 slots. Required to control ships over 200 t. Must be on the despun (non-rotating) core.",
+  "real_life": "Hermes bridge (The Martian); ISS US Lab-style command functions.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd09": {
+  "name": "CM-7 'Lander' Crew Cabin",
+  "size_text": "M (2.5 m)",
+  "summary": "Lightweight pressurised cabin with forward windows for landing, top docking hatch.",
+  "in_game": "2.4 t. Crew 2. 4 slots. 3 crew-days consumables. Excellent downward visibility (landing camera bonus). No heat shield.",
+  "real_life": "Apollo LM ascent stage; Artemis HLS cabin concepts.",
+  "source": "catalogue (parts.py)"
+ },
+ "cmd10": {
+  "name": "SM-1 Service Module Bay",
+  "size_text": "M/L/XL",
+  "summary": "Unpressurised cylinder that houses the capsule's batteries, fuel cells, tanks and radiators.",
+  "in_game": "0.6-2.0 t by size. 6-12 internal slots. Surface radiator panels built into skin. Separates before re-entry.",
+  "real_life": "Apollo SM; Orion ESM; Dragon trunk.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop00": {
+  "name": "RCS-Q 'Quad' Thruster Block",
+  "size_text": "XS",
+  "summary": "Four-nozzle monopropellant attitude thruster block, surface mounted.",
+  "in_game": "0.05 t. 4 x ~0.45 kN. Isp ~220 s vac. Draws hydrazine from internal tanks via plumbing. Needs line-of-sight feed to a monoprop tank.",
+  "real_life": "Apollo/Shuttle RCS quads; Aerojet MR-106 class.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop01": {
+  "name": "RCS-B Bipropellant RCS",
+  "size_text": "XS",
+  "summary": "Higher-thrust hypergolic RCS for large ships and dockings.",
+  "in_game": "0.08 t. 4 x ~0.4 kN MMH/NTO, Isp ~290 s vac. Pulse-capable, unlimited restarts.",
+  "real_life": "Draco (SpaceX) / R-4D.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop02": {
+  "name": "HT-1 'Hall' Hall-Effect Thruster",
+  "size_text": "XS",
+  "summary": "Small electric thruster for satellites and station-keeping.",
+  "in_game": "0.03 t. ~0.08 N. Isp ~1,800 s. 1.5 kW. Xenon or krypton. Thrust too low to leave surface; works under time-warp.",
+  "real_life": "SPT-100; Starlink krypton Hall thrusters.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop03": {
+  "name": "IT-1 'NEXT' Gridded Ion Engine",
+  "size_text": "S",
+  "summary": "Efficient gridded ion engine for deep-space probes and tugs.",
+  "in_game": "0.06 t. ~0.24 N. Isp ~4,000 s. 7 kW. Xenon. Cluster up to 8 on a thruster plate.",
+  "real_life": "NASA NEXT-C ion thruster (DART).",
+  "source": "catalogue (parts.py)"
+ },
+ "prop04": {
+  "name": "IT-2 'Hermes' Heavy Ion Cluster",
+  "size_text": "L",
+  "summary": "Large ion/Hall engine cluster for crewed interplanetary ships.",
+  "in_game": "1.2 t. ~5 N total (approx). Isp ~3,500 s. 200 kW; requires reactor-class power. Continuous burn for weeks (time-warp safe).",
+  "real_life": "Hermes (The Martian); NASA X3 nested Hall thruster / AEPS.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop05": {
+  "name": "SRB-S 'Castor' Small Solid",
+  "size_text": "S",
+  "summary": "Strap-on solid booster for small launchers.",
+  "in_game": "7 t wet. ~500 kN, Isp ~265 s SL. Not throttleable, cannot shut down. Thrust curve set in VAB (throttle profile).",
+  "real_life": "Castor 4 / GEM-40.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop06": {
+  "name": "SRB-L 'Atlas' Large Solid",
+  "size_text": "L",
+  "summary": "Large strap-on segmented booster.",
+  "in_game": "~250 t wet (approx). ~6,000 kN SL, Isp ~245 s. Burn ~120 s. Must be decoupled radially.",
+  "real_life": "Shuttle SRB / SLS 5-segment booster (scaled).",
+  "source": "catalogue (parts.py)"
+ },
+ "prop07": {
+  "name": "LE-1 'Kestrel' Pressure-Fed Hypergolic",
+  "size_text": "S",
+  "summary": "Simple, ultra-reliable upper-stage / lander engine.",
+  "in_game": "0.1 t. ~40 kN vac. Isp ~320 s vac. Unlimited restarts, throttle 40-100%. MMH/NTO.",
+  "real_life": "AJ10 (Apollo SPS / Delta II upper stage).",
+  "source": "catalogue (parts.py)"
+ },
+ "prop08": {
+  "name": "LE-2 'Merlin' Gas-Generator Kerolox",
+  "size_text": "M",
+  "summary": "Workhorse booster engine, sea-level optimised.",
+  "in_game": "0.47 t. ~850 kN SL / 930 kN vac. Isp ~282 s SL / 311 s vac. Throttle 40-100%. 3 restarts (TEA-TEB ignition).",
+  "real_life": "SpaceX Merlin 1D.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop09": {
+  "name": "LE-3 'Merlin-V' Vacuum Kerolox",
+  "size_text": "M",
+  "summary": "Vacuum-optimised kerolox with large extension.",
+  "in_game": "0.55 t. ~980 kN vac. Isp ~348 s vac. Cannot be fired at sea level (flow separation damage).",
+  "real_life": "Merlin 1D Vacuum.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop10": {
+  "name": "LE-4 'Raptor' Full-Flow Methalox",
+  "size_text": "M",
+  "summary": "High-pressure full-flow staged combustion engine.",
+  "in_game": "1.6 t. ~2,300 kN SL. Isp ~330 s SL / 350 s vac. Throttle 40-100%. Methane allows Mars ISRU refuelling.",
+  "real_life": "SpaceX Raptor 2/3.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop11": {
+  "name": "LE-5 'Raptor-V' Vacuum Methalox",
+  "size_text": "L",
+  "summary": "Vacuum Raptor with large bell.",
+  "in_game": "1.9 t. ~2,500 kN vac. Isp ~375 s vac. Needs gimballed sea-level engine for control; limited gimbal (2 deg).",
+  "real_life": "Raptor Vacuum.",
+  "source": "catalogue (parts.py)"
+ },
+ "prop12": {
+  "name": "LE-6 'RS-25' Staged-Combustion Hydrolox",
+  "size_text": "L",
+  "summary": "High-efficiency main engine for core stages.",
+  "in_game": "3.2 t. ~1,860 kN SL / 2,280 kN vac. Isp ~366 s SL / 452 s vac. Limited restarts (ground start only).",
+  "real_life": "Aerojet Rocketdyne RS-25 (Shuttle / SLS).",
+  "source": "catalogue (parts.py)"
+ },
+ "prop13": {
+  "name": "LE-7 'RL10' Expander Hydrolox",
+  "size_text": "S",
+  "summary": "Upper-stage vacuum engine, extremely efficient.",
+  "in_game": "0.3 t. ~110 kN vac. Isp ~460 s vac. 15 restarts. Hydrogen boil-off makes it poor for long missions without cryocoolers.",
+  "real_life": "RL10 (Centaur / ICPS).",
+  "source": "catalogue (parts.py)"
+ },
+ "prop14": {
+  "name": "LE-8 'MAV' Methalox Ascent Engine",
+  "size_text": "M",
+  "summary": "Mid-size methalox engine for landers and ascent vehicles, fed by ISRU-made propellant.",
+  "in_game": "0.35 t. ~100 kN vac, Isp ~355 s vac / ~320 s at Mars surface. Deep throttle 20-100%.",
+  "real_life": "MAV (The Martian); Blue Origin BE-7 / NASA methalox lander engines.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank00": {
+  "name": "T-K1/K2/K3 LOX/RP-1 Tanks",
+  "size_text": "S / M / L",
+  "summary": "Common-bulkhead kerosene/oxygen tanks. Denser than methalox, storable fuel side.",
+  "in_game": "Wet 4 / 32 / 110 t (approx), dry mass ~6%. Mixture ratio 2.3:1 O:F. LOX boil-off ~0.1%/day without insulation.",
+  "real_life": "Falcon 9 stage tanks; Saturn V S-IC.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank01": {
+  "name": "T-M1/M2/M3 Methalox Tanks",
+  "size_text": "M / L / XL",
+  "summary": "Stainless or aluminium-lithium tanks for methane/oxygen. Refuelable in orbit and at Mars.",
+  "in_game": "Wet 30 / 100 / 400 t (approx), dry ~7%. Ratio 3.6:1. Mild cryogenic boil-off (~0.05%/day) unless cryocooler fitted.",
+  "real_life": "Starship propellant tanks.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank02": {
+  "name": "T-H1/H2/H3 Hydrolox Tanks",
+  "size_text": "M / L / XL",
+  "summary": "Large, low-density tanks for liquid hydrogen and oxygen with spray-on foam insulation.",
+  "in_game": "Wet 20 / 70 / 300 t (approx), dry ~10% (hydrogen is bulky). Ratio 6:1. LH2 boil-off ~1%/day unless cryocooler (needs 2 kW).",
+  "real_life": "SLS core stage; Centaur; Shuttle External Tank.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank03": {
+  "name": "T-HG1/HG2 Hypergolic Tanks",
+  "size_text": "XS / S",
+  "summary": "Spherical titanium tanks for MMH and NTO. Long-term storable.",
+  "in_game": "Wet 0.5 / 2.5 t. Zero boil-off. Toxic: crew EVA near leak causes hazard event. Ratio ~1.65:1.",
+  "real_life": "Apollo SPS tanks; Dragon SuperDraco tanks.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank04": {
+  "name": "T-XE1/XE2/XE3 Xenon COPV",
+  "size_text": "XS / S / M",
+  "summary": "Carbon-overwrapped pressure vessels for xenon or krypton propellant.",
+  "in_game": "Hold 0.1 / 0.5 / 4 t Xe. Dry ~12% of contents. Krypton option: cheaper, 30% less thrust per kW.",
+  "real_life": "Dawn / DART xenon tanks.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank05": {
+  "name": "T-MP1/MP2 Monoprop (Hydrazine) Tanks",
+  "size_text": "XS / S",
+  "summary": "Diaphragm tanks for RCS and small monoprop thrusters.",
+  "in_game": "Hold 0.05 / 0.4 t. Must be internal or inside a service bay when flying in space for >30 days (freezing risk without heaters: 5 W).",
+  "real_life": "Diaphragm hydrazine tanks on most satellites.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank06": {
+  "name": "T-SOLID Propellant Loadout",
+  "size_text": "n/a",
+  "summary": "Solid motors are self-contained; propellant load chosen in the builder.",
+  "in_game": "Set 50-100% fill; reduces thrust duration, not peak thrust. Ballast for tuning.",
+  "real_life": "Real SRBs are cast to spec.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank07": {
+  "name": "T-DP Drop Tanks",
+  "size_text": "S / M",
+  "summary": "Jettisonable external tanks for landers and boosters.",
+  "in_game": "Fed to core via crossfeed line. 4% dry mass. Must be decoupled with radial decoupler.",
+  "real_life": "Shuttle External Tank; Falcon Heavy crossfeed concept.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank08": {
+  "name": "T-CRYO Cryocooler Upgrade",
+  "size_text": "slot",
+  "summary": "Internal-slot active cooler that eliminates cryogenic boil-off.",
+  "in_game": "0.15 t. 1-3 kW depending on tank size. Adds heat load to thermal budget.",
+  "real_life": "NASA zero-boil-off cryocooler demos.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank09": {
+  "name": "T-ISRU Surface Storage Tank",
+  "size_text": "L",
+  "summary": "Ground tank for storing ISRU-produced propellant at a base.",
+  "in_game": "Holds 50 t methalox. Can transfer to landed vessels by hose within 30 m.",
+  "real_life": "Mars Direct / NASA DRA 5.0 ISRU storage.",
+  "source": "catalogue (parts.py)"
+ },
+ "tank10": {
+  "name": "T-H2O Water / Consumables Tank",
+  "size_text": "S / M",
+  "summary": "Internal tank for water, which doubles as radiation shielding.",
+  "in_game": "Holds 1 / 8 t water. Placed in hab walls gives -20% crew radiation dose.",
+  "real_life": "ISS water tanks; water-wall shielding concepts.",
+  "source": "catalogue (parts.py)"
+ },
+ "station00": {
+  "name": "HM-1 'Destiny' Hab Module",
+  "size_text": "L (4.2 m)",
+  "summary": "Rigid aluminium pressurised module for living and working.",
+  "in_game": "14 t. Crew capacity 3. 12 internal slots. Volume ~100 m3. Requires life support from module or linked module.",
+  "real_life": "ISS Destiny / Harmony modules.",
+  "source": "catalogue (parts.py)"
+ },
+ "station01": {
+  "name": "HM-2 'BEAM' Expandable Module",
+  "size_text": "M packed / L deployed",
+  "summary": "Inflatable softgoods module; launches compact, expands on orbit.",
+  "in_game": "1.4 t. Deploy takes 1 in-game day. 16 m3. Crew 1. Great mass-to-volume, weaker micrometeoroid resistance.",
+  "real_life": "Bigelow BEAM on ISS.",
+  "source": "catalogue (parts.py)"
+ },
+ "station02": {
+  "name": "HM-3 'B330' Large Inflatable",
+  "size_text": "XL deployed",
+  "summary": "Large inflatable habitat for stations and transit.",
+  "in_game": "20 t. 330 m3. Crew 6. 16 slots. Needs a rigid core node at each end.",
+  "real_life": "Bigelow B330; Sierra Space LIFE habitat.",
+  "source": "catalogue (parts.py)"
+ },
+ "station03": {
+  "name": "NM-1 Node (6-port)",
+  "size_text": "L",
+  "summary": "Pressurised connector with six berthing/docking ports.",
+  "in_game": "11 t. 6 ports. 4 slots. Routes power, data and air between all connected modules.",
+  "real_life": "ISS Unity / Harmony nodes.",
+  "source": "catalogue (parts.py)"
+ },
+ "station04": {
+  "name": "AL-1 EVA Airlock",
+  "size_text": "M",
+  "summary": "Crew and equipment airlock with suit storage.",
+  "in_game": "6 t. Holds 2 suits. EVA prep time 2 h (skippable with 'airlock expertise'). Loses ~0.5 kg air per cycle.",
+  "real_life": "ISS Quest airlock.",
+  "source": "catalogue (parts.py)"
+ },
+ "station05": {
+  "name": "DP-S/DP-M Docking Ports",
+  "size_text": "S / M",
+  "summary": "Androgynous docking ports for crew transfer.",
+  "in_game": "0.1 / 0.3 t. Standard size must match (S: 0.8 m hatch, M: 1.2 m). Soft-capture then hard-dock sequence.",
+  "real_life": "NASA Docking System (IDSS); APAS.",
+  "source": "catalogue (parts.py)"
+ },
+ "station06": {
+  "name": "CBM Berthing Ring",
+  "size_text": "L",
+  "summary": "Large berthing ring used with the robotic arm; wider hatch for cargo racks.",
+  "in_game": "0.5 t. Requires arm-assisted berthing (no active docking). Allows internal rack transfer.",
+  "real_life": "ISS Common Berthing Mechanism.",
+  "source": "catalogue (parts.py)"
+ },
+ "station07": {
+  "name": "TR-1 Integrated Truss",
+  "size_text": "L / XL",
+  "summary": "Unpressurised structural truss for solar arrays, radiators, reactors.",
+  "in_game": "2 t per 10 m. 4 internal service bays per segment. Carries power/data lines.",
+  "real_life": "ISS Integrated Truss Structure.",
+  "source": "catalogue (parts.py)"
+ },
+ "station08": {
+  "name": "RA-1 Robotic Arm",
+  "size_text": "17 m",
+  "summary": "Station arm for berthing, EVA support and module relocation.",
+  "in_game": "1.8 t. 7 joints. 1 kW. Can 'walk' between grapple fixtures.",
+  "real_life": "Canadarm2.",
+  "source": "catalogue (parts.py)"
+ },
+ "station09": {
+  "name": "GR-HUB Spin Hub & Bearing",
+  "size_text": "L",
+  "summary": "Rotary joint between the despun core and a spinning ring, with slip rings for power and data.",
+  "in_game": "6 t. Max ring mass 300 t. Spin-up rate 0.1 rpm/min using integrated motors. Transfers power/data/air across the joint.",
+  "real_life": "Nautilus-X concept; ISS SARJ (solar alpha rotary joint) as a scaled analogue.",
+  "source": "catalogue (parts.py)"
+ },
+ "station10": {
+  "name": "GR-SPK Spoke / Elevator Tube",
+  "size_text": "S (1.5 m)",
+  "summary": "Pressurised spoke with ladder or elevator linking hub to ring.",
+  "in_game": "1.2 t per 10 m. Crew transit time 30 s per 10 m. Gravity rises along its length.",
+  "real_life": "Stanford torus spokes; Hermes (The Martian).",
+  "source": "catalogue (parts.py)"
+ },
+ "station11": {
+  "name": "GR-SEG Ring Segment",
+  "size_text": "L curved",
+  "summary": "Curved hab segment. Six to twelve form a ring.",
+  "in_game": "8 t each. Crew 2 each. 8 slots. Ring radius set in builder (20-100 m); segment count auto-scales.",
+  "real_life": "Hermes ring (The Martian); Nautilus-X; Stanford torus (scaled down).",
+  "source": "catalogue (parts.py)"
+ },
+ "station12": {
+  "name": "GR-CR Counter-Rotating Ring",
+  "size_text": "L",
+  "summary": "Second, counter-spinning ring that cancels net angular momentum.",
+  "in_game": "Same as ring segments. When paired, ship can attitude-manoeuvre while spun without gyroscopic resistance.",
+  "real_life": "Counter-rotating ring concepts (Nautilus-X, O'Neill cylinder pairs).",
+  "source": "catalogue (parts.py)"
+ },
+ "station13": {
+  "name": "GR-DS Despun Core Section",
+  "size_text": "L",
+  "summary": "Non-rotating axial module where docking, the bridge and engines attach.",
+  "in_game": "10 t. 3 docking ports. Required: docking to a spinning module is impossible.",
+  "real_life": "Hermes axial core; Nautilus-X.",
+  "source": "catalogue (parts.py)"
+ },
+ "power00": {
+  "name": "SA-S Roll-Out Solar Array",
+  "size_text": "S",
+  "summary": "Compact flexible roll-out wing for probes.",
+  "in_game": "0.05 t. ~1.5 kW at 1 AU (scales 1/d^2). Single-axis tracking.",
+  "real_life": "ROSA / iROSA (ISS).",
+  "source": "catalogue (parts.py)"
+ },
+ "power01": {
+  "name": "SA-L Large Solar Wing",
+  "size_text": "L",
+  "summary": "Large deployable wing for stations.",
+  "in_game": "1.1 t. ~30 kW at 1 AU. Must be retracted before burns >0.2 g or it breaks.",
+  "real_life": "ISS solar array wing.",
+  "source": "catalogue (parts.py)"
+ },
+ "power02": {
+  "name": "SA-X Ion-Tug Solar Array",
+  "size_text": "XL",
+  "summary": "Huge array for solar-electric propulsion ships.",
+  "in_game": "3 t. ~100 kW at 1 AU; ~43 kW at Mars.",
+  "real_life": "Hermes arrays (The Martian); NASA Gateway PPE.",
+  "source": "catalogue (parts.py)"
+ },
+ "power03": {
+  "name": "RTG-1 MMRTG",
+  "size_text": "S",
+  "summary": "Plutonium-238 radioisotope generator, needs no sunlight.",
+  "in_game": "0.045 t. ~110 W electric, ~2 kW waste heat. Decays ~1.6%/yr. Must be mounted outside (heat). Radiation hazard during EVA within 3 m.",
+  "real_life": "MMRTG (Curiosity, Perseverance).",
+  "source": "catalogue (parts.py)"
+ },
+ "power04": {
+  "name": "FC-1 Fuel Cell Stack",
+  "size_text": "slot",
+  "summary": "Hydrogen-oxygen fuel cell, makes power and drinking water.",
+  "in_game": "0.12 t. 5 kW. Consumes ~0.4 kg H2+O2 per kWh; outputs water to life support.",
+  "real_life": "Shuttle / Apollo fuel cells.",
+  "source": "catalogue (parts.py)"
+ },
+ "power05": {
+  "name": "BAT-S/M/L Internal Battery Packs",
+  "size_text": "slot",
+  "summary": "Lithium-ion packs installed only in internal slots.",
+  "in_game": "0.05 / 0.2 / 1 t. 5 / 25 / 120 kWh. Heat 3% of throughput. Will not attach to exterior surfaces.",
+  "real_life": "ISS Li-ion ORU batteries.",
+  "source": "catalogue (parts.py)"
+ },
+ "power06": {
+  "name": "FR-1 'Kilopower' Fission Reactor",
+  "size_text": "M",
+  "summary": "Compact fission reactor with Stirling converters.",
+  "in_game": "1.5 t. 10 kWe (40 kW upgrade variant: 4 t). Needs radiator. Shadow shield: crew must be in cone behind it.",
+  "real_life": "NASA KRUSTY / Kilopower; Fission Surface Power.",
+  "source": "catalogue (parts.py)"
+ },
+ "power07": {
+  "name": "FR-2 Megawatt-Class Reactor",
+  "size_text": "L",
+  "summary": "Large reactor for heavy ion ships (the one 'stretch' item).",
+  "in_game": "12 t. ~1 MWe (approx). Needs radiator area ~600 m2. Scram if coolant lost.",
+  "real_life": "NASA SP-100 / Prometheus concepts; Hermes reactor (The Martian).",
+  "source": "catalogue (parts.py)"
+ },
+ "power08": {
+  "name": "RAD-S/L Radiator Panels",
+  "size_text": "S / L",
+  "summary": "Deployable heat-rejection panels with ammonia loops.",
+  "in_game": "0.1 / 1.5 t. Reject 3 / 70 kW. Must face away from the Sun for full rating.",
+  "real_life": "ISS PVR / HRS radiators.",
+  "source": "catalogue (parts.py)"
+ },
+ "power09": {
+  "name": "LT-1 Floodlight",
+  "size_text": "XS",
+  "summary": "Exterior LED floodlight for docking and night landings.",
+  "in_game": "0.01 t. 50 W. Illuminates 60 deg cone, 40 m range.",
+  "real_life": "ISS external lighting.",
+  "source": "catalogue (parts.py)"
+ },
+ "power10": {
+  "name": "COM-1 Omni Antenna",
+  "size_text": "XS",
+  "summary": "Low-gain antenna for near-planet links.",
+  "in_game": "5 W. Range ~ Earth-Moon. Low bandwidth.",
+  "real_life": "S-band omni antennas.",
+  "source": "catalogue (parts.py)"
+ },
+ "power11": {
+  "name": "COM-2 High-Gain Dish",
+  "size_text": "M",
+  "summary": "Steerable parabolic dish for interplanetary data.",
+  "in_game": "0.15 t. 100 W. Range to outer planets. Must point at relay or ground station.",
+  "real_life": "Juno / MRO high-gain antenna; DSN link.",
+  "source": "catalogue (parts.py)"
+ },
+ "power12": {
+  "name": "LS-1 Life Support Rack",
+  "size_text": "slot",
+  "summary": "Oxygen generation, CO2 scrubbing and water recovery.",
+  "in_game": "0.6 t. 1.5 kW. Supports 3 crew. Recovers ~93% of water; O2 from electrolysis.",
+  "real_life": "ISS ECLSS (OGS, CDRA, WRS).",
+  "source": "catalogue (parts.py)"
+ },
+ "power13": {
+  "name": "LS-2 Consumables Pallet",
+  "size_text": "slot",
+  "summary": "Food, spares and filters.",
+  "in_game": "0.3 t per 30 crew-days (approx 1.8 kg food/crew/day with packaging).",
+  "real_life": "ISS cargo bags; Hab supplies (The Martian).",
+  "source": "catalogue (parts.py)"
+ },
+ "stage00": {
+  "name": "DC-S/M/L/XL Stack Decoupler",
+  "size_text": "all",
+  "summary": "Pyrotechnic separation ring between stages.",
+  "in_game": "0.05-0.8 t by size. Ejection force set 0-200 kN. Leaves ring on lower stage.",
+  "real_life": "Falcon 9 pneumatic stage separation; Saturn interstage rings.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage01": {
+  "name": "DC-R Radial Decoupler",
+  "size_text": "S",
+  "summary": "Side-mount decoupler for boosters and drop tanks.",
+  "in_game": "0.05 t. Kicks boosters outward. Includes separation motors.",
+  "real_life": "Shuttle SRB separation system.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage02": {
+  "name": "SP-HOT Hot-Staging Ring",
+  "size_text": "M / L",
+  "summary": "Vented interstage allowing upper stage ignition before separation.",
+  "in_game": "0.3-1.2 t. Removes ullage loss. Must be jettisoned after staging.",
+  "real_life": "Starship hot-staging ring; Soyuz/R-7 lattice.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage03": {
+  "name": "IS-1 Interstage Adapter",
+  "size_text": "any pair",
+  "summary": "Conical/cylindrical adapters between diameters (S-M, M-L, L-XL, XL-XXL).",
+  "in_game": "Mass ~2% of the stage above. Can enclose an engine bell.",
+  "real_life": "SLS LVSA; Falcon 9 interstage.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage04": {
+  "name": "FR-S/M/L/XL Payload Fairing",
+  "size_text": "S to XL",
+  "summary": "Clamshell fairing built around payload in the builder.",
+  "in_game": "Mass by area (~20 kg/m2). Shields payload from drag and heating. Jettison above ~100 km.",
+  "real_life": "Falcon 9 fairing; Ariane 5 fairing.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage05": {
+  "name": "HS-S/M/L/XL Ablative Heat Shield",
+  "size_text": "S to XL",
+  "summary": "Ablative shield consumed during re-entry.",
+  "in_game": "Ablator mass tracked; 1 kg burns per ~0.5 MJ. Rated velocity by variant (LEO / Lunar return).",
+  "real_life": "PICA-X (Dragon); Avcoat (Orion).",
+  "source": "catalogue (parts.py)"
+ },
+ "stage06": {
+  "name": "HIAD Inflatable Decelerator",
+  "size_text": "L / XL",
+  "summary": "Inflatable heat shield for landing heavy payloads on Mars.",
+  "in_game": "1.5 t. Deploys to 3x diameter. Single use.",
+  "real_life": "NASA LOFTID / HIAD.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage07": {
+  "name": "PC-D Drogue Parachute",
+  "size_text": "S",
+  "summary": "Stabilising drogue for high-speed deployment.",
+  "in_game": "Safe to deploy below Mach 1.5. Reduces tumbling.",
+  "real_life": "Apollo / Orion drogues.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage08": {
+  "name": "PC-M Main Parachute",
+  "size_text": "S / M",
+  "summary": "Ringsail main chute.",
+  "in_game": "One chute slows 3 t to ~9 m/s on Earth. Mars air 1% of Earth: chute alone is not enough.",
+  "real_life": "Orion / Dragon mains.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage09": {
+  "name": "PC-SS Supersonic Mars Chute",
+  "size_text": "M",
+  "summary": "Disk-gap-band chute for Mars entry.",
+  "in_game": "Deploys Mach 2. Reduces velocity to ~80 m/s; must be followed by retro-propulsion.",
+  "real_life": "Curiosity / Perseverance DGB parachute.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage10": {
+  "name": "GF-1 Titanium Grid Fins",
+  "size_text": "S / M",
+  "summary": "Lattice fins for steering returning boosters.",
+  "in_game": "0.1 / 0.4 t. Effective Mach 0.5-4. Stowed during ascent.",
+  "real_life": "Falcon 9 grid fins.",
+  "source": "catalogue (parts.py)"
+ },
+ "stage11": {
+  "name": "LL-S/M/L Landing Legs",
+  "size_text": "S to L",
+  "summary": "Deployable crushable-core or hydraulic legs.",
+  "in_game": "Rated touchdown ~3 / 5 / 6 m/s. Max slope 12 deg.",
+  "real_life": "Apollo LM legs; Falcon 9 legs.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover00": {
+  "name": "RV-1 'Sojourner' Micro Rover",
+  "size_text": "XS",
+  "summary": "Tiny solar rover for scouting.",
+  "in_game": "0.01 t. 0.01 m/s. Runs from solar and internal battery.",
+  "real_life": "Sojourner (Pathfinder); The Martian 'Pathfinder' recovery.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover01": {
+  "name": "RV-2 'Curiosity' Science Rover",
+  "size_text": "M",
+  "summary": "Nuclear-powered six-wheel science rover.",
+  "in_game": "0.9 t. MMRTG power. 0.04 m/s. 6 internal science slots, robotic arm.",
+  "real_life": "Curiosity / Perseverance.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover02": {
+  "name": "RV-3 'LRV' Open Rover",
+  "size_text": "M",
+  "summary": "Unpressurised two-seat rover; crew in suits.",
+  "in_game": "0.21 t. Top speed ~3 m/s. ~9 kWh internal battery. Suit oxygen limits range to ~10 km from base.",
+  "real_life": "Apollo Lunar Roving Vehicle.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover03": {
+  "name": "RV-4 Pressurised Rover",
+  "size_text": "L",
+  "summary": "Long-range pressurised rover with airlock and sleep space.",
+  "in_game": "7 t. Crew 2 (4 tight). Life support 14 days. 8 slots. Top speed 5 m/s.",
+  "real_life": "Martian rover (The Martian); NASA SEV / Toyota Lunar Cruiser.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover04": {
+  "name": "WH-S/M/L Wheels",
+  "size_text": "S to L",
+  "summary": "Mesh, rigid or pneumatic wheels.",
+  "in_game": "Load 50 / 500 / 3,000 kg per wheel in 1 g equivalent. Slip on regolith modelled.",
+  "real_life": "Apollo mesh wheels; Curiosity aluminium wheels.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover05": {
+  "name": "DR-1 Core Drill",
+  "size_text": "S",
+  "summary": "Rotary percussive drill for samples.",
+  "in_game": "0.05 t. 400 W. Up to 2 m depth. Produces sample for science racks.",
+  "real_life": "Curiosity / Perseverance drill.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover06": {
+  "name": "DR-2 Regolith Excavator",
+  "size_text": "M",
+  "summary": "Bucket-drum excavator for ISRU feedstock.",
+  "in_game": "0.3 t. 2 kW. 200 kg regolith / hour. Picks up water ice where present.",
+  "real_life": "NASA RASSOR.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover07": {
+  "name": "ISRU-O2 MOXIE Oxygen Plant",
+  "size_text": "slot",
+  "summary": "Solid-oxide electrolysis of Mars CO2 into oxygen.",
+  "in_game": "0.2 t. 1.5 kW. ~1 kg O2/day for the scaled-up unit (the real demo unit made only grams per hour).",
+  "real_life": "MOXIE (Perseverance); scaled-up MOXIE concepts.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover08": {
+  "name": "ISRU-S Sabatier Reactor",
+  "size_text": "M",
+  "summary": "Combines CO2 and hydrogen into methane and water.",
+  "in_game": "1.5 t. 25 kW. ~20 kg CH4/day (approx). Needs H2 feed or water electrolysis.",
+  "real_life": "Sabatier reactor on ISS; MAV fuel plant (The Martian).",
+  "source": "catalogue (parts.py)"
+ },
+ "rover09": {
+  "name": "ISRU-W Water Extractor",
+  "size_text": "M",
+  "summary": "Heats icy regolith, captures water.",
+  "in_game": "1 t. 15 kW. 30 kg water/day from 5% ice regolith.",
+  "real_life": "NASA ice-mining concepts.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover10": {
+  "name": "SH-1 Surface Hab (Rigid)",
+  "size_text": "L",
+  "summary": "Rigid landed habitat module.",
+  "in_game": "12 t. Crew 4. 12 slots. Leveling legs.",
+  "real_life": "NASA DRA habitat; Artemis surface habitat.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover11": {
+  "name": "SH-2 'Hab' Inflatable Dome",
+  "size_text": "XL",
+  "summary": "Inflatable dome habitat like The Martian's Hab.",
+  "in_game": "5 t packed. 90 m3 deployed. Crew 6. Needs airlock unit; puncture event if struck.",
+  "real_life": "The Martian Hab; NASA inflatable surface habitats.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover12": {
+  "name": "SH-3 Greenhouse Module",
+  "size_text": "L",
+  "summary": "Pressurised grow module.",
+  "in_game": "3 t. 5 kW lighting. Produces food 0.5 kg/day + O2. Needs water.",
+  "real_life": "NASA Veggie; Watney's potato farm (The Martian).",
+  "source": "catalogue (parts.py)"
+ },
+ "jet00": {
+  "name": "JT-1 Turbojet",
+  "size_text": "S",
+  "summary": "Afterburning turbojet for fast aircraft.",
+  "in_game": "1.8 t. ~50 kN dry / 80 kN wet. Isp ~1,800 s dry. Mach 0-2.5. Needs air intake.",
+  "real_life": "GE J79; Tumansky R-25.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet01": {
+  "name": "JT-2 High-Bypass Turbofan",
+  "size_text": "M",
+  "summary": "Efficient subsonic turbofan for cargo carriers.",
+  "in_game": "2.4 t. ~120 kN. Isp ~5,000 s. Mach 0-0.85.",
+  "real_life": "CFM56 / LEAP.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet02": {
+  "name": "JT-3 Low-Bypass Turbofan",
+  "size_text": "S",
+  "summary": "Fighter-style engine for spaceplanes.",
+  "in_game": "1.7 t. ~110 kN wet. Mach 0-2. Good thrust-to-weight.",
+  "real_life": "F100 / F119.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet03": {
+  "name": "JT-4 Turbo-Ramjet",
+  "size_text": "M",
+  "summary": "Combined cycle engine that becomes a ramjet at high Mach.",
+  "in_game": "3.0 t. ~150 kN. Effective Mach 0-3.2. Heat warning above 3.2.",
+  "real_life": "Pratt & Whitney J58 (SR-71).",
+  "source": "catalogue (parts.py)"
+ },
+ "jet04": {
+  "name": "RJ-1 Ramjet",
+  "size_text": "S",
+  "summary": "Pure ramjet: no thrust below Mach 0.8.",
+  "in_game": "0.5 t. ~60 kN at Mach 2.5. Effective Mach 1-4.",
+  "real_life": "Bristol Thor; Bloodhound missile ramjet.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet05": {
+  "name": "SJ-1 Experimental Scramjet",
+  "size_text": "S",
+  "summary": "Supersonic combustion engine test article.",
+  "in_game": "0.6 t. ~40 kN, Mach 5-7 only. Overheats quickly. Marked 'experimental'.",
+  "real_life": "NASA X-43A; X-51 Waverider.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet06": {
+  "name": "IN-1 Pitot Intake",
+  "size_text": "S",
+  "summary": "Simple subsonic/low-supersonic intake.",
+  "in_game": "Efficient up to Mach 1.5.",
+  "real_life": "Typical airliner nacelle intake.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet07": {
+  "name": "IN-2 Shock-Cone Intake",
+  "size_text": "S / M",
+  "summary": "Translating spike intake for high Mach.",
+  "in_game": "Efficient Mach 1.5-3.5. Spike moves automatically.",
+  "real_life": "SR-71 inlet spike; MiG-21 cone.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet08": {
+  "name": "WG-1 Wing Panels (Straight / Swept / Delta)",
+  "size_text": "S / M / L",
+  "summary": "Procedural lifting surfaces.",
+  "in_game": "Lift from area; delta handles re-entry heating best. Mass ~25 kg/m2.",
+  "real_life": "Space Shuttle double-delta; X-15.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet09": {
+  "name": "CS-1 Control Surfaces (Elevon / Rudder / Canard)",
+  "size_text": "S / M",
+  "summary": "Movable surfaces for pitch, yaw, roll.",
+  "in_game": "Deflect up to 25 deg. Ineffective above ~50 km altitude; use RCS.",
+  "real_life": "Shuttle elevons and body flap.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet10": {
+  "name": "LG-S/M/L Landing Gear",
+  "size_text": "S to L",
+  "summary": "Retractable wheeled gear with brakes.",
+  "in_game": "Rated for 5 / 30 / 150 t aircraft. Max touchdown 70-100 m/s.",
+  "real_life": "Space Shuttle / Boeing 737 gear.",
+  "source": "catalogue (parts.py)"
+ },
+ "jet11": {
+  "name": "TPS-T Thermal Tile Kit",
+  "size_text": "M / L",
+  "summary": "Silica tiles and reinforced carbon edges for spaceplanes.",
+  "in_game": "Adds 12 kg/m2. Reusable. Individual tiles can be lost under stress.",
+  "real_life": "Shuttle TPS tiles / RCC; Dream Chaser tiles.",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit00": {
+  "name": "CK-1 Single-Seat Jet Cockpit",
+  "size_text": "S (1.25 m)",
+  "summary": "Single-seat jet nose with a one-piece bubble canopy, ejection seat and radome.",
+  "in_game": "0.9 t. Crew 1. 360 deg view; canopy opens on the ground only. Ejection seat usable below Mach 2 / 15 km. No re-entry rating.",
+  "real_life": "F-16 Fighting Falcon; X-planes (X-29, X-31).",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit01": {
+  "name": "CK-2 Tandem Two-Seat Cockpit",
+  "size_text": "S (1.25 m)",
+  "summary": "Two-seat tandem nose, rear seat raised for forward view, twin clamshell canopies.",
+  "in_game": "1.4 t. Crew 2. Canopies open on the ground only. Rated to Mach 3.2 skin heating with a heat penalty above that.",
+  "real_life": "SR-71 Blackbird; T-38 Talon.",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit02": {
+  "name": "CK-3 Spaceplane Flight Deck",
+  "size_text": "M (2.5 m, Mk2-style profile)",
+  "summary": "Side-by-side crewed nose for spaceplanes: flight deck windows, forward RCS, RCC nose cap and black belly tiles.",
+  "in_game": "3.2 t. Crew 2 (+2 mid-deck). Re-entry rated belly-first at 40 deg AoA. Includes 11 forward RCS jets on the shared RCS supply. Rear joins a Mk2-style fuselage.",
+  "real_life": "Space Shuttle orbiter forward fuselage; Dream Chaser.",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit03": {
+  "name": "CK-4 Airliner / Cargo Flight Deck",
+  "size_text": "L (3.75 m)",
+  "summary": "Airliner / cargo-lifter nose with a raised flight deck and an optional hinged cargo visor.",
+  "in_game": "4.5 t. Crew 3. Visor opens on the ground for straight-in loading of S/M cargo (1.95 m aperture). Subsonic only (Mach 0.9).",
+  "real_life": "Boeing 747-400F nose door; Lockheed C-5 Galaxy visor.",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit04": {
+  "name": "CK-5 Inline Cockpit (Droop Nose)",
+  "size_text": "M (2.5 m, S front)",
+  "summary": "Mid-fuselage cockpit ring with side windows that sits behind a nose cone; includes a droop-nose hinge.",
+  "in_game": "2.1 t. Crew 3. Front S node takes a nose cone; droop 12.5 deg for take-off and landing view. Supersonic rated (Mach 2.2).",
+  "real_life": "Concorde droop nose and visor; XB-70 Valkyrie.",
+  "source": "catalogue (parts.py)"
+ },
+ "cockpit05": {
+  "name": "CK-6 Uncrewed Avionics Nose",
+  "size_text": "S (1.25 m)",
+  "summary": "Uncrewed probe core for drones and robotic spaceplanes: bulged satcom radome and chin sensor ball.",
+  "in_game": "0.35 t. No crew. Autopilot and SAS, long-range comms, EO/IR sensor ball for surveying. Needs power 0.4 kW.",
+  "real_life": "RQ-4 Global Hawk nose; X-37B OTV.",
+  "source": "catalogue (parts.py)"
+ },
+ "rover13": {
+  "name": "CH-F Rover Chassis Frame",
+  "size_text": "XS / S / M / L",
+  "summary": "Kit backbone with a 0.5 m node grid, suspension rail hardpoints and front/rear faces.",
+  "in_game": "Backbone of every kit rover. Top and underside expose a 0.5 m grid of attach nodes; side rails carry suspension/steering hardpoints every 0.5 m; front and rear faces take bumpers, blades, hitches or another frame. Distributes power, data and coolant to everything on the grid. Mass 0.015 / 0.05 / 0.18 / 0.45 t; rated deck load 0.1 / 0.6 / 3 / 10 t (1 g).",
+  "real_life": "Apollo Lunar Roving Vehicle aluminium chassis; NASA Chariot / Lunar Electric Rover chassis",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": 0.015
+ },
+ "rover14": {
+  "name": "CH-P Chassis Deck Plate",
+  "size_text": "S / M",
+  "summary": "Thin gridded plate to extend, bridge or outrigger chassis frames.",
+  "in_game": "Extends or bridges chassis frames and makes outriggers. Same 0.5 m grid on both faces plus edge nodes, so plates tile edge to edge or bolt on top of a frame. 0.05 m thick, 12 kg/m2. Not a structural spine: max span load 0.5 t per plate.",
+  "real_life": "LRV floor panels; aluminium honeycomb sandwich panels used on spacecraft decks",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": 0.012
+ },
+ "rover15": {
+  "name": "CH-J Articulated Chassis Joint",
+  "size_text": "S / M",
+  "summary": "Powered yaw / free roll joint linking two frames for articulated steering.",
+  "in_game": "Joins two frames end to end (node_front / node_rear). Powered yaw +/-35 deg gives articulated steering without steerable wheels; free roll +/-15 deg keeps all wheels on the ground over rocks. Passes power, data and coolant. Mass 0.04 / 0.15 t; rated 2 / 10 t.",
+  "real_life": "Articulated-frame steering (articulated haulers); Marsokhod / NASA Chariot articulated rovers",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover16": {
+  "name": "SU-RB Rocker-Bogie Suspension",
+  "size_text": "XS / S / M",
+  "summary": "Passive six-wheel rocker-bogie side unit for slow, rock-climbing rovers.",
+  "in_game": "One side of a six-wheel passive suspension (fit a mirrored pair joined by the frame's differential bar). Climbs obstacles up to one wheel diameter at walking pace; no springs, so top speed limited to ~0.2 m/s. Three node_outboard_N stations take steering modules, drive motors and rover04 wheels. Mass 0.004 / 0.03 / 0.12 t per side.",
+  "real_life": "Rocker-bogie suspension (Sojourner, Spirit/Opportunity, Curiosity, Perseverance)",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover17": {
+  "name": "SU-A Independent Suspension Arm",
+  "size_text": "S / M / L",
+  "summary": "Sprung, damped double-wishbone arm for one wheel station.",
+  "in_game": "Sprung, damped suspension for one wheel station. Bolts to a chassis rail node (node_attach) and carries a steering module or drive motor on node_outboard. Travel 0.1 / 0.2 / 0.3 m; spring rate auto-set from rover mass and local gravity; stiffness/damping sliders in the builder. Allows 1 / 3 / 5 m/s over rough ground. Mass 5 / 25 / 90 kg.",
+  "real_life": "Apollo LRV torsion-bar double-wishbone suspension; Lunar Terrain Vehicle prototypes",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover18": {
+  "name": "ST-1 Steering Module",
+  "size_text": "S / M / L",
+  "summary": "Swivels a wheel station: Ackermann, crab or pivot-turn steering.",
+  "in_game": "Swivels the wheel station about a vertical axis: +/-35 deg Ackermann, or +/-90 deg crab steer / pivot-turn mode for tight spaces and docking with habs. Sits between suspension (node_attach) and drive motor (node_outboard). 20 / 60 / 200 W while steering. Mass 3 / 10 / 35 kg.",
+  "real_life": "Curiosity/Perseverance corner-wheel steering actuators; NASA SEV / Chariot crab steering",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover19": {
+  "name": "DM-1 Hub Drive Motor",
+  "size_text": "XS / S / M / L",
+  "summary": "In-hub electric motor that drives one rover04 wheel.",
+  "in_game": "Powers one wheel. Mounts on a steering module, suspension arm or directly on a rail; the matching rover04 wheel (S/M/L) fits node_outboard; XS is for micro rovers (needs a proposed 0.15 m rover04 XS wheel). Peak 0.005 / 0.1 / 0.5 / 2.5 kW, torque 1 / 30 / 250 / 1,500 Nm, top speed ~0.01 / 1 / 4 / 5 m/s with matching wheels. Waste heat 15% of draw; regen braking returns 10% downhill. Mass 0.3 / 4 / 15 / 60 kg.",
+  "real_life": "Apollo LRV hub traction drive; Curiosity wheel drive actuators",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover20": {
+  "name": "TK-1 Track Unit",
+  "size_text": "S / M",
+  "summary": "Tracked unit for soft regolith and steep slopes; slower, power-hungry.",
+  "in_game": "Replaces a wheel station on soft regolith, dunes and snow: ground pressure 1/4 of a wheel, climbs 30 deg slopes, but top speed 1.5 m/s and 2x drive power. Integrated drive motor; mounts on a rail node or suspension arm. 0.4 / 2.0 kW. Mass 45 / 220 kg.",
+  "real_life": "Rubber track conversion units (e.g. Mattracks); tracked planetary rover prototypes",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover21": {
+  "name": "RC-1 Rover Control Core",
+  "size_text": "S",
+  "summary": "Rover probe core: drive computer, hazcams, autonav, 1 Small slot.",
+  "in_game": "The probe core for rovers: drive computer, IMU, hazard cameras and autonomous navigation (drives waypoints without link). Includes a 1-unit Small internal slot (battery, computer or science). Provides traction control and wheel-slip limiting. Top node takes a mast or science turret. 60 W. Mass 25 kg. One per rover (or a crewed cab).",
+  "real_life": "Curiosity / Perseverance rover compute element and hazcams",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover22": {
+  "name": "SE-1 Suited Crew Seat",
+  "size_text": "XS",
+  "summary": "Open seat with hand controller for one suited crew member.",
+  "in_game": "Open seat for one suited crew member; mounts on any grid node. Includes a hand controller, so a seat plus a control core (or open cab) makes a drivable rover. Crew breathe from suits: range limited by suit consumables. Folds flat for launch. Mass 12 kg.",
+  "real_life": "Apollo LRV seats and T-handle hand controller",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover23": {
+  "name": "CB-O Open Cab Frame",
+  "size_text": "M",
+  "summary": "Open driving station: console, roll hoop and two seat nodes.",
+  "in_game": "Driving station for suited crew: console with nav display and comms relay (links suits to the rover antenna), roll-over protection and two seat nodes (take rover22 seats). Console top node takes an antenna mast or camera. 40 W. Mass 55 kg.",
+  "real_life": "Apollo LRV control and display console; Artemis Lunar Terrain Vehicle",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover24": {
+  "name": "CB-P Pressurised Rover Cab",
+  "size_text": "M / L",
+  "summary": "Shirt-sleeve cab with suitports and docking hatch (crew 2 or 4).",
+  "in_game": "Shirt-sleeve cab for long traverses. Rear suitports give 10-minute EVA egress without an airlock; top-rear hatch docks to habs and ascent vehicles. M: crew 2, 10 m3, built-in life support for 2 crew x 3 days, 4 Small + 1 Medium slots. L: crew 4 (2 sleep), 22 m3, 8 Small + 2 Medium + 1 Rack slot (fit LS-1 for long trips). 0.4 / 0.8 kW idle. Mass 2.4 / 4.5 t.",
+  "real_life": "NASA Space Exploration Vehicle; JAXA/Toyota Lunar Cruiser; The Martian rover",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover25": {
+  "name": "CG-1 Cargo Bed",
+  "size_text": "S / M",
+  "summary": "Gridded flatbed for surface cargo, with fold-down tailgate ramp.",
+  "in_game": "Carries surface cargo: sample boxes, tanks, rolled-up solar arrays, spare wheels, a Sojourner-class micro rover. Floor has its own 0.5 m grid so containers snap in; tie-downs keep cargo attached at up to 3 m/s bumps. Tailgate folds into a ramp. Payload 0.3 / 1.5 t (1 g). Mass 30 / 90 kg.",
+  "real_life": "Apollo LRV aft tool pallet; Apollo 14 Modular Equipment Transporter",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover26": {
+  "name": "BB-1 Rover Battery Bay",
+  "size_text": "S / M",
+  "summary": "Heated enclosure that gives the deck internal slots for batteries.",
+  "in_game": "Thermally controlled enclosure that turns deck space into internal slots, so batteries stay internal per the build rules. S: 2 Small slots; M: 4 Small or 1 Medium. Takes power05 BAT packs, fuel cells or computers; heaters draw 10 / 20 W in the cold (0 W if warmed by an RTG mount). Lid top node takes a solar or radiator panel. Mass 15 / 35 kg empty.",
+  "real_life": "Apollo LRV battery housings; Curiosity rover warm electronics box",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover27": {
+  "name": "RD-R Rover Radiator",
+  "size_text": "S / M",
+  "summary": "Deck radiator with a dust cover that opens at stops.",
+  "in_game": "Rejects rover heat (drive motors, cab, electronics): 0.5 / 2 kW with the cover open and the panel out of direct sun. Cover closes while driving to keep dust off (dusty radiators lose 50%); opens automatically at stops. Mass 12 / 40 kg.",
+  "real_life": "Apollo LRV radiators with dust covers (the Apollo 17 fender/dust incident)",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover28": {
+  "name": "SA-R Rover Solar Mount",
+  "size_text": "S / M",
+  "summary": "Fold-out, sun-tilting solar array for parked rovers.",
+  "in_game": "Unfolds and tilts to track the Sun when parked (fixed flat while driving). 0.35 / 1.2 kW at 1 AU, ~43% at Mars, dust loss 0.2%/sol unless wiped by crew or wind. Folds for dust storms and transport. Mass 20 / 60 kg.",
+  "real_life": "Mars Exploration Rover (Spirit/Opportunity) solar deck; VIPER solar panels",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover29": {
+  "name": "RM-1 RTG Mount",
+  "size_text": "S",
+  "summary": "Rear RTG cradle that pipes waste heat into the rover's thermal loop.",
+  "in_game": "Holds a power03 MMRTG on the rear of the chassis at 30 deg so its fins shed heat. Heat exchangers pipe ~1.5 kW of RTG waste heat into the rover coolant loop: battery bays and cabs need no heater power. Shield plate lets crew work at the front of the rover. Mass 18 kg.",
+  "real_life": "Curiosity / Perseverance MMRTG mount with heat exchangers",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover30": {
+  "name": "TA-1 Rover Robotic Arm",
+  "size_text": "S / M",
+  "summary": "5-DoF arm with drill / contact-sensor / scoop tool turret.",
+  "in_game": "5-DoF arm with a three-position tool turret: core drill (rover05 head), contact sensor head (reads through sci01 in a core slot) and a sampling scoop. Places sci02 seismometers and moves cargo up to 5 / 20 kg. Reach 1.8 / 3.0 m. 150 / 400 W. Mass 70 / 160 kg.",
+  "real_life": "Curiosity / Perseverance robotic arm and turret",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover31": {
+  "name": "TD-1 Drill Mast",
+  "size_text": "S",
+  "summary": "Fold-up drill derrick for 3 m deep sampling and ice prospecting.",
+  "in_game": "Vertical feed mast for deep sampling and ice prospecting: carries the rover05 drill head down to 3 m using a 4-rod carousel (vs 2 m on the arm). Finds subsurface ice for ISRU siting. 300 W while drilling, 0.3 m/h in rock. Rover must be parked. Mass 60 kg.",
+  "real_life": "ExoMars Rosalind Franklin drill; Honeybee TRIDENT drill (VIPER)",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover32": {
+  "name": "TS-1 Dozer Blade & Scoop",
+  "size_text": "S / M / L",
+  "summary": "Front blade that grades pads, builds berms and scoops regolith.",
+  "in_game": "Grades landing pads, pushes regolith berms around reactors and habs (radiation and blast protection) and loads regolith into rover09/DR-2 feed hoppers. 0.1 / 0.3 / 0.8 m3 per pass. Needs traction: works best on heavy rovers or tracks. 0.2 / 0.6 / 1.5 kW. Mass 40 / 120 / 300 kg.",
+  "real_life": "NASA Chariot / Lunar dozer-blade prototypes; Phoenix lander scoop",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover33": {
+  "name": "SC-T Science Turret",
+  "size_text": "S",
+  "summary": "Remote-sensing mast with built-in cameras and laser spectrometer.",
+  "in_game": "Science is built in, not bolted on: the head integrates stereo panoramic cameras, a laser-induced breakdown spectrometer and an IR spectrometer, with electronics in the base's Small slot. Zaps rocks up to 7 m away for biome/rock science without stopping; also the rover's best navigation camera. 80 W. Mass 35 kg.",
+  "real_life": "Curiosity Mastcam + ChemCam; Perseverance Mastcam-Z + SuperCam",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover34": {
+  "name": "BP-1 Bumper / Push Bar",
+  "size_text": "S / M / L",
+  "summary": "Crush-box bumper with tow eye; mounts front or rear.",
+  "in_game": "Mounts on node_front or node_rear. Crush boxes absorb a 3 m/s collision without damaging the frame (single use per box; repairable by crew EVA). Tow eye lets one rover pull another out of a sand trap. Top rail takes light bars. Mass 10 / 25 / 50 kg.",
+  "real_life": "Off-road vehicle bull bars; NASA Chariot rover bumpers",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover35": {
+  "name": "LB-1 Rover Light Bar",
+  "size_text": "XS / S",
+  "summary": "LED spot/flood light bar for night and shadowed craters.",
+  "in_game": "Driving lights for night and permanently shadowed craters: 30 deg spot beams to 60 m plus 90 deg flood to 20 m. 40 / 120 W. Mounts on the grid, cab roof, roll hoop or bumper top. Hazard cameras need it to drive in the dark. Mass 3 / 7 kg.",
+  "real_life": "NASA VIPER rover headlights; off-road LED light bars",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover36": {
+  "name": "AM-1 Antenna Mast",
+  "size_text": "S",
+  "summary": "Telescoping mast with omni and small dish; extends link range.",
+  "in_game": "Rover comms: omni plus a 0.6 m steerable dish. Extending the mast from 0.8 to 3 m pushes the radio horizon out (about 2x link range to nearby landers and base) and clears the crest of crater rims. Relays suit radios. 25 W. Mass 15 kg. Also mounts on the open-cab console.",
+  "real_life": "Apollo LRV umbrella high-gain antenna; Curiosity high-gain antenna",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover37": {
+  "name": "HC-1 Hitch / Trailer Coupler",
+  "size_text": "XS",
+  "summary": "Tow hitch with power/data umbilical (active and passive halves).",
+  "in_game": "Couples a rover to a trailer or another rover. Active half on the tow vehicle, passive half on the trailer tongue; couples within 0.2 m and 20 deg. Passes power and data (and air on the pressurised variant) so a trailer's batteries, RTG or hab share the rover's bus. Pulls 10 t (1 g). Mass 8 kg.",
+  "real_life": "Tow hitches with umbilicals; The Martian rover towing the Hab trailer",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover38": {
+  "name": "TF-1 Trailer Frame",
+  "size_text": "S / M",
+  "summary": "Unpowered towed chassis with the same grid and rail nodes.",
+  "in_game": "Unpowered chassis towed via the hitch coupler. Same deck grid and rail hardpoints as rover13, so it takes suspension, wheels, cargo beds, battery bays, RTG mounts or even a rover10 hab. Unpowered wheels still need suspension arms. Mass 0.06 / 0.2 t; rated 1 / 5 t.",
+  "real_life": "Apollo 14 Modular Equipment Transporter; Watney's rover trailer (The Martian)",
+  "group": "rover kit",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "rover39": {
+  "name": "ISRU-E Water Electrolyser",
+  "size_text": "slot",
+  "summary": "Medium-slot electrolyser: water to hydrogen and oxygen.",
+  "in_game": "Medium slot item (1.0 x 1.0 x 0.6 m). Splits water from rover09 extractors or tank10 into H2 and O2: 5 kW gives ~0.9 kg water/h -> 0.1 kg H2 + 0.8 kg O2. Feeds rover08 Sabatier (H2) and oxidiser tanks; with tank08 cryocoolers this closes the Mars/Moon methalox loop. Heat 1 kW. Mass 0.18 t.",
+  "real_life": "PEM water electrolysers; ISS Oxygen Generation System electrolysis cell stack",
+  "group": "ISRU",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop15": {
+  "name": "LE-9 'Rutherford' Electric-Pump Kerolox",
+  "size_text": "S",
+  "summary": "Small kerolox engine with battery-driven electric pumps.",
+  "in_game": "Small-launcher engine whose pumps are driven by electric motors: it draws ~50 kW from BAT packs in the stage's internal slots (~0.8 kWh per minute of burn), so the builder checks battery capacity against burn time. 25 kN SL / 26 kN vac; Isp ~300 s SL; vacuum-nozzle variant 26 kN, ~340 s. Throttle 50-100%, 3 restarts. Mass 0.035 t.",
+  "real_life": "Rocket Lab Rutherford (Electron)",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop16": {
+  "name": "LE-10 'Spike' Methalox Aerospike",
+  "size_text": "M",
+  "summary": "Altitude-compensating methalox plug nozzle (toroidal or linear).",
+  "in_game": "Altitude-compensating engine: nearly flat Isp from sea level to vacuum (~320 s SL / ~345 s vac), so one engine does the whole ascent. 850 kN SL. No gimbal; steers by differential throttling of chamber segments. Heavy (2.2 t) and the plug runs hot (heat load 2x a bell engine). Toroidal (round, stack) and linear (fits Mk2/Mk3 tails) variants.",
+  "real_life": "Rocketdyne XRS-2200 linear aerospike (X-33); J-2T toroidal aerospike",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop17": {
+  "name": "VN-1 Vernier Thruster",
+  "size_text": "XS",
+  "summary": "Small swivelling radial engine for roll control and trim.",
+  "in_game": "Radial helper engine fed from the main tanks (kerolox or methalox). Swivels +/-45 deg on one axis for roll control and fine velocity trim after main-engine cutoff. 10 kN, Isp ~260 s SL / 300 s vac. Fit in pairs or fours. Mass 25 kg.",
+  "real_life": "Atlas LR101 vernier; Soyuz / R-7 vernier thrusters",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop18": {
+  "name": "LE-11 'F-1' Heavy Gas-Generator Kerolox",
+  "size_text": "L",
+  "summary": "Huge single-chamber booster engine for super-heavy first stages.",
+  "in_game": "Biggest single-chamber engine in the game for super-heavy first stages. 6,770 kN SL / 7,770 kN vac, Isp 263 s SL / 304 s vac. No throttle, no restart (single hypergolic ignition cartridge). Needs an L or larger thrust structure. Mass 8.4 t.",
+  "real_life": "Rocketdyne F-1 (Saturn V S-IC)",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop19": {
+  "name": "LE-12 'LMDE' Deep-Throttle Descent Engine",
+  "size_text": "S / M",
+  "summary": "Hypergolic lander engine with 10-100% deep throttle.",
+  "in_game": "Lander descent engine with a 10-100% throttle (pintle injector), the best hover and landing control in the game. M: 45 kN vac, Isp 311 s, gimbal 6 deg; S: scaled 15 kN. Nozzle extension crushes on touchdown without damage (so landers can sit low). Mass 0.18 / 0.07 t.",
+  "real_life": "TRW Lunar Module Descent Engine (Apollo LM)",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop20": {
+  "name": "AE-1 'LEROS' Apogee Engine",
+  "size_text": "XS",
+  "summary": "Tiny radiatively cooled probe engine for orbit insertion burns.",
+  "in_game": "Probe main engine for orbit insertion burns: 0.64 kN, Isp ~320 s vac, MMH/NTO from tank03. Unlimited restarts and hour-long burns; nozzle glows cherry red (needs a clear view of space to cool). Mass 5 kg.",
+  "real_life": "LEROS 1b (Juno); Airbus S400 apogee motor",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop21": {
+  "name": "SRB-M 'Castor-M' Medium Solid",
+  "size_text": "M",
+  "summary": "Mid-size solid, as a strap-on or a small launcher's core stage.",
+  "in_game": "Fills the gap between SRB-S and SRB-L. ~55 t wet, 1,700 kN SL, Isp ~275 s SL / 290 s vac, burn ~90 s. Strap-on variant (nosecone, radial attach) or core variant (flat top, stack nodes, +/-5 deg thrust vectoring) for small launcher first stages. Cannot shut down.",
+  "real_life": "Avio P120C / Vega P80; Northrop Grumman Castor 30",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop22": {
+  "name": "UM-1 Ullage / Retro Motor Pack",
+  "size_text": "XS",
+  "summary": "Tiny solids that settle propellant before restarts or push stages away.",
+  "in_game": "Small solids that fire for 2-4 s. Ullage variant (nozzles aft) settles propellant before an engine restart in free fall; engines flagged 'needs ullage' fail to relight without it or RCS thrust. Retro variant (nozzles canted forward) pushes a spent stage away after separation. 3 x 10 kN. Mass 45 kg.",
+  "real_life": "Saturn V S-II ullage motors and S-IC retro-rockets",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop23": {
+  "name": "KS-1 'Star-48' Kick Motor",
+  "size_text": "S",
+  "summary": "Spherical solid upper-stage motor for probe escape burns.",
+  "in_game": "Upper-stage solid for escape burns on small probes: 2.1 t, 68 kN vac, Isp 286 s, 85 s burn. Cannot throttle or stop, so the builder plans the burn in advance. Spin-table variant spins the stack to 60 rpm for stability (no guidance needed); 3-axis variant needs a probe core.",
+  "real_life": "Northrop Grumman Star 48 (New Horizons, PAM-D)",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop24": {
+  "name": "LES-1 Launch Escape Tower",
+  "size_text": "M / L / XL",
+  "summary": "Tractor abort tower that pulls a capsule clear, then jettisons.",
+  "in_game": "Tractor abort system for capsules without built-in abort engines (cmd03/04/06). On abort it pulls the capsule 1+ km clear in 3-4 s (M 700 kN / L 1,000 kN / XL 1,800 kN), canards flip it heat-shield first, then it jettisons. Jettisoned normally ~3 min after launch. Mass 2.5 / 4.2 / 7.3 t.",
+  "real_life": "Apollo Launch Escape System; Orion Launch Abort System",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop25": {
+  "name": "CG-1 Cold-Gas Thruster Block",
+  "size_text": "XS",
+  "summary": "Non-toxic nitrogen RCS, safe near crew and solar arrays.",
+  "in_game": "Simplest RCS: nitrogen gas from a tank04 COPV (N2 fill). 4 x 20 N, Isp ~65 s. Non-toxic and cold, so it is safe near crew on EVA and around station solar arrays (no plume contamination). Mass 3 kg.",
+  "real_life": "Manned Maneuvering Unit nitrogen thrusters; MarCO CubeSat cold-gas system",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "prop26": {
+  "name": "NTR-1 'NERVA' Nuclear Thermal Rocket",
+  "size_text": "L",
+  "summary": "Fission-heated hydrogen engine, Isp ~875 s; shadow-shield rules.",
+  "in_game": "Heats liquid hydrogen in a fission reactor: 330 kN vac, Isp ~875 s. LH2 only (tank02 + cryocooler strongly advised). 9 t. Crew must sit in the shield's shadow cone. Needs 30 min of cooldown flow after each burn (~3% extra LH2). Cannot be started below 150 km on inhabited worlds. 10 restarts.",
+  "real_life": "NERVA / NRX reactors; DARPA-NASA DRACO",
+  "group": "prop",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "tank11": {
+  "name": "T-TOR Toroidal Tanks",
+  "size_text": "M / L",
+  "summary": "Ring tank that wraps an engine bell to shorten landers.",
+  "in_game": "Ring tank that wraps around an engine bell, making landers and upper stages shorter. Fill set in builder: hypergolic, methalox (dual compartments) or monoprop. M: 2.2 m3 (~2.6 t hypergolic); L: 7.7 m3 (~9 t). Central hole 1.1 / 1.6 m. Dry ~8%.",
+  "real_life": "Toroidal propellant tank concepts for compact landers and upper stages",
+  "group": "tank",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "tank12": {
+  "name": "T-ADP Tank Adapters",
+  "size_text": "S-M / M-L / L-XL",
+  "summary": "Conical adapters that also hold kerolox or methalox.",
+  "in_game": "Conical adapters that hold propellant instead of being dead weight (same lengths as stage03). Kerolox or methalox fill set in the builder. S-M 3.6 m3, M-L 14.5 m3, L-XL 36 m3. Dry ~9%.",
+  "real_life": "Tapered R-7 / Soyuz strap-on booster tanks",
+  "group": "tank",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "tank13": {
+  "name": "T-LEN Tank Length & Diameter Series",
+  "size_text": "XS / S / M / L / XL / XXL",
+  "summary": "Extra lengths plus XS and XXL diameters for kerolox/methalox tanks.",
+  "in_game": "KSP-style length steps and missing diameters for kerolox / methalox (fill set in builder): XS short and long, S/M half and double, L/XL half, and XXL 7.5 m (super-heavy class). Mass, volume and boil-off scale with the base tank00/tank01 rules.",
+  "real_life": "Rocket Lab Electron (XS/S); SpaceX Super Heavy (XXL)",
+  "group": "tank",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage12": {
+  "name": "CP-1 Multi-Engine Couplers & Thrust Structure",
+  "size_text": "S / M / L",
+  "summary": "Bi/tri/quad couplers and a nine-engine thrust plate with crossfeed.",
+  "in_game": "Lets one stack feed several engines or smaller stacks: bi (S->2 XS, M->2 S), tri and quad (L->3/4 S) and a nine-engine L plate (centre + ring of 8, M-class engines). Plumbed (propellant crossfeed) and carries thrust. Extra bottom nodes are node_bottom_N. Mass ~1.5% of the thrust carried.",
+  "real_life": "Falcon 9 Octaweb; Titan II twin-engine thrust frame",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage13": {
+  "name": "NC-1 Nose Cones",
+  "size_text": "XS / S / M / L",
+  "summary": "Ogive, conical and blunt nose cones for boosters and stacks.",
+  "in_game": "Closes the top of a booster or side stack and cuts drag. Ogive (lowest drag, L/D 2), conical (cheap, L/D 1.5) and blunt aero-cap (short, handles heating; L/D 0.5). Mass ~10 kg/m2 of surface. Not a fairing: nothing fits inside.",
+  "real_life": "Sounding-rocket and strap-on booster nose cones (Black Brant; Shuttle SRB nose cap)",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage14": {
+  "name": "PS-1 Clamp-Band Payload Separator",
+  "size_text": "XS / S / M",
+  "summary": "Low-shock clamp band and spring payload separation.",
+  "in_game": "Light, low-shock satellite separation: the clamp band releases and springs push the payload away at 0.3-1 m/s with minimal tip-off (no pyro shock, no debris ring). Both halves stay on their own side. Mass 5 / 15 / 40 kg. Cannot re-attach.",
+  "real_life": "Marman clamp band; Rocket Lab / Planetary Systems Lightband",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage15": {
+  "name": "AB-1 Landing Airbags",
+  "size_text": "S / M",
+  "summary": "Inflating airbag cluster for bounce landings.",
+  "in_game": "Bounce-landing for probes and small landers: gas generators inflate the lobes in 1 s; survives 25 m/s impacts and bounces to rest, then deflates and retracts. Single use. S: 5.2 m cluster for <1 t landers; M: 9 m for <4 t. Mass 0.12 / 0.45 t. Needs a braking stage or chute first.",
+  "real_life": "Mars Pathfinder / Spirit & Opportunity airbags; Boeing Starliner landing airbags",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage16": {
+  "name": "HS-D 'ADEPT' Deployable Heat Shield",
+  "size_text": "S / M",
+  "summary": "Umbrella-style carbon-fabric heat shield that opens before entry.",
+  "in_game": "Umbrella aeroshell: carbon-fabric skin on ribs opens before entry, giving a big low-density shield that fits a narrow fairing. S: 0.625 m stowed -> 2 m; M: 1.25 m stowed -> 6 m. Rated to Mars/Venus entry; gentler than HIAD, single use. Mass 0.03 / 0.35 t.",
+  "real_life": "NASA ADEPT (Adaptable Deployable Entry and Placement Technology, SR-1 flight 2018)",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "stage17": {
+  "name": "PC-R Radial Recovery Chute Pack",
+  "size_text": "S / M",
+  "summary": "Side-mounted drogue and main chutes to recover spent stages.",
+  "in_game": "Radial drogue + main chute pair for recovering spent boosters and stages into the sea (or for radial chute clusters on big capsules). S: brings 5 t to 10 m/s; M: 20 t to 12 m/s on Earth. Stage recovery refunds part cost. Mars: not enough air (see stage09).",
+  "real_life": "Space Shuttle SRB recovery parachutes; Rocket Lab Electron booster recovery chute",
+  "group": "stage",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero00": {
+  "name": "FS-2 Mk2 Lens Fuselage Sections",
+  "size_text": "M (Mk2)",
+  "summary": "Mk2 lens-profile fuselage (tanks, cabin, bay) matching cockpit02.",
+  "in_game": "Body tubes that match the cockpit02 rear face. Tank variants (methalox or kerolox fill; 2.5 / 5 / 10 m3 for 1.25 / 2.5 / 5 m), structural, crew cabin (4 seats, side hatch, 2 Small slots) and service bay (4 Small unpressurised slots). Lifting body: adds some lift. Belly tiles included.",
+  "real_life": "Space Shuttle orbiter mid-fuselage; Dream Chaser / X-37B",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero01": {
+  "name": "FA-2 Mk2 Adapters & Tail",
+  "size_text": "M (Mk2) / S / M",
+  "summary": "Mk2 to round adapters, bicoupler and twin-pod aft fuselage.",
+  "in_game": "Joins Mk2 to round stacks: Mk2 -> M (2.5 m round), Mk2 -> S, Mk2 bicoupler (2 x S bottoms) and an aft fuselage with twin OMS-style pods (two S engine mounts node_bottom_1/2 for prop07/prop13 plus RCS bays). Tank-adapter fill optional.",
+  "real_life": "Space Shuttle aft fuselage and OMS pods",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero02": {
+  "name": "FS-3 Mk3 Fuselage Sections (3.75 m)",
+  "size_text": "L (Mk3)",
+  "summary": "3.75 m Mk3 fuselage barrels: tanks, cabin, structure, service bay.",
+  "in_game": "Heavy spaceplane and airliner bodies; front mates cockpit03 and L stacks. Tank variants (methalox / kerolox / LH2 fill; 25 / 50 / 100 m3 for 2.5 / 5 / 10 m), structural, passenger/crew cabin (12 seats, 2 hatches, 4 Small + 1 Rack slots) and service bay (8 Small).",
+  "real_life": "Boeing 747 / C-5 fuselage barrels; Space Shuttle orbiter",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero03": {
+  "name": "CB-1 Cargo Bays (Mk2 / Mk3)",
+  "size_text": "M (Mk2) / L (Mk3)",
+  "summary": "Mk2/Mk3 bays with opening doors (and a rear ramp version).",
+  "in_game": "Fuselage with opening doors; payloads on node_payload are shielded like a fairing but can be retrieved and landed again. Door insides are 3 / 10 kW radiators when open. Mk3 ramp variant lowers a rear ramp so M rovers drive in and out. Inner width Mk2 2.1 m, Mk3 3.3 m.",
+  "real_life": "Space Shuttle payload bay and door radiators; C-5 / A400M rear ramp",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero04": {
+  "name": "SK-1 Strakes & LERX",
+  "size_text": "S / M / L",
+  "summary": "Fuselage strakes that raise the stall angle of attack.",
+  "in_game": "Radial lifting blades along the fuselage: create vortices that keep wings lifting at high angle of attack (+30% max AoA before stall), help belly-first re-entry stability. Length 1.5 / 3 / 5 m. 25 kg/m2.",
+  "real_life": "F/A-18 leading-edge extensions; Space Shuttle wing glove",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero05": {
+  "name": "VT-1 Tail Fins",
+  "size_text": "S / M / L",
+  "summary": "Fixed vertical, twin canted and V-tail fins (rudder node).",
+  "in_game": "Fixed vertical stabilisers for yaw stability: single vertical, twin canted (20 deg) or V-tail (45 deg) variants. Trailing-edge node_side_1 takes a jet09 rudder. Height 1.5 / 3 / 5 m. 25 kg/m2.",
+  "real_life": "Space Shuttle vertical stabiliser; F-22 twin canted tails",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero06": {
+  "name": "FN-1 Rocket Stabiliser Fins",
+  "size_text": "XS / S / M",
+  "summary": "Fixed base fins for passive rocket stability.",
+  "in_game": "Passive fins at the base of a rocket move the centre of pressure aft for stable ascent without gimbal (sounding rockets, early career). Add drag and burn off on re-entry unless jettisoned with the stage. Span 0.3 / 0.6 / 1.2 m.",
+  "real_life": "Saturn V S-IC fins; Black Brant sounding-rocket fins",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "aero07": {
+  "name": "AB-2 Airbrake",
+  "size_text": "S / M",
+  "summary": "Hinged speed brake for approach and transonic stability.",
+  "in_game": "Deploys to 60 deg on a key press for drag on approach or to stabilise a spaceplane in the transonic regime; auto-retracts above its heat limit (~Mach 3). Drag area 0.5 / 1.8 m2. Mass 20 / 60 kg.",
+  "real_life": "F-15 dorsal speed brake; Space Shuttle split-rudder speed brake",
+  "group": "aero",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "jet12": {
+  "name": "CC-1 'SABRE' Precooled Combined-Cycle Engine",
+  "size_text": "M",
+  "summary": "Experimental precooled air-breather that switches to rocket mode.",
+  "in_game": "Experimental. Air-breathing up to Mach 5.4 (~600 kN, Isp ~3,500 s using LH2 + intake air), then closes the intake and becomes a hydrolox rocket (~800 kN vac, Isp ~450 s). Integrated spike intake. Heavy (3.5 t); precooler frost/overheat events. For SSTO spaceplanes with Mk3 bodies.",
+  "real_life": "Reaction Engines SABRE (ground-tested precooler; never flown)",
+  "group": "jet",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "struct00": {
+  "name": "GD-1 Box Girders",
+  "size_text": "XS / S",
+  "summary": "Light lattice box girders to space parts apart.",
+  "in_game": "Light structural spars to space things apart (reactors from crew, antennas from hulls, landing legs outriggers). Surface-attach anywhere along the length; carries power/data lines. 0.3 m section: 8 kg/m; 0.6 m: 25 kg/m.",
+  "real_life": "Aluminium space-frame truss girders; Mir Sofora girder",
+  "group": "struct",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "struct01": {
+  "name": "LT-1 Lattice Trusses (S / M)",
+  "size_text": "S / M",
+  "summary": "Triangular/octagonal trusses smaller than station07.",
+  "in_game": "Smaller trusses than station07 for probes, tugs and small stations. Triangular 1.25 m (2 / 4 m) and octagonal 2.5 m (2.5 / 5 m, one unpressurised Medium service bay per 5 m). Routes power, data and coolant. 30 / 80 kg/m.",
+  "real_life": "ISS Z1 truss; Northrop Grumman Astromast-style trusses",
+  "group": "struct",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "struct02": {
+  "name": "SR-1 Structural Strut",
+  "size_text": "XS",
+  "summary": "Two-ended stiffening strut drawn between any two parts.",
+  "in_game": "Two-ended connector drawn between any two parts in the builder (0.3-6 m) to stiffen wobbly stacks and side boosters; breaks at 50 kN. No fluid or power transfer. Ends are node_attach and node_attach_2. 2 kg + 1 kg/m.",
+  "real_life": "Space Shuttle External Tank / SRB attach struts",
+  "group": "struct",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "struct03": {
+  "name": "LD-1 Ladders & Handrails",
+  "size_text": "XS",
+  "summary": "Fixed/telescoping ladders, EVA handrails and a foot restraint.",
+  "in_game": "Crew mobility: fixed ladders (1 / 2 m), a telescoping ladder (1.2 m stowed -> 4 m) for landers, EVA handrails (1 / 2 m) for stations and a portable foot restraint. On EVA in gravity, crew can only climb where ladders exist; in zero-g, handrails set the EVA routes. 3 kg/m.",
+  "real_life": "Apollo LM ladder; ISS EVA handrails",
+  "group": "struct",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "struct04": {
+  "name": "HP-1 Radial Pylon / Hardpoint",
+  "size_text": "S / M",
+  "summary": "Standoff pylon with fuel/power pass-through for side-mounting.",
+  "in_game": "Standoff for hanging tanks, engines, nacelles or wings off a hull; the outer node_outboard carries fuel crossfeed, power and data. Standoff 0.6 / 1.2 m, rated 5 / 40 t. Mass 15 / 60 kg.",
+  "real_life": "ISS ExPRESS Logistics Carrier FRAM; Shuttle SRB forward attach fitting",
+  "group": "struct",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "station14": {
+  "name": "DP-XS Probe-and-Drogue Docking Port",
+  "size_text": "XS",
+  "summary": "Small uncrewed docking port that transfers propellant and power.",
+  "in_game": "Uncrewed docking for probes, tugs and tankers (0.625 m): soft capture, then retract and hard-latch. No crew tunnel, but transfers propellant and power (tanker refuelling). Active/passive halves (like Progress to the station).",
+  "real_life": "Soyuz / Progress SSVP probe-and-drogue; Apollo probe and drogue",
+  "group": "station",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "station15": {
+  "name": "GF-1 Grapple Fixture",
+  "size_text": "XS",
+  "summary": "Fixture that the robotic arm can grab (power/data variant).",
+  "in_game": "Lets station08 (and rover/robo arms) grab a part. FRGF variant: grab only. PDGF variant: passes power and data, and the arm can 'walk' along modules fitted with them. Needed for CBM berthing. Mass 10 / 25 kg.",
+  "real_life": "Canadarm2 Power and Data Grapple Fixture; Flight Releasable Grapple Fixture",
+  "group": "station",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "station16": {
+  "name": "CL-1 Capture Claw",
+  "size_text": "S / M",
+  "summary": "Four-finger claw to capture debris, stages and asteroids.",
+  "in_game": "Captures objects with no docking port: debris, spent stages, asteroids <20 / 200 t. Fingers close in 5 s and form a rigid structural joint (no crew, fuel or power transfer). Best-in-class for salvage and tug missions. 0.2 / 1.5 kW while moving. Mass 0.15 / 0.8 t.",
+  "real_life": "ESA ClearSpace-1; Northrop Grumman Mission Extension Vehicle",
+  "group": "station",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "robo00": {
+  "name": "HG-1 Powered Hinge",
+  "size_text": "XS / S / M",
+  "summary": "Powered single-axis hinge joint (0-180 deg).",
+  "in_game": "Single-axis joint (0-180 deg) about the local X axis, with lock. Torque 50 / 500 / 5,000 Nm, 10 deg/s. Builds folding wings, deploying booms, landing-leg mechanisms and ramps. Passes power/data. Moving half is sub-mesh half_b. Mass 3 / 15 / 80 kg.",
+  "real_life": "Spacecraft deployment hinges; Canadarm2 joints",
+  "group": "robo",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "robo01": {
+  "name": "RT-1 Rotor / Rotation Servo",
+  "size_text": "XS / S / M",
+  "summary": "Rotation servo or continuous rotor with slip ring.",
+  "in_game": "Rotation about the stack axis: servo mode (angle-limited, holds position) or continuous rotor mode up to 60 rpm (fans, spin tables, sun-tracking). Slip ring passes power/data. Torque 20 / 400 / 4,000 Nm. Moving half is half_b. Mass 3 / 20 / 90 kg.",
+  "real_life": "Solar Array Drive Assembly; ISS Beta Gimbal Assembly",
+  "group": "robo",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "robo02": {
+  "name": "PS-2 Linear Piston",
+  "size_text": "XS / S / M",
+  "summary": "Linear actuator along the stack axis, lockable at any length.",
+  "in_game": "Linear actuator along the stack axis: extends from 0.4 / 0.8 / 1.6 m to 1.0 / 2.0 / 4.0 m, force 1 / 10 / 100 kN, locks at any length. Levelling legs, lifting cabs, extending docking tunnels. Top half (rod) moves. Mass 5 / 25 / 120 kg.",
+  "real_life": "Ball-screw linear actuators (e.g. NASA ATHLETE leg actuators)",
+  "group": "robo",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "robo03": {
+  "name": "TB-1 Deployable Boom",
+  "size_text": "XS / S",
+  "summary": "Canister that deploys a 10 m or 30 m lattice boom.",
+  "in_game": "Long standoff from a small package: XS coilable mast 0.6 m -> 10 m; S articulated mast 1.5 m -> 30 m. Separates reactors from crews, radiators and antennas from hulls, and gives gravity-gradient stabilisation. node_top is at the tip in both poses. Mass 8 / 60 kg.",
+  "real_life": "SRTM ADAM mast; NuSTAR deployable mast",
+  "group": "robo",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci00": {
+  "name": "SC-ENV Environment Sensor Suite",
+  "size_text": "slot",
+  "summary": "Small-slot weather, dust and radiation logger (needs aperture).",
+  "in_game": "Small slot item. Logs temperature, pressure, wind, dust and radiation continuously (the radiation reading also tracks crew dose). Needs a slot with an aperture (probe bus, service bay, sci03 bay, rover core/cab, hab). 15 W. Mass 12 kg. Science per biome/altitude band, trickled while the vessel is there.",
+  "real_life": "Perseverance MEDA; Curiosity RAD / REMS",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci01": {
+  "name": "SC-SPC Spectrometer Pack",
+  "size_text": "slot",
+  "summary": "Point spectrometer or X-ray diffraction mini-lab in a slot.",
+  "in_game": "Small variant: point spectrometer read through an arm contact head or an aperture window. Medium variant: X-ray diffraction mini-lab that takes drill/scoop samples through its top funnel port. Mineralogy science and ISRU ore grading. 25 / 60 W. Mass 15 / 40 kg.",
+  "real_life": "Curiosity APXS and CheMin",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci02": {
+  "name": "SC-SEI Seismometer Package",
+  "size_text": "slot",
+  "summary": "Slot-stowed seismometer placed on the ground by arm or crew.",
+  "in_game": "Medium slot item that an arm or crew places on the ground (deployed pose), tethered to the lander. Records quakes and impacts over months; also sounds the interior. Needs quiet: no rover driving within 50 m. 10 W. Mass 30 kg.",
+  "real_life": "InSight SEIS; Apollo Passive Seismic Experiment",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci03": {
+  "name": "SB-1 Science Instrument Bay",
+  "size_text": "S / M",
+  "summary": "SIM-bay stack module with aperture slots and a door.",
+  "in_game": "Stack module that turns science into internal equipment: S has 4 Small aperture slots, M 8 Small (or 2 Medium). Door opens (or jettisons) to give instruments a view; closed it protects them on launch and entry. Heaters 20 / 40 W.",
+  "real_life": "Apollo 15-17 Scientific Instrument Module (SIM) bay",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci04": {
+  "name": "SC-RK Experiment Rack",
+  "size_text": "slot",
+  "summary": "Pressurised rack for crew-tended experiments.",
+  "in_game": "Rack slot item (pressurised only: habs, labs, cmd08, rover24-L). Crew-tended biology, materials and microgravity experiments: produces science per crew-hour, best in low or no gravity. 2 kW, 2 kW heat. Mass 0.7 t.",
+  "real_life": "ISS EXPRESS rack",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci05": {
+  "name": "TM-1 Survey Telescope Module",
+  "size_text": "S / M",
+  "summary": "Stack module with integrated optics for mapping and astronomy.",
+  "in_game": "Integrated optics stack module: orbital high-resolution mapping (finds ISRU sites, landing zones and anomalies) and astronomy. Aperture 0.5 / 1.3 m. Needs fine pointing (two power14 wheels) and shade from the Sun. 60 / 300 W. Mass 0.3 / 2.5 t.",
+  "real_life": "MRO HiRISE camera; Hubble-class telescopes",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "sci06": {
+  "name": "SC-SRC Sample Cache",
+  "size_text": "slot",
+  "summary": "Sealed sample tubes plus a hand-off container for sample return.",
+  "in_game": "Small slot item holding 20 sealed sample tubes from drills and scoops. The orbiting-sample variant is a hand-off container that moves between vessels (rover -> MAV -> orbiter). Samples returned to Earth are worth 3x their field science. 10 W. Mass 18 kg.",
+  "real_life": "Perseverance Sample Caching System; Mars Sample Return orbiting sample container",
+  "group": "sci",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "power14": {
+  "name": "RW-1 Reaction Wheel Units",
+  "size_text": "slot",
+  "summary": "Slot-only reaction wheels in three sizes; saturate, need desat.",
+  "in_game": "Slot-only attitude control (no bolted-on wheels): torque 5 / 40 / 200 Nm, momentum 50 / 600 / 4,000 Nms, 20 / 60 / 200 W. Saturates under constant torque; desaturates with RCS or automatically via magnetorquers in planetary magnetic fields. Small half-height / Small / Medium slot. Mass 8 / 25 / 110 kg.",
+  "real_life": "Honeywell HR-series / Hubble reaction wheel assemblies",
+  "group": "power",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "power15": {
+  "name": "CMG-1 Control Moment Gyro",
+  "size_text": "slot",
+  "summary": "Rack-size gyro for 3-axis control of very large stations.",
+  "in_game": "Rack slot (pressurised) or truss service bay item for big stations and ships: 250 Nm, 4,800 Nms, far above reaction wheels for the power (0.1 kW). Four give full 3-axis control of 400 t+ stations without propellant. Mass 0.3 t. Gyroscopic side-effects on spun rings modelled.",
+  "real_life": "ISS Control Moment Gyroscopes",
+  "group": "power",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "power16": {
+  "name": "COM-3 Unfurlable Mesh Relay Antenna",
+  "size_text": "L / XL",
+  "summary": "5 m or 12 m unfurling mesh dish for relay links.",
+  "in_game": "Relay satellites and deep-space motherships: 5 m (L) or 12 m (XL) dish opens in orbit. Relays other vessels' links (probes and rovers behind a planet). Range to the outer planets at high bandwidth. 0.4 / 1 kW. Must be stowed before burns >0.1 g. Mass 0.15 / 0.45 t.",
+  "real_life": "NASA TDRS single-access antennas; SMAP 6 m mesh reflector",
+  "group": "power",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ },
+ "power17": {
+  "name": "COM-4 Optical Comms Terminal",
+  "size_text": "XS",
+  "summary": "Laser comms: very high data rate, needs clear skies and stability.",
+  "in_game": "Laser link with 10-100x the data rate of a radio dish of the same mass, but needs a ground station with clear weather (random cloud outages) and very stable pointing (no burns, no spinning). 22 cm aperture, 60 W. Mass 30 kg.",
+  "real_life": "NASA DSOC (Psyche); LCRD; Orion O2O",
+  "group": "power",
+  "source": "new_parts_spec.json",
+  "key_mass_t": null
+ }
+}

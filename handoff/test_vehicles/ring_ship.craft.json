@@ -1,0 +1,132 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test Ring Ship E",
+  "summary": "Hermes-style spine with a spin hub, 6 spokes and a 12-segment gravity ring, deployed solar wings and radiators.",
+  "root": "engine",
+  "parts": [
+    {
+      "id": "nose",
+      "variant": "station07_truss_l"
+    },
+    {
+      "id": "fwd",
+      "variant": "station07_truss_l"
+    },
+    {
+      "id": "hub",
+      "variant": "station09_spin_hub"
+    },
+    {
+      "id": "aft",
+      "variant": "station07_truss_l"
+    },
+    {
+      "id": "engine",
+      "variant": "prop04_ion_cluster"
+    },
+    {
+      "id": "spoke",
+      "variant": "station10_spoke"
+    },
+    {
+      "id": "ring",
+      "variant": "station11_ring_segment"
+    },
+    {
+      "id": "solar",
+      "variant": "power01_solar_wing_deployed"
+    },
+    {
+      "id": "rad",
+      "variant": "power08_radiator_l_deployed"
+    }
+  ],
+  "connections": [
+    {
+      "child": "nose",
+      "childNode": "node_bottom",
+      "parent": "fwd",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "fwd",
+      "childNode": "node_bottom",
+      "parent": "hub",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "hub",
+      "childNode": "node_bottom",
+      "parent": "aft",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "aft",
+      "childNode": "node_bottom",
+      "parent": "engine",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "solar",
+      "childNode": "node_attach",
+      "parent": "fwd",
+      "parentNode": "node_side_1",
+      "symmetry": 2,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "rad",
+      "childNode": "node_attach",
+      "parent": "aft",
+      "parentNode": "node_side_1",
+      "symmetry": 2,
+      "rotation": 0,
+      "offset": 90
+    },
+    {
+      "child": "spoke",
+      "childNode": "node_top",
+      "parent": "hub",
+      "parentNode": "node_side_1",
+      "symmetry": 6,
+      "rotation": 0,
+      "offset": 0,
+      "layout": "spoke"
+    },
+    {
+      "child": "ring",
+      "childNode": "node_side_1",
+      "parent": "hub",
+      "parentNode": "node_side_1",
+      "symmetry": 12,
+      "rotation": 0,
+      "offset": 0,
+      "layout": "ring"
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Cruise",
+      "parts": [
+        "engine"
+      ],
+      "note": "Spin the ring up before the burn."
+    }
+  ],
+  "manual": "# Test Ring Ship E\nSpine along +Y. Spokes use layout \"spoke\", ring segments layout \"ring\" (rotated about the hub axis, hub origin)."
+}

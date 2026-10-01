@@ -34,7 +34,7 @@ function quatFromTo(a, b) {
   const r = dot(a, b) + 1;
   if (r < 1e-8) {
     if (Math.abs(a[0]) > Math.abs(a[2])) return quatNorm([-a[1], a[0], 0, 0]);
-    return quatNorm([0, -a[2], a[0], 0]);
+    return quatNorm([0, -a[2], a[1], 0]);
   }
   return quatNorm([
     a[1] * b[2] - a[2] * b[1],
@@ -177,11 +177,14 @@ function num(value, fallback) {
   return typeof value === 'number' && Number.isFinite(value) ? value : fallback;
 }
 
-function instanceIdFor(seedId, parentInstanceId, parentSeedId, k) {
+// Copies of the seed's first parent are seedId, seedId@2, ...; children of a copied parent inherit
+// its suffix. A symmetric child of a copied parent gets ~k on every copy (~1 included) so that
+// fin@2 (copy 2 on booster) and fin@2~1 (copy 1 on booster@2) can never collide.
+function instanceIdFor(seedId, parentInstanceId, parentSeedId, k, symmetry = 1) {
   const parentSuffix = parentInstanceId === parentSeedId ? '' : parentInstanceId.slice(parentSeedId.length);
   if (!parentSuffix && k === 0) return seedId;
   if (!parentSuffix) return `${seedId}@${k + 1}`;
-  if (k === 0) return `${seedId}${parentSuffix}`;
+  if (symmetry <= 1) return `${seedId}${parentSuffix}`;
   return `${seedId}${parentSuffix}~${k + 1}`;
 }
 
@@ -342,8 +345,22 @@ function stackJointOk(parentVar, parentNode, childVar, childNode) {
   return overlap < Math.max(0.35, 0.12 * Math.min(boxVol(parentVar), boxVol(childVar)));
 }
 
+// Rover-kit and mount families (CONVENTIONS.md): suspension/motor chains, side rails, deck grid,
+// frame ends, hitches, pylons. An explicit node_attach joint onto one of these is kept as written.
+const KIT_MOUNT = /^node_(?:outboard(?:_\d+)?|rail_[lr]_(?:\d+|c)|grid_\d+_\d+|under_\d+_\d+|front|rear|hitch)$/;
+// Deck and mount faces that take a part by its node_bottom / node_top (deck grid, underside grid,
+// extra bottom mounts, payload plane).
+const DECK_MOUNT = /^node_(?:grid_\d+_\d+|under_\d+_\d+|bottom_\d+|payload)$/;
+
 function radialParentName(name) {
-  return /^node_side_\d+$/.test(name) || /^node_wheel_\d+$/.test(name) || name === 'node_top' || name === 'node_bottom';
+  return /^node_side_\d+$/.test(name) || /^node_wheel_\d+$/.test(name) || name === 'node_top' || name === 'node_bottom' || KIT_MOUNT.test(name);
+}
+
+/** Explicit stack face (node_bottom / node_top) on a deck or mount node: kept when the parts do not run through each other. */
+function deckJointOk(parentVar, parentNode, childVar, childNode) {
+  if (!parentNode || !childNode || !isStackNode(childNode.name) || !DECK_MOUNT.test(parentNode.name)) return false;
+  const overlap = pairOverlap(parentVar, parentNode, childVar, childNode);
+  return overlap < Math.max(0.35, 0.12 * Math.min(boxVol(parentVar), boxVol(childVar)));
 }
 
 function radialJointOk(parentVar, parentNode, childVar, childNode) {
@@ -677,7 +694,7 @@ function repairCraft(craft, catalogue) {
       }
       stackEdges.push(edge);
     } else {
-      edge.sticky = edge.source === 'connections' && stackJointOk(parentVar, parentNode, childVar, childNode);
+      edge.sticky = edge.source === 'connections' && (stackJointOk(parentVar, parentNode, childVar, childNode) || deckJointOk(parentVar, parentNode, childVar, childNode));
       if (edge.sticky) {
         edge.childNode = childNode.name;
         edge.parentNode = parentNode.name;
@@ -1074,7 +1091,7 @@ export function assemble(craft, catalogue) {
       if (c.parent !== seedId || c.bad) continue;
       for (let k = 0; k < c.symmetry; k++) {
         if (instances.length >= MAX_INSTANCES) { truncated = true; return; }
-        const childInstanceId = instanceIdFor(c.child, id, seedId, k);
+        const childInstanceId = instanceIdFor(c.child, id, seedId, k, c.symmetry);
         const angle = (k * 360 / c.symmetry + c.offset) * Math.PI / 180;
         if (c.layout === 'ring') {
           // Ring segments share the hub origin. Mating the spoke port would pull the tube inward.

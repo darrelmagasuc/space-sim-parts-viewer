@@ -407,6 +407,66 @@ assert(planNeedsAnotherTry({ errors: [{ message: 'bad' }], warnings: [] }), 'err
 assert(planNeedsAnotherTry({ errors: [], warnings: [{ message: 'Possible overlap a' }, { message: 'Possible overlap b' }, { message: 'Possible overlap c' }] }), 'three overlaps ask for another try');
 assert(!planNeedsAnotherTry({ errors: [], warnings: [{ message: 'Possible overlap between fin and tank (about 0.40 m³).' }] }), 'one graze overlap does not replace a good craft');
 
+const kit = assemble({
+  name: 'kit rover',
+  parts: [
+    { id: 'frame', variant: 'rover13_chassis_frame_m' },
+    { id: 'arm', variant: 'rover17_suspension_arm_m' },
+    { id: 'motor', variant: 'rover19_hub_drive_motor_m' },
+    { id: 'wheel', variant: 'rover04_wheel_m' },
+    { id: 'armR', variant: 'rover17_suspension_arm_m' },
+    { id: 'core', variant: 'rover21_control_core' }
+  ],
+  connections: [
+    { child: 'arm', childNode: 'node_attach', parent: 'frame', parentNode: 'node_rail_l_0' },
+    { child: 'motor', childNode: 'node_attach', parent: 'arm', parentNode: 'node_outboard' },
+    { child: 'wheel', childNode: 'node_attach', parent: 'motor', parentNode: 'node_outboard' },
+    { child: 'armR', childNode: 'node_attach', parent: 'frame', parentNode: 'node_rail_r_5' },
+    { child: 'core', childNode: 'node_bottom', parent: 'frame', parentNode: 'node_grid_2_1' }
+  ],
+  manual: 'm'
+}, cat);
+assert(kit.ok && kit.warnings.length === 0, 'explicit rover-kit rail, outboard and deck-grid joints are kept as written: ' + kit.warnings.map(w => w.message).join(' | '));
+checkJoints('kit', kit);
+const kitPos = id => kit.instances.find(i => i.id === id).position;
+assert(kitPos('arm')[0] > 1 && kitPos('motor')[0] > kitPos('arm')[0] && kitPos('wheel')[0] > kitPos('motor')[0], 'left wheel chain runs outboard along +X');
+assert(kitPos('armR')[0] < -1 && kitPos('armR')[2] < -1, 'right rear arm sits on the -X rail at the back');
+assert(kitPos('core')[1] > 0.3, 'control core stands on the deck grid');
+
+// Antiparallel fallback for a +/-Y child node: node_bottom (-Y) under a -Y deck node must flip the part upside down.
+const under = assemble({
+  name: 'under-deck mount',
+  parts: [
+    { id: 'frame', variant: 'rover13_chassis_frame_m' },
+    { id: 'pod', variant: 'rover21_control_core' }
+  ],
+  connections: [{ child: 'pod', childNode: 'node_bottom', parent: 'frame', parentNode: 'node_under_2_1' }],
+  manual: 'm'
+}, cat);
+assert(under.ok && under.warnings.length === 0, 'under-deck mount assembles cleanly: ' + under.warnings.map(w => w.message).join(' | '));
+checkJoints('under', under);
+const podInst = under.instances.find(i => i.id === 'pod');
+assert(podInst.position[1] < -0.3, 'part hung from node_under sits below the deck');
+assert(Math.abs(Math.hypot(...podInst.quaternion) - 1) < 1e-9, 'antiparallel quaternion is a unit quaternion');
+
+// Nested symmetry under a copied parent must not reuse an id (fin@2 on core's copy 2 vs fin on booster@2).
+const nested = assemble({
+  name: 'nested symmetry', manual: 'm',
+  parts: [
+    { id: 'core', variant: 'tank00_kerolox_m' },
+    { id: 'boost', variant: 'stage01_radial_decoupler' },
+    { id: 'fin', variant: 'aero06_rocket_fin_s' }
+  ],
+  connections: [
+    { child: 'boost', childNode: 'node_attach', parent: 'core', parentNode: 'node_side_1', symmetry: 2, offset: 0 },
+    { child: 'fin', childNode: 'node_attach', parent: 'boost', parentNode: 'node_side_1', symmetry: 2, offset: 90 }
+  ]
+}, cat);
+const nestedIds = nested.instances.map(i => i.id);
+assert(nested.ok && nestedIds.length === 7, 'nested symmetry places 1 + 2 + 4 instances: ' + nestedIds.join(' '));
+assert(new Set(nestedIds).size === nestedIds.length, 'nested symmetry instance ids are unique: ' + nestedIds.join(' '));
+assert(nestedIds.join(' ') === 'core boost fin fin@2 boost@2 fin@2~1 fin@2~2', 'nested symmetry ids follow the documented scheme: ' + nestedIds.join(' '));
+
 const fenced = parseCraftJSON('Here you go:\n```json\n{"name":"X","parts":[],"connections":[],"manual":"brace } inside"}\n```\nThanks');
 assert(fenced.name === 'X' && fenced.manual.includes('}'), 'parser strips fences and keeps braces inside strings');
 let badParse = false;

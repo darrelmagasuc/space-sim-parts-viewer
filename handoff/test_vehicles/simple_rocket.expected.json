@@ -1,0 +1,592 @@
+{
+ "craft": "simple_rocket.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 7,
+  "joints": 6,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "tank",
+   "seedId": "tank",
+   "variant": "tank00_kerolox_m",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      3.4187,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -3.4187,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      0,
+      -1.25
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      0,
+      1.25
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nose",
+   "seedId": "nose",
+   "variant": "stage13_nose_cone_ogive_m",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    5.9237,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      3.4187,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "engine",
+   "seedId": "engine",
+   "variant": "prop08_merlin",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    -4.8687,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      -3.4187,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -6.3187,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fin",
+   "seedId": "fin",
+   "variant": "aero06_rocket_fin_m",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.308148,
+    0,
+    -1.308148
+   ],
+   "quaternion": [
+    0,
+    0.382683,
+    0,
+    0.92388
+   ],
+   "basis": [
+    [
+     0.707107,
+     0,
+     -0.707107
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.707107,
+     0,
+     0.707107
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.883883,
+      0,
+      -0.883883
+     ],
+     "direction": [
+      -0.707107,
+      0,
+      0.707107
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fin@2",
+   "seedId": "fin",
+   "variant": "aero06_rocket_fin_m",
+   "parentId": "tank",
+   "symmetryIndex": 2,
+   "layout": null,
+   "origin": [
+    -1.308148,
+    0,
+    -1.308148
+   ],
+   "quaternion": [
+    0,
+    0.92388,
+    0,
+    0.382683
+   ],
+   "basis": [
+    [
+     -0.707107,
+     0,
+     -0.707107
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0.707107,
+     0,
+     -0.707107
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.883883,
+      0,
+      -0.883883
+     ],
+     "direction": [
+      0.707107,
+      0,
+      0.707107
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fin@3",
+   "seedId": "fin",
+   "variant": "aero06_rocket_fin_m",
+   "parentId": "tank",
+   "symmetryIndex": 3,
+   "layout": null,
+   "origin": [
+    -1.308148,
+    0,
+    1.308148
+   ],
+   "quaternion": [
+    0,
+    0.92388,
+    0,
+    -0.382683
+   ],
+   "basis": [
+    [
+     -0.707107,
+     0,
+     0.707107
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.707107,
+     0,
+     -0.707107
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.883883,
+      0,
+      0.883883
+     ],
+     "direction": [
+      0.707107,
+      0,
+      -0.707107
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fin@4",
+   "seedId": "fin",
+   "variant": "aero06_rocket_fin_m",
+   "parentId": "tank",
+   "symmetryIndex": 4,
+   "layout": null,
+   "origin": [
+    1.308148,
+    0,
+    1.308148
+   ],
+   "quaternion": [
+    0,
+    -0.382683,
+    0,
+    0.92388
+   ],
+   "basis": [
+    [
+     0.707107,
+     0,
+     0.707107
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -0.707107,
+     0,
+     0.707107
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.883883,
+      0,
+      0.883883
+     ],
+     "direction": [
+      -0.707107,
+      0,
+      -0.707107
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "tank",
+   "parentNode": "node_top",
+   "childId": "nose",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    3.4187,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_bottom",
+   "childId": "engine",
+   "childNode": "node_top",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    -3.4187,
+    0
+   ],
+   "parentDirection": [
+    0,
+    -1,
+    0
+   ],
+   "childDirection": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "fin",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 45,
+   "position": [
+    0.883883,
+    0,
+    -0.883883
+   ],
+   "parentDirection": [
+    0.707107,
+    0,
+    -0.707107
+   ],
+   "childDirection": [
+    -0.707107,
+    0,
+    0.707107
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "fin@2",
+   "childNode": "node_attach",
+   "symmetryIndex": 2,
+   "angle_deg": 135,
+   "position": [
+    -0.883883,
+    0,
+    -0.883883
+   ],
+   "parentDirection": [
+    -0.707107,
+    0,
+    -0.707107
+   ],
+   "childDirection": [
+    0.707107,
+    0,
+    0.707107
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "fin@3",
+   "childNode": "node_attach",
+   "symmetryIndex": 3,
+   "angle_deg": 225,
+   "position": [
+    -0.883883,
+    0,
+    0.883883
+   ],
+   "parentDirection": [
+    -0.707107,
+    0,
+    0.707107
+   ],
+   "childDirection": [
+    0.707107,
+    0,
+    -0.707107
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "fin@4",
+   "childNode": "node_attach",
+   "symmetryIndex": 4,
+   "angle_deg": 315,
+   "position": [
+    0.883883,
+    0,
+    0.883883
+   ],
+   "parentDirection": [
+    0.707107,
+    0,
+    0.707107
+   ],
+   "childDirection": [
+    -0.707107,
+    0,
+    -0.707107
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

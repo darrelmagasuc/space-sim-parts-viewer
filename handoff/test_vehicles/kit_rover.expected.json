@@ -1,0 +1,2220 @@
+{
+ "craft": "kit_rover.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 16,
+  "joints": 15,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "frame",
+   "seedId": "frame",
+   "variant": "rover13_chassis_frame_m",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      0.75,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.25,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      -0.25,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.75,
+      0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      0.75,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.25,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      -0.25,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.75,
+      0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      0.75,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.25,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      -0.25,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.75,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      0.75,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.25,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      -0.25,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.75,
+      0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_4_0",
+     "position": [
+      0.75,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_4_1",
+     "position": [
+      0.25,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_4_2",
+     "position": [
+      -0.25,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_4_3",
+     "position": [
+      -0.75,
+      0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_5_0",
+     "position": [
+      0.75,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_5_1",
+     "position": [
+      0.25,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_5_2",
+     "position": [
+      -0.25,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_grid_5_3",
+     "position": [
+      -0.75,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      0.75,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      0.25,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_0_2",
+     "position": [
+      -0.25,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_0_3",
+     "position": [
+      -0.75,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      0.75,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      0.25,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_1_2",
+     "position": [
+      -0.25,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_1_3",
+     "position": [
+      -0.75,
+      -0.125,
+      0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      0.75,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      0.25,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_2_2",
+     "position": [
+      -0.25,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_2_3",
+     "position": [
+      -0.75,
+      -0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_3_0",
+     "position": [
+      0.75,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_3_1",
+     "position": [
+      0.25,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_3_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_3_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_4_0",
+     "position": [
+      0.75,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_4_1",
+     "position": [
+      0.25,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_4_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_4_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -0.75
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_5_0",
+     "position": [
+      0.75,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_5_1",
+     "position": [
+      0.25,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_5_2",
+     "position": [
+      -0.25,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_under_5_3",
+     "position": [
+      -0.75,
+      -0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      1,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -1,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      1,
+      0,
+      0.75
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -1,
+      0,
+      0.75
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      1,
+      0,
+      0.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -1,
+      0,
+      0.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_3",
+     "position": [
+      1,
+      0,
+      -0.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_3",
+     "position": [
+      -1,
+      0,
+      -0.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_4",
+     "position": [
+      1,
+      0,
+      -0.75
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_4",
+     "position": [
+      -1,
+      0,
+      -0.75
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_5",
+     "position": [
+      1,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_5",
+     "position": [
+      -1,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      1,
+      0,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -1,
+      0,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0,
+      0,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0,
+      0,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "core",
+   "seedId": "core",
+   "variant": "rover21_control_core",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0.25,
+    0.45,
+    0.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.25,
+      0.125,
+      0.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.25,
+      0.775,
+      0.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mast",
+   "seedId": "mast",
+   "variant": "rover36_antenna_mast",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -0.25,
+    0.5533,
+    -1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      -0.25,
+      0.125,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bellyLight",
+   "seedId": "bellyLight",
+   "variant": "rover35_light_bar_xs",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -0.25,
+    -0.2,
+    1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      -0.25,
+      -0.125,
+      1.25
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armFL",
+   "seedId": "armFL",
+   "variant": "rover17_suspension_arm_m",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.25,
+    0,
+    1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      1.5,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motorFL",
+   "seedId": "motorFL",
+   "variant": "rover19_hub_drive_motor_m",
+   "parentId": "armFL",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.59,
+    0,
+    1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.5,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      1.68,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wheelFL",
+   "seedId": "wheelFL",
+   "variant": "rover04_wheel_m",
+   "parentId": "motorFL",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.8879,
+    -0.0689,
+    1.4066
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.68,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.9808,
+      -0.082,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.9808,
+      -0.492,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armRL",
+   "seedId": "armRL",
+   "variant": "rover17_suspension_arm_m",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.25,
+    0,
+    -1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      1.5,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motorRL",
+   "seedId": "motorRL",
+   "variant": "rover19_hub_drive_motor_m",
+   "parentId": "armRL",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.59,
+    0,
+    -1.25
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.5,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      1.68,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wheelRL",
+   "seedId": "wheelRL",
+   "variant": "rover04_wheel_m",
+   "parentId": "motorRL",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    1.8879,
+    -0.0689,
+    -1.0934
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.68,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      1.9808,
+      -0.082,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.9808,
+      -0.492,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armFR",
+   "seedId": "armFR",
+   "variant": "rover17_suspension_arm_m",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.25,
+    0,
+    1.25
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      -1.5,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motorFR",
+   "seedId": "motorFR",
+   "variant": "rover19_hub_drive_motor_m",
+   "parentId": "armFR",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.59,
+    0,
+    1.25
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.5,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      -1.68,
+      0,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wheelFR",
+   "seedId": "wheelFR",
+   "variant": "rover04_wheel_m",
+   "parentId": "motorFR",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.8879,
+    -0.0689,
+    1.0934
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.68,
+      0,
+      1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -1.9808,
+      -0.082,
+      1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      -1.9808,
+      -0.492,
+      1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "armRR",
+   "seedId": "armRR",
+   "variant": "rover17_suspension_arm_m",
+   "parentId": "frame",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.25,
+    0,
+    -1.25
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      -1.5,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motorRR",
+   "seedId": "motorRR",
+   "variant": "rover19_hub_drive_motor_m",
+   "parentId": "armRR",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.59,
+    0,
+    -1.25
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.5,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      -1.68,
+      0,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wheelRR",
+   "seedId": "wheelRR",
+   "variant": "rover04_wheel_m",
+   "parentId": "motorRR",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    -1.8879,
+    -0.0689,
+    -1.4066
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.68,
+      0,
+      -1.25
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -1.9808,
+      -0.082,
+      -1.25
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      -1.9808,
+      -0.492,
+      -1.25
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "frame",
+   "parentNode": "node_grid_2_1",
+   "childId": "core",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0.25,
+    0.125,
+    0.25
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_grid_5_2",
+   "childId": "mast",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -0.25,
+    0.125,
+    -1.25
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_under_0_2",
+   "childId": "bellyLight",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -0.25,
+    -0.125,
+    1.25
+   ],
+   "parentDirection": [
+    0,
+    -1,
+    0
+   ],
+   "childDirection": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_rail_l_0",
+   "childId": "armFL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "armFL",
+   "parentNode": "node_outboard",
+   "childId": "motorFL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.5,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "motorFL",
+   "parentNode": "node_outboard",
+   "childId": "wheelFL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.68,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_rail_l_5",
+   "childId": "armRL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "armRL",
+   "parentNode": "node_outboard",
+   "childId": "motorRL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.5,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "motorRL",
+   "parentNode": "node_outboard",
+   "childId": "wheelRL",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.68,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_rail_r_0",
+   "childId": "armFR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "armFR",
+   "parentNode": "node_outboard",
+   "childId": "motorFR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1.5,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "motorFR",
+   "parentNode": "node_outboard",
+   "childId": "wheelFR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1.68,
+    0,
+    1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "frame",
+   "parentNode": "node_rail_r_5",
+   "childId": "armRR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "armRR",
+   "parentNode": "node_outboard",
+   "childId": "motorRR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1.5,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "motorRR",
+   "parentNode": "node_outboard",
+   "childId": "wheelRR",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    -1.68,
+    0,
+    -1.25
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

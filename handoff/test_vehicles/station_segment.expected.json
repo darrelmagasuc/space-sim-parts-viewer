@@ -1,0 +1,635 @@
+{
+ "craft": "station_segment.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 6,
+  "joints": 5,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "node",
+   "seedId": "node",
+   "variant": "station03_node_6port",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      2.75,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -2.75,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.55,
+      0,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      0,
+      -2.55
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.55,
+      0,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      0,
+      2.55
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hab",
+   "seedId": "hab",
+   "variant": "station00_hab_module",
+   "parentId": "node",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    7.1,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      11.45,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      2.75,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5026,
+      7.1,
+      -1.5026
+     ],
+     "direction": [
+      0.707107,
+      0,
+      -0.707107
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      -1.5026,
+      7.1,
+      -1.5026
+     ],
+     "direction": [
+      -0.707107,
+      0,
+      -0.707107
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5026,
+      7.1,
+      1.5026
+     ],
+     "direction": [
+      -0.707107,
+      0,
+      0.707107
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      1.5026,
+      7.1,
+      1.5026
+     ],
+     "direction": [
+      0.707107,
+      0,
+      0.707107
+     ]
+    }
+   ]
+  },
+  {
+   "id": "truss",
+   "seedId": "truss",
+   "variant": "station07_truss_l",
+   "parentId": "node",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    -7.75,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      -2.75,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -12.75,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.5,
+      -7.75,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      -7.75,
+      -1.5
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.5,
+      -7.75,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      -7.75,
+      1.5
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "solar",
+   "seedId": "solar",
+   "variant": "power01_solar_wing_deployed",
+   "parentId": "truss",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    2.9,
+    -7.75,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.5,
+      -7.75,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "solar@2",
+   "seedId": "solar",
+   "variant": "power01_solar_wing_deployed",
+   "parentId": "truss",
+   "symmetryIndex": 2,
+   "layout": null,
+   "origin": [
+    -2.9,
+    -7.75,
+    0
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.5,
+      -7.75,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "antenna",
+   "seedId": "antenna",
+   "variant": "power10_omni_antenna",
+   "parentId": "node",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    -2.7875
+   ],
+   "quaternion": [
+    0,
+    0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0,
+      0,
+      -2.55
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "node",
+   "parentNode": "node_top",
+   "childId": "hab",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    2.75,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "node",
+   "parentNode": "node_bottom",
+   "childId": "truss",
+   "childNode": "node_top",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    -2.75,
+    0
+   ],
+   "parentDirection": [
+    0,
+    -1,
+    0
+   ],
+   "childDirection": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "parentId": "truss",
+   "parentNode": "node_side_1",
+   "childId": "solar",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    1.5,
+    -7.75,
+    0
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "truss",
+   "parentNode": "node_side_1",
+   "childId": "solar@2",
+   "childNode": "node_attach",
+   "symmetryIndex": 2,
+   "angle_deg": 180,
+   "position": [
+    -1.5,
+    -7.75,
+    0
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "node",
+   "parentNode": "node_side_2",
+   "childId": "antenna",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    0,
+    -2.55
+   ],
+   "parentDirection": [
+    0,
+    0,
+    -1
+   ],
+   "childDirection": [
+    0,
+    0,
+    1
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

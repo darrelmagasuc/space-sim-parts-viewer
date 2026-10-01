@@ -1,0 +1,81 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test Lander B",
+  "summary": "M-class crewed lander: cabin, methalox tank, deep-throttle descent engine, four deployed legs, four RCS quads.",
+  "root": "tank",
+  "parts": [
+    {
+      "id": "tank",
+      "variant": "tank01_methalox_m",
+      "note": "root"
+    },
+    {
+      "id": "cabin",
+      "variant": "cmd09_lander_cabin"
+    },
+    {
+      "id": "engine",
+      "variant": "prop19_descent_engine_m"
+    },
+    {
+      "id": "leg",
+      "variant": "stage11_landing_leg_m_deployed",
+      "note": "symmetry 4, offset 45"
+    },
+    {
+      "id": "rcs",
+      "variant": "prop00_rcs_quad",
+      "note": "symmetry 4 on the cabin"
+    }
+  ],
+  "connections": [
+    {
+      "child": "cabin",
+      "childNode": "node_bottom",
+      "parent": "tank",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "engine",
+      "childNode": "node_top",
+      "parent": "tank",
+      "parentNode": "node_bottom",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "leg",
+      "childNode": "node_attach",
+      "parent": "tank",
+      "parentNode": "node_side_1",
+      "symmetry": 4,
+      "rotation": 0,
+      "offset": 45
+    },
+    {
+      "child": "rcs",
+      "childNode": "node_attach",
+      "parent": "cabin",
+      "parentNode": "node_side_1",
+      "symmetry": 4,
+      "rotation": 0,
+      "offset": 0
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Powered descent",
+      "parts": [
+        "engine"
+      ],
+      "note": "Throttle the descent engine; legs are already deployed."
+    }
+  ],
+  "manual": "# Test Lander B\nRoot is the tank. Legs at 45 degree offsets so they sit between the RCS quads."
+}

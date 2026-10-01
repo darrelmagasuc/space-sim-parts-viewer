@@ -6,6 +6,7 @@ A static site (no build step, no server code): `index.html` is the gallery, and 
 - `models/<category>/<variant>.glb`: the original CAD blockout GLBs (Godot Y-up, metres, `node_*` empties), uncompressed. `models/<category>/<id>.nodes.json` holds the node data.
 - `thumbs/<variant>.jpg` (CAD) and `thumbs/lp/<variant>.jpg` (low-poly): gallery thumbnails. `manifest.json`: the part/variant index the pages read.
 - `space_sim_lowpoly_glb_v2.zip`: the low-poly Godot package. `space_sim_glb_v3.zip`: the CAD Godot package (188 parts). `CONVENTIONS.md`: the modelling conventions.
+- `handoff/`: handoff for the Godot game's coding agent (start at `handoff/AGENT_HANDOFF.md`). It holds the parts manifest, the Vehicle Creation spec and porting guide, and test vehicles with expected results. Game change requests go to GitHub Issues labelled `game-request`.
 
 Deep links: `view.html?part=<variant id>` (e.g. `station02_b330_deployed`). Aliases work too: `?part=station10` gives the primary variant, and `?part=tank00_l` or `?part=station02_deployed` match by size or pose.
 
