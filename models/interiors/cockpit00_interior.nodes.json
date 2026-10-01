@@ -1,0 +1,320 @@
+{
+ "id": "cockpit00",
+ "name": "CK-1 Single-Seat Jet Cockpit",
+ "exterior_primary": "cockpit00_fighter_canopy",
+ "primary": "cockpit00_fighter_canopy_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 1,
+ "wall_t_m": 0.04,
+ "cavity": {
+  "volume_m3": 1.35,
+  "size_godot_xyz_m": [
+   0.77,
+   2.41,
+   1.54
+  ],
+  "wall_t_m": 0.04
+ },
+ "layout": "1 ACES-style ejection seat (30 deg recline, pan at the exterior seat height); side stick right, throttle left, HUD, 3-MFD dash",
+ "panels": [
+  "dash 0.52x0.30 (3 MFDs + switch bank)"
+ ],
+ "hatches": [
+  "canopy (no tunnel): node at the canopy inner surface above the seat"
+ ],
+ "windows": 0,
+ "notes": [
+  "hide the exterior's built-in ejection_seat / seat_handle / instrument_panel / hud / side_stick meshes when this interior is loaded (the combined GLB omits them)"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.054,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.11,
+     -0.92,
+     1.019
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [
+   [
+    "dash_panel_1",
+    0.0007
+   ],
+   [
+    "glareshield_1",
+    0.004
+   ]
+  ],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "stick_1",
+  "throttle_1",
+  "canopy_frame_inner"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -1.325,
+    -0.02
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.0,
+    -1.5788,
+    0.6995
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -1.225,
+    1.0419
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit00_fighter_canopy_interior": {
+   "exterior_variant": "cockpit00_fighter_canopy",
+   "state": "flight",
+   "size": "S",
+   "crew": 1,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -1.325,
+      -0.02
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      -1.5788,
+      0.6995
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -1.225,
+      1.0419
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0013,
+      -1.877,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit00_fighter_canopy_interior.glb",
+    "glb_combined": "glb/cockpit00_fighter_canopy_combined.glb",
+    "glb_cutaway": "glb/cockpit00_fighter_canopy_cutaway.glb",
+    "step": "step/cockpit00_fighter_canopy_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit00_fighter_canopy.glb",
+    "preview": "renders/cockpit00_fighter_canopy_interior.png"
+   }
+  },
+  "cockpit00_fighter_canopy_open_interior": {
+   "exterior_variant": "cockpit00_fighter_canopy_open",
+   "state": "open",
+   "size": "S",
+   "crew": 1,
+   "primary": false,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -1.325,
+      -0.02
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      -1.5788,
+      0.6995
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -1.225,
+      1.0419
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0013,
+      -1.877,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit00_fighter_canopy_open_interior.glb",
+    "glb_combined": "glb/cockpit00_fighter_canopy_open_combined.glb",
+    "glb_cutaway": "glb/cockpit00_fighter_canopy_open_cutaway.glb",
+    "step": "step/cockpit00_fighter_canopy_open_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit00_fighter_canopy_open.glb",
+    "preview": "renders/cockpit00_fighter_canopy_open_interior.png"
+   }
+  }
+ }
+}

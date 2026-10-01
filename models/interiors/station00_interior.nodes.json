@@ -1,0 +1,1599 @@
+{
+ "id": "station00",
+ "name": "HM-1 'Destiny' Hab Module",
+ "exterior_primary": "station00_hab_module",
+ "primary": "station00_hab_module_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.0041,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "axial translation aisle (aft hatch -> forward hatch)",
+    "clear_diameter_m": 1.7,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq24_1",
+    "path_to_wall_min_m": -0.0
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_8: aft hatch, looking forward down the aisle",
+  "node_camera_9: forward hatch, looking aft down the aisle",
+  "node_camera_10: deck window, looking out (nadir)"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "crew quarters 1 (starboard, sleeping bag)",
+   "kind": "sleep",
+   "posture": "standing",
+   "host": "eq23_1"
+  },
+  {
+   "n": 2,
+   "label": "crew quarters 2 (overhead, sleeping bag)",
+   "kind": "sleep",
+   "posture": "standing",
+   "host": "eq23_2"
+  },
+  {
+   "n": 3,
+   "label": "crew quarters 3 (port, sleeping bag)",
+   "kind": "sleep",
+   "posture": "standing",
+   "host": "eq23_3"
+  },
+  {
+   "n": 4,
+   "label": "treadmill runner (head to overhead)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": "eq26_1"
+  },
+  {
+   "n": 5,
+   "label": "galley 1 (facing the galley rack, head forward)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null
+  },
+  {
+   "n": 6,
+   "label": "galley 2 (facing the galley rack, head forward)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null
+  },
+  {
+   "n": 7,
+   "label": "window workstation (looking out of the deck window)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null
+  }
+ ],
+ "exterior_hide": [],
+ "skipped_variants": [],
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 3,
+ "wall_t_m": 0.1,
+ "cavity": {
+  "volume_m3": 104.28,
+  "size_godot_xyz_m": [
+   4.02,
+   8.5,
+   4.02
+  ],
+  "wall_t_m": 0.1
+ },
+ "layout": "ISS-style rack walls: 12 rack positions (3 per wall, rack height along the axis) around a 1.70 m square translation aisle; deck = -Y (window + treadmill), overhead = +Y; 3 crew quarters at the forward end; galley, hygiene, ECLSS, avionics",
+ "panels": [],
+ "hatches": [
+  "aft berthing hatch 1.1x1.1 (node_bottom)",
+  "forward berthing hatch 1.1x1.1 (node_top)"
+ ],
+ "windows": 1,
+ "notes": [
+  "station00: node_side_1..4 are radial utility nodes on the hull (no berthing collar in the exterior), so they get no hatch",
+  "station00: rack height runs along the module axis (3 racks per wall); with 1.0 m deep slot-grid racks the aisle is 1.70 m square (ISS ~2 m), so a 1.85 m crew member floats along the axis at the galley / window and only the treadmill runner (sunk into the deck bay) stands deck-to-overhead"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.34,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     1.64,
+     0.24,
+     6.14
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.34,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     0.24,
+     1.64,
+     6.14
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.342,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     -1.64,
+     0.24,
+     6.59
+    ],
+    "fits": true
+   },
+   {
+    "seat": 4,
+    "min_clearance_m": 0.219,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.11,
+     0.19,
+     1.97
+    ],
+    "fits": true
+   },
+   {
+    "seat": 5,
+    "min_clearance_m": 0.531,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     0.53,
+     0.04,
+     1.57
+    ],
+    "fits": true
+   },
+   {
+    "seat": 6,
+    "min_clearance_m": 0.531,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     0.53,
+     -0.04,
+     1.57
+    ],
+    "fits": true
+   },
+   {
+    "seat": 7,
+    "min_clearance_m": 0.548,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     -0.24,
+     -1.43,
+     4.66
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit eq16_1: pushed 0.01 m inward",
+   "fit eq13_1: pushed 0.01 m inward",
+   "fit eq16_2: pushed 0.01 m inward",
+   "fit eq17_1: pushed 0.01 m inward",
+   "fit eq06_1: pushed 0.02 m inward",
+   "fit eq15_1: pushed 0.01 m inward",
+   "fit eq14_1: pushed 0.01 m inward",
+   "fit eq19_1: pushed 0.01 m inward",
+   "fit eq12_1: pushed 0.01 m inward",
+   "fit eq02_1: pushed 0.02 m inward",
+   "fit eq19_2: pushed 0.02 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.03 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    1.64,
+    1.77,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    1.5,
+    2.52,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    1.77,
+    -1.64
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    2.52,
+    -1.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -1.64,
+    2.22,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -1.5,
+    2.97,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    0.0,
+    -2.35,
+    0.47
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.0,
+    -2.49,
+    -0.28
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_5",
+   "position": [
+    0.53,
+    -2.8,
+    -0.28
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    0.67,
+    -2.05,
+    -0.28
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_6",
+   "position": [
+    0.53,
+    -2.8,
+    0.28
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    0.67,
+    -2.05,
+    0.28
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_7",
+   "position": [
+    0.0,
+    -0.35,
+    1.15
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_7",
+   "position": [
+    0.0,
+    0.4,
+    1.29
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -4.19,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    4.19,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_8",
+   "position": [
+    0.0,
+    -3.75,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_9",
+   "position": [
+    0.0,
+    3.75,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_10",
+   "position": [
+    0.0,
+    0.0,
+    1.45
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station00_hab_module_interior": {
+   "exterior_variant": "station00_hab_module",
+   "state": "flight",
+   "size": "L",
+   "crew": 3,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      1.64,
+      1.77,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      1.5,
+      2.52,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      1.77,
+      -1.64
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      2.52,
+      -1.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -1.64,
+      2.22,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -1.5,
+      2.97,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      0.0,
+      -2.35,
+      0.47
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.0,
+      -2.49,
+      -0.28
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_5",
+     "position": [
+      0.53,
+      -2.8,
+      -0.28
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      0.67,
+      -2.05,
+      -0.28
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_6",
+     "position": [
+      0.53,
+      -2.8,
+      0.28
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      0.67,
+      -2.05,
+      0.28
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_7",
+     "position": [
+      0.0,
+      -0.35,
+      1.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_7",
+     "position": [
+      0.0,
+      0.4,
+      1.29
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -4.19,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      4.19,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_8",
+     "position": [
+      0.0,
+      -3.75,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_9",
+     "position": [
+      0.0,
+      3.75,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_10",
+     "position": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq25_1",
+     "prop": "eq25_galley_rack",
+     "position": [
+      1.35,
+      -2.45,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq27_1",
+     "prop": "eq27_stowage_rack",
+     "position": [
+      1.35,
+      -0.55,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq23_1",
+     "prop": "eq23_crew_quarters",
+     "position": [
+      1.35,
+      1.8,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq05_1",
+     "prop": "eq05_avionics_rack",
+     "position": [
+      0.0,
+      -2.45,
+      -1.35
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq28_1",
+     "prop": "eq28_eclss_rack",
+     "position": [
+      0.0,
+      -0.55,
+      -1.35
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq23_2",
+     "prop": "eq23_crew_quarters",
+     "position": [
+      0.0,
+      1.8,
+      -1.35
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq24_1",
+     "prop": "eq24_hygiene_station",
+     "position": [
+      -1.35,
+      -2.15,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq05_2",
+     "prop": "eq05_avionics_rack",
+     "position": [
+      -1.35,
+      0.05,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq23_3",
+     "prop": "eq23_crew_quarters",
+     "position": [
+      -1.35,
+      2.25,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq26_1",
+     "prop": "eq26_treadmill",
+     "position": [
+      0.0,
+      -2.35,
+      1.58
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       -1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq27_2",
+     "prop": "eq27_stowage_rack",
+     "position": [
+      0.0,
+      2.05,
+      1.35
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq16_1",
+     "prop": "eq16_cable_tray",
+     "position": [
+      1.3781,
+      -2.1489,
+      -1.381
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.68,
+       0.0,
+       -0.7332
+      ],
+      [
+       -0.7332,
+       0.0,
+       0.68
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      1.3341,
+      -0.7489,
+      -1.3402
+     ],
+     "basis_columns": [
+      [
+       0.68,
+       0.0,
+       0.7332
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7332,
+       0.0,
+       0.68
+      ]
+     ]
+    },
+    {
+     "instance": "eq16_2",
+     "prop": "eq16_cable_tray",
+     "position": [
+      1.3781,
+      0.8511,
+      -1.381
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.68,
+       0.0,
+       -0.7332
+      ],
+      [
+       -0.7332,
+       0.0,
+       0.68
+      ]
+     ]
+    },
+    {
+     "instance": "eq18_1",
+     "prop": "eq18_air_duct",
+     "position": [
+      -1.3357,
+      -2.1489,
+      -1.3367
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.716,
+       0.0,
+       0.6981
+      ],
+      [
+       0.6981,
+       0.0,
+       0.716
+      ]
+     ]
+    },
+    {
+     "instance": "eq17_1",
+     "prop": "eq17_fan_unit",
+     "position": [
+      -1.3252,
+      -0.8489,
+      -1.326
+     ],
+     "basis_columns": [
+      [
+       0.716,
+       0.0,
+       -0.6981
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6981,
+       0.0,
+       0.716
+      ]
+     ]
+    },
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -1.3319,
+      0.1511,
+      -1.3329
+     ],
+     "basis_columns": [
+      [
+       0.716,
+       0.0,
+       -0.6981
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6981,
+       0.0,
+       0.716
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      -1.3042,
+      1.3511,
+      -1.3045
+     ],
+     "basis_columns": [
+      [
+       0.716,
+       0.0,
+       -0.6981
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6981,
+       0.0,
+       0.716
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -1.3565,
+      -1.9489,
+      1.3548
+     ],
+     "basis_columns": [
+      [
+       -0.7157,
+       0.0,
+       -0.6984
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6984,
+       0.0,
+       -0.7157
+      ]
+     ]
+    },
+    {
+     "instance": "eq09_1",
+     "prop": "eq09_o2_bottle",
+     "position": [
+      -1.3244,
+      -0.6489,
+      1.3218
+     ],
+     "basis_columns": [
+      [
+       -0.7157,
+       0.0,
+       -0.6984
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6984,
+       0.0,
+       -0.7157
+      ]
+     ]
+    },
+    {
+     "instance": "eq10_1",
+     "prop": "eq10_n2_bottle",
+     "position": [
+      -1.3244,
+      0.2511,
+      1.3218
+     ],
+     "basis_columns": [
+      [
+       -0.7157,
+       0.0,
+       -0.6984
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6984,
+       0.0,
+       -0.7157
+      ]
+     ]
+    },
+    {
+     "instance": "eq19_1",
+     "prop": "eq19_stowage_bag",
+     "position": [
+      -1.3059,
+      2.2511,
+      1.3029
+     ],
+     "basis_columns": [
+      [
+       -0.7157,
+       0.0,
+       -0.6984
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.6984,
+       0.0,
+       -0.7157
+      ]
+     ]
+    },
+    {
+     "instance": "eq12_1",
+     "prop": "eq12_water_dispenser",
+     "position": [
+      1.3101,
+      -2.7489,
+      1.3146
+     ],
+     "basis_columns": [
+      [
+       -0.6804,
+       0.0,
+       0.7329
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7329,
+       0.0,
+       -0.6804
+      ]
+     ]
+    },
+    {
+     "instance": "eq02_1",
+     "prop": "eq02_flight_computer",
+     "position": [
+      1.2615,
+      0.0511,
+      1.2695
+     ],
+     "basis_columns": [
+      [
+       -0.6804,
+       0.0,
+       0.7329
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7329,
+       0.0,
+       -0.6804
+      ]
+     ]
+    },
+    {
+     "instance": "eq19_2",
+     "prop": "eq19_stowage_bag",
+     "position": [
+      1.2923,
+      1.2511,
+      1.2981
+     ],
+     "basis_columns": [
+      [
+       -0.6804,
+       0.0,
+       0.7329
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7329,
+       0.0,
+       -0.6804
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_2",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      1.3431,
+      2.5511,
+      1.3452
+     ],
+     "basis_columns": [
+      [
+       -0.6804,
+       0.0,
+       0.7329
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7329,
+       0.0,
+       -0.6804
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/station00_hab_module_interior.glb",
+    "glb_combined": "glb/station00_hab_module_combined.glb",
+    "glb_cutaway": "glb/station00_hab_module_cutaway.glb",
+    "step": "step/station00_hab_module_interior.step",
+    "exterior_glb": "../station_power/glb/station00_hab_module.glb",
+    "preview": "renders/station00_hab_module_interior.png"
+   }
+  }
+ }
+}

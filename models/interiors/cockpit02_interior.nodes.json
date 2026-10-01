@@ -1,0 +1,789 @@
+{
+ "id": "cockpit02",
+ "name": "CK-3 Spaceplane Flight Deck",
+ "exterior_primary": "cockpit02_spaceplane_flight_deck",
+ "primary": "cockpit02_spaceplane_flight_deck_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 4,
+ "wall_t_m": 0.1,
+ "cavity": {
+  "volume_m3": 9.35,
+  "size_godot_xyz_m": [
+   2.33,
+   4.73,
+   1.33
+  ],
+  "wall_t_m": 0.1
+ },
+ "layout": "flight deck: CDR (left) + PLT (right) facing the nose at z 3.0; 2 mission-specialist seats aft at z 1.35 (reclined 40 deg); pilots reclined 25 deg; floor y = 0.37",
+ "panels": [
+  "forward panel 1.30x0.40 (4 MFDs, 1 switch bank)",
+  "overhead panel 0.8x0.26, behind the pilots' heads",
+  "centre console 0.26x0.55"
+ ],
+ "hatches": [
+  "port-side crew hatch dia 0.80 (window in door)",
+  "aft bulkhead hatch 0.70x0.84 to the Mk2 fuselage (node_bottom face)"
+ ],
+ "windows": 7,
+ "notes": [
+  "cockpit02: 1.26-1.28 m floor-to-ceiling on the flight deck, 1.0-1.1 m aft; seats have low pans and 25 / 40 deg recline to fit a 1.8 m crew; no real mid-deck below"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": -0.032,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -0.49,
+     -0.827,
+     2.802
+    ],
+    "fits": false
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": -0.032,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.49,
+     -0.827,
+     2.802
+    ],
+    "fits": false
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": -0.026,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -0.44,
+     -0.656,
+     0.959
+    ],
+    "fits": false
+   },
+   {
+    "seat": 4,
+    "min_clearance_m": -0.026,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.44,
+     -0.656,
+     0.959
+    ],
+    "fits": false
+   }
+  ],
+  "clash_with_crew_m3": [
+   [
+    "main_panel",
+    0.0034
+   ],
+   [
+    "overhead_panel",
+    0.0002
+   ]
+  ],
+  "item_overlaps_m3": [
+   [
+    "eq08_1",
+    "seat_4",
+    0.0031
+   ],
+   [
+    "eq11_1",
+    "seat_3",
+    0.0031
+   ],
+   [
+    "eq20_1",
+    "seat_3",
+    0.0008
+   ],
+   [
+    "eq20_1",
+    "seat_4",
+    0.0008
+   ],
+   [
+    "seat_1",
+    "overhead_panel",
+    0.0025
+   ],
+   [
+    "seat_2",
+    "overhead_panel",
+    0.0025
+   ]
+  ],
+  "log": [
+   "fit overhead_panel: pushed 0.52 m inward",
+   "fit locker: pushed 0.05 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit locker: pushed 0.05 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit eq08_1: pushed 0.30 m inward",
+   "fit eq11_1: pushed 0.30 m inward",
+   "fit eq02_1: pushed 0.03 m inward",
+   "fit eq02_2: pushed 0.03 m inward",
+   "fit eq15_1: pushed 0.01 m inward",
+   "fit eq06_1: pushed 0.06 m inward",
+   "fit eq13_1: pushed 0.05 m inward",
+   "fit eq14_1: pushed 0.66 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "stick_1",
+  "stick_2",
+  "throttle_1",
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.38,
+    -0.275,
+    -0.13
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.38,
+    -0.4651,
+    0.6089
+   ],
+   "direction": [
+    0.0,
+    0.995,
+    0.0995
+   ],
+   "up": [
+    0.0,
+    -0.4226,
+    0.9063
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.38,
+    -0.275,
+    -0.13
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.38,
+    -0.4651,
+    0.6089
+   ],
+   "direction": [
+    0.0,
+    0.995,
+    0.0995
+   ],
+   "up": [
+    0.0,
+    -0.4226,
+    0.9063
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.33,
+    -1.875,
+    -0.23
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -0.33,
+    -2.2498,
+    0.4345
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    0.33,
+    -1.875,
+    -0.23
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.33,
+    -2.2498,
+    0.4345
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    -1.0105,
+    -0.9319,
+    0.0692
+   ],
+   "direction": [
+    -0.9949,
+    0.0456,
+    0.0904
+   ],
+   "up": [
+    0.0903,
+    -0.0041,
+    0.9959
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    -3.06,
+    0.08
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit02_spaceplane_flight_deck_interior": {
+   "exterior_variant": "cockpit02_spaceplane_flight_deck",
+   "state": "flight",
+   "size": "M",
+   "crew": 4,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.38,
+      -0.275,
+      -0.13
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.38,
+      -0.4651,
+      0.6089
+     ],
+     "direction": [
+      0.0,
+      0.995,
+      0.0995
+     ],
+     "up": [
+      0.0,
+      -0.4226,
+      0.9063
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.38,
+      -0.275,
+      -0.13
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.38,
+      -0.4651,
+      0.6089
+     ],
+     "direction": [
+      0.0,
+      0.995,
+      0.0995
+     ],
+     "up": [
+      0.0,
+      -0.4226,
+      0.9063
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.33,
+      -1.875,
+      -0.23
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.33,
+      -2.2498,
+      0.4345
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      0.33,
+      -1.875,
+      -0.23
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.33,
+      -2.2498,
+      0.4345
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      -1.0105,
+      -0.9319,
+      0.0692
+     ],
+     "direction": [
+      -0.9949,
+      0.0456,
+      0.0904
+     ],
+     "up": [
+      0.0903,
+      -0.0041,
+      0.9959
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      -3.06,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq08_1",
+     "prop": "eq08_co2_scrubber",
+     "position": [
+      0.5498,
+      -2.5373,
+      -0.062
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq11_1",
+     "prop": "eq11_water_tank",
+     "position": [
+      -0.5498,
+      -2.5374,
+      -0.062
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq00_1",
+     "prop": "eq00_battery_pack",
+     "position": [
+      0.0,
+      -2.825,
+      -0.062
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq02_1",
+     "prop": "eq02_flight_computer",
+     "position": [
+      0.9162,
+      -2.1327,
+      0.1192
+     ],
+     "basis_columns": [
+      [
+       -0.0128,
+       -0.9999,
+       0.0
+      ],
+      [
+       -0.3814,
+       0.0049,
+       0.9244
+      ],
+      [
+       -0.9243,
+       0.0119,
+       -0.3814
+      ]
+     ]
+    },
+    {
+     "instance": "eq02_2",
+     "prop": "eq02_flight_computer",
+     "position": [
+      -0.9117,
+      -2.1322,
+      0.1256
+     ],
+     "basis_columns": [
+      [
+       -0.0114,
+       0.9999,
+       0.0
+      ],
+      [
+       0.3479,
+       0.004,
+       0.9375
+      ],
+      [
+       0.9374,
+       0.0107,
+       -0.348
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      0.7766,
+      -1.0189,
+      0.4412
+     ],
+     "basis_columns": [
+      [
+       -0.0508,
+       -0.9987,
+       0.0
+      ],
+      [
+       -0.782,
+       0.0398,
+       0.622
+      ],
+      [
+       -0.6212,
+       0.0316,
+       -0.783
+      ]
+     ]
+    },
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -0.7634,
+      -1.3075,
+      0.4394
+     ],
+     "basis_columns": [
+      [
+       -0.1146,
+       0.9934,
+       0.0
+      ],
+      [
+       0.8211,
+       0.0948,
+       0.5629
+      ],
+      [
+       0.5592,
+       0.0645,
+       -0.8266
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      0.9707,
+      -0.8793,
+      0.0033
+     ],
+     "basis_columns": [
+      [
+       0.0287,
+       -0.9996,
+       0.0
+      ],
+      [
+       0.0237,
+       0.0007,
+       0.9997
+      ],
+      [
+       -0.9993,
+       -0.0287,
+       0.0237
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      0.0012,
+      -2.3898,
+      0.4955
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_1",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      0.0,
+      -2.275,
+      -0.2345
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit02_spaceplane_flight_deck_interior.glb",
+    "glb_combined": "glb/cockpit02_spaceplane_flight_deck_combined.glb",
+    "glb_cutaway": "glb/cockpit02_spaceplane_flight_deck_cutaway.glb",
+    "step": "step/cockpit02_spaceplane_flight_deck_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit02_spaceplane_flight_deck.glb",
+    "preview": "renders/cockpit02_spaceplane_flight_deck_interior.png"
+   }
+  }
+ }
+}

@@ -1,0 +1,860 @@
+{
+ "id": "cmd07",
+ "name": "CM-5 'MAV' Ascent Cabin",
+ "exterior_primary": "cmd07_mav_cabin",
+ "primary": "cmd07_mav_cabin_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 6,
+ "wall_t_m": 0.08,
+ "cavity": {
+  "volume_m3": 11.51,
+  "size_godot_xyz_m": [
+   2.25,
+   3.31,
+   2.25
+  ],
+  "wall_t_m": 0.08
+ },
+ "layout": "6 supine couches in 3 tiers of 2 (z = 0.62 / 1.42 / 2.22), heads to +X, facing +Z; pilots on the top tier under the canopy",
+ "panels": [
+  "pilot panel 0.9x0.35 above the top tier (2 screens)"
+ ],
+ "hatches": [
+  "side hatch 0.8x1.2 (+Y)",
+  "docking hatch dia 0.76 (node_top)"
+ ],
+ "windows": 5,
+ "notes": [
+  "cmd07: no room for a Small CO2 scrubber between the couch tiers; CO2 removal is assumed to sit in the unpressurised ECLSS bay (not modelled)",
+  "MAV: 3 abreast does not fit a 2.24 m cavity (couch corners need r 1.19 m), so the 6 crew are in 3 tiers of 2"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     -0.11,
+     1.22
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     0.11,
+     0.62
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     -0.11,
+     2.02
+    ],
+    "fits": true
+   },
+   {
+    "seat": 4,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     0.11,
+     1.42
+    ],
+    "fits": true
+   },
+   {
+    "seat": 5,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     -0.11,
+     2.82
+    ],
+    "fits": true
+   },
+   {
+    "seat": 6,
+    "min_clearance_m": 0.114,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     0.03,
+     0.11,
+     2.22
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit locker: pushed 0.04 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.05 m inward",
+   "fit eq09_1: pushed 0.01 m inward",
+   "fit eq10_1: pushed 0.01 m inward",
+   "fit eq13_1: pushed 0.01 m inward",
+   "fit eq14_1: pushed 0.02 m inward",
+   "fit eq01_1: pushed 0.02 m inward",
+   "fit eq19_1: pushed 0.03 m inward",
+   "fit eq15_1: pushed 0.03 m inward",
+   "fit eq01_2: pushed 0.03 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "hand_controller_5l",
+  "hand_controller_6r",
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.14,
+    -1.185,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.61,
+    -1.045,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.14,
+    -1.185,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.61,
+    -1.045,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.14,
+    -0.385,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.61,
+    -0.245,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.14,
+    -0.385,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.61,
+    -0.245,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_5",
+   "position": [
+    -0.14,
+    0.415,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    0.61,
+    0.555,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_6",
+   "position": [
+    -0.14,
+    0.415,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    0.61,
+    0.555,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.405,
+    -1.06
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.515,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd07_mav_cabin_interior": {
+   "exterior_variant": "cmd07_mav_cabin",
+   "state": "flight",
+   "size": "M",
+   "crew": 6,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.14,
+      -1.185,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.61,
+      -1.045,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.14,
+      -1.185,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.61,
+      -1.045,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.14,
+      -0.385,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.61,
+      -0.245,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.14,
+      -0.385,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.61,
+      -0.245,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_5",
+     "position": [
+      -0.14,
+      0.415,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      0.61,
+      0.555,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_6",
+     "position": [
+      -0.14,
+      0.415,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      0.61,
+      0.555,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.405,
+      -1.06
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.515,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq09_1",
+     "prop": "eq09_o2_bottle",
+     "position": [
+      0.533,
+      -0.8016,
+      -0.8266
+     ],
+     "basis_columns": [
+      [
+       0.8658,
+       0.0,
+       0.5004
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.5004,
+       0.0,
+       0.8658
+      ]
+     ]
+    },
+    {
+     "instance": "eq10_1",
+     "prop": "eq10_n2_bottle",
+     "position": [
+      -0.5249,
+      -0.8016,
+      -0.8305
+     ],
+     "basis_columns": [
+      [
+       0.8403,
+       0.0,
+       -0.5422
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.5422,
+       0.0,
+       0.8403
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      0.5471,
+      -0.0042,
+      -0.8511
+     ],
+     "basis_columns": [
+      [
+       0.8658,
+       0.0,
+       0.5004
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.5004,
+       0.0,
+       0.8658
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -0.5489,
+      -0.0045,
+      -0.8676
+     ],
+     "basis_columns": [
+      [
+       0.8403,
+       0.0,
+       -0.5422
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.5422,
+       0.0,
+       0.8403
+      ]
+     ]
+    },
+    {
+     "instance": "eq01_1",
+     "prop": "eq01_battery_module_wall",
+     "position": [
+      -0.0015,
+      -0.7788,
+      0.9962
+     ],
+     "basis_columns": [
+      [
+       -0.9997,
+       0.0,
+       0.0245
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0245,
+       0.0,
+       -0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq19_1",
+     "prop": "eq19_stowage_bag",
+     "position": [
+      -0.0026,
+      0.0149,
+      0.9452
+     ],
+     "basis_columns": [
+      [
+       -0.9997,
+       0.0,
+       0.0245
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0245,
+       0.0,
+       -0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      0.2513,
+      0.7744,
+      0.9052
+     ],
+     "basis_columns": [
+      [
+       -0.9566,
+       0.0,
+       0.2915
+      ],
+      [
+       -0.0239,
+       0.9966,
+       -0.0786
+      ],
+      [
+       -0.2905,
+       -0.0821,
+       -0.9533
+      ]
+     ]
+    },
+    {
+     "instance": "eq01_2",
+     "prop": "eq01_battery_module_wall",
+     "position": [
+      -0.3551,
+      0.7788,
+      0.9176
+     ],
+     "basis_columns": [
+      [
+       -0.9406,
+       0.0,
+       -0.3397
+      ],
+      [
+       0.0279,
+       0.9966,
+       -0.0772
+      ],
+      [
+       0.3385,
+       -0.0821,
+       -0.9374
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cmd07_mav_cabin_interior.glb",
+    "glb_combined": "glb/cmd07_mav_cabin_combined.glb",
+    "glb_cutaway": "glb/cmd07_mav_cabin_cutaway.glb",
+    "step": "step/cmd07_mav_cabin_interior.step",
+    "exterior_glb": "../cmd_prop/glb/cmd07_mav_cabin.glb",
+    "preview": "renders/cmd07_mav_cabin_interior.png"
+   }
+  }
+ }
+}

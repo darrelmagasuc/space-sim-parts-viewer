@@ -3,12 +3,14 @@
 
 usage (from the repo root):
   python3 handoff/tools/build_manifest.py                      # uses manifest.json, models/**, handoff/tools/part_info.json
+  python3 handoff/tools/build_manifest.py --version 0.3.1      # set manifest_version (default: keep the current one)
+  python3 handoff/tools/build_manifest.py --out PATH           # write elsewhere (publish_update.py uses this to diff)
   python3 handoff/tools/build_manifest.py --refresh-info DIR   # first re-extract part_info.json from the catalogue
                                                                # sources in DIR (parts.py + new_parts_spec.json)
 Only reads files in this repository (part_info.json is the committed extract of the catalogue text), so it can be
 re-run after a parts update. Standard library only.
 """
-import json, math, os, re, struct, sys, glob, datetime
+import hashlib, json, math, os, re, struct, sys, glob, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.normpath(os.path.join(HERE, "..", ".."))
@@ -41,6 +43,79 @@ def refresh_info(src):
                              key_mass_t=kd.get("mass_t") if isinstance(kd.get("mass_t"), (int, float)) else None)
     json.dump(info, open(INFO, "w"), indent=1, ensure_ascii=False)
     print("wrote", INFO, len(info), "parts")
+
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""): h.update(chunk)
+    return h.hexdigest()
+
+
+def sha256_obj(obj):
+    return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode()).hexdigest()
+
+
+def glb_tris(path):
+    j = glb_json(path); n = 0
+    for nd in j.get("nodes", []):
+        if "mesh" not in nd: continue
+        for prim in j["meshes"][nd["mesh"]]["primitives"]:
+            if prim.get("mode", 4) != 4: continue
+            acc = prim.get("indices", prim["attributes"]["POSITION"])
+            n += j["accessors"][acc]["count"] // 3
+    return n
+
+
+def finish_hashes(rec, files):
+    """files: {label: repo-relative path}. Adds sha256 per file, content_hash (files only) and meta_hash (everything else)."""
+    rec["sha256"] = {k: sha256_file(os.path.join(REPO, v)) for k, v in files.items()}
+    return rec
+
+
+# Exterior meshes to hide when an interior is loaded, from the interiors README when the nodes JSON has no exterior_hide.
+INTERIOR_EXTERIOR_HIDE = {
+    "cockpit00": ["ejection_seat", "seat_handle", "instrument_panel", "hud", "side_stick"],
+    "cockpit01": ["front_seat", "rear_seat", "seat_handles", "front_panel", "rear_panel", "sticks"],
+}
+
+
+def build_interiors(parts_by_id):
+    src = os.path.join(REPO, "models", "interiors", "interiors.json")
+    if not os.path.isfile(src): return [], []
+    rec = json.load(open(src))
+    out = []
+    for it in rec["interiors"]:
+        pid = it["id"]; ext = parts_by_id.get(pid)
+        nj_rel = f"models/interiors/{pid}_interior.nodes.json"
+        nj = json.load(open(os.path.join(REPO, nj_rel)))
+        hide = nj.get("exterior_hide") or INTERIOR_EXTERIOR_HIDE.get(pid, [])
+        vs = []
+        for vid, njv in nj["variants"].items():
+            exv = njv["exterior_variant"]
+            files = {k: f"models/interiors/{exv}{suf}.glb" for k, suf in (("glb_interior", "_interior"), ("glb_combined", "_combined"), ("glb_cutaway", "_cutaway"))}
+            thumb = f"thumbs/interiors/{vid}.jpg"
+            v = dict(vid=vid, exterior_variant=exv, state=njv.get("state"), primary=bool(njv.get("primary")), crew=njv.get("crew"),
+                     nodes=[dict(name=n["name"], pos=n["position"], dir=n["direction"], up=n.get("up")) for n in njv.get("nodes", [])],
+                     props=[dict(instance=p_["instance"], prop=p_["prop"], pos=p_["position"], basis_columns=p_["basis_columns"]) for p_ in njv.get("props", [])],
+                     tris={k: glb_tris(os.path.join(REPO, f)) for k, f in files.items()},
+                     bytes={k: os.path.getsize(os.path.join(REPO, f)) for k, f in files.items()},
+                     paths=dict(**files, nodes_json=nj_rel, thumb=thumb if os.path.isfile(os.path.join(REPO, thumb)) else None,
+                                exterior_glb_lowpoly=next((x["paths"]["glb_lowpoly"] for x in (ext or {}).get("variants", []) if x["vid"] == exv), None),
+                                godot_suggested=f"res://parts/interiors/{exv}_interior.glb"),
+                     urls={**{k + "_raw": RAW + f for k, f in files.items()}, **{k + "_pages": PAGES + f for k, f in files.items()},
+                           "nodes_json_raw": RAW + nj_rel, "nodes_json_pages": PAGES + nj_rel})
+            finish_hashes(v, files)
+            vs.append(v)
+        e = dict(id=pid + "_interior", exterior_part_id=pid, exterior_category=(ext or {}).get("category"), name=it["name"],
+                 reference=it.get("reference"), crew=it.get("crew"), frame=nj.get("frame"), wall_t_m=nj.get("wall_t_m"),
+                 cavity=nj.get("cavity"), exterior_hide=hide, moving_meshes=nj.get("moving_meshes", []),
+                 hatches=nj.get("hatches"), windows=nj.get("windows"), notes=nj.get("notes"),
+                 validation=it.get("validation"), known_issue=it.get("known_issue"),
+                 skipped_variants=it.get("skipped_variants", []), variants=vs)
+        e["sha256"] = {"nodes_json": sha256_file(os.path.join(REPO, nj_rel))}
+        out.append(e)
+    return out, rec.get("skipped", [])
 
 
 def glb_json(path):
@@ -268,6 +343,7 @@ def main():
                               glb_cad_raw=RAW + v["glb"], glb_cad_pages=PAGES + v["glb"],
                               nodes_json_raw=RAW + p["json"], nodes_json_pages=PAGES + p["json"],
                               viewer=PAGES + "view.html?part=" + v["vid"]))
+                finish_hashes(rec, {"glb_lowpoly": v["glb_lp"], "glb_cad": v["glb"]})
                 if rec["slots"] is None: del rec["slots"]
                 if rec["default_of"] is None: del rec["default_of"]
                 vs.append(rec); n_var += 1; n_est += rec["mass_estimated"]
@@ -278,10 +354,18 @@ def main():
                               sizes=sizes, size_text=info.get("size_text", ""), primary=p["primary"],
                               summary=info.get("summary") or p.get("summary") or "", in_game_role=info.get("in_game", ""),
                               real_life=info.get("real_life", ""), text_source=info.get("source", "none"),
-                              variants=vs))
+                              variants=vs, sha256={"nodes_json": sha256_file(os.path.join(REPO, p["json"]))}))
+    for a_ in assemblies:
+        a_["sha256"] = {k: sha256_file(os.path.join(REPO, a_["paths"][k])) for k in ("glb_lowpoly", "glb_cad")}
+    interiors, interiors_skipped = build_interiors({p_["id"]: p_ for p_ in parts})
+    for e in parts + interiors + assemblies:
+        add_part_hashes(e)
+    version = arg("--version") or previous_version() or "0.0.0"
+    if not re.match(r"^\d+\.\d+\.\d+$", version): sys.exit(f"bad --version {version!r} (semver X.Y.Z)")
     doc = dict(
-        schema_version=1,
-        generated=datetime.datetime.now().astimezone().isoformat(timespec="minutes"),
+        manifest_version=version,
+        generated_at=datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+        schema_version=2,
         generator="handoff/tools/build_manifest.py",
         source=dict(repo=f"https://github.com/{GH_OWNER}/{GH_REPO}", branch=BRANCH, site=PAGES, site_manifest="manifest.json"),
         zips=dict(lowpoly=dict(path=man["zip_lp"], bytes=man["zip_lp_bytes"], url=PAGES + man["zip_lp"], raw=RAW + man["zip_lp"]),
@@ -289,11 +373,39 @@ def main():
         frame=dict(axes="Godot / glTF Y-up, right-handed; metres", stack_axis="+Y (nose / flight direction)",
                    ground_vehicles="up +Y, forward +Z, vehicle left +X", node_dir="outward unit normal of the mating face; GLB empty local +Y = dir"),
         size_classes=CLASS_D,
-        counts=dict(parts=len(parts), variants=n_var, mass_estimated_variants=n_est, assemblies=len(assemblies)),
+        counts=dict(parts=len(parts), variants=n_var, mass_estimated_variants=n_est, assemblies=len(assemblies),
+                    interiors=len(interiors), interior_variants=sum(len(e["variants"]) for e in interiors)),
+        changelog="handoff/CHANGELOG.md",
         schema=SCHEMA,
-        parts=parts, assemblies=assemblies)
-    json.dump(doc, open(OUT, "w"), indent=1, ensure_ascii=False)
-    print(f"wrote {OUT}: {len(parts)} parts, {n_var} variants ({n_est} with estimated mass), {len(assemblies)} assemblies, {os.path.getsize(OUT) // 1024} KB")
+        parts=parts, interiors=interiors, interiors_skipped=interiors_skipped, assemblies=assemblies)
+    out = arg("--out") or OUT
+    json.dump(doc, open(out, "w"), indent=1, ensure_ascii=False)
+    print(f"wrote {out}: v{version}, {len(parts)} parts, {n_var} variants ({n_est} with estimated mass), "
+          f"{len(interiors)} interiors ({doc['counts']['interior_variants']} variants), {len(assemblies)} assemblies, {os.path.getsize(out) // 1024} KB")
+
+
+def arg(name):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None
+
+
+def previous_version():
+    try: return json.load(open(OUT)).get("manifest_version")
+    except (OSError, ValueError): return None
+
+
+HASH_KEYS = ("sha256", "content_hash", "meta_hash")
+
+
+def add_part_hashes(e):
+    """content_hash: sha256 over every file hash of the entry (GLBs + nodes.json); changes when any file changes.
+    meta_hash: sha256 over the entry's data without hashes, bytes and URLs (mass, nodes, text, ...)."""
+    files = dict(e.get("sha256", {}))
+    for v in e.get("variants", []):
+        for k, h in v.get("sha256", {}).items(): files[f"{v['vid']}:{k}"] = h
+    e["content_hash"] = sha256_obj(files)
+    strip = lambda o: {k: (strip(x) if isinstance(x, dict) else [strip(y) if isinstance(y, dict) else y for y in x] if isinstance(x, list) else x)
+                       for k, x in o.items() if k not in HASH_KEYS and k not in ("bytes", "urls")}
+    e["meta_hash"] = sha256_obj(strip(e))
 
 
 SCHEMA = {
@@ -324,6 +436,28 @@ SCHEMA = {
         "paths": "repo-relative paths (glb_lowpoly default, glb_cad, nodes_json, thumbs), paths inside the two zips, suggested Godot res:// path",
         "urls": "raw.githubusercontent.com and GitHub Pages URLs for the GLBs and nodes.json, plus the web viewer link"},
     "assemblies[]": "reference-only layouts (gravity rings), no nodes",
+    "versioning": {
+        "manifest_version": "semver of this parts release (X.Y.Z). Minor = parts/interiors added (or removed), patch = existing ones changed. Released only on request; see handoff/CHANGELOG.md and the git tag parts-vX.Y.Z",
+        "generated_at": "ISO 8601 time the manifest was generated (box time, UTC+2)",
+        "parts[].sha256 / interiors[].sha256": "{nodes_json: sha256 hex} of the part's nodes file",
+        "variants[].sha256": "parts: {glb_lowpoly, glb_cad}; interiors: {glb_interior, glb_combined, glb_cutaway}: sha256 hex of each file",
+        "content_hash": "per part / interior / assembly: sha256 over all its file hashes. Compare with your last import to detect changed files",
+        "meta_hash": "per part / interior / assembly: sha256 over its manifest data except hashes, byte sizes and URLs (mass, nodes, text, slots, ...). Changes when only data changed",
+    },
+    "interiors[]": {
+        "id": "<exterior part id>_interior, e.g. cmd05_interior",
+        "exterior_part_id": "the part this interior belongs to (parts[].id)", "exterior_category": "its category",
+        "name, reference, crew": "display name, real-world reference, crew count",
+        "frame": "same origin and axes as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+        "wall_t_m, cavity": "pressure-vessel wall thickness; cavity {volume_m3, size_godot_xyz_m}",
+        "exterior_hide": "exterior mesh names to hide while the interior is shown",
+        "moving_meshes": "separate interior meshes that animate (hatch_door_N, stick_N, throttle_N, yoke_N, hand_controller_N*, canopy_frame_inner)",
+        "hatches, windows, notes": "as authored in the interior nodes JSON",
+        "validation": "crew_fit {seats, fit, min_clearance_m}, station_checks_ok (stations), clash_with_crew_items",
+        "known_issue": "accepted limitation (null if none)",
+        "variants[]": "{vid (<exterior vid>_interior), exterior_variant, state, primary, crew, nodes[] {name, pos, dir, up}, props[] {instance, prop, pos, basis_columns}, tris, bytes, paths, urls, sha256}",
+    },
+    "interiors_skipped[]": "{id, reason}: interiors that exist upstream but are not released yet",
 }
 
 if __name__ == "__main__":

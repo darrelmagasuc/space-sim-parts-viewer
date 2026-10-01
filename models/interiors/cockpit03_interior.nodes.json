@@ -1,0 +1,869 @@
+{
+ "id": "cockpit03",
+ "name": "CK-4 Airliner / Cargo Flight Deck",
+ "exterior_primary": "cockpit03_airliner_flight_deck",
+ "primary": "cockpit03_airliner_flight_deck_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 3,
+ "wall_t_m": 0.1,
+ "cavity": {
+  "volume_m3": 5.84,
+  "size_godot_xyz_m": [
+   3.38,
+   2.98,
+   1.23
+  ],
+  "wall_t_m": 0.1
+ },
+ "layout": "captain (left) + first officer (right) at z 6.00 (40 deg recline), flight engineer side-facing (+X) at z 5.36; centre pedestal with throttles",
+ "panels": [
+  "main instrument panel 1.8x0.32 (5 displays)",
+  "overhead panel 0.9x0.35 on the ceiling behind the pilots",
+  "flight-engineer side panel 0.50x0.40"
+ ],
+ "hatches": [
+  "crew door (upper 0.36 m above the deck only; the exterior door straddles the deck)",
+  "floor hatch 0.6x0.6 to the cargo hold (needs a matching opening in the exterior flight_deck_floor)"
+ ],
+ "windows": 7,
+ "notes": [
+  "cockpit03: floor-to-ceiling is only 1.21 m at the rear bulkhead, 1.15 m at the seats and 0.83 m at z 7.0, so crew sit in low, reclined seats well aft of the windscreen"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": -0.002,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -0.56,
+     -1.656,
+     5.609
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": -0.002,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.56,
+     -1.656,
+     5.609
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.02,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     0.17,
+     -0.807,
+     5.12
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [
+   [
+    "main_panel",
+    0.0041
+   ],
+   [
+    "main_panel_screens",
+    0.0008
+   ],
+   [
+    "overhead_panel",
+    0.0034
+   ],
+   [
+    "overhead_panel_switches",
+    0.0002
+   ],
+   [
+    "engineer_panel",
+    0.0013
+   ]
+  ],
+  "item_overlaps_m3": [
+   [
+    "eq06_1",
+    "locker_1",
+    0.0008
+   ],
+   [
+    "eq13_1",
+    "engineer_panel",
+    0.0016
+   ],
+   [
+    "seat_1",
+    "seat_3",
+    0.0006
+   ],
+   [
+    "seat_3",
+    "overhead_panel",
+    0.0006
+   ],
+   [
+    "seat_3",
+    "locker_1",
+    0.0044
+   ]
+  ],
+  "log": [
+   "fit engineer_panel: pushed 0.24 m inward",
+   "fit eq15_1: pushed 0.05 m inward",
+   "fit eq13_1: pushed 0.49 m inward",
+   "fit eq14_1: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "throttle_1",
+  "stick_1",
+  "yoke_1",
+  "stick_2",
+  "yoke_2",
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.45,
+    1.0,
+    0.77
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.45,
+    0.6252,
+    1.4345
+   ],
+   "direction": [
+    0.0,
+    0.9701,
+    -0.2425
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.45,
+    1.0,
+    0.77
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.45,
+    0.6252,
+    1.4345
+   ],
+   "direction": [
+    0.0,
+    0.9701,
+    -0.2425
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.18,
+    0.36,
+    0.79
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -0.0738,
+    0.36,
+    1.5095
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    -0.5,
+    0.0,
+    0.866
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    -1.5192,
+    1.0293,
+    0.7315
+   ],
+   "direction": [
+    -0.894,
+    0.0346,
+    0.4468
+   ],
+   "up": [
+    0.4465,
+    -0.0173,
+    0.8946
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -1.0,
+    0.45,
+    0.66
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit03_airliner_flight_deck_interior": {
+   "exterior_variant": "cockpit03_airliner_flight_deck",
+   "state": "flight",
+   "size": "L",
+   "crew": 3,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.45,
+      1.0,
+      0.77
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.45,
+      0.6252,
+      1.4345
+     ],
+     "direction": [
+      0.0,
+      0.9701,
+      -0.2425
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.45,
+      1.0,
+      0.77
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.45,
+      0.6252,
+      1.4345
+     ],
+     "direction": [
+      0.0,
+      0.9701,
+      -0.2425
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.18,
+      0.36,
+      0.79
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.0738,
+      0.36,
+      1.5095
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      -1.5192,
+      1.0293,
+      0.7315
+     ],
+     "direction": [
+      -0.894,
+      0.0346,
+      0.4468
+     ],
+     "up": [
+      0.4465,
+      -0.0173,
+      0.8946
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -1.0,
+      0.45,
+      0.66
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -0.5487,
+      0.193,
+      0.9983
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq02_1",
+     "prop": "eq02_flight_computer",
+     "position": [
+      -0.9487,
+      0.288,
+      0.9983
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      -1.0988,
+      1.1543,
+      1.0709
+     ],
+     "basis_columns": [
+      [
+       0.377,
+       0.9262,
+       0.0
+      ],
+      [
+       0.6406,
+       -0.2608,
+       0.7223
+      ],
+      [
+       0.669,
+       -0.2723,
+       -0.6916
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      0.869,
+      0.6709,
+      1.2072
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -1.337,
+      1.4302,
+      0.852
+     ],
+     "basis_columns": [
+      [
+       0.2867,
+       0.958,
+       0.0
+      ],
+      [
+       0.5336,
+       -0.1597,
+       0.8306
+      ],
+      [
+       0.7957,
+       -0.2382,
+       -0.5569
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit03_airliner_flight_deck_interior.glb",
+    "glb_combined": "glb/cockpit03_airliner_flight_deck_combined.glb",
+    "glb_cutaway": "glb/cockpit03_airliner_flight_deck_cutaway.glb",
+    "step": "step/cockpit03_airliner_flight_deck_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit03_airliner_flight_deck.glb",
+    "preview": "renders/cockpit03_airliner_flight_deck_interior.png"
+   }
+  },
+  "cockpit03_airliner_flight_deck_open_interior": {
+   "exterior_variant": "cockpit03_airliner_flight_deck_open",
+   "state": "open",
+   "size": "L",
+   "crew": 3,
+   "primary": false,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.45,
+      1.0,
+      0.77
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.45,
+      0.6252,
+      1.4345
+     ],
+     "direction": [
+      0.0,
+      0.9701,
+      -0.2425
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.45,
+      1.0,
+      0.77
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.45,
+      0.6252,
+      1.4345
+     ],
+     "direction": [
+      0.0,
+      0.9701,
+      -0.2425
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.18,
+      0.36,
+      0.79
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.0738,
+      0.36,
+      1.5095
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      -0.5,
+      0.0,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      -1.5192,
+      1.0293,
+      0.7315
+     ],
+     "direction": [
+      -0.894,
+      0.0346,
+      0.4468
+     ],
+     "up": [
+      0.4465,
+      -0.0173,
+      0.8946
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -1.0,
+      0.45,
+      0.66
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -0.5487,
+      0.193,
+      0.9983
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq02_1",
+     "prop": "eq02_flight_computer",
+     "position": [
+      -0.9487,
+      0.288,
+      0.9983
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      -1.0988,
+      1.1543,
+      1.0709
+     ],
+     "basis_columns": [
+      [
+       0.377,
+       0.9262,
+       0.0
+      ],
+      [
+       0.6406,
+       -0.2608,
+       0.7223
+      ],
+      [
+       0.669,
+       -0.2723,
+       -0.6916
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      0.869,
+      0.6709,
+      1.2072
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -1.337,
+      1.4302,
+      0.852
+     ],
+     "basis_columns": [
+      [
+       0.2867,
+       0.958,
+       0.0
+      ],
+      [
+       0.5336,
+       -0.1597,
+       0.8306
+      ],
+      [
+       0.7957,
+       -0.2382,
+       -0.5569
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit03_airliner_flight_deck_open_interior.glb",
+    "glb_combined": "glb/cockpit03_airliner_flight_deck_open_combined.glb",
+    "glb_cutaway": "glb/cockpit03_airliner_flight_deck_open_cutaway.glb",
+    "step": "step/cockpit03_airliner_flight_deck_open_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit03_airliner_flight_deck_open.glb",
+    "preview": "renders/cockpit03_airliner_flight_deck_open_interior.png"
+   }
+  }
+ }
+}

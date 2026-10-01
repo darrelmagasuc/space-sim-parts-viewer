@@ -1,0 +1,379 @@
+{
+ "id": "cmd03",
+ "name": "CM-1 'Gemini' Two-Seat Capsule",
+ "exterior_primary": "cmd03_gemini_capsule",
+ "primary": "cmd03_gemini_capsule_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 2,
+ "wall_t_m": 0.06,
+ "cavity": {
+  "volume_m3": 3.22,
+  "size_godot_xyz_m": [
+   2.32,
+   1.56,
+   2.32
+  ],
+  "wall_t_m": 0.06
+ },
+ "layout": "2 upright-reclined seats side by side (x = +-0.29), facing the two hatches/windows (-Y), spine 20 deg back",
+ "panels": [
+  "main panel 0.95x0.30 (3 screens, 1 switch bank)"
+ ],
+ "hatches": [
+  "crew hatch left 0.55x1.0 (window in door)",
+  "crew hatch right 0.55x1.0 (window in door)"
+ ],
+ "windows": 2,
+ "notes": [
+  "Gemini: real crew cabin 2.55 m^3; cavity capped at the 1.60 m cabin-top bulkhead (R&R nose is unpressurised)"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.016,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -0.44,
+     -0.888,
+     0.331
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.016,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     0.44,
+     -0.888,
+     0.331
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [
+   [
+    "main_panel",
+    0.0004
+   ],
+   [
+    "eq14_1",
+    0.0003
+   ]
+  ],
+  "item_overlaps_m3": [
+   [
+    "eq14_1",
+    "seat_2",
+    0.0008
+   ]
+  ],
+  "log": [
+   "fit main_panel: pushed 0.26 m inward",
+   "fit locker: pushed 0.01 m inward",
+   "fit locker: pushed 0.01 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit eq03_1: pushed 0.02 m inward",
+   "fit eq14_1: pushed 0.03 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "hand_controller_1r",
+  "hand_controller_2l",
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.29,
+    -0.9995,
+    -0.05
+   ],
+   "direction": [
+    0.0,
+    0.3446,
+    0.9387
+   ],
+   "up": [
+    0.0,
+    0.9387,
+    -0.3446
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.29,
+    -0.2472,
+    -0.1771
+   ],
+   "direction": [
+    0.0,
+    0.3446,
+    0.9387
+   ],
+   "up": [
+    0.0,
+    0.9387,
+    -0.3446
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.29,
+    -0.9995,
+    -0.05
+   ],
+   "direction": [
+    0.0,
+    0.3446,
+    0.9387
+   ],
+   "up": [
+    0.0,
+    0.9387,
+    -0.3446
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.29,
+    -0.2472,
+    -0.1771
+   ],
+   "direction": [
+    0.0,
+    0.3446,
+    0.9387
+   ],
+   "up": [
+    0.0,
+    0.9387,
+    -0.3446
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    -0.2882,
+    -0.7309,
+    0.7133
+   ],
+   "direction": [
+    -0.3517,
+    0.3446,
+    0.8704
+   ],
+   "up": [
+    0.1291,
+    0.9387,
+    -0.3195
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.2882,
+    -0.7309,
+    0.7133
+   ],
+   "direction": [
+    0.3517,
+    0.3446,
+    0.8704
+   ],
+   "up": [
+    -0.1291,
+    0.9387,
+    -0.3195
+   ]
+  }
+ ],
+ "variants": {
+  "cmd03_gemini_capsule_interior": {
+   "exterior_variant": "cmd03_gemini_capsule",
+   "state": "flight",
+   "size": "S",
+   "crew": 2,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.29,
+      -0.9995,
+      -0.05
+     ],
+     "direction": [
+      0.0,
+      0.3446,
+      0.9387
+     ],
+     "up": [
+      0.0,
+      0.9387,
+      -0.3446
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.29,
+      -0.2472,
+      -0.1771
+     ],
+     "direction": [
+      0.0,
+      0.3446,
+      0.9387
+     ],
+     "up": [
+      0.0,
+      0.9387,
+      -0.3446
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.29,
+      -0.9995,
+      -0.05
+     ],
+     "direction": [
+      0.0,
+      0.3446,
+      0.9387
+     ],
+     "up": [
+      0.0,
+      0.9387,
+      -0.3446
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.29,
+      -0.2472,
+      -0.1771
+     ],
+     "direction": [
+      0.0,
+      0.3446,
+      0.9387
+     ],
+     "up": [
+      0.0,
+      0.9387,
+      -0.3446
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      -0.2882,
+      -0.7309,
+      0.7133
+     ],
+     "direction": [
+      -0.3517,
+      0.3446,
+      0.8704
+     ],
+     "up": [
+      0.1291,
+      0.9387,
+      -0.3195
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.2882,
+      -0.7309,
+      0.7133
+     ],
+     "direction": [
+      0.3517,
+      0.3446,
+      0.8704
+     ],
+     "up": [
+      -0.1291,
+      0.9387,
+      -0.3195
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0049,
+      -0.6974,
+      -0.6378
+     ],
+     "basis_columns": [
+      [
+       0.9997,
+       0.0,
+       -0.0243
+      ],
+      [
+       0.0084,
+       0.9384,
+       0.3456
+      ],
+      [
+       0.0228,
+       -0.3457,
+       0.9381
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      0.6059,
+      -0.4751,
+      -0.1824
+     ],
+     "basis_columns": [
+      [
+       0.2942,
+       0.0,
+       0.9558
+      ],
+      [
+       -0.3281,
+       0.9392,
+       0.101
+      ],
+      [
+       -0.8977,
+       -0.3433,
+       0.2763
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cmd03_gemini_capsule_interior.glb",
+    "glb_combined": "glb/cmd03_gemini_capsule_combined.glb",
+    "glb_cutaway": "glb/cmd03_gemini_capsule_cutaway.glb",
+    "step": "step/cmd03_gemini_capsule_interior.step",
+    "exterior_glb": "../cmd_prop/glb/cmd03_gemini_capsule.glb",
+    "preview": "renders/cmd03_gemini_capsule_interior.png"
+   }
+  }
+ }
+}

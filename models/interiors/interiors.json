@@ -1,0 +1,365 @@
+{
+  "source": "/workspace/space-sim/parts/interiors",
+  "imported_at": "2026-10-01T12:53:16+02:00",
+  "note": "Copied by handoff/tools/import_interiors.py; do not edit here. Nodes JSON files are verbatim copies (their 'files' paths are relative to the source folder; use the paths in handoff/parts_manifest.json).",
+  "interiors": [
+    {
+      "id": "cmd03",
+      "name": "CM-1 'Gemini' Two-Seat Capsule",
+      "reference": "Gemini",
+      "crew": 2,
+      "variants": {
+        "cmd03_gemini_capsule_interior": "cmd03_gemini_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.016
+        },
+        "clash_with_crew_items": 2
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd04",
+      "name": "CM-2 'Soyuz' Three-Seat Descent Module",
+      "reference": "Soyuz descent module",
+      "crew": 3,
+      "variants": {
+        "cmd04_soyuz_descent_interior": "cmd04_soyuz_descent"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": 0.062
+        },
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd05",
+      "name": "CM-3 'Dragon' Crew Capsule",
+      "reference": "Crew Dragon",
+      "crew": 4,
+      "variants": {
+        "cmd05_dragon_capsule_interior": "cmd05_dragon_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 4,
+          "fit": 4,
+          "min_clearance_m": 0.105
+        },
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd06",
+      "name": "CM-4 'Orion' Deep Space Capsule",
+      "reference": "Orion",
+      "crew": 4,
+      "variants": {
+        "cmd06_orion_capsule_interior": "cmd06_orion_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 4,
+          "fit": 4,
+          "min_clearance_m": 0.115
+        },
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd07",
+      "name": "CM-5 'MAV' Ascent Cabin",
+      "reference": "Mars Ascent Vehicle (The Martian)",
+      "crew": 6,
+      "variants": {
+        "cmd07_mav_cabin_interior": "cmd07_mav_cabin"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 6,
+          "fit": 6,
+          "min_clearance_m": 0.114
+        },
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd08",
+      "name": "CM-6 'Hermes' Flight Deck",
+      "reference": "Hermes-style flight deck",
+      "crew": 2,
+      "variants": {
+        "cmd08_flight_deck_interior": "cmd08_flight_deck"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.217
+        },
+        "clash_with_crew_items": 2
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cmd09",
+      "name": "CM-7 'Lander' Crew Cabin",
+      "reference": "Apollo LM ascent stage",
+      "crew": 2,
+      "variants": {
+        "cmd09_lander_cabin_interior": "cmd09_lander_cabin"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.028
+        },
+        "clash_with_crew_items": 2
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cockpit00",
+      "name": "CK-1 Single-Seat Jet Cockpit",
+      "reference": "F-16",
+      "crew": 1,
+      "variants": {
+        "cockpit00_fighter_canopy_interior": "cockpit00_fighter_canopy",
+        "cockpit00_fighter_canopy_open_interior": "cockpit00_fighter_canopy_open"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 1,
+          "fit": 1,
+          "min_clearance_m": 0.054
+        },
+        "clash_with_crew_items": 2
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cockpit01",
+      "name": "CK-2 Tandem Two-Seat Cockpit",
+      "reference": "T-38 / tandem trainer",
+      "crew": 2,
+      "variants": {
+        "cockpit01_tandem_canopy_interior": "cockpit01_tandem_canopy",
+        "cockpit01_tandem_canopy_open_interior": "cockpit01_tandem_canopy_open"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.05
+        },
+        "clash_with_crew_items": 3
+      },
+      "known_issue": null
+    },
+    {
+      "id": "cockpit02",
+      "name": "CK-3 Spaceplane Flight Deck",
+      "reference": "Shuttle flight deck",
+      "crew": 4,
+      "variants": {
+        "cockpit02_spaceplane_flight_deck_interior": "cockpit02_spaceplane_flight_deck"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 4,
+          "fit": 0,
+          "min_clearance_m": -0.032
+        },
+        "clash_with_crew_items": 2
+      },
+      "known_issue": "crew does not fit: heads 2.6-3.2 cm into the ceiling (exterior flight deck is 1.26-1.28 m high)"
+    },
+    {
+      "id": "cockpit03",
+      "name": "CK-4 Airliner / Cargo Flight Deck",
+      "reference": "airliner / 747 upper deck",
+      "crew": 3,
+      "variants": {
+        "cockpit03_airliner_flight_deck_interior": "cockpit03_airliner_flight_deck",
+        "cockpit03_airliner_flight_deck_open_interior": "cockpit03_airliner_flight_deck_open"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": -0.002
+        },
+        "clash_with_crew_items": 5
+      },
+      "known_issue": "pilots fit only within tolerance (-0.2 cm) in 40 deg reclined seats; floor hatch needs an exterior opening"
+    },
+    {
+      "id": "cockpit04",
+      "name": "CK-5 Inline Cockpit (Droop Nose)",
+      "reference": "Concorde",
+      "crew": 3,
+      "variants": {
+        "cockpit04_inline_droop_cockpit_interior": "cockpit04_inline_droop_cockpit",
+        "cockpit04_inline_droop_cockpit_droop_interior": "cockpit04_inline_droop_cockpit_droop"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": 0.075
+        },
+        "clash_with_crew_items": 1
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station00",
+      "name": "HM-1 'Destiny' Hab Module",
+      "reference": "ISS Destiny-style hab (rack walls)",
+      "crew": 3,
+      "variants": {
+        "station00_hab_module_interior": "station00_hab_module"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 7,
+          "fit": 7,
+          "min_clearance_m": 0.219
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station01",
+      "name": "HM-2 'BEAM' Expandable Module",
+      "reference": "BEAM expandable (deployed)",
+      "crew": 0,
+      "variants": {
+        "station01_beam_deployed_interior": "station01_beam_deployed"
+      },
+      "skipped_variants": [
+        "station01_beam"
+      ],
+      "validation": {
+        "crew_fit": {
+          "seats": 1,
+          "fit": 1,
+          "min_clearance_m": 0.598
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station02",
+      "name": "HM-3 'B330' Large Inflatable",
+      "reference": "Bigelow B330 (deployed)",
+      "crew": 6,
+      "variants": {
+        "station02_b330_deployed_interior": "station02_b330_deployed"
+      },
+      "skipped_variants": [
+        "station02_b330"
+      ],
+      "validation": {
+        "crew_fit": {
+          "seats": 12,
+          "fit": 12,
+          "min_clearance_m": 0.239
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station03",
+      "name": "NM-1 Node (6-port)",
+      "reference": "6-port node (Unity / Harmony-style)",
+      "crew": 0,
+      "variants": {
+        "station03_node_6port_interior": "station03_node_6port"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.317
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station04",
+      "name": "AL-1 EVA Airlock",
+      "reference": "EVA airlock (Quest-style)",
+      "crew": 2,
+      "variants": {
+        "station04_airlock_interior": "station04_airlock"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 4,
+          "fit": 4,
+          "min_clearance_m": 0.042
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    }
+  ],
+  "skipped": [
+    {
+      "id": "station09",
+      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+    },
+    {
+      "id": "station10",
+      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+    },
+    {
+      "id": "station11",
+      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+    },
+    {
+      "id": "station12",
+      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+    },
+    {
+      "id": "station13",
+      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+ "id": "cockpit01",
+ "name": "CK-2 Tandem Two-Seat Cockpit",
+ "exterior_primary": "cockpit01_tandem_canopy",
+ "primary": "cockpit01_tandem_canopy_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 2,
+ "wall_t_m": 0.04,
+ "cavity": {
+  "volume_m3": 2.41,
+  "size_godot_xyz_m": [
+   0.78,
+   3.62,
+   1.63
+  ],
+  "wall_t_m": 0.04
+ },
+ "layout": "2 tandem ejection seats (rear raised 0.12 m, 30 deg recline, pans at the exterior seat heights, rear knees at 90 deg to clear the front seat); centre sticks, left throttles, HUD in front",
+ "panels": [
+  "dash 0.50x0.30 (3 MFDs + switch bank)",
+  "dash 0.54x0.30 (3 MFDs + switch bank)"
+ ],
+ "hatches": [
+  "front canopy (no tunnel)",
+  "rear canopy (no tunnel)"
+ ],
+ "windows": 0,
+ "notes": [
+  "hide the exterior's built-in front_seat / rear_seat / seat_handles / front_panel / rear_panel / sticks meshes when this interior is loaded"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.05,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -0.11,
+     -0.9,
+     2.319
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.05,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     0.24,
+     -0.802,
+     1.08
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [
+   [
+    "dash_panel_1",
+    0.0021
+   ],
+   [
+    "dash_panel_1_screens",
+    0.0002
+   ],
+   [
+    "glareshield_1",
+    0.004
+   ]
+  ],
+  "item_overlaps_m3": [
+   [
+    "seat_1",
+    "dash_panel_2",
+    0.0005
+   ]
+  ],
+  "log": [
+   "fit dash_panel_1: pushed 0.12 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit eq03_1: pushed 0.08 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "stick_1",
+  "throttle_1",
+  "stick_2",
+  "throttle_2",
+  "rear_canopy_frame_inner",
+  "front_canopy_frame_inner"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -0.85,
+    -0.04
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.0,
+    -1.1038,
+    0.6795
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    -2.25,
+    0.08
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    -2.5038,
+    0.7995
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.65,
+    0.9158
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    -2.05,
+    1.1464
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "cockpit01_tandem_canopy_interior": {
+   "exterior_variant": "cockpit01_tandem_canopy",
+   "state": "flight",
+   "size": "S",
+   "crew": 2,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.85,
+      -0.04
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      -1.1038,
+      0.6795
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -2.25,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      -2.5038,
+      0.7995
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.65,
+      0.9158
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      -2.05,
+      1.1464
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0013,
+      -2.6213,
+      0.005
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit01_tandem_canopy_interior.glb",
+    "glb_combined": "glb/cockpit01_tandem_canopy_combined.glb",
+    "glb_cutaway": "glb/cockpit01_tandem_canopy_cutaway.glb",
+    "step": "step/cockpit01_tandem_canopy_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit01_tandem_canopy.glb",
+    "preview": "renders/cockpit01_tandem_canopy_interior.png"
+   }
+  },
+  "cockpit01_tandem_canopy_open_interior": {
+   "exterior_variant": "cockpit01_tandem_canopy_open",
+   "state": "open",
+   "size": "S",
+   "crew": 2,
+   "primary": false,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.85,
+      -0.04
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      -1.1038,
+      0.6795
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -2.25,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      -2.5038,
+      0.7995
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.65,
+      0.9158
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      -2.05,
+      1.1464
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0013,
+      -2.6213,
+      0.005
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cockpit01_tandem_canopy_open_interior.glb",
+    "glb_combined": "glb/cockpit01_tandem_canopy_open_combined.glb",
+    "glb_cutaway": "glb/cockpit01_tandem_canopy_open_cutaway.glb",
+    "step": "step/cockpit01_tandem_canopy_open_interior.step",
+    "exterior_glb": "../cockpit/glb/cockpit01_tandem_canopy_open.glb",
+    "preview": "renders/cockpit01_tandem_canopy_open_interior.png"
+   }
+  }
+ }
+}

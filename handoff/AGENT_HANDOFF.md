@@ -2,15 +2,18 @@
 
 **Who this is for:** the coding agent building Darrel's Godot space sim. It explains how to import the parts from this repo and port the viewer's *Vehicle Creation* (spacecraft builder) into the game. This folder is self-contained. Read it top to bottom once, then use the [start-here checklist](#start-here-checklist).
 
+> **Standing instruction for the game agent:** before working on anything that uses parts, pull `darrelmagasuc/space-sim-parts-viewer`. Compare `handoff/parts_manifest.json` → `manifest_version` with `manifest_version` in `res://parts/SYNC_INFO.json`. If they differ, read the new entries in `handoff/CHANGELOG.md` and run `python3 handoff/tools/sync_to_godot.py <project>`, which re-syncs only the ids whose `content_hash` changed. Then re-check the affected crafts. Never edit parts in either repo; request changes with a `game-request` issue. Details: [§13 Updates](#13-updates).
+
 | File | What it is |
 |---|---|
 | `AGENT_HANDOFF.md` | this file: project, layout, conventions, Godot import, workflow |
 | `CONVENTIONS.md` | copy of the authoritative modelling conventions (axes, origins, node names) |
-| `parts_manifest.json` | every part and variant: ids, sizes, roles, mass, nodes, slots, tris, paths and URLs (schema inside, under `"schema"`) |
+| `parts_manifest.json` | every part and variant, plus the released interiors: ids, sizes, roles, mass, nodes, slots, tris, paths, URLs and sha256 hashes. It also carries `manifest_version`, `generated_at` and its schema, under `"schema"` |
+| `CHANGELOG.md` | what changed in each release (`parts-vX.Y.Z`), listing added, changed and removed ids |
 | `vehicle_creation_spec.md` | precise, engine-agnostic spec of the builder (snap rules, symmetry, compatibility, data model, save format) plus a GDScript porting guide |
 | `test_vehicles/` | 5 saved crafts (`*.craft.json`) and their expected world-space results (`*.expected.json`) for checking your port |
 | `materials_library.json` | the shared low-poly PBR material library (names and values) |
-| `tools/` | `build_manifest.py` (regenerates the manifest), `build_test_vehicles.mjs` (regenerates/checks the test vehicles with the viewer's own code), `reference_builder.py` (a ~175-line second implementation of the placement rules, a good template for GDScript), `sync_to_godot.py` (copies the parts into a Godot project) |
+| `tools/` | `build_manifest.py` (regenerates the manifest), `build_test_vehicles.mjs` (regenerates/checks the test vehicles with the viewer's own code), `reference_builder.py` (a ~175-line second implementation of the placement rules, a good template for GDScript), `sync_to_godot.py` (copies the parts and interiors into a Godot project and re-syncs changed ids by hash), `import_interiors.py` (brings released interiors into the site), `publish_update.py` (cuts a release; run only on Darrel's request) |
 
 ---
 
@@ -55,6 +58,9 @@ This repo, **`darrelmagasuc/space-sim-parts-viewer`**, is the **parts library an
 ├─ models/<cat>/<vid>.glb                 CAD-tessellated GLB (heavier, same frame/nodes)
 ├─ models/<cat>/<id>.nodes.json           attach nodes + dims for every variant of part <id>
 ├─ models/assemblies/[lowpoly/]*.glb      2 reference assemblies (gravity ring), no nodes
+├─ models/interiors/                      released IVA interiors (§12): <vid>_interior.glb, _combined.glb, _cutaway.glb,
+│                                         <id>_interior.nodes.json, interiors.json (what was imported, skips)
+├─ thumbs/interiors/<vid>_interior.jpg    interior cutaway previews
 ├─ thumbs/lp/<vid>.jpg, thumbs/<vid>.jpg  thumbnails (low-poly / CAD)
 ├─ space_sim_lowpoly_glb_v2.zip           all low-poly GLBs + nodes.json + material library
 ├─ space_sim_glb_v3.zip                   all CAD GLBs + nodes.json
@@ -195,9 +201,11 @@ res://parts/<cat>/<vid>.glb          # low-poly by default (sync_to_godot.py --l
 res://parts/<cat>/<id>.nodes.json
 res://parts/assemblies/*.glb         # reference only
 res://parts/parts_manifest.json      # load at startup → part catalogue
+res://parts/interiors/<vid>_interior.glb + <id>_interior.nodes.json   # IVA (§12)
 res://parts/materials_library.json
+res://parts/CHANGELOG.md
 res://parts/_materials/<name>.tres   # your own materials, one per library name (optional)
-res://parts/SYNC_INFO.json           # source commit of the last sync
+res://parts/SYNC_INFO.json           # last sync: commit, manifest_version, content_hash per id (§13)
 res://crafts/*.craft.json            # saved vehicles (format in vehicle_creation_spec.md)
 ```
 Keep the file names unchanged: craft files reference variant ids, and the manifest gives `paths.godot_suggested = res://parts/<cat>/<vid>.glb`.
@@ -245,12 +253,78 @@ Keep the file names unchanged: craft files reference variant ids, and the manife
 2. **Request changes by GitHub issue** on `darrelmagasuc/space-sim-parts-viewer`, **labelled `game-request`**: https://github.com/darrelmagasuc/space-sim-parts-viewer/issues/new?labels=game-request . Use one issue per request, with:
    - **Title:** `[game-request] <part id / variant id>: <what>`
    - **Body:** what you need (new part, size, pose, node, moving-mesh split, mass, fix), why the game needs it, the affected variant ids, and the expected node names / positions / sizes, with screenshots if useful. For a mismatch, give the craft file and the numbers you got against those you expected.
-3. **Pull when the issue is closed.** The closing comment names the commit. Then `git pull` (or re-download the zip), run `python3 handoff/tools/sync_to_godot.py <project>`, and re-run your test-vehicle check. `SYNC_INFO.json` records which commit you have.
+3. **Pull when the issue is closed.** The fix ships in the next release; the closing comment names the commit or the `parts-vX.Y.Z` tag. Then follow §13 Updates. `SYNC_INFO.json` records which version and commit you have.
 4. **Contract:**
-   - **Stable (renames come only through a versioned change):** variant ids, node names, origins and frames. `parts_manifest.json` has a `schema_version`.
+   - **Stable (renames come only through a versioned change):** variant ids, node names, origins and frames. `parts_manifest.json` has a `schema_version` and a `manifest_version` (§13).
    - **Stable for a given repo commit:** the test vehicles.
    - **Not stable:** new parts and variants get added, so don't hard-code counts.
 5. **Vehicle Creation in the viewer stays the reference implementation.** If the port disagrees with `test_vehicles/*.expected.json`, the port is wrong. If you believe the reference is wrong, open a `game-request` issue.
+
+## 12. Interiors (IVA)
+
+Blockout crew interiors for the crewed parts are released in `models/interiors/` and listed in `parts_manifest.json` under **`interiors[]`**. Each entry is linked to its exterior by **`exterior_part_id`**, and each variant by `exterior_variant`. The authoring source is Sergei's `parts/interiors/` pipeline. It is copied here by `handoff/tools/import_interiors.py`, and only finished, validated interiors are copied.
+
+| released (0.3.0) | exterior variants | crew | notes |
+|---|---|---|---|
+| `cmd03_interior` … `cmd09_interior` | Gemini, Soyuz DM, Dragon, Orion, MAV, Hermes flight deck, LM cabin | 2–6 | all crew fit |
+| `cockpit00_interior`, `cockpit01_interior` | fighter / tandem canopy, plus the `_open` variants | 1 / 2 | raised canopies (0.3.0), ~5 cm head clearance |
+| `cockpit02_interior` | spaceplane flight deck | 4 | **known issue:** heads 2.6–3.2 cm into the ceiling (the exterior deck is too low) |
+| `cockpit03_interior` | airliner flight deck, plus `_open` | 3 | pilots fit only within tolerance (−0.2 cm) |
+| `cockpit04_interior` | Concorde-style, plus `_droop` | 3 | |
+| `station00_interior` … `station04_interior` | Destiny-style hab, BEAM (deployed), B330 (deployed), 6-port node, airlock | 1–12 positions | microgravity; station checks pass (aisles, hatch keep-outs, cavity) |
+
+**Not released yet:**
+- **The gravity-ring interiors `station09`–`station13`** are still in progress; they are listed in `interiors_skipped[]`.
+- **The interior props library** is not released. Its props are already embedded in the interior GLBs as `eqNN_k` nodes.
+- **BEAM and B330:** only the deployed variants have interiors. The packed modules have no habitable volume.
+
+**Files per interior variant** (`<ext>` = exterior variant id):
+- `models/interiors/<ext>_interior.glb` is **the one to ship**. It contains only the interior, and its **origin and axes are identical to the exterior `<ext>.glb`**.
+- `<ext>_combined.glb` (interior plus ghosted exterior) and `<ext>_cutaway.glb` are for review only.
+- `<id>_interior.nodes.json` is a verbatim copy of the source file. Its `files` paths are source-relative, so use the manifest's `paths`/`urls` instead.
+- The manifest gives `tris`, `bytes`, `sha256` and a preview `thumbs/interiors/<vid>.jpg`.
+- **Interiors are CAD-tessellated only.** There is no low-poly version yet. `*_interior.glb` ranges from 8.6k to 122k triangles (station02 is the heaviest). Load them on demand when the camera enters IVA, and use them as LOD0 only.
+
+**Using one in Godot:**
+1. Instance `<ext>_interior.glb` as a child of the exterior part's scene with an **identity transform**.
+2. **Hide the exterior meshes listed in `exterior_hide`** while the interior is shown:
+   - cockpit00: `ejection_seat`, `seat_handle`, `instrument_panel`, `hud`, `side_stick`;
+   - cockpit01: `front_seat`, `rear_seat`, `seat_handles`, `front_panel`, `rear_panel`, `sticks`;
+   - station02: `rigid_core`.
+3. **Cameras:** put a `Camera3D` under `node_camera_N` rotated **+90° about local X**. The node's +Y is the view direction and its +Z is up, and a Camera3D looks down its −Z. `node_camera_N` is crew member N's eye point; higher numbers are extra viewpoints.
+4. **IVA nodes:** these are named in `CONVENTIONS.md` → "Interiors (IVA)". Each node has `pos`, `dir` and **`up`**: local +Y = `dir`, local +Z = `up` (towards the head, or the hatch's up).
+   - `node_seat_N`: seat reference point; `dir` = facing direction, `up` = along the spine. In stations it is a standing or sleeping crew position.
+   - `node_camera_N`: eye point.
+   - `node_hatch_N`: centre of the hatch opening's **inner** face, pointing outward. It pairs with the exterior's stack or side node of the same port; the manifest `hatches` text names the port.
+5. **Moving meshes** are separate nodes, listed in `moving_meshes`: `hatch_door_N`, `stick_N`, `throttle_N`, `yoke_N`, `hand_controller_N*` and `canopy_frame_inner`. The canopy frames follow the exterior canopy; the `_open` variants hold the open key-frame.
+6. **Props** are `eqNN_k` nodes inside the GLB, with their position and basis in `variants[].props[]`, so the game can swap or hide them.
+7. **Validation** data per interior: `crew_fit` (seats, fitted, minimum clearance), `station_checks_ok` and `known_issue`.
+
+## 13. Updates
+
+Parts releases are **published only when Darrel asks**; there is no schedule.
+- **Versioning:** each release is a semver **`manifest_version`** in `parts_manifest.json`, a git tag **`parts-vX.Y.Z`**, a GitHub release, and an entry at the top of **`handoff/CHANGELOG.md`**. Minor = ids added or removed; patch = existing ids changed.
+- **Change detection:** every variant file has a `sha256`, and every part, interior and assembly has a **`content_hash`** (all its files) and a **`meta_hash`** (its manifest data).
+
+**Before working on parts (every session):**
+1. `git pull` the parts repo (or `git fetch --tags` and check out the newest `parts-v*` tag).
+2. **Compare versions:** `handoff/parts_manifest.json` → `manifest_version` against `res://parts/SYNC_INFO.json` → `manifest_version` (the last version you imported). If they're equal and `content_hash` values match, there is nothing to do.
+3. **Read `handoff/CHANGELOG.md`** from the top down to your last version. Note the added, changed and **removed** ids. Removed ids break crafts that use them, so migrate those crafts.
+4. **Re-sync only what changed:** `python3 handoff/tools/sync_to_godot.py <project>`. It compares each id's `content_hash` with the hashes stored in `SYNC_INFO.json`. It copies only added, changed or missing ids, prints them, and never deletes. Removed ids are only listed. Then it records the new version and hashes. `--dry-run` shows the plan; `--all` forces a full copy.
+5. **Re-validate what the change touches:**
+   - re-run your test-vehicle check (§11 of the spec);
+   - re-open saved crafts that use changed ids;
+   - review game-side overrides (mass, stats) for ids with a changed `meta_hash`.
+6. **Close the loop:** if a release resolves one of your `game-request` issues, verify it and comment on the issue.
+
+**Publishing (parts side only, on Darrel's request):** run `python3 handoff/tools/publish_update.py --notes "…" [--push]`.
+1. It diffs against the manifest at the newest `parts-v*` tag, by hash.
+2. It regenerates the manifest and bumps the version.
+3. It runs the tests and checks that the zips match `models/`.
+4. It prepends the changelog entry and stages the commit.
+5. **Only with `--push`** does it commit, rebase on origin, tag `parts-vX.Y.Z`, push and create the GitHub release. `--dry-run` only reports.
+
+The game agent never runs this.
 
 ## Start-here checklist
 
@@ -268,3 +342,5 @@ Keep the file names unchanged: craft files reference variant ids, and the manife
 9. ☐ Add validation (§6 of the spec) and the editor interactions (pick a node, preview the snap, symmetry 1–12, clocking, roll).
 10. ☐ Save and load `*.craft.json` (§7). A craft saved by the game must load in the viewer (`vehicle.html` → Import) and vice versa.
 11. ☐ Raise any gaps (missing node, wrong mass, need a moving-mesh split) as **`game-request` issues**, then pull when they close.
+12. ☐ IVA: load `res://parts/interiors/<ext>_interior.glb` under the exterior with an identity transform, hide `exterior_hide`, and put a camera on `node_camera_1` (§12).
+13. ☐ Every session: follow **§13 Updates**. Compare `manifest_version` with `SYNC_INFO.json`, read `CHANGELOG.md` and re-sync the changed ids by hash.

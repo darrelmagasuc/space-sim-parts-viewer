@@ -1,0 +1,793 @@
+{
+ "id": "station01",
+ "name": "HM-2 'BEAM' Expandable Module",
+ "exterior_primary": "station01_beam_deployed",
+ "primary": "station01_beam_deployed_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.0064,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "axial (hatch -> forward bulkhead)",
+    "clear_diameter_m": 2.556,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq31_5",
+    "path_to_wall_min_m": 0.25
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_2: aft hatch, looking in"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "crew work position (sensor readout / stowage access)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null
+  }
+ ],
+ "exterior_hide": [],
+ "skipped_variants": [
+  "station01_beam"
+ ],
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 0,
+ "wall_t_m": 0.2,
+ "cavity": {
+  "volume_m3": 25.17,
+  "size_godot_xyz_m": [
+   3.3,
+   3.59,
+   3.3
+  ],
+  "wall_t_m": 0.2
+ },
+ "layout": "expandable stowage / test module: 6 soft-wall stowage panels around the barrel, 8 CTBs strapped to the restraint layer, radiation / impact sensors, one crew work position",
+ "panels": [],
+ "hatches": [
+  "aft hatch dia 0.8 through the aft bulkhead (node_bottom)"
+ ],
+ "windows": 0,
+ "notes": [
+  "station01: interior only for the deployed variant (the packed module has no habitable volume)",
+  "station01: the deployed shell gives a 25 m3 cavity with a 0.20 m soft wall (the catalogue's 16 m3 is the real BEAM's habitable volume)"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.598,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     0.28,
+     -0.15,
+     1.1
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit eq31_1: pushed 0.11 m inward",
+   "fit eq31_2: pushed 0.08 m inward",
+   "fit eq31_3: pushed 0.11 m inward",
+   "fit eq31_4: pushed 0.08 m inward",
+   "fit eq31_5: pushed 0.11 m inward",
+   "fit eq31_6: pushed 0.08 m inward",
+   "fit eq20_1: pushed 0.06 m inward",
+   "fit eq20_2: pushed 0.05 m inward",
+   "fit eq20_3: pushed 0.05 m inward",
+   "fit eq20_4: pushed 0.06 m inward",
+   "fit eq20_5: pushed 0.06 m inward",
+   "fit eq20_6: pushed 0.06 m inward",
+   "fit eq20_7: pushed 0.06 m inward",
+   "fit eq20_8: pushed 0.06 m inward",
+   "fit eq03_1: pushed 0.02 m inward",
+   "fit eq03_2: pushed 0.01 m inward",
+   "fit eq03_3: pushed 0.01 m inward",
+   "fit eq17_1: pushed 0.02 m inward",
+   "fit eq13_1: pushed 0.18 m inward",
+   "fit eq14_1: pushed 0.01 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "hatch_door_1"
+ ],
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.91,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    0.91,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.14,
+    1.66,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    -0.34,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "station01_beam_deployed_interior": {
+   "exterior_variant": "station01_beam_deployed",
+   "state": "deployed",
+   "size": "M",
+   "crew": 0,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.91,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      0.91,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.14,
+      1.66,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      -0.34,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq31_1",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      1.4082,
+      1.0111,
+      0.0103
+     ],
+     "basis_columns": [
+      [
+       0.0495,
+       0.0,
+       0.9988
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.9988,
+       0.0,
+       0.0495
+      ]
+     ]
+    },
+    {
+     "instance": "eq31_2",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      0.715,
+      1.0111,
+      -1.238
+     ],
+     "basis_columns": [
+      [
+       0.8659,
+       0.0,
+       0.5003
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.5003,
+       0.0,
+       0.8659
+      ]
+     ]
+    },
+    {
+     "instance": "eq31_3",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      -0.7128,
+      1.0111,
+      -1.2143
+     ],
+     "basis_columns": [
+      [
+       0.89,
+       0.0,
+       -0.4559
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.4559,
+       0.0,
+       0.89
+      ]
+     ]
+    },
+    {
+     "instance": "eq31_4",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      -1.4294,
+      1.0111,
+      -0.0016
+     ],
+     "basis_columns": [
+      [
+       0.0003,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0003
+      ]
+     ]
+    },
+    {
+     "instance": "eq31_5",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      -0.714,
+      1.0111,
+      1.2133
+     ],
+     "basis_columns": [
+      [
+       -0.8897,
+       0.0,
+       -0.4565
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.4565,
+       0.0,
+       -0.8897
+      ]
+     ]
+    },
+    {
+     "instance": "eq31_6",
+     "prop": "eq31_inflatable_wall_stowage",
+     "position": [
+      0.7163,
+      1.0111,
+      1.2365
+     ],
+     "basis_columns": [
+      [
+       -0.8662,
+       0.0,
+       0.4997
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.4997,
+       0.0,
+       -0.8662
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_1",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      1.0219,
+      -0.0389,
+      -1.0328
+     ],
+     "basis_columns": [
+      [
+       -0.68,
+       0.0,
+       -0.7333
+      ],
+      [
+       -0.7333,
+       0.0,
+       0.68
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_2",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -1.0321,
+      -0.0389,
+      -1.0317
+     ],
+     "basis_columns": [
+      [
+       -0.7161,
+       0.0,
+       0.698
+      ],
+      [
+       0.698,
+       0.0,
+       0.7161
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_3",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -1.0336,
+      -0.0389,
+      1.0299
+     ],
+     "basis_columns": [
+      [
+       0.7157,
+       0.0,
+       0.6985
+      ],
+      [
+       0.6985,
+       0.0,
+       -0.7157
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_4",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      1.0241,
+      -0.0389,
+      1.0313
+     ],
+     "basis_columns": [
+      [
+       0.6804,
+       0.0,
+       -0.7328
+      ],
+      [
+       -0.7328,
+       0.0,
+       -0.6804
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_5",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      1.0199,
+      2.0611,
+      -1.031
+     ],
+     "basis_columns": [
+      [
+       -0.68,
+       0.0,
+       -0.7333
+      ],
+      [
+       -0.7333,
+       0.0,
+       0.68
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_6",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -1.0307,
+      2.0611,
+      -1.0302
+     ],
+     "basis_columns": [
+      [
+       -0.7161,
+       0.0,
+       0.698
+      ],
+      [
+       0.698,
+       0.0,
+       0.7161
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_7",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -1.0321,
+      2.0611,
+      1.0284
+     ],
+     "basis_columns": [
+      [
+       0.7157,
+       0.0,
+       0.6985
+      ],
+      [
+       0.6985,
+       0.0,
+       -0.7157
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_8",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      1.0221,
+      2.0611,
+      1.0295
+     ],
+     "basis_columns": [
+      [
+       0.6804,
+       0.0,
+       -0.7328
+      ],
+      [
+       -0.7328,
+       0.0,
+       -0.6804
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      1.4813,
+      -0.0889,
+      0.0067
+     ],
+     "basis_columns": [
+      [
+       0.0495,
+       0.0,
+       0.9988
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.9988,
+       0.0,
+       0.0495
+      ]
+     ]
+    },
+    {
+     "instance": "eq03_2",
+     "prop": "eq03_avionics_box",
+     "position": [
+      -0.0027,
+      -0.0889,
+      -1.4905
+     ],
+     "basis_columns": [
+      [
+       0.9997,
+       0.0,
+       0.0252
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0252,
+       0.0,
+       0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq03_3",
+     "prop": "eq03_avionics_box",
+     "position": [
+      -1.4899,
+      -0.0889,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0003,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0003
+      ]
+     ]
+    },
+    {
+     "instance": "eq17_1",
+     "prop": "eq17_fan_unit",
+     "position": [
+      -0.002,
+      -0.0889,
+      1.5152
+     ],
+     "basis_columns": [
+      [
+       -0.9997,
+       0.0,
+       0.0246
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0246,
+       0.0,
+       -0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      1.376,
+      2.1111,
+      0.0119
+     ],
+     "basis_columns": [
+      [
+       0.0495,
+       0.0,
+       0.9988
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.9988,
+       0.0,
+       0.0495
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -1.5674,
+      2.1111,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0003,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0003
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/station01_beam_deployed_interior.glb",
+    "glb_combined": "glb/station01_beam_deployed_combined.glb",
+    "glb_cutaway": "glb/station01_beam_deployed_cutaway.glb",
+    "step": "step/station01_beam_deployed_interior.step",
+    "exterior_glb": "../station_power/glb/station01_beam_deployed.glb",
+    "preview": "renders/station01_beam_deployed_interior.png"
+   }
+  }
+ }
+}

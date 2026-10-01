@@ -1,0 +1,498 @@
+{
+ "id": "cmd04",
+ "name": "CM-2 'Soyuz' Three-Seat Descent Module",
+ "exterior_primary": "cmd04_soyuz_descent",
+ "primary": "cmd04_soyuz_descent_interior",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 3,
+ "wall_t_m": 0.08,
+ "cavity": {
+  "volume_m3": 6.81,
+  "size_godot_xyz_m": [
+   2.36,
+   2.28,
+   2.36
+  ],
+  "wall_t_m": 0.08
+ },
+ "layout": "3 Kazbek-style couches, supine (backs to the shield), heads to +Y, feet under the -Y panel; outer couches angled 12 deg (heads out, feet in)",
+ "panels": [
+  "Neptun-style panel 1.1x0.45 (3 screens + periscope viewer, 2 switch banks)"
+ ],
+ "hatches": [
+  "top hatch dia 0.68 to orbital module (node_top)"
+ ],
+ "windows": 2,
+ "notes": [],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.065,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -0.871,
+     0.667,
+     0.63
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.196,
+    "worst_part": "thighs",
+    "worst_point_cad": [
+     -0.19,
+     -0.05,
+     0.36
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.062,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.871,
+     0.667,
+     0.63
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [
+   [
+    "seat_1",
+    "seat_2",
+    0.0014
+   ],
+   [
+    "seat_2",
+    "seat_3",
+    0.0014
+   ]
+  ],
+  "log": [
+   "fit locker: pushed 0.04 m inward",
+   "fit locker: pushed 0.04 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.03 m inward",
+   "fit eq09_1: pushed 0.05 m inward",
+   "fit eq13_1: pushed 0.03 m inward",
+   "fit eq14_1: pushed 0.04 m inward",
+   "fit eq03_1: pushed 0.02 m inward"
+  ]
+ },
+ "moving_meshes": [
+  "hand_controller_2r",
+  "hand_controller_2l",
+  "hatch_door_1"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.57,
+    -0.8147,
+    0.22
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.2079,
+    0.0,
+    -0.9781
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.7259,
+    -0.6747,
+    -0.5136
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.2079,
+    0.0,
+    -0.9781
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    -0.8147,
+    0.22
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    -0.6747,
+    -0.53
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.57,
+    -0.8147,
+    0.22
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.2079,
+    0.0,
+    -0.9781
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.7259,
+    -0.6747,
+    -0.5136
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.2079,
+    0.0,
+    -0.9781
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    1.1953,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "cmd04_soyuz_descent_interior": {
+   "exterior_variant": "cmd04_soyuz_descent",
+   "state": "flight",
+   "size": "M",
+   "crew": 3,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.57,
+      -0.8147,
+      0.22
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.2079,
+      0.0,
+      -0.9781
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.7259,
+      -0.6747,
+      -0.5136
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.2079,
+      0.0,
+      -0.9781
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -0.8147,
+      0.22
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      -0.6747,
+      -0.53
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.57,
+      -0.8147,
+      0.22
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.2079,
+      0.0,
+      -0.9781
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.7259,
+      -0.6747,
+      -0.5136
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.2079,
+      0.0,
+      -0.9781
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      1.1953,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq09_1",
+     "prop": "eq09_o2_bottle",
+     "position": [
+      0.2421,
+      0.1293,
+      -0.7955
+     ],
+     "basis_columns": [
+      [
+       0.9625,
+       0.0,
+       0.2713
+      ],
+      [
+       -0.0685,
+       0.9676,
+       0.2429
+      ],
+      [
+       -0.2625,
+       -0.2524,
+       0.9313
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      -0.739,
+      -0.0119,
+      -0.5562
+     ],
+     "basis_columns": [
+      [
+       0.6042,
+       0.0,
+       -0.7968
+      ],
+      [
+       0.2436,
+       0.9521,
+       0.1847
+      ],
+      [
+       0.7587,
+       -0.3057,
+       0.5753
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      0.6632,
+      0.3295,
+      -0.503
+     ],
+     "basis_columns": [
+      [
+       0.5629,
+       0.0,
+       0.8265
+      ],
+      [
+       -0.342,
+       0.9104,
+       0.2329
+      ],
+      [
+       -0.7525,
+       -0.4137,
+       0.5124
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      0.0719,
+      0.4764,
+      -0.1241
+     ],
+     "basis_columns": [
+      [
+       -0.866,
+       0.0,
+       -0.5
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.5,
+       0.0,
+       -0.866
+      ]
+     ]
+    },
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      0.0047,
+      0.4936,
+      -0.688
+     ],
+     "basis_columns": [
+      [
+       0.9997,
+       0.0,
+       -0.0243
+      ],
+      [
+       0.0116,
+       0.8797,
+       0.4754
+      ],
+      [
+       0.0214,
+       -0.4755,
+       0.8794
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/cmd04_soyuz_descent_interior.glb",
+    "glb_combined": "glb/cmd04_soyuz_descent_combined.glb",
+    "glb_cutaway": "glb/cmd04_soyuz_descent_cutaway.glb",
+    "step": "step/cmd04_soyuz_descent_interior.step",
+    "exterior_glb": "../cmd_prop/glb/cmd04_soyuz_descent.glb",
+    "preview": "renders/cmd04_soyuz_descent_interior.png"
+   }
+  }
+ }
+}
