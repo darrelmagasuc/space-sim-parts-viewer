@@ -1,0 +1,121 @@
+{
+ "id": "ax_struct_15",
+ "name": "AE-1X Entry Aeroshell + Backshell",
+ "category": "stage",
+ "short_name": "entry_aeroshell",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_struct_15_entry_aeroshell",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.469,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_payload",
+   "position": [
+    0.0,
+    -0.381,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_15_entry_aeroshell": {
+   "vid": "ax_struct_15_entry_aeroshell",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "AE-1X Entry Aeroshell + Backshell",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "cone_half_angle_deg": 70,
+    "height_m": 3.1,
+    "top_ring_d_m": 2.5
+   },
+   "notes": "Entry aeroshell + backshell (5 m): 70-deg sphere-cone ablative heat shield (tile_black, jettisoned: half_b_heatshield), steel carrier ring, 12-facet white backshell (chamfered facet edges, bevelled rims, recessed groove, 2 flush access panels; jettisoned: half_a_backshell) to a 2.5 m top ring (node_top); grey payload deck (node_payload) for the lander.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.4689702342662023
+    ],
+    [
+     2.5,
+     2.5,
+     1.4689702342662023
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    2.938,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.469,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -0.381,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b_heatshield",
+    "half_a_backshell",
+    "backshell_top_ring"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_15_entry_aeroshell.step",
+    "glb": "glb/ax_struct_15_entry_aeroshell.glb",
+    "preview": "renders/ax_struct_15_entry_aeroshell.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-15",
+ "key": "ax_struct_15",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Mars-entry aeroshell for landers: faceted backshell, ablative front shield (halves jettison)"
+}

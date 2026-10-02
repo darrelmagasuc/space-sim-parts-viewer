@@ -1,0 +1,181 @@
+{
+ "id": "ax_gear_07",
+ "name": "SR-AX Structural Strut",
+ "category": "struct",
+ "short_name": "strut",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_gear_07_strut_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_attach_2",
+   "position": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_07_strut_xs": {
+   "vid": "ax_gear_07_strut_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "SR-AX Structural Strut",
+   "primary": false,
+   "dims": {
+    "length_m": 1.0,
+    "tube_d_m": 0.08
+   },
+   "notes": "Two-ended structural strut 1 m: 8-sided (chamfered) white tube, chamfered grey end fittings, steel tension collars; node_attach (-X) / node_attach_2 (+X).",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.055999999999999994,
+     -0.055999999999999994
+    ],
+    [
+     0.5,
+     0.055999999999999994,
+     0.055999999999999994
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.112,
+    0.112
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_attach_2",
+     "position": [
+      0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_07_strut_xs.step",
+    "glb": "glb/ax_gear_07_strut_xs.glb",
+    "preview": "renders/ax_gear_07_strut_xs.png"
+   }
+  },
+  "ax_gear_07_strut_s": {
+   "vid": "ax_gear_07_strut_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SR-AX Structural Strut",
+   "primary": true,
+   "dims": {
+    "length_m": 2.0,
+    "tube_d_m": 0.12
+   },
+   "notes": "Two-ended structural strut 2 m: 8-sided (chamfered) white tube, chamfered grey end fittings, steel tension collars; node_attach (-X) / node_attach_2 (+X).",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.08399999999999999,
+     -0.08399999999999999
+    ],
+    [
+     1.0000000000000002,
+     0.08399999999999999,
+     0.08399999999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.168,
+    0.168
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_attach_2",
+     "position": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_07_strut_s.step",
+    "glb": "glb/ax_gear_07_strut_s.glb",
+    "preview": "renders/ax_gear_07_strut_s.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-07",
+ "key": "ax_gear_07",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Two-ended chamfered strut"
+}

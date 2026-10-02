@@ -1,0 +1,120 @@
+{
+ "id": "ax_struct_10",
+ "name": "TA-L Capsule Trunk Adapter Ring",
+ "category": "stage",
+ "short_name": "trunk_adapter_ring",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_struct_10_trunk_adapter_ring",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.175,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.175,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_10_trunk_adapter_ring": {
+   "vid": "ax_struct_10_trunk_adapter_ring",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "TA-L Capsule Trunk Adapter Ring",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 0.35,
+    "land_r_m": [
+     1.71,
+     1.875
+    ],
+    "bore_r_m": 1.73
+   },
+   "notes": "Capsule trunk adapter ring (3.75 m): mates the AX capsule's flat heat-shield carrier land (r 1.71-1.875 at the node plane) to a 3.75 m stack; bore r 1.73 so the shield dome nests inside; grey land pad, 6 bevelled umbilical / latch pockets, recessed 30 x 12 mm groove.",
+   "bbox_cad_zup": [
+    [
+     -1.8750001,
+     -1.8750001,
+     -0.175
+    ],
+    [
+     1.8750001,
+     1.8750001,
+     0.175
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.35,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_10_trunk_adapter_ring.step",
+    "glb": "glb/ax_struct_10_trunk_adapter_ring.glb",
+    "preview": "renders/ax_struct_10_trunk_adapter_ring.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-10",
+ "key": "ax_struct_10",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Short ring that mates the AX capsule shield land to a 3.75 m stack"
+}

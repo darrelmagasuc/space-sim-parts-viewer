@@ -1,0 +1,325 @@
+{
+ "id": "ax_gear_12",
+ "name": "DB-1 Deployable Boom",
+ "category": "struct",
+ "short_name": "deployable_boom",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_gear_12_deployable_boom_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.728,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.728,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_12_deployable_boom_s": {
+   "vid": "ax_gear_12_deployable_boom_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "DB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 3.0,
+    "state": "stowed"
+   },
+   "notes": "Coilable lattice boom: chamfered white canister with a bevelled exit port and a recessed groove; stowed (mast coiled inside, tip plate at the port); grey tip plate = node_outboard.",
+   "bbox_cad_zup": [
+    [
+     -0.5510000500000001,
+     -0.1760001000000001,
+     -0.17600010000000008
+    ],
+    [
+     0.55100005,
+     0.1760001000000001,
+     0.17600010000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    1.102,
+    0.352,
+    0.352
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.551,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.551,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_canister",
+    "boom_tip"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_12_deployable_boom_s.step",
+    "glb": "glb/ax_gear_12_deployable_boom_s.glb",
+    "preview": "renders/ax_gear_12_deployable_boom_s.png"
+   }
+  },
+  "ax_gear_12_deployable_boom_s_deployed": {
+   "vid": "ax_gear_12_deployable_boom_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "DB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 3.0,
+    "state": "deployed"
+   },
+   "notes": "Coilable lattice boom: chamfered white canister with a bevelled exit port and a recessed groove; deployed 3 m triangular lattice (gold, 3 longerons, battens, diagonals); grey tip plate = node_outboard.",
+   "bbox_cad_zup": [
+    [
+     -0.5510000500000001,
+     -0.1760001000000001,
+     -0.17600010000000008
+    ],
+    [
+     3.53100005,
+     0.1760001000000001,
+     0.17600010000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    4.082,
+    0.352,
+    0.352
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.551,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      3.531,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_canister",
+    "boom_lattice",
+    "boom_tip"
+   ],
+   "default_of": "ax_gear_12_deployable_boom_s",
+   "files": {
+    "step": "step/ax_gear_12_deployable_boom_s_deployed.step",
+    "glb": "glb/ax_gear_12_deployable_boom_s_deployed.glb",
+    "preview": "renders/ax_gear_12_deployable_boom_s_deployed.png"
+   }
+  },
+  "ax_gear_12_deployable_boom_m": {
+   "vid": "ax_gear_12_deployable_boom_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "DB-1 Deployable Boom",
+   "primary": true,
+   "dims": {
+    "deployed_length_m": 8.0,
+    "state": "stowed"
+   },
+   "notes": "Coilable lattice boom: chamfered white canister with a bevelled exit port and a recessed groove; stowed (mast coiled inside, tip plate at the port); grey tip plate = node_outboard.",
+   "bbox_cad_zup": [
+    [
+     -0.7280000500000001,
+     -0.3080001000000001,
+     -0.30800010000000005
+    ],
+    [
+     0.72800005,
+     0.30800010000000005,
+     0.3080001000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.456,
+    0.616,
+    0.616
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.728,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.728,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_canister",
+    "boom_tip"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_12_deployable_boom_m.step",
+    "glb": "glb/ax_gear_12_deployable_boom_m.glb",
+    "preview": "renders/ax_gear_12_deployable_boom_m.png"
+   }
+  },
+  "ax_gear_12_deployable_boom_m_deployed": {
+   "vid": "ax_gear_12_deployable_boom_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "DB-1 Deployable Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 8.0,
+    "state": "deployed"
+   },
+   "notes": "Coilable lattice boom: chamfered white canister with a bevelled exit port and a recessed groove; deployed 8 m triangular lattice (gold, 3 longerons, battens, diagonals); grey tip plate = node_outboard.",
+   "bbox_cad_zup": [
+    [
+     -0.7280000500000001,
+     -0.3080001000000001,
+     -0.30800010000000005
+    ],
+    [
+     8.70800005,
+     0.30800010000000005,
+     0.3080001000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    9.436,
+    0.616,
+    0.616
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.728,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      8.708,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom_canister",
+    "boom_lattice",
+    "boom_tip"
+   ],
+   "default_of": "ax_gear_12_deployable_boom_m",
+   "files": {
+    "step": "step/ax_gear_12_deployable_boom_m_deployed.step",
+    "glb": "glb/ax_gear_12_deployable_boom_m_deployed.glb",
+    "preview": "renders/ax_gear_12_deployable_boom_m_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-12",
+ "key": "ax_gear_12",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Extendable coilable boom (stowed / deployed)"
+}

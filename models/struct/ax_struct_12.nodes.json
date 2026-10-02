@@ -1,0 +1,1525 @@
+{
+ "id": "ax_struct_12",
+ "name": "SB-1X Structural Service Bay",
+ "category": "struct",
+ "short_name": "service_bay",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_struct_12_service_bay_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_slot_1",
+   "position": [
+    -1.0,
+    -0.69,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_2",
+   "position": [
+    -1.0,
+    -0.69,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_3",
+   "position": [
+    -1.0,
+    -0.69,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_4",
+   "position": [
+    -1.0,
+    -0.69,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_5",
+   "position": [
+    -1.0,
+    -0.69,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_6",
+   "position": [
+    -0.5,
+    -0.69,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_7",
+   "position": [
+    -0.5,
+    -0.69,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_8",
+   "position": [
+    -0.5,
+    -0.69,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_9",
+   "position": [
+    -0.5,
+    -0.69,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_10",
+   "position": [
+    -0.5,
+    -0.69,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_11",
+   "position": [
+    0.0,
+    -0.69,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_12",
+   "position": [
+    0.0,
+    -0.69,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_13",
+   "position": [
+    0.0,
+    -0.69,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_14",
+   "position": [
+    0.0,
+    -0.69,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_15",
+   "position": [
+    0.5,
+    -0.69,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_16",
+   "position": [
+    0.5,
+    -0.69,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_17",
+   "position": [
+    0.5,
+    -0.69,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_18",
+   "position": [
+    0.5,
+    -0.69,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_19",
+   "position": [
+    0.5,
+    -0.69,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_20",
+   "position": [
+    1.0,
+    -0.69,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_21",
+   "position": [
+    1.0,
+    -0.69,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_22",
+   "position": [
+    1.0,
+    -0.69,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_23",
+   "position": [
+    1.0,
+    -0.69,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_24",
+   "position": [
+    1.0,
+    -0.69,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.845,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.845,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_12_service_bay_s": {
+   "vid": "ax_struct_12_service_bay_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1X Structural Service Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.6,
+    "doors": 2
+   },
+   "notes": "Structural service bay 1.25 m: white barrel with 2 hinged bevelled-seam access doors (door_1/2, 10 mm seam + 15 x 8 mm recess line), recessed groove, grey slot deck with 0 slot nodes (0.5 x 0.5 x 0.6 m grid), chamfered rings.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.3
+    ],
+    [
+     0.625,
+     0.625,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.6,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_1",
+    "door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_12_service_bay_s.step",
+    "glb": "glb/ax_struct_12_service_bay_s.glb",
+    "preview": "renders/ax_struct_12_service_bay_s.png"
+   }
+  },
+  "ax_struct_12_service_bay_m": {
+   "vid": "ax_struct_12_service_bay_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1X Structural Service Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 1.12,
+    "doors": 2
+   },
+   "notes": "Structural service bay 2.5 m: white barrel with 2 hinged bevelled-seam access doors (door_1/2, 10 mm seam + 15 x 8 mm recess line), recessed groove, grey slot deck with 8 slot nodes (0.5 x 0.5 x 0.6 m grid), chamfered rings.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.56
+    ],
+    [
+     1.25,
+     1.25,
+     0.56
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.12,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_slot_1",
+     "position": [
+      -0.5,
+      -0.43,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2",
+     "position": [
+      -0.5,
+      -0.43,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3",
+     "position": [
+      -0.5,
+      -0.43,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4",
+     "position": [
+      0.0,
+      -0.43,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_5",
+     "position": [
+      0.0,
+      -0.43,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_6",
+     "position": [
+      0.5,
+      -0.43,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_7",
+     "position": [
+      0.5,
+      -0.43,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_8",
+     "position": [
+      0.5,
+      -0.43,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.56,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.56,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_1",
+    "door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_12_service_bay_m.step",
+    "glb": "glb/ax_struct_12_service_bay_m.glb",
+    "preview": "renders/ax_struct_12_service_bay_m.png"
+   }
+  },
+  "ax_struct_12_service_bay_l": {
+   "vid": "ax_struct_12_service_bay_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1X Structural Service Bay",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 1.69,
+    "doors": 2
+   },
+   "notes": "Structural service bay 3.75 m: white barrel with 2 hinged bevelled-seam access doors (door_1/2, 10 mm seam + 15 x 8 mm recess line), recessed groove, grey slot deck with 24 slot nodes (0.5 x 0.5 x 0.6 m grid), chamfered rings.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.845
+    ],
+    [
+     1.875,
+     1.875,
+     0.845
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.69,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_slot_1",
+     "position": [
+      -1.0,
+      -0.69,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2",
+     "position": [
+      -1.0,
+      -0.69,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3",
+     "position": [
+      -1.0,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4",
+     "position": [
+      -1.0,
+      -0.69,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_5",
+     "position": [
+      -1.0,
+      -0.69,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_6",
+     "position": [
+      -0.5,
+      -0.69,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_7",
+     "position": [
+      -0.5,
+      -0.69,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_8",
+     "position": [
+      -0.5,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_9",
+     "position": [
+      -0.5,
+      -0.69,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_10",
+     "position": [
+      -0.5,
+      -0.69,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_11",
+     "position": [
+      0.0,
+      -0.69,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_12",
+     "position": [
+      0.0,
+      -0.69,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_13",
+     "position": [
+      0.0,
+      -0.69,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_14",
+     "position": [
+      0.0,
+      -0.69,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_15",
+     "position": [
+      0.5,
+      -0.69,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_16",
+     "position": [
+      0.5,
+      -0.69,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_17",
+     "position": [
+      0.5,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_18",
+     "position": [
+      0.5,
+      -0.69,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_19",
+     "position": [
+      0.5,
+      -0.69,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_20",
+     "position": [
+      1.0,
+      -0.69,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_21",
+     "position": [
+      1.0,
+      -0.69,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_22",
+     "position": [
+      1.0,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_23",
+     "position": [
+      1.0,
+      -0.69,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_24",
+     "position": [
+      1.0,
+      -0.69,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.845,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.845,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_1",
+    "door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_12_service_bay_l.step",
+    "glb": "glb/ax_struct_12_service_bay_l.glb",
+    "preview": "renders/ax_struct_12_service_bay_l.png"
+   }
+  },
+  "ax_struct_12_service_bay_xl": {
+   "vid": "ax_struct_12_service_bay_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "SB-1X Structural Service Bay",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 2.25,
+    "doors": 2
+   },
+   "notes": "Structural service bay 5 m: white barrel with 2 hinged bevelled-seam access doors (door_1/2, 10 mm seam + 15 x 8 mm recess line), recessed groove, grey slot deck with 36 slot nodes (0.5 x 0.5 x 0.6 m grid), chamfered rings.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.125
+    ],
+    [
+     2.5,
+     2.5,
+     1.125
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    2.25,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_slot_1",
+     "position": [
+      -1.25,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2",
+     "position": [
+      -1.25,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3",
+     "position": [
+      -1.25,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4",
+     "position": [
+      -1.25,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_5",
+     "position": [
+      -1.25,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_6",
+     "position": [
+      -1.25,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_7",
+     "position": [
+      -0.75,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_8",
+     "position": [
+      -0.75,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_9",
+     "position": [
+      -0.75,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_10",
+     "position": [
+      -0.75,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_11",
+     "position": [
+      -0.75,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_12",
+     "position": [
+      -0.75,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_13",
+     "position": [
+      -0.25,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_14",
+     "position": [
+      -0.25,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_15",
+     "position": [
+      -0.25,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_16",
+     "position": [
+      -0.25,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_17",
+     "position": [
+      -0.25,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_18",
+     "position": [
+      -0.25,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_19",
+     "position": [
+      0.25,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_20",
+     "position": [
+      0.25,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_21",
+     "position": [
+      0.25,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_22",
+     "position": [
+      0.25,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_23",
+     "position": [
+      0.25,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_24",
+     "position": [
+      0.25,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_25",
+     "position": [
+      0.75,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_26",
+     "position": [
+      0.75,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_27",
+     "position": [
+      0.75,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_28",
+     "position": [
+      0.75,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_29",
+     "position": [
+      0.75,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_30",
+     "position": [
+      0.75,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_31",
+     "position": [
+      1.25,
+      -0.945,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_32",
+     "position": [
+      1.25,
+      -0.945,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_33",
+     "position": [
+      1.25,
+      -0.945,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_34",
+     "position": [
+      1.25,
+      -0.945,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_35",
+     "position": [
+      1.25,
+      -0.945,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_36",
+     "position": [
+      1.25,
+      -0.945,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_1",
+    "door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_12_service_bay_xl.step",
+    "glb": "glb/ax_struct_12_service_bay_xl.glb",
+    "preview": "renders/ax_struct_12_service_bay_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-12",
+ "key": "ax_struct_12",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Barrel with bevelled access doors and a slot grid inside"
+}

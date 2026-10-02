@@ -1,0 +1,455 @@
+{
+ "id": "ax_gear_11",
+ "name": "BM-1 Chamfered I-Beam / Girder",
+ "category": "struct",
+ "short_name": "i_beam",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_gear_11_i_beam_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.1238,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.225
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.1238,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.225
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_11_i_beam_s": {
+   "vid": "ax_gear_11_i_beam_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "BM-1 Chamfered I-Beam / Girder",
+   "primary": false,
+   "dims": {
+    "length_m": 2.0,
+    "depth_m": 0.3
+   },
+   "notes": "Chamfered I-beam 2 m x 0.3 m deep: steel flanges with 1/3-thickness edge chamfers, web with 4 rounded lightening holes, grey end plates and stiffeners.",
+   "bbox_cad_zup": [
+    [
+     -0.08250000000000013,
+     -0.1500000000000001,
+     -1.0
+    ],
+    [
+     0.08250000000000013,
+     0.1500000000000001,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    0.165,
+    2.0,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.0825,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.0825,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_11_i_beam_s.step",
+    "glb": "glb/ax_gear_11_i_beam_s.glb",
+    "preview": "renders/ax_gear_11_i_beam_s.png"
+   }
+  },
+  "ax_gear_11_i_beam_m": {
+   "vid": "ax_gear_11_i_beam_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "BM-1 Chamfered I-Beam / Girder",
+   "primary": true,
+   "dims": {
+    "length_m": 4.0,
+    "depth_m": 0.45
+   },
+   "notes": "Chamfered I-beam 4 m x 0.45 m deep: steel flanges with 1/3-thickness edge chamfers, web with 6 rounded lightening holes, grey end plates and stiffeners.",
+   "bbox_cad_zup": [
+    [
+     -0.12375000000000062,
+     -0.22500000000000034,
+     -2.0
+    ],
+    [
+     0.12375000000000062,
+     0.22500000000000034,
+     2.0
+    ]
+   ],
+   "bbox_godot_size": [
+    0.248,
+    4.0,
+    0.45
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.1238,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.225
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.1238,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.225
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_11_i_beam_m.step",
+    "glb": "glb/ax_gear_11_i_beam_m.glb",
+    "preview": "renders/ax_gear_11_i_beam_m.png"
+   }
+  },
+  "ax_gear_11_i_beam_l": {
+   "vid": "ax_gear_11_i_beam_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "BM-1 Chamfered I-Beam / Girder",
+   "primary": false,
+   "dims": {
+    "length_m": 6.0,
+    "depth_m": 0.6
+   },
+   "notes": "Chamfered I-beam 6 m x 0.6 m deep: steel flanges with 1/3-thickness edge chamfers, web with 7 rounded lightening holes, grey end plates and stiffeners.",
+   "bbox_cad_zup": [
+    [
+     -0.1650000000000001,
+     -0.30000000000000004,
+     -3.0
+    ],
+    [
+     0.1650000000000001,
+     0.30000000000000004,
+     3.0000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.33,
+    6.0,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.165,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.165,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_11_i_beam_l.step",
+    "glb": "glb/ax_gear_11_i_beam_l.glb",
+    "preview": "renders/ax_gear_11_i_beam_l.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-11",
+ "key": "ax_gear_11",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Structural beam for surface bases and frames"
+}

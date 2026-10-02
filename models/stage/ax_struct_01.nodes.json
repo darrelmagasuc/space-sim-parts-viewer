@@ -1,0 +1,117 @@
+{
+ "id": "ax_struct_01",
+ "name": "AD-SM Faceted Adapter S-M",
+ "category": "stage",
+ "short_name": "adapter_s_m",
+ "sizes": [
+  "S-M"
+ ],
+ "primary": "ax_struct_01_adapter_s_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_01_adapter_s_m": {
+   "vid": "ax_struct_01_adapter_s_m",
+   "size": "S-M",
+   "state": "flight",
+   "default_state": true,
+   "label": "AD-SM Faceted Adapter S-M",
+   "primary": true,
+   "dims": {
+    "bottom_d_m": 2.5,
+    "top_d_m": 1.25,
+    "height_m": 1.0,
+    "facets": 8
+   },
+   "notes": "Faceted conical adapter 2.5 -> 1.25 m over 1 m: 8 flat facets with 4% chamfered edges and bevelled rims, recessed groove band (20 x 10 mm), 2 flush bevelled access panels, chamfered steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.5
+    ],
+    [
+     1.25,
+     1.25,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.0,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_01_adapter_s_m.step",
+    "glb": "glb/ax_struct_01_adapter_s_m.glb",
+    "preview": "renders/ax_struct_01_adapter_s_m.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-01",
+ "key": "ax_struct_01",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "8/12-facet conical adapter, chamfered rings, recessed seams"
+}

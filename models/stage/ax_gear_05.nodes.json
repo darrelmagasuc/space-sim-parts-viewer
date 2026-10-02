@@ -1,0 +1,294 @@
+{
+ "id": "ax_gear_05",
+ "name": "LL-F Booster Fold-Up Leg",
+ "category": "stage",
+ "short_name": "booster_leg",
+ "sizes": [
+  "L",
+  "XL"
+ ],
+ "primary": "ax_gear_05_booster_leg_xl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.4523,
+    -4.2457,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_05_booster_leg_l": {
+   "vid": "ax_gear_05_booster_leg_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LL-F Booster Fold-Up Leg",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 6.0,
+    "state": "stowed"
+   },
+   "notes": "Booster fold-up landing leg (6 m): tapered chamfered white composite beam with 2 recessed panel lines, stowed flush along the stage (tip up), dark clevis + steel hinge pin at the base, telescoping steel pusher strut, grey 8-sided footpad. Deployed = rotated 120 deg about the base hinge.",
+   "bbox_cad_zup": [
+    [
+     -0.38000005000000003,
+     -0.3600001,
+     -3.1350000500000004
+    ],
+    [
+     0.38000005000000003,
+     0.3600001,
+     3.13500005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.76,
+    6.27,
+    0.72
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.38,
+      -2.985,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_beam",
+    "leg_footpad",
+    "leg_pusher_outer",
+    "leg_pusher_inner"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_05_booster_leg_l.step",
+    "glb": "glb/ax_gear_05_booster_leg_l.glb",
+    "preview": "renders/ax_gear_05_booster_leg_l.png"
+   }
+  },
+  "ax_gear_05_booster_leg_l_deployed": {
+   "vid": "ax_gear_05_booster_leg_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LL-F Booster Fold-Up Leg",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 6.0,
+    "deploy_deg": 120,
+    "state": "deployed"
+   },
+   "notes": "Booster fold-up landing leg (6 m): tapered chamfered white composite beam with 2 recessed panel lines, stowed flush along the stage (tip up), dark clevis + steel hinge pin at the base, telescoping steel pusher strut, grey 8-sided footpad. Deployed = rotated 120 deg about the base hinge.",
+   "bbox_cad_zup": [
+    [
+     -0.38000005000000003,
+     -0.3600001,
+     -6.356769295362397
+    ],
+    [
+     5.500075521160766,
+     0.3600001,
+     -1.06500005
+    ]
+   ],
+   "bbox_godot_size": [
+    5.88,
+    5.292,
+    0.72
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.38,
+      -2.985,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      5.3201,
+      -6.045,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_beam",
+    "leg_footpad",
+    "leg_pusher_outer",
+    "leg_pusher_inner"
+   ],
+   "default_of": "ax_gear_05_booster_leg_l",
+   "files": {
+    "step": "step/ax_gear_05_booster_leg_l_deployed.step",
+    "glb": "glb/ax_gear_05_booster_leg_l_deployed.glb",
+    "preview": "renders/ax_gear_05_booster_leg_l_deployed.png"
+   }
+  },
+  "ax_gear_05_booster_leg_xl": {
+   "vid": "ax_gear_05_booster_leg_xl",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LL-F Booster Fold-Up Leg",
+   "primary": true,
+   "dims": {
+    "leg_length_m": 8.5,
+    "state": "stowed"
+   },
+   "notes": "Booster fold-up landing leg (8.5 m): tapered chamfered white composite beam with 2 recessed panel lines, stowed flush along the stage (tip up), dark clevis + steel hinge pin at the base, telescoping steel pusher strut, grey 8-sided footpad. Deployed = rotated 120 deg about the base hinge.",
+   "bbox_cad_zup": [
+    [
+     -0.4522905171410472,
+     -0.428485805712571,
+     -4.4242679053567855
+    ],
+    [
+     0.4522905171410472,
+     0.428485805712571,
+     4.424267905356786
+    ]
+   ],
+   "bbox_godot_size": [
+    0.905,
+    8.849,
+    0.857
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4523,
+      -4.2457,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_beam",
+    "leg_footpad",
+    "leg_pusher_outer",
+    "leg_pusher_inner"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_05_booster_leg_xl.step",
+    "glb": "glb/ax_gear_05_booster_leg_xl.glb",
+    "preview": "renders/ax_gear_05_booster_leg_xl.png"
+   }
+  },
+  "ax_gear_05_booster_leg_xl_deployed": {
+   "vid": "ax_gear_05_booster_leg_xl_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LL-F Booster Fold-Up Leg",
+   "primary": false,
+   "dims": {
+    "leg_length_m": 8.5,
+    "deploy_deg": 120,
+    "state": "deployed"
+   },
+   "notes": "Booster fold-up landing leg (8.5 m): tapered chamfered white composite beam with 2 recessed panel lines, stowed flush along the stage (tip up), dark clevis + steel hinge pin at the base, telescoping steel pusher strut, grey 8-sided footpad. Deployed = rotated 120 deg about the base hinge.",
+   "bbox_cad_zup": [
+    [
+     -0.4522905171410472,
+     -0.42848580571257106,
+     -8.951811800948802
+    ],
+    [
+     7.7464879150958454,
+     0.42848580571257106,
+     -1.5529036260723568
+    ]
+   ],
+   "bbox_godot_size": [
+    8.199,
+    7.399,
+    0.857
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.4523,
+      -4.2457,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      7.5322,
+      -8.5807,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_beam",
+    "leg_footpad",
+    "leg_pusher_outer",
+    "leg_pusher_inner"
+   ],
+   "default_of": "ax_gear_05_booster_leg_xl",
+   "files": {
+    "step": "step/ax_gear_05_booster_leg_xl_deployed.step",
+    "glb": "glb/ax_gear_05_booster_leg_xl_deployed.glb",
+    "preview": "renders/ax_gear_05_booster_leg_xl_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-05",
+ "key": "ax_gear_05",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Fold-up booster landing leg in a recessed fairing (stowed / deployed)"
+}

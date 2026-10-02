@@ -1,0 +1,252 @@
+{
+ "id": "ax_struct_13",
+ "name": "NC-1X Faceted Nose Cone",
+ "category": "stage",
+ "short_name": "nose_cone",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_struct_13_nose_cone_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.8488,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_13_nose_cone_s": {
+   "vid": "ax_struct_13_nose_cone_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1X Faceted Nose Cone",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.27,
+    "facets": 8
+   },
+   "notes": "Faceted ogive nose cone 1.25 m: 8-facet loft with chamfered facet edges, bevelled base rim, one recessed groove band, chamfered steel base ring.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.63625005
+    ],
+    [
+     0.625,
+     0.625,
+     0.6362500499999999
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.273,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6363,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_13_nose_cone_s.step",
+    "glb": "glb/ax_struct_13_nose_cone_s.glb",
+    "preview": "renders/ax_struct_13_nose_cone_s.png"
+   }
+  },
+  "ax_struct_13_nose_cone_m": {
+   "vid": "ax_struct_13_nose_cone_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1X Faceted Nose Cone",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 2.48,
+    "facets": 8
+   },
+   "notes": "Faceted ogive nose cone 2.5 m: 8-facet loft with chamfered facet edges, bevelled base rim, one recessed groove band, chamfered steel base ring.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.2425000499999999
+    ],
+    [
+     1.25,
+     1.25,
+     1.24250005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.485,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2425,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_13_nose_cone_m.step",
+    "glb": "glb/ax_struct_13_nose_cone_m.glb",
+    "preview": "renders/ax_struct_13_nose_cone_m.png"
+   }
+  },
+  "ax_struct_13_nose_cone_l": {
+   "vid": "ax_struct_13_nose_cone_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1X Faceted Nose Cone",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 3.7,
+    "facets": 8
+   },
+   "notes": "Faceted ogive nose cone 3.75 m: 8-facet loft with chamfered facet edges, bevelled base rim, one recessed groove band, chamfered steel base ring.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.8487500499999998
+    ],
+    [
+     1.875,
+     1.875,
+     1.84875005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    3.698,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.8488,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_13_nose_cone_l.step",
+    "glb": "glb/ax_struct_13_nose_cone_l.glb",
+    "preview": "renders/ax_struct_13_nose_cone_l.png"
+   }
+  },
+  "ax_struct_13_nose_cone_xl": {
+   "vid": "ax_struct_13_nose_cone_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "NC-1X Faceted Nose Cone",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 4.91,
+    "facets": 12
+   },
+   "notes": "Faceted ogive nose cone 5 m: 12-facet loft with chamfered facet edges, bevelled base rim, one recessed groove band, chamfered steel base ring.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -2.45500005
+    ],
+    [
+     2.5,
+     2.5,
+     2.4550000499999998
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    4.91,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.455,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_13_nose_cone_xl.step",
+    "glb": "glb/ax_struct_13_nose_cone_xl.glb",
+    "preview": "renders/ax_struct_13_nose_cone_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-13",
+ "key": "ax_struct_13",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Faceted ogive nose cap for boosters and tanks"
+}

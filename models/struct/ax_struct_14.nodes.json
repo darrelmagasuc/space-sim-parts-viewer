@@ -1,0 +1,446 @@
+{
+ "id": "ax_struct_14",
+ "name": "MM-1 Multi-Mount Plate",
+ "category": "struct",
+ "short_name": "multi_mount",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_struct_14_multi_mount_xl_x4",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom_1",
+   "position": [
+    0.8132,
+    -0.2505,
+    -0.8132
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_2",
+   "position": [
+    -0.8132,
+    -0.2505,
+    -0.8132
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_3",
+   "position": [
+    -0.8132,
+    -0.2505,
+    0.8132
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_4",
+   "position": [
+    0.8132,
+    -0.2505,
+    0.8132
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2505,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_14_multi_mount_m_x2": {
+   "vid": "ax_struct_14_multi_mount_m_x2",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "MM-1 Multi-Mount Plate",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "mounts": 2,
+    "mount_d_m": 1.25
+   },
+   "notes": "Multi-mount plate 2.5 m -> 2 x 1.25 m: 8-facet heavy plate (7% facet chamfers, bevelled rims, recessed groove), 2 chamfered steel mount rings underneath (node_bottom_1..2), steel top ring.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.1855
+    ],
+    [
+     1.25,
+     1.25,
+     0.1855
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.371,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.625,
+      -0.1855,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.625,
+      -0.1855,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1855,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_14_multi_mount_m_x2.step",
+    "glb": "glb/ax_struct_14_multi_mount_m_x2.glb",
+    "preview": "renders/ax_struct_14_multi_mount_m_x2.png"
+   }
+  },
+  "ax_struct_14_multi_mount_l_x3": {
+   "vid": "ax_struct_14_multi_mount_l_x3",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "MM-1 Multi-Mount Plate",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "mounts": 3,
+    "mount_d_m": 1.25
+   },
+   "notes": "Multi-mount plate 3.75 m -> 3 x 1.25 m: 8-facet heavy plate (7% facet chamfers, bevelled rims, recessed groove), 3 chamfered steel mount rings underneath (node_bottom_1..3), steel top ring.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.21800000000000003
+    ],
+    [
+     1.875,
+     1.875,
+     0.218
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.436,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.95,
+      -0.218,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.475,
+      -0.218,
+      -0.8227
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -0.475,
+      -0.218,
+      0.8227
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.218,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_14_multi_mount_l_x3.step",
+    "glb": "glb/ax_struct_14_multi_mount_l_x3.glb",
+    "preview": "renders/ax_struct_14_multi_mount_l_x3.png"
+   }
+  },
+  "ax_struct_14_multi_mount_xl_x2": {
+   "vid": "ax_struct_14_multi_mount_xl_x2",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "MM-1 Multi-Mount Plate",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "mounts": 2,
+    "mount_d_m": 2.5
+   },
+   "notes": "Multi-mount plate 5 m -> 2 x 2.5 m: 12-facet heavy plate (7% facet chamfers, bevelled rims, recessed groove), 2 chamfered steel mount rings underneath (node_bottom_1..2), steel top ring.",
+   "bbox_cad_zup": [
+    [
+     -2.51,
+     -2.5,
+     -0.263
+    ],
+    [
+     2.5100000000000002,
+     2.5,
+     0.263
+    ]
+   ],
+   "bbox_godot_size": [
+    5.02,
+    0.526,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      1.26,
+      -0.263,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -1.26,
+      -0.263,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.263,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_14_multi_mount_xl_x2.step",
+    "glb": "glb/ax_struct_14_multi_mount_xl_x2.glb",
+    "preview": "renders/ax_struct_14_multi_mount_xl_x2.png"
+   }
+  },
+  "ax_struct_14_multi_mount_xl_x4": {
+   "vid": "ax_struct_14_multi_mount_xl_x4",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "MM-1 Multi-Mount Plate",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "mounts": 4,
+    "mount_d_m": 1.25
+   },
+   "notes": "Multi-mount plate 5 m -> 4 x 1.25 m: 12-facet heavy plate (7% facet chamfers, bevelled rims, recessed groove), 4 chamfered steel mount rings underneath (node_bottom_1..4), steel top ring.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -0.2505
+    ],
+    [
+     2.5,
+     2.5,
+     0.2505
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    0.501,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.8132,
+      -0.2505,
+      -0.8132
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.8132,
+      -0.2505,
+      -0.8132
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -0.8132,
+      -0.2505,
+      0.8132
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      0.8132,
+      -0.2505,
+      0.8132
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2505,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_14_multi_mount_xl_x4.step",
+    "glb": "glb/ax_struct_14_multi_mount_xl_x4.glb",
+    "preview": "renders/ax_struct_14_multi_mount_xl_x4.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-14",
+ "key": "ax_struct_14",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Flat plate with 2/3/4 smaller stack nodes underneath"
+}

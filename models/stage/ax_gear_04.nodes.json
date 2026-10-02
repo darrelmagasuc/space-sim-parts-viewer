@@ -1,0 +1,432 @@
+{
+ "id": "ax_gear_04",
+ "name": "LL-T Telescoping Lander Leg",
+ "category": "stage",
+ "short_name": "lander_leg",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_gear_04_lander_leg_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.307,
+    -0.4989,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_04_lander_leg_s": {
+   "vid": "ax_gear_04_lander_leg_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 1.6,
+    "stroke_m": 0.61,
+    "state": "stowed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 1.6 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Stowed: retracted to 62% and folded up along the body.",
+   "bbox_cad_zup": [
+    [
+     -0.2400001,
+     -0.47000000000000003,
+     -0.7847918189288728
+    ],
+    [
+     0.2400001,
+     0.47000000000000003,
+     0.7847918189288727
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    1.57,
+    0.94
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2292,
+      -0.2348,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_s.step",
+    "glb": "glb/ax_gear_04_lander_leg_s.glb",
+    "preview": "renders/ax_gear_04_lander_leg_s.png"
+   }
+  },
+  "ax_gear_04_lander_leg_s_deployed": {
+   "vid": "ax_gear_04_lander_leg_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 1.6,
+    "splay_deg": 32,
+    "state": "deployed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 1.6 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Deployed 32 deg out; node_foot = pad contact.",
+   "bbox_cad_zup": [
+    [
+     -0.2291984219541723,
+     -0.47000000000000003,
+     -1.6616688727791546
+    ],
+    [
+     1.0186725008189557,
+     0.47000000000000003,
+     -0.10479181892887277
+    ]
+   ],
+   "bbox_godot_size": [
+    1.248,
+    1.557,
+    0.94
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2292,
+      -0.2348,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.7787,
+      -1.6617,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": "ax_gear_04_lander_leg_s",
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_s_deployed.step",
+    "glb": "glb/ax_gear_04_lander_leg_s_deployed.glb",
+    "preview": "renders/ax_gear_04_lander_leg_s_deployed.png"
+   }
+  },
+  "ax_gear_04_lander_leg_m": {
+   "vid": "ax_gear_04_lander_leg_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 2.4,
+    "stroke_m": 0.91,
+    "state": "stowed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 2.4 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Stowed: retracted to 62% and folded up along the body.",
+   "bbox_cad_zup": [
+    [
+     -0.36000009999999993,
+     -0.705,
+     -1.1771877033933091
+    ],
+    [
+     0.3600001,
+     0.705,
+     1.1771877033933091
+    ]
+   ],
+   "bbox_godot_size": [
+    0.72,
+    2.354,
+    1.41
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2638,
+      -0.3522,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_m.step",
+    "glb": "glb/ax_gear_04_lander_leg_m.glb",
+    "preview": "renders/ax_gear_04_lander_leg_m.png"
+   }
+  },
+  "ax_gear_04_lander_leg_m_deployed": {
+   "vid": "ax_gear_04_lander_leg_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 2.4,
+    "splay_deg": 32,
+    "state": "deployed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 2.4 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Deployed 32 deg out; node_foot = pad contact.",
+   "bbox_cad_zup": [
+    [
+     -0.26379763293125846,
+     -0.705,
+     -2.492503234168731
+    ],
+    [
+     1.5280087012284331,
+     0.705,
+     -0.15718770339330926
+    ]
+   ],
+   "bbox_godot_size": [
+    1.792,
+    2.335,
+    1.41
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2638,
+      -0.3522,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.168,
+      -2.4925,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": "ax_gear_04_lander_leg_m",
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_m_deployed.step",
+    "glb": "glb/ax_gear_04_lander_leg_m_deployed.glb",
+    "preview": "renders/ax_gear_04_lander_leg_m_deployed.png"
+   }
+  },
+  "ax_gear_04_lander_leg_l": {
+   "vid": "ax_gear_04_lander_leg_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": true,
+   "dims": {
+    "deployed_length_m": 3.4,
+    "stroke_m": 1.29,
+    "state": "stowed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 3.4 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Stowed: retracted to 62% and folded up along the body.",
+   "bbox_cad_zup": [
+    [
+     -0.5100001,
+     -0.9987500000000001,
+     -1.6676825589738549
+    ],
+    [
+     0.5100001,
+     0.9987500000000001,
+     1.667682558973855
+    ]
+   ],
+   "bbox_godot_size": [
+    1.02,
+    3.335,
+    1.998
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.307,
+      -0.4989,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_l.step",
+    "glb": "glb/ax_gear_04_lander_leg_l.glb",
+    "preview": "renders/ax_gear_04_lander_leg_l.png"
+   }
+  },
+  "ax_gear_04_lander_leg_l_deployed": {
+   "vid": "ax_gear_04_lander_leg_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "LL-T Telescoping Lander Leg",
+   "primary": false,
+   "dims": {
+    "deployed_length_m": 3.4,
+    "splay_deg": 32,
+    "state": "deployed"
+   },
+   "notes": "Telescoping crushable lander leg (deployed length 3.4 m): grey hinge block + 2 secondary-strut fittings, white outer tube with gold crush-core band, steel inner tube, dark secondary struts, 8-sided chamfered grey footpad on a ball joint. Deployed 32 deg out; node_foot = pad contact.",
+   "bbox_cad_zup": [
+    [
+     -0.3070466466526162,
+     -0.9987500000000001,
+     -3.5310461859057027
+    ],
+    [
+     2.1646789517402802,
+     0.9987500000000001,
+     -0.22268255897385478
+    ]
+   ],
+   "bbox_godot_size": [
+    2.472,
+    3.308,
+    1.998
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.307,
+      -0.4989,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.6547,
+      -3.531,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "leg_outer_tube",
+    "leg_inner_tube",
+    "leg_secondary_struts",
+    "leg_footpad",
+    "leg_crush_band"
+   ],
+   "default_of": "ax_gear_04_lander_leg_l",
+   "files": {
+    "step": "step/ax_gear_04_lander_leg_l_deployed.step",
+    "glb": "glb/ax_gear_04_lander_leg_l_deployed.glb",
+    "preview": "renders/ax_gear_04_lander_leg_l_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-04",
+ "key": "ax_gear_04",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Telescoping crushable lander leg with chamfered footpad (stowed / deployed)"
+}

@@ -1,0 +1,187 @@
+{
+ "id": "ax_struct_16",
+ "name": "PL-1 Payload Adapter / Clamp Band",
+ "category": "stage",
+ "short_name": "payload_adapter",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_struct_16_payload_adapter_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.35,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.35,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_16_payload_adapter_s": {
+   "vid": "ax_struct_16_payload_adapter_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PL-1 Payload Adapter / Clamp Band",
+   "primary": false,
+   "dims": {
+    "base_d_m": 1.25,
+    "clamp_d_mm": 937,
+    "height_m": 0.45
+   },
+   "notes": "Payload attach fitting 1.25 m -> 937 mm clamp band: white cone, chamfered steel base ring, V-band of 12 chamfered dark clamp segments over the steel/grey interface rings (clamp_band springs open on release).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.22500000000000003
+    ],
+    [
+     0.625,
+     0.625,
+     0.225
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.45,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "clamp_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_16_payload_adapter_s.step",
+    "glb": "glb/ax_struct_16_payload_adapter_s.glb",
+    "preview": "renders/ax_struct_16_payload_adapter_s.png"
+   }
+  },
+  "ax_struct_16_payload_adapter_m": {
+   "vid": "ax_struct_16_payload_adapter_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PL-1 Payload Adapter / Clamp Band",
+   "primary": true,
+   "dims": {
+    "base_d_m": 2.5,
+    "clamp_d_mm": 1666,
+    "height_m": 0.7
+   },
+   "notes": "Payload attach fitting 2.5 m -> 1666 mm clamp band: white cone, chamfered steel base ring, V-band of 12 chamfered dark clamp segments over the steel/grey interface rings (clamp_band springs open on release).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.35
+    ],
+    [
+     1.25,
+     1.25,
+     0.35
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.7,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.35,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "clamp_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_16_payload_adapter_m.step",
+    "glb": "glb/ax_struct_16_payload_adapter_m.glb",
+    "preview": "renders/ax_struct_16_payload_adapter_m.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-16",
+ "key": "ax_struct_16",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Payload attach fitting with a chamfered clamp band"
+}

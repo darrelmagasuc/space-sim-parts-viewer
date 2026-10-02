@@ -1,0 +1,185 @@
+{
+ "id": "ax_struct_05",
+ "name": "AD-SK Skip Adapters",
+ "category": "stage",
+ "short_name": "skip_adapter",
+ "sizes": [
+  "S-L",
+  "M-XL"
+ ],
+ "primary": "ax_struct_05_skip_adapter_m_xl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_05_skip_adapter_s_l": {
+   "vid": "ax_struct_05_skip_adapter_s_l",
+   "size": "S-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "AD-SK Skip Adapters",
+   "primary": false,
+   "dims": {
+    "bottom_d_m": 3.75,
+    "top_d_m": 1.25,
+    "height_m": 2.0,
+    "facets": 8
+   },
+   "notes": "Faceted conical adapter 3.75 -> 1.25 m over 2 m: 8 flat facets with 4% chamfered edges and bevelled rims, recessed groove band (30 x 12 mm), 2 flush bevelled access panels, chamfered steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.0
+    ],
+    [
+     1.875,
+     1.875,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    2.0,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_05_skip_adapter_s_l.step",
+    "glb": "glb/ax_struct_05_skip_adapter_s_l.glb",
+    "preview": "renders/ax_struct_05_skip_adapter_s_l.png"
+   }
+  },
+  "ax_struct_05_skip_adapter_m_xl": {
+   "vid": "ax_struct_05_skip_adapter_m_xl",
+   "size": "M-XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "AD-SK Skip Adapters",
+   "primary": true,
+   "dims": {
+    "bottom_d_m": 5.0,
+    "top_d_m": 2.5,
+    "height_m": 2.4,
+    "facets": 12
+   },
+   "notes": "Faceted conical adapter 5 -> 2.5 m over 2.4 m: 12 flat facets with 4% chamfered edges and bevelled rims, recessed groove band (36 x 14 mm), 2 flush bevelled access panels, chamfered steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.2
+    ],
+    [
+     2.5,
+     2.5,
+     1.2
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    2.4,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_05_skip_adapter_m_xl.step",
+    "glb": "glb/ax_struct_05_skip_adapter_m_xl.glb",
+    "preview": "renders/ax_struct_05_skip_adapter_m_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-05",
+ "key": "ax_struct_05",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Two-class skip adapters"
+}

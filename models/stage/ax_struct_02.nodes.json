@@ -1,0 +1,117 @@
+{
+ "id": "ax_struct_02",
+ "name": "AD-ML Faceted Adapter M-L",
+ "category": "stage",
+ "short_name": "adapter_m_l",
+ "sizes": [
+  "M-L"
+ ],
+ "primary": "ax_struct_02_adapter_m_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.6,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.6,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_02_adapter_m_l": {
+   "vid": "ax_struct_02_adapter_m_l",
+   "size": "M-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "AD-ML Faceted Adapter M-L",
+   "primary": true,
+   "dims": {
+    "bottom_d_m": 3.75,
+    "top_d_m": 2.5,
+    "height_m": 1.2,
+    "facets": 8
+   },
+   "notes": "Faceted conical adapter 3.75 -> 2.5 m over 1.2 m: 8 flat facets with 4% chamfered edges and bevelled rims, recessed groove band (30 x 12 mm), 2 flush bevelled access panels, chamfered steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.6
+    ],
+    [
+     1.875,
+     1.875,
+     0.6
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    1.2,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.6,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_02_adapter_m_l.step",
+    "glb": "glb/ax_struct_02_adapter_m_l.glb",
+    "preview": "renders/ax_struct_02_adapter_m_l.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-02",
+ "key": "ax_struct_02",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Faceted conical adapter, 2.5 to 3.75 m"
+}

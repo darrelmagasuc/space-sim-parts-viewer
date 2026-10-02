@@ -1,0 +1,329 @@
+{
+ "id": "ax_struct_09",
+ "name": "PF-1 Payload Fairing",
+ "category": "stage",
+ "short_name": "payload_fairing",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_struct_09_payload_fairing_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -4.3779,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_payload",
+   "position": [
+    0.0,
+    -4.2429,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_09_payload_fairing_s": {
+   "vid": "ax_struct_09_payload_fairing_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PF-1 Payload Fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 2.96,
+    "usable_d_m": 1.05
+   },
+   "notes": "Bi-sector payload fairing 1.25 m: round tangent-ogive shell (40 mm wall), 2 recessed groove bands, 10 mm vertical split seam (half_a +Y / half_b -Y, both jettison), dark separation rails, chamfered steel base ring. node_payload on the base ring top face.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.477916666666667
+    ],
+    [
+     0.625,
+     0.625,
+     1.477916666666667
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.956,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4779,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -1.3929,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b",
+    "half_a"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_09_payload_fairing_s.step",
+    "glb": "glb/ax_struct_09_payload_fairing_s.glb",
+    "preview": "renders/ax_struct_09_payload_fairing_s.png"
+   }
+  },
+  "ax_struct_09_payload_fairing_m": {
+   "vid": "ax_struct_09_payload_fairing_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PF-1 Payload Fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 5.86,
+    "usable_d_m": 2.3
+   },
+   "notes": "Bi-sector payload fairing 2.5 m: round tangent-ogive shell (40 mm wall), 2 recessed groove bands, 10 mm vertical split seam (half_a +Y / half_b -Y, both jettison), dark separation rails, chamfered steel base ring. node_payload on the base ring top face.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.9279166666666665
+    ],
+    [
+     1.25,
+     1.25,
+     2.927916666666667
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    5.856,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.9279,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -2.8179,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b",
+    "half_a"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_09_payload_fairing_m.step",
+    "glb": "glb/ax_struct_09_payload_fairing_m.glb",
+    "preview": "renders/ax_struct_09_payload_fairing_m.png"
+   }
+  },
+  "ax_struct_09_payload_fairing_l": {
+   "vid": "ax_struct_09_payload_fairing_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "PF-1 Payload Fairing",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 8.76,
+    "usable_d_m": 3.55
+   },
+   "notes": "Bi-sector payload fairing 3.75 m: round tangent-ogive shell (40 mm wall), 2 recessed groove bands, 10 mm vertical split seam (half_a +Y / half_b -Y, both jettison), dark separation rails, chamfered steel base ring. node_payload on the base ring top face.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -4.377916666666667
+    ],
+    [
+     1.875,
+     1.875,
+     4.377916666666667
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    8.756,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.3779,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -4.2429,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b",
+    "half_a"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_09_payload_fairing_l.step",
+    "glb": "glb/ax_struct_09_payload_fairing_l.glb",
+    "preview": "renders/ax_struct_09_payload_fairing_l.png"
+   }
+  },
+  "ax_struct_09_payload_fairing_xl": {
+   "vid": "ax_struct_09_payload_fairing_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "PF-1 Payload Fairing",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 11.66,
+    "usable_d_m": 4.8
+   },
+   "notes": "Bi-sector payload fairing 5 m: round tangent-ogive shell (40 mm wall), 2 recessed groove bands, 10 mm vertical split seam (half_a +Y / half_b -Y, both jettison), dark separation rails, chamfered steel base ring. node_payload on the base ring top face.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -5.827916666666667
+    ],
+    [
+     2.5,
+     2.5,
+     5.827916666666667
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    11.656,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.8279,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_payload",
+     "position": [
+      0.0,
+      -5.6679,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "half_b",
+    "half_a"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_09_payload_fairing_xl.step",
+    "glb": "glb/ax_struct_09_payload_fairing_xl.glb",
+    "preview": "renders/ax_struct_09_payload_fairing_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-09",
+ "key": "ax_struct_09",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Bi-sector fairing with chamfered seams, halves separate (half_a / half_b)"
+}

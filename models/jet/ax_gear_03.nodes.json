@@ -1,0 +1,261 @@
+{
+ "id": "ax_gear_03",
+ "name": "LG-H Heavy Bogie Gear",
+ "category": "jet",
+ "short_name": "bogie_gear",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_gear_03_bogie_gear_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.41,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    0.91,
+    -0.625,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_wheel_2",
+   "position": [
+    0.91,
+    0.625,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_foot",
+   "position": [
+    1.41,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_03_bogie_gear_l": {
+   "vid": "ax_gear_03_bogie_gear_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LG-H Heavy Bogie Gear",
+   "primary": true,
+   "dims": {
+    "wheels": 4,
+    "wheel_d_m": 1.0,
+    "strut_m": 2.2,
+    "state": "deployed"
+   },
+   "notes": "Retractable bogie gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 4 wheel(s) 1.00 m (rubber tyre, grey hub). Deployed; node_foot = tyre contact.",
+   "bbox_cad_zup": [
+    [
+     -1.4100000000000004,
+     -0.427461823647262,
+     -1.125
+    ],
+    [
+     1.4100000000000001,
+     0.427461823647262,
+     1.125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.82,
+    2.25,
+    0.855
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.41,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.91,
+      -0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      0.91,
+      0.625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.41,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_03_bogie_gear_l.step",
+    "glb": "glb/ax_gear_03_bogie_gear_l.glb",
+    "preview": "renders/ax_gear_03_bogie_gear_l.png"
+   }
+  },
+  "ax_gear_03_bogie_gear_l_stowed": {
+   "vid": "ax_gear_03_bogie_gear_l_stowed",
+   "size": "L",
+   "state": "stowed",
+   "default_state": false,
+   "label": "LG-H Heavy Bogie Gear",
+   "primary": false,
+   "dims": {
+    "wheels": 4,
+    "wheel_d_m": 1.0,
+    "strut_m": 2.2,
+    "state": "stowed"
+   },
+   "notes": "Retractable bogie gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 4 wheel(s) 1.00 m (rubber tyre, grey hub). Stowed: folded forward (+Z) about the trunnion.",
+   "bbox_cad_zup": [
+    [
+     -2.435,
+     -0.427461823647262,
+     -0.28042542001539333
+    ],
+    [
+     -0.18499999999999994,
+     0.427461823647262,
+     2.72
+    ]
+   ],
+   "bbox_godot_size": [
+    2.25,
+    3.0,
+    0.855
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.41,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.685,
+      2.22,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_wheel_2",
+     "position": [
+      -1.935,
+      2.22,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": "ax_gear_03_bogie_gear_l",
+   "files": {
+    "step": "step/ax_gear_03_bogie_gear_l_stowed.step",
+    "glb": "glb/ax_gear_03_bogie_gear_l_stowed.glb",
+    "preview": "renders/ax_gear_03_bogie_gear_l_stowed.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-03",
+ "key": "ax_gear_03",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "4-wheel bogie gear for Mk3 craft"
+}

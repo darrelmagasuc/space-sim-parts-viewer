@@ -1,0 +1,181 @@
+{
+ "id": "ax_gear_06",
+ "name": "LL-SK Fixed Skid Strut",
+ "category": "stage",
+ "short_name": "skid_strut",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_gear_06_skid_strut_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.566,
+    0.8373,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_foot",
+   "position": [
+    0.3993,
+    -1.0373,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_06_skid_strut_s": {
+   "vid": "ax_gear_06_skid_strut_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LL-SK Fixed Skid Strut",
+   "primary": false,
+   "dims": {
+    "strut_m": 1.2,
+    "skid_m": 1.0
+   },
+   "notes": "Fixed skid strut for hoppers: chamfered grey mount block, 3 dark 8-sided struts (V + drag strut), wide chamfered grey skid with upturned ends and a dark wear strip; node_foot under the skid.",
+   "bbox_cad_zup": [
+    [
+     -0.36357095704441966,
+     -0.6379986603655612,
+     -0.6247846722219899
+    ],
+    [
+     0.3635709570444197,
+     0.6379986603655612,
+     0.62478467222199
+    ]
+   ],
+   "bbox_godot_size": [
+    0.727,
+    1.25,
+    1.276
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.3636,
+      0.5048,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.2636,
+      -0.6248,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_06_skid_strut_s.step",
+    "glb": "glb/ax_gear_06_skid_strut_s.glb",
+    "preview": "renders/ax_gear_06_skid_strut_s.png"
+   }
+  },
+  "ax_gear_06_skid_strut_m": {
+   "vid": "ax_gear_06_skid_strut_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LL-SK Fixed Skid Strut",
+   "primary": true,
+   "dims": {
+    "strut_m": 2.0,
+    "skid_m": 1.67
+   },
+   "notes": "Fixed skid strut for hoppers: chamfered grey mount block, 3 dark 8-sided struts (V + drag strut), wide chamfered grey skid with upturned ends and a dark wear strip; node_foot under the skid.",
+   "bbox_cad_zup": [
+    [
+     -0.5659515950740328,
+     -1.0633311006092687,
+     -1.0373077870366498
+    ],
+    [
+     0.5659515950740328,
+     1.0633311006092687,
+     1.03730778703665
+    ]
+   ],
+   "bbox_godot_size": [
+    1.132,
+    2.075,
+    2.127
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.566,
+      0.8373,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.3993,
+      -1.0373,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_06_skid_strut_m.step",
+    "glb": "glb/ax_gear_06_skid_strut_m.glb",
+    "preview": "renders/ax_gear_06_skid_strut_m.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-06",
+ "key": "ax_gear_06",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Fixed lander strut with a wide skid for hoppers"
+}

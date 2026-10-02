@@ -1,0 +1,382 @@
+{
+ "id": "ax_gear_02",
+ "name": "LG-M Retractable Main Gear",
+ "category": "jet",
+ "short_name": "main_gear",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_gear_02_main_gear_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.02,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_wheel_1",
+   "position": [
+    0.6,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_foot",
+   "position": [
+    1.02,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_02_main_gear_s": {
+   "vid": "ax_gear_02_main_gear_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LG-M Retractable Main Gear",
+   "primary": false,
+   "dims": {
+    "wheels": 2,
+    "wheel_d_m": 0.52,
+    "strut_m": 0.9,
+    "state": "deployed"
+   },
+   "notes": "Retractable main gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 2 wheel(s) 0.52 m (rubber tyre, grey hub). Deployed; node_foot = tyre contact.",
+   "bbox_cad_zup": [
+    [
+     -0.64,
+     -0.22999999999999998,
+     -0.26
+    ],
+    [
+     0.64,
+     0.22999999999999998,
+     0.26
+    ]
+   ],
+   "bbox_godot_size": [
+    1.28,
+    0.52,
+    0.46
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.64,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.38,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0.64,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_02_main_gear_s.step",
+    "glb": "glb/ax_gear_02_main_gear_s.glb",
+    "preview": "renders/ax_gear_02_main_gear_s.png"
+   }
+  },
+  "ax_gear_02_main_gear_s_stowed": {
+   "vid": "ax_gear_02_main_gear_s_stowed",
+   "size": "S",
+   "state": "stowed",
+   "default_state": false,
+   "label": "LG-M Retractable Main Gear",
+   "primary": false,
+   "dims": {
+    "wheels": 2,
+    "wheel_d_m": 0.52,
+    "strut_m": 0.9,
+    "state": "stowed"
+   },
+   "notes": "Retractable main gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 2 wheel(s) 0.52 m (rubber tyre, grey hub). Stowed: folded forward (+Z) about the trunnion.",
+   "bbox_cad_zup": [
+    [
+     -0.7999999999999999,
+     -0.22999999999999998,
+     -0.15
+    ],
+    [
+     -0.2799999999999999,
+     0.22999999999999998,
+     1.1800000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.52,
+    1.33,
+    0.46
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.64,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.54,
+      0.92,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": "ax_gear_02_main_gear_s",
+   "files": {
+    "step": "step/ax_gear_02_main_gear_s_stowed.step",
+    "glb": "glb/ax_gear_02_main_gear_s_stowed.glb",
+    "preview": "renders/ax_gear_02_main_gear_s_stowed.png"
+   }
+  },
+  "ax_gear_02_main_gear_m": {
+   "vid": "ax_gear_02_main_gear_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LG-M Retractable Main Gear",
+   "primary": true,
+   "dims": {
+    "wheels": 2,
+    "wheel_d_m": 0.84,
+    "strut_m": 1.5,
+    "state": "deployed"
+   },
+   "notes": "Retractable main gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 2 wheel(s) 0.84 m (rubber tyre, grey hub). Deployed; node_foot = tyre contact.",
+   "bbox_cad_zup": [
+    [
+     -1.0200000000000002,
+     -0.3096584248296089,
+     -0.42
+    ],
+    [
+     1.02,
+     0.3096584248296089,
+     0.42
+    ]
+   ],
+   "bbox_godot_size": [
+    2.04,
+    0.84,
+    0.619
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.02,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      0.6,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      1.02,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_02_main_gear_m.step",
+    "glb": "glb/ax_gear_02_main_gear_m.glb",
+    "preview": "renders/ax_gear_02_main_gear_m.png"
+   }
+  },
+  "ax_gear_02_main_gear_m_stowed": {
+   "vid": "ax_gear_02_main_gear_m_stowed",
+   "size": "M",
+   "state": "stowed",
+   "default_state": false,
+   "label": "LG-M Retractable Main Gear",
+   "primary": false,
+   "dims": {
+    "wheels": 2,
+    "wheel_d_m": 0.84,
+    "strut_m": 1.5,
+    "state": "stowed"
+   },
+   "notes": "Retractable main gear: chamfered grey mount block, steel oleo strut + piston, steering collar, dark torque links and drag brace, 2 wheel(s) 0.84 m (rubber tyre, grey hub). Stowed: folded forward (+Z) about the trunnion.",
+   "bbox_cad_zup": [
+    [
+     -1.3399999999999999,
+     -0.3096584248296089,
+     -0.21447930011102373
+    ],
+    [
+     -0.49999999999999983,
+     0.3096584248296089,
+     1.94
+    ]
+   ],
+   "bbox_godot_size": [
+    0.84,
+    2.154,
+    0.619
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.02,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_wheel_1",
+     "position": [
+      -0.92,
+      1.52,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_tyres",
+    "wheel_hubs",
+    "gear_leg",
+    "gear_links",
+    "gear_axles"
+   ],
+   "default_of": "ax_gear_02_main_gear_m",
+   "files": {
+    "step": "step/ax_gear_02_main_gear_m_stowed.step",
+    "glb": "glb/ax_gear_02_main_gear_m_stowed.glb",
+    "preview": "renders/ax_gear_02_main_gear_m_stowed.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-02",
+ "key": "ax_gear_02",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Main gear with twin wheels (deployed / stowed)"
+}

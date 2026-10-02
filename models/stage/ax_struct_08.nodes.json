@@ -1,0 +1,120 @@
+{
+ "id": "ax_struct_08",
+ "name": "RD-1 Radial Decoupler",
+ "category": "stage",
+ "short_name": "radial_decoupler",
+ "sizes": [
+  "radial"
+ ],
+ "primary": "ax_struct_08_radial_decoupler",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.208,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.212,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_08_radial_decoupler": {
+   "vid": "ax_struct_08_radial_decoupler",
+   "size": "radial",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-1 Radial Decoupler",
+   "primary": true,
+   "dims": {
+    "length_m": 0.42,
+    "height_m": 0.9,
+    "width_m": 0.4,
+    "ejection_dv_mps": 2.0
+   },
+   "notes": "Radial separation pylon: chamfered white inboard block with bevelled side pockets, dark separation plane, 2 steel thrust pins, chamfered outboard block (moves away with the booster). node_attach (-X) on the core, node_side_1 (+X) takes the booster's node_side_3.",
+   "bbox_cad_zup": [
+    [
+     -0.19600005000000004,
+     -0.20000010000000001,
+     -0.45
+    ],
+    [
+     0.19600004999999998,
+     0.20000010000000001,
+     0.45
+    ]
+   ],
+   "bbox_godot_size": [
+    0.392,
+    0.9,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.208,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.212,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "pylon_outboard",
+    "thrust_pins"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_08_radial_decoupler.step",
+    "glb": "glb/ax_struct_08_radial_decoupler.glb",
+    "preview": "renders/ax_struct_08_radial_decoupler.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-08",
+ "key": "ax_struct_08",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Chamfered radial separation pylon"
+}

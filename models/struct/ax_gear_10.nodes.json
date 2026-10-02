@@ -1,0 +1,335 @@
+{
+ "id": "ax_gear_10",
+ "name": "TS-J Truss Junction Cube",
+ "category": "struct",
+ "short_name": "truss_junction",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_gear_10_truss_junction_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_10_truss_junction_s": {
+   "vid": "ax_gear_10_truss_junction_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-J Truss Junction Cube",
+   "primary": false,
+   "dims": {
+    "cube_m": 1.0
+   },
+   "notes": "6-way truss junction cube 1 m: 12 chamfered white edge members, chamfered grey corner blocks, 6 chamfered steel face frames (one node per face), dark core hub.",
+   "bbox_cad_zup": [
+    [
+     -0.5000000000000001,
+     -0.5000000000000001,
+     -0.5
+    ],
+    [
+     0.5000000000000001,
+     0.5,
+     0.5000000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_10_truss_junction_s.step",
+    "glb": "glb/ax_gear_10_truss_junction_s.glb",
+    "preview": "renders/ax_gear_10_truss_junction_s.png"
+   }
+  },
+  "ax_gear_10_truss_junction_m": {
+   "vid": "ax_gear_10_truss_junction_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-J Truss Junction Cube",
+   "primary": true,
+   "dims": {
+    "cube_m": 2.0
+   },
+   "notes": "6-way truss junction cube 2 m: 12 chamfered white edge members, chamfered grey corner blocks, 6 chamfered steel face frames (one node per face), dark core hub.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -1.0,
+     -1.0
+    ],
+    [
+     1.0,
+     1.0,
+     1.0
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_10_truss_junction_m.step",
+    "glb": "glb/ax_gear_10_truss_junction_m.glb",
+    "preview": "renders/ax_gear_10_truss_junction_m.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-10",
+ "key": "ax_gear_10",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "6-way truss junction node"
+}

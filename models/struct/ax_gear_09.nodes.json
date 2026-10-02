@@ -1,0 +1,181 @@
+{
+ "id": "ax_gear_09",
+ "name": "TS-T Triangular Lattice Truss",
+ "category": "struct",
+ "short_name": "tri_truss",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_gear_09_tri_truss_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_gear_09_tri_truss_s": {
+   "vid": "ax_gear_09_tri_truss_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-T Triangular Lattice Truss",
+   "primary": false,
+   "dims": {
+    "circumradius_m": 0.5,
+    "length_m": 3.0
+   },
+   "notes": "Triangular lattice truss (circumradius 0.5 m, 3 m, 4 bays): 3 chamfered 8-sided white longerons, grey battens, dark diagonals, chamfered hexagonal steel end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.46801280189221933,
+     -0.5400001,
+     -1.5000001
+    ],
+    [
+     0.4680128018922192,
+     0.5400001,
+     1.5000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.936,
+    3.0,
+    1.08
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_09_tri_truss_s.step",
+    "glb": "glb/ax_gear_09_tri_truss_s.glb",
+    "preview": "renders/ax_gear_09_tri_truss_s.png"
+   }
+  },
+  "ax_gear_09_tri_truss_m": {
+   "vid": "ax_gear_09_tri_truss_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TS-T Triangular Lattice Truss",
+   "primary": true,
+   "dims": {
+    "circumradius_m": 1.0,
+    "length_m": 5.0
+   },
+   "notes": "Triangular lattice truss (circumradius 1 m, 5 m, 4 bays): 3 chamfered 8-sided white longerons, grey battens, dark diagonals, chamfered hexagonal steel end frames.",
+   "bbox_cad_zup": [
+    [
+     -0.9360255037844386,
+     -1.0800001000000001,
+     -2.5120001000000003
+    ],
+    [
+     0.9360255037844384,
+     1.0800001000000001,
+     2.5120001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.872,
+    5.024,
+    2.16
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_gear_09_tri_truss_m.step",
+    "glb": "glb/ax_gear_09_tri_truss_m.glb",
+    "preview": "renders/ax_gear_09_tri_truss_m.png"
+   }
+  }
+ },
+ "display_id": "AX-gear-09",
+ "key": "ax_gear_09",
+ "line": "AX",
+ "ax_category": "gear",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Triangular lattice truss (lightweight)"
+}

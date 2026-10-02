@@ -1,0 +1,469 @@
+{
+ "id": "ax_struct_06",
+ "name": "SD-1 Stack Decoupler",
+ "category": "stage",
+ "short_name": "stack_decoupler",
+ "sizes": [
+  "XS",
+  "S",
+  "M",
+  "L",
+  "XL",
+  "XXL"
+ ],
+ "primary": "ax_struct_06_stack_decoupler_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.1535,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.1535,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_06_stack_decoupler_xs": {
+   "vid": "ax_struct_06_stack_decoupler_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.151,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 0.625 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 6 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -0.3125001,
+     -0.3125,
+     -0.0755
+    ],
+    [
+     0.3125001,
+     0.3125,
+     0.0755
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.151,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0755,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.0755,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_xs.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_xs.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_xs.png"
+   }
+  },
+  "ax_struct_06_stack_decoupler_s": {
+   "vid": "ax_struct_06_stack_decoupler_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 0.182,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 1.25 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 6 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.091
+    ],
+    [
+     0.625,
+     0.625,
+     0.091
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.182,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.091,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.091,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_s.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_s.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_s.png"
+   }
+  },
+  "ax_struct_06_stack_decoupler_m": {
+   "vid": "ax_struct_06_stack_decoupler_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.245,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 2.5 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 8 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.2500001,
+     -0.12250005
+    ],
+    [
+     1.2500001,
+     1.2500001,
+     0.12250005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.245,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_m.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_m.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_m.png"
+   }
+  },
+  "ax_struct_06_stack_decoupler_l": {
+   "vid": "ax_struct_06_stack_decoupler_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 0.307,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 3.75 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 8 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -1.8750001,
+     -1.8750001,
+     -0.1535
+    ],
+    [
+     1.8750001,
+     1.8750001,
+     0.1535
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.307,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1535,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1535,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_l.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_l.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_l.png"
+   }
+  },
+  "ax_struct_06_stack_decoupler_xl": {
+   "vid": "ax_struct_06_stack_decoupler_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 0.37,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 5 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 12 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -2.5000001,
+     -2.5000001,
+     -0.18500005
+    ],
+    [
+     2.5000001,
+     2.5000001,
+     0.18500005
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    0.37,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.185,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.185,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_xl.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_xl.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_xl.png"
+   }
+  },
+  "ax_struct_06_stack_decoupler_xxl": {
+   "vid": "ax_struct_06_stack_decoupler_xxl",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "SD-1 Stack Decoupler",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "height_m": 0.495,
+    "ejection_dv_mps": 1.5
+   },
+   "notes": "Pyro-ring stack decoupler 7.5 m: chamfered steel lower ring, recessed dark separation plane (12 mm, 12 mm inset), white upper ring with 12 bevelled latch pockets holding dark pyro latch blocks. Upper ring + latches separate (moving).",
+   "bbox_cad_zup": [
+    [
+     -3.7500001,
+     -3.7500001,
+     -0.2475
+    ],
+    [
+     3.7500001,
+     3.7500001,
+     0.2475
+    ]
+   ],
+   "bbox_godot_size": [
+    7.5,
+    0.495,
+    7.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "decoupler_upper_ring",
+    "pyro_latches"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_06_stack_decoupler_xxl.step",
+    "glb": "glb/ax_struct_06_stack_decoupler_xxl.glb",
+    "preview": "renders/ax_struct_06_stack_decoupler_xxl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-06",
+ "key": "ax_struct_06",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Chamfered pyro-ring decoupler with recessed latch pockets"
+}

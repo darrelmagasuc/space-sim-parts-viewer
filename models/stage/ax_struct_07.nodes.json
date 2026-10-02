@@ -1,0 +1,250 @@
+{
+ "id": "ax_struct_07",
+ "name": "HS-R Hot-Staging Ring",
+ "category": "stage",
+ "short_name": "hot_staging_ring",
+ "sizes": [
+  "L",
+  "XL",
+  "XXL"
+ ],
+ "primary": "ax_struct_07_hot_staging_ring_xxl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.675,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.675,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_struct_07_hot_staging_ring_l": {
+   "vid": "ax_struct_07_hot_staging_ring_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-R Hot-Staging Ring",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 0.9,
+    "vents": 12
+   },
+   "notes": "Hot-staging ring 3.75 m: white barrel with 12 bevelled through-vents (dark ribs behind), domed steel blast deflector protecting the lower stage's top dome, chamfered interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.8750001,
+     -1.8750001,
+     -0.45
+    ],
+    [
+     1.8750001,
+     1.8750001,
+     0.45
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.9,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_07_hot_staging_ring_l.step",
+    "glb": "glb/ax_struct_07_hot_staging_ring_l.glb",
+    "preview": "renders/ax_struct_07_hot_staging_ring_l.png"
+   }
+  },
+  "ax_struct_07_hot_staging_ring_xl": {
+   "vid": "ax_struct_07_hot_staging_ring_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-R Hot-Staging Ring",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 1.05,
+    "vents": 16
+   },
+   "notes": "Hot-staging ring 5 m: white barrel with 16 bevelled through-vents (dark ribs behind), domed steel blast deflector protecting the lower stage's top dome, chamfered interface rings.",
+   "bbox_cad_zup": [
+    [
+     -2.5000001,
+     -2.5000001,
+     -0.525
+    ],
+    [
+     2.5000001,
+     2.5000001,
+     0.525
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    1.05,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.525,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.525,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_07_hot_staging_ring_xl.step",
+    "glb": "glb/ax_struct_07_hot_staging_ring_xl.glb",
+    "preview": "renders/ax_struct_07_hot_staging_ring_xl.png"
+   }
+  },
+  "ax_struct_07_hot_staging_ring_xxl": {
+   "vid": "ax_struct_07_hot_staging_ring_xxl",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-R Hot-Staging Ring",
+   "primary": true,
+   "dims": {
+    "diameter_m": 7.5,
+    "height_m": 1.35,
+    "vents": 20
+   },
+   "notes": "Hot-staging ring 7.5 m: white barrel with 20 bevelled through-vents (dark ribs behind), domed steel blast deflector protecting the lower stage's top dome, chamfered interface rings.",
+   "bbox_cad_zup": [
+    [
+     -3.7500001,
+     -3.7500001,
+     -0.675
+    ],
+    [
+     3.7500001,
+     3.7500001,
+     0.675
+    ]
+   ],
+   "bbox_godot_size": [
+    7.5,
+    1.35,
+    7.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.675,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.675,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_struct_07_hot_staging_ring_xxl.step",
+    "glb": "glb/ax_struct_07_hot_staging_ring_xxl.glb",
+    "preview": "renders/ax_struct_07_hot_staging_ring_xxl.png"
+   }
+  }
+ },
+ "display_id": "AX-struct-07",
+ "key": "ax_struct_07",
+ "line": "AX",
+ "ax_category": "struct",
+ "aliases": [],
+ "batch": "B4",
+ "slot": null,
+ "interior": null,
+ "summary": "Vented interstage ring with bevelled vent pockets for hot staging"
+}
