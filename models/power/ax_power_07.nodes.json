@@ -1,0 +1,189 @@
+{
+ "id": "ax_power_07",
+ "name": "FR-10 Fission Surface Reactor 10 kWe",
+ "category": "power",
+ "short_name": "fission_surface_10",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_power_07_fission_surface_10",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.73,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.19,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_07_fission_surface_10": {
+   "vid": "ax_power_07_fission_surface_10",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "FR-10 Fission Surface Reactor 10 kWe",
+   "primary": true,
+   "dims": {
+    "vessel_across_flats": 0.9,
+    "height": 1.92
+   },
+   "notes": "10 kWe fission surface reactor: 8-facet vessel with seam groove, 4 Stirling converters, 4 radiator panels (stowed vertical, deployed horizontal), deck mount.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.8,
+     -1.1900000000000002
+    ],
+    [
+     0.8,
+     0.8,
+     1.19
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    2.38,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.73,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.19,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_radiator_1",
+    "panel_radiator_2",
+    "panel_radiator_3",
+    "panel_radiator_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_07_fission_surface_10.step",
+    "glb": "glb/ax_power_07_fission_surface_10.glb",
+    "preview": "renders/ax_power_07_fission_surface_10.png"
+   }
+  },
+  "ax_power_07_fission_surface_10_deployed": {
+   "vid": "ax_power_07_fission_surface_10_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "FR-10 Fission Surface Reactor 10 kWe",
+   "primary": false,
+   "dims": {
+    "radiator_span": 5.0
+   },
+   "notes": "10 kWe fission surface reactor: 8-facet vessel with seam groove, 4 Stirling converters, 4 radiator panels (stowed vertical, deployed horizontal), deck mount.",
+   "bbox_cad_zup": [
+    [
+     -2.505795927494195,
+     -2.5057959274941957,
+     -0.7300000000000002
+    ],
+    [
+     2.5057959274941957,
+     2.505795927494195,
+     1.8300000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    5.012,
+    2.56,
+    5.012
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.73,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.19,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_radiator_1",
+    "panel_radiator_2",
+    "panel_radiator_3",
+    "panel_radiator_4"
+   ],
+   "default_of": "ax_power_07_fission_surface_10",
+   "files": {
+    "step": "step/ax_power_07_fission_surface_10_deployed.step",
+    "glb": "glb/ax_power_07_fission_surface_10_deployed.glb",
+    "preview": "renders/ax_power_07_fission_surface_10_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-07",
+ "key": "ax_power_07",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Small fission reactor on a lander deck, Stirling converters, radiator fins"
+}

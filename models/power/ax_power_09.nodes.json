@@ -1,0 +1,274 @@
+{
+ "id": "ax_power_09",
+ "name": "HP-1X Heat-Pipe Radiator Boom",
+ "category": "power",
+ "short_name": "heat_pipe_boom",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_power_09_heat_pipe_boom_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.53,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_09_heat_pipe_boom_m": {
+   "vid": "ax_power_09_heat_pipe_boom_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HP-1X Heat-Pipe Radiator Boom",
+   "primary": true,
+   "dims": {
+    "deployed_length": 5.0,
+    "panels": 4
+   },
+   "notes": "Heat-pipe radiator boom: telescoping boom (0.8 m), 4 radiator panels threaded by copper heat pipes; stowed panels stacked beside the collapsed boom.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.20000000000000004,
+     -0.53
+    ],
+    [
+     0.8,
+     0.25500000000000006,
+     0.5300000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    1.06,
+    0.455
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.53,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_1",
+    "panel_2",
+    "panel_3",
+    "panel_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_09_heat_pipe_boom_m.step",
+    "glb": "glb/ax_power_09_heat_pipe_boom_m.glb",
+    "preview": "renders/ax_power_09_heat_pipe_boom_m.png"
+   }
+  },
+  "ax_power_09_heat_pipe_boom_m_deployed": {
+   "vid": "ax_power_09_heat_pipe_boom_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HP-1X Heat-Pipe Radiator Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length": 5.0,
+    "panels": 4
+   },
+   "notes": "Heat-pipe radiator boom: telescoping boom (5.0 m), 4 radiator panels threaded by copper heat pipes; stowed panels stacked beside the collapsed boom.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.20000000000000004,
+     -0.53
+    ],
+    [
+     0.8,
+     0.20000000000000004,
+     4.73
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    5.26,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.53,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_1",
+    "panel_2",
+    "panel_3",
+    "panel_4"
+   ],
+   "default_of": "ax_power_09_heat_pipe_boom_m",
+   "files": {
+    "step": "step/ax_power_09_heat_pipe_boom_m_deployed.step",
+    "glb": "glb/ax_power_09_heat_pipe_boom_m_deployed.glb",
+    "preview": "renders/ax_power_09_heat_pipe_boom_m_deployed.png"
+   }
+  },
+  "ax_power_09_heat_pipe_boom_l": {
+   "vid": "ax_power_09_heat_pipe_boom_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HP-1X Heat-Pipe Radiator Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length": 9.0,
+    "panels": 6
+   },
+   "notes": "Heat-pipe radiator boom: telescoping boom (0.8 m), 6 radiator panels threaded by copper heat pipes; stowed panels stacked beside the collapsed boom.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.20000000000000004,
+     -0.53
+    ],
+    [
+     0.8,
+     0.3350000000000001,
+     0.5300000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    1.06,
+    0.535
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.53,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_1",
+    "panel_2",
+    "panel_3",
+    "panel_4",
+    "panel_5",
+    "panel_6"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_09_heat_pipe_boom_l.step",
+    "glb": "glb/ax_power_09_heat_pipe_boom_l.glb",
+    "preview": "renders/ax_power_09_heat_pipe_boom_l.png"
+   }
+  },
+  "ax_power_09_heat_pipe_boom_l_deployed": {
+   "vid": "ax_power_09_heat_pipe_boom_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HP-1X Heat-Pipe Radiator Boom",
+   "primary": false,
+   "dims": {
+    "deployed_length": 9.0,
+    "panels": 6
+   },
+   "notes": "Heat-pipe radiator boom: telescoping boom (9.0 m), 6 radiator panels threaded by copper heat pipes; stowed panels stacked beside the collapsed boom.",
+   "bbox_cad_zup": [
+    [
+     -0.8000000000000002,
+     -0.20000000000000004,
+     -0.53
+    ],
+    [
+     0.8000000000000002,
+     0.20000000000000004,
+     8.73
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    9.26,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.53,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_1",
+    "panel_2",
+    "panel_3",
+    "panel_4",
+    "panel_5",
+    "panel_6"
+   ],
+   "default_of": "ax_power_09_heat_pipe_boom_l",
+   "files": {
+    "step": "step/ax_power_09_heat_pipe_boom_l_deployed.step",
+    "glb": "glb/ax_power_09_heat_pipe_boom_l_deployed.glb",
+    "preview": "renders/ax_power_09_heat_pipe_boom_l_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-09",
+ "key": "ax_power_09",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Deployable heat-pipe radiator boom for reactors"
+}

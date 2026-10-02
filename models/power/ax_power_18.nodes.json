@@ -1,0 +1,185 @@
+{
+ "id": "ax_power_18",
+ "name": "PV-VT Vertical Surface Solar Tower",
+ "category": "power",
+ "short_name": "solar_tower",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_power_18_solar_tower",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.175,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.175,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_18_solar_tower": {
+   "vid": "ax_power_18_solar_tower",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PV-VT Vertical Surface Solar Tower",
+   "primary": true,
+   "dims": {
+    "height": 2.35
+   },
+   "notes": "Vertical solar tower for polar sites: tripod + 8-facet base, 4-stage telescoping mast (moving mesh), 2 vertical array strips deployed (stowed in a cassette).",
+   "bbox_cad_zup": [
+    [
+     -0.8785326893525964,
+     -1.393281534478222,
+     -1.1750000000000003
+    ],
+    [
+     1.5799999999999998,
+     1.3955004168238576,
+     1.1750000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    2.459,
+    2.35,
+    2.789
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_array_stack"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_18_solar_tower.step",
+    "glb": "glb/ax_power_18_solar_tower.glb",
+    "preview": "renders/ax_power_18_solar_tower.png"
+   }
+  },
+  "ax_power_18_solar_tower_deployed": {
+   "vid": "ax_power_18_solar_tower_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PV-VT Vertical Surface Solar Tower",
+   "primary": false,
+   "dims": {
+    "height": 10.15
+   },
+   "notes": "Vertical solar tower for polar sites: tripod + 8-facet base, 4-stage telescoping mast (moving mesh), 2 vertical array strips deployed (stowed in a cassette).",
+   "bbox_cad_zup": [
+    [
+     -1.8,
+     -1.393281534478222,
+     -1.1750000000000003
+    ],
+    [
+     1.8,
+     1.3955004168238576,
+     8.975000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    3.6,
+    10.15,
+    2.789
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      8.975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "panel_array_p",
+    "panel_array_m"
+   ],
+   "default_of": "ax_power_18_solar_tower",
+   "files": {
+    "step": "step/ax_power_18_solar_tower_deployed.step",
+    "glb": "glb/ax_power_18_solar_tower_deployed.glb",
+    "preview": "renders/ax_power_18_solar_tower_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-18",
+ "key": "ax_power_18",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Telescoping vertical array for polar sites, stowed + deployed"
+}

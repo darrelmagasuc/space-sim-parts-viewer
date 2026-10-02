@@ -1,0 +1,92 @@
+{
+ "id": "ax_power_17",
+ "name": "OC-1 Optical Comms Terminal",
+ "category": "power",
+ "short_name": "optical_terminal",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_power_17_optical_terminal",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.112,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_17_optical_terminal": {
+   "vid": "ax_power_17_optical_terminal",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "OC-1 Optical Comms Terminal",
+   "primary": true,
+   "dims": {
+    "w": 0.36,
+    "h": 0.25
+   },
+   "notes": "Laser comms terminal: gimballed telescope on a ball mount in a bevelled pocket (XS).",
+   "bbox_cad_zup": [
+    [
+     -0.18,
+     -0.18,
+     -0.11197130326701435
+    ],
+    [
+     0.18,
+     0.18,
+     0.11197130326701434
+    ]
+   ],
+   "bbox_godot_size": [
+    0.36,
+    0.224,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.112,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "gimbal_ball",
+    "telescope"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_17_optical_terminal.step",
+    "glb": "glb/ax_power_17_optical_terminal.glb",
+    "preview": "renders/ax_power_17_optical_terminal.png"
+   }
+  }
+ },
+ "display_id": "AX-power-17",
+ "key": "ax_power_17",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Laser comms telescope in a bevelled pocket"
+}

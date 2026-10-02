@@ -1,0 +1,250 @@
+{
+ "id": "ax_power_06",
+ "name": "RD-CF Conformal Radiator Panel",
+ "category": "power",
+ "short_name": "conformal_radiator",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_power_06_conformal_radiator_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.0245,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_face",
+   "position": [
+    0.0,
+    0.0205,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_06_conformal_radiator_s": {
+   "vid": "ax_power_06_conformal_radiator_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-CF Conformal Radiator Panel",
+   "primary": false,
+   "dims": {
+    "w": 0.5,
+    "h": 0.8,
+    "t": 0.045
+   },
+   "notes": "Flush conformal radiator facet: recessed flow channels + manifolds, chamfered edges.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.4,
+     -0.024500000000000004
+    ],
+    [
+     0.25,
+     0.4,
+     0.024500000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.049,
+    0.8
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0245,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0205,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_06_conformal_radiator_s.step",
+    "glb": "glb/ax_power_06_conformal_radiator_s.glb",
+    "preview": "renders/ax_power_06_conformal_radiator_s.png"
+   }
+  },
+  "ax_power_06_conformal_radiator_m": {
+   "vid": "ax_power_06_conformal_radiator_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-CF Conformal Radiator Panel",
+   "primary": true,
+   "dims": {
+    "w": 1.0,
+    "h": 1.6,
+    "t": 0.045
+   },
+   "notes": "Flush conformal radiator facet: recessed flow channels + manifolds, chamfered edges.",
+   "bbox_cad_zup": [
+    [
+     -0.5000000000000001,
+     -0.8,
+     -0.02450000000000002
+    ],
+    [
+     0.5000000000000001,
+     0.8000000000000002,
+     0.02450000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.049,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0245,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0205,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_06_conformal_radiator_m.step",
+    "glb": "glb/ax_power_06_conformal_radiator_m.glb",
+    "preview": "renders/ax_power_06_conformal_radiator_m.png"
+   }
+  },
+  "ax_power_06_conformal_radiator_l": {
+   "vid": "ax_power_06_conformal_radiator_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "RD-CF Conformal Radiator Panel",
+   "primary": false,
+   "dims": {
+    "w": 1.5,
+    "h": 2.4,
+    "t": 0.045
+   },
+   "notes": "Flush conformal radiator facet: recessed flow channels + manifolds, chamfered edges.",
+   "bbox_cad_zup": [
+    [
+     -0.7500000000000001,
+     -1.2,
+     -0.024500000000000008
+    ],
+    [
+     0.7500000000000001,
+     1.2,
+     0.024500000000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    0.049,
+    2.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0245,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0205,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_06_conformal_radiator_l.step",
+    "glb": "glb/ax_power_06_conformal_radiator_l.glb",
+    "preview": "renders/ax_power_06_conformal_radiator_l.png"
+   }
+  }
+ },
+ "display_id": "AX-power-06",
+ "key": "ax_power_06",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Flush body radiator facet with recessed flow channels"
+}

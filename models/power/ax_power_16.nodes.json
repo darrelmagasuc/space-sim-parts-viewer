@@ -1,0 +1,89 @@
+{
+ "id": "ax_power_16",
+ "name": "LG-1 Low-Gain / Omni Antenna",
+ "category": "power",
+ "short_name": "omni_antenna",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_power_16_omni_antenna",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.07,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_16_omni_antenna": {
+   "vid": "ax_power_16_omni_antenna",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "LG-1 Low-Gain / Omni Antenna",
+   "primary": true,
+   "dims": {
+    "w": 0.18,
+    "h": 0.14
+   },
+   "notes": "Recessed patch antenna in a bevelled pocket + short stub omni (XS).",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.09,
+     -0.07
+    ],
+    [
+     0.09,
+     0.09,
+     0.07
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.14,
+    0.18
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.07,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_16_omni_antenna.step",
+    "glb": "glb/ax_power_16_omni_antenna.glb",
+    "preview": "renders/ax_power_16_omni_antenna.png"
+   }
+  }
+ },
+ "display_id": "AX-power-16",
+ "key": "ax_power_16",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Recessed patch / short stub omni antenna"
+}

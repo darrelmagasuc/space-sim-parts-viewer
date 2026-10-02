@@ -1,0 +1,186 @@
+{
+ "id": "ax_power_08",
+ "name": "FR-100 Orbital Fission Reactor 100 kWe",
+ "category": "power",
+ "short_name": "orbital_reactor_100",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_power_08_orbital_reactor_100",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.3125,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.3125,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_08_orbital_reactor_100": {
+   "vid": "ax_power_08_orbital_reactor_100",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "FR-100 Orbital Fission Reactor 100 kWe",
+   "primary": true,
+   "dims": {
+    "diameter": 2.5,
+    "length": 5.0
+   },
+   "notes": "100 kWe orbital reactor: 8-facet Brayton converter bus on a 2.5 m ring, telescoping boom (moving mesh, 1.2 m stowed / 8 m deployed), shadow-shield cone + core at the tip, radiator wings.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.3125
+    ],
+    [
+     1.25,
+     1.25,
+     2.3125
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    4.625,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.3125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_radiators"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_08_orbital_reactor_100.step",
+    "glb": "glb/ax_power_08_orbital_reactor_100.glb",
+    "preview": "renders/ax_power_08_orbital_reactor_100.png"
+   }
+  },
+  "ax_power_08_orbital_reactor_100_deployed": {
+   "vid": "ax_power_08_orbital_reactor_100_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "FR-100 Orbital Fission Reactor 100 kWe",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "length": 11.8
+   },
+   "notes": "100 kWe orbital reactor: 8-facet Brayton converter bus on a 2.5 m ring, telescoping boom (moving mesh, 1.2 m stowed / 8 m deployed), shadow-shield cone + core at the tip, radiator wings.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -3.3000000000000003,
+     -2.3125
+    ],
+    [
+     1.25,
+     3.3000000000000003,
+     9.112499999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    11.425,
+    6.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      9.1125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "boom",
+    "panel_radiators"
+   ],
+   "default_of": "ax_power_08_orbital_reactor_100",
+   "files": {
+    "step": "step/ax_power_08_orbital_reactor_100_deployed.step",
+    "glb": "glb/ax_power_08_orbital_reactor_100_deployed.glb",
+    "preview": "renders/ax_power_08_orbital_reactor_100_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-08",
+ "key": "ax_power_08",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Reactor with shadow shield on a boom, Brayton converters"
+}

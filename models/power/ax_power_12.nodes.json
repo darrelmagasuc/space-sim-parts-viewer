@@ -1,0 +1,146 @@
+{
+ "id": "ax_power_12",
+ "name": "RF-1 Regenerative Fuel Cell Plant",
+ "category": "power",
+ "short_name": "rfc_plant",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_power_12_rfc_plant_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.71,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_12_rfc_plant_s": {
+   "vid": "ax_power_12_rfc_plant_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RF-1 Regenerative Fuel Cell Plant",
+   "primary": false,
+   "dims": {
+    "skid": [
+     2.1,
+     1.12
+    ]
+   },
+   "notes": "Regenerative fuel cell plant (RTG-free lunar-night power): skid with H2 and O2 spheres (girth rings, saddles), electrolyser + fuel-cell stack cabinet, radiator.",
+   "bbox_cad_zup": [
+    [
+     -1.0499999999999998,
+     -0.5599999999999999,
+     -0.5750000000000001
+    ],
+    [
+     1.056,
+     0.5599999999999999,
+     0.575
+    ]
+   ],
+   "bbox_godot_size": [
+    2.106,
+    1.15,
+    1.12
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.575,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_12_rfc_plant_s.step",
+    "glb": "glb/ax_power_12_rfc_plant_s.glb",
+    "preview": "renders/ax_power_12_rfc_plant_s.png"
+   }
+  },
+  "ax_power_12_rfc_plant_m": {
+   "vid": "ax_power_12_rfc_plant_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RF-1 Regenerative Fuel Cell Plant",
+   "primary": true,
+   "dims": {
+    "skid": [
+     3.0,
+     1.6
+    ]
+   },
+   "notes": "Regenerative fuel cell plant (RTG-free lunar-night power): skid with H2 and O2 spheres (girth rings, saddles), electrolyser + fuel-cell stack cabinet, radiator.",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -0.8,
+     -0.7100000000000002
+    ],
+    [
+     1.5,
+     0.8000000000000002,
+     0.7100000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    1.42,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.71,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_12_rfc_plant_m.step",
+    "glb": "glb/ax_power_12_rfc_plant_m.glb",
+    "preview": "renders/ax_power_12_rfc_plant_m.png"
+   }
+  }
+ },
+ "display_id": "AX-power-12",
+ "key": "ax_power_12",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Electrolyser + fuel cell + tanks for lunar-night power (RTG-free)"
+}

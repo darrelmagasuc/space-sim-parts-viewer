@@ -1,0 +1,250 @@
+{
+ "id": "ax_power_04",
+ "name": "PV-CF Conformal Skin Panel",
+ "category": "power",
+ "short_name": "conformal_solar",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_power_04_conformal_solar_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.0225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_face",
+   "position": [
+    0.0,
+    0.0225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_04_conformal_solar_s": {
+   "vid": "ax_power_04_conformal_solar_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PV-CF Conformal Skin Panel",
+   "primary": false,
+   "dims": {
+    "w": 0.5,
+    "h": 0.8,
+    "t": 0.045
+   },
+   "notes": "Flush conformal solar skin panel: replaces a hull facet; bevelled cell pockets (recessed cells), chamfered edges, no bolt-on.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.4,
+     -0.022500050000000004
+    ],
+    [
+     0.25,
+     0.4,
+     0.02250005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.045,
+    0.8
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_04_conformal_solar_s.step",
+    "glb": "glb/ax_power_04_conformal_solar_s.glb",
+    "preview": "renders/ax_power_04_conformal_solar_s.png"
+   }
+  },
+  "ax_power_04_conformal_solar_m": {
+   "vid": "ax_power_04_conformal_solar_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PV-CF Conformal Skin Panel",
+   "primary": true,
+   "dims": {
+    "w": 1.0,
+    "h": 1.6,
+    "t": 0.045
+   },
+   "notes": "Flush conformal solar skin panel: replaces a hull facet; bevelled cell pockets (recessed cells), chamfered edges, no bolt-on.",
+   "bbox_cad_zup": [
+    [
+     -0.5000000000000001,
+     -0.8,
+     -0.022500050000000018
+    ],
+    [
+     0.5000000000000001,
+     0.8000000000000002,
+     0.022500050000000014
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.045,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_04_conformal_solar_m.step",
+    "glb": "glb/ax_power_04_conformal_solar_m.glb",
+    "preview": "renders/ax_power_04_conformal_solar_m.png"
+   }
+  },
+  "ax_power_04_conformal_solar_l": {
+   "vid": "ax_power_04_conformal_solar_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "PV-CF Conformal Skin Panel",
+   "primary": false,
+   "dims": {
+    "w": 1.5,
+    "h": 2.4,
+    "t": 0.045
+   },
+   "notes": "Flush conformal solar skin panel: replaces a hull facet; bevelled cell pockets (recessed cells), chamfered edges, no bolt-on.",
+   "bbox_cad_zup": [
+    [
+     -0.7500000000000001,
+     -1.2,
+     -0.022500050000000008
+    ],
+    [
+     0.7500000000000001,
+     1.2,
+     0.022500050000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.5,
+    0.045,
+    2.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_04_conformal_solar_l.step",
+    "glb": "glb/ax_power_04_conformal_solar_l.glb",
+    "preview": "renders/ax_power_04_conformal_solar_l.png"
+   }
+  }
+ },
+ "display_id": "AX-power-04",
+ "key": "ax_power_04",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Flush faceted solar panel that replaces a hull facet (no bolt-on)"
+}

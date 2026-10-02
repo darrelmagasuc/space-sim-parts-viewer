@@ -1,0 +1,250 @@
+{
+ "id": "ax_power_14",
+ "name": "HG-1X High-Gain Dish",
+ "category": "power",
+ "short_name": "high_gain_dish",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_power_14_high_gain_dish_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.3275,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_14_high_gain_dish_s": {
+   "vid": "ax_power_14_high_gain_dish_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HG-1X High-Gain Dish",
+   "primary": true,
+   "dims": {
+    "dish_d": 1.0
+   },
+   "notes": "Steerable 1.0 m high-gain dish on a gimbal in a bevelled well; stowed = dish face-down over the well, deployed = raised + tilted.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.32749999999999996
+    ],
+    [
+     0.5,
+     0.5,
+     0.32749999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.655,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3275,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "dish"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_14_high_gain_dish_s.step",
+    "glb": "glb/ax_power_14_high_gain_dish_s.glb",
+    "preview": "renders/ax_power_14_high_gain_dish_s.png"
+   }
+  },
+  "ax_power_14_high_gain_dish_s_deployed": {
+   "vid": "ax_power_14_high_gain_dish_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HG-1X High-Gain Dish",
+   "primary": false,
+   "dims": {
+    "dish_d": 1.0
+   },
+   "notes": "Steerable 1.0 m high-gain dish on a gimbal in a bevelled well; stowed = dish face-down over the well, deployed = raised + tilted.",
+   "bbox_cad_zup": [
+    [
+     -0.3437269876065051,
+     -0.5,
+     -0.32749999999999996
+    ],
+    [
+     0.5347984161779337,
+     0.5,
+     0.7587980286275466
+    ]
+   ],
+   "bbox_godot_size": [
+    0.879,
+    1.086,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3275,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "dish"
+   ],
+   "default_of": "ax_power_14_high_gain_dish_s",
+   "files": {
+    "step": "step/ax_power_14_high_gain_dish_s_deployed.step",
+    "glb": "glb/ax_power_14_high_gain_dish_s_deployed.glb",
+    "preview": "renders/ax_power_14_high_gain_dish_s_deployed.png"
+   }
+  },
+  "ax_power_14_high_gain_dish_m": {
+   "vid": "ax_power_14_high_gain_dish_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "HG-1X High-Gain Dish",
+   "primary": false,
+   "dims": {
+    "dish_d": 2.0
+   },
+   "notes": "Steerable 2.0 m high-gain dish on a gimbal in a bevelled well; stowed = dish face-down over the well, deployed = raised + tilted.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -1.0,
+     -0.485
+    ],
+    [
+     1.0,
+     1.0,
+     0.485
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.97,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.485,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "dish"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_14_high_gain_dish_m.step",
+    "glb": "glb/ax_power_14_high_gain_dish_m.glb",
+    "preview": "renders/ax_power_14_high_gain_dish_m.png"
+   }
+  },
+  "ax_power_14_high_gain_dish_m_deployed": {
+   "vid": "ax_power_14_high_gain_dish_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HG-1X High-Gain Dish",
+   "primary": false,
+   "dims": {
+    "dish_d": 2.0
+   },
+   "notes": "Steerable 2.0 m high-gain dish on a gimbal in a bevelled well; stowed = dish face-down over the well, deployed = raised + tilted.",
+   "bbox_cad_zup": [
+    [
+     -0.6874539752130102,
+     -1.0,
+     -0.485
+    ],
+    [
+     1.0570968323558674,
+     1.0,
+     1.5059454221604818
+    ]
+   ],
+   "bbox_godot_size": [
+    1.745,
+    1.991,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.485,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "dish"
+   ],
+   "default_of": "ax_power_14_high_gain_dish_m",
+   "files": {
+    "step": "step/ax_power_14_high_gain_dish_m_deployed.step",
+    "glb": "glb/ax_power_14_high_gain_dish_m_deployed.glb",
+    "preview": "renders/ax_power_14_high_gain_dish_m_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-14",
+ "key": "ax_power_14",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Steerable dish on a recessed gimbal well, stowed + deployed"
+}

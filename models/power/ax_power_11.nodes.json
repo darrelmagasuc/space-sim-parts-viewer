@@ -1,0 +1,226 @@
+{
+ "id": "ax_power_11",
+ "name": "BT-1 Battery Module",
+ "category": "power",
+ "short_name": "battery_module",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_power_11_battery_module_small",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    -0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_11_battery_module_small": {
+   "vid": "ax_power_11_battery_module_small",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "BT-1 Battery Module",
+   "primary": true,
+   "dims": {
+    "envelope": [
+     0.5,
+     0.5,
+     0.6
+    ]
+   },
+   "notes": "Small slot item (0.5 x 0.5 x 0.6 m envelope): chamfered housing, bevelled front service panel, handles, connectors on top (node_port_N).",
+   "bbox_cad_zup": [
+    [
+     -0.24,
+     -0.288,
+     -0.32
+    ],
+    [
+     0.24,
+     0.24000000000000002,
+     0.32
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.64,
+    0.528
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_mount",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_11_battery_module_small.step",
+    "glb": "glb/ax_power_11_battery_module_small.glb",
+    "preview": "renders/ax_power_11_battery_module_small.png"
+   }
+  },
+  "ax_power_11_battery_module_medium": {
+   "vid": "ax_power_11_battery_module_medium",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "BT-1 Battery Module",
+   "primary": false,
+   "dims": {
+    "envelope": [
+     1.0,
+     1.0,
+     0.6
+    ]
+   },
+   "notes": "Medium slot item (1.0 x 1.0 x 0.6 m envelope): chamfered housing, bevelled front service panel, handles, connectors on top (node_port_N).",
+   "bbox_cad_zup": [
+    [
+     -0.49,
+     -0.538,
+     -0.32
+    ],
+    [
+     0.49,
+     0.49,
+     0.32
+    ]
+   ],
+   "bbox_godot_size": [
+    0.98,
+    0.64,
+    1.028
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_mount",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_11_battery_module_medium.step",
+    "glb": "glb/ax_power_11_battery_module_medium.glb",
+    "preview": "renders/ax_power_11_battery_module_medium.png"
+   }
+  }
+ },
+ "display_id": "AX-power-11",
+ "key": "ax_power_11",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": "Small / Medium",
+ "interior": null,
+ "summary": "Li-ion battery slot item (internal only)"
+}

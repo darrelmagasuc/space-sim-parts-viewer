@@ -1,0 +1,170 @@
+{
+ "id": "ax_power_13",
+ "name": "PM-1 Power Management Unit",
+ "category": "power",
+ "short_name": "pmad_unit",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_power_13_pmad_unit_small",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.1,
+    0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.1,
+    0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    -0.32,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_13_pmad_unit_small": {
+   "vid": "ax_power_13_pmad_unit_small",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PM-1 Power Management Unit",
+   "primary": true,
+   "dims": {
+    "envelope": [
+     0.5,
+     0.5,
+     0.6
+    ]
+   },
+   "notes": "Small slot item (0.5 x 0.5 x 0.6 m envelope): chamfered housing, bevelled front service panel, handles, connectors on top (node_port_N).",
+   "bbox_cad_zup": [
+    [
+     -0.24,
+     -0.288,
+     -0.32
+    ],
+    [
+     0.24,
+     0.24000000000000002,
+     0.32
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.64,
+    0.528
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.1,
+      0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.1,
+      0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_mount",
+     "position": [
+      0.0,
+      -0.32,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_13_pmad_unit_small.step",
+    "glb": "glb/ax_power_13_pmad_unit_small.glb",
+    "preview": "renders/ax_power_13_pmad_unit_small.png"
+   }
+  }
+ },
+ "display_id": "AX-power-13",
+ "key": "ax_power_13",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": "Small",
+ "interior": null,
+ "summary": "Power distribution / PMAD slot item"
+}

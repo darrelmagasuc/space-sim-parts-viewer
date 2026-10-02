@@ -1,0 +1,286 @@
+{
+ "id": "ax_power_03",
+ "name": "PV-UF Circular Fan Array",
+ "category": "power",
+ "short_name": "fan_array",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_power_03_fan_array_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.3611,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_03_fan_array_s": {
+   "vid": "ax_power_03_fan_array_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PV-UF Circular Fan Array",
+   "primary": true,
+   "dims": {
+    "radius": 1.2
+   },
+   "notes": "Circular fan-fold array (R 1.2 m, 10 gores on spars), hub + yoke on a bevelled mount block; stowed = gores folded into a 30 deg pack.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.125,
+     -0.36108698201924694
+    ],
+    [
+     0.562,
+     1.2,
+     0.3610869820192469
+    ]
+   ],
+   "bbox_godot_size": [
+    0.687,
+    0.722,
+    1.325
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3611,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "petal_1",
+    "petal_2",
+    "petal_3",
+    "petal_4",
+    "petal_5",
+    "petal_6",
+    "petal_7",
+    "petal_8",
+    "petal_9",
+    "petal_10"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_03_fan_array_s.step",
+    "glb": "glb/ax_power_03_fan_array_s.glb",
+    "preview": "renders/ax_power_03_fan_array_s.png"
+   }
+  },
+  "ax_power_03_fan_array_s_deployed": {
+   "vid": "ax_power_03_fan_array_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PV-UF Circular Fan Array",
+   "primary": false,
+   "dims": {
+    "radius": 1.2
+   },
+   "notes": "Circular fan-fold array (R 1.2 m, 10 gores on spars), hub + yoke on a bevelled mount block; stowed = gores folded into a 30 deg pack.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -1.2,
+     -1.1545132564611749
+    ],
+    [
+     0.562,
+     1.2,
+     1.2323392924226808
+    ]
+   ],
+   "bbox_godot_size": [
+    0.687,
+    2.387,
+    2.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3611,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "petal_1",
+    "petal_2",
+    "petal_3",
+    "petal_4",
+    "petal_5",
+    "petal_6",
+    "petal_7",
+    "petal_8",
+    "petal_9",
+    "petal_10"
+   ],
+   "default_of": "ax_power_03_fan_array_s",
+   "files": {
+    "step": "step/ax_power_03_fan_array_s_deployed.step",
+    "glb": "glb/ax_power_03_fan_array_s_deployed.glb",
+    "preview": "renders/ax_power_03_fan_array_s_deployed.png"
+   }
+  },
+  "ax_power_03_fan_array_m": {
+   "vid": "ax_power_03_fan_array_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PV-UF Circular Fan Array",
+   "primary": false,
+   "dims": {
+    "radius": 2.2
+   },
+   "notes": "Circular fan-fold array (R 2.2 m, 10 gores on spars), hub + yoke on a bevelled mount block; stowed = gores folded into a 30 deg pack.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -0.125,
+     -0.5809930091410145
+    ],
+    [
+     0.712,
+     2.2,
+     0.5809930091410145
+    ]
+   ],
+   "bbox_godot_size": [
+    0.837,
+    1.162,
+    2.325
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "petal_1",
+    "petal_2",
+    "petal_3",
+    "petal_4",
+    "petal_5",
+    "petal_6",
+    "petal_7",
+    "petal_8",
+    "petal_9",
+    "petal_10"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_03_fan_array_m.step",
+    "glb": "glb/ax_power_03_fan_array_m.glb",
+    "preview": "renders/ax_power_03_fan_array_m.png"
+   }
+  },
+  "ax_power_03_fan_array_m_deployed": {
+   "vid": "ax_power_03_fan_array_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PV-UF Circular Fan Array",
+   "primary": false,
+   "dims": {
+    "radius": 2.2
+   },
+   "notes": "Circular fan-fold array (R 2.2 m, 10 gores on spars), hub + yoke on a bevelled mount block; stowed = gores folded into a 30 deg pack.",
+   "bbox_cad_zup": [
+    [
+     -0.125,
+     -2.2,
+     -2.1879481698102015
+    ],
+    [
+     0.712,
+     2.2,
+     2.1879481698102015
+    ]
+   ],
+   "bbox_godot_size": [
+    0.837,
+    4.376,
+    4.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "petal_1",
+    "petal_2",
+    "petal_3",
+    "petal_4",
+    "petal_5",
+    "petal_6",
+    "petal_7",
+    "petal_8",
+    "petal_9",
+    "petal_10"
+   ],
+   "default_of": "ax_power_03_fan_array_m",
+   "files": {
+    "step": "step/ax_power_03_fan_array_m_deployed.step",
+    "glb": "glb/ax_power_03_fan_array_m_deployed.glb",
+    "preview": "renders/ax_power_03_fan_array_m_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-03",
+ "key": "ax_power_03",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Circular fan-fold array"
+}

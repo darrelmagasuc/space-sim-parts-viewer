@@ -1,0 +1,294 @@
+{
+ "id": "ax_power_02",
+ "name": "PV-RG Rigid Solar Wing",
+ "category": "power",
+ "short_name": "rigid_wing",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_power_02_rigid_wing_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.795,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_02_rigid_wing_m": {
+   "vid": "ax_power_02_rigid_wing_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PV-RG Rigid Solar Wing",
+   "primary": true,
+   "dims": {
+    "panels": 3,
+    "panel": [
+     1.6,
+     1.2
+    ]
+   },
+   "notes": "Rigid wing: 3 chamfered-frame panels 1.6 x 1.2 m (accordion fold, stack when stowed), yoke + 2-axis gimbal on a bevelled mount block.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -0.795
+    ],
+    [
+     2.1000000000000005,
+     0.2625000000000002,
+     0.795
+    ]
+   ],
+   "bbox_godot_size": [
+    2.3,
+    1.59,
+    0.463
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.795,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_1",
+    "panel_1_cells",
+    "panel_2",
+    "panel_2_cells",
+    "panel_3",
+    "panel_3_cells"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_02_rigid_wing_m.step",
+    "glb": "glb/ax_power_02_rigid_wing_m.glb",
+    "preview": "renders/ax_power_02_rigid_wing_m.png"
+   }
+  },
+  "ax_power_02_rigid_wing_m_deployed": {
+   "vid": "ax_power_02_rigid_wing_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PV-RG Rigid Solar Wing",
+   "primary": false,
+   "dims": {
+    "panels": 3,
+    "panel": [
+     1.6,
+     1.2
+    ]
+   },
+   "notes": "Rigid wing: 3 chamfered-frame panels 1.6 x 1.2 m (accordion fold, stack when stowed), yoke + 2-axis gimbal on a bevelled mount block.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -0.795
+    ],
+    [
+     5.340000000000001,
+     0.2,
+     0.795
+    ]
+   ],
+   "bbox_godot_size": [
+    5.54,
+    1.59,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.795,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_1",
+    "panel_1_cells",
+    "panel_2",
+    "panel_2_cells",
+    "panel_3",
+    "panel_3_cells"
+   ],
+   "default_of": "ax_power_02_rigid_wing_m",
+   "files": {
+    "step": "step/ax_power_02_rigid_wing_m_deployed.step",
+    "glb": "glb/ax_power_02_rigid_wing_m_deployed.glb",
+    "preview": "renders/ax_power_02_rigid_wing_m_deployed.png"
+   }
+  },
+  "ax_power_02_rigid_wing_l": {
+   "vid": "ax_power_02_rigid_wing_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "PV-RG Rigid Solar Wing",
+   "primary": false,
+   "dims": {
+    "panels": 5,
+    "panel": [
+     2.4,
+     1.8
+    ]
+   },
+   "notes": "Rigid wing: 5 chamfered-frame panels 2.4 x 1.8 m (accordion fold, stack when stowed), yoke + 2-axis gimbal on a bevelled mount block.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -1.0950000000000002
+    ],
+    [
+     2.9000000000000004,
+     0.3075000000000002,
+     1.0950000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    3.1,
+    2.19,
+    0.508
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -1.095,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_1",
+    "panel_1_cells",
+    "panel_2",
+    "panel_2_cells",
+    "panel_3",
+    "panel_3_cells",
+    "panel_4",
+    "panel_4_cells",
+    "panel_5",
+    "panel_5_cells"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_02_rigid_wing_l.step",
+    "glb": "glb/ax_power_02_rigid_wing_l.glb",
+    "preview": "renders/ax_power_02_rigid_wing_l.png"
+   }
+  },
+  "ax_power_02_rigid_wing_l_deployed": {
+   "vid": "ax_power_02_rigid_wing_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "PV-RG Rigid Solar Wing",
+   "primary": false,
+   "dims": {
+    "panels": 5,
+    "panel": [
+     2.4,
+     1.8
+    ]
+   },
+   "notes": "Rigid wing: 5 chamfered-frame panels 2.4 x 1.8 m (accordion fold, stack when stowed), yoke + 2-axis gimbal on a bevelled mount block.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -1.0950000000000002
+    ],
+    [
+     12.58,
+     0.2,
+     1.0950000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    12.78,
+    2.19,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -1.095,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "panel_1",
+    "panel_1_cells",
+    "panel_2",
+    "panel_2_cells",
+    "panel_3",
+    "panel_3_cells",
+    "panel_4",
+    "panel_4_cells",
+    "panel_5",
+    "panel_5_cells"
+   ],
+   "default_of": "ax_power_02_rigid_wing_l",
+   "files": {
+    "step": "step/ax_power_02_rigid_wing_l_deployed.step",
+    "glb": "glb/ax_power_02_rigid_wing_l_deployed.glb",
+    "preview": "renders/ax_power_02_rigid_wing_l_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-power-02",
+ "key": "ax_power_02",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Gimballed rigid solar wing with chamfered frame"
+}

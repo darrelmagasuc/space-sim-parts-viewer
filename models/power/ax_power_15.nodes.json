@@ -1,0 +1,179 @@
+{
+ "id": "ax_power_15",
+ "name": "PA-1 Conformal Phased-Array Panel",
+ "category": "power",
+ "short_name": "phased_array",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_power_15_phased_array_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.0225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_face",
+   "position": [
+    0.0,
+    0.0225,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_power_15_phased_array_s": {
+   "vid": "ax_power_15_phased_array_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PA-1 Conformal Phased-Array Panel",
+   "primary": true,
+   "dims": {
+    "w": 0.5
+   },
+   "notes": "Flush flat-panel phased array: bevelled recess with a grid of dark radiating elements; no moving parts.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.02250005
+    ],
+    [
+     0.25,
+     0.25,
+     0.022500049999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.045,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_15_phased_array_s.step",
+    "glb": "glb/ax_power_15_phased_array_s.glb",
+    "preview": "renders/ax_power_15_phased_array_s.png"
+   }
+  },
+  "ax_power_15_phased_array_m": {
+   "vid": "ax_power_15_phased_array_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PA-1 Conformal Phased-Array Panel",
+   "primary": false,
+   "dims": {
+    "w": 1.0
+   },
+   "notes": "Flush flat-panel phased array: bevelled recess with a grid of dark radiating elements; no moving parts.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.5,
+     -0.022500050000000014
+    ],
+    [
+     0.5,
+     0.5,
+     0.02250005000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.045,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_face",
+     "position": [
+      0.0,
+      0.0225,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_power_15_phased_array_m.step",
+    "glb": "glb/ax_power_15_phased_array_m.glb",
+    "preview": "renders/ax_power_15_phased_array_m.png"
+   }
+  }
+ },
+ "display_id": "AX-power-15",
+ "key": "ax_power_15",
+ "line": "AX",
+ "ax_category": "power",
+ "aliases": [],
+ "batch": "B7",
+ "slot": null,
+ "interior": null,
+ "summary": "Flush flat-panel phased array (no moving parts)"
+}
