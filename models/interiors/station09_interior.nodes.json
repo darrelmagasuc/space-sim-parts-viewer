@@ -1,0 +1,1288 @@
+{
+ "id": "station09",
+ "name": "GR-HUB Spin Hub & Bearing",
+ "exterior_primary": "station09_spin_hub",
+ "primary": "station09_spin_hub_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.0045,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "axial (node_bottom -> node_top, through both rotating-interface hatches)",
+    "clear_diameter_m": 1.099,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "interface_16_bulkhead",
+    "path_to_wall_min_m": 0.05
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_1",
+    "clear_diameter_m": 1.189,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq06_1",
+    "path_to_wall_min_m": 0.125
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_2",
+    "clear_diameter_m": 1.124,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq15_1",
+    "path_to_wall_min_m": 0.125
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_3",
+    "clear_diameter_m": 1.113,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq15_1",
+    "path_to_wall_min_m": 0.125
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_4",
+    "clear_diameter_m": 1.247,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq20_4",
+    "path_to_wall_min_m": 0.125
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_5",
+    "clear_diameter_m": 1.252,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq20_5",
+    "path_to_wall_min_m": 0.125
+   },
+   {
+    "aisle": "radial to spoke hatch node_side_6",
+    "clear_diameter_m": 1.229,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "eq03_1",
+    "path_to_wall_min_m": 0.125
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_3: rotor centre, looking at spoke hatch node_side_1",
+  "node_camera_4: lower axial hatch, looking along the hub axis"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "spoke dispatcher 1 (rotor, facing node_side_1)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null,
+   "down_godot": null,
+   "up_godot": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "n": 2,
+   "label": "spoke dispatcher 2 (rotor, facing node_side_4)",
+   "kind": "restraint",
+   "posture": "standing",
+   "host": null,
+   "down_godot": null,
+   "up_godot": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "exterior_hide": [],
+ "skipped_variants": [],
+ "gravity": {
+  "type": "zero_g",
+  "down_godot": null,
+  "spin_axis_godot": [
+   0,
+   1,
+   0
+  ],
+  "note": "Hub on the spin axis. The rotor drum turns with the ring (<= 0.03 g at its wall at 4 rpm); the stators are despun. No preferred 'down': crew 'up' is per node (node +Z).",
+  "spinning_volumes_godot_y": [
+   [
+    -1.17,
+    1.17
+   ]
+  ]
+ },
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 0,
+ "wall_t_m": 0.1,
+ "cavity": {
+  "volume_m3": 45.57,
+  "size_godot_xyz_m": [
+   4.15,
+   4.41,
+   4.17
+  ],
+  "wall_t_m": 0.1
+ },
+ "layout": "zero-g transfer hub: rotor drum (z -1.17..+1.17, spins with the ring) with 6 spoke hatches, two despun stator vestibules (z +-1.23..+-2.2) behind rotating-seal bulkheads with 1.1 m hatches, axial hatches to the core (node_bottom) and node_top",
+ "panels": [],
+ "hatches": [
+  "axial hatch dia 1.1 (node_bottom, despun, to the core)",
+  "axial hatch dia 1.1 (node_top, despun)",
+  "spoke hatch dia 0.7 (node_side_1, az 0 deg, z +0)",
+  "spoke hatch dia 0.7 (node_side_2, az 60 deg, z +0)",
+  "spoke hatch dia 0.7 (node_side_3, az 120 deg, z +0)",
+  "spoke hatch dia 0.7 (node_side_4, az 180 deg, z +0)",
+  "spoke hatch dia 0.7 (node_side_5, az 240 deg, z +0)",
+  "spoke hatch dia 0.7 (node_side_6, az 300 deg, z +0)",
+  "rotating-interface hatch dia 1.1 at z -1.2 (rotor <-> lower stator; node points to the stator)",
+  "rotating-interface hatch dia 1.1 at z +1.2 (rotor <-> upper stator; node points to the stator)"
+ ],
+ "windows": 0,
+ "notes": [
+  "station09: node_hatch_1/2 = node_bottom/node_top, 3..8 = spoke ports node_side_1..6, 9/10 = rotating-interface hatches (z -1.2 / +1.2)",
+  "station09: the spoke apertures in the exterior are S class (0.75 m), so the spoke hatches are 0.7 m; 1 m aisles are kept inside the hub"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.744,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -0.4,
+     -0.95,
+     0.55
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.744,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     0.4,
+     0.95,
+     -0.55
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit eq06_1: pushed 0.02 m inward",
+   "fit eq15_1: pushed 0.02 m inward",
+   "fit eq14_1: pushed 0.01 m inward",
+   "fit eq17_1: pushed 0.01 m inward",
+   "fit eq03_1: pushed 0.01 m inward",
+   "fit eq20_1: pushed 0.03 m inward",
+   "fit eq20_2: pushed 0.02 m inward",
+   "fit eq20_3: pushed 0.03 m inward",
+   "fit eq20_4: pushed 0.02 m inward",
+   "fit eq20_5: pushed 0.03 m inward",
+   "fit eq20_6: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit eq17_2: pushed 0.01 m inward",
+   "fit eq06_2: pushed 0.02 m inward",
+   "fit eq15_2: pushed 0.02 m inward",
+   "fit eq14_2: pushed 0.02 m inward",
+   "fit eq19_1: pushed 0.01 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward"
+  ]
+ },
+ "moving_props": [],
+ "moving_meshes": [
+  "hatch_door_1",
+  "hatch_door_2",
+  "hatch_door_3",
+  "hatch_door_4",
+  "hatch_door_5",
+  "hatch_door_6",
+  "hatch_door_7",
+  "hatch_door_8",
+  "hatch_door_9",
+  "hatch_door_10"
+ ],
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -2.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    2.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_3",
+   "position": [
+    2.025,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_4",
+   "position": [
+    1.0125,
+    0.0,
+    -1.7537
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    -0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_5",
+   "position": [
+    -1.0125,
+    0.0,
+    -1.7537
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    -0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_6",
+   "position": [
+    -2.025,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_7",
+   "position": [
+    -1.0125,
+    0.0,
+    1.7537
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_8",
+   "position": [
+    1.0125,
+    0.0,
+    1.7537
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_9",
+   "position": [
+    0.0,
+    -1.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_10",
+   "position": [
+    0.0,
+    1.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.4,
+    0.4,
+    0.05
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.26,
+    0.4,
+    -0.7
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.4,
+    -0.4,
+    -0.05
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.26,
+    -0.4,
+    0.7
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.0,
+    -2.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station09_spin_hub_interior": {
+   "exterior_variant": "station09_spin_hub",
+   "state": "flight",
+   "size": "L",
+   "crew": 0,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -2.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      2.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_3",
+     "position": [
+      2.025,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_4",
+     "position": [
+      1.0125,
+      0.0,
+      -1.7537
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      -0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_5",
+     "position": [
+      -1.0125,
+      0.0,
+      -1.7537
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      -0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_6",
+     "position": [
+      -2.025,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_7",
+     "position": [
+      -1.0125,
+      0.0,
+      1.7537
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_8",
+     "position": [
+      1.0125,
+      0.0,
+      1.7537
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_9",
+     "position": [
+      0.0,
+      -1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_10",
+     "position": [
+      0.0,
+      1.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.4,
+      0.4,
+      0.05
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.26,
+      0.4,
+      -0.7
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.4,
+      -0.4,
+      -0.05
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.26,
+      -0.4,
+      0.7
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      1.436,
+      0.0011,
+      -0.8267
+     ],
+     "basis_columns": [
+      [
+       0.5214,
+       0.0,
+       0.8533
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.8533,
+       0.0,
+       0.5214
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      -0.0028,
+      0.0011,
+      -1.6084
+     ],
+     "basis_columns": [
+      [
+       0.9997,
+       0.0,
+       0.0249
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0249,
+       0.0,
+       0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      -1.4487,
+      0.0011,
+      -0.8417
+     ],
+     "basis_columns": [
+      [
+       0.4783,
+       0.0,
+       -0.8782
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.8782,
+       0.0,
+       0.4783
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      -1.4655,
+      0.0011,
+      0.8475
+     ],
+     "basis_columns": [
+      [
+       -0.4783,
+       0.0,
+       -0.8782
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.8782,
+       0.0,
+       -0.4783
+      ]
+     ]
+    },
+    {
+     "instance": "eq17_1",
+     "prop": "eq17_fan_unit",
+     "position": [
+      -0.0018,
+      0.0011,
+      1.6504
+     ],
+     "basis_columns": [
+      [
+       -0.9997,
+       0.0,
+       0.0249
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.0249,
+       0.0,
+       -0.9997
+      ]
+     ]
+    },
+    {
+     "instance": "eq03_1",
+     "prop": "eq03_avionics_box",
+     "position": [
+      1.402,
+      0.0011,
+      0.8025
+     ],
+     "basis_columns": [
+      [
+       -0.5214,
+       0.0,
+       0.8533
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.8533,
+       0.0,
+       -0.5214
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_1",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      1.6134,
+      0.8511,
+      -0.0004
+     ],
+     "basis_columns": [
+      [
+       -0.0083,
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0083
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_2",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      0.808,
+      -0.8487,
+      -1.3989
+     ],
+     "basis_columns": [
+      [
+       -0.866,
+       0.0,
+       -0.5
+      ],
+      [
+       -0.5,
+       0.0013,
+       0.866
+      ],
+      [
+       0.0007,
+       1.0,
+       -0.0011
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_3",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -0.8063,
+      0.8511,
+      -1.3965
+     ],
+     "basis_columns": [
+      [
+       -0.8719,
+       0.0,
+       0.4896
+      ],
+      [
+       0.4896,
+       0.0,
+       0.8719
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_4",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -1.6153,
+      -0.8487,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       1.0,
+       0.0013,
+       0.0
+      ],
+      [
+       -0.0013,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_5",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      -0.8075,
+      0.8511,
+      1.3959
+     ],
+     "basis_columns": [
+      [
+       0.8711,
+       0.0,
+       0.491
+      ],
+      [
+       0.491,
+       0.0,
+       -0.8711
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq20_6",
+     "prop": "eq20_cargo_transfer_bag",
+     "position": [
+      0.8088,
+      -0.8487,
+      1.3979
+     ],
+     "basis_columns": [
+      [
+       0.8645,
+       0.0,
+       -0.5026
+      ],
+      [
+       -0.5026,
+       0.0011,
+       -0.8645
+      ],
+      [
+       0.0006,
+       1.0,
+       0.001
+      ]
+     ]
+    },
+    {
+     "instance": "eq17_2",
+     "prop": "eq17_fan_unit",
+     "position": [
+      1.1644,
+      1.751,
+      -1.1713
+     ],
+     "basis_columns": [
+      [
+       0.6802,
+       0.0,
+       0.7331
+      ],
+      [
+       -0.0008,
+       1.0,
+       0.0007
+      ],
+      [
+       -0.7331,
+       -0.0011,
+       0.6802
+      ]
+     ]
+    },
+    {
+     "instance": "eq06_2",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -1.1726,
+      1.751,
+      -1.1735
+     ],
+     "basis_columns": [
+      [
+       0.7159,
+       0.0,
+       -0.6982
+      ],
+      [
+       0.0008,
+       1.0,
+       0.0009
+      ],
+      [
+       0.6982,
+       -0.0012,
+       0.7159
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_2",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      -1.1858,
+      1.751,
+      1.1837
+     ],
+     "basis_columns": [
+      [
+       -0.7159,
+       0.0,
+       -0.6982
+      ],
+      [
+       0.0008,
+       1.0,
+       -0.0009
+      ],
+      [
+       0.6982,
+       -0.0012,
+       -0.7159
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_2",
+     "prop": "eq15_comms_radio",
+     "position": [
+      1.1332,
+      -1.7487,
+      1.1391
+     ],
+     "basis_columns": [
+      [
+       -0.6802,
+       0.0,
+       0.7331
+      ],
+      [
+       0.0008,
+       1.0,
+       0.0008
+      ],
+      [
+       -0.7331,
+       0.0011,
+       -0.6802
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_2",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      1.1869,
+      -1.7488,
+      -1.1922
+     ],
+     "basis_columns": [
+      [
+       0.6802,
+       0.0,
+       0.7331
+      ],
+      [
+       0.0008,
+       1.0,
+       -0.0008
+      ],
+      [
+       -0.7331,
+       0.0011,
+       0.6802
+      ]
+     ]
+    },
+    {
+     "instance": "eq19_1",
+     "prop": "eq19_stowage_bag",
+     "position": [
+      -1.6204,
+      -1.7487,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       -0.0013,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0013,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/station09_spin_hub_interior.glb",
+    "glb_combined": "glb/station09_spin_hub_combined.glb",
+    "glb_cutaway": "glb/station09_spin_hub_cutaway.glb",
+    "step": "step/station09_spin_hub_interior.step",
+    "exterior_glb": "../station_power/glb/station09_spin_hub.glb",
+    "preview": "renders/station09_spin_hub_interior.png"
+   }
+  }
+ }
+}

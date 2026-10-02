@@ -1,0 +1,41 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test AX Capsule Stack G",
+  "summary": "AX line: CM-8 'Ares' capsule on the ST-L service trunk (Dragon-style: the trunk mates to the capsule's heat-shield carrier land; conformal solar cells + radiators, 4 Medium slots).",
+  "root": "capsule",
+  "parts": [
+    {
+      "id": "capsule",
+      "variant": "ax_cmd_01_ares_capsule",
+      "note": "root (AX-cmd-01, alias cmd11)"
+    },
+    {
+      "id": "trunk",
+      "variant": "ax_cmd_12_service_trunk",
+      "note": "AX-cmd-12 (4 Medium slots in slots.positions, jettisoned before entry)"
+    }
+  ],
+  "connections": [
+    {
+      "child": "trunk",
+      "childNode": "node_top",
+      "parent": "capsule",
+      "parentNode": "node_bottom",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Trunk sep",
+      "parts": [
+        "trunk"
+      ],
+      "note": "Jettison the trunk before entry; the capsule enters shield-first."
+    }
+  ],
+  "manual": "# Test AX Capsule Stack G\nCapsule node_bottom (heat-shield carrier land) -> trunk node_top. The separate HS-1 heat shield (AX-cmd-15) and the SM-L service module (AX-cmd-13) are left out: their bounding boxes are not centred between their stack nodes (shield dome / OMS nozzle hang below node_bottom), and assemble.js centres the overlap box between the nodes, so it would flag the joint as overlapping."
+}

@@ -1,0 +1,69 @@
+{
+  "format": "space-sim-craft",
+  "version": 1,
+  "name": "Test AX Ares Hopper F",
+  "summary": "AX line: Ares MDV-style hopper stack (the modern_set reference stack, re-keyed): LC-1 'Hopper' landing cluster, T-LS lander tank section, CM-8 'Ares' capsule in the cradle, four deployed LL-T L lander legs on the tank hardpoints (feet 0.82 m below the engine plate).",
+  "root": "tank",
+  "parts": [
+    {
+      "id": "tank",
+      "variant": "ax_tank_02_lander_tank_section",
+      "note": "root (AX-tank-02, alias tank15)"
+    },
+    {
+      "id": "capsule",
+      "variant": "ax_cmd_01_ares_capsule",
+      "note": "AX-cmd-01, alias cmd11"
+    },
+    {
+      "id": "engines",
+      "variant": "ax_prop_02_hopper_cluster",
+      "note": "AX-prop-02, alias prop28"
+    },
+    {
+      "id": "leg",
+      "variant": "ax_gear_04_lander_leg_l_deployed",
+      "note": "AX-gear-04 L, symmetry 4 on the leg hardpoints"
+    }
+  ],
+  "connections": [
+    {
+      "child": "capsule",
+      "childNode": "node_bottom",
+      "parent": "tank",
+      "parentNode": "node_top",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "engines",
+      "childNode": "node_top",
+      "parent": "tank",
+      "parentNode": "node_bottom",
+      "symmetry": 1,
+      "rotation": 0,
+      "offset": 0
+    },
+    {
+      "child": "leg",
+      "childNode": "node_attach",
+      "parent": "tank",
+      "parentNode": "node_side_1",
+      "symmetry": 4,
+      "rotation": 0,
+      "offset": 0
+    }
+  ],
+  "staging": [
+    {
+      "stage": 1,
+      "title": "Hop",
+      "parts": [
+        "engines"
+      ],
+      "note": "Deep-throttle landing cluster; legs are already deployed."
+    }
+  ],
+  "manual": "# Test AX Ares Hopper F\nAX line ids only (old modern_set ids cmd11 / tank15 / prop28 resolve through parts_manifest.json \"redirects\"). Root is the tank section; capsule on node_top, engine cluster under node_bottom, legs on node_side_1..4."
+}

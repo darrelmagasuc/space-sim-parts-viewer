@@ -1,0 +1,819 @@
+{
+ "id": "rover24",
+ "name": "CB-P Pressurised Rover Cab",
+ "exterior_primary": "rover24_pressurised_cab_m",
+ "primary": "rover24_pressurised_cab_m_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.004,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "rear cabin -> suitport +X (crouched, under the bunk)",
+    "clear_diameter_m": 0.805,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "eq12_1",
+    "path_to_wall_min_m": 0.23
+   },
+   {
+    "aisle": "rear cabin -> suitport -X (crouched, under the bunk)",
+    "clear_diameter_m": 0.81,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "eq19_1",
+    "path_to_wall_min_m": 0.23
+   },
+   {
+    "aisle": "between the seats -> rear cabin (squeeze)",
+    "clear_diameter_m": 0.475,
+    "required_m": 0.45,
+    "ok": true,
+    "limiting_item": "dash_panel",
+    "path_to_wall_min_m": 0.497
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_4: between the suitports, looking forward"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "driver (left, +X)",
+   "kind": "upright",
+   "posture": "seated",
+   "host": null,
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 2,
+   "label": "co-driver (right, -X)",
+   "kind": "upright",
+   "posture": "seated",
+   "host": null,
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 3,
+   "label": "cross-cab bunk (lying, head toward +X)",
+   "kind": "bed",
+   "posture": "standing",
+   "host": "eq44_1",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "exterior_hide": [],
+ "skipped_variants": [
+  "rover24_pressurised_cab_l"
+ ],
+ "gravity": {
+  "type": "planetary",
+  "down_godot": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "up_godot": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "spin_axis_godot": null,
+  "down_rule": "part-local -Y (Godot) = CAD -Z: toward node_bottom / the ground / the wheels; uniform over the part; rotate it with the part when the vehicle pitches or rolls",
+  "floor_height_godot_y": -0.73,
+  "g_reference": {
+   "Moon": 0.165,
+   "Mars": 0.379,
+   "Earth": 1.0
+  },
+  "note": "cab on the chassis: floor 0.42 m above the cab's node_bottom; 1.77 m floor to ceiling (seated cab)",
+  "headroom_m": 1.77
+ },
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 2,
+ "wall_t_m": 0.08,
+ "cavity": {
+  "volume_m3": 9.86,
+  "size_godot_xyz_m": [
+   2.3,
+   1.81,
+   2.62
+  ],
+  "wall_t_m": 0.08
+ },
+ "layout": "SEV-style pressurised cab (M, 10 m3): driver +X / co-driver -X facing the sloped windscreen, dashboard, steering wheel + co-driver hand controller, centre console; rear: cross-cab fold-away bunk under the roof (1 berth; the 2nd crew sleeps in a reclined seat), water tank + dispenser, CO2 scrubber, food bag, 2 suitports in the rear wall, roof docking hatch",
+ "panels": [
+  "dashboard 1.9x0.30 (4 displays)"
+ ],
+ "hatches": [
+  "suitport +X 0.55x0.85 in the rear wall (node_hatch_1; suit backpack = hatch)",
+  "suitport -X 0.55x0.85 in the rear wall (node_hatch_2; suit backpack = hatch)",
+  "roof docking hatch dia 0.6 (node_hatch_3)"
+ ],
+ "windows": 3,
+ "notes": [
+  "rover24: only the M cab (primary, 2.5 x 3.0 x 2.3 m, 10 m3) has an interior; the L cab (3.0 x 4.5 x 2.6 m) is a different shell and is listed in skipped_variants",
+  "rover24: 1.77 m floor to ceiling, so the rear is crouch height; one cross-cab berth fits under the roof clear of the suitport and roof-hatch keep-outs, the second crew member sleeps in the reclined co-driver seat; no room for a toilet (use the habitat / suitport EVA)",
+  "rover24: suitport hatches are node_hatch_1 (+X) and node_hatch_2 (-X) like the exterior; roof docking hatch = node_hatch_3"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.008,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     0.35,
+     -1.243,
+     0.539
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.008,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -0.65,
+     -1.243,
+     0.539
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.05,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     -0.04,
+     0.41,
+     2.14
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit dash_panel: pushed 0.27 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward"
+  ]
+ },
+ "moving_props": [],
+ "moving_meshes": [
+  "yoke_1",
+  "hand_controller_2r",
+  "hatch_door_1",
+  "hatch_door_2",
+  "hatch_door_3"
+ ],
+ "nodes": [
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.5,
+    -0.21,
+    0.37
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.5,
+    0.5522,
+    0.4043
+   ],
+   "direction": [
+    0.0,
+    -0.1483,
+    0.9889
+   ],
+   "up": [
+    0.0,
+    0.9903,
+    -0.1392
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.5,
+    -0.21,
+    0.37
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.5,
+    0.5522,
+    0.4043
+   ],
+   "direction": [
+    0.0,
+    -0.1483,
+    0.9889
+   ],
+   "up": [
+    0.0,
+    0.9903,
+    -0.1392
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.5,
+    0.0,
+    -1.24
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -0.5,
+    0.0,
+    -1.24
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_3",
+   "position": [
+    0.0,
+    1.0,
+    -0.9
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.06,
+    0.71,
+    -0.17
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.69,
+    0.85,
+    -0.17
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.0,
+    0.27,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    -0.0499,
+    0.9988
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover24_pressurised_cab_m_interior": {
+   "exterior_variant": "rover24_pressurised_cab_m",
+   "state": "flight",
+   "size": "M",
+   "crew": 2,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.5,
+      -0.21,
+      0.37
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.5,
+      0.5522,
+      0.4043
+     ],
+     "direction": [
+      0.0,
+      -0.1483,
+      0.9889
+     ],
+     "up": [
+      0.0,
+      0.9903,
+      -0.1392
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.5,
+      -0.21,
+      0.37
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.5,
+      0.5522,
+      0.4043
+     ],
+     "direction": [
+      0.0,
+      -0.1483,
+      0.9889
+     ],
+     "up": [
+      0.0,
+      0.9903,
+      -0.1392
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.5,
+      0.0,
+      -1.24
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -0.5,
+      0.0,
+      -1.24
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_3",
+     "position": [
+      0.0,
+      1.0,
+      -0.9
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.06,
+      0.71,
+      -0.17
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.69,
+      0.85,
+      -0.17
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.0,
+      0.27,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      -0.0499,
+      0.9988
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq44_1",
+     "prop": "eq44_cross_cab_bunk",
+     "position": [
+      0.0,
+      0.67,
+      -0.17
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq11_1",
+     "prop": "eq11_water_tank",
+     "position": [
+      0.896,
+      -0.428,
+      -0.17
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq12_1",
+     "prop": "eq12_water_dispenser",
+     "position": [
+      1.021,
+      0.22,
+      -0.85
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq08_1",
+     "prop": "eq08_co2_scrubber",
+     "position": [
+      -0.896,
+      -0.428,
+      -0.17
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq19_1",
+     "prop": "eq19_stowage_bag",
+     "position": [
+      -1.011,
+      0.27,
+      -0.85
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      -1.056,
+      -0.28,
+      -1.12
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      1.0835,
+      -0.28,
+      -1.06
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      0.0,
+      0.901,
+      0.25
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       -1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq17_1",
+     "prop": "eq17_fan_unit",
+     "position": [
+      0.75,
+      0.931,
+      -0.9
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       -1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/rover24_pressurised_cab_m_interior.glb",
+    "glb_combined": "glb/rover24_pressurised_cab_m_combined.glb",
+    "glb_cutaway": "glb/rover24_pressurised_cab_m_cutaway.glb",
+    "step": "step/rover24_pressurised_cab_m_interior.step",
+    "exterior_glb": "../rover_kit/glb/rover24_pressurised_cab_m.glb",
+    "preview": "renders/rover24_pressurised_cab_m_interior.png"
+   }
+  }
+ }
+}

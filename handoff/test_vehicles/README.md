@@ -1,6 +1,6 @@
 # Test vehicles
 
-Five crafts in the save format (`*.craft.json`, see `../vehicle_creation_spec.md` §2.2), each with the result the viewer's builder (`assemble.js`) produces for it (`*.expected.json`). Use them to check a port of Vehicle Creation: **assemble each craft and compare against its expected file**.
+Seven crafts in the save format (`*.craft.json`, see `../vehicle_creation_spec.md` §2.2), each with the result the viewer's builder (`assemble.js`) produces for it (`*.expected.json`). Use them to check a port of Vehicle Creation: **assemble each craft and compare against its expected file**.
 
 | craft | name | parts / connections | instances / joints | what it checks |
 |---|---|---|---|---|
@@ -8,6 +8,8 @@ Five crafts in the save format (`*.craft.json`, see `../vehicle_creation_spec.md
 | `lander` | Test Lander B | 5 / 4 | 11 / 10 | capsule on a tank, descent engine, legs symmetry 4 / offset 45°, RCS quads symmetry 4 on the capsule's side node |
 | `station_segment` | Test Station Segment C | 5 / 4 | 6 / 5 | 6-port node as root, hab on top, truss below, solar wings symmetry 2 on the truss, antenna on a side port |
 | `kit_rover` | Test Kit Rover D | 16 / 15 | 16 / 15 | rover kit: rails `node_rail_l_K` (+X) / `node_rail_r_K` (−X), arm → motor → wheel chains, deck grid, light under the deck; both antiparallel cases (180° about Y on the right rail, 180° about Z under the deck) |
+| `ax_ares_hopper` | Test AX Ares Hopper F | 4 / 3 | 7 / 6 | AX line (0.4.0): `ax_prop_02` landing cluster → `ax_tank_02` lander tank section (root) → `ax_cmd_01` capsule; 4 `ax_gear_04` L legs, symmetry 4 on `node_side_1`, feet 0.82 m below the engine plate |
+| `ax_capsule_stack` | Test AX Capsule Stack G | 2 / 1 | 2 / 1 | AX line (0.4.0): `ax_cmd_01` capsule (root) on the `ax_cmd_12` service trunk |
 | `ring_ship` | Test Ring Ship E | 9 / 8 | 27 / 14 | spine stack with a spin hub; `layout: "spoke"` ×6 (mated) and `layout: "ring"` ×12 (hub origin, rotated about the hub's +Y, no joints); symmetric solar wings and radiators |
 
 ## `*.expected.json`
@@ -22,7 +24,7 @@ Five crafts in the save format (`*.craft.json`, see `../vehicle_creation_spec.md
   joints: [ { parentId, parentNode, childId, childNode, symmetryIndex, angle_deg,
               position, parentDirection, childDirection } ] }
 ```
-Values are rounded to 1e-6. All five assemble with **0 errors and 0 warnings**. In every joint the child node lies on the parent node (< 1e-6 m) and the directions are opposite (dot < −0.999999).
+Values are rounded to 1e-6. All seven assemble with **0 errors and 0 warnings**. In every joint the child node lies on the parent node (< 1e-6 m) and the directions are opposite (dot < −0.999999).
 
 ## How to check a port
 1. Load `parts_manifest.json`, which provides the variants and their nodes (`pos`, `dir`).

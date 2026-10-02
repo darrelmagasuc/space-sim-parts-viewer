@@ -1,0 +1,787 @@
+{
+ "craft": "ax_ares_hopper.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 7,
+  "joints": 6,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "tank",
+   "seedId": "tank",
+   "variant": "ax_tank_02_lander_tank_section",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_side_1",
+     "position": [
+      2.48,
+      -0.79,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      -0.79,
+      -2.48
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.48,
+      -0.79,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      -0.79,
+      2.48
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      1.15,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -1.15,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "capsule",
+   "seedId": "capsule",
+   "variant": "ax_cmd_01_ares_capsule",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    2.365,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      3.84,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      1.15,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.82,
+      1.55,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.82,
+      2.0462,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.28,
+      1.55,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.28,
+      2.0462,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.28,
+      1.55,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.28,
+      2.0462,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.82,
+      1.55,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.82,
+      2.0462,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0,
+      1.8981,
+      1.398
+     ],
+     "direction": [
+      0,
+      0.334917,
+      0.942248
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0,
+      3.77,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "engines",
+   "seedId": "engines",
+   "variant": "ax_prop_02_hopper_cluster",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    -2.075,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      -1.15,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -3,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leg",
+   "seedId": "leg",
+   "variant": "ax_gear_04_lander_leg_l_deployed",
+   "parentId": "tank",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    2.787,
+    -0.2911,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      2.48,
+      -0.79,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      4.4417,
+      -3.8221,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leg@2",
+   "seedId": "leg",
+   "variant": "ax_gear_04_lander_leg_l_deployed",
+   "parentId": "tank",
+   "symmetryIndex": 2,
+   "layout": null,
+   "origin": [
+    0,
+    -0.2911,
+    -2.787
+   ],
+   "quaternion": [
+    0,
+    0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0,
+      -0.79,
+      -2.48
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0,
+      -3.8221,
+      -4.4417
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leg@3",
+   "seedId": "leg",
+   "variant": "ax_gear_04_lander_leg_l_deployed",
+   "parentId": "tank",
+   "symmetryIndex": 3,
+   "layout": null,
+   "origin": [
+    -2.787,
+    -0.2911,
+    0
+   ],
+   "quaternion": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "basis": [
+    [
+     -1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     -1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -2.48,
+      -0.79,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      -4.4417,
+      -3.8221,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leg@4",
+   "seedId": "leg",
+   "variant": "ax_gear_04_lander_leg_l_deployed",
+   "parentId": "tank",
+   "symmetryIndex": 4,
+   "layout": null,
+   "origin": [
+    0,
+    -0.2911,
+    2.787
+   ],
+   "quaternion": [
+    0,
+    -0.707107,
+    0,
+    0.707107
+   ],
+   "basis": [
+    [
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     -1,
+     0,
+     0
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0,
+      -0.79,
+      2.48
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_foot",
+     "position": [
+      0,
+      -3.8221,
+      4.4417
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "tank",
+   "parentNode": "node_top",
+   "childId": "capsule",
+   "childNode": "node_bottom",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    1.15,
+    0
+   ],
+   "parentDirection": [
+    0,
+    1,
+    0
+   ],
+   "childDirection": [
+    0,
+    -1,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_bottom",
+   "childId": "engines",
+   "childNode": "node_top",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    -1.15,
+    0
+   ],
+   "parentDirection": [
+    0,
+    -1,
+    0
+   ],
+   "childDirection": [
+    0,
+    1,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "leg",
+   "childNode": "node_attach",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    2.48,
+    -0.79,
+    0
+   ],
+   "parentDirection": [
+    1,
+    0,
+    0
+   ],
+   "childDirection": [
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "leg@2",
+   "childNode": "node_attach",
+   "symmetryIndex": 2,
+   "angle_deg": 90,
+   "position": [
+    0,
+    -0.79,
+    -2.48
+   ],
+   "parentDirection": [
+    0,
+    0,
+    -1
+   ],
+   "childDirection": [
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "leg@3",
+   "childNode": "node_attach",
+   "symmetryIndex": 3,
+   "angle_deg": 180,
+   "position": [
+    -2.48,
+    -0.79,
+    0
+   ],
+   "parentDirection": [
+    -1,
+    0,
+    0
+   ],
+   "childDirection": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "parentId": "tank",
+   "parentNode": "node_side_1",
+   "childId": "leg@4",
+   "childNode": "node_attach",
+   "symmetryIndex": 4,
+   "angle_deg": 270,
+   "position": [
+    0,
+    -0.79,
+    2.48
+   ],
+   "parentDirection": [
+    0,
+    0,
+    1
+   ],
+   "childDirection": [
+    0,
+    0,
+    -1
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

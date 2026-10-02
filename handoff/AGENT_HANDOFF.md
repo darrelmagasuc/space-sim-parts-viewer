@@ -11,7 +11,7 @@
 | `parts_manifest.json` | every part and variant, plus the released interiors: ids, sizes, roles, mass, nodes, slots, tris, paths, URLs and sha256 hashes. It also carries `manifest_version`, `generated_at` and its schema, under `"schema"` |
 | `CHANGELOG.md` | what changed in each release (`parts-vX.Y.Z`), listing added, changed and removed ids |
 | `vehicle_creation_spec.md` | precise, engine-agnostic spec of the builder (snap rules, symmetry, compatibility, data model, save format) plus a GDScript porting guide |
-| `test_vehicles/` | 5 saved crafts (`*.craft.json`) and their expected world-space results (`*.expected.json`) for checking your port |
+| `test_vehicles/` | 7 saved crafts (2 of them AX line) (`*.craft.json`) and their expected world-space results (`*.expected.json`) for checking your port |
 | `materials_library.json` | the shared low-poly PBR material library (names and values) |
 | `tools/` | `build_manifest.py` (regenerates the manifest), `build_test_vehicles.mjs` (regenerates/checks the test vehicles with the viewer's own code), `reference_builder.py` (a ~175-line second implementation of the placement rules, a good template for GDScript), `sync_to_godot.py` (copies the parts and interiors into a Godot project and re-syncs changed ids by hash), `import_interiors.py` (brings released interiors into the site), `publish_update.py` (cuts a release; run only on Darrel's request) |
 
@@ -23,9 +23,11 @@ A **KSP-like spaceflight sim, grounded near-future**: parts are modelled on real
 
 This repo, **`darrelmagasuc/space-sim-parts-viewer`**, is the **parts library and web viewer**. It is the single source of truth for part geometry and attach data:
 
-- **Catalogue:** 188 parts in 13 categories. Each part has size and pose variants, for **509 GLB variants** in total, plus 2 reference assemblies.
+- **Catalogue:** 405 parts in 13 categories: 188 base-line parts (509 variants) and the **AX line** (217 parts, 425 variants, see [§14](#14-ax-line)). Each part has size and pose variants, for **934 GLB variants** in total, plus 2 reference assemblies.
 - **Viewer:** https://darrelmagasuc.github.io/space-sim-parts-viewer/ (gallery). `view.html?part=<variant id>` shows one part; add `&lod=cad` for the CAD mesh.
 - **Vehicle Creation:** https://darrelmagasuc.github.io/space-sim-parts-viewer/vehicle.html. Try `?example=hopper` (two-stage rocket), `?example=mule` (rover) and `?example=sparrow` (spaceplane). Plans are assembled locally from the attach nodes (`assemble.js`). The page can also ask an LLM to draft a plan. It imports and exports `*.craft.json`.
+
+Base line (the AX line adds 217 parts in the same category folders, ids `ax_<axcat>_NN`; see §14):
 
 | category | parts | variants | ids | contents |
 |---|---|---|---|---|
@@ -54,7 +56,7 @@ This repo, **`darrelmagasuc/space-sim-parts-viewer`**, is the **parts library an
 ├─ examples.js                            built-in example crafts (hopper, mule, sparrow)
 ├─ providers.js                           LLM provider plumbing (not needed in the game)
 ├─ manifest.json                          site manifest: every part/variant, bbox, nodes, file paths
-├─ models/<cat>/lowpoly/<vid>.glb         ★ game-ready low-poly GLB (default; ≤ 5,000 tris)
+├─ models/<cat>/lowpoly/<vid>.glb         ★ game-ready low-poly GLB (default; ≤ 5,000 tris, AX ≤ 8,000)
 ├─ models/<cat>/<vid>.glb                 CAD-tessellated GLB (heavier, same frame/nodes)
 ├─ models/<cat>/<id>.nodes.json           attach nodes + dims for every variant of part <id>
 ├─ models/assemblies/[lowpoly/]*.glb      2 reference assemblies (gravity ring), no nodes
@@ -154,7 +156,7 @@ Note on directions: `node_attach` is −X on most radial parts. Trailing-edge co
 - **Classes:** **Small** = 1 unit; **Medium** = 2 × 2 × 1 units (1.0 × 1.0 × 0.6 m); **Rack** = 2 × 2 × 3 units (1.0 × 1.0 × 1.8 m), pressurised only.
 - **Slot items** have size `"slot"` (e.g. tank08 cryocooler, power04 fuel cell, power12 life support, rover07 MOXIE, sci00/02/04/06). In the manifest they carry `slots.occupies = {slot_class, mount_node}`.
 - **Slot bays / hosts** carry `slots.provides = {small_units, text}`, e.g. cmd00–cmd10, station00/02/03/11, rover01/03/10/21/24/26, sci03. The count comes from nodes.json dims or the catalogue text.
-- **Placement:** slots are a game-side inventory, not geometry. Hosts don't expose per-slot nodes; the game decides placement. Treat `small_units` as the capacity in Small units (Medium = 4, Rack = 12).
+- **Placement:** slots are a game-side inventory, not geometry. Base-line hosts don't expose per-slot nodes; the game decides placement. AX hosts can list their bays in `slots.positions` (from nodes.json `variants[].extra.slots`, §14). Treat `small_units` as the capacity in Small units (Medium = 4, Rack = 12).
 
 ## 6. Materials
 
@@ -264,7 +266,7 @@ Keep the file names unchanged: craft files reference variant ids, and the manife
 
 Blockout crew interiors for the crewed parts are released in `models/interiors/` and listed in `parts_manifest.json` under **`interiors[]`**. Each entry is linked to its exterior by **`exterior_part_id`**, and each variant by `exterior_variant`. The authoring source is Sergei's `parts/interiors/` pipeline. It is copied here by `handoff/tools/import_interiors.py`, and only finished, validated interiors are copied.
 
-| released (0.3.0) | exterior variants | crew | notes |
+| released | exterior variants | crew | notes |
 |---|---|---|---|
 | `cmd03_interior` … `cmd09_interior` | Gemini, Soyuz DM, Dragon, Orion, MAV, Hermes flight deck, LM cabin | 2–6 | all crew fit |
 | `cockpit00_interior`, `cockpit01_interior` | fighter / tandem canopy, plus the `_open` variants | 1 / 2 | raised canopies (0.3.0), ~5 cm head clearance |
@@ -272,9 +274,12 @@ Blockout crew interiors for the crewed parts are released in `models/interiors/`
 | `cockpit03_interior` | airliner flight deck, plus `_open` | 3 | pilots fit only within tolerance (−0.2 cm) |
 | `cockpit04_interior` | Concorde-style, plus `_droop` | 3 | |
 | `station00_interior` … `station04_interior` | Destiny-style hab, BEAM (deployed), B330 (deployed), 6-port node, airlock | 1–12 positions | microgravity; station checks pass (aisles, hatch keep-outs, cavity) |
+| `station09_interior` … `station13_interior` (0.4.0) | spin hub, spoke / elevator, ring segment, counter-rotating hub, despun core | 0–4 | gravity ring: `gravity.type` spin (station10/11, down = radially outward) or zero_g; station checks pass. station10 hides `elevator_car`, `elevator_rails` |
+| `rover03_interior`, `rover10_interior`, `rover11_interior`, `rover24_interior` (0.4.0) | pressurised rover (+ `_steer_left`), rigid surface hab (+ `_stowed`), inflatable dome (deployed), pressurised cab M | 2–4 | surface gravity |
 
 **Not released yet:**
-- **The gravity-ring interiors `station09`–`station13`** are still in progress; they are listed in `interiors_skipped[]`.
+- **`rover12_interior` (greenhouse)** is listed in `interiors_skipped[]`: it is built against a newer rover12 exterior (hull-axis hatch openings) that is not released yet.
+- **AX line parts have no released interiors yet.** Their IVA data (pressurised volume, seats, hatches) has been handed to the interior team; AX interiors will arrive as `interiors[]` entries in a later release.
 - **The interior props library** is not released. Its props are already embedded in the interior GLBs as `eqNN_k` nodes.
 - **BEAM and B330:** only the deployed variants have interiors. The packed modules have no habitable volume.
 
@@ -326,6 +331,19 @@ Parts releases are **published only when Darrel asks**; there is no schedule.
 
 The game agent never runs this.
 
+## 14. AX line
+
+Release 0.4.0 adds the **AX line** ("Ares-line" near-future hardware: faceted, chamfered panels, shared AX style): **217 parts / 425 variants** in batches B1–B10, next to the 188 base-line parts. Same frame, origins, node rules, materials and LODs as the base line, except the low-poly budget: up to 8,000 triangles for crewed / complex AX parts (76 variants are above 5,000, max 7,993).
+
+- **Filter by line:** `parts[].line == "AX"` (also on every AX variant). Base-line parts have **no** `line` field: treat a missing field as `"base"`. Counts per line are in the top-level `lines`. In the viewer gallery the AX parts are in the group "AX line".
+- **Id scheme:** `display_id` `AX-<axcat>-<NN>` (e.g. `AX-cmd-01`) is the human id; `key` = `id` = `ax_<axcat>_<NN>` is the file-safe form; variant ids are `<key>_<short_name>[_<size>][_<state>]` (e.g. `ax_cmd_01_ares_capsule`, `ax_tank_01_modern_methalox_l_long`). `ax_category` is the AX family (cmd, prop, tank, struct, gear, station, grav, util, power, rover, aero); `category` stays the folder key (`models/<category>/`), so `ax_grav_*` live in `station/` and the `gear` / `util` / `aero` families are spread over the folders by function (e.g. lander legs in `stage/`, jet gear in `jet/`); always use the manifest `paths`. `batch` and `code` (designer code, e.g. `CM-8`) are informational. Ids are stable and never reused.
+- **Alias redirects:** six AX parts re-key the unreleased modern_set parts: `cmd11 → ax_cmd_01`, `prop27/28/29 → ax_prop_01/02/03`, `tank14/15 → ax_tank_01/02`. Each part lists them in `aliases` and `redirects` (`{old vid: new vid}`); the top-level `redirects` map holds both part ids and vids. When loading a craft, resolve every `parts[].variant` through `redirects` before the catalogue lookup. modern_set was never released, so no shipped craft uses the old ids.
+- **Gravity ring (B6, `ax_grav_*`):** floor radius **28 m at 4 rpm** (0.50 g, rim speed 11.7 m/s), **15° segments, 24 per ring** (7.33 m arc at the floor). Segments are authored segment-local: chain them end to end `node_end_a` ↔ `node_end_b` and hang them from the spokes by `node_spoke`. Do not use the base-line `ring` layout (it is for station11's hub-origin segments). Two counter-rotating rings use the `AX-grav-02` bearing; a single ring needs the despun hub (`AX-grav-01`).
+- **Rover hubs (B8, `ax_rover_*`):** one hub standard: **1.0 m hatch, 2.5 m body width**. Hubs (`AX-rover-01…12`) couple to each other by `node_front` / `node_rear` (directly, through the articulated connector `AX-rover-11`, or to a station port through the hub docking ring `AX-rover-12`) and stand on a chassis frame (`AX-rover-13…15`, axle nodes `node_axle_l/r_N`) by `node_bottom`. Crew hatches are `node_hatch_N`.
+- **Slots:** AX slot items (`AX-power-10/11/13`, `AX-util-17…24`) carry `slots.occupies = {slot_class, mount_node: node_bottom}` (fuel cell and battery come in Small and Medium variants). AX hosts with bays (`AX-cmd-09…13`) give each bay in nodes.json **`variants[].extra.slots`** = `[{name, cls, node_bottom_mount [x,y,z], up, access?}]`, copied to the manifest as `slots.positions`: mount the item's `node_bottom` at `node_bottom_mount` with its +Y along `up`.
+- **Masses:** most AX variants have `mass_estimated: true` (bbox-volume estimate); only 32 have designed `dims.mass_t`. Override them in game data.
+- **Test vehicles:** `ax_ares_hopper` (landing cluster, lander tank section, Ares capsule, 4 lander legs) and `ax_capsule_stack` (Ares capsule on its service trunk).
+
 ## Start-here checklist
 
 1. ☐ Clone the repo, or download `space_sim_lowpoly_glb_v2.zip` together with `handoff/`.
@@ -338,7 +356,7 @@ The game agent never runs this.
    - their `node_bottom` / `node_top` empties should face each other (+Y vs −Y);
    - the tank's `node_side_1` should be on +X.
 7. ☐ Read `vehicle_creation_spec.md` and port the **core placement** (§3–5 of the spec) as a pure GDScript class, with no scene nodes in the maths.
-8. ☐ Load each `handoff/test_vehicles/*.craft.json` and compare every instance origin, basis and world node against `*.expected.json` (tolerance 1e-4 m). Compare quaternions up to sign, or compare the basis. All 5 must pass, including the right-side kit wheels and the under-deck light, which exercise the antiparallel case.
+8. ☐ Load each `handoff/test_vehicles/*.craft.json` and compare every instance origin, basis and world node against `*.expected.json` (tolerance 1e-4 m). Compare quaternions up to sign, or compare the basis. All 7 must pass, including the right-side kit wheels and the under-deck light, which exercise the antiparallel case.
 9. ☐ Add validation (§6 of the spec) and the editor interactions (pick a node, preview the snap, symmetry 1–12, clocking, roll).
 10. ☐ Save and load `*.craft.json` (§7). A craft saved by the game must load in the viewer (`vehicle.html` → Import) and vice versa.
 11. ☐ Raise any gaps (missing node, wrong mass, need a moving-mesh split) as **`game-request` issues**, then pull when they close.

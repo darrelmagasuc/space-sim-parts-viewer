@@ -346,6 +346,15 @@ def main():
                 finish_hashes(rec, {"glb_lowpoly": v["glb_lp"], "glb_cad": v["glb"]})
                 if rec["slots"] is None: del rec["slots"]
                 if rec["default_of"] is None: del rec["default_of"]
+                if nj.get("line"):  # schema v3 (AX line): per-variant line, old vid it replaces, slot positions
+                    rec["line"] = nj["line"]
+                    old = redirects_for(nj).get(v["vid"]) if nj.get("aliases") else None
+                    if old is not None: rec["alias_of"] = old
+                    pos = (njv.get("extra") or {}).get("slots")
+                    if pos: rec.setdefault("slots", {})["positions"] = pos
+                    if nj.get("slot"):  # AX slot item: nodes.json top-level 'slot' = its class ("Small / Medium" -> by variant size)
+                        cls = {"S": "Small", "M": "Medium"}.get(v["size"], v["size"]) if "/" in nj["slot"] else nj["slot"]
+                        rec.setdefault("slots", {})["occupies"] = dict(slot_class=cls, mount_node="node_bottom")
                 vs.append(rec); n_var += 1; n_est += rec["mass_estimated"]
             sizes = []
             for v in p["variants"]:
@@ -355,6 +364,18 @@ def main():
                               summary=info.get("summary") or p.get("summary") or "", in_game_role=info.get("in_game", ""),
                               real_life=info.get("real_life", ""), text_source=info.get("source", "none"),
                               variants=vs, sha256={"nodes_json": sha256_file(os.path.join(REPO, p["json"]))}))
+            if nj.get("line"):  # schema v3 fields (AX line); base-line parts carry none of them (no line field = "base")
+                parts[-1].update(line=nj["line"], display_id=nj.get("display_id"), key=nj.get("key") or p["id"],
+                                 ax_category=nj.get("ax_category"), batch=nj.get("batch"), code=nj.get("code"),
+                                 aliases=list(nj.get("aliases") or []), redirects={o: n for n, o in redirects_for(nj).items()},
+                                 interior=nj.get("interior"))
+    redirects = {}
+    for p_ in parts:
+        for a in p_.get("aliases", []): redirects[a] = p_["id"]
+        redirects.update(p_.get("redirects", {}))
+    lines = {}
+    for p_ in parts:
+        L = lines.setdefault(p_.get("line", "base"), dict(parts=0, variants=0)); L["parts"] += 1; L["variants"] += len(p_["variants"])
     for a_ in assemblies:
         a_["sha256"] = {k: sha256_file(os.path.join(REPO, a_["paths"][k])) for k in ("glb_lowpoly", "glb_cad")}
     interiors, interiors_skipped = build_interiors({p_["id"]: p_ for p_ in parts})
@@ -365,7 +386,7 @@ def main():
     doc = dict(
         manifest_version=version,
         generated_at=datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
-        schema_version=2,
+        schema_version=3,
         generator="handoff/tools/build_manifest.py",
         source=dict(repo=f"https://github.com/{GH_OWNER}/{GH_REPO}", branch=BRANCH, site=PAGES, site_manifest="manifest.json"),
         zips=dict(lowpoly=dict(path=man["zip_lp"], bytes=man["zip_lp_bytes"], url=PAGES + man["zip_lp"], raw=RAW + man["zip_lp"]),
@@ -375,6 +396,8 @@ def main():
         size_classes=CLASS_D,
         counts=dict(parts=len(parts), variants=n_var, mass_estimated_variants=n_est, assemblies=len(assemblies),
                     interiors=len(interiors), interior_variants=sum(len(e["variants"]) for e in interiors)),
+        lines=lines,
+        redirects=dict(sorted(redirects.items())),
         changelog="handoff/CHANGELOG.md",
         schema=SCHEMA,
         parts=parts, interiors=interiors, interiors_skipped=interiors_skipped, assemblies=assemblies)
@@ -382,6 +405,17 @@ def main():
     json.dump(doc, open(out, "w"), indent=1, ensure_ascii=False)
     print(f"wrote {out}: v{version}, {len(parts)} parts, {n_var} variants ({n_est} with estimated mass), "
           f"{len(interiors)} interiors ({doc['counts']['interior_variants']} variants), {len(assemblies)} assemblies, {os.path.getsize(out) // 1024} KB")
+
+
+def redirects_for(nj):
+    """{new vid: old vid} for a re-keyed part (AX line re-coding of modern_set parts): nodes.json 'redirects'
+    {old: new} if present, else derived (old vid = new vid with the key replaced by the alias)."""
+    r = {n: o for o, n in (nj.get("redirects") or {}).items()}
+    al = nj.get("aliases") or []
+    if len(al) == 1:
+        for vid in nj.get("variants", {}):
+            if vid not in r and vid.startswith(nj["key"]): r[vid] = al[0] + vid[len(nj["key"]):]
+    return r
 
 
 def arg(name):
@@ -436,6 +470,20 @@ SCHEMA = {
         "paths": "repo-relative paths (glb_lowpoly default, glb_cad, nodes_json, thumbs), paths inside the two zips, suggested Godot res:// path",
         "urls": "raw.githubusercontent.com and GitHub Pages URLs for the GLBs and nodes.json, plus the web viewer link"},
     "assemblies[]": "reference-only layouts (gravity rings), no nodes",
+    "schema v3 (AX line)": {
+        "parts[].line": "product line: 'AX' for the AX line; absent on base-line parts (treat absent as 'base'). Filter with p.get('line', 'base') == 'AX'",
+        "parts[].display_id": "human id, e.g. AX-cmd-01 (AX-<category>-<NN>, stable, never reused)",
+        "parts[].key": "file-safe form of display_id (ax_cmd_01) = parts[].id; file stems and vids start with it",
+        "parts[].ax_category": "AX category (cmd, prop, tank, stage, station, power, rover, aero, ...); 'category' is the site/folder category",
+        "parts[].batch, code, interior": "AX build batch (B1..B10), designer code (e.g. CM-8), interior kind (full / none / ...)",
+        "parts[].aliases": "old part ids this part replaces (modern_set: cmd11 -> ax_cmd_01, prop27-29 -> ax_prop_01-03, tank14/15 -> ax_tank_01/02)",
+        "parts[].redirects": "{old vid: new vid} for those aliases",
+        "variants[].line": "same as the part's line (AX variants only)",
+        "variants[].alias_of": "old vid this variant replaces (aliased parts only)",
+        "variants[].slots.occupies (AX)": "AX slot items (nodes.json 'slot'): {slot_class Small|Medium|Rack, mount_node node_bottom}",
+        "variants[].slots.positions": "AX slot bays: [{name, cls, node_bottom_mount [x,y,z] m, up, access?}] from nodes.json variants[].extra.slots",
+        "lines": "{line: {parts, variants}} counts",
+        "redirects": "top-level map old id -> new id for both part ids and vids; resolve craft-file ids through it before lookup"},
     "versioning": {
         "manifest_version": "semver of this parts release (X.Y.Z). Minor = parts/interiors added (or removed), patch = existing ones changed. Released only on request; see handoff/CHANGELOG.md and the git tag parts-vX.Y.Z",
         "generated_at": "ISO 8601 time the manifest was generated (box time, UTC+2)",

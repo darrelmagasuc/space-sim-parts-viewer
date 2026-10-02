@@ -1,0 +1,352 @@
+{
+ "craft": "ax_capsule_stack.craft.json",
+ "generator": "assemble.js (space-sim-parts-viewer) via handoff/tools/build_test_vehicles.mjs",
+ "frame": "Godot Y-up, metres, right-handed. quaternion = [x, y, z, w]; basis = columns [x_axis, y_axis, z_axis] of the instance rotation; nodes in world space.",
+ "tolerance_m": 0.0001,
+ "tolerance_dir": 0.0001,
+ "counts": {
+  "instances": 2,
+  "joints": 1,
+  "errors": 0,
+  "warnings": 0
+ },
+ "instances": [
+  {
+   "id": "capsule",
+   "seedId": "capsule",
+   "variant": "ax_cmd_01_ares_capsule",
+   "parentId": null,
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      1.475,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -1.215,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.82,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.82,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.28,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.28,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.28,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.28,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.82,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.82,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0,
+      0.866019,
+      0.500011
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0,
+      -0.4669,
+      1.398
+     ],
+     "direction": [
+      0,
+      0.334917,
+      0.942248
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0,
+      1.405,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trunk",
+   "seedId": "trunk",
+   "variant": "ax_cmd_12_service_trunk",
+   "parentId": "capsule",
+   "symmetryIndex": 1,
+   "layout": null,
+   "origin": [
+    0,
+    -2.715,
+    0
+   ],
+   "quaternion": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "basis": [
+    [
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0,
+      -1.215,
+      0
+     ],
+     "direction": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0,
+      -4.215,
+      0
+     ],
+     "direction": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      -2.715,
+      0
+     ],
+     "direction": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0,
+      -2.715,
+      -1.875
+     ],
+     "direction": [
+      0,
+      0,
+      -1
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      -2.715,
+      0
+     ],
+     "direction": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0,
+      -2.715,
+      1.875
+     ],
+     "direction": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "joints": [
+  {
+   "parentId": "capsule",
+   "parentNode": "node_bottom",
+   "childId": "trunk",
+   "childNode": "node_top",
+   "symmetryIndex": 1,
+   "angle_deg": 0,
+   "position": [
+    0,
+    -1.215,
+    0
+   ],
+   "parentDirection": [
+    0,
+    -1,
+    0
+   ],
+   "childDirection": [
+    0,
+    1,
+    0
+   ]
+  }
+ ],
+ "warnings": [],
+ "errors": []
+}

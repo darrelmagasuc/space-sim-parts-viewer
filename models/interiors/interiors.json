@@ -1,6 +1,6 @@
 {
   "source": "/workspace/space-sim/parts/interiors",
-  "imported_at": "2026-10-01T12:53:16+02:00",
+  "imported_at": "2026-10-02T22:59:38+02:00",
   "note": "Copied by handoff/tools/import_interiors.py; do not edit here. Nodes JSON files are verbatim copies (their 'files' paths are relative to the source folder; use the paths in handoff/parts_manifest.json).",
   "interiors": [
     {
@@ -338,28 +338,198 @@
         "clash_with_crew_items": 0
       },
       "known_issue": null
+    },
+    {
+      "id": "station09",
+      "name": "GR-HUB Spin Hub & Bearing",
+      "reference": "spin hub + rotating-seal bearing (zero-g)",
+      "crew": 0,
+      "variants": {
+        "station09_spin_hub_interior": "station09_spin_hub"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.744
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station10",
+      "name": "GR-SPK Spoke / Elevator Tube",
+      "reference": "spoke / elevator tube (hub -> rim)",
+      "crew": 0,
+      "variants": {
+        "station10_spoke_interior": "station10_spoke"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": 0.189
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station11",
+      "name": "GR-SEG Ring Segment",
+      "reference": "spin-gravity ring segment (hab)",
+      "crew": 4,
+      "variants": {
+        "station11_ring_segment_interior": "station11_ring_segment"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 11,
+          "fit": 11,
+          "min_clearance_m": 0.221
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station12",
+      "name": "GR-CR Counter-Rotating Ring",
+      "reference": "counter-rotating hub (zero-g, dual rotor)",
+      "crew": 0,
+      "variants": {
+        "station12_counter_ring_hub_interior": "station12_counter_ring_hub"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": 0.62
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "station13",
+      "name": "GR-DS Despun Core Section",
+      "reference": "despun core (zero-g)",
+      "crew": 0,
+      "variants": {
+        "station13_despun_core_interior": "station13_despun_core"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 2,
+          "fit": 2,
+          "min_clearance_m": 0.619
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "rover03",
+      "name": "RV-4 Pressurised Rover",
+      "reference": "pressurised rover (SEV / LER-style)",
+      "crew": 2,
+      "variants": {
+        "rover03_pressurised_rover_interior": "rover03_pressurised_rover",
+        "rover03_pressurised_rover_steer_left_interior": "rover03_pressurised_rover_steer_left"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 4,
+          "fit": 4,
+          "min_clearance_m": 0.06
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "rover10",
+      "name": "SH-1 Surface Hab (Rigid)",
+      "reference": "rigid surface hab",
+      "crew": 4,
+      "variants": {
+        "rover10_surface_hab_interior": "rover10_surface_hab",
+        "rover10_surface_hab_stowed_interior": "rover10_surface_hab_stowed"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_fit": {
+          "seats": 11,
+          "fit": 11,
+          "min_clearance_m": 0.192
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "rover11",
+      "name": "SH-2 'Hab' Inflatable Dome",
+      "reference": "inflatable surface dome (deployed)",
+      "crew": 4,
+      "variants": {
+        "rover11_inflatable_dome_deployed_interior": "rover11_inflatable_dome_deployed"
+      },
+      "skipped_variants": [
+        "rover11_inflatable_dome"
+      ],
+      "validation": {
+        "crew_fit": {
+          "seats": 10,
+          "fit": 10,
+          "min_clearance_m": 0.04
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
+    },
+    {
+      "id": "rover24",
+      "name": "CB-P Pressurised Rover Cab",
+      "reference": "pressurised rover cab (M, SEV-style)",
+      "crew": 2,
+      "variants": {
+        "rover24_pressurised_cab_m_interior": "rover24_pressurised_cab_m"
+      },
+      "skipped_variants": [
+        "rover24_pressurised_cab_l"
+      ],
+      "validation": {
+        "crew_fit": {
+          "seats": 3,
+          "fit": 3,
+          "min_clearance_m": 0.008
+        },
+        "station_checks_ok": true,
+        "clash_with_crew_items": 0
+      },
+      "known_issue": null
     }
   ],
   "skipped": [
     {
-      "id": "station09",
-      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
-    },
-    {
-      "id": "station10",
-      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
-    },
-    {
-      "id": "station11",
-      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
-    },
-    {
-      "id": "station12",
-      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
-    },
-    {
-      "id": "station13",
-      "reason": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"
+      "id": "rover12",
+      "reason": "built against an unreleased rover12 exterior revision (hull-axis hatch openings); released with that exterior"
     }
   ]
 }

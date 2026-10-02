@@ -137,5 +137,41 @@ export const VEHICLES = [
       staging: [{ stage: 1, title: 'Cruise', parts: ['engine'], note: 'Spin the ring up before the burn.' }],
       manual: '# Test Ring Ship E\nSpine along +Y. Spokes use layout "spoke", ring segments layout "ring" (rotated about the hub axis, hub origin).'
     }
+  },
+  {
+    file: 'ax_ares_hopper',
+    craft: {
+      name: 'Test AX Ares Hopper F',
+      summary: "AX line: Ares MDV-style hopper stack (the modern_set reference stack, re-keyed): LC-1 'Hopper' landing cluster, T-LS lander tank section, CM-8 'Ares' capsule in the cradle, four deployed LL-T L lander legs on the tank hardpoints (feet 0.82 m below the engine plate).",
+      parts: [
+        { id: 'tank', variant: 'ax_tank_02_lander_tank_section', note: 'root (AX-tank-02, alias tank15)' },
+        { id: 'capsule', variant: 'ax_cmd_01_ares_capsule', note: 'AX-cmd-01, alias cmd11' },
+        { id: 'engines', variant: 'ax_prop_02_hopper_cluster', note: 'AX-prop-02, alias prop28' },
+        { id: 'leg', variant: 'ax_gear_04_lander_leg_l_deployed', note: 'AX-gear-04 L, symmetry 4 on the leg hardpoints' }
+      ],
+      connections: [
+        { child: 'capsule', childNode: 'node_bottom', parent: 'tank', parentNode: 'node_top', symmetry: 1, rotation: 0, offset: 0 },
+        { child: 'engines', childNode: 'node_top', parent: 'tank', parentNode: 'node_bottom', symmetry: 1, rotation: 0, offset: 0 },
+        { child: 'leg', childNode: 'node_attach', parent: 'tank', parentNode: 'node_side_1', symmetry: 4, rotation: 0, offset: 0 }
+      ],
+      staging: [{ stage: 1, title: 'Hop', parts: ['engines'], note: 'Deep-throttle landing cluster; legs are already deployed.' }],
+      manual: '# Test AX Ares Hopper F\nAX line ids only (old modern_set ids cmd11 / tank15 / prop28 resolve through parts_manifest.json "redirects"). Root is the tank section; capsule on node_top, engine cluster under node_bottom, legs on node_side_1..4.'
+    }
+  },
+  {
+    file: 'ax_capsule_stack',
+    craft: {
+      name: 'Test AX Capsule Stack G',
+      summary: "AX line: CM-8 'Ares' capsule on the ST-L service trunk (Dragon-style: the trunk mates to the capsule's heat-shield carrier land; conformal solar cells + radiators, 4 Medium slots).",
+      parts: [
+        { id: 'capsule', variant: 'ax_cmd_01_ares_capsule', note: 'root (AX-cmd-01, alias cmd11)' },
+        { id: 'trunk', variant: 'ax_cmd_12_service_trunk', note: 'AX-cmd-12 (4 Medium slots in slots.positions, jettisoned before entry)' }
+      ],
+      connections: [
+        { child: 'trunk', childNode: 'node_top', parent: 'capsule', parentNode: 'node_bottom', symmetry: 1, rotation: 0, offset: 0 }
+      ],
+      staging: [{ stage: 1, title: 'Trunk sep', parts: ['trunk'], note: 'Jettison the trunk before entry; the capsule enters shield-first.' }],
+      manual: '# Test AX Capsule Stack G\nCapsule node_bottom (heat-shield carrier land) -> trunk node_top. The separate HS-1 heat shield (AX-cmd-15) and the SM-L service module (AX-cmd-13) are left out: their bounding boxes are not centred between their stack nodes (shield dome / OMS nozzle hang below node_bottom), and assemble.js centres the overlap box between the nodes, so it would flag the joint as overlapping.'
+    }
   }
 ];

@@ -36,6 +36,7 @@ Variant {
 }
 ```
 **Lookup** of a reference string `ref` (from `parts[].variant`), first match wins:
+0. (game, schema v3) if `ref` is a key of `parts_manifest.json` → `redirects` (old modern_set ids such as `cmd11`, `cmd11_ares_capsule`), replace it with the new AX id first. The viewer's `assemble.js` does not do this step (its site manifest has no redirect map), so redirected ids only resolve in a port that implements it;
 1. exact `vid`;
 2. case-insensitive `vid`;
 3. exact part id (`tank00`), which resolves to that part's **primary** variant;
@@ -264,7 +265,7 @@ The core placement (§4–5) will mate **any** two nodes. Joints are judged by t
 
 ## 8. The repair pass (optional for the game)
 
-`assemble()` always runs `repairCraft()` first. It exists because LLM-written plans are sloppy. For a **canonical, editor-made plan whose joints all pass §6.3 it changes nothing**: the five test vehicles re-assemble with 0 warnings, and `reference_builder.py` (no repair pass) matches them exactly. Port it only if the game must import LLM / shorthand plans. What it does:
+`assemble()` always runs `repairCraft()` first. It exists because LLM-written plans are sloppy. For a **canonical, editor-made plan whose joints all pass §6.3 it changes nothing**: the seven test vehicles re-assemble with 0 warnings, and `reference_builder.py` (no repair pass) matches them exactly. Port it only if the game must import LLM / shorthand plans. What it does:
 
 1. **Shorthand:**
    - `stack: [nose … tail]` becomes connections `upper.node_bottom → lower.node_top`.
@@ -462,6 +463,8 @@ For each `X.craft.json`:
 | `lander` | capsule on tank, descent engine, legs symmetry 4/offset 45, RCS quads symmetry 4 on the capsule's side node |
 | `station_segment` | 6-port node root, hab on top, truss below, solar wings symmetry 2 on the truss, antenna on a node side port |
 | `kit_rover` | rover-kit rails (left = +X, right = −X: the antiparallel 180°-about-Y case), rail → arm → motor → wheel chains, deck-grid mounts, a light under the deck (the antiparallel ±Y case, 180° about Z) |
+| `ax_ares_hopper` | AX line: landing cluster under a lander tank section, Ares capsule in the cradle, 4 AX lander legs symmetry 4 on the tank's leg hardpoints |
+| `ax_capsule_stack` | AX line: Ares capsule on its service trunk (capsule `node_bottom` = heat-shield carrier land) |
 | `ring_ship` | Hermes-style spine (truss, truss, spin hub, truss, ion cluster), `spoke` layout ×6 and `ring` layout ×12 on the hub, solar wings symmetry 2 and radiators symmetry 2 offset 90 on the trusses |
 
 To regenerate the files (needs Node.js): run `node handoff/tools/build_test_vehicles.mjs`. Use `--check` to compare without writing. `python3 handoff/tools/reference_builder.py` runs the independent check.

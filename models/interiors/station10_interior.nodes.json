@@ -1,0 +1,1025 @@
+{
+ "id": "station10",
+ "name": "GR-SPK Spoke / Elevator Tube",
+ "exterior_primary": "station10_spoke",
+ "primary": "station10_spoke_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.0047,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "ladder lane (hub end -> rim end, between the ladder face and the elevator lane)",
+    "clear_diameter_m": 0.5,
+    "required_m": 0.45,
+    "ok": true,
+    "limiting_item": "eq41_1",
+    "path_to_wall_min_m": 0.277
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_4: hub end, looking down the spoke toward the rim",
+  "node_camera_5: rim end, looking up the spoke toward the hub",
+  "node_camera_6: mid-spoke window slot, looking out (+Z)"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "elevator rider (standing, feet toward the rim)",
+   "kind": "car",
+   "posture": "standing",
+   "host": "eq42_1",
+   "down_godot": [
+    0.9999,
+    0.0,
+    -0.0173
+   ],
+   "up_godot": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "n": 2,
+   "label": "ladder climber near the hub (~0.05 g at 4 rpm)",
+   "kind": "ladder",
+   "posture": "standing",
+   "host": "eq41_2",
+   "down_godot": [
+    0.9996,
+    0.0,
+    0.0284
+   ],
+   "up_godot": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "n": 3,
+   "label": "ladder climber mid-spoke (~0.25 g at 4 rpm)",
+   "kind": "ladder",
+   "posture": "standing",
+   "host": "eq41_5",
+   "down_godot": [
+    0.9999,
+    0.0,
+    0.0116
+   ],
+   "up_godot": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "exterior_hide": [
+  "elevator_car",
+  "elevator_rails"
+ ],
+ "skipped_variants": [],
+ "gravity": {
+  "type": "spin",
+  "down_godot": [
+   1,
+   0,
+   0
+  ],
+  "up_godot": [
+   -1,
+   0,
+   0
+  ],
+  "spin_axis_godot": [
+   0,
+   1,
+   0
+  ],
+  "spin_axis_point_godot": [
+   0,
+   0,
+   0
+  ],
+  "down_rule": "radially outward from the hub axis = +X (toward the rim / node_bottom) along the whole spoke",
+  "g_varies": true,
+  "radius_range_m": [
+   2.175,
+   22.925
+  ],
+  "g_hub_end": {
+   "2 rpm": 0.01,
+   "3 rpm": 0.022,
+   "4 rpm": 0.039,
+   "5.81 rpm": 0.082
+  },
+  "g_rim_end": {
+   "2 rpm": 0.103,
+   "3 rpm": 0.231,
+   "4 rpm": 0.41,
+   "5.81 rpm": 0.865
+  },
+  "note": "spin gravity grows linearly from ~0 at the hub end to ~0.9 x floor g at the rim end; ladder rungs and the car floor are perpendicular to the spoke so 'down' is always toward the rim"
+ },
+ "elevator": {
+  "car": "eq42_1",
+  "rail": "elevator_rail",
+  "stops": [
+   "node_elevator_1 (hub stop)",
+   "node_elevator_2 (rim stop)"
+  ],
+  "travel_m": 16.45,
+  "axis_godot": [
+   1,
+   0,
+   0
+  ],
+  "note": "node_elevator_N = car floor centre at each stop; node +Y = car up (toward the hub), +Z = toward the rail. The car mesh (prop instance) is placed at the rim stop; move it along Godot X between the two stops."
+ },
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 0,
+ "wall_t_m": 0.05,
+ "cavity": {
+  "volume_m3": 31.34,
+  "size_godot_xyz_m": [
+   20.65,
+   1.4,
+   1.4
+  ],
+  "wall_t_m": 0.05
+ },
+ "layout": "spoke / elevator tube (1.4 m inside): elevator lane (+Y half: back rail on the +Y wall, open cab, rim and hub stops) and ladder lane (-Y half: 8 x 2.4 m ladder sections on the -Y wall, rungs across the tube so 'down' = toward the rim), 6 window slots on +Z, hatches at both ends",
+ "panels": [],
+ "hatches": [
+  "hub-end hatch dia 0.7 (node_top, 'up')",
+  "rim-end hatch dia 0.7 (node_bottom, 'down')"
+ ],
+ "windows": 6,
+ "notes": [
+  "station10: the exterior's elevator_car / elevator_rails (centred, 0.9 m tall, on rails at y +-0.45) are replaced by the interior car on a single +Y wall rail so a ladder lane fits beside it; hide them when the interior is loaded",
+  "station10: inside diameter is 1.40 m and the end apertures 0.75 m, so the 1 m aisle rule cannot apply; each lane keeps ~0.5 m (checked at 0.45 m)",
+  "station10: the exterior window slots are open cuts in the shell; the interior adds the glass panes"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.267,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     20.795,
+     0.36,
+     -0.24
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.189,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     5.955,
+     -0.45,
+     -0.24
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.189,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     14.015,
+     -0.45,
+     -0.24
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit light: pushed 0.04 m inward",
+   "fit eq14_1: pushed 0.03 m inward"
+  ]
+ },
+ "moving_props": [
+  "eq42_1"
+ ],
+ "moving_meshes": [
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    2.46,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    22.64,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_elevator_1",
+   "position": [
+    5.325,
+    0.0,
+    -0.21
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_elevator_2",
+   "position": [
+    21.775,
+    0.0,
+    -0.21
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    20.815,
+    0.0,
+    -0.36
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    20.065,
+    0.0,
+    -0.22
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    5.975,
+    0.0,
+    0.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    5.225,
+    0.0,
+    0.31
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    14.675,
+    0.0,
+    0.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    13.925,
+    0.0,
+    0.31
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    2.775,
+    0.25,
+    0.1
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    22.325,
+    0.25,
+    0.2
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    12.675,
+    0.3,
+    0.2
+   ],
+   "direction": [
+    0.0,
+    0.9578,
+    -0.2873
+   ],
+   "up": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "station10_spoke_interior": {
+   "exterior_variant": "station10_spoke",
+   "state": "flight",
+   "size": "S",
+   "crew": 0,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      2.46,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      22.64,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_elevator_1",
+     "position": [
+      5.325,
+      0.0,
+      -0.21
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_elevator_2",
+     "position": [
+      21.775,
+      0.0,
+      -0.21
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      20.815,
+      0.0,
+      -0.36
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      20.065,
+      0.0,
+      -0.22
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      5.975,
+      0.0,
+      0.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      5.225,
+      0.0,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      14.675,
+      0.0,
+      0.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      13.925,
+      0.0,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      2.775,
+      0.25,
+      0.1
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      22.325,
+      0.25,
+      0.2
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      12.675,
+      0.3,
+      0.2
+     ],
+     "direction": [
+      0.0,
+      0.9578,
+      -0.2873
+     ],
+     "up": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq41_1",
+     "prop": "eq41_ladder_section",
+     "position": [
+      4.155,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_2",
+     "prop": "eq41_ladder_section",
+     "position": [
+      6.555,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_3",
+     "prop": "eq41_ladder_section",
+     "position": [
+      8.955,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_4",
+     "prop": "eq41_ladder_section",
+     "position": [
+      11.355,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_5",
+     "prop": "eq41_ladder_section",
+     "position": [
+      13.755,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_6",
+     "prop": "eq41_ladder_section",
+     "position": [
+      16.155,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_7",
+     "prop": "eq41_ladder_section",
+     "position": [
+      18.555,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq41_8",
+     "prop": "eq41_ladder_section",
+     "position": [
+      20.955,
+      0.0,
+      0.56
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       -1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq42_1",
+     "prop": "eq42_elevator_car",
+     "position": [
+      20.775,
+      0.0,
+      -0.24
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      3.3763,
+      -0.6011,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_2",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      21.7263,
+      -0.6011,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      12.5513,
+      -0.5998,
+      -0.0017
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/station10_spoke_interior.glb",
+    "glb_combined": "glb/station10_spoke_combined.glb",
+    "glb_cutaway": "glb/station10_spoke_cutaway.glb",
+    "step": "step/station10_spoke_interior.step",
+    "exterior_glb": "../station_power/glb/station10_spoke.glb",
+    "preview": "renders/station10_spoke_interior.png"
+   }
+  }
+ }
+}

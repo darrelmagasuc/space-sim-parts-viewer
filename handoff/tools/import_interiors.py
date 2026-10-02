@@ -22,14 +22,16 @@ DEFAULT_SRC = "/workspace/space-sim/parts/interiors"
 # cockpits, station modules. station09-13 (gravity ring) are still being iterated -> SKIP until
 # they are signed off; the props library (props/) is also in flux and the interior GLBs already
 # embed their props, so it is not imported.
+# Finished and validated per the interiors README (sources unchanged since 2026-10-02 08:09): crewed capsules,
+# cockpits, station modules, the gravity ring (station09-13, all station checks ok) and the surface habs / rovers.
+# rover12 is skipped: its interior is built against an exterior revision (hull-axis openings) that is not released.
+# The props library (props/) is not imported (the interior GLBs embed their props).
 INCLUDE = ["cmd03", "cmd04", "cmd05", "cmd06", "cmd07", "cmd08", "cmd09",
            "cockpit00", "cockpit01", "cockpit02", "cockpit03", "cockpit04",
-           "station00", "station01", "station02", "station03", "station04"]
-SKIP = {"station09": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)",
-        "station10": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)",
-        "station11": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)",
-        "station12": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)",
-        "station13": "gravity ring: in progress (rebuilt/edited 2026-10-01 12:27-12:39, not signed off)"}
+           "station00", "station01", "station02", "station03", "station04",
+           "station09", "station10", "station11", "station12", "station13",
+           "rover03", "rover10", "rover11", "rover24"]
+SKIP = {"rover12": "built against an unreleased rover12 exterior revision (hull-axis hatch openings); released with that exterior"}
 # Known, accepted limits (exterior shell too small); imported with a flag, see the interiors README.
 KNOWN_ISSUES = {
     "cockpit02": "crew does not fit: heads 2.6-3.2 cm into the ceiling (exterior flight deck is 1.26-1.28 m high)",

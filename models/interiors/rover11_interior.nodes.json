@@ -1,0 +1,1896 @@
+{
+ "id": "rover11",
+ "name": "SH-2 'Hab' Inflatable Dome",
+ "exterior_primary": "rover11_inflatable_dome_deployed",
+ "primary": "rover11_inflatable_dome_deployed_interior",
+ "station_checks": {
+  "min_wall_gap_m": 0.0261,
+  "items_outside_cavity": [],
+  "items_within_margin": [],
+  "hatch_keepout_intrusions_m3": [],
+  "aisles": [
+   {
+    "aisle": "walking ring around the core (r 1.95, 1.0 m above the deck, az -145..+145; the dining area closes it at az 180)",
+    "clear_diameter_m": 1.015,
+    "required_m": 1.0,
+    "ok": true,
+    "limiting_item": "quarters_partitions",
+    "path_to_wall_min_m": 0.895
+   },
+   {
+    "aisle": "walking ring -> inner airlock hatch",
+    "clear_diameter_m": 1.0,
+    "required_m": 0.9,
+    "ok": true,
+    "limiting_item": "airlock_inner_bulkhead",
+    "path_to_wall_min_m": 0.564
+   },
+   {
+    "aisle": "crew lock (inner -> outer hatch, crouched)",
+    "clear_diameter_m": 1.0,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "airlock_inner_bulkhead",
+    "path_to_wall_min_m": 0.1
+   }
+  ],
+  "crew_vs_crew_m3": []
+ },
+ "viewpoints": [
+  "node_camera_11: inner airlock hatch, looking into the dome",
+  "node_camera_12: walking ring, looking toward the dining area",
+  "node_camera_13: crew lock, looking at the outer hatch"
+ ],
+ "seats": [
+  {
+   "n": 1,
+   "label": "crew quarters 1 bed (az 45, lying)",
+   "kind": "bed",
+   "posture": "standing",
+   "host": "eq33_1",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "n": 2,
+   "label": "crew quarters 2 bed (az 95, lying)",
+   "kind": "bed",
+   "posture": "standing",
+   "host": "eq33_2",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "n": 3,
+   "label": "crew quarters 3 bed (az 265, lying)",
+   "kind": "bed",
+   "posture": "standing",
+   "host": "eq33_3",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    -0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "n": 4,
+   "label": "crew quarters 4 bed (az 315, lying)",
+   "kind": "bed",
+   "posture": "standing",
+   "host": "eq33_4",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    -0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "n": 5,
+   "label": "diner 1 (core side)",
+   "kind": "chair",
+   "posture": "chair",
+   "host": "eq35_1",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 6,
+   "label": "diner 2 (core side)",
+   "kind": "chair",
+   "posture": "chair",
+   "host": "eq35_2",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 7,
+   "label": "diner 3 (end)",
+   "kind": "chair",
+   "posture": "chair",
+   "host": "eq35_3",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 8,
+   "label": "diner 4 (end)",
+   "kind": "chair",
+   "posture": "chair",
+   "host": "eq35_4",
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 9,
+   "label": "cook (standing at the core galley rack)",
+   "kind": "floor",
+   "posture": "standing",
+   "host": null,
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "n": 10,
+   "label": "ops (standing at the core panel)",
+   "kind": "floor",
+   "posture": "standing",
+   "host": null,
+   "down_godot": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up_godot": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "exterior_hide": [],
+ "skipped_variants": [
+  "rover11_inflatable_dome"
+ ],
+ "gravity": {
+  "type": "planetary",
+  "down_godot": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "up_godot": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "spin_axis_godot": null,
+  "down_rule": "part-local -Y (Godot) = CAD -Z: toward node_bottom / the ground / the wheels; uniform over the part; rotate it with the part when the vehicle pitches or rolls",
+  "floor_height_godot_y": -0.21,
+  "g_reference": {
+   "Moon": 0.165,
+   "Mars": 0.379,
+   "Earth": 1.0
+  },
+  "note": "dome on the ground: deck 0.54 m above node_bottom; 2.34 m under the apex, >= 2.0 m only inside r ~2.0 (the walking ring)",
+  "headroom_m": 2.34
+ },
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up (crew head / hatch up)",
+ "crew": 4,
+ "wall_t_m": 0.05,
+ "cavity": {
+  "volume_m3": 83.18,
+  "size_godot_xyz_m": [
+   9.34,
+   2.61,
+   7.78
+  ],
+  "wall_t_m": 0.05
+ },
+ "layout": "deployed 8 m dome, single deck at z 0.54 (2.34 m under the apex): central core (pinwheel of stowage rack, hygiene cubicle, galley rack, ECLSS rack + utility riser), 1.0 m walking ring at r 1.95, radial layout: 4 crew quarters (single bed + partitions) at az 45 / 95 / 265 / 315, dining table with 4 chairs at az 180, life support + water / CO2 bay at az 133 / 222, crew lock in the airlock tunnel (+X) with inner + outer hatches",
+ "panels": [
+  "core ops / comms panel 0.8x0.6 (+Y face of the core)"
+ ],
+ "hatches": [
+  "outer airlock hatch dia 1.0 (node_hatch_1, tunnel collar, centre 0.56 m above the floor; sill 0.06 m above the tunnel floor)",
+  "inner airlock hatch dia 1.0 in the tunnel at x 4.0 (node_hatch_2, dome <-> crew lock; node points into the lock)"
+ ],
+ "windows": 0,
+ "notes": [
+  "rover11: deployed variant only (the stowed core has no habitable volume)",
+  "rover11: the dome is 2.88 m high inside, i.e. 2.34 m above the deck: no upper deck or ladder (two decks need ~4.3 m)",
+  "rover11: headroom >= 2.0 m only within r ~2.0 m of the centre, so the core and the 1.0 m walking ring use the middle; beds, dining, plant and stowage sit in the lower outer ring (bed headboards 1.34 m, dome 1.41 m at the bed corners)",
+  "rover11: the deck sits at z 0.54 on top of the exterior's 0.5 m XL core ring (floor_core), leaving a 0.2 m service plenum; the airlock tunnel becomes a crew lock with an added inner hatch (x 4.0); it is 1.34 m in diameter, so it is a crouched lock"
+ ],
+ "checks": {
+  "crew_fit": [
+   {
+    "seat": 1,
+    "min_clearance_m": 0.31,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     2.645,
+     1.796,
+     1.272
+    ],
+    "fits": true
+   },
+   {
+    "seat": 2,
+    "min_clearance_m": 0.311,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -1.222,
+     2.955,
+     1.272
+    ],
+    "fits": true
+   },
+   {
+    "seat": 3,
+    "min_clearance_m": 0.313,
+    "worst_part": "torso",
+    "worst_point_cad": [
+     -0.871,
+     -3.076,
+     1.272
+    ],
+    "fits": true
+   },
+   {
+    "seat": 4,
+    "min_clearance_m": 0.31,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     2.835,
+     -1.478,
+     1.272
+    ],
+    "fits": true
+   },
+   {
+    "seat": 5,
+    "min_clearance_m": 0.242,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -2.05,
+     0.45,
+     0.552
+    ],
+    "fits": true
+   },
+   {
+    "seat": 6,
+    "min_clearance_m": 0.242,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -2.05,
+     -0.15,
+     0.552
+    ],
+    "fits": true
+   },
+   {
+    "seat": 7,
+    "min_clearance_m": 0.046,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -2.73,
+     0.97,
+     1.952
+    ],
+    "fits": true
+   },
+   {
+    "seat": 8,
+    "min_clearance_m": 0.04,
+    "worst_part": "head",
+    "worst_point_cad": [
+     -2.73,
+     -0.97,
+     1.952
+    ],
+    "fits": true
+   },
+   {
+    "seat": 9,
+    "min_clearance_m": 0.235,
+    "worst_part": "feet",
+    "worst_point_cad": [
+     -1.35,
+     -0.65,
+     0.545
+    ],
+    "fits": true
+   },
+   {
+    "seat": 10,
+    "min_clearance_m": 0.233,
+    "worst_part": "head",
+    "worst_point_cad": [
+     0.61,
+     1.57,
+     2.375
+    ],
+    "fits": true
+   }
+  ],
+  "clash_with_crew_m3": [],
+  "item_overlaps_m3": [],
+  "log": [
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.01 m inward",
+   "fit light: pushed 0.02 m inward",
+   "fit light: pushed 0.02 m inward"
+  ]
+ },
+ "moving_props": [],
+ "moving_meshes": [
+  "hatch_door_1",
+  "hatch_door_2"
+ ],
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    5.395,
+    0.35,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    4.0,
+    0.35,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    2.0082,
+    0.242,
+    -2.093
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    2.5385,
+    0.382,
+    -1.5627
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.3125,
+    0.242,
+    -2.8837
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.4346,
+    0.382,
+    -2.9491
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.193,
+    0.242,
+    2.8942
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -0.9401,
+    0.382,
+    2.8288
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.9962,
+    0.0,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    2.093,
+    0.242,
+    2.0082
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    1.5627,
+    0.382,
+    2.5385
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    -0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_seat_5",
+   "position": [
+    -1.67,
+    0.272,
+    -0.3
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    -1.81,
+    1.022,
+    -0.3
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_6",
+   "position": [
+    -1.67,
+    0.272,
+    0.3
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    -1.81,
+    1.022,
+    0.3
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_7",
+   "position": [
+    -2.62,
+    0.272,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_7",
+   "position": [
+    -2.62,
+    1.022,
+    -0.86
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_8",
+   "position": [
+    -2.62,
+    0.272,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_8",
+   "position": [
+    -2.62,
+    1.022,
+    0.86
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_9",
+   "position": [
+    -1.35,
+    0.695,
+    0.5
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_9",
+   "position": [
+    -1.21,
+    1.445,
+    0.5
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_10",
+   "position": [
+    0.5,
+    0.695,
+    -1.6
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_10",
+   "position": [
+    0.5,
+    1.445,
+    -1.46
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_11",
+   "position": [
+    3.35,
+    0.74,
+    0.0
+   ],
+   "direction": [
+    -0.9929,
+    0.1191,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_12",
+   "position": [
+    1.5,
+    1.39,
+    1.5
+   ],
+   "direction": [
+    -0.8213,
+    -0.2875,
+    -0.4928
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_13",
+   "position": [
+    4.7,
+    0.4,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "rover11_inflatable_dome_deployed_interior": {
+   "exterior_variant": "rover11_inflatable_dome_deployed",
+   "state": "deployed",
+   "size": "XL",
+   "crew": 4,
+   "primary": true,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      5.395,
+      0.35,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      4.0,
+      0.35,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      2.0082,
+      0.242,
+      -2.093
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      2.5385,
+      0.382,
+      -1.5627
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.3125,
+      0.242,
+      -2.8837
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.9962,
+      0.0,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.4346,
+      0.382,
+      -2.9491
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.9962,
+      0.0,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.193,
+      0.242,
+      2.8942
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.9962,
+      0.0,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.9401,
+      0.382,
+      2.8288
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.9962,
+      0.0,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      2.093,
+      0.242,
+      2.0082
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      1.5627,
+      0.382,
+      2.5385
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      -0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_seat_5",
+     "position": [
+      -1.67,
+      0.272,
+      -0.3
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      -1.81,
+      1.022,
+      -0.3
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_6",
+     "position": [
+      -1.67,
+      0.272,
+      0.3
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      -1.81,
+      1.022,
+      0.3
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_7",
+     "position": [
+      -2.62,
+      0.272,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_7",
+     "position": [
+      -2.62,
+      1.022,
+      -0.86
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_8",
+     "position": [
+      -2.62,
+      0.272,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_8",
+     "position": [
+      -2.62,
+      1.022,
+      0.86
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_9",
+     "position": [
+      -1.35,
+      0.695,
+      0.5
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_9",
+     "position": [
+      -1.21,
+      1.445,
+      0.5
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_10",
+     "position": [
+      0.5,
+      0.695,
+      -1.6
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_10",
+     "position": [
+      0.5,
+      1.445,
+      -1.46
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_11",
+     "position": [
+      3.35,
+      0.74,
+      0.0
+     ],
+     "direction": [
+      -0.9929,
+      0.1191,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_12",
+     "position": [
+      1.5,
+      1.39,
+      1.5
+     ],
+     "direction": [
+      -0.8213,
+      -0.2875,
+      -0.4928
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_13",
+     "position": [
+      4.7,
+      0.4,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": [
+    {
+     "instance": "eq27_1",
+     "prop": "eq27_stowage_rack",
+     "position": [
+      0.505,
+      0.692,
+      -0.505
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq40_1",
+     "prop": "eq40_hygiene_cubicle",
+     "position": [
+      -0.505,
+      0.852,
+      -0.555
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq25_1",
+     "prop": "eq25_galley_rack",
+     "position": [
+      -0.505,
+      0.692,
+      0.505
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq28_1",
+     "prop": "eq28_eclss_rack",
+     "position": [
+      0.505,
+      0.692,
+      0.505
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq12_1",
+     "prop": "eq12_water_dispenser",
+     "position": [
+      -1.139,
+      0.99,
+      -0.55
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq06_1",
+     "prop": "eq06_power_distribution_unit",
+     "position": [
+      -0.5,
+      1.09,
+      1.099
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq13_1",
+     "prop": "eq13_fire_extinguisher",
+     "position": [
+      1.104,
+      0.79,
+      0.35
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq14_1",
+     "prop": "eq14_first_aid_kit",
+     "position": [
+      1.0765,
+      1.09,
+      0.62
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq15_1",
+     "prop": "eq15_comms_radio",
+     "position": [
+      0.5,
+      0.39,
+      -1.149
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq33_1",
+     "prop": "eq33_bed",
+     "position": [
+      2.0506,
+      0.192,
+      -2.0506
+     ],
+     "basis_columns": [
+      [
+       0.7071,
+       0.0,
+       0.7071
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7071,
+       0.0,
+       0.7071
+      ]
+     ]
+    },
+    {
+     "instance": "eq33_2",
+     "prop": "eq33_bed",
+     "position": [
+      -0.2528,
+      0.192,
+      -2.889
+     ],
+     "basis_columns": [
+      [
+       0.9962,
+       0.0,
+       -0.0872
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0872,
+       0.0,
+       0.9962
+      ]
+     ]
+    },
+    {
+     "instance": "eq33_3",
+     "prop": "eq33_bed",
+     "position": [
+      -0.2528,
+      0.192,
+      2.889
+     ],
+     "basis_columns": [
+      [
+       -0.9962,
+       0.0,
+       -0.0872
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0872,
+       0.0,
+       -0.9962
+      ]
+     ]
+    },
+    {
+     "instance": "eq33_4",
+     "prop": "eq33_bed",
+     "position": [
+      2.0506,
+      0.192,
+      2.0506
+     ],
+     "basis_columns": [
+      [
+       -0.7071,
+       0.0,
+       0.7071
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -0.7071,
+       0.0,
+       -0.7071
+      ]
+     ]
+    },
+    {
+     "instance": "eq36_1",
+     "prop": "eq36_dining_table",
+     "position": [
+      -2.62,
+      0.167,
+      0.0
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq35_1",
+     "prop": "eq35_chair",
+     "position": [
+      -1.87,
+      0.252,
+      -0.3
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq35_2",
+     "prop": "eq35_chair",
+     "position": [
+      -1.87,
+      0.252,
+      0.3
+     ],
+     "basis_columns": [
+      [
+       0.0,
+       0.0,
+       1.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       -1.0,
+       0.0,
+       0.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq35_3",
+     "prop": "eq35_chair",
+     "position": [
+      -2.62,
+      0.252,
+      -0.8
+     ],
+     "basis_columns": [
+      [
+       1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq35_4",
+     "prop": "eq35_chair",
+     "position": [
+      -2.62,
+      0.252,
+      0.8
+     ],
+     "basis_columns": [
+      [
+       -1.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       -1.0
+      ]
+     ]
+    },
+    {
+     "instance": "eq07_1",
+     "prop": "eq07_life_support_unit",
+     "position": [
+      -2.0119,
+      0.092,
+      -2.1575
+     ],
+     "basis_columns": [
+      [
+       0.7314,
+       0.0,
+       -0.682
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.682,
+       0.0,
+       0.7314
+      ]
+     ]
+    },
+    {
+     "instance": "eq11_1",
+     "prop": "eq11_water_tank",
+     "position": [
+      -2.3695,
+      0.092,
+      1.3957
+     ],
+     "basis_columns": [
+      [
+       -0.5075,
+       0.0,
+       -0.8616
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.8616,
+       0.0,
+       -0.5075
+      ]
+     ]
+    },
+    {
+     "instance": "eq11_2",
+     "prop": "eq11_water_tank",
+     "position": [
+      -2.0436,
+      0.092,
+      1.8401
+     ],
+     "basis_columns": [
+      [
+       -0.6691,
+       0.0,
+       -0.7431
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.7431,
+       0.0,
+       -0.6691
+      ]
+     ]
+    },
+    {
+     "instance": "eq08_1",
+     "prop": "eq08_co2_scrubber",
+     "position": [
+      -1.6358,
+      0.092,
+      2.2106
+     ],
+     "basis_columns": [
+      [
+       -0.8039,
+       0.0,
+       -0.5948
+      ],
+      [
+       0.0,
+       1.0,
+       0.0
+      ],
+      [
+       0.5948,
+       0.0,
+       -0.8039
+      ]
+     ]
+    }
+   ],
+   "files": {
+    "glb": "glb/rover11_inflatable_dome_deployed_interior.glb",
+    "glb_combined": "glb/rover11_inflatable_dome_deployed_combined.glb",
+    "glb_cutaway": "glb/rover11_inflatable_dome_deployed_cutaway.glb",
+    "step": "step/rover11_inflatable_dome_deployed_interior.step",
+    "exterior_glb": "../rover_jet/glb/rover11_inflatable_dome_deployed.glb",
+    "preview": "renders/rover11_inflatable_dome_deployed_interior.png"
+   }
+  }
+ }
+}
