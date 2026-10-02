@@ -467,5 +467,14 @@
     "preview": "renders/ax_cmd_05_lander_crew_cabin.png"
    }
   }
- }
+ },
+ "display_id": "AX-cmd-05",
+ "key": "ax_cmd_05",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "LC-3",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "Vertical cylindrical lander cabin, side hatch onto a porch, 3-4 crew, overhead docking port"
 }

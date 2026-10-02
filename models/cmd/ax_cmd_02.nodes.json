@@ -323,5 +323,14 @@
     "preview": "renders/ax_cmd_02_kestrel_capsule.png"
    }
   }
- }
+ },
+ "display_id": "AX-cmd-02",
+ "key": "ax_cmd_02",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CM-2X",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "2-seat faceted taxi capsule for LEO hops and station crew rotation"
 }

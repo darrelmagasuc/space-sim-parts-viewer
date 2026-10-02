@@ -431,5 +431,14 @@
     "preview": "renders/ax_cmd_07_command_deck.png"
    }
   }
- }
+ },
+ "display_id": "AX-cmd-07",
+ "key": "ax_cmd_07",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CD-7",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "7.5 m crew-deck barrel (flight deck + window band) for large methalox ships"
 }

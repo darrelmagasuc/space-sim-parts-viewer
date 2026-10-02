@@ -259,5 +259,14 @@
     "preview": "renders/ax_cmd_06_tug_cab.png"
    }
   }
- }
+ },
+ "display_id": "AX-cmd-06",
+ "key": "ax_cmd_06",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "OT-1",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "Pressurised 2-seat piloting cab with a forward faceted window band and a docking collar"
 }
