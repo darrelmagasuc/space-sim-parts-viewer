@@ -1,0 +1,154 @@
+{
+ "id": "ax_util_03",
+ "name": "DP-CB Common Berthing Ring",
+ "category": "station",
+ "short_name": "berthing_ring",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_util_03_berthing_ring",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.175,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.075,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.075,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_03_berthing_ring": {
+   "vid": "ax_util_03_berthing_ring",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-CB Common Berthing Ring",
+   "primary": true,
+   "dims": {
+    "diameter": 2.5,
+    "square_hatch": 1.27,
+    "height": 0.25
+   },
+   "notes": "2.5 m common berthing ring: grooved white ring, 4 bevelled capture-latch pockets, 4 ti alignment guides, grey bulkhead with 1.27 m square hatch.",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.2500001,
+     -0.17500005000000002
+    ],
+    [
+     1.2500001,
+     1.2500001,
+     0.17500005000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.35,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.175,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.075,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_03_berthing_ring.step",
+    "glb": "glb/ax_util_03_berthing_ring.glb",
+    "preview": "renders/ax_util_03_berthing_ring.png"
+   }
+  }
+ },
+ "display_id": "AX-util-03",
+ "key": "ax_util_03",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "light",
+ "summary": "Berthing ring for arm-captured modules"
+}

@@ -1,0 +1,153 @@
+{
+ "id": "ax_station_09",
+ "name": "SV-L Station Service Module",
+ "category": "station",
+ "short_name": "service_module",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_station_09_service_module",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.742,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.5884,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    3.378,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_station_09_service_module": {
+   "vid": "ax_station_09_service_module",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SV-L Station Service Module",
+   "primary": true,
+   "dims": {
+    "hull_across_flats": 4.2,
+    "length": 6.4
+   },
+   "notes": "Faceted AX pressure hull (chamfered facets, bevelled end cones), 1.6 m docking collars (1.02 m clear hatch), recessed seam grooves, bevelled windows / RCS pockets.",
+   "bbox_cad_zup": [
+    [
+     -2.1000001000000004,
+     -2.1000001000000004,
+     -3.74200005
+    ],
+    [
+     2.1000001000000004,
+     2.1000001,
+     3.742000049999999
+    ]
+   ],
+   "bbox_godot_size": [
+    4.2,
+    7.484,
+    4.2
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.742,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.5884,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      3.378,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_station_09_service_module.step",
+    "glb": "glb/ax_station_09_service_module.glb",
+    "preview": "renders/ax_station_09_service_module.png"
+   }
+  }
+ },
+ "display_id": "AX-station-09",
+ "key": "ax_station_09",
+ "line": "AX",
+ "ax_category": "station",
+ "aliases": [],
+ "batch": "B5",
+ "slot": null,
+ "interior": null,
+ "summary": "Propulsion / reboost module with RCS pockets and conformal radiators"
+}

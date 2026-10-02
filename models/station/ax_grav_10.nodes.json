@@ -1,0 +1,164 @@
+{
+ "id": "ax_grav_10",
+ "name": "GR-CW Counterweight / Ballast Segment",
+ "category": "station",
+ "short_name": "counterweight",
+ "sizes": [
+  "ring R28 15 deg"
+ ],
+ "primary": "ax_grav_10_counterweight",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_end_a",
+   "position": [
+    3.6547,
+    -0.9862,
+    0.0
+   ],
+   "direction": [
+    0.9914,
+    0.1305,
+    0.0
+   ],
+   "up": [
+    -0.1305,
+    0.9914,
+    0.0
+   ]
+  },
+  {
+   "name": "node_end_b",
+   "position": [
+    -3.6547,
+    -0.9862,
+    0.0
+   ],
+   "direction": [
+    -0.9914,
+    0.1305,
+    0.0
+   ],
+   "up": [
+    0.1305,
+    0.9914,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.9758,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_10_counterweight": {
+   "vid": "ax_grav_10_counterweight",
+   "size": "ring R28 15 deg",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-CW Counterweight / Ballast Segment",
+   "primary": true,
+   "dims": {
+    "floor_radius": 28.0,
+    "angle_deg": 15.0,
+    "arc_at_floor": 7.33,
+    "iml_w": 4.2,
+    "iml_h": 3.0
+   },
+   "notes": "Water-ballast counterweight segment (closed, pumped water trims the ring balance). Ring segment: R 28.0 m floor radius, 15.0 deg (7.33 m arc at the floor), IML 4.2 x 3.0 m with 0.55 m corner chamfers, 0.22 m wall, 0.75 m sub-floor; chamfered steel end flanges, recessed seam grooves.",
+   "bbox_cad_zup": [
+    [
+     -3.759154335937486,
+     -2.37,
+     -2.2557842891128344
+    ],
+    [
+     3.759154335937486,
+     2.37,
+     2.2557842891128352
+    ]
+   ],
+   "bbox_godot_size": [
+    7.518,
+    4.512,
+    4.74
+   ],
+   "nodes": [
+    {
+     "name": "node_end_a",
+     "position": [
+      3.6547,
+      -0.9862,
+      0.0
+     ],
+     "direction": [
+      0.9914,
+      0.1305,
+      0.0
+     ],
+     "up": [
+      -0.1305,
+      0.9914,
+      0.0
+     ]
+    },
+    {
+     "name": "node_end_b",
+     "position": [
+      -3.6547,
+      -0.9862,
+      0.0
+     ],
+     "direction": [
+      -0.9914,
+      0.1305,
+      0.0
+     ],
+     "up": [
+      0.1305,
+      0.9914,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.9758,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_10_counterweight.step",
+    "glb": "glb/ax_grav_10_counterweight.glb",
+    "preview": "renders/ax_grav_10_counterweight.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-10",
+ "key": "ax_grav_10",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": null,
+ "summary": "Water-ballast segment that trims ring balance"
+}

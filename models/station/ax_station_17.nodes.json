@@ -1,0 +1,334 @@
+{
+ "id": "ax_station_17",
+ "name": "SA-M Surface Airlock / Suitport",
+ "category": "station",
+ "short_name": "surface_airlock",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_station_17_surface_airlock",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    2.0804,
+    1.125,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    1.87,
+    1.125,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.125,
+    -1.11
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.375,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.6,
+    1.045,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.6,
+    1.795,
+    -0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.6,
+    1.045,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.6,
+    1.795,
+    -0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_station_17_surface_airlock": {
+   "vid": "ax_station_17_surface_airlock",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SA-M Surface Airlock / Suitport",
+   "primary": true,
+   "dims": {
+    "hull_across_flats": 2.5,
+    "length": 3.9
+   },
+   "notes": "2.5 m dust-control airlock on skids: 2 suitport rings + hatches at the closed end, side EVA hatch, docking collar to the hab at +X.",
+   "bbox_cad_zup": [
+    [
+     -1.9700000000000002,
+     -1.2500001000000003,
+     -2.375000050000001
+    ],
+    [
+     2.2340000000000004,
+     1.326,
+     2.37500005
+    ]
+   ],
+   "bbox_godot_size": [
+    4.204,
+    4.75,
+    2.576
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      2.0804,
+      1.125,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.87,
+      1.125,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.125,
+      -1.11
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.375,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.6,
+      1.045,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.6,
+      1.795,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.6,
+      1.045,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.6,
+      1.795,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_station_17_surface_airlock.step",
+    "glb": "glb/ax_station_17_surface_airlock.glb",
+    "preview": "renders/ax_station_17_surface_airlock.png"
+   }
+  }
+ },
+ "display_id": "AX-station-17",
+ "key": "ax_station_17",
+ "line": "AX",
+ "ax_category": "station",
+ "aliases": [],
+ "batch": "B5",
+ "slot": null,
+ "interior": "full",
+ "summary": "Dust-control airlock with 2 suitports"
+}

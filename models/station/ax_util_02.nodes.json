@@ -1,0 +1,115 @@
+{
+ "id": "ax_util_02",
+ "name": "DP-XSX Compact Docking Port",
+ "category": "station",
+ "short_name": "probe_port",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_02_probe_port",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.165,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_02_probe_port": {
+   "vid": "ax_util_02_probe_port",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-XSX Compact Docking Port",
+   "primary": true,
+   "dims": {
+    "diameter": 0.625,
+    "height": 0.33
+   },
+   "notes": "0.625 m probe / drogue port for probes and tugs: ti drogue cone, steel probe with capture head, grey latch ring (no crew transfer).",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.165
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.165
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.33,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.165,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.025,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_02_probe_port.step",
+    "glb": "glb/ax_util_02_probe_port.glb",
+    "preview": "renders/ax_util_02_probe_port.png"
+   }
+  }
+ },
+ "display_id": "AX-util-02",
+ "key": "ax_util_02",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": null,
+ "summary": "Small probe/drogue port for probes and tugs"
+}

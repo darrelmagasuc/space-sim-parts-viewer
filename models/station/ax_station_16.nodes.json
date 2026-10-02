@@ -1,0 +1,378 @@
+{
+ "id": "ax_station_16",
+ "name": "DM-XL Inflatable Surface Dome",
+ "category": "station",
+ "short_name": "dome",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_station_16_dome",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.5384,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.692,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_station_16_dome": {
+   "vid": "ax_station_16_dome",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "DM-XL Inflatable Surface Dome",
+   "primary": true,
+   "dims": {
+    "core_across_flats": 3.2,
+    "height": 5.3
+   },
+   "notes": "Stowed dome: rigid 12-facet core with the packed membrane under restraint bands; same origin / nodes as deployed.",
+   "bbox_cad_zup": [
+    [
+     -2.29,
+     -2.29,
+     -2.6920000500000003
+    ],
+    [
+     2.29,
+     2.29,
+     2.69200005
+    ]
+   ],
+   "bbox_godot_size": [
+    4.58,
+    5.384,
+    4.58
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5384,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.692,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_station_16_dome.step",
+    "glb": "glb/ax_station_16_dome.glb",
+    "preview": "renders/ax_station_16_dome.png"
+   }
+  },
+  "ax_station_16_dome_deployed": {
+   "vid": "ax_station_16_dome_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "DM-XL Inflatable Surface Dome",
+   "primary": false,
+   "dims": {
+    "dome_inner_r": 5.0,
+    "height": 5.3
+   },
+   "notes": "Deployed dome: 0.25 m membrane + 0.45 m regolith cover (closed revolves), +X entry tunnel with 1.6 m collar, 12-facet rigid core through the apex with top collar.",
+   "bbox_cad_zup": [
+    [
+     -5.9,
+     -5.9,
+     -2.6920000500000003
+    ],
+    [
+     6.134000000000001,
+     5.9,
+     2.69200005
+    ]
+   ],
+   "bbox_godot_size": [
+    12.034,
+    5.384,
+    11.8
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5384,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.692,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      5.9804,
+      -1.392,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      2.328,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      5.77,
+      -1.392,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      3.0,
+      -1.592,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      3.14,
+      -0.842,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -1.592,
+      -3.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.14,
+      -0.842,
+      -3.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -3.0,
+      -1.592,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -2.86,
+      -0.842,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      0.0,
+      -1.592,
+      3.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.14,
+      -0.842,
+      3.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2"
+   ],
+   "default_of": "ax_station_16_dome",
+   "files": {
+    "step": "step/ax_station_16_dome_deployed.step",
+    "glb": "glb/ax_station_16_dome_deployed.glb",
+    "preview": "renders/ax_station_16_dome_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-station-16",
+ "key": "ax_station_16",
+ "line": "AX",
+ "ax_category": "station",
+ "aliases": [],
+ "batch": "B5",
+ "slot": null,
+ "interior": "full",
+ "summary": "Inflatable regolith-covered dome hab over a rigid core"
+}

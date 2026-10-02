@@ -1,0 +1,335 @@
+{
+ "id": "ax_grav_03",
+ "name": "GR-SP Pressurised Spoke / Elevator",
+ "category": "station",
+ "short_name": "pressurised_spoke",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_grav_03_pressurised_spoke",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -10.8495,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -10.6391,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    10.8495,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    10.6391,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -8.8091,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.14,
+    -8.0591,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    -8.8091,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.14,
+    -8.0591,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_03_pressurised_spoke": {
+   "vid": "ax_grav_03_pressurised_spoke",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-SP Pressurised Spoke / Elevator",
+   "primary": true,
+   "dims": {
+    "tube_across_flats": 2.0,
+    "length": 21.699
+   },
+   "notes": "Pressurised 2.0 m spoke tube (21.699 m collar to collar), 8 facets, 1.6 m collars both ends, seam grooves (1 orange), elevator car + guide rails + ladder inside.",
+   "bbox_cad_zup": [
+    [
+     -1.0000001000000005,
+     -1.0000001000000003,
+     -11.003100000000002
+    ],
+    [
+     1.0000001000000003,
+     1.0000001,
+     11.0031
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    22.006,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -10.8495,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -10.6391,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      10.8495,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      10.6391,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -8.8091,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.14,
+      -8.0591,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -8.8091,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.14,
+      -8.0591,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2",
+    "elevator_car"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_03_pressurised_spoke.step",
+    "glb": "glb/ax_grav_03_pressurised_spoke.glb",
+    "preview": "renders/ax_grav_03_pressurised_spoke.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-03",
+ "key": "ax_grav_03",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "full",
+ "summary": "Pressurised spoke tube (hub to ring, ~26 m) with an elevator car (moving mesh) and ladder"
+}

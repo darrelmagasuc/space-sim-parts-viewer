@@ -1,0 +1,154 @@
+{
+ "id": "ax_util_04",
+ "name": "DP-AD Docking Adapter",
+ "category": "station",
+ "short_name": "docking_adapter",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_util_04_docking_adapter",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.73,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.85,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    0.59,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_04_docking_adapter": {
+   "vid": "ax_util_04_docking_adapter",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-AD Docking Adapter",
+   "primary": true,
+   "dims": {
+    "bottom": 2.5,
+    "top": 1.25,
+    "height": 1.62
+   },
+   "notes": "Berthing-to-docking adapter: 2.5 m CBM face (steel ring) to a 1.25 m androgynous port, chamfered conical white shell with seam groove.",
+   "bbox_cad_zup": [
+    [
+     -1.26,
+     -1.26,
+     -0.85
+    ],
+    [
+     1.26,
+     1.26,
+     0.85
+    ]
+   ],
+   "bbox_godot_size": [
+    2.52,
+    1.7,
+    2.52
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.73,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.59,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_04_docking_adapter.step",
+    "glb": "glb/ax_util_04_docking_adapter.glb",
+    "preview": "renders/ax_util_04_docking_adapter.png"
+   }
+  }
+ },
+ "display_id": "AX-util-04",
+ "key": "ax_util_04",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "light",
+ "summary": "Adapter converting a berthing ring to an IDSS port"
+}

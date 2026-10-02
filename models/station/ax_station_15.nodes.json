@@ -1,0 +1,626 @@
+{
+ "id": "ax_station_15",
+ "name": "SH-L Surface Hab",
+ "category": "station",
+ "short_name": "surface_hab",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_station_15_surface_hab",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    4.2804,
+    0.65,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    4.07,
+    0.65,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -2.28,
+    -1.23,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.85,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -2.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -2.0,
+    1.25,
+    -0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    1.25,
+    -0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    2.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    2.0,
+    1.25,
+    -0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_station_15_surface_hab": {
+   "vid": "ax_station_15_surface_hab",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "SH-L Surface Hab",
+   "primary": true,
+   "dims": {
+    "hull_across_flats": 4.2,
+    "length": 7.8
+   },
+   "notes": "Horizontal 4.2 m surface hab on 4 telescoping levelling legs (moving meshes leg_1..4), suitport end, side EVA hatch, docking collar at +X.",
+   "bbox_cad_zup": [
+    [
+     -4.169999999999999,
+     -2.1000001000000004,
+     -2.7500000500000006
+    ],
+    [
+     4.434,
+     2.1000001,
+     2.7500000500000006
+    ]
+   ],
+   "bbox_godot_size": [
+    8.604,
+    5.5,
+    4.2
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      4.2804,
+      0.65,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      4.07,
+      0.65,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -2.28,
+      -1.23,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -2.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -2.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      2.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      2.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2",
+    "leg_1",
+    "leg_2",
+    "leg_3",
+    "leg_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_station_15_surface_hab.step",
+    "glb": "glb/ax_station_15_surface_hab.glb",
+    "preview": "renders/ax_station_15_surface_hab.png"
+   }
+  },
+  "ax_station_15_surface_hab_deployed": {
+   "vid": "ax_station_15_surface_hab_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "SH-L Surface Hab",
+   "primary": false,
+   "dims": {
+    "hull_across_flats": 4.2,
+    "length": 7.8
+   },
+   "notes": "Horizontal 4.2 m surface hab on 4 telescoping levelling legs (moving meshes leg_1..4), suitport end, side EVA hatch, docking collar at +X.",
+   "bbox_cad_zup": [
+    [
+     -4.169999999999999,
+     -2.1000001000000004,
+     -2.8500000500000007
+    ],
+    [
+     4.434,
+     2.1000001,
+     2.7500000500000006
+    ]
+   ],
+   "bbox_godot_size": [
+    8.604,
+    5.6,
+    4.2
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      4.2804,
+      0.65,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      4.07,
+      0.65,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -2.28,
+      -1.23,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.85,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -2.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -2.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      2.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      2.0,
+      1.25,
+      -0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2",
+    "leg_1",
+    "leg_2",
+    "leg_3",
+    "leg_4"
+   ],
+   "default_of": "ax_station_15_surface_hab",
+   "files": {
+    "step": "step/ax_station_15_surface_hab_deployed.step",
+    "glb": "glb/ax_station_15_surface_hab_deployed.glb",
+    "preview": "renders/ax_station_15_surface_hab_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-station-15",
+ "key": "ax_station_15",
+ "line": "AX",
+ "ax_category": "station",
+ "aliases": [],
+ "batch": "B5",
+ "slot": null,
+ "interior": "full",
+ "summary": "Horizontal surface hab on levelling legs, suitport end"
+}

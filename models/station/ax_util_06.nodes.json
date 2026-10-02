@@ -1,0 +1,115 @@
+{
+ "id": "ax_util_06",
+ "name": "GF-1X Grapple Fixture",
+ "category": "station",
+ "short_name": "grapple_fixture",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_06_grapple_fixture",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grapple",
+   "position": [
+    0.0,
+    0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_06_grapple_fixture": {
+   "vid": "ax_util_06_grapple_fixture",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "GF-1X Grapple Fixture",
+   "primary": true,
+   "dims": {
+    "plate": 0.4,
+    "height": 0.3
+   },
+   "notes": "Arm grapple fixture: chamfered white plate, bevelled recess with steel grapple pin + cam arm, black alignment target.",
+   "bbox_cad_zup": [
+    [
+     -0.20000000000000004,
+     -0.20000000000000004,
+     -0.15
+    ],
+    [
+     0.20000000000000004,
+     0.20000000000000004,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    0.3,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grapple",
+     "position": [
+      0.0,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_06_grapple_fixture.step",
+    "glb": "glb/ax_util_06_grapple_fixture.glb",
+    "preview": "renders/ax_util_06_grapple_fixture.png"
+   }
+  }
+ },
+ "display_id": "AX-util-06",
+ "key": "ax_util_06",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": null,
+ "summary": "Arm grapple fixture in a bevelled recess"
+}

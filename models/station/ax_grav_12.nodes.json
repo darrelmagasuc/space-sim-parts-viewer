@@ -1,0 +1,122 @@
+{
+ "id": "ax_grav_12",
+ "name": "GR-MA Hub Power & Radiator Mast",
+ "category": "station",
+ "short_name": "hub_mast",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_grav_12_hub_mast",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -5.1884,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    5.342,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_12_hub_mast": {
+   "vid": "ax_grav_12_hub_mast",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-MA Hub Power & Radiator Mast",
+   "primary": true,
+   "dims": {
+    "mast_length": 10.3,
+    "solar_span": 20.8
+   },
+   "notes": "Despun hub mast: 1.6 m base collar on the hub axis, 8-facet 0.9 m mast (10 m), 2 rigid solar wings (gimbal at 8 m) and 2 radiator wings (gimbal at 3 m). No batteries (energy storage = internal slot items).",
+   "bbox_cad_zup": [
+    [
+     -10.4,
+     -5.4,
+     -5.34200005
+    ],
+    [
+     10.4,
+     5.4,
+     5.342000050000001
+    ]
+   ],
+   "bbox_godot_size": [
+    20.8,
+    10.684,
+    10.8
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.1884,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.342,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast_base",
+    "mast",
+    "panel_solar_p",
+    "panel_radiator_p",
+    "panel_solar_m",
+    "panel_radiator_m"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_12_hub_mast.step",
+    "glb": "glb/ax_grav_12_hub_mast.glb",
+    "preview": "renders/ax_grav_12_hub_mast.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-12",
+ "key": "ax_grav_12",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": null,
+ "summary": "Despun mast carrying solar + radiators on the hub axis"
+}

@@ -1,0 +1,426 @@
+{
+ "id": "ax_grav_02",
+ "name": "GR-CRX Counter-Rotating Bearing Assembly",
+ "category": "station",
+ "short_name": "counter_bearing",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_grav_02_counter_bearing",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.3304,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.3304,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_spoke_1_1",
+   "position": [
+    2.7904,
+    -0.95,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_spoke_1_2",
+   "position": [
+    0.0,
+    -0.95,
+    -2.7904
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_spoke_1_3",
+   "position": [
+    -2.7904,
+    -0.95,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_spoke_1_4",
+   "position": [
+    0.0,
+    -0.95,
+    2.7904
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_spoke_2_1",
+   "position": [
+    2.7904,
+    0.95,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_spoke_2_2",
+   "position": [
+    0.0,
+    0.95,
+    -2.7904
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_spoke_2_3",
+   "position": [
+    -2.7904,
+    0.95,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_spoke_2_4",
+   "position": [
+    0.0,
+    0.95,
+    2.7904
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_axis",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -2.12,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    2.12,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_02_counter_bearing": {
+   "vid": "ax_grav_02_counter_bearing",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-CRX Counter-Rotating Bearing Assembly",
+   "primary": true,
+   "dims": {
+    "drum_across_flats": 5.0,
+    "length": 4.66
+   },
+   "notes": "Counter-rotating bearing assembly: 2 x 12-facet rotor drums (5.0 m) on chamfered steel bearing races around a 1.6 m transfer tunnel; 4 radial spoke collars per drum (node_spoke_<drum>_<n>), axial collars top / bottom.",
+   "bbox_cad_zup": [
+    [
+     -2.9440000000000004,
+     -2.944000000000001,
+     -2.484000000000001
+    ],
+    [
+     2.9440000000000004,
+     2.9440000000000004,
+     2.484
+    ]
+   ],
+   "bbox_godot_size": [
+    5.888,
+    4.968,
+    5.888
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.3304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_spoke_1_1",
+     "position": [
+      2.7904,
+      -0.95,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_spoke_1_2",
+     "position": [
+      0.0,
+      -0.95,
+      -2.7904
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_spoke_1_3",
+     "position": [
+      -2.7904,
+      -0.95,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_spoke_1_4",
+     "position": [
+      0.0,
+      -0.95,
+      2.7904
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_spoke_2_1",
+     "position": [
+      2.7904,
+      0.95,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_spoke_2_2",
+     "position": [
+      0.0,
+      0.95,
+      -2.7904
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_spoke_2_3",
+     "position": [
+      -2.7904,
+      0.95,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_spoke_2_4",
+     "position": [
+      0.0,
+      0.95,
+      2.7904
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_axis",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -2.12,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      2.12,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2",
+    "rotor_drum_1",
+    "rotor_drum_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_02_counter_bearing.step",
+    "glb": "glb/ax_grav_02_counter_bearing.glb",
+    "preview": "renders/ax_grav_02_counter_bearing.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-02",
+ "key": "ax_grav_02",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "light",
+ "summary": "Twin bearing rings for two counter-rotating ring sets (no net angular momentum), transfer tunnel"
+}

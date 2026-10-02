@@ -1,0 +1,444 @@
+{
+ "id": "ax_grav_05",
+ "name": "GR-RH Ring Segment: Habitat",
+ "category": "station",
+ "short_name": "ring_hab",
+ "sizes": [
+  "ring R28 15 deg"
+ ],
+ "primary": "ax_grav_05_ring_hab",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_spoke",
+   "position": [
+    0.0,
+    2.0534,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    1.843,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_end_a",
+   "position": [
+    3.6547,
+    -1.2175,
+    0.0
+   ],
+   "direction": [
+    0.9914,
+    0.1305,
+    0.0
+   ],
+   "up": [
+    -0.1305,
+    0.9914,
+    0.0
+   ]
+  },
+  {
+   "name": "node_end_b",
+   "position": [
+    -3.6547,
+    -1.2175,
+    0.0
+   ],
+   "direction": [
+    -0.9914,
+    0.1305,
+    0.0
+   ],
+   "up": [
+    0.1305,
+    0.9914,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.207,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    1.9532,
+    -0.4388,
+    0.0
+   ],
+   "direction": [
+    -0.9976,
+    -0.0698,
+    0.0
+   ],
+   "up": [
+    -0.0698,
+    0.9976,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    1.7612,
+    0.2996,
+    0.0
+   ],
+   "direction": [
+    -0.9976,
+    -0.0698,
+    0.0
+   ],
+   "up": [
+    -0.0698,
+    0.9976,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    -0.507,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.14,
+    0.243,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -1.9532,
+    -0.4388,
+    0.0
+   ],
+   "direction": [
+    -0.9976,
+    0.0698,
+    0.0
+   ],
+   "up": [
+    0.0698,
+    0.9976,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -2.0405,
+    0.3191,
+    0.0
+   ],
+   "direction": [
+    -0.9976,
+    0.0698,
+    0.0
+   ],
+   "up": [
+    0.0698,
+    0.9976,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_05_ring_hab": {
+   "vid": "ax_grav_05_ring_hab",
+   "size": "ring R28 15 deg",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-RH Ring Segment: Habitat",
+   "primary": true,
+   "dims": {
+    "floor_radius": 28.0,
+    "angle_deg": 15.0,
+    "arc_at_floor": 7.33,
+    "iml_w": 4.2,
+    "iml_h": 3.0
+   },
+   "notes": " Ring segment: R 28.0 m floor radius, 15.0 deg (7.33 m arc at the floor), IML 4.2 x 3.0 m with 0.55 m corner chamfers, 0.22 m wall, 0.75 m sub-floor; chamfered steel end flanges, recessed seam grooves.",
+   "bbox_cad_zup": [
+    [
+     -3.759154335937486,
+     -2.37,
+     -2.2070000000000007
+    ],
+    [
+     3.759154335937486,
+     2.37,
+     2.207
+    ]
+   ],
+   "bbox_godot_size": [
+    7.518,
+    4.414,
+    4.74
+   ],
+   "nodes": [
+    {
+     "name": "node_spoke",
+     "position": [
+      0.0,
+      2.0534,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      1.843,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_end_a",
+     "position": [
+      3.6547,
+      -1.2175,
+      0.0
+     ],
+     "direction": [
+      0.9914,
+      0.1305,
+      0.0
+     ],
+     "up": [
+      -0.1305,
+      0.9914,
+      0.0
+     ]
+    },
+    {
+     "name": "node_end_b",
+     "position": [
+      -3.6547,
+      -1.2175,
+      0.0
+     ],
+     "direction": [
+      -0.9914,
+      0.1305,
+      0.0
+     ],
+     "up": [
+      0.1305,
+      0.9914,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.207,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      1.9532,
+      -0.4388,
+      0.0
+     ],
+     "direction": [
+      -0.9976,
+      -0.0698,
+      0.0
+     ],
+     "up": [
+      -0.0698,
+      0.9976,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      1.7612,
+      0.2996,
+      0.0
+     ],
+     "direction": [
+      -0.9976,
+      -0.0698,
+      0.0
+     ],
+     "up": [
+      -0.0698,
+      0.9976,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -0.507,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.14,
+      0.243,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -1.9532,
+      -0.4388,
+      0.0
+     ],
+     "direction": [
+      -0.9976,
+      0.0698,
+      0.0
+     ],
+     "up": [
+      0.0698,
+      0.9976,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -2.0405,
+      0.3191,
+      0.0
+     ],
+     "direction": [
+      -0.9976,
+      0.0698,
+      0.0
+     ],
+     "up": [
+      0.0698,
+      0.9976,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_05_ring_hab.step",
+    "glb": "glb/ax_grav_05_ring_hab.glb",
+    "preview": "renders/ax_grav_05_ring_hab.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-05",
+ "key": "ax_grav_05",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "full",
+ "summary": "Curved 15 deg ring segment (7.3 m arc at the 28 m floor radius) with crew quarters (floor = outer wall)"
+}

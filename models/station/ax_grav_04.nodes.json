@@ -1,0 +1,115 @@
+{
+ "id": "ax_grav_04",
+ "name": "GR-ST Truss Spoke",
+ "category": "station",
+ "short_name": "truss_spoke",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_grav_04_truss_spoke",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -10.8495,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    10.8495,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_grav_04_truss_spoke": {
+   "vid": "ax_grav_04_truss_spoke",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "GR-ST Truss Spoke",
+   "primary": true,
+   "dims": {
+    "width": 1.0,
+    "length": 21.699
+   },
+   "notes": "Unpressurised tension spoke: 1.0 m square truss, 21.699 m end plate to end plate (same as GR-SP), chamfered longerons, cross cables, 3 utility lines in clamps, 1.6 m ti end fittings.",
+   "bbox_cad_zup": [
+    [
+     -0.8,
+     -0.8,
+     -10.8495
+    ],
+    [
+     0.8,
+     0.8,
+     10.8495
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    21.699,
+    1.6
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -10.8495,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      10.8495,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_grav_04_truss_spoke.step",
+    "glb": "glb/ax_grav_04_truss_spoke.glb",
+    "preview": "renders/ax_grav_04_truss_spoke.png"
+   }
+  }
+ },
+ "display_id": "AX-grav-04",
+ "key": "ax_grav_04",
+ "line": "AX",
+ "ax_category": "grav",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": null,
+ "summary": "Unpressurised tension spoke (~26 m) with utility lines"
+}

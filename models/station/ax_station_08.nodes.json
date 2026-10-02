@@ -1,0 +1,438 @@
+{
+ "id": "ax_station_08",
+ "name": "IH-XL Inflatable Hab",
+ "category": "station",
+ "short_name": "inflatable_hab",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_station_08_inflatable_hab",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.8304,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -3.62,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.8304,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    3.62,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_station_08_inflatable_hab": {
+   "vid": "ax_station_08_inflatable_hab",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "IH-XL Inflatable Hab",
+   "primary": true,
+   "dims": {
+    "stowed_across_flats": 3.4,
+    "length": 8.8
+   },
+   "notes": "Stowed: soft goods packed around the rigid core under restraint bands; same collars and node positions as deployed.",
+   "bbox_cad_zup": [
+    [
+     -1.7000001,
+     -1.7000001000000005,
+     -3.984
+    ],
+    [
+     1.7000001,
+     1.7000001000000002,
+     3.984000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.4,
+    7.968,
+    3.4
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.8304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -3.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.8304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      3.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_station_08_inflatable_hab.step",
+    "glb": "glb/ax_station_08_inflatable_hab.glb",
+    "preview": "renders/ax_station_08_inflatable_hab.png"
+   }
+  },
+  "ax_station_08_inflatable_hab_deployed": {
+   "vid": "ax_station_08_inflatable_hab_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "IH-XL Inflatable Hab",
+   "primary": false,
+   "dims": {
+    "deployed_across_flats": 6.4,
+    "length": 10.4
+   },
+   "notes": "Deployed inflatable: 24-facet soft shell (6.4 m), restraint bands, 2 viewports, 1 orange stripe.",
+   "bbox_cad_zup": [
+    [
+     -3.2000001,
+     -3.2000001000000005,
+     -3.984
+    ],
+    [
+     3.2000001,
+     3.2000001000000005,
+     4.984000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    6.4,
+    8.968,
+    6.4
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.8304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -3.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.8304,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      4.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.7375,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.14,
+      0.0125,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      0.0875,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.14,
+      0.8375,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.0,
+      0.9125,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.14,
+      1.6625,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      0.0,
+      1.7375,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.14,
+      2.4875,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2"
+   ],
+   "default_of": "ax_station_08_inflatable_hab",
+   "files": {
+    "step": "step/ax_station_08_inflatable_hab_deployed.step",
+    "glb": "glb/ax_station_08_inflatable_hab_deployed.glb",
+    "preview": "renders/ax_station_08_inflatable_hab_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-station-08",
+ "key": "ax_station_08",
+ "line": "AX",
+ "ax_category": "station",
+ "aliases": [],
+ "batch": "B5",
+ "slot": null,
+ "interior": "full",
+ "summary": "Expandable hab, stowed and deployed variants, rigid faceted core"
+}

@@ -1,0 +1,154 @@
+{
+ "id": "ax_util_05",
+ "name": "DP-L Heavy Cargo Port",
+ "category": "station",
+ "short_name": "heavy_port",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_util_05_heavy_port",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.435,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.255,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    0.085,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_05_heavy_port": {
+   "vid": "ax_util_05_heavy_port",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "DP-L Heavy Cargo Port",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "clear_hatch": 2.0,
+    "height": 0.69
+   },
+   "notes": "3.75 m heavy cargo port: 2.0 m clear hatch, grooved white body with 4 bevelled fluid-coupler pockets, ti capture ring and 4 grey guide petals.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.43500000000000005
+    ],
+    [
+     1.875,
+     1.875,
+     0.4350000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.87,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.435,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.255,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.085,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_05_heavy_port.step",
+    "glb": "glb/ax_util_05_heavy_port.glb",
+    "preview": "renders/ax_util_05_heavy_port.png"
+   }
+  }
+ },
+ "display_id": "AX-util-05",
+ "key": "ax_util_05",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B6",
+ "slot": null,
+ "interior": "light",
+ "summary": "Large-hatch port for propellant / cargo transfer"
+}
