@@ -13,7 +13,7 @@
    "name": "node_top",
    "position": [
     0.0,
-    1.285,
+    1.41,
     0.0
    ],
    "direction": [
@@ -26,7 +26,7 @@
    "name": "node_bottom",
    "position": [
     0.0,
-    -1.285,
+    -1.41,
     0.0
    ],
    "direction": [
@@ -38,9 +38,9 @@
   {
    "name": "node_seat_1",
    "position": [
-    0.28,
-    -0.365,
-    0.15
+    0.58,
+    -0.49,
+    0.2
    ],
    "direction": [
     0.0,
@@ -56,9 +56,9 @@
   {
    "name": "node_camera_1",
    "position": [
-    0.28,
-    0.385,
-    0.29
+    0.58,
+    0.26,
+    0.34
    ],
    "direction": [
     0.0,
@@ -74,9 +74,9 @@
   {
    "name": "node_seat_2",
    "position": [
-    -0.28,
-    -0.365,
-    0.15
+    -0.58,
+    -0.49,
+    0.2
    ],
    "direction": [
     0.0,
@@ -92,9 +92,9 @@
   {
    "name": "node_camera_2",
    "position": [
-    -0.28,
-    0.385,
-    0.29
+    -0.58,
+    0.26,
+    0.34
    ],
    "direction": [
     0.0,
@@ -110,8 +110,8 @@
   {
    "name": "node_seat_3",
    "position": [
-    0.28,
-    -0.365,
+    0.58,
+    -0.49,
     -0.6
    ],
    "direction": [
@@ -128,8 +128,8 @@
   {
    "name": "node_camera_3",
    "position": [
-    0.28,
-    0.385,
+    0.58,
+    0.26,
     -0.46
    ],
    "direction": [
@@ -146,8 +146,8 @@
   {
    "name": "node_seat_4",
    "position": [
-    -0.28,
-    -0.365,
+    -0.58,
+    -0.49,
     -0.6
    ],
    "direction": [
@@ -164,8 +164,8 @@
   {
    "name": "node_camera_4",
    "position": [
-    -0.28,
-    0.385,
+    -0.58,
+    0.26,
     -0.46
    ],
    "direction": [
@@ -183,8 +183,8 @@
    "name": "node_hatch_1",
    "position": [
     0.0,
-    -0.405,
-    1.1
+    -0.53,
+    1.28
    ],
    "direction": [
     0.0,
@@ -201,7 +201,7 @@
    "name": "node_hatch_2",
    "position": [
     0.0,
-    1.155,
+    1.28,
     0.0
    ],
    "direction": [
@@ -214,6 +214,96 @@
     0.0,
     1.0
    ]
+  },
+  {
+   "name": "node_aisle_1",
+   "position": [
+    0.0,
+    -0.04,
+    -0.35
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_aisle_2",
+   "position": [
+    0.0,
+    -0.04,
+    0.45
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_service_bay_1",
+   "position": [
+    0.0,
+    -1.21,
+    -0.9802
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_console_rear_1",
+   "position": [
+    1.2559,
+    0.06,
+    -0.1025
+   ],
+   "direction": [
+    -0.8552,
+    0.2531,
+    -0.4523
+   ],
+   "up": [
+    0.2237,
+    0.9675,
+    0.1183
+   ]
+  },
+  {
+   "name": "node_console_rear_2",
+   "position": [
+    -1.2559,
+    0.06,
+    -0.1025
+   ],
+   "direction": [
+    0.8552,
+    0.2531,
+    -0.4523
+   ],
+   "up": [
+    -0.2237,
+    0.9675,
+    0.1183
+   ]
   }
  ],
  "variants": {
@@ -225,36 +315,36 @@
    "label": "AC-4 'MAV' Ascent Cabin",
    "primary": true,
    "dims": {
-    "diameter_m": 2.5,
-    "height_m": 2.57,
+    "diameter_m": 2.7,
+    "height_m": 2.82,
     "crew": 4,
     "facets": 10,
     "windows": 2
    },
-   "notes": "Ascent cabin: 10-facet upright cylinder (chamfered facet edges, bevelled rims) with a faceted cone nose and round steel docking ring, recessed panel lines (one orange stripe), 2 small bevelled windows, side hatch + handrails, 4 RCS pockets, flush access panel, steel interface ring (no heat shield).",
+   "notes": "Ascent cabin: 10-facet upright cylinder (chamfered facet edges, bevelled rims) with a faceted cone nose and round steel docking ring, recessed panel lines (one orange stripe), 2 small bevelled windows, side hatch + handrails on the aisle line, 4 RCS pockets, aft service-bay access panel, steel interface ring (no heat shield).",
    "bbox_cad_zup": [
     [
-     -1.25,
-     -1.25,
-     -1.285
+     -1.395974102721661,
+     -1.4260000000000002,
+     -1.41
     ],
     [
-     1.25,
-     1.25,
-     1.285
+     1.3959741027216608,
+     1.3500001000000004,
+     1.41
     ]
    ],
    "bbox_godot_size": [
-    2.5,
-    2.57,
-    2.5
+    2.792,
+    2.82,
+    2.776
    ],
    "nodes": [
     {
      "name": "node_top",
      "position": [
       0.0,
-      1.285,
+      1.41,
       0.0
      ],
      "direction": [
@@ -267,7 +357,7 @@
      "name": "node_bottom",
      "position": [
       0.0,
-      -1.285,
+      -1.41,
       0.0
      ],
      "direction": [
@@ -279,9 +369,9 @@
     {
      "name": "node_seat_1",
      "position": [
-      0.28,
-      -0.365,
-      0.15
+      0.58,
+      -0.49,
+      0.2
      ],
      "direction": [
       0.0,
@@ -297,9 +387,9 @@
     {
      "name": "node_camera_1",
      "position": [
-      0.28,
-      0.385,
-      0.29
+      0.58,
+      0.26,
+      0.34
      ],
      "direction": [
       0.0,
@@ -315,9 +405,9 @@
     {
      "name": "node_seat_2",
      "position": [
-      -0.28,
-      -0.365,
-      0.15
+      -0.58,
+      -0.49,
+      0.2
      ],
      "direction": [
       0.0,
@@ -333,9 +423,9 @@
     {
      "name": "node_camera_2",
      "position": [
-      -0.28,
-      0.385,
-      0.29
+      -0.58,
+      0.26,
+      0.34
      ],
      "direction": [
       0.0,
@@ -351,8 +441,8 @@
     {
      "name": "node_seat_3",
      "position": [
-      0.28,
-      -0.365,
+      0.58,
+      -0.49,
       -0.6
      ],
      "direction": [
@@ -369,8 +459,8 @@
     {
      "name": "node_camera_3",
      "position": [
-      0.28,
-      0.385,
+      0.58,
+      0.26,
       -0.46
      ],
      "direction": [
@@ -387,8 +477,8 @@
     {
      "name": "node_seat_4",
      "position": [
-      -0.28,
-      -0.365,
+      -0.58,
+      -0.49,
       -0.6
      ],
      "direction": [
@@ -405,8 +495,8 @@
     {
      "name": "node_camera_4",
      "position": [
-      -0.28,
-      0.385,
+      -0.58,
+      0.26,
       -0.46
      ],
      "direction": [
@@ -424,8 +514,8 @@
      "name": "node_hatch_1",
      "position": [
       0.0,
-      -0.405,
-      1.1
+      -0.53,
+      1.28
      ],
      "direction": [
       0.0,
@@ -442,7 +532,7 @@
      "name": "node_hatch_2",
      "position": [
       0.0,
-      1.155,
+      1.28,
       0.0
      ],
      "direction": [
@@ -454,6 +544,96 @@
       0.0,
       0.0,
       1.0
+     ]
+    },
+    {
+     "name": "node_aisle_1",
+     "position": [
+      0.0,
+      -0.04,
+      -0.35
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_aisle_2",
+     "position": [
+      0.0,
+      -0.04,
+      0.45
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_service_bay_1",
+     "position": [
+      0.0,
+      -1.21,
+      -0.9802
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_console_rear_1",
+     "position": [
+      1.2559,
+      0.06,
+      -0.1025
+     ],
+     "direction": [
+      -0.8552,
+      0.2531,
+      -0.4523
+     ],
+     "up": [
+      0.2237,
+      0.9675,
+      0.1183
+     ]
+    },
+    {
+     "name": "node_console_rear_2",
+     "position": [
+      -1.2559,
+      0.06,
+      -0.1025
+     ],
+     "direction": [
+      0.8552,
+      0.2531,
+      -0.4523
+     ],
+     "up": [
+      -0.2237,
+      0.9675,
+      0.1183
      ]
     }
    ],
@@ -476,5 +656,5 @@
  "code": "AC-4",
  "interior": "full",
  "batch": "B1",
- "summary": "Lightweight 4-seat ascent cabin, standing/strapped crew, minimal windows, sits on an ascent stage"
+ "summary": "Lightweight 4-seat ascent cabin: 2 x 2 strapped couches either side of a central aisle to the side hatch, minimal windows, sits on an ascent stage"
 }
