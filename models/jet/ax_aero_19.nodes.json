@@ -1,0 +1,142 @@
+{
+ "id": "ax_aero_19",
+ "name": "WG-K Strake",
+ "category": "jet",
+ "short_name": "wgk_strake",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_19_wgk_strake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_19_wgk_strake_s": {
+   "vid": "ax_aero_19_wgk_strake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-K Strake",
+   "primary": true,
+   "dims": {
+    "span": 0.6,
+    "root_chord": 2.4
+   },
+   "notes": "Leading-edge strake / chine.",
+   "bbox_cad_zup": [
+    [
+     -1.0000000177635683e-07,
+     -0.06,
+     -1.2000001
+    ],
+    [
+     0.6000000999999999,
+     0.06,
+     1.2000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    2.4,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_19_wgk_strake_s.step",
+    "glb": "glb/ax_aero_19_wgk_strake_s.glb",
+    "preview": "renders/ax_aero_19_wgk_strake_s.png"
+   }
+  },
+  "ax_aero_19_wgk_strake_m": {
+   "vid": "ax_aero_19_wgk_strake_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-K Strake",
+   "primary": false,
+   "dims": {
+    "span": 0.96,
+    "root_chord": 3.84
+   },
+   "notes": "Leading-edge strake / chine.",
+   "bbox_cad_zup": [
+    [
+     -1.0000000177635683e-07,
+     -0.09599999999999999,
+     -1.9200001000000053
+    ],
+    [
+     0.9600001000000004,
+     0.09599999999999999,
+     1.9200001000000053
+    ]
+   ],
+   "bbox_godot_size": [
+    0.96,
+    3.84,
+    0.192
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_19_wgk_strake_m.step",
+    "glb": "glb/ax_aero_19_wgk_strake_m.glb",
+    "preview": "renders/ax_aero_19_wgk_strake_m.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-19",
+ "key": "ax_aero_19",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Leading-edge strake / chine"
+}

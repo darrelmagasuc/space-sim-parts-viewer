@@ -1,0 +1,195 @@
+{
+ "id": "ax_aero_17",
+ "name": "WG-D Delta Wing",
+ "category": "jet",
+ "short_name": "wgd_delta_wing",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_aero_17_wgd_delta_wing_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.9934,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_17_wgd_delta_wing_s": {
+   "vid": "ax_aero_17_wgd_delta_wing_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-D Delta Wing",
+   "primary": false,
+   "dims": {
+    "span": 2.4,
+    "root_chord": 3.2
+   },
+   "notes": "Double-delta wing panel (Shuttle / X-37 class), chamfered leading edge, tile-black underside.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.12000000000000002,
+     -2.2208833944873674
+    ],
+    [
+     2.4000001,
+     0.12000000000000005,
+     2.2208833944873683
+    ]
+   ],
+   "bbox_godot_size": [
+    2.4,
+    4.442,
+    0.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.6209,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_17_wgd_delta_wing_s.step",
+    "glb": "glb/ax_aero_17_wgd_delta_wing_s.glb",
+    "preview": "renders/ax_aero_17_wgd_delta_wing_s.png"
+   }
+  },
+  "ax_aero_17_wgd_delta_wing_m": {
+   "vid": "ax_aero_17_wgd_delta_wing_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-D Delta Wing",
+   "primary": true,
+   "dims": {
+    "span": 3.84,
+    "root_chord": 5.120000000000001
+   },
+   "notes": "Double-delta wing panel (Shuttle / X-37 class), chamfered leading edge, tile-black underside.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.192,
+     -3.553413371179786
+    ],
+    [
+     3.8400000999999997,
+     0.192,
+     3.5534133711797886
+    ]
+   ],
+   "bbox_godot_size": [
+    3.84,
+    7.107,
+    0.384
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.9934,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_17_wgd_delta_wing_m.step",
+    "glb": "glb/ax_aero_17_wgd_delta_wing_m.glb",
+    "preview": "renders/ax_aero_17_wgd_delta_wing_m.png"
+   }
+  },
+  "ax_aero_17_wgd_delta_wing_l": {
+   "vid": "ax_aero_17_wgd_delta_wing_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-D Delta Wing",
+   "primary": false,
+   "dims": {
+    "span": 5.76,
+    "root_chord": 7.68
+   },
+   "notes": "Double-delta wing panel (Shuttle / X-37 class), chamfered leading edge, tile-black underside.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.28800000000000014,
+     -5.330120006769676
+    ],
+    [
+     5.7600001,
+     0.2880000000000003,
+     5.330120006769678
+    ]
+   ],
+   "bbox_godot_size": [
+    5.76,
+    10.66,
+    0.576
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      1.4901,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_17_wgd_delta_wing_l.step",
+    "glb": "glb/ax_aero_17_wgd_delta_wing_l.glb",
+    "preview": "renders/ax_aero_17_wgd_delta_wing_l.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-17",
+ "key": "ax_aero_17",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Double-delta wing panel with tile-black underside and chamfered leading edge"
+}

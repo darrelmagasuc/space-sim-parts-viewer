@@ -1,0 +1,271 @@
+{
+ "id": "ax_aero_05",
+ "name": "CK-3S Mk3 Spaceplane Nose",
+ "category": "cockpit",
+ "short_name": "ck3s_spaceplane_nose",
+ "sizes": [
+  "Mk3"
+ ],
+ "primary": "ax_aero_05_ck3s_spaceplane_nose",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -1.4334,
+    1.7453
+   ],
+   "direction": [
+    0.0,
+    0.3338,
+    0.9426
+   ],
+   "up": [
+    0.0,
+    0.9426,
+    -0.3338
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.62,
+    -0.5,
+    -0.6
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.62,
+    -0.5589,
+    0.1607
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.62,
+    -0.5,
+    -0.6
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.62,
+    -0.5589,
+    0.1607
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_05_ck3s_spaceplane_nose": {
+   "vid": "ax_aero_05_ck3s_spaceplane_nose",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-3S Mk3 Spaceplane Nose",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "length": 4.6
+   },
+   "notes": "Mk3 spaceplane nose: RCC nose cap, tile-black belly, forward RCS pockets (Shuttle FRCS class).",
+   "bbox_cad_zup": [
+    [
+     -1.8943186121661122,
+     -2.031407973653587,
+     -2.3000001000000005
+    ],
+    [
+     1.8942554515502164,
+     1.889069575536648,
+     2.3000001000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.789,
+    4.6,
+    3.92
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -1.4334,
+      1.7453
+     ],
+     "direction": [
+      0.0,
+      0.3338,
+      0.9426
+     ],
+     "up": [
+      0.0,
+      0.9426,
+      -0.3338
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.62,
+      -0.5,
+      -0.6
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.62,
+      -0.5589,
+      0.1607
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.62,
+      -0.5,
+      -0.6
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.62,
+      -0.5589,
+      0.1607
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_05_ck3s_spaceplane_nose.step",
+    "glb": "glb/ax_aero_05_ck3s_spaceplane_nose.glb",
+    "preview": "renders/ax_aero_05_ck3s_spaceplane_nose.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-05",
+ "key": "ax_aero_05",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Mk3 nose with tile-black belly, RCS pockets and a nose cap"
+}

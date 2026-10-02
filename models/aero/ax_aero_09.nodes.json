@@ -1,0 +1,357 @@
+{
+ "id": "ax_aero_09",
+ "name": "FS-2C Mk2 Cargo Bay",
+ "category": "aero",
+ "short_name": "fs2c_cargo_bay",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_09_fs2c_cargo_bay",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_slot_1_1",
+   "position": [
+    0.0,
+    -0.65,
+    -0.35
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_09_fs2c_cargo_bay": {
+   "vid": "ax_aero_09_fs2c_cargo_bay",
+   "size": "Mk2",
+   "state": "closed",
+   "default_state": true,
+   "label": "FS-2C Mk2 Cargo Bay",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 2.5
+   },
+   "notes": "Mk2 cargo bay, 2 dorsal doors.",
+   "bbox_cad_zup": [
+    [
+     -1.2500000000000002,
+     -0.7000000000000004,
+     -1.2500000000000002
+    ],
+    [
+     1.25,
+     0.508,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.5,
+    1.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_slot_1_1",
+     "position": [
+      0.0,
+      -0.65,
+      -0.35
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_l",
+    "door_r"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_09_fs2c_cargo_bay.step",
+    "glb": "glb/ax_aero_09_fs2c_cargo_bay.glb",
+    "preview": "renders/ax_aero_09_fs2c_cargo_bay.png"
+   }
+  },
+  "ax_aero_09_fs2c_cargo_bay_open": {
+   "vid": "ax_aero_09_fs2c_cargo_bay_open",
+   "size": "Mk2",
+   "state": "open",
+   "default_state": false,
+   "label": "FS-2C Mk2 Cargo Bay",
+   "primary": false,
+   "dims": {
+    "width": 2.5,
+    "length": 2.5
+   },
+   "notes": "Mk2 cargo bay, 2 dorsal doors. Doors open 105 deg about the split-line hinges.",
+   "bbox_cad_zup": [
+    [
+     -1.2500000000000002,
+     -0.7000000000000004,
+     -1.2500000000000002
+    ],
+    [
+     1.25,
+     1.0141930493582647,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.5,
+    1.714
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_slot_1_1",
+     "position": [
+      0.0,
+      -0.65,
+      -0.35
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_l",
+    "door_r"
+   ],
+   "default_of": "ax_aero_09_fs2c_cargo_bay",
+   "files": {
+    "step": "step/ax_aero_09_fs2c_cargo_bay_open.step",
+    "glb": "glb/ax_aero_09_fs2c_cargo_bay_open.glb",
+    "preview": "renders/ax_aero_09_fs2c_cargo_bay_open.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-09",
+ "key": "ax_aero_09",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk2 cargo bay with 2 doors (closed / open)"
+}

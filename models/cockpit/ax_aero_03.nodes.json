@@ -1,0 +1,259 @@
+{
+ "id": "ax_aero_03",
+ "name": "CK-2I Mk2 Inline Cockpit",
+ "category": "cockpit",
+ "short_name": "ck2i_cockpit",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_03_ck2i_cockpit",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.42,
+    -0.2,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.6947,
+    0.7193
+   ],
+   "up": [
+    0.0,
+    -0.7193,
+    0.6947
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.42,
+    -0.6423,
+    0.4417
+   ],
+   "direction": [
+    0.0,
+    0.6947,
+    0.7193
+   ],
+   "up": [
+    0.0,
+    -0.7193,
+    0.6947
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.42,
+    -0.2,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.6947,
+    0.7193
+   ],
+   "up": [
+    0.0,
+    -0.7193,
+    0.6947
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.42,
+    -0.6423,
+    0.4417
+   ],
+   "direction": [
+    0.0,
+    0.6947,
+    0.7193
+   ],
+   "up": [
+    0.0,
+    -0.7193,
+    0.6947
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_03_ck2i_cockpit": {
+   "vid": "ax_aero_03_ck2i_cockpit",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-2I Mk2 Inline Cockpit",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 2.5
+   },
+   "notes": "Inline Mk2 cockpit (mid-fuselage), raised cabin roof, Mk2 lens at both ends.",
+   "bbox_cad_zup": [
+    [
+     -1.2560118202908548,
+     -0.9551093210413792,
+     -1.250000100000002
+    ],
+    [
+     1.250119859582867,
+     0.5081612639737128,
+     1.2500001000000016
+    ]
+   ],
+   "bbox_godot_size": [
+    2.506,
+    2.5,
+    1.463
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.42,
+      -0.2,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.6947,
+      0.7193
+     ],
+     "up": [
+      0.0,
+      -0.7193,
+      0.6947
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.42,
+      -0.6423,
+      0.4417
+     ],
+     "direction": [
+      0.0,
+      0.6947,
+      0.7193
+     ],
+     "up": [
+      0.0,
+      -0.7193,
+      0.6947
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.42,
+      -0.2,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.6947,
+      0.7193
+     ],
+     "up": [
+      0.0,
+      -0.7193,
+      0.6947
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.42,
+      -0.6423,
+      0.4417
+     ],
+     "direction": [
+      0.0,
+      0.6947,
+      0.7193
+     ],
+     "up": [
+      0.0,
+      -0.7193,
+      0.6947
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_03_ck2i_cockpit.step",
+    "glb": "glb/ax_aero_03_ck2i_cockpit.glb",
+    "preview": "renders/ax_aero_03_ck2i_cockpit.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-03",
+ "key": "ax_aero_03",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Inline Mk2 cockpit with side windows (mid-fuselage)"
+}

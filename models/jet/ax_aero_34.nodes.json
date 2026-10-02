@@ -1,0 +1,142 @@
+{
+ "id": "ax_aero_34",
+ "name": "IN-RD Radial Intake",
+ "category": "jet",
+ "short_name": "inrd_radial_intake",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_aero_34_inrd_radial_intake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_34_inrd_radial_intake_xs": {
+   "vid": "ax_aero_34_inrd_radial_intake_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-RD Radial Intake",
+   "primary": false,
+   "dims": {
+    "width": 0.3,
+    "length": 0.6
+   },
+   "notes": "Radial side intake with a bevelled lip; root on -X, opening faces +Z.",
+   "bbox_cad_zup": [
+    [
+     -0.18000000000000002,
+     -0.15,
+     -0.30000000000000004
+    ],
+    [
+     2.7755575615628914e-17,
+     0.15000000000000002,
+     0.30000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.6,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_34_inrd_radial_intake_xs.step",
+    "glb": "glb/ax_aero_34_inrd_radial_intake_xs.glb",
+    "preview": "renders/ax_aero_34_inrd_radial_intake_xs.png"
+   }
+  },
+  "ax_aero_34_inrd_radial_intake_s": {
+   "vid": "ax_aero_34_inrd_radial_intake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-RD Radial Intake",
+   "primary": true,
+   "dims": {
+    "width": 0.5,
+    "length": 1.0
+   },
+   "notes": "Radial side intake with a bevelled lip; root on -X, opening faces +Z.",
+   "bbox_cad_zup": [
+    [
+     -0.30000000000000004,
+     -0.25,
+     -0.5
+    ],
+    [
+     5.551115123125783e-17,
+     0.25000000000000006,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    1.0,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_34_inrd_radial_intake_s.step",
+    "glb": "glb/ax_aero_34_inrd_radial_intake_s.glb",
+    "preview": "renders/ax_aero_34_inrd_radial_intake_s.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-34",
+ "key": "ax_aero_34",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Radial side intake with bevelled lip"
+}

@@ -1,0 +1,161 @@
+{
+ "id": "ax_aero_01",
+ "name": "CK-1X Single-Seat Jet Cockpit",
+ "category": "cockpit",
+ "short_name": "ck1x_cockpit",
+ "sizes": [
+  "Mk1"
+ ],
+ "primary": "ax_aero_01_ck1x_cockpit",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -0.3,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    -0.8192,
+    0.5736
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.0,
+    -0.8341,
+    0.2949
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    -0.8192,
+    0.5736
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_01_ck1x_cockpit": {
+   "vid": "ax_aero_01_ck1x_cockpit",
+   "size": "Mk1",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-1X Single-Seat Jet Cockpit",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "length": 2.6
+   },
+   "notes": "Mk1 fighter-style cockpit, faceted canopy frame (24 facets), 1 seat.",
+   "bbox_cad_zup": [
+    [
+     -0.6250001,
+     -0.8600000999999999,
+     -1.3000001
+    ],
+    [
+     0.6250001,
+     0.6250001,
+     1.3000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.6,
+    1.485
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.3,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      -0.8192,
+      0.5736
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      -0.8341,
+      0.2949
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      -0.8192,
+      0.5736
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_01_ck1x_cockpit.step",
+    "glb": "glb/ax_aero_01_ck1x_cockpit.glb",
+    "preview": "renders/ax_aero_01_ck1x_cockpit.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-01",
+ "key": "ax_aero_01",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Mk1 fighter-style cockpit with a faceted canopy frame"
+}

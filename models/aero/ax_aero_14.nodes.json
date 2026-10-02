@@ -1,0 +1,766 @@
+{
+ "id": "ax_aero_14",
+ "name": "FS-3P Mk3 Passenger Cabin",
+ "category": "aero",
+ "short_name": "fs3p_passenger_cabin",
+ "sizes": [
+  "Mk3"
+ ],
+ "primary": "ax_aero_14_fs3p_passenger_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    1.5672,
+    -0.1,
+    0.8333
+   ],
+   "direction": [
+    0.8829,
+    0.0,
+    0.4695
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -1.5672,
+    -0.1,
+    0.8333
+   ],
+   "direction": [
+    -0.8829,
+    0.0,
+    0.4695
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.55,
+    -2.15,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.55,
+    -2.1424,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.55,
+    -2.15,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.55,
+    -2.1424,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.55,
+    -1.05,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.55,
+    -1.0424,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.55,
+    -1.05,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.55,
+    -1.0424,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_5",
+   "position": [
+    0.55,
+    0.05,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    0.55,
+    0.0576,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_6",
+   "position": [
+    -0.55,
+    0.05,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    -0.55,
+    0.0576,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_7",
+   "position": [
+    0.55,
+    1.15,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_7",
+   "position": [
+    0.55,
+    1.1576,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_8",
+   "position": [
+    -0.55,
+    1.15,
+    0.52
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_8",
+   "position": [
+    -0.55,
+    1.1576,
+    1.2829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_14_fs3p_passenger_cabin": {
+   "vid": "ax_aero_14_fs3p_passenger_cabin",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3P Mk3 Passenger Cabin",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "length": 5.0
+   },
+   "notes": "Mk3 passenger cabin, 8 seats on the upper deck, baggage hold below, 2 side hatches.",
+   "bbox_cad_zup": [
+    [
+     -2.0155759611092794,
+     -1.8750001,
+     -2.5000001000000003
+    ],
+    [
+     2.0155759611092776,
+     1.8830001,
+     2.5000001000000007
+    ]
+   ],
+   "bbox_godot_size": [
+    4.031,
+    5.0,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.5672,
+      -0.1,
+      0.8333
+     ],
+     "direction": [
+      0.8829,
+      0.0,
+      0.4695
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -1.5672,
+      -0.1,
+      0.8333
+     ],
+     "direction": [
+      -0.8829,
+      0.0,
+      0.4695
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.55,
+      -2.15,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.55,
+      -2.1424,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.55,
+      -2.15,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.55,
+      -2.1424,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.55,
+      -1.05,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.55,
+      -1.0424,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.55,
+      -1.05,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.55,
+      -1.0424,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_5",
+     "position": [
+      0.55,
+      0.05,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      0.55,
+      0.0576,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_6",
+     "position": [
+      -0.55,
+      0.05,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      -0.55,
+      0.0576,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_7",
+     "position": [
+      0.55,
+      1.15,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_7",
+     "position": [
+      0.55,
+      1.1576,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_8",
+     "position": [
+      -0.55,
+      1.15,
+      0.52
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_8",
+     "position": [
+      -0.55,
+      1.1576,
+      1.2829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "hatch_door_2"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_14_fs3p_passenger_cabin.step",
+    "glb": "glb/ax_aero_14_fs3p_passenger_cabin.glb",
+    "preview": "renders/ax_aero_14_fs3p_passenger_cabin.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-14",
+ "key": "ax_aero_14",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Mk3 cabin with 8-12 seats, 2 decks"
+}

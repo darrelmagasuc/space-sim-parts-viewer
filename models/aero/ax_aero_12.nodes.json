@@ -1,0 +1,336 @@
+{
+ "id": "ax_aero_12",
+ "name": "FS-3X Mk3 Fuel Fuselage",
+ "category": "aero",
+ "short_name": "fs3x_fuselage",
+ "sizes": [
+  "Mk3"
+ ],
+ "primary": "ax_aero_12_fs3x_fuselage_long",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_12_fs3x_fuselage_short": {
+   "vid": "ax_aero_12_fs3x_fuselage_short",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3X Mk3 Fuel Fuselage",
+   "primary": false,
+   "dims": {
+    "diameter": 3.75,
+    "length": 2.5
+   },
+   "notes": "Mk3 fuselage tank, tile-black belly.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.2500000000000002
+    ],
+    [
+     1.875,
+     1.883,
+     1.2500000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    2.5,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_12_fs3x_fuselage_short.step",
+    "glb": "glb/ax_aero_12_fs3x_fuselage_short.glb",
+    "preview": "renders/ax_aero_12_fs3x_fuselage_short.png"
+   }
+  },
+  "ax_aero_12_fs3x_fuselage_long": {
+   "vid": "ax_aero_12_fs3x_fuselage_long",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3X Mk3 Fuel Fuselage",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "length": 5.0
+   },
+   "notes": "Mk3 fuselage tank, tile-black belly.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -2.5000000000000004
+    ],
+    [
+     1.875,
+     1.883,
+     2.5000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    5.0,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_12_fs3x_fuselage_long.step",
+    "glb": "glb/ax_aero_12_fs3x_fuselage_long.glb",
+    "preview": "renders/ax_aero_12_fs3x_fuselage_long.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-12",
+ "key": "ax_aero_12",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk3 fuselage with tile-black belly"
+}

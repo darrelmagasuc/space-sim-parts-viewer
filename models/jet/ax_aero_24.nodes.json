@@ -1,0 +1,368 @@
+{
+ "id": "ax_aero_24",
+ "name": "CS-R Rudder / Speed Brake",
+ "category": "jet",
+ "short_name": "csr_rudder_brake",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_24_csr_rudder_brake_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.95,
+    0.3804,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_24_csr_rudder_brake_s": {
+   "vid": "ax_aero_24_csr_rudder_brake_s",
+   "size": "S",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.5
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.050000100000000006,
+     -0.2640000500000001
+    ],
+    [
+     1.1900001,
+     0.050000100000000006,
+     0.26400005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.528,
+    0.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.236,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_s.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_s.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_s.png"
+   }
+  },
+  "ax_aero_24_csr_rudder_brake_s_defl_pos": {
+   "vid": "ax_aero_24_csr_rudder_brake_s_defl_pos",
+   "size": "S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.5
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.03843422745615371,
+     -0.23487242082293125
+    ],
+    [
+     1.1900001,
+     0.1738292495251921,
+     0.26400005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.499,
+    0.212
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.236,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": "ax_aero_24_csr_rudder_brake_s",
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_s_defl_pos.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_s_defl_pos.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_s_defl_pos.png"
+   }
+  },
+  "ax_aero_24_csr_rudder_brake_s_open": {
+   "vid": "ax_aero_24_csr_rudder_brake_s_open",
+   "size": "S",
+   "state": "open",
+   "default_state": false,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.5
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.3236920381726266,
+     -0.14605809014495924
+    ],
+    [
+     1.1900001,
+     0.3236920381726266,
+     0.26400005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.41,
+    0.647
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.236,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": "ax_aero_24_csr_rudder_brake_s",
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_s_open.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_s_open.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_s_open.png"
+   }
+  },
+  "ax_aero_24_csr_rudder_brake_m": {
+   "vid": "ax_aero_24_csr_rudder_brake_m",
+   "size": "M",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": true,
+   "dims": {
+    "span": 1.9,
+    "chord": 0.8
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.009999899999999898,
+     -0.07000010000000001,
+     -0.41960005000000006
+    ],
+    [
+     1.8900001,
+     0.07000010000000001,
+     0.41960005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.88,
+    0.839,
+    0.14
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.95,
+      0.3804,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_m.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_m.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_m.png"
+   }
+  },
+  "ax_aero_24_csr_rudder_brake_m_defl_pos": {
+   "vid": "ax_aero_24_csr_rudder_brake_m_defl_pos",
+   "size": "M",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": false,
+   "dims": {
+    "span": 1.9,
+    "chord": 0.8
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.009999899999999898,
+     -0.05209777772198685,
+     -0.3723802070587039
+    ],
+    [
+     1.8900001,
+     0.27643529252289273,
+     0.41960005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.88,
+    0.792,
+    0.329
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.95,
+      0.3804,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": "ax_aero_24_csr_rudder_brake_m",
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_m_defl_pos.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_m_defl_pos.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_m_defl_pos.png"
+   }
+  },
+  "ax_aero_24_csr_rudder_brake_m_open": {
+   "vid": "ax_aero_24_csr_rudder_brake_m_open",
+   "size": "M",
+   "state": "open",
+   "default_state": false,
+   "label": "CS-R Rudder / Speed Brake",
+   "primary": false,
+   "dims": {
+    "span": 1.9,
+    "chord": 0.8
+   },
+   "notes": "Split rudder / speed brake (Shuttle class): halves deflect together (rudder) or open +-40 deg (speed brake). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.009999899999999898,
+     -0.5165283210785884,
+     -0.23147142308065266
+    ],
+    [
+     1.8900001,
+     0.5165283210785883,
+     0.41960005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.88,
+    0.651,
+    1.033
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.95,
+      0.3804,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface_upper",
+    "surface_lower"
+   ],
+   "default_of": "ax_aero_24_csr_rudder_brake_m",
+   "files": {
+    "step": "step/ax_aero_24_csr_rudder_brake_m_open.step",
+    "glb": "glb/ax_aero_24_csr_rudder_brake_m_open.glb",
+    "preview": "renders/ax_aero_24_csr_rudder_brake_m_open.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-24",
+ "key": "ax_aero_24",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Split rudder that opens as a speed brake"
+}

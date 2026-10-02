@@ -1,0 +1,89 @@
+{
+ "id": "ax_aero_35",
+ "name": "IN-NA Flush NACA Intake",
+ "category": "jet",
+ "short_name": "inna_naca_intake",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_aero_35_inna_naca_intake",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_35_inna_naca_intake": {
+   "vid": "ax_aero_35_inna_naca_intake",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-NA Flush NACA Intake",
+   "primary": true,
+   "dims": {
+    "width": 0.4,
+    "length": 0.8
+   },
+   "notes": "Flush NACA duct panel (cooling / cabin air); a recessed ramp duct on a 30 mm panel. Root on -X.",
+   "bbox_cad_zup": [
+    [
+     0.0,
+     -0.20000000000000004,
+     -0.4
+    ],
+    [
+     0.0900001,
+     0.20000000000000007,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.09,
+    0.8,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_35_inna_naca_intake.step",
+    "glb": "glb/ax_aero_35_inna_naca_intake.glb",
+    "preview": "renders/ax_aero_35_inna_naca_intake.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-35",
+ "key": "ax_aero_35",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Flush recessed NACA duct (cooling / cabin air)"
+}

@@ -1,0 +1,955 @@
+{
+ "id": "ax_aero_13",
+ "name": "FS-3C Mk3 Cargo Bay",
+ "category": "aero",
+ "short_name": "fs3c_cargo_bay",
+ "sizes": [
+  "Mk3"
+ ],
+ "primary": "ax_aero_13_fs3c_cargo_bay",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_slot_1_1",
+   "position": [
+    -1.05,
+    -1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_1_2",
+   "position": [
+    0.0,
+    -1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_1_3",
+   "position": [
+    1.05,
+    -1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_2_1",
+   "position": [
+    -1.05,
+    -0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_2_2",
+   "position": [
+    0.0,
+    -0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_2_3",
+   "position": [
+    1.05,
+    -0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_3_1",
+   "position": [
+    -1.05,
+    0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_3_2",
+   "position": [
+    0.0,
+    0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_3_3",
+   "position": [
+    1.05,
+    0.6333,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_4_1",
+   "position": [
+    -1.05,
+    1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_4_2",
+   "position": [
+    0.0,
+    1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_slot_4_3",
+   "position": [
+    1.05,
+    1.9,
+    -1.17
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_13_fs3c_cargo_bay": {
+   "vid": "ax_aero_13_fs3c_cargo_bay",
+   "size": "Mk3",
+   "state": "closed",
+   "default_state": true,
+   "label": "FS-3C Mk3 Cargo Bay",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "length": 5.0
+   },
+   "notes": "Mk3 cargo bay, radiator-lined dorsal doors.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -2.5000000000000004
+    ],
+    [
+     1.875,
+     1.883,
+     2.5000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    5.0,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_slot_1_1",
+     "position": [
+      -1.05,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_1_2",
+     "position": [
+      0.0,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_1_3",
+     "position": [
+      1.05,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_1",
+     "position": [
+      -1.05,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_2",
+     "position": [
+      0.0,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_3",
+     "position": [
+      1.05,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_1",
+     "position": [
+      -1.05,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_2",
+     "position": [
+      0.0,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_3",
+     "position": [
+      1.05,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_1",
+     "position": [
+      -1.05,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_2",
+     "position": [
+      0.0,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_3",
+     "position": [
+      1.05,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_l",
+    "door_l_radiator",
+    "door_r",
+    "door_r_radiator"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_13_fs3c_cargo_bay.step",
+    "glb": "glb/ax_aero_13_fs3c_cargo_bay.glb",
+    "preview": "renders/ax_aero_13_fs3c_cargo_bay.png"
+   }
+  },
+  "ax_aero_13_fs3c_cargo_bay_open": {
+   "vid": "ax_aero_13_fs3c_cargo_bay_open",
+   "size": "Mk3",
+   "state": "open",
+   "default_state": false,
+   "label": "FS-3C Mk3 Cargo Bay",
+   "primary": false,
+   "dims": {
+    "diameter": 3.75,
+    "length": 5.0
+   },
+   "notes": "Mk3 cargo bay, radiator-lined dorsal doors. Doors open 105 deg about the split-line hinges.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -2.5000000000000004
+    ],
+    [
+     1.875,
+     1.883,
+     2.5000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    5.0,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_slot_1_1",
+     "position": [
+      -1.05,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_1_2",
+     "position": [
+      0.0,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_1_3",
+     "position": [
+      1.05,
+      -1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_1",
+     "position": [
+      -1.05,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_2",
+     "position": [
+      0.0,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_2_3",
+     "position": [
+      1.05,
+      -0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_1",
+     "position": [
+      -1.05,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_2",
+     "position": [
+      0.0,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_3_3",
+     "position": [
+      1.05,
+      0.6333,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_1",
+     "position": [
+      -1.05,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_2",
+     "position": [
+      0.0,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_slot_4_3",
+     "position": [
+      1.05,
+      1.9,
+      -1.17
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "door_l",
+    "door_l_radiator",
+    "door_r",
+    "door_r_radiator"
+   ],
+   "default_of": "ax_aero_13_fs3c_cargo_bay",
+   "files": {
+    "step": "step/ax_aero_13_fs3c_cargo_bay_open.step",
+    "glb": "glb/ax_aero_13_fs3c_cargo_bay_open.glb",
+    "preview": "renders/ax_aero_13_fs3c_cargo_bay_open.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-13",
+ "key": "ax_aero_13",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk3 cargo bay with radiator-lined doors (closed / open)"
+}

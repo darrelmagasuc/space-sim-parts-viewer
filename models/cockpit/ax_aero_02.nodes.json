@@ -1,0 +1,271 @@
+{
+ "id": "ax_aero_02",
+ "name": "CK-2X Mk2 Two-Seat Cockpit",
+ "category": "cockpit",
+ "short_name": "ck2x_cockpit",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_02_ck2x_cockpit",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -1.0702,
+    0.8461
+   ],
+   "direction": [
+    0.0,
+    -0.0599,
+    0.9982
+   ],
+   "up": [
+    0.0,
+    0.9982,
+    0.0599
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.675,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.42,
+    -0.325,
+    -0.15
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.42,
+    -0.8095,
+    0.4393
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.42,
+    -0.325,
+    -0.15
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.42,
+    -0.8095,
+    0.4393
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_02_ck2x_cockpit": {
+   "vid": "ax_aero_02_ck2x_cockpit",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-2X Mk2 Two-Seat Cockpit",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 3.35
+   },
+   "notes": "Mk2 two-seat lifting-body cockpit, faceted windscreen (32 facets), dorsal hatch.",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.018633409659202,
+     -1.6750001
+    ],
+    [
+     1.2500001,
+     0.5080001,
+     1.6750001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.35,
+    1.527
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -1.0702,
+      0.8461
+     ],
+     "direction": [
+      0.0,
+      -0.0599,
+      0.9982
+     ],
+     "up": [
+      0.0,
+      0.9982,
+      0.0599
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.675,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.42,
+      -0.325,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.42,
+      -0.8095,
+      0.4393
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.42,
+      -0.325,
+      -0.15
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.42,
+      -0.8095,
+      0.4393
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_02_ck2x_cockpit.step",
+    "glb": "glb/ax_aero_02_ck2x_cockpit.glb",
+    "preview": "renders/ax_aero_02_ck2x_cockpit.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-02",
+ "key": "ax_aero_02",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Flat-lifting-body two-seat cockpit, faceted windscreen"
+}

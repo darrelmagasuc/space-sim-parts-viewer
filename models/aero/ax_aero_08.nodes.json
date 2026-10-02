@@ -1,0 +1,336 @@
+{
+ "id": "ax_aero_08",
+ "name": "FS-2X Mk2 Fuel Fuselage",
+ "category": "aero",
+ "short_name": "fs2x_fuselage",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_08_fs2x_fuselage_long",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.875,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.875,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.7
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_08_fs2x_fuselage_short": {
+   "vid": "ax_aero_08_fs2x_fuselage_short",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2X Mk2 Fuel Fuselage",
+   "primary": false,
+   "dims": {
+    "width": 2.5,
+    "length": 1.875
+   },
+   "notes": "Mk2 methalox / jet-fuel fuselage.",
+   "bbox_cad_zup": [
+    [
+     -1.2500000000000002,
+     -0.7000000000000001,
+     -0.9375000000000001
+    ],
+    [
+     1.25,
+     0.508,
+     0.9375000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.875,
+    1.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9375,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9375,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_08_fs2x_fuselage_short.step",
+    "glb": "glb/ax_aero_08_fs2x_fuselage_short.glb",
+    "preview": "renders/ax_aero_08_fs2x_fuselage_short.png"
+   }
+  },
+  "ax_aero_08_fs2x_fuselage_long": {
+   "vid": "ax_aero_08_fs2x_fuselage_long",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2X Mk2 Fuel Fuselage",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 3.75
+   },
+   "notes": "Mk2 methalox / jet-fuel fuselage.",
+   "bbox_cad_zup": [
+    [
+     -1.2500000000000002,
+     -0.7000000000000001,
+     -1.8750000000000002
+    ],
+    [
+     1.25,
+     0.508,
+     1.8750000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.75,
+    1.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.875,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.875,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_08_fs2x_fuselage_long.step",
+    "glb": "glb/ax_aero_08_fs2x_fuselage_long.glb",
+    "preview": "renders/ax_aero_08_fs2x_fuselage_long.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-08",
+ "key": "ax_aero_08",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk2 lifting fuselage with methalox / jet fuel"
+}

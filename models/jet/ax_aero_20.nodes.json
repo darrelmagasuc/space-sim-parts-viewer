@@ -1,0 +1,181 @@
+{
+ "id": "ax_aero_20",
+ "name": "WG-C Wing Connector",
+ "category": "jet",
+ "short_name": "wgc_wing_connector",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_20_wgc_wing_connector_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_tip",
+   "position": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_20_wgc_wing_connector_s": {
+   "vid": "ax_aero_20_wgc_wing_connector_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-C Wing Connector",
+   "primary": true,
+   "dims": {
+    "span": 1.0,
+    "chord": 1.2
+   },
+   "notes": "Rectangular wing-to-wing connector panel (node_attach root, node_tip outer).",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.075,
+     -0.6000001000000049
+    ],
+    [
+     1.0000001,
+     0.075,
+     0.6000001000000014
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    1.2,
+    0.15
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tip",
+     "position": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_20_wgc_wing_connector_s.step",
+    "glb": "glb/ax_aero_20_wgc_wing_connector_s.glb",
+    "preview": "renders/ax_aero_20_wgc_wing_connector_s.png"
+   }
+  },
+  "ax_aero_20_wgc_wing_connector_m": {
+   "vid": "ax_aero_20_wgc_wing_connector_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-C Wing Connector",
+   "primary": false,
+   "dims": {
+    "span": 1.6,
+    "chord": 1.92
+   },
+   "notes": "Rectangular wing-to-wing connector panel (node_attach root, node_tip outer).",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.12000000000000001,
+     -0.9600001000000044
+    ],
+    [
+     1.6000001000000006,
+     0.12,
+     0.9600001000000079
+    ]
+   ],
+   "bbox_godot_size": [
+    1.6,
+    1.92,
+    0.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_tip",
+     "position": [
+      1.6,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_20_wgc_wing_connector_m.step",
+    "glb": "glb/ax_aero_20_wgc_wing_connector_m.glb",
+    "preview": "renders/ax_aero_20_wgc_wing_connector_m.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-20",
+ "key": "ax_aero_20",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Rectangular wing-to-wing connector panel"
+}

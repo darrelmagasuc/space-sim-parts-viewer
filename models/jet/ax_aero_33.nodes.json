@@ -1,0 +1,117 @@
+{
+ "id": "ax_aero_33",
+ "name": "IN-RP Mk2 Conformal Ramp Intake",
+ "category": "jet",
+ "short_name": "inrp_ramp_intake",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_33_inrp_ramp_intake",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_33_inrp_ramp_intake": {
+   "vid": "ax_aero_33_inrp_ramp_intake",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-RP Mk2 Conformal Ramp Intake",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 1.5
+   },
+   "notes": "Mk2 conformal variable-ramp intake; ramp hinged at its aft end.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -0.7,
+     -0.75
+    ],
+    [
+     1.25,
+     0.508,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.5,
+    1.208
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "ramp"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_33_inrp_ramp_intake.step",
+    "glb": "glb/ax_aero_33_inrp_ramp_intake.glb",
+    "preview": "renders/ax_aero_33_inrp_ramp_intake.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-33",
+ "key": "ax_aero_33",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Variable-ramp intake blended into the Mk2 profile"
+}

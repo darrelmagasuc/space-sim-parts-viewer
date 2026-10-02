@@ -1,0 +1,297 @@
+{
+ "id": "ax_aero_10",
+ "name": "FS-2P Mk2 Passenger Cabin",
+ "category": "aero",
+ "short_name": "fs2p_passenger_cabin",
+ "sizes": [
+  "Mk2"
+ ],
+ "primary": "ax_aero_10_fs2p_passenger_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.7175,
+    0.0,
+    0.7213
+   ],
+   "direction": [
+    0.458,
+    0.0,
+    0.889
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.42,
+    -0.3,
+    -0.2
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.42,
+    -0.7845,
+    0.3893
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.42,
+    -0.3,
+    -0.2
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.42,
+    -0.7845,
+    0.3893
+   ],
+   "direction": [
+    0.0,
+    0.6428,
+    0.766
+   ],
+   "up": [
+    0.0,
+    -0.766,
+    0.6428
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_10_fs2p_passenger_cabin": {
+   "vid": "ax_aero_10_fs2p_passenger_cabin",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-2P Mk2 Passenger Cabin",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 3.0
+   },
+   "notes": "Mk2 passenger cabin, raised roof, 2 reclined seats + baggage racks, side hatch.",
+   "bbox_cad_zup": [
+    [
+     -1.2560741573189818,
+     -1.1113751573659696,
+     -1.500000100000002
+    ],
+    [
+     1.2820946058502396,
+     0.5081630640663216,
+     1.5000001000000016
+    ]
+   ],
+   "bbox_godot_size": [
+    2.538,
+    3.0,
+    1.62
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.7175,
+      0.0,
+      0.7213
+     ],
+     "direction": [
+      0.458,
+      0.0,
+      0.889
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.42,
+      -0.3,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.42,
+      -0.7845,
+      0.3893
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.42,
+      -0.3,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.42,
+      -0.7845,
+      0.3893
+     ],
+     "direction": [
+      0.0,
+      0.6428,
+      0.766
+     ],
+     "up": [
+      0.0,
+      -0.766,
+      0.6428
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_10_fs2p_passenger_cabin.step",
+    "glb": "glb/ax_aero_10_fs2p_passenger_cabin.glb",
+    "preview": "renders/ax_aero_10_fs2p_passenger_cabin.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-10",
+ "key": "ax_aero_10",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Mk2 cabin with 2 reclined seats, baggage racks and a side hatch"
+}

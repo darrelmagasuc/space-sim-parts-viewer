@@ -1,0 +1,184 @@
+{
+ "id": "ax_aero_28",
+ "name": "JE-AB Afterburning Low-Bypass Turbofan",
+ "category": "jet",
+ "short_name": "jeab_turbofan",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_aero_28_jeab_turbofan",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.9813,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.4187,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_28_jeab_turbofan": {
+   "vid": "ax_aero_28_jeab_turbofan",
+   "size": "S",
+   "state": "dry",
+   "default_state": true,
+   "label": "JE-AB Afterburning Low-Bypass Turbofan",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "length": 3.4
+   },
+   "notes": "Afterburning low-bypass turbofan (F100 class) with a 14-petal variable nozzle (dry: closed; _ab: open).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.98125005
+    ],
+    [
+     0.625,
+     0.625,
+     1.9812500499999999
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    3.963,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.9813,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4187,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "nozzle_petals"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_28_jeab_turbofan.step",
+    "glb": "glb/ax_aero_28_jeab_turbofan.glb",
+    "preview": "renders/ax_aero_28_jeab_turbofan.png"
+   }
+  },
+  "ax_aero_28_jeab_turbofan_ab": {
+   "vid": "ax_aero_28_jeab_turbofan_ab",
+   "size": "S",
+   "state": "ab",
+   "default_state": false,
+   "label": "JE-AB Afterburning Low-Bypass Turbofan",
+   "primary": false,
+   "dims": {
+    "diameter": 1.25,
+    "length": 3.4
+   },
+   "notes": "Afterburning low-bypass turbofan (F100 class) with a 14-petal variable nozzle (dry: closed; _ab: open).",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.98125005
+    ],
+    [
+     0.625,
+     0.625,
+     1.9812500499999999
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    3.963,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.9813,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4187,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "nozzle_petals"
+   ],
+   "default_of": "ax_aero_28_jeab_turbofan",
+   "files": {
+    "step": "step/ax_aero_28_jeab_turbofan_ab.step",
+    "glb": "glb/ax_aero_28_jeab_turbofan_ab.glb",
+    "preview": "renders/ax_aero_28_jeab_turbofan_ab.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-28",
+ "key": "ax_aero_28",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Military turbofan with variable nozzle (dry / afterburner)"
+}

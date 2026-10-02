@@ -1,0 +1,114 @@
+{
+ "id": "ax_aero_15",
+ "name": "FS-3A Mk3 to L Adapter",
+ "category": "aero",
+ "short_name": "fs3a_adapter",
+ "sizes": [
+  "Mk3-L"
+ ],
+ "primary": "ax_aero_15_fs3a_adapter",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_15_fs3a_adapter": {
+   "vid": "ax_aero_15_fs3a_adapter",
+   "size": "Mk3-L",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-3A Mk3 to L Adapter",
+   "primary": true,
+   "dims": {
+    "length": 1.0
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.879,
+     -1.879,
+     -0.5
+    ],
+    [
+     1.879,
+     1.883,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.758,
+    1.0,
+    3.762
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_15_fs3a_adapter.step",
+    "glb": "glb/ax_aero_15_fs3a_adapter.glb",
+    "preview": "renders/ax_aero_15_fs3a_adapter.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-15",
+ "key": "ax_aero_15",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk3 profile to 3.75 m round adapter"
+}

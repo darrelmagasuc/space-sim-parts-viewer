@@ -1,0 +1,181 @@
+{
+ "id": "ax_aero_32",
+ "name": "IN-SC Inline Shock-Cone Intake",
+ "category": "jet",
+ "short_name": "insc_cone_intake",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_32_insc_cone_intake_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.7812,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.7812,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_32_insc_cone_intake_s": {
+   "vid": "ax_aero_32_insc_cone_intake_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-SC Inline Shock-Cone Intake",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "length": 1.0
+   },
+   "notes": "Axisymmetric shock-cone intake (SR-71 / MiG-21 class) with a chamfered lip; mates a jet node_top.",
+   "bbox_cad_zup": [
+    [
+     -0.629,
+     -0.629,
+     -0.78125
+    ],
+    [
+     0.629,
+     0.629,
+     0.78125
+    ]
+   ],
+   "bbox_godot_size": [
+    1.258,
+    1.562,
+    1.258
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7812,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7812,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_32_insc_cone_intake_s.step",
+    "glb": "glb/ax_aero_32_insc_cone_intake_s.glb",
+    "preview": "renders/ax_aero_32_insc_cone_intake_s.png"
+   }
+  },
+  "ax_aero_32_insc_cone_intake_m": {
+   "vid": "ax_aero_32_insc_cone_intake_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "IN-SC Inline Shock-Cone Intake",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "length": 1.6
+   },
+   "notes": "Axisymmetric shock-cone intake (SR-71 / MiG-21 class) with a chamfered lip; mates a jet node_top.",
+   "bbox_cad_zup": [
+    [
+     -1.254,
+     -1.254,
+     -1.3625
+    ],
+    [
+     1.254,
+     1.254,
+     1.3625
+    ]
+   ],
+   "bbox_godot_size": [
+    2.508,
+    2.725,
+    2.508
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.3625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.3625,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_32_insc_cone_intake_m.step",
+    "glb": "glb/ax_aero_32_insc_cone_intake_m.glb",
+    "preview": "renders/ax_aero_32_insc_cone_intake_m.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-32",
+ "key": "ax_aero_32",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Axisymmetric shock-cone intake with chamfered lip"
+}

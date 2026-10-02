@@ -1,0 +1,201 @@
+{
+ "id": "ax_aero_21",
+ "name": "TL-V Vertical Tail",
+ "category": "jet",
+ "short_name": "tlv_vertical_tail",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_aero_21_tlv_vertical_tail_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.48,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_21_tlv_vertical_tail_s": {
+   "vid": "ax_aero_21_tlv_vertical_tail_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "TL-V Vertical Tail",
+   "primary": false,
+   "dims": {
+    "height": 1.8,
+    "root_chord": 2.0
+   },
+   "notes": "Vertical stabiliser, rudder split along the hinge line (70 % chord). Radial convention: root on -X, height +X.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.10000000000000003,
+     -1.3000001000000008
+    ],
+    [
+     1.8000001000000012,
+     0.10000000000000006,
+     1.3000001000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    1.8,
+    2.6,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_21_tlv_vertical_tail_s.step",
+    "glb": "glb/ax_aero_21_tlv_vertical_tail_s.glb",
+    "preview": "renders/ax_aero_21_tlv_vertical_tail_s.png"
+   }
+  },
+  "ax_aero_21_tlv_vertical_tail_m": {
+   "vid": "ax_aero_21_tlv_vertical_tail_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "TL-V Vertical Tail",
+   "primary": true,
+   "dims": {
+    "height": 2.8800000000000003,
+    "root_chord": 3.2
+   },
+   "notes": "Vertical stabiliser, rudder split along the hinge line (70 % chord). Radial convention: root on -X, height +X.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.16000000000000003,
+     -2.0800001000000026
+    ],
+    [
+     2.8800001000000015,
+     0.16000000000000006,
+     2.0800001000000017
+    ]
+   ],
+   "bbox_godot_size": [
+    2.88,
+    4.16,
+    0.32
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.48,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_21_tlv_vertical_tail_m.step",
+    "glb": "glb/ax_aero_21_tlv_vertical_tail_m.glb",
+    "preview": "renders/ax_aero_21_tlv_vertical_tail_m.png"
+   }
+  },
+  "ax_aero_21_tlv_vertical_tail_l": {
+   "vid": "ax_aero_21_tlv_vertical_tail_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "TL-V Vertical Tail",
+   "primary": false,
+   "dims": {
+    "height": 4.32,
+    "root_chord": 4.8
+   },
+   "notes": "Vertical stabiliser, rudder split along the hinge line (70 % chord). Radial convention: root on -X, height +X.",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.24000000000000005,
+     -3.120000100000001
+    ],
+    [
+     4.3200001000000015,
+     0.24000000000000005,
+     3.120000100000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.32,
+    6.24,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.72,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rudder"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_21_tlv_vertical_tail_l.step",
+    "glb": "glb/ax_aero_21_tlv_vertical_tail_l.glb",
+    "preview": "renders/ax_aero_21_tlv_vertical_tail_l.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-21",
+ "key": "ax_aero_21",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Vertical stabiliser with rudder hinge line"
+}

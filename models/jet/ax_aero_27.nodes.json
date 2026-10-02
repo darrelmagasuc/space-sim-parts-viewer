@@ -1,0 +1,151 @@
+{
+ "id": "ax_aero_27",
+ "name": "JE-HB High-Bypass Turbofan",
+ "category": "jet",
+ "short_name": "jehb_turbofan",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_aero_27_jehb_turbofan",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.35,
+    1.38
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.45,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_27_jehb_turbofan": {
+   "vid": "ax_aero_27_jehb_turbofan",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "JE-HB High-Bypass Turbofan",
+   "primary": true,
+   "dims": {
+    "diameter": 2.5,
+    "length": 3.6
+   },
+   "notes": "Podded high-bypass turbofan (CFM56 class). node_attach on the pylon pad (dorsal / wing underside).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.3800000000000001,
+     -2.1500000000000004
+    ],
+    [
+     1.25,
+     1.25,
+     2.15
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    4.3,
+    2.63
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.35,
+      1.38
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_27_jehb_turbofan.step",
+    "glb": "glb/ax_aero_27_jehb_turbofan.glb",
+    "preview": "renders/ax_aero_27_jehb_turbofan.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-27",
+ "key": "ax_aero_27",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Podded high-bypass turbofan with chamfered nacelle lip"
+}

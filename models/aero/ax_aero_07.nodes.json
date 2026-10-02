@@ -1,0 +1,219 @@
+{
+ "id": "ax_aero_07",
+ "name": "FS-1 Mk1 Fuselage",
+ "category": "aero",
+ "short_name": "fs1_fuselage",
+ "sizes": [
+  "Mk1"
+ ],
+ "primary": "ax_aero_07_fs1_fuselage",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.625,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    0.625
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_07_fs1_fuselage": {
+   "vid": "ax_aero_07_fs1_fuselage",
+   "size": "Mk1",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-1 Mk1 Fuselage",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "length": 2.0
+   },
+   "notes": "Mk1 fuel fuselage, 3 panel seams.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.0000000000000002
+    ],
+    [
+     0.625,
+     0.625,
+     1.0000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.0,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_07_fs1_fuselage.step",
+    "glb": "glb/ax_aero_07_fs1_fuselage.glb",
+    "preview": "renders/ax_aero_07_fs1_fuselage.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-07",
+ "key": "ax_aero_07",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Mk1 fuel fuselage, chamfered panel seams"
+}

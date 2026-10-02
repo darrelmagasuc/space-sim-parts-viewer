@@ -1,0 +1,403 @@
+{
+ "id": "ax_aero_26",
+ "name": "CS-BF Body Flap / Airbrake",
+ "category": "jet",
+ "short_name": "csbf_body_flap",
+ "sizes": [
+  "Mk2",
+  "Mk3"
+ ],
+ "primary": "ax_aero_26_csbf_body_flap_mk2",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.3475,
+    0.05
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_26_csbf_body_flap_mk2": {
+   "vid": "ax_aero_26_csbf_body_flap_mk2",
+   "size": "Mk2",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": true,
+   "dims": {
+    "width": 1.2,
+    "chord": 0.7
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -0.6000000000000014,
+     -0.05000000000000002,
+     -0.3725000000000007
+    ],
+    [
+     0.6000000000000014,
+     0.05000000000000005,
+     0.37250000000000066
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    0.745,
+    0.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.3475,
+      0.05
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk2.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk2.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk2.png"
+   }
+  },
+  "ax_aero_26_csbf_body_flap_mk2_defl_pos": {
+   "vid": "ax_aero_26_csbf_body_flap_mk2_defl_pos",
+   "size": "Mk2",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": false,
+   "dims": {
+    "width": 1.2,
+    "chord": 0.7
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -0.6000000000000014,
+     -0.04570810086342822,
+     -0.35900084020644796
+    ],
+    [
+     0.6000000000000014,
+     0.22688143243519274,
+     0.37250000000000066
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    0.732,
+    0.273
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.3475,
+      0.05
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": "ax_aero_26_csbf_body_flap_mk2",
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk2_defl_pos.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk2_defl_pos.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk2_defl_pos.png"
+   }
+  },
+  "ax_aero_26_csbf_body_flap_mk2_defl_neg": {
+   "vid": "ax_aero_26_csbf_body_flap_mk2_defl_neg",
+   "size": "Mk2",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": false,
+   "dims": {
+    "width": 1.2,
+    "chord": 0.7
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -0.6000000000000014,
+     -0.22688143243519274,
+     -0.35900084020644796
+    ],
+    [
+     0.6000000000000014,
+     0.04570810086342822,
+     0.37250000000000066
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    0.732,
+    0.273
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.3475,
+      0.05
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": "ax_aero_26_csbf_body_flap_mk2",
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk2_defl_neg.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk2_defl_neg.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk2_defl_neg.png"
+   }
+  },
+  "ax_aero_26_csbf_body_flap_mk3": {
+   "vid": "ax_aero_26_csbf_body_flap_mk3",
+   "size": "Mk3",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": false,
+   "dims": {
+    "width": 2.2,
+    "chord": 1.2
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -1.1000000000000014,
+     -0.08000000000000013,
+     -0.6360000000000008
+    ],
+    [
+     1.1000000000000014,
+     0.08000000000000003,
+     0.6360000000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    2.2,
+    1.272,
+    0.16
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.584,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk3.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk3.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk3.png"
+   }
+  },
+  "ax_aero_26_csbf_body_flap_mk3_defl_pos": {
+   "vid": "ax_aero_26_csbf_body_flap_mk3_defl_pos",
+   "size": "Mk3",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": false,
+   "dims": {
+    "width": 2.2,
+    "chord": 1.2
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -1.1000000000000014,
+     -0.07468587565210043,
+     -0.6132283247040579
+    ],
+    [
+     1.1000000000000014,
+     0.3852687297751252,
+     0.6360000000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    2.2,
+    1.249,
+    0.46
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.584,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": "ax_aero_26_csbf_body_flap_mk3",
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk3_defl_pos.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk3_defl_pos.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk3_defl_pos.png"
+   }
+  },
+  "ax_aero_26_csbf_body_flap_mk3_defl_neg": {
+   "vid": "ax_aero_26_csbf_body_flap_mk3_defl_neg",
+   "size": "Mk3",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "CS-BF Body Flap / Airbrake",
+   "primary": false,
+   "dims": {
+    "width": 2.2,
+    "chord": 1.2
+   },
+   "notes": "Body flap / airbrake on the tail-cone belly (mate node_attach -> tail cone node_bodyflap). Positive = trailing edge down.",
+   "bbox_cad_zup": [
+    [
+     -1.1000000000000014,
+     -0.3852687297751252,
+     -0.6132283247040579
+    ],
+    [
+     1.1000000000000014,
+     0.07468587565210029,
+     0.6360000000000008
+    ]
+   ],
+   "bbox_godot_size": [
+    2.2,
+    1.249,
+    0.46
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.584,
+      0.08
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "flap_top",
+    "flap_underside"
+   ],
+   "default_of": "ax_aero_26_csbf_body_flap_mk3",
+   "files": {
+    "step": "step/ax_aero_26_csbf_body_flap_mk3_defl_neg.step",
+    "glb": "glb/ax_aero_26_csbf_body_flap_mk3_defl_neg.glb",
+    "preview": "renders/ax_aero_26_csbf_body_flap_mk3_defl_neg.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-26",
+ "key": "ax_aero_26",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Body flap under the tail cone"
+}

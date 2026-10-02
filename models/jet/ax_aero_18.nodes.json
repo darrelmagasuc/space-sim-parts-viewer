@@ -1,0 +1,195 @@
+{
+ "id": "ax_aero_18",
+ "name": "WG-S Swept Wing Panel",
+ "category": "jet",
+ "short_name": "wgs_swept_wing",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_aero_18_wgs_swept_wing_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.8005,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_18_wgs_swept_wing_s": {
+   "vid": "ax_aero_18_wgs_swept_wing_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-S Swept Wing Panel",
+   "primary": false,
+   "dims": {
+    "span": 3.0,
+    "root_chord": 1.8
+   },
+   "notes": "Swept structural / fuel wing panel.",
+   "bbox_cad_zup": [
+    [
+     -1.0000000088817842e-07,
+     -0.11250000000000002,
+     -1.4003114073145675
+    ],
+    [
+     3.0000001,
+     0.11250000000000002,
+     1.400311407314567
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    2.801,
+    0.225
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.5003,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_18_wgs_swept_wing_s.step",
+    "glb": "glb/ax_aero_18_wgs_swept_wing_s.glb",
+    "preview": "renders/ax_aero_18_wgs_swept_wing_s.png"
+   }
+  },
+  "ax_aero_18_wgs_swept_wing_m": {
+   "vid": "ax_aero_18_wgs_swept_wing_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-S Swept Wing Panel",
+   "primary": true,
+   "dims": {
+    "span": 4.800000000000001,
+    "root_chord": 2.8800000000000003
+   },
+   "notes": "Swept structural / fuel wing panel.",
+   "bbox_cad_zup": [
+    [
+     -1.0000000088817842e-07,
+     -0.18000000000000002,
+     -2.2404981917033084
+    ],
+    [
+     4.800000100000002,
+     0.18000000000000008,
+     2.240498191703305
+    ]
+   ],
+   "bbox_godot_size": [
+    4.8,
+    4.481,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.8005,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_18_wgs_swept_wing_m.step",
+    "glb": "glb/ax_aero_18_wgs_swept_wing_m.glb",
+    "preview": "renders/ax_aero_18_wgs_swept_wing_m.png"
+   }
+  },
+  "ax_aero_18_wgs_swept_wing_l": {
+   "vid": "ax_aero_18_wgs_swept_wing_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "WG-S Swept Wing Panel",
+   "primary": false,
+   "dims": {
+    "span": 7.199999999999999,
+    "root_chord": 4.32
+   },
+   "notes": "Swept structural / fuel wing panel.",
+   "bbox_cad_zup": [
+    [
+     -1.0000000088817842e-07,
+     -0.27,
+     -3.3607472375549574
+    ],
+    [
+     7.2000001000000005,
+     0.2700000000000001,
+     3.360747237554959
+    ]
+   ],
+   "bbox_godot_size": [
+    7.2,
+    6.721,
+    0.54
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      1.2007,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_18_wgs_swept_wing_l.step",
+    "glb": "glb/ax_aero_18_wgs_swept_wing_l.glb",
+    "preview": "renders/ax_aero_18_wgs_swept_wing_l.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-18",
+ "key": "ax_aero_18",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Swept wing panel (structural, fuel)"
+}

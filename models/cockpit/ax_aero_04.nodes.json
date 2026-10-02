@@ -1,0 +1,415 @@
+{
+ "id": "ax_aero_04",
+ "name": "CK-3X Mk3 Flight Deck",
+ "category": "cockpit",
+ "short_name": "ck3x_flight_deck",
+ "sizes": [
+  "Mk3"
+ ],
+ "primary": "ax_aero_04_ck3x_flight_deck",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    1.7751,
+    -1.2152,
+    0.0
+   ],
+   "direction": [
+    0.9986,
+    0.052,
+    0.0
+   ],
+   "up": [
+    -0.052,
+    0.9986,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.21,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.65,
+    -0.21,
+    -0.38
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.65,
+    -0.2689,
+    0.3807
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.65,
+    -0.21,
+    -0.38
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.65,
+    -0.2689,
+    0.3807
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.65,
+    -1.41,
+    -0.38
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.65,
+    -1.4024,
+    0.3829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.65,
+    -1.41,
+    -0.38
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.65,
+    -1.4024,
+    0.3829
+   ],
+   "direction": [
+    0.0,
+    0.9848,
+    0.1736
+   ],
+   "up": [
+    0.0,
+    -0.1736,
+    0.9848
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_04_ck3x_flight_deck": {
+   "vid": "ax_aero_04_ck3x_flight_deck",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-3X Mk3 Flight Deck",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "length": 4.42
+   },
+   "notes": "Mk3 4-seat flight deck: upper window band, overhead docking window, +X side hatch.",
+   "bbox_cad_zup": [
+    [
+     -1.8750001,
+     -1.8750001,
+     -2.2100001
+    ],
+    [
+     1.9717022613257942,
+     1.8830001,
+     2.2100001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.847,
+    4.42,
+    3.758
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.7751,
+      -1.2152,
+      0.0
+     ],
+     "direction": [
+      0.9986,
+      0.052,
+      0.0
+     ],
+     "up": [
+      -0.052,
+      0.9986,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.21,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.65,
+      -0.21,
+      -0.38
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.65,
+      -0.2689,
+      0.3807
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.65,
+      -0.21,
+      -0.38
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.65,
+      -0.2689,
+      0.3807
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.65,
+      -1.41,
+      -0.38
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.65,
+      -1.4024,
+      0.3829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.65,
+      -1.41,
+      -0.38
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.65,
+      -1.4024,
+      0.3829
+     ],
+     "direction": [
+      0.0,
+      0.9848,
+      0.1736
+     ],
+     "up": [
+      0.0,
+      -0.1736,
+      0.9848
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_04_ck3x_flight_deck.step",
+    "glb": "glb/ax_aero_04_ck3x_flight_deck.glb",
+    "preview": "renders/ax_aero_04_ck3x_flight_deck.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-04",
+ "key": "ax_aero_04",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "4-seat flight deck with an upper window band and overhead docking window"
+}

@@ -1,0 +1,233 @@
+{
+ "id": "ax_aero_16",
+ "name": "FS-TC Tail Cone (Mk2 / Mk3)",
+ "category": "aero",
+ "short_name": "fstc_tail_cone",
+ "sizes": [
+  "Mk2",
+  "Mk3"
+ ],
+ "primary": "ax_aero_16_fstc_tail_cone_mk2",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0,
+    0.22
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bodyflap",
+   "position": [
+    0.0,
+    -0.98,
+    -0.04
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_16_fstc_tail_cone_mk2": {
+   "vid": "ax_aero_16_fstc_tail_cone_mk2",
+   "size": "Mk2",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-TC Tail Cone (Mk2 / Mk3)",
+   "primary": true,
+   "dims": {
+    "length": 2.0
+   },
+   "notes": "Upswept tail cone; the body flap (AX-aero-26) mounts on node_bodyflap (hinge line at the aft belly).",
+   "bbox_cad_zup": [
+    [
+     -1.263010596261783,
+     -0.7021849338488209,
+     -1.0000001000000003
+    ],
+    [
+     1.2623914964935095,
+     0.5126850654440905,
+     1.0000001000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    2.525,
+    2.0,
+    1.215
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.22
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bodyflap",
+     "position": [
+      0.0,
+      -0.98,
+      -0.04
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_16_fstc_tail_cone_mk2.step",
+    "glb": "glb/ax_aero_16_fstc_tail_cone_mk2.glb",
+    "preview": "renders/ax_aero_16_fstc_tail_cone_mk2.png"
+   }
+  },
+  "ax_aero_16_fstc_tail_cone_mk3": {
+   "vid": "ax_aero_16_fstc_tail_cone_mk3",
+   "size": "Mk3",
+   "state": "flight",
+   "default_state": true,
+   "label": "FS-TC Tail Cone (Mk2 / Mk3)",
+   "primary": false,
+   "dims": {
+    "length": 3.0
+   },
+   "notes": "Upswept tail cone; the body flap (AX-aero-26) mounts on node_bodyflap (hinge line at the aft belly).",
+   "bbox_cad_zup": [
+    [
+     -1.8801287075509037,
+     -1.8768894128881868,
+     -1.5000001000000005
+    ],
+    [
+     1.880126550916802,
+     1.8946019100745903,
+     1.5000001000000005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.76,
+    3.0,
+    3.771
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.9
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bodyflap",
+     "position": [
+      0.0,
+      -1.48,
+      0.47
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_16_fstc_tail_cone_mk3.step",
+    "glb": "glb/ax_aero_16_fstc_tail_cone_mk3.glb",
+    "preview": "renders/ax_aero_16_fstc_tail_cone_mk3.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-16",
+ "key": "ax_aero_16",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Tapered tail cone with body flap mount"
+}

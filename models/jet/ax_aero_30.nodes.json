@@ -1,0 +1,199 @@
+{
+ "id": "ax_aero_30",
+ "name": "JE-PC Precooled Combined-Cycle Engine",
+ "category": "jet",
+ "short_name": "jepc_precooled",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_aero_30_jepc_precooled",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.05,
+    1.38
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_30_jepc_precooled": {
+   "vid": "ax_aero_30_jepc_precooled",
+   "size": "M",
+   "state": "air_breathing",
+   "default_state": true,
+   "label": "JE-PC Precooled Combined-Cycle Engine",
+   "primary": true,
+   "dims": {
+    "diameter": 2.5,
+    "length": 4.5
+   },
+   "notes": "Precooled combined-cycle engine (SABRE class): translating spike, helium precooler, rocket bell. _rocket: spike forward, inlet closed (rocket mode).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.3800000000000001,
+     -3.2
+    ],
+    [
+     1.25,
+     1.25,
+     3.2
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    6.4,
+    2.63
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.05,
+      1.38
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "inlet_spike"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_30_jepc_precooled.step",
+    "glb": "glb/ax_aero_30_jepc_precooled.glb",
+    "preview": "renders/ax_aero_30_jepc_precooled.png"
+   }
+  },
+  "ax_aero_30_jepc_precooled_rocket": {
+   "vid": "ax_aero_30_jepc_precooled_rocket",
+   "size": "M",
+   "state": "rocket",
+   "default_state": false,
+   "label": "JE-PC Precooled Combined-Cycle Engine",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "length": 4.5
+   },
+   "notes": "Precooled combined-cycle engine (SABRE class): translating spike, helium precooler, rocket bell. _rocket: spike forward, inlet closed (rocket mode).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.3800000000000001,
+     -3.2
+    ],
+    [
+     1.25,
+     1.25,
+     3.6500000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    6.85,
+    2.63
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.05,
+      1.38
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "inlet_spike"
+   ],
+   "default_of": "ax_aero_30_jepc_precooled",
+   "files": {
+    "step": "step/ax_aero_30_jepc_precooled_rocket.step",
+    "glb": "glb/ax_aero_30_jepc_precooled_rocket.glb",
+    "preview": "renders/ax_aero_30_jepc_precooled_rocket.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-30",
+ "key": "ax_aero_30",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Precooled air-breathing / rocket engine (air-breathing / rocket mode)"
+}

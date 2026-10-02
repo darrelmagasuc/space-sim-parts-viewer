@@ -1,0 +1,254 @@
+{
+ "id": "ax_aero_25",
+ "name": "CS-F Flap",
+ "category": "jet",
+ "short_name": "csf_flap",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_25_csf_flap_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    1.0,
+    0.336,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_25_csf_flap_s": {
+   "vid": "ax_aero_25_csf_flap_s",
+   "size": "S",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-F Flap",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.45
+   },
+   "notes": "Trailing-edge flap; deployed = 30 deg and 12 % chord aft (Fowler). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.035000100000000006,
+     -0.23480005
+    ],
+    [
+     1.1900001,
+     0.035000100000000006,
+     0.23480005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.47,
+    0.07
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.2152,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_25_csf_flap_s.step",
+    "glb": "glb/ax_aero_25_csf_flap_s.glb",
+    "preview": "renders/ax_aero_25_csf_flap_s.png"
+   }
+  },
+  "ax_aero_25_csf_flap_s_deployed": {
+   "vid": "ax_aero_25_csf_flap_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "CS-F Flap",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.45
+   },
+   "notes": "Trailing-edge flap; deployed = 30 deg and 12 % chord aft (Fowler). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.019600000000000003,
+     -0.23001148170299748
+    ],
+    [
+     1.1900001,
+     0.2275981762113533,
+     0.23480005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.465,
+    0.247
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.2152,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_25_csf_flap_s",
+   "files": {
+    "step": "step/ax_aero_25_csf_flap_s_deployed.step",
+    "glb": "glb/ax_aero_25_csf_flap_s_deployed.glb",
+    "preview": "renders/ax_aero_25_csf_flap_s_deployed.png"
+   }
+  },
+  "ax_aero_25_csf_flap_m": {
+   "vid": "ax_aero_25_csf_flap_m",
+   "size": "M",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-F Flap",
+   "primary": true,
+   "dims": {
+    "span": 2.0,
+    "chord": 0.7
+   },
+   "notes": "Trailing-edge flap; deployed = 30 deg and 12 % chord aft (Fowler). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.050000100000000006,
+     -0.36400005
+    ],
+    [
+     1.9900001,
+     0.050000100000000006,
+     0.36400004999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.98,
+    0.728,
+    0.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.0,
+      0.336,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_25_csf_flap_m.step",
+    "glb": "glb/ax_aero_25_csf_flap_m.glb",
+    "preview": "renders/ax_aero_25_csf_flap_m.png"
+   }
+  },
+  "ax_aero_25_csf_flap_m_deployed": {
+   "vid": "ax_aero_25_csf_flap_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "CS-F Flap",
+   "primary": false,
+   "dims": {
+    "span": 2.0,
+    "chord": 0.7
+   },
+   "notes": "Trailing-edge flap; deployed = 30 deg and 12 % chord aft (Fowler). Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.028000000000000004,
+     -0.3557178326491071
+    ],
+    [
+     1.9900001,
+     0.35259817621135325,
+     0.36400004999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.98,
+    0.72,
+    0.381
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.0,
+      0.336,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_25_csf_flap_m",
+   "files": {
+    "step": "step/ax_aero_25_csf_flap_m_deployed.step",
+    "glb": "glb/ax_aero_25_csf_flap_m_deployed.glb",
+    "preview": "renders/ax_aero_25_csf_flap_m_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-25",
+ "key": "ax_aero_25",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Trailing-edge flap"
+}

@@ -1,0 +1,362 @@
+{
+ "id": "ax_aero_23",
+ "name": "CS-E Elevon",
+ "category": "jet",
+ "short_name": "cse_elevon",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_aero_23_cse_elevon_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    1.0,
+    0.336,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_23_cse_elevon_s": {
+   "vid": "ax_aero_23_cse_elevon_s",
+   "size": "S",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-E Elevon",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.45
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.035000100000000006,
+     -0.23480005
+    ],
+    [
+     1.1900001,
+     0.035000100000000006,
+     0.23480005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.47,
+    0.07
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.2152,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_s.step",
+    "glb": "glb/ax_aero_23_cse_elevon_s.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_s.png"
+   }
+  },
+  "ax_aero_23_cse_elevon_s_defl_pos": {
+   "vid": "ax_aero_23_cse_elevon_s_defl_pos",
+   "size": "S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-E Elevon",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.45
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.025193888502679253,
+     -0.20868778978363584
+    ],
+    [
+     1.1900001,
+     0.15672824235890867,
+     0.23480005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.443,
+    0.182
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.2152,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_23_cse_elevon_s",
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_s_defl_pos.step",
+    "glb": "glb/ax_aero_23_cse_elevon_s_defl_pos.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_s_defl_pos.png"
+   }
+  },
+  "ax_aero_23_cse_elevon_s_defl_neg": {
+   "vid": "ax_aero_23_cse_elevon_s_defl_neg",
+   "size": "S",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "CS-E Elevon",
+   "primary": false,
+   "dims": {
+    "span": 1.2,
+    "chord": 0.45
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.15672824235890867,
+     -0.20868778978363584
+    ],
+    [
+     1.1900001,
+     0.02519388850267925,
+     0.23480005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.18,
+    0.443,
+    0.182
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.6,
+      0.2152,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_23_cse_elevon_s",
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_s_defl_neg.step",
+    "glb": "glb/ax_aero_23_cse_elevon_s_defl_neg.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_s_defl_neg.png"
+   }
+  },
+  "ax_aero_23_cse_elevon_m": {
+   "vid": "ax_aero_23_cse_elevon_m",
+   "size": "M",
+   "state": "neutral",
+   "default_state": true,
+   "label": "CS-E Elevon",
+   "primary": true,
+   "dims": {
+    "span": 2.0,
+    "chord": 0.7
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.050000100000000006,
+     -0.36400005
+    ],
+    [
+     1.9900001,
+     0.050000100000000006,
+     0.36400004999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.98,
+    0.728,
+    0.1
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.0,
+      0.336,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_m.step",
+    "glb": "glb/ax_aero_23_cse_elevon_m.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_m.png"
+   }
+  },
+  "ax_aero_23_cse_elevon_m_defl_pos": {
+   "vid": "ax_aero_23_cse_elevon_m_defl_pos",
+   "size": "M",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "CS-E Elevon",
+   "primary": false,
+   "dims": {
+    "span": 2.0,
+    "chord": 0.7
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.03501402602289703,
+     -0.322810944980113
+    ],
+    [
+     1.9900001,
+     0.24223327819032583,
+     0.36400004999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.98,
+    0.687,
+    0.277
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.0,
+      0.336,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_23_cse_elevon_m",
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_m_defl_pos.step",
+    "glb": "glb/ax_aero_23_cse_elevon_m_defl_pos.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_m_defl_pos.png"
+   }
+  },
+  "ax_aero_23_cse_elevon_m_defl_neg": {
+   "vid": "ax_aero_23_cse_elevon_m_defl_neg",
+   "size": "M",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "CS-E Elevon",
+   "primary": false,
+   "dims": {
+    "span": 2.0,
+    "chord": 0.7
+   },
+   "notes": "Elevon. Hinge line along X at z = 0 (node_attach); positive deflection = trailing edge down (+Y belly).",
+   "bbox_cad_zup": [
+    [
+     0.0099999,
+     -0.2422332781903258,
+     -0.32281094498011287
+    ],
+    [
+     1.9900001,
+     0.03501402602289703,
+     0.36400004999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.98,
+    0.687,
+    0.277
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      1.0,
+      0.336,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "surface"
+   ],
+   "default_of": "ax_aero_23_cse_elevon_m",
+   "files": {
+    "step": "step/ax_aero_23_cse_elevon_m_defl_neg.step",
+    "glb": "glb/ax_aero_23_cse_elevon_m_defl_neg.glb",
+    "preview": "renders/ax_aero_23_cse_elevon_m_defl_neg.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-23",
+ "key": "ax_aero_23",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Elevon control surface"
+}

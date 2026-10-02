@@ -1,0 +1,467 @@
+{
+ "id": "ax_aero_06",
+ "name": "CK-LB Lifting-Body Crew Cabin",
+ "category": "cockpit",
+ "short_name": "cklb_crew_cabin",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_aero_06_cklb_crew_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.7362,
+    0.7857
+   ],
+   "direction": [
+    0.0,
+    0.124,
+    0.9923
+   ],
+   "up": [
+    0.0,
+    0.9923,
+    -0.124
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.925,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.3,
+    -1.025,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    -1.3,
+    -1.025,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.45,
+    -0.125,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.766,
+    0.6428
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.45,
+    -0.4998,
+    0.1645
+   ],
+   "direction": [
+    0.0,
+    0.766,
+    0.6428
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.45,
+    -0.125,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.766,
+    0.6428
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.45,
+    -0.4998,
+    0.1645
+   ],
+   "direction": [
+    0.0,
+    0.766,
+    0.6428
+   ],
+   "up": [
+    0.0,
+    -0.6428,
+    0.766
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.45,
+    -1.125,
+    -0.45
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.45,
+    -1.3788,
+    0.2695
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.45,
+    -1.125,
+    -0.45
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.45,
+    -1.3788,
+    0.2695
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    -0.5,
+    0.866
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_06_cklb_crew_cabin": {
+   "vid": "ax_aero_06_cklb_crew_cabin",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CK-LB Lifting-Body Crew Cabin",
+   "primary": true,
+   "dims": {
+    "diameter": 2.5,
+    "length": 3.85
+   },
+   "notes": "Small lifting-body crew cabin (HL-20 / Dream Chaser class) on a 2.5 m stack interface; folding wings mount on node_side_1 / node_side_2.",
+   "bbox_cad_zup": [
+    [
+     -1.3300001000000001,
+     -1.2950201378667057,
+     -1.9250001000000025
+    ],
+    [
+     1.3300001000000001,
+     1.272975376231502,
+     1.9250001000000023
+    ]
+   ],
+   "bbox_godot_size": [
+    2.66,
+    3.85,
+    2.568
+   ],
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.7362,
+      0.7857
+     ],
+     "direction": [
+      0.0,
+      0.124,
+      0.9923
+     ],
+     "up": [
+      0.0,
+      0.9923,
+      -0.124
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.925,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.3,
+      -1.025,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      -1.3,
+      -1.025,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.45,
+      -0.125,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.766,
+      0.6428
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.45,
+      -0.4998,
+      0.1645
+     ],
+     "direction": [
+      0.0,
+      0.766,
+      0.6428
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.45,
+      -0.125,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.766,
+      0.6428
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.45,
+      -0.4998,
+      0.1645
+     ],
+     "direction": [
+      0.0,
+      0.766,
+      0.6428
+     ],
+     "up": [
+      0.0,
+      -0.6428,
+      0.766
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.45,
+      -1.125,
+      -0.45
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.45,
+      -1.3788,
+      0.2695
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.45,
+      -1.125,
+      -0.45
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.45,
+      -1.3788,
+      0.2695
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      -0.5,
+      0.866
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_06_cklb_crew_cabin.step",
+    "glb": "glb/ax_aero_06_cklb_crew_cabin.glb",
+    "preview": "renders/ax_aero_06_cklb_crew_cabin.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-06",
+ "key": "ax_aero_06",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": "full",
+ "summary": "Small lifting-body crew nose (4-6 seats) with folding wings interface"
+}

@@ -1,0 +1,181 @@
+{
+ "id": "ax_aero_29",
+ "name": "JE-TJ Small Turbojet",
+ "category": "jet",
+ "short_name": "jetj_turbojet",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_aero_29_jetj_turbojet_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.2813,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.7187,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_29_jetj_turbojet_xs": {
+   "vid": "ax_aero_29_jetj_turbojet_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "JE-TJ Small Turbojet",
+   "primary": false,
+   "dims": {
+    "diameter": 0.625,
+    "length": 1.1
+   },
+   "notes": "Small single-spool turbojet for drones / test vehicles.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.69062505
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.6906250500000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    1.381,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.6906,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4094,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_29_jetj_turbojet_xs.step",
+    "glb": "glb/ax_aero_29_jetj_turbojet_xs.glb",
+    "preview": "renders/ax_aero_29_jetj_turbojet_xs.png"
+   }
+  },
+  "ax_aero_29_jetj_turbojet_s": {
+   "vid": "ax_aero_29_jetj_turbojet_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "JE-TJ Small Turbojet",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "length": 2.0
+   },
+   "notes": "Small single-spool turbojet for drones / test vehicles.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -1.2812500500000001
+    ],
+    [
+     0.625,
+     0.625,
+     1.28125005
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    2.563,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.2813,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7187,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_29_jetj_turbojet_s.step",
+    "glb": "glb/ax_aero_29_jetj_turbojet_s.glb",
+    "preview": "renders/ax_aero_29_jetj_turbojet_s.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-29",
+ "key": "ax_aero_29",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "Small turbojet for drones and test vehicles"
+}

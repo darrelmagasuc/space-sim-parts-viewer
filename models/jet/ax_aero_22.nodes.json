@@ -1,0 +1,202 @@
+{
+ "id": "ax_aero_22",
+ "name": "TL-C Canard",
+ "category": "jet",
+ "short_name": "tlc_canard",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_aero_22_tlc_canard",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.25,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_aero_22_tlc_canard": {
+   "vid": "ax_aero_22_tlc_canard",
+   "size": "S",
+   "state": "neutral",
+   "default_state": true,
+   "label": "TL-C Canard",
+   "primary": true,
+   "dims": {
+    "span": 1.1,
+    "root_chord": 1.0
+   },
+   "notes": "All-moving canard on a pivot shaft (25 % root chord).",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.04,
+     -0.7500001000000016
+    ],
+    [
+     1.1000001000000015,
+     0.04,
+     0.7500001000000035
+    ]
+   ],
+   "bbox_godot_size": [
+    1.1,
+    1.5,
+    0.08
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.25,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wing_top",
+    "wing_underside"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_aero_22_tlc_canard.step",
+    "glb": "glb/ax_aero_22_tlc_canard.glb",
+    "preview": "renders/ax_aero_22_tlc_canard.png"
+   }
+  },
+  "ax_aero_22_tlc_canard_defl_pos": {
+   "vid": "ax_aero_22_tlc_canard_defl_pos",
+   "size": "S",
+   "state": "defl_pos",
+   "default_state": false,
+   "label": "TL-C Canard",
+   "primary": false,
+   "dims": {
+    "span": 1.1,
+    "root_chord": 1.0
+   },
+   "notes": "All-moving canard on a pivot shaft (25 % root chord).",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.1035277180410083,
+     -0.7135537850983867
+    ],
+    [
+     1.1000001000000015,
+     0.28856475291792905,
+     0.7363704305156334
+    ]
+   ],
+   "bbox_godot_size": [
+    1.1,
+    1.45,
+    0.392
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.25,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wing_top",
+    "wing_underside"
+   ],
+   "default_of": "ax_aero_22_tlc_canard",
+   "files": {
+    "step": "step/ax_aero_22_tlc_canard_defl_pos.step",
+    "glb": "glb/ax_aero_22_tlc_canard_defl_pos.glb",
+    "preview": "renders/ax_aero_22_tlc_canard_defl_pos.png"
+   }
+  },
+  "ax_aero_22_tlc_canard_defl_neg": {
+   "vid": "ax_aero_22_tlc_canard_defl_neg",
+   "size": "S",
+   "state": "defl_neg",
+   "default_state": false,
+   "label": "TL-C Canard",
+   "primary": false,
+   "dims": {
+    "span": 1.1,
+    "root_chord": 1.0
+   },
+   "notes": "All-moving canard on a pivot shaft (25 % root chord).",
+   "bbox_cad_zup": [
+    [
+     -1e-07,
+     -0.28856475291792905,
+     -0.7135537850983867
+    ],
+    [
+     1.1000001000000015,
+     0.1035277180410083,
+     0.7363704305156334
+    ]
+   ],
+   "bbox_godot_size": [
+    1.1,
+    1.45,
+    0.392
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.25,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wing_top",
+    "wing_underside"
+   ],
+   "default_of": "ax_aero_22_tlc_canard",
+   "files": {
+    "step": "step/ax_aero_22_tlc_canard_defl_neg.step",
+    "glb": "glb/ax_aero_22_tlc_canard_defl_neg.glb",
+    "preview": "renders/ax_aero_22_tlc_canard_defl_neg.png"
+   }
+  }
+ },
+ "display_id": "AX-aero-22",
+ "key": "ax_aero_22",
+ "line": "AX",
+ "ax_category": "aero",
+ "aliases": [],
+ "batch": "B9",
+ "slot": null,
+ "interior": null,
+ "summary": "All-moving canard"
+}
