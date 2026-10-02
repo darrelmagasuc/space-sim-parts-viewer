@@ -1,0 +1,625 @@
+{
+ "id": "ax_cmd_03",
+ "name": "CM-12 'Ares Heavy' Six-Seat Capsule",
+ "category": "cmd",
+ "short_name": "ares_heavy_capsule",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_cmd_03_ares_heavy_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.8983,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5517,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.93,
+    -1.0983,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.93,
+    -0.5535,
+    -0.2341
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.31,
+    -1.0983,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.31,
+    -0.5535,
+    -0.2341
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.31,
+    -1.0983,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -0.31,
+    -0.5535,
+    -0.2341
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.93,
+    -1.0983,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.93,
+    -0.5535,
+    -0.2341
+   ],
+   "direction": [
+    0.0,
+    0.8192,
+    0.5736
+   ],
+   "up": [
+    0.0,
+    0.5736,
+    -0.8192
+   ]
+  },
+  {
+   "name": "node_seat_5",
+   "position": [
+    0.45,
+    -0.0983,
+    -0.2
+   ],
+   "direction": [
+    0.0,
+    0.7071,
+    0.7071
+   ],
+   "up": [
+    0.0,
+    0.7071,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_camera_5",
+   "position": [
+    0.45,
+    0.531,
+    -0.6313
+   ],
+   "direction": [
+    0.0,
+    0.7071,
+    0.7071
+   ],
+   "up": [
+    0.0,
+    0.7071,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_seat_6",
+   "position": [
+    -0.45,
+    -0.0983,
+    -0.2
+   ],
+   "direction": [
+    0.0,
+    0.7071,
+    0.7071
+   ],
+   "up": [
+    0.0,
+    0.7071,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_camera_6",
+   "position": [
+    -0.45,
+    0.531,
+    -0.6313
+   ],
+   "direction": [
+    0.0,
+    0.7071,
+    0.7071
+   ],
+   "up": [
+    0.0,
+    0.7071,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.6519,
+    1.9473
+   ],
+   "direction": [
+    0.0,
+    0.3718,
+    0.9283
+   ],
+   "up": [
+    0.0,
+    0.9283,
+    -0.3718
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.805,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_03_ares_heavy_capsule": {
+   "vid": "ax_cmd_03_ares_heavy_capsule",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "CM-12 'Ares Heavy' Six-Seat Capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 3.75,
+    "crew": 6,
+    "facets": 16,
+    "windows": 6,
+    "abort_engines": 8
+   },
+   "notes": "Six-seat deep-space capsule (XL): 16 chamfered facets, 3 recessed panel lines (2 orange stripes), 4 side + 2 docking windows in bevelled pockets, large side hatch with handrails, 8 abort-engine bays, 7 RCS pockets, umbilical panel, broad gold MLI crown, steel nose ring + docking tunnel, scaled heat shield with carrier land. Two decks of couches (4 + 2).",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -1.8983333333333332
+    ],
+    [
+     2.5,
+     2.5,
+     1.8983333333333332
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    3.797,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.8983,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5517,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.93,
+      -1.0983,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.93,
+      -0.5535,
+      -0.2341
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.31,
+      -1.0983,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.31,
+      -0.5535,
+      -0.2341
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.31,
+      -1.0983,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.31,
+      -0.5535,
+      -0.2341
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.93,
+      -1.0983,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.93,
+      -0.5535,
+      -0.2341
+     ],
+     "direction": [
+      0.0,
+      0.8192,
+      0.5736
+     ],
+     "up": [
+      0.0,
+      0.5736,
+      -0.8192
+     ]
+    },
+    {
+     "name": "node_seat_5",
+     "position": [
+      0.45,
+      -0.0983,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.7071,
+      0.7071
+     ],
+     "up": [
+      0.0,
+      0.7071,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_camera_5",
+     "position": [
+      0.45,
+      0.531,
+      -0.6313
+     ],
+     "direction": [
+      0.0,
+      0.7071,
+      0.7071
+     ],
+     "up": [
+      0.0,
+      0.7071,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_seat_6",
+     "position": [
+      -0.45,
+      -0.0983,
+      -0.2
+     ],
+     "direction": [
+      0.0,
+      0.7071,
+      0.7071
+     ],
+     "up": [
+      0.0,
+      0.7071,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_camera_6",
+     "position": [
+      -0.45,
+      0.531,
+      -0.6313
+     ],
+     "direction": [
+      0.0,
+      0.7071,
+      0.7071
+     ],
+     "up": [
+      0.0,
+      0.7071,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.6519,
+      1.9473
+     ],
+     "direction": [
+      0.0,
+      0.3718,
+      0.9283
+     ],
+     "up": [
+      0.0,
+      0.9283,
+      -0.3718
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.805,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_03_ares_heavy_capsule.step",
+    "glb": "glb/ax_cmd_03_ares_heavy_capsule.glb",
+    "preview": "renders/ax_cmd_03_ares_heavy_capsule.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-03",
+ "key": "ax_cmd_03",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CM-12",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "6-7 crew deep-space capsule, 2 decks of couches, aft docking tunnel"
+}

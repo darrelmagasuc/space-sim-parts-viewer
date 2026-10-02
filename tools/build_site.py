@@ -24,7 +24,7 @@ CATS = [("cmd", "Command modules & probes", "cmd_prop"), ("prop", "Propulsion", 
 SKIP = {"interiors", "np_lib", "modern_set", "interiors_modern", "ax_kit"}   # IVA interiors, shared libraries and the (re-coded) modern set are not gallery parts
 # AX (Ares-line) source folders published in the gallery (parts/<folder>/ax_<axcat>_NN.nodes.json; category from the nodes.json).
 # B1 adds "ax_cmd" here when its parts are ready (thumbs + low-poly present); AX parts missing a thumb / low-poly GLB are skipped with a warning.
-AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]
+AX_FOLDERS = ["ax_cmd", "ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]
 AX_FILES = {}
 for _d in AX_FOLDERS:
     for _f in sorted(glob.glob(os.path.join(PARTS, _d, "ax_*_[0-9][0-9].nodes.json"))):

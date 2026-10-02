@@ -1,0 +1,94 @@
+{
+ "id": "ax_cmd_14",
+ "name": "LES-S Launch Escape Tower",
+ "category": "cmd",
+ "short_name": "launch_escape_tower",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_cmd_14_launch_escape_tower",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.2025,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_14_launch_escape_tower": {
+   "vid": "ax_cmd_14_launch_escape_tower",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LES-S Launch Escape Tower",
+   "primary": true,
+   "dims": {
+    "host_diameter_m": 2.5,
+    "height_m": 6.28,
+    "nozzles": 4
+   },
+   "notes": "Launch abort system for the Kestrel: solid Orion-style faceted tower (8 facets) with a nozzle collar of 4 canted abort nozzles in bevelled pockets, 8 attitude-control ports, recessed panel line, faceted nose; faceted boost protective cover enclosing the capsule (35 mm clearance) with an orange stripe. No lattice.",
+   "bbox_cad_zup": [
+    [
+     -1.2149179644763863,
+     -1.2149179644763863,
+     -3.1375000499999994
+    ],
+    [
+     1.2149179644763863,
+     1.2149179644763861,
+     3.13750005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.43,
+    6.275,
+    2.43
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.2025,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "host": "AX-cmd-02 (mates its node_top; the boost cover encloses the capsule down to its shield shoulder)",
+    "clearance_design_m": 0.035
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_14_launch_escape_tower.step",
+    "glb": "glb/ax_cmd_14_launch_escape_tower.glb",
+    "preview": "renders/ax_cmd_14_launch_escape_tower.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-14",
+ "key": "ax_cmd_14",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "LES-S",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Solid Orion-style tractor abort tower for Kestrel-class capsules: faceted tower, 4 canted abort nozzles, boost protective cover"
+}

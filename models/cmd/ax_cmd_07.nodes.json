@@ -1,0 +1,444 @@
+{
+ "id": "ax_cmd_07",
+ "name": "CD-7 Command Deck Section",
+ "category": "cmd",
+ "short_name": "command_deck",
+ "sizes": [
+  "XXL"
+ ],
+ "primary": "ax_cmd_07_command_deck",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.99,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.99,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.95,
+    0.09,
+    2.6
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.95,
+    0.8427,
+    2.475
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.32,
+    0.09,
+    2.6
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.32,
+    0.8427,
+    2.475
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.32,
+    0.09,
+    2.6
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.32,
+    0.8427,
+    2.475
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    0.95,
+    0.09,
+    2.6
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    0.95,
+    0.8427,
+    2.475
+   ],
+   "direction": [
+    0.0,
+    0.342,
+    0.9397
+   ],
+   "up": [
+    0.0,
+    0.9397,
+    -0.342
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.97,
+    -3.618
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_07_command_deck": {
+   "vid": "ax_cmd_07_command_deck",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "CD-7 Command Deck Section",
+   "primary": true,
+   "dims": {
+    "diameter_m": 7.5,
+    "height_m": 3.98,
+    "crew": 4,
+    "facets": 16,
+    "windows": 10
+   },
+   "notes": "Command deck section (7.5 m): brushed stainless lower barrel with chamfered weld-seam notches and a crew hatch, white 16-facet window band with 10 bevelled flight-deck windows, 2 recessed panel lines (one orange stripe), access panels, chamfered steel interface rings, flat pressure bulkheads.",
+   "bbox_cad_zup": [
+    [
+     -3.75,
+     -3.75,
+     -1.99
+    ],
+    [
+     3.75,
+     3.826,
+     1.99
+    ]
+   ],
+   "bbox_godot_size": [
+    7.5,
+    3.98,
+    7.576
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.99,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.99,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.95,
+      0.09,
+      2.6
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.95,
+      0.8427,
+      2.475
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.32,
+      0.09,
+      2.6
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.32,
+      0.8427,
+      2.475
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.32,
+      0.09,
+      2.6
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.32,
+      0.8427,
+      2.475
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      0.95,
+      0.09,
+      2.6
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      0.95,
+      0.8427,
+      2.475
+     ],
+     "direction": [
+      0.0,
+      0.342,
+      0.9397
+     ],
+     "up": [
+      0.0,
+      0.9397,
+      -0.342
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.97,
+      -3.618
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_07_command_deck.step",
+    "glb": "glb/ax_cmd_07_command_deck.glb",
+    "preview": "renders/ax_cmd_07_command_deck.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-07",
+ "key": "ax_cmd_07",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CD-7",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "7.5 m crew-deck barrel (flight deck + window band) for large methalox ships"
+}

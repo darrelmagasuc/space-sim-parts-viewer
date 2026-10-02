@@ -2,6 +2,7 @@
 <title>Space Sim part blockouts – GLB viewer</title><link rel="stylesheet" href="app.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%226%22 fill=%22%231f5fbf%22/%3E%3C/svg%3E"></head><body>
 <header><h1>Space Sim part blockouts</h1><span class="muted" id="count" style="color:#aab"></span><span class="sp"></span>
 <input id="q" type="search" placeholder="Filter parts (id, name, size)…" aria-label="Filter parts">
+<span class="seg" id="linesw"><button data-q="" class="on">All</button><button data-q="line:ax" title="Show only AX (Ares-line) parts">AX line</button></span>
 <span class="seg" id="lodsw"><button data-l="lp" class="on">Low-poly</button><button data-l="cad">CAD</button></span>
 <a id="zlp" href="space_sim_lowpoly_glb_v2.zip" download>Low-poly zip</a><a id="zcad" href="space_sim_glb_v3.zip" download>CAD zip</a><a href="vehicle.html">Vehicle Creation</a><a href="CONVENTIONS.md">Conventions</a></header>
 <nav class="cats" id="cats"></nav><main id="main"><p class="muted">Loading…</p></main>
@@ -17,9 +18,9 @@
  let h=`<section class="banner" id="vehicle"><h2>Vehicle Creation <small>— build a craft from a prompt</small></h2><p>Assemble these parts into a rocket, rover, or spaceplane. A prompt (your own API key, kept in this browser) returns a plan; the page snaps the GLBs together and writes a flight manual. The built-in examples need no key. <a href="vehicle.html">Open Vehicle Creation</a>.</p></section>`;
  const card=p=>{const pv=p.variants.find(v=>v.vid===p.primary)||p.variants[0];
    const sizes=[...new Set(p.variants.map(v=>v.size))].join(' / '), poses=[...new Set(p.variants.map(v=>v.state))].filter(s=>s!=='flight');
-   const key=(p.id+' '+(p.display_id||'')+' '+(p.aliases||[]).join(' ')+' '+p.name+' '+(p.group||'')+' '+(p.new?'new ':'')+p.variants.map(v=>v.vid+' '+v.size+' '+v.state).join(' ')).toLowerCase();
+   const key=(p.id+' '+(p.line?'line:'+p.line+' ':'')+(p.display_id||'')+' '+(p.aliases||[]).join(' ')+' '+p.name+' '+(p.group||'')+' '+(p.new?'new ':'')+p.variants.map(v=>v.vid+' '+v.size+' '+v.state).join(' ')).toLowerCase();
    return `<a class="card" data-k="${esc(key)}" data-v="${esc(pv.vid)}" data-lp="${pv.thumb_lp||''}" data-cad="${pv.thumb}" href="view.html?part=${encodeURIComponent(pv.vid)}${lod==='cad'?'&lod=cad':''}"${p.summary?` title="${esc(p.summary)}"`:''}><img loading="lazy" src="${lod==='cad'||!pv.thumb_lp?pv.thumb:pv.thumb_lp}" alt="${esc(p.name)}" width="320" height="320">
-   <div class="t"><b>${esc(p.id)} · ${esc(p.name)}${p.new?' <em class="new">new</em>':''}</b><span>${esc(sizes)} · ${p.variants.length} variant${p.variants.length>1?'s':''}${poses.length?' · '+esc(poses.join(', ')):''}</span></div></a>`;};
+   <div class="t"><b>${p.line==='AX'?'<em class="ax">AX</em> ':''}${esc(p.display_id||p.id)} · ${esc(p.name)}${p.new?' <em class="new">new</em>':''}</b><span>${esc(sizes)} · ${p.variants.length} variant${p.variants.length>1?'s':''}${poses.length?' · '+esc(poses.join(', ')):''}</span></div></a>`;};
  for(const c of m.categories){h+=`<section data-cat="${c.key}"><h2 id="${c.key}">${esc(c.key)} <small>— ${esc(c.title)}</small></h2>`;
   const groups=[...new Set(c.parts.map(p=>p.group).filter(Boolean))];
   h+=`<div class="grid">${c.parts.filter(p=>!p.group).map(card).join('')}</div>`;
@@ -36,6 +37,8 @@
  const q=document.getElementById('q');q.oninput=()=>{const t=q.value.trim().toLowerCase();
   document.querySelectorAll('.card').forEach(a=>a.style.display=!t||a.dataset.k.includes(t)?'':'none');
   document.querySelectorAll('section[data-cat]').forEach(s=>s.style.display=[...s.querySelectorAll('.card')].some(a=>a.style.display!=='none')?'':'none');};
- if(q0){q.value=q0;q.oninput();}
+ const ls=document.getElementById('linesw'),syncLine=()=>ls.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.q===q.value.trim().toLowerCase()||(!b.dataset.q&&q.value.trim().toLowerCase()!=='line:ax')));
+ ls.querySelectorAll('button').forEach(b=>b.onclick=()=>{q.value=b.dataset.q;q.oninput();syncLine();}); q.addEventListener('input',syncLine);
+ if(q0){q.value=q0;q.oninput();syncLine();}
 })().catch(e=>{document.getElementById('main').innerHTML='<p>Could not load manifest.json: '+e+'</p>'});
 </script></body></html>

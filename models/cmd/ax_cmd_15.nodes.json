@@ -1,0 +1,333 @@
+{
+ "id": "ax_cmd_15",
+ "name": "HS-1 Ablative Heat Shield Set",
+ "category": "cmd",
+ "short_name": "heat_shield",
+ "sizes": [
+  "S",
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_cmd_15_heat_shield_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.0708,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    0.0442,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_15_heat_shield_s": {
+   "vid": "ax_cmd_15_heat_shield_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-1 Ablative Heat Shield Set",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25
+   },
+   "notes": "Ablative heat shield 1.25 m: tile_black ablator dish (8 recessed radial segment seams) nested under the host's own shield (35 mm vertical clearance), chamfered steel carrier ring with a flat land (node_top mates the capsule node_bottom land; node_bottom = ring underside, same dome-nest rule as the capsules).",
+   "bbox_cad_zup": [
+    [
+     -0.6153333333333334,
+     -0.6153333333333334,
+     -0.07083333333333333
+    ],
+    [
+     0.6153333333333334,
+     0.6153333333333334,
+     0.07083333333333333
+    ]
+   ],
+   "bbox_godot_size": [
+    1.231,
+    0.142,
+    1.231
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.0708,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      0.0442,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "fits": "AX-cmd-09/10 probe stacks, custom S pods",
+    "inner_dome_clearance_m": 0.035,
+    "ablator_t_m": 0.02,
+    "dome_depth_below_node_bottom_m": 0.115
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_15_heat_shield_s.step",
+    "glb": "glb/ax_cmd_15_heat_shield_s.glb",
+    "preview": "renders/ax_cmd_15_heat_shield_s.png"
+   }
+  },
+  "ax_cmd_15_heat_shield_m": {
+   "vid": "ax_cmd_15_heat_shield_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-1 Ablative Heat Shield Set",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5
+   },
+   "notes": "Ablative heat shield 2.5 m: tile_black ablator dish (12 recessed radial segment seams) nested under the host's own shield (35 mm vertical clearance), chamfered steel carrier ring with a flat land (node_top mates the capsule node_bottom land; node_bottom = ring underside, same dome-nest rule as the capsules).",
+   "bbox_cad_zup": [
+    [
+     -1.2466666666666666,
+     -1.2466666666666666,
+     -0.12416666666666668
+    ],
+    [
+     1.2466666666666666,
+     1.2466666666666666,
+     0.12416666666666668
+    ]
+   ],
+   "bbox_godot_size": [
+    2.493,
+    0.248,
+    2.493
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1242,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      0.0708,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "fits": "AX-cmd-02 Kestrel",
+    "inner_dome_clearance_m": 0.035,
+    "ablator_t_m": 0.04,
+    "dome_depth_below_node_bottom_m": 0.195
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_15_heat_shield_m.step",
+    "glb": "glb/ax_cmd_15_heat_shield_m.glb",
+    "preview": "renders/ax_cmd_15_heat_shield_m.png"
+   }
+  },
+  "ax_cmd_15_heat_shield_l": {
+   "vid": "ax_cmd_15_heat_shield_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-1 Ablative Heat Shield Set",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75
+   },
+   "notes": "Ablative heat shield 3.75 m: tile_black ablator dish (12 recessed radial segment seams) nested under the host's own shield (35 mm vertical clearance), chamfered steel carrier ring with a flat land (node_top mates the capsule node_bottom land; node_bottom = ring underside, same dome-nest rule as the capsules).",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.17750000000000002
+    ],
+    [
+     1.875,
+     1.875,
+     0.17750000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.355,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1775,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      0.0975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "fits": "AX-cmd-01 / AX-cmd-08",
+    "inner_dome_clearance_m": 0.035,
+    "ablator_t_m": 0.06,
+    "dome_depth_below_node_bottom_m": 0.275
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_15_heat_shield_l.step",
+    "glb": "glb/ax_cmd_15_heat_shield_l.glb",
+    "preview": "renders/ax_cmd_15_heat_shield_l.png"
+   }
+  },
+  "ax_cmd_15_heat_shield_xl": {
+   "vid": "ax_cmd_15_heat_shield_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "HS-1 Ablative Heat Shield Set",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0
+   },
+   "notes": "Ablative heat shield 5.0 m: tile_black ablator dish (12 recessed radial segment seams) nested under the host's own shield (35 mm vertical clearance), chamfered steel carrier ring with a flat land (node_top mates the capsule node_bottom land; node_bottom = ring underside, same dome-nest rule as the capsules).",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -0.23083333333333333
+    ],
+    [
+     2.5,
+     2.5,
+     0.23083333333333333
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    0.462,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2308,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      0.1242,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "fits": "AX-cmd-03 Ares Heavy",
+    "inner_dome_clearance_m": 0.035,
+    "ablator_t_m": 0.08,
+    "dome_depth_below_node_bottom_m": 0.355
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_15_heat_shield_xl.step",
+    "glb": "glb/ax_cmd_15_heat_shield_xl.glb",
+    "preview": "renders/ax_cmd_15_heat_shield_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-15",
+ "key": "ax_cmd_15",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "HS-1",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Segmented ablative shields with carrier ring (spare / stack-end use)"
+}

@@ -11,7 +11,7 @@ spec = importlib.util.spec_from_file_location("sp_render", os.path.join(PARTS, "
 sys.path.insert(0, os.path.join(PARTS, "station_power"))
 R = importlib.util.module_from_spec(spec); spec.loader.exec_module(R)
 jobs = []
-AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
+AX_FOLDERS = ["ax_cmd", "ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
 for d in ("cmd_prop", "tank_stage", "station_power", "rover_jet", "cockpit", "rover_kit", "prop_stage_ext", "aero", "struct_robo", "sci_power", *AX_FOLDERS):
     for f in sorted(glob.glob(f"{PARTS}/{d}/*[0-9][0-9].nodes.json")):
         for vid in json.load(open(f))["variants"]: jobs.append((d, vid, os.path.join(PARTS, d, "renders", vid + ".png")))

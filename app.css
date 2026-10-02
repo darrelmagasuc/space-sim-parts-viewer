@@ -63,3 +63,5 @@ h3.grp{margin:18px 0 8px;font-size:15px}h3.grp small{color:#667;font-weight:400}
 .card em.new{font-style:normal;font-size:10px;font-weight:600;background:#1f5fbf;color:#fff;border-radius:3px;padding:0 4px;vertical-align:1px}
 .summary{font-size:13px;margin:0 0 10px;color:#334}.summary em.new{font-style:normal;font-size:10px;font-weight:600;background:#1f5fbf;color:#fff;border-radius:3px;padding:0 4px}
 h2[id],h3.grp{scroll-margin-top:52px}
+
+em.ax{font-style:normal;font-size:11px;background:#b5651d;color:#fff;border-radius:3px;padding:0 4px;margin-right:2px}

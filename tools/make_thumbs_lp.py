@@ -3,7 +3,7 @@ import json, glob, os, subprocess, http.server, threading, functools
 from PIL import Image
 LP = "/workspace/space-sim/parts_lowpoly"; OUT = "/workspace/space-sim/viewer/site/thumbs/lp"; PORT = 8783; CELL = 320; COLS = 6
 import sys
-AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
+AX_FOLDERS = ["ax_cmd", "ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
 SKIP = {"interiors", "np_lib", "modern_set", "interiors_modern", "ax_kit"}
 ALL = "--all" in sys.argv          # default: only (re)render thumbs that are missing or older than their low-poly GLB
 items = []

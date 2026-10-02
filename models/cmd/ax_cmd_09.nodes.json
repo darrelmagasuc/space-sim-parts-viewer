@@ -1,0 +1,240 @@
+{
+ "id": "ax_cmd_09",
+ "name": "PC-XS Faceted Probe Core",
+ "category": "cmd",
+ "short_name": "probe_core",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_cmd_09_probe_core",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.1975,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2025,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.288,
+    -0.0025,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    -0.0025,
+    -0.288
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.288,
+    -0.0025,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    -0.0025,
+    0.288
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_09_probe_core": {
+   "vid": "ax_cmd_09_probe_core",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "PC-XS Faceted Probe Core",
+   "primary": true,
+   "dims": {
+    "diameter_m": 0.625,
+    "height_m": 0.4,
+    "facets": 8,
+    "slots": "1 Small (half-height)"
+   },
+   "notes": "Probe core puck (XS): 8 chamfered facets, bevelled rims, recessed panel line, 2 bevelled star-tracker pockets + 2 sensor ports, flush access panels, chamfered steel interface rings, gold MLI top disc. 0.40 m tall so it holds one half-height Small slot (0.5 x 0.5 x 0.3).",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.20249999999999999
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.20249999999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.405,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1975,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2025,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.288,
+      -0.0025,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.0025,
+      -0.288
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.288,
+      -0.0025,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.0025,
+      0.288
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "extra": {
+    "slots": [
+     {
+      "name": "slot_1",
+      "cls": "Small (half-height, 0.5 x 0.5 x 0.3 m)",
+      "node_bottom_mount": [
+       0,
+       -0.1555,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    ],
+    "slots_note": "slot item node_bottom goes on node_bottom_mount (Godot), up +Y; envelope per CONVENTIONS 'Internal slots'"
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_09_probe_core.step",
+    "glb": "glb/ax_cmd_09_probe_core.glb",
+    "preview": "renders/ax_cmd_09_probe_core.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-09",
+ "key": "ax_cmd_09",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "PC-XS",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "8-facet avionics puck: guidance, SAS, 1 Small slot"
+}

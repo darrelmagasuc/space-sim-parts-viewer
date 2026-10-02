@@ -1,0 +1,282 @@
+{
+ "id": "ax_cmd_10",
+ "name": "PC-S Octagonal Probe Bus",
+ "category": "cmd",
+ "short_name": "probe_bus",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_cmd_10_probe_bus",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.497,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.503,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    0.575,
+    0.017,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.017,
+    -0.575
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -0.575,
+    0.017,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.017,
+    0.575
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_10_probe_bus": {
+   "vid": "ax_cmd_10_probe_bus",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "PC-S Octagonal Probe Bus",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "height_m": 1.06,
+    "facets": 8,
+    "slots": "4 Small"
+   },
+   "notes": "Octagonal probe bus (S): 8 chamfered side panels, 2 recessed panel lines, 4 bevelled access panels, 2 star-tracker apertures, recessed patch-antenna window, chamfered steel interface rings, gold MLI top deck; 4 Small slots (2 x 2) inside.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.503
+    ],
+    [
+     0.625,
+     0.625,
+     0.503
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.006,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.497,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.503,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.575,
+      0.017,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.017,
+      -0.575
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.575,
+      0.017,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.017,
+      0.575
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "extra": {
+    "slots": [
+     {
+      "name": "slot_1",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.25,
+       -0.423,
+       -0.25
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_2",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.25,
+       -0.423,
+       -0.25
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_3",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.25,
+       -0.423,
+       0.25
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_4",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.25,
+       -0.423,
+       0.25
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    ],
+    "slots_note": "slot item node_bottom goes on node_bottom_mount (Godot), up +Y; envelope per CONVENTIONS 'Internal slots'"
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_10_probe_bus.step",
+    "glb": "glb/ax_cmd_10_probe_bus.glb",
+    "preview": "renders/ax_cmd_10_probe_bus.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-10",
+ "key": "ax_cmd_10",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "PC-S",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Octagonal probe bus with 4 Small slots, flush star-tracker and antenna apertures"
+}

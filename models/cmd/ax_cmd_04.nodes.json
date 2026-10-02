@@ -1,0 +1,480 @@
+{
+ "id": "ax_cmd_04",
+ "name": "AC-4 'MAV' Ascent Cabin",
+ "category": "cmd",
+ "short_name": "mav_ascent_cabin",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_cmd_04_mav_ascent_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.285,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.285,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.28,
+    -0.385,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.28,
+    0.3743,
+    0.3741
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.28,
+    -0.385,
+    0.3
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.28,
+    0.3743,
+    0.3741
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.28,
+    -0.385,
+    -0.45
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.28,
+    0.3743,
+    -0.3759
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.28,
+    -0.385,
+    -0.45
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.28,
+    0.3743,
+    -0.3759
+   ],
+   "direction": [
+    0.0,
+    0.0872,
+    0.9962
+   ],
+   "up": [
+    0.0,
+    0.9962,
+    -0.0872
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.405,
+    1.038
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.155,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_04_mav_ascent_cabin": {
+   "vid": "ax_cmd_04_mav_ascent_cabin",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "AC-4 'MAV' Ascent Cabin",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 2.57,
+    "crew": 4,
+    "facets": 10,
+    "windows": 2
+   },
+   "notes": "Ascent cabin: 10-facet upright cylinder (chamfered facet edges, bevelled rims) with a faceted cone nose and round steel docking ring, recessed panel lines (one orange stripe), 2 small bevelled windows, side hatch + handrails, 4 RCS pockets, flush access panel, steel interface ring (no heat shield).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.285
+    ],
+    [
+     1.25,
+     1.25,
+     1.285
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.57,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.285,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.285,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.28,
+      -0.385,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.28,
+      0.3743,
+      0.3741
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.28,
+      -0.385,
+      0.3
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.28,
+      0.3743,
+      0.3741
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.28,
+      -0.385,
+      -0.45
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.28,
+      0.3743,
+      -0.3759
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.28,
+      -0.385,
+      -0.45
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.28,
+      0.3743,
+      -0.3759
+     ],
+     "direction": [
+      0.0,
+      0.0872,
+      0.9962
+     ],
+     "up": [
+      0.0,
+      0.9962,
+      -0.0872
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.405,
+      1.038
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.155,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_04_mav_ascent_cabin.step",
+    "glb": "glb/ax_cmd_04_mav_ascent_cabin.glb",
+    "preview": "renders/ax_cmd_04_mav_ascent_cabin.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-04",
+ "key": "ax_cmd_04",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "AC-4",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "Lightweight 4-seat ascent cabin, standing/strapped crew, minimal windows, sits on an ascent stage"
+}

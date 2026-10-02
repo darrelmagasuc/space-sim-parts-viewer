@@ -1,0 +1,246 @@
+{
+ "id": "ax_cmd_16",
+ "name": "HIAD-1 Inflatable Decelerator",
+ "category": "cmd",
+ "short_name": "hiad",
+ "sizes": [
+  "L",
+  "XL"
+ ],
+ "primary": "ax_cmd_16_hiad_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.465,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_16_hiad_l": {
+   "vid": "ax_cmd_16_hiad_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "HIAD-1 Inflatable Decelerator",
+   "primary": true,
+   "dims": {
+    "class_diameter_m": 3.75,
+    "deployed_diameter_m": 7.5
+   },
+   "notes": "Stowed: LOFTID-style inflatable decelerator - faceted steel centre body (8 chamfered facets, recessed panel line) with a dark nose cap, steel interface ring; folded tori in a beta-cloth stowage pack with 8 restraint straps.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -0.46500004999999994
+    ],
+    [
+     1.875,
+     1.875,
+     0.46500004999999994
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    0.93,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.465,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_16_hiad_l.step",
+    "glb": "glb/ax_cmd_16_hiad_l.glb",
+    "preview": "renders/ax_cmd_16_hiad_l.png"
+   }
+  },
+  "ax_cmd_16_hiad_l_deployed": {
+   "vid": "ax_cmd_16_hiad_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HIAD-1 Inflatable Decelerator",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 3.75,
+    "deployed_diameter_m": 7.5
+   },
+   "notes": "Deployed: LOFTID-style inflatable decelerator - faceted steel centre body (8 chamfered facets, recessed panel line) with a dark nose cap, steel interface ring; taut woven tile_black blanket over 7 stacked inflated tori (70 deg sphere-cone, deployed diameter 2 x class), 16 radial straps, steel clamp ring.",
+   "bbox_cad_zup": [
+    [
+     -3.744145121472206,
+     -3.744145121472206,
+     -0.46500004999999994
+    ],
+    [
+     3.744145121472206,
+     3.744145121472206,
+     1.3577926946224776
+    ]
+   ],
+   "bbox_godot_size": [
+    7.488,
+    1.823,
+    7.488
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.465,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "ax_cmd_16_hiad_l",
+   "files": {
+    "step": "step/ax_cmd_16_hiad_l_deployed.step",
+    "glb": "glb/ax_cmd_16_hiad_l_deployed.glb",
+    "preview": "renders/ax_cmd_16_hiad_l_deployed.png"
+   }
+  },
+  "ax_cmd_16_hiad_xl": {
+   "vid": "ax_cmd_16_hiad_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "HIAD-1 Inflatable Decelerator",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 5.0,
+    "deployed_diameter_m": 10.0
+   },
+   "notes": "Stowed: LOFTID-style inflatable decelerator - faceted steel centre body (8 chamfered facets, recessed panel line) with a dark nose cap, steel interface ring; folded tori in a beta-cloth stowage pack with 8 restraint straps.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -0.6200000499999999
+    ],
+    [
+     2.5,
+     2.5,
+     0.62000005
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    1.24,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_16_hiad_xl.step",
+    "glb": "glb/ax_cmd_16_hiad_xl.glb",
+    "preview": "renders/ax_cmd_16_hiad_xl.png"
+   }
+  },
+  "ax_cmd_16_hiad_xl_deployed": {
+   "vid": "ax_cmd_16_hiad_xl_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HIAD-1 Inflatable Decelerator",
+   "primary": false,
+   "dims": {
+    "class_diameter_m": 5.0,
+    "deployed_diameter_m": 10.0
+   },
+   "notes": "Deployed: LOFTID-style inflatable decelerator - faceted steel centre body (8 chamfered facets, recessed panel line) with a dark nose cap, steel interface ring; taut woven tile_black blanket over 7 stacked inflated tori (70 deg sphere-cone, deployed diameter 2 x class), 16 radial straps, steel clamp ring.",
+   "bbox_cad_zup": [
+    [
+     -4.992193495296275,
+     -4.992193495296275,
+     -0.6200000499999999
+    ],
+    [
+     4.992193495296275,
+     4.992193495296275,
+     1.8103902428299703
+    ]
+   ],
+   "bbox_godot_size": [
+    9.984,
+    2.43,
+    9.984
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "ax_cmd_16_hiad_xl",
+   "files": {
+    "step": "step/ax_cmd_16_hiad_xl_deployed.step",
+    "glb": "glb/ax_cmd_16_hiad_xl_deployed.glb",
+    "preview": "renders/ax_cmd_16_hiad_xl_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-16",
+ "key": "ax_cmd_16",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "HIAD-1",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Stacked-torus inflatable heat shield, stowed and deployed variants"
+}

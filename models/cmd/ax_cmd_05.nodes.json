@@ -1,0 +1,480 @@
+{
+ "id": "ax_cmd_05",
+ "name": "LC-3 Lunar Lander Crew Cabin",
+ "category": "cmd",
+ "short_name": "lander_crew_cabin",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_cmd_05_lander_crew_cabin",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.9765,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.9535,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.6,
+    -0.7035,
+    1.0392
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.67,
+    0.0465,
+    1.1605
+   ],
+   "direction": [
+    -0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.6,
+    -0.7035,
+    1.0392
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.67,
+    0.0465,
+    1.1605
+   ],
+   "direction": [
+    0.5,
+    0.0,
+    0.866
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    0.55,
+    -1.0535,
+    -0.9526
+   ],
+   "direction": [
+    -0.4924,
+    0.1736,
+    0.8529
+   ],
+   "up": [
+    0.0868,
+    0.9848,
+    -0.1504
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    0.5462,
+    -0.2906,
+    -0.946
+   ],
+   "direction": [
+    -0.4924,
+    0.1736,
+    0.8529
+   ],
+   "up": [
+    0.0868,
+    0.9848,
+    -0.1504
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.55,
+    -1.0535,
+    -0.9526
+   ],
+   "direction": [
+    0.4924,
+    0.1736,
+    0.8529
+   ],
+   "up": [
+    -0.0868,
+    0.9848,
+    -0.1504
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.5462,
+    -0.2906,
+    -0.946
+   ],
+   "direction": [
+    0.4924,
+    0.1736,
+    0.8529
+   ],
+   "up": [
+    -0.0868,
+    0.9848,
+    -0.1504
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.8235,
+    1.656
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.9265,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_05_lander_crew_cabin": {
+   "vid": "ax_cmd_05_lander_crew_cabin",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LC-3 Lunar Lander Crew Cabin",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 3.93,
+    "crew": 4,
+    "facets": 12,
+    "windows": 4
+   },
+   "notes": "Lunar lander crew cabin: 12 upright chamfered facets with a faceted chamfer deck to the docking collar, 3 recessed panel lines (2 orange stripes), 4 bevelled windows at eye level, tall porch hatch with handrails onto a grated porch deck + ladder, 4 RCS pockets, gold MLI upper deck, steel collar + docking port.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -2.638,
+     -1.9764790510795816
+    ],
+    [
+     1.875,
+     1.875,
+     1.9764790510795816
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    3.953,
+    4.513
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.9765,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.9535,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.6,
+      -0.7035,
+      1.0392
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.67,
+      0.0465,
+      1.1605
+     ],
+     "direction": [
+      -0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.6,
+      -0.7035,
+      1.0392
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.67,
+      0.0465,
+      1.1605
+     ],
+     "direction": [
+      0.5,
+      0.0,
+      0.866
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      0.55,
+      -1.0535,
+      -0.9526
+     ],
+     "direction": [
+      -0.4924,
+      0.1736,
+      0.8529
+     ],
+     "up": [
+      0.0868,
+      0.9848,
+      -0.1504
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      0.5462,
+      -0.2906,
+      -0.946
+     ],
+     "direction": [
+      -0.4924,
+      0.1736,
+      0.8529
+     ],
+     "up": [
+      0.0868,
+      0.9848,
+      -0.1504
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.55,
+      -1.0535,
+      -0.9526
+     ],
+     "direction": [
+      0.4924,
+      0.1736,
+      0.8529
+     ],
+     "up": [
+      -0.0868,
+      0.9848,
+      -0.1504
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.5462,
+      -0.2906,
+      -0.946
+     ],
+     "direction": [
+      0.4924,
+      0.1736,
+      0.8529
+     ],
+     "up": [
+      -0.0868,
+      0.9848,
+      -0.1504
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.8235,
+      1.656
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.9265,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_05_lander_crew_cabin.step",
+    "glb": "glb/ax_cmd_05_lander_crew_cabin.glb",
+    "preview": "renders/ax_cmd_05_lander_crew_cabin.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-05",
+ "key": "ax_cmd_05",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "LC-3",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "Vertical cylindrical lander cabin, side hatch onto a porch, 3-4 crew, overhead docking port"
+}

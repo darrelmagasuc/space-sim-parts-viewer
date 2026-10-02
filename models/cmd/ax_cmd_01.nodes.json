@@ -1,0 +1,491 @@
+{
+ "id": "ax_cmd_01",
+ "display_id": "AX-cmd-01",
+ "key": "ax_cmd_01",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [
+  "cmd11"
+ ],
+ "redirects": {
+  "cmd11_ares_capsule": "ax_cmd_01_ares_capsule"
+ },
+ "name": "CM-8 'Ares' Crew Capsule",
+ "category": "cmd",
+ "short_name": "ares_capsule",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_cmd_01_ares_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.475,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.215,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.82,
+    -0.815,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.82,
+    -0.3188,
+    -0.4295
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.28,
+    -0.815,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.28,
+    -0.3188,
+    -0.4295
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_seat_3",
+   "position": [
+    -0.28,
+    -0.815,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_camera_3",
+   "position": [
+    -0.28,
+    -0.3188,
+    -0.4295
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_seat_4",
+   "position": [
+    -0.82,
+    -0.815,
+    0.15
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_camera_4",
+   "position": [
+    -0.82,
+    -0.3188,
+    -0.4295
+   ],
+   "direction": [
+    0.0,
+    0.866,
+    0.5
+   ],
+   "up": [
+    0.0,
+    0.5,
+    -0.866
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.4669,
+    1.398
+   ],
+   "direction": [
+    0.0,
+    0.3349,
+    0.9422
+   ],
+   "up": [
+    0.0,
+    0.9422,
+    -0.3349
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.405,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_01_ares_capsule": {
+   "vid": "ax_cmd_01_ares_capsule",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CM-8 'Ares' Crew Capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 2.95,
+    "facets": 12,
+    "crew": 4,
+    "windows": 4,
+    "abort_engines": 4,
+    "dry_t": 6.2,
+    "wet_t": 7.5,
+    "pressurised_volume_m3": 10.45
+   },
+   "notes": "Crew capsule: 12 flat sidewall facets with chamfered edges, recessed panel-line grooves (orange stripes in two), 4 rounded-square windows in bevelled pockets, 4 abort-engine bays + 6 RCS pockets recessed into the lower facets, side hatch with seam + handrails, metal nose cap over the docking port, dark heat shield with segment seams. Hollow: cabin = inner mould line (cmd11_iml).",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.475
+    ],
+    [
+     1.875,
+     1.875,
+     1.475
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    2.95,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.215,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.82,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.82,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.28,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.28,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_seat_3",
+     "position": [
+      -0.28,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_camera_3",
+     "position": [
+      -0.28,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_seat_4",
+     "position": [
+      -0.82,
+      -0.815,
+      0.15
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_camera_4",
+     "position": [
+      -0.82,
+      -0.3188,
+      -0.4295
+     ],
+     "direction": [
+      0.0,
+      0.866,
+      0.5
+     ],
+     "up": [
+      0.0,
+      0.5,
+      -0.866
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.4669,
+      1.398
+     ],
+     "direction": [
+      0.0,
+      0.3349,
+      0.9422
+     ],
+     "up": [
+      0.0,
+      0.9422,
+      -0.3349
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.405,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_01_ares_capsule.step",
+    "glb": "glb/ax_cmd_01_ares_capsule.glb",
+    "preview": "renders/ax_cmd_01_ares_capsule.png"
+   },
+   "alias_of": "cmd11/cmd11_ares_capsule"
+  }
+ },
+ "source": "parts/modern_set (cmd11) - reused build, re-keyed; rename of the modern_set files happens at build time per the AX decisions",
+ "code": "CM-8",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "4-seat faceted capsule: abort engines, side hatch, docking port, lunar-return heat shield"
+}

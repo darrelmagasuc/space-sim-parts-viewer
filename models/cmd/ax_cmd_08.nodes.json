@@ -1,0 +1,192 @@
+{
+ "id": "ax_cmd_08",
+ "name": "CG-L 'Ares' Cargo Capsule",
+ "category": "cmd",
+ "short_name": "ares_cargo_capsule",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_cmd_08_ares_cargo_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.475,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.215,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.4286,
+    1.3791
+   ],
+   "direction": [
+    0.0,
+    0.3349,
+    0.9422
+   ],
+   "up": [
+    0.0,
+    0.9422,
+    -0.3349
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.405,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_08_ares_cargo_capsule": {
+   "vid": "ax_cmd_08_ares_cargo_capsule",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "CG-L 'Ares' Cargo Capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 2.95,
+    "crew": 0,
+    "facets": 12,
+    "cargo_hatch_m": 1.2
+   },
+   "notes": "Uncrewed cargo version of AX-cmd-01: same 12-facet hull, window pockets closed by grey blanking plates, flush panels instead of the abort bays, large 1.2 m square cargo hatch, RCS pockets kept, one grey stripe.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.475
+    ],
+    [
+     1.875,
+     1.875,
+     1.475
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    2.95,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.475,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.215,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.4286,
+      1.3791
+     ],
+     "direction": [
+      0.0,
+      0.3349,
+      0.9422
+     ],
+     "up": [
+      0.0,
+      0.9422,
+      -0.3349
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.405,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_08_ares_cargo_capsule.step",
+    "glb": "glb/ax_cmd_08_ares_cargo_capsule.glb",
+    "preview": "renders/ax_cmd_08_ares_cargo_capsule.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-08",
+ "key": "ax_cmd_08",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CG-L",
+ "interior": "light",
+ "batch": "B1",
+ "summary": "Uncrewed pressurised cargo version of AX-cmd-01: rack walls instead of seats, no abort engines"
+}

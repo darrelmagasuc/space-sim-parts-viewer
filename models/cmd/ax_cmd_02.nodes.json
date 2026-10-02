@@ -1,0 +1,336 @@
+{
+ "id": "ax_cmd_02",
+ "name": "CM-2X 'Kestrel' Two-Seat Capsule",
+ "category": "cmd",
+ "short_name": "kestrel_capsule",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_cmd_02_kestrel_capsule",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0917,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9183,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.28,
+    -0.5117,
+    0.05
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    0.8192,
+    -0.5736
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.28,
+    0.183,
+    -0.2655
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    0.8192,
+    -0.5736
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.28,
+    -0.5117,
+    0.05
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    0.8192,
+    -0.5736
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.28,
+    0.183,
+    -0.2655
+   ],
+   "direction": [
+    0.0,
+    0.5736,
+    0.8192
+   ],
+   "up": [
+    0.0,
+    0.8192,
+    -0.5736
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.2616,
+    0.8865
+   ],
+   "direction": [
+    0.0,
+    0.2671,
+    0.9637
+   ],
+   "up": [
+    0.0,
+    0.9637,
+    -0.2671
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    0.0,
+    1.045,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_02_kestrel_capsule": {
+   "vid": "ax_cmd_02_kestrel_capsule",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CM-2X 'Kestrel' Two-Seat Capsule",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 2.18,
+    "crew": 2,
+    "facets": 8,
+    "windows": 2
+   },
+   "notes": "Two-seat taxi capsule: 8 chamfered facets, bevelled bottom/top rims, 3 recessed panel lines (orange stripes in two), 2 bevelled windows, side hatch with seam + flush handrails recessed on the neighbouring facets (clears the LES boost cover), 4 RCS pockets, steel nose ring + docking port, scaled cmd11 heat shield (8 + 12 seams).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.0916666666666668
+    ],
+    [
+     1.25,
+     1.25,
+     1.0916666666666668
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.183,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0917,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9183,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.28,
+      -0.5117,
+      0.05
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      0.8192,
+      -0.5736
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.28,
+      0.183,
+      -0.2655
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      0.8192,
+      -0.5736
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.28,
+      -0.5117,
+      0.05
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      0.8192,
+      -0.5736
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.28,
+      0.183,
+      -0.2655
+     ],
+     "direction": [
+      0.0,
+      0.5736,
+      0.8192
+     ],
+     "up": [
+      0.0,
+      0.8192,
+      -0.5736
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.2616,
+      0.8865
+     ],
+     "direction": [
+      0.0,
+      0.2671,
+      0.9637
+     ],
+     "up": [
+      0.0,
+      0.9637,
+      -0.2671
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      0.0,
+      1.045,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_02_kestrel_capsule.step",
+    "glb": "glb/ax_cmd_02_kestrel_capsule.glb",
+    "preview": "renders/ax_cmd_02_kestrel_capsule.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-02",
+ "key": "ax_cmd_02",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "CM-2X",
+ "interior": "full",
+ "batch": "B1",
+ "summary": "2-seat faceted taxi capsule for LEO hops and station crew rotation"
+}

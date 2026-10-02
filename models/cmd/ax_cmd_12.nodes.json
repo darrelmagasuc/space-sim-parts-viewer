@@ -1,0 +1,283 @@
+{
+ "id": "ax_cmd_12",
+ "name": "ST-L Capsule Service Trunk",
+ "category": "cmd",
+ "short_name": "service_trunk",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_cmd_12_service_trunk",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_12_service_trunk": {
+   "vid": "ax_cmd_12_service_trunk",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "ST-L Capsule Service Trunk",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "height_m": 3.0,
+    "slots": "4 Medium"
+   },
+   "notes": "Capsule service trunk (unpressurised): round 3.75 m skin, solar half = 6 recessed panels (chamfered edges) with flush cells, radiator half = 3 recessed panels of strips with vertical flow-channel gaps, chamfered steel rings (top bore 1.73 m clears the capsule heat shield), slot deck with 4 Medium slots.",
+   "bbox_cad_zup": [
+    [
+     -1.8750000000000002,
+     -1.875,
+     -1.5
+    ],
+    [
+     1.8750000000000002,
+     1.875,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    3.0,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "extra": {
+    "jettison": "whole part (separates at node_top before entry)",
+    "capsule_dome_nest_depth_m": 0.26,
+    "slots": [
+     {
+      "name": "slot_1",
+      "cls": "Medium",
+      "node_bottom_mount": [
+       0.62,
+       -1.32,
+       -0.62
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_2",
+      "cls": "Medium",
+      "node_bottom_mount": [
+       -0.62,
+       -1.32,
+       -0.62
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_3",
+      "cls": "Medium",
+      "node_bottom_mount": [
+       -0.62,
+       -1.32,
+       0.62
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "name": "slot_4",
+      "cls": "Medium",
+      "node_bottom_mount": [
+       0.62,
+       -1.32,
+       0.62
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    ],
+    "slots_note": "slot item node_bottom goes on node_bottom_mount (Godot), up +Y; envelope per CONVENTIONS 'Internal slots'"
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_12_service_trunk.step",
+    "glb": "glb/ax_cmd_12_service_trunk.glb",
+    "preview": "renders/ax_cmd_12_service_trunk.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-12",
+ "key": "ax_cmd_12",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "ST-L",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Unpressurised trunk under AX-cmd-01: conformal solar cells + radiators in its skin, 4 Medium slots, jettisons before entry"
+}

@@ -1,0 +1,242 @@
+{
+ "id": "ax_cmd_11",
+ "name": "PC-MX Avionics Ring",
+ "category": "cmd",
+ "short_name": "avionics_ring",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_cmd_11_avionics_ring",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.39,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.39,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_cmd_11_avionics_ring": {
+   "vid": "ax_cmd_11_avionics_ring",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "PC-MX Avionics Ring",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 0.78,
+    "facets": 8,
+    "slots": "8 Small"
+   },
+   "notes": "Avionics ring (M, 2.5 m): white 8-facet band (chamfered facet edges, bevelled rims, 2 recessed panel lines) with 8 bevelled access doors and 4 recessed antenna windows between chamfered steel rings; 8 Small slots inside the annulus (0.78 m tall so a 0.6 m Small fits).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.38999999999999996
+    ],
+    [
+     1.25,
+     1.25,
+     0.38999999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.78,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.39,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.39,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "slots": [
+     {
+      "name": "slot_1",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.86,
+       -0.305,
+       -0.0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 0 deg"
+     },
+     {
+      "name": "slot_2",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.6081,
+       -0.305,
+       -0.6081
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 45 deg"
+     },
+     {
+      "name": "slot_3",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.0,
+       -0.305,
+       -0.86
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 90 deg"
+     },
+     {
+      "name": "slot_4",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.6081,
+       -0.305,
+       -0.6081
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 135 deg"
+     },
+     {
+      "name": "slot_5",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.86,
+       -0.305,
+       -0.0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 180 deg"
+     },
+     {
+      "name": "slot_6",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.6081,
+       -0.305,
+       0.6081
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 225 deg"
+     },
+     {
+      "name": "slot_7",
+      "cls": "Small",
+      "node_bottom_mount": [
+       -0.0,
+       -0.305,
+       0.86
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 270 deg"
+     },
+     {
+      "name": "slot_8",
+      "cls": "Small",
+      "node_bottom_mount": [
+       0.6081,
+       -0.305,
+       0.6081
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ],
+      "access": "door on facet az 315 deg"
+     }
+    ],
+    "slots_note": "slot item node_bottom goes on node_bottom_mount (Godot), up +Y; envelope per CONVENTIONS 'Internal slots'"
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_11_avionics_ring.step",
+    "glb": "glb/ax_cmd_11_avionics_ring.glb",
+    "preview": "renders/ax_cmd_11_avionics_ring.png"
+   }
+  }
+ },
+ "display_id": "AX-cmd-11",
+ "key": "ax_cmd_11",
+ "line": "AX",
+ "ax_category": "cmd",
+ "aliases": [],
+ "code": "PC-MX",
+ "interior": "none",
+ "batch": "B1",
+ "summary": "Flat avionics ring (stage computer + 8 Small slots) for uncrewed stages"
+}
