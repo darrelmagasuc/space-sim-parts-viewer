@@ -1,0 +1,378 @@
+{
+ "id": "ax_tank_11",
+ "name": "T-W Water / Shielding Tank",
+ "category": "tank",
+ "short_name": "water_shield",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_tank_11_water_shield_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    1.7508,
+    -1.14,
+    -0.7252
+   ],
+   "direction": [
+    0.9239,
+    0.0,
+    -0.3827
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_11_water_shield_m": {
+   "vid": "ax_tank_11_water_shield_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-W Water / Shielding Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 2.0,
+    "water_t": 8.5
+   },
+   "notes": "Water / shielding tank: 8 chamfered facets (heavy-structure chamfer), 3 recessed panel-line bands, bevelled access panels, fill port (node_port_1), steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.2500001000000003,
+     -1.2500001000000003,
+     -1.0000000999999998
+    ],
+    [
+     1.2500001000000003,
+     1.2500001,
+     1.0000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.0,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      1.1733,
+      -0.76,
+      -0.486
+     ],
+     "direction": [
+      0.9239,
+      0.0,
+      -0.3827
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_11_water_shield_m.step",
+    "glb": "glb/ax_tank_11_water_shield_m.glb",
+    "preview": "renders/ax_tank_11_water_shield_m.png"
+   }
+  },
+  "ax_tank_11_water_shield_l": {
+   "vid": "ax_tank_11_water_shield_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-W Water / Shielding Tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 3.0,
+    "water_t": 29
+   },
+   "notes": "Water / shielding tank: 8 chamfered facets (heavy-structure chamfer), 3 recessed panel-line bands, bevelled access panels, fill port (node_port_1), steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.875000100000001,
+     -1.8750001000000007,
+     -1.5000001
+    ],
+    [
+     1.8750001000000007,
+     1.8750001000000005,
+     1.5000001
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    3.0,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      1.7508,
+      -1.14,
+      -0.7252
+     ],
+     "direction": [
+      0.9239,
+      0.0,
+      -0.3827
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_11_water_shield_l.step",
+    "glb": "glb/ax_tank_11_water_shield_l.glb",
+    "preview": "renders/ax_tank_11_water_shield_l.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-11",
+ "key": "ax_tank_11",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Water tank for ISRU and radiation shielding, surface or orbital"
+}

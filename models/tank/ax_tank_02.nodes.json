@@ -1,0 +1,227 @@
+{
+ "id": "ax_tank_02",
+ "name": "T-LS Lander Tank Section",
+ "category": "tank",
+ "short_name": "lander_tank_section",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_tank_02_lander_tank_section",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_side_1",
+   "position": [
+    2.48,
+    -0.79,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    -0.79,
+    -2.48
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -2.48,
+    -0.79,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    -0.79,
+    2.48
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_02_lander_tank_section": {
+   "vid": "ax_tank_02_lander_tank_section",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LS Lander Tank Section",
+   "primary": true,
+   "dims": {
+    "across_flats_m": 4.6,
+    "top_interface_m": 3.75,
+    "height_m": 2.3,
+    "spheres": 4,
+    "lox_t": 5.27,
+    "ch4_t": 1.44,
+    "dry_t": 1.9,
+    "wet_t": 8.6
+   },
+   "notes": "Lander tank section: 8-facet shell (chamfered corners, bevelled top/bottom rims, recessed panel lines with orange stripes), 4 bevelled bay openings showing 2 LOX + 2 CH4 spherical tanks, central thrust tube, cradle deck for the capsule heat shield, 4 chamfered landing-leg hardpoints.",
+   "bbox_cad_zup": [
+    [
+     -2.4800001,
+     -2.4800001,
+     -1.1500001
+    ],
+    [
+     2.4800001,
+     2.4800001,
+     1.1500001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.96,
+    2.3,
+    4.96
+   ],
+   "nodes": [
+    {
+     "name": "node_side_1",
+     "position": [
+      2.48,
+      -0.79,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.79,
+      -2.48
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.48,
+      -0.79,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.79,
+      2.48
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_02_lander_tank_section.step",
+    "glb": "glb/ax_tank_02_lander_tank_section.glb",
+    "preview": "renders/ax_tank_02_lander_tank_section.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-02",
+ "key": "ax_tank_02",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [
+  "tank15"
+ ],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Faceted lander core around 4 spherical tanks, leg hardpoints, capsule cradle"
+}

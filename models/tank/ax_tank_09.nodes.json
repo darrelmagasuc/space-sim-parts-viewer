@@ -1,0 +1,144 @@
+{
+ "id": "ax_tank_09",
+ "name": "T-RD Radial Drop Tank",
+ "category": "tank",
+ "short_name": "radial_drop",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_tank_09_radial_drop_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -1.481,
+    -0.6562,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_09_radial_drop_s": {
+   "vid": "ax_tank_09_radial_drop_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-RD Radial Drop Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 6.0,
+    "prop_t": 5.4
+   },
+   "notes": "Radial methalox drop tank: white barrel with recessed grooves, 8-facet nose cap and tail cone, steel end rings, 2 chamfered pylons with dark separation fittings and a crossfeed line; node_attach on -X.",
+   "bbox_cad_zup": [
+    [
+     -0.7940000000000002,
+     -0.625,
+     -3.2906250999999997
+    ],
+    [
+     0.794,
+     0.625,
+     3.2906250999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    1.588,
+    6.581,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.806,
+      -0.3281,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_09_radial_drop_s.step",
+    "glb": "glb/ax_tank_09_radial_drop_s.glb",
+    "preview": "renders/ax_tank_09_radial_drop_s.png"
+   }
+  },
+  "ax_tank_09_radial_drop_m": {
+   "vid": "ax_tank_09_radial_drop_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-RD Radial Drop Tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 12.0,
+    "prop_t": 43
+   },
+   "notes": "Radial methalox drop tank: white barrel with recessed grooves, 8-facet nose cap and tail cone, steel end rings, 2 chamfered pylons with dark separation fittings and a crossfeed line; node_attach on -X.",
+   "bbox_cad_zup": [
+    [
+     -1.4690000000000003,
+     -1.25,
+     -6.5812501
+    ],
+    [
+     1.469,
+     1.25,
+     6.5812501
+    ]
+   ],
+   "bbox_godot_size": [
+    2.938,
+    13.163,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -1.481,
+      -0.6562,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_09_radial_drop_m.step",
+    "glb": "glb/ax_tank_09_radial_drop_m.glb",
+    "preview": "renders/ax_tank_09_radial_drop_m.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-09",
+ "key": "ax_tank_09",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Methalox drop tank on chamfered pylons with separation hardware"
+}

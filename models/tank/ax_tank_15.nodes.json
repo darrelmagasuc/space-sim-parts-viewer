@@ -1,0 +1,273 @@
+{
+ "id": "ax_tank_15",
+ "name": "CT-1 Cryo Transfer Module",
+ "category": "tank",
+ "short_name": "cryo_transfer",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_tank_15_cryo_transfer",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.68,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.68,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    0.0,
+    -1.23
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.0,
+    0.0,
+    1.23
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_15_cryo_transfer": {
+   "vid": "ax_tank_15_cryo_transfer",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "CT-1 Cryo Transfer Module",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 3.0,
+    "transfer_t": 11,
+    "docking": "IDSS 1.25 m both ends"
+   },
+   "notes": "Cryo transfer module: short stainless tank (chamfered end rings, raceways) with an IDSS-style docking port at each end (node_top / node_bottom) and 2 recessed quick-disconnect umbilical panels (node_port_1/2).",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.2500001,
+     -1.8000000000000003
+    ],
+    [
+     1.2500001,
+     1.2500001,
+     1.7999999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.6,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.68,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.68,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      0.0,
+      -1.23
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.0,
+      0.0,
+      1.23
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_15_cryo_transfer.step",
+    "glb": "glb/ax_tank_15_cryo_transfer.glb",
+    "preview": "renders/ax_tank_15_cryo_transfer.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-15",
+ "key": "ax_tank_15",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Short tank with docking ports both ends and transfer umbilicals (tanker / depot shuttle)"
+}

@@ -1,0 +1,341 @@
+{
+ "id": "ax_tank_06",
+ "name": "T-HY Hypergol Sphere Section",
+ "category": "tank",
+ "short_name": "hypergol_section",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_tank_06_hypergol_section_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.75,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_06_hypergol_section_s": {
+   "vid": "ax_tank_06_hypergol_section_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-HY Hypergol Sphere Section",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 0.9,
+    "spheres": 2,
+    "prop_t": 0.6
+   },
+   "notes": "Hypergol section: 8-facet chamfered shell with a recessed groove, 2 bevelled bays showing MMH/NTO spheres with chamfered girth rings, decks, steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -0.6250001000000002,
+     -0.6250001000000002,
+     -0.4500001
+    ],
+    [
+     0.6250001000000001,
+     0.6250001,
+     0.4500001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.9,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.45,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_06_hypergol_section_s.step",
+    "glb": "glb/ax_tank_06_hypergol_section_s.glb",
+    "preview": "renders/ax_tank_06_hypergol_section_s.png"
+   }
+  },
+  "ax_tank_06_hypergol_section_m": {
+   "vid": "ax_tank_06_hypergol_section_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-HY Hypergol Sphere Section",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 1.5,
+    "spheres": 4,
+    "prop_t": 3.4
+   },
+   "notes": "Hypergol section: 8-facet chamfered shell with a recessed groove, 4 bevelled bays showing MMH/NTO spheres with chamfered girth rings, decks, steel interface rings.",
+   "bbox_cad_zup": [
+    [
+     -1.2500001000000003,
+     -1.2500001000000003,
+     -0.7500001
+    ],
+    [
+     1.2500001000000003,
+     1.2500001,
+     0.7500001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.5,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_06_hypergol_section_m.step",
+    "glb": "glb/ax_tank_06_hypergol_section_m.glb",
+    "preview": "renders/ax_tank_06_hypergol_section_m.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-06",
+ "key": "ax_tank_06",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Faceted section with 2-4 MMH/NTO spheres for OMS/RCS"
+}

@@ -1,0 +1,341 @@
+{
+ "id": "ax_tank_16",
+ "name": "T-LS2 Lander Tank Section M / XL",
+ "category": "tank",
+ "short_name": "lander_tank_section",
+ "sizes": [
+  "M",
+  "XL"
+ ],
+ "primary": "ax_tank_16_lander_tank_section_xl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_side_1",
+   "position": [
+    3.3133,
+    -1.0533,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    -1.0533,
+    -3.3133
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -3.3133,
+    -1.0533,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    -1.0533,
+    3.3133
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.5333,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.5333,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_16_lander_tank_section_m": {
+   "vid": "ax_tank_16_lander_tank_section_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LS2 Lander Tank Section M / XL",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "height_m": 1.53,
+    "spheres": 2,
+    "prop_t": 2.6
+   },
+   "notes": "Lander tank section (2.5 m, 8 chamfered facets, bevelled rims, recessed grooves with 2 orange stripes): 2 spherical tanks behind bevelled bay openings, thrust tube, capsule cradle deck, 4 leg hardpoints (node_side_1..4).",
+   "bbox_cad_zup": [
+    [
+     -1.6466667666666666,
+     -1.6466667666666666,
+     -0.7666667666666666
+    ],
+    [
+     1.6466667666666666,
+     1.6466667666666666,
+     0.7666667666666666
+    ]
+   ],
+   "bbox_godot_size": [
+    3.293,
+    1.533,
+    3.293
+   ],
+   "nodes": [
+    {
+     "name": "node_side_1",
+     "position": [
+      1.6467,
+      -0.5267,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.5267,
+      -1.6467
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.6467,
+      -0.5267,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.5267,
+      1.6467
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7667,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7667,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_16_lander_tank_section_m.step",
+    "glb": "glb/ax_tank_16_lander_tank_section_m.glb",
+    "preview": "renders/ax_tank_16_lander_tank_section_m.png"
+   }
+  },
+  "ax_tank_16_lander_tank_section_xl": {
+   "vid": "ax_tank_16_lander_tank_section_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-LS2 Lander Tank Section M / XL",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "height_m": 3.07,
+    "spheres": 6,
+    "prop_t": 24
+   },
+   "notes": "Lander tank section (5 m, 12 chamfered facets, bevelled rims, recessed grooves with 2 orange stripes): 6 spherical tanks behind bevelled bay openings, thrust tube, capsule cradle deck, 4 leg hardpoints (node_side_1..4).",
+   "bbox_cad_zup": [
+    [
+     -3.313333433333333,
+     -3.313333433333333,
+     -1.5333334333333333
+    ],
+    [
+     3.313333433333333,
+     3.313333433333333,
+     1.5333334333333333
+    ]
+   ],
+   "bbox_godot_size": [
+    6.627,
+    3.067,
+    6.627
+   ],
+   "nodes": [
+    {
+     "name": "node_side_1",
+     "position": [
+      3.3133,
+      -1.0533,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -1.0533,
+      -3.3133
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.3133,
+      -1.0533,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -1.0533,
+      3.3133
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5333,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5333,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_16_lander_tank_section_xl.step",
+    "glb": "glb/ax_tank_16_lander_tank_section_xl.glb",
+    "preview": "renders/ax_tank_16_lander_tank_section_xl.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-16",
+ "key": "ax_tank_16",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "2.5 m and 5 m versions of AX-tank-02 (2 or 6 spheres) for small / heavy landers"
+}

@@ -1,0 +1,345 @@
+{
+ "id": "ax_tank_04",
+ "name": "T-HD Header Tank Section",
+ "category": "tank",
+ "short_name": "header_section",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_tank_04_header_section_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_04_header_section_m": {
+   "vid": "ax_tank_04_header_section_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-HD Header Tank Section",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 1.6,
+    "header_tanks": 2,
+    "prop_t": 3.2
+   },
+   "notes": "Header tank section: short white barrel with chamfered steel end rings and a recessed groove; 2 bevelled inspection bays show the spherical landing-propellant header tanks on a ring frame.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.8
+    ],
+    [
+     1.25,
+     1.25,
+     0.8
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.6,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "header_tanks"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_04_header_section_m.step",
+    "glb": "glb/ax_tank_04_header_section_m.glb",
+    "preview": "renders/ax_tank_04_header_section_m.png"
+   }
+  },
+  "ax_tank_04_header_section_l": {
+   "vid": "ax_tank_04_header_section_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-HD Header Tank Section",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 2.3,
+    "header_tanks": 2,
+    "prop_t": 11
+   },
+   "notes": "Header tank section: short white barrel with chamfered steel end rings and a recessed groove; 2 bevelled inspection bays show the spherical landing-propellant header tanks on a ring frame.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -1.15
+    ],
+    [
+     1.875,
+     1.875,
+     1.15
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    2.3,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "header_tanks"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_04_header_section_l.step",
+    "glb": "glb/ax_tank_04_header_section_l.glb",
+    "preview": "renders/ax_tank_04_header_section_l.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-04",
+ "key": "ax_tank_04",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Short barrel with internal spherical landing-propellant header tanks"
+}

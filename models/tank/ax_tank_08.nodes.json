@@ -1,0 +1,253 @@
+{
+ "id": "ax_tank_08",
+ "name": "T-TR Toroidal Tank",
+ "category": "tank",
+ "short_name": "toroidal",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_tank_08_toroidal_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.46,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.44,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_08_toroidal_s": {
+   "vid": "ax_tank_08_toroidal_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-TR Toroidal Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "tube_d_m": 0.36,
+    "bore_d_m": 0.36,
+    "prop_t": 0.35
+   },
+   "notes": "Toroidal tank (1.25 m OD): white torus with chamfered steel girth ring, inner structural ring (bore r 0.20 m: an engine or tunnel passes through) on 6 spokes; stack nodes on the inner ring.",
+   "bbox_cad_zup": [
+    [
+     -0.615,
+     -0.615,
+     -0.29000000000000004
+    ],
+    [
+     0.615,
+     0.615,
+     0.29000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    1.23,
+    0.58,
+    1.23
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.29,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.27,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_08_toroidal_s.step",
+    "glb": "glb/ax_tank_08_toroidal_s.glb",
+    "preview": "renders/ax_tank_08_toroidal_s.png"
+   }
+  },
+  "ax_tank_08_toroidal_m": {
+   "vid": "ax_tank_08_toroidal_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-TR Toroidal Tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 2.5,
+    "tube_d_m": 0.7,
+    "bore_d_m": 0.86,
+    "prop_t": 2.6
+   },
+   "notes": "Toroidal tank (2.5 m OD): white torus with chamfered steel girth ring, inner structural ring (bore r 0.43 m: an engine or tunnel passes through) on 6 spokes; stack nodes on the inner ring.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.45999999999999996
+    ],
+    [
+     1.25,
+     1.25,
+     0.45999999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.92,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.46,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.44,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_08_toroidal_m.step",
+    "glb": "glb/ax_tank_08_toroidal_m.glb",
+    "preview": "renders/ax_tank_08_toroidal_m.png"
+   }
+  },
+  "ax_tank_08_toroidal_l": {
+   "vid": "ax_tank_08_toroidal_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-TR Toroidal Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "tube_d_m": 1.0,
+    "bore_d_m": 1.42,
+    "prop_t": 8.5
+   },
+   "notes": "Toroidal tank (3.75 m OD): white torus with chamfered steel girth ring, inner structural ring (bore r 0.71 m: an engine or tunnel passes through) on 6 spokes; stack nodes on the inner ring.",
+   "bbox_cad_zup": [
+    [
+     -1.885,
+     -1.885,
+     -0.61
+    ],
+    [
+     1.885,
+     1.885,
+     0.61
+    ]
+   ],
+   "bbox_godot_size": [
+    3.77,
+    1.22,
+    3.77
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.61,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.59,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_08_toroidal_l.step",
+    "glb": "glb/ax_tank_08_toroidal_l.glb",
+    "preview": "renders/ax_tank_08_toroidal_l.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-08",
+ "key": "ax_tank_08",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Torus tank that wraps around an engine or tunnel"
+}

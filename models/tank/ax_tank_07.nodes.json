@@ -1,0 +1,185 @@
+{
+ "id": "ax_tank_07",
+ "name": "T-XE Xenon COPV Cluster",
+ "category": "tank",
+ "short_name": "xenon_copv",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_tank_07_xenon_copv_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.7,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.7,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_07_xenon_copv_xs": {
+   "vid": "ax_tank_07_xenon_copv_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-XE Xenon COPV Cluster",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "length_m": 0.8,
+    "bottles": 3,
+    "xenon_kg": 180
+   },
+   "notes": "Xenon/krypton COPV cluster: 3 carbon-overwrapped bottles (steel bosses) between chamfered white frame rings on square longerons, top manifold.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.4
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.4
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.8,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_07_xenon_copv_xs.step",
+    "glb": "glb/ax_tank_07_xenon_copv_xs.glb",
+    "preview": "renders/ax_tank_07_xenon_copv_xs.png"
+   }
+  },
+  "ax_tank_07_xenon_copv_s": {
+   "vid": "ax_tank_07_xenon_copv_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-XE Xenon COPV Cluster",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.4,
+    "bottles": 4,
+    "xenon_kg": 900
+   },
+   "notes": "Xenon/krypton COPV cluster: 4 carbon-overwrapped bottles (steel bosses) between chamfered white frame rings on square longerons, top manifold.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.7
+    ],
+    [
+     0.625,
+     0.625,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.4,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_07_xenon_copv_s.step",
+    "glb": "glb/ax_tank_07_xenon_copv_s.glb",
+    "preview": "renders/ax_tank_07_xenon_copv_s.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-07",
+ "key": "ax_tank_07",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Composite-overwrapped xenon/krypton bottles for electric propulsion"
+}

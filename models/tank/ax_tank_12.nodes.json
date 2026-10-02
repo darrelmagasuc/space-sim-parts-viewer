@@ -1,0 +1,419 @@
+{
+ "id": "ax_tank_12",
+ "name": "T-OX ISRU Oxygen Tank",
+ "category": "tank",
+ "short_name": "isru_lox",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_tank_12_isru_lox_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_12_isru_lox_m": {
+   "vid": "ax_tank_12_isru_lox_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-OX ISRU Oxygen Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 4.0,
+    "lox_t": 19
+   },
+   "notes": "ISRU LOX storage tank: MLI-wrapped barrel (recessed blanket seams, gold bands), chamfered steel end rings, raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.0
+    ],
+    [
+     1.25,
+     1.25,
+     2.0
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    4.0,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_12_isru_lox_m.step",
+    "glb": "glb/ax_tank_12_isru_lox_m.glb",
+    "preview": "renders/ax_tank_12_isru_lox_m.png"
+   }
+  },
+  "ax_tank_12_isru_lox_l": {
+   "vid": "ax_tank_12_isru_lox_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-OX ISRU Oxygen Tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 6.0,
+    "lox_t": 68
+   },
+   "notes": "ISRU LOX storage tank: MLI-wrapped barrel (recessed blanket seams, gold bands), chamfered steel end rings, raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -3.0
+    ],
+    [
+     1.875,
+     1.875,
+     3.0
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    6.0,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_12_isru_lox_l.step",
+    "glb": "glb/ax_tank_12_isru_lox_l.glb",
+    "preview": "renders/ax_tank_12_isru_lox_l.png"
+   }
+  },
+  "ax_tank_12_isru_lox_l_horizontal": {
+   "vid": "ax_tank_12_isru_lox_l_horizontal",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-OX ISRU Oxygen Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 6.0,
+    "lox_t": 68,
+    "layout": "horizontal surface, saddles"
+   },
+   "notes": "Horizontal ISRU LOX storage tank (surface): MLI-wrapped barrel on 2 chamfered saddles; end interfaces become transfer ports node_port_1/2; node_bottom = ground plane.",
+   "bbox_cad_zup": [
+    [
+     -3.0,
+     -1.875,
+     -2.1000000000000005
+    ],
+    [
+     3.0,
+     1.875,
+     2.1
+    ]
+   ],
+   "bbox_godot_size": [
+    6.0,
+    4.2,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_port_1",
+     "position": [
+      3.0,
+      0.225,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      -3.0,
+      0.225,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_12_isru_lox_l_horizontal.step",
+    "glb": "glb/ax_tank_12_isru_lox_l_horizontal.glb",
+    "preview": "renders/ax_tank_12_isru_lox_l_horizontal.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-12",
+ "key": "ax_tank_12",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "LOX-only storage tank for ISRU plants (horizontal surface variant)"
+}

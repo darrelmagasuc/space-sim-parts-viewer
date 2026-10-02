@@ -1,0 +1,824 @@
+{
+ "id": "ax_tank_05",
+ "name": "T-H2 Hydrolox Tanks",
+ "category": "tank",
+ "short_name": "hydrolox",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_tank_05_hydrolox_l_long",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_05_hydrolox_m_short": {
+   "vid": "ax_tank_05_hydrolox_m_short",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 3.0,
+    "prop_t": 3.5,
+    "dry_t": 0.35,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.5
+    ],
+    [
+     1.25,
+     1.25,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.0,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_m_short.step",
+    "glb": "glb/ax_tank_05_hydrolox_m_short.glb",
+    "preview": "renders/ax_tank_05_hydrolox_m_short.png"
+   }
+  },
+  "ax_tank_05_hydrolox_m_long": {
+   "vid": "ax_tank_05_hydrolox_m_long",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 6.0,
+    "prop_t": 8.1,
+    "dry_t": 0.81,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -3.0
+    ],
+    [
+     1.25,
+     1.25,
+     3.0
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    6.0,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_m_long.step",
+    "glb": "glb/ax_tank_05_hydrolox_m_long.glb",
+    "preview": "renders/ax_tank_05_hydrolox_m_long.png"
+   }
+  },
+  "ax_tank_05_hydrolox_l_short": {
+   "vid": "ax_tank_05_hydrolox_l_short",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 4.5,
+    "prop_t": 12.3,
+    "dry_t": 1.23,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -2.25
+    ],
+    [
+     1.875,
+     1.875,
+     2.25
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    4.5,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_l_short.step",
+    "glb": "glb/ax_tank_05_hydrolox_l_short.glb",
+    "preview": "renders/ax_tank_05_hydrolox_l_short.png"
+   }
+  },
+  "ax_tank_05_hydrolox_l_long": {
+   "vid": "ax_tank_05_hydrolox_l_long",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 9.0,
+    "prop_t": 28.7,
+    "dry_t": 2.87,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -4.5
+    ],
+    [
+     1.875,
+     1.875,
+     4.5
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    9.0,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_l_long.step",
+    "glb": "glb/ax_tank_05_hydrolox_l_long.glb",
+    "preview": "renders/ax_tank_05_hydrolox_l_long.png"
+   }
+  },
+  "ax_tank_05_hydrolox_xl_short": {
+   "vid": "ax_tank_05_hydrolox_xl_short",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 6.0,
+    "prop_t": 29.8,
+    "dry_t": 2.98,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -3.0
+    ],
+    [
+     2.5,
+     2.5,
+     3.0
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    6.0,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_xl_short.step",
+    "glb": "glb/ax_tank_05_hydrolox_xl_short.glb",
+    "preview": "renders/ax_tank_05_hydrolox_xl_short.png"
+   }
+  },
+  "ax_tank_05_hydrolox_xl_long": {
+   "vid": "ax_tank_05_hydrolox_xl_long",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-H2 Hydrolox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 12.0,
+    "prop_t": 69.5,
+    "dry_t": 6.95,
+    "o_f": 5.5
+   },
+   "notes": "Hydrolox tank: MLI blanket over the barrel (recessed blanket seams, gold kapton bands, no foam), chamfered steel end rings, bevelled raceways.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -6.0
+    ],
+    [
+     2.5,
+     2.5,
+     6.0
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    12.0,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_05_hydrolox_xl_long.step",
+    "glb": "glb/ax_tank_05_hydrolox_xl_long.glb",
+    "preview": "renders/ax_tank_05_hydrolox_xl_long.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-05",
+ "key": "ax_tank_05",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Insulated hydrolox tanks (MLI wrap, no foam), short/long"
+}

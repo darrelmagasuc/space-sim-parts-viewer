@@ -1,0 +1,183 @@
+{
+ "id": "ax_tank_13",
+ "name": "T-MP Green Monoprop Tank",
+ "category": "tank",
+ "short_name": "green_monoprop",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_tank_13_green_monoprop_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_13_green_monoprop_xs": {
+   "vid": "ax_tank_13_green_monoprop_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-MP Green Monoprop Tank",
+   "primary": false,
+   "dims": {
+    "diameter_m": 0.625,
+    "length_m": 0.55,
+    "prop_kg": 110
+   },
+   "notes": "Green monoprop (AF-M315E) tank: white tank with chamfered girth ring, strut-mounted between chamfered steel rings.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.275
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.275
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.55,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.275,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.275,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_13_green_monoprop_xs.step",
+    "glb": "glb/ax_tank_13_green_monoprop_xs.glb",
+    "preview": "renders/ax_tank_13_green_monoprop_xs.png"
+   }
+  },
+  "ax_tank_13_green_monoprop_s": {
+   "vid": "ax_tank_13_green_monoprop_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-MP Green Monoprop Tank",
+   "primary": true,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.0,
+    "prop_kg": 750
+   },
+   "notes": "Green monoprop (AF-M315E) tank: white tank with chamfered girth ring, strut-mounted between chamfered steel rings.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.5
+    ],
+    [
+     0.625,
+     0.625,
+     0.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.0,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_13_green_monoprop_s.step",
+    "glb": "glb/ax_tank_13_green_monoprop_s.glb",
+    "preview": "renders/ax_tank_13_green_monoprop_s.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-13",
+ "key": "ax_tank_13",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "AF-M315E / LMP-103S monoprop tank for RCS"
+}

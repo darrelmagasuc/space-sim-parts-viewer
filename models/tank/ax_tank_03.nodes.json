@@ -1,0 +1,829 @@
+{
+ "id": "ax_tank_03",
+ "name": "T-M5 Heavy Methalox Barrels",
+ "category": "tank",
+ "short_name": "heavy_methalox",
+ "sizes": [
+  "XL",
+  "XXL"
+ ],
+ "primary": "ax_tank_03_heavy_methalox_xxl_long",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    11.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -11.25,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    3.75,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -3.75
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -3.75,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    3.75
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_03_heavy_methalox_xl_short": {
+   "vid": "ax_tank_03_heavy_methalox_xl_short",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 5.0,
+    "prop_t": 54.6,
+    "dry_t": 2.7,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -2.512,
+     -2.512,
+     -2.5
+    ],
+    [
+     2.512,
+     2.512,
+     2.5
+    ]
+   ],
+   "bbox_godot_size": [
+    5.024,
+    5.0,
+    5.024
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xl_short.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xl_short.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xl_short.png"
+   }
+  },
+  "ax_tank_03_heavy_methalox_xl_medium": {
+   "vid": "ax_tank_03_heavy_methalox_xl_medium",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 10.0,
+    "prop_t": 132.6,
+    "dry_t": 6.6,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -2.512,
+     -2.512,
+     -5.0
+    ],
+    [
+     2.512,
+     2.512,
+     5.0
+    ]
+   ],
+   "bbox_godot_size": [
+    5.024,
+    10.0,
+    5.024
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -5.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xl_medium.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xl_medium.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xl_medium.png"
+   }
+  },
+  "ax_tank_03_heavy_methalox_xl_long": {
+   "vid": "ax_tank_03_heavy_methalox_xl_long",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": false,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 15.0,
+    "prop_t": 210.6,
+    "dry_t": 10.5,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -2.512,
+     -2.512,
+     -7.5
+    ],
+    [
+     2.512,
+     2.512,
+     7.5
+    ]
+   ],
+   "bbox_godot_size": [
+    5.024,
+    15.0,
+    5.024
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.5,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xl_long.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xl_long.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xl_long.png"
+   }
+  },
+  "ax_tank_03_heavy_methalox_xxl_short": {
+   "vid": "ax_tank_03_heavy_methalox_xxl_short",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "length_m": 7.5,
+    "prop_t": 187.3,
+    "dry_t": 9.4,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -3.762,
+     -3.762,
+     -3.75
+    ],
+    [
+     3.762,
+     3.762,
+     3.75
+    ]
+   ],
+   "bbox_godot_size": [
+    7.524,
+    7.5,
+    7.524
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xxl_short.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xxl_short.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xxl_short.png"
+   }
+  },
+  "ax_tank_03_heavy_methalox_xxl_medium": {
+   "vid": "ax_tank_03_heavy_methalox_xxl_medium",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "length_m": 15.0,
+    "prop_t": 454.9,
+    "dry_t": 22.7,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -3.762,
+     -3.762,
+     -7.5
+    ],
+    [
+     3.762,
+     3.762,
+     7.5
+    ]
+   ],
+   "bbox_godot_size": [
+    7.524,
+    15.0,
+    7.524
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -7.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xxl_medium.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xxl_medium.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xxl_medium.png"
+   }
+  },
+  "ax_tank_03_heavy_methalox_xxl_long": {
+   "vid": "ax_tank_03_heavy_methalox_xxl_long",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M5 Heavy Methalox Barrels",
+   "primary": true,
+   "dims": {
+    "diameter_m": 7.5,
+    "length_m": 22.5,
+    "prop_t": 722.4,
+    "dry_t": 36.1,
+    "o_f": 3.6,
+    "common_bulkhead": true
+   },
+   "notes": "Heavy stainless methalox barrel with a common bulkhead (chamfered ring at the bulkhead station): end rings per the tank14 formula, recessed weld seams, bevelled raceways, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -3.762,
+     -3.762,
+     -11.25
+    ],
+    [
+     3.762,
+     3.762,
+     11.25
+    ]
+   ],
+   "bbox_godot_size": [
+    7.524,
+    22.5,
+    7.524
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      11.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -11.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -3.75,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      3.75
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_03_heavy_methalox_xxl_long.step",
+    "glb": "glb/ax_tank_03_heavy_methalox_xxl_long.glb",
+    "preview": "renders/ax_tank_03_heavy_methalox_xxl_long.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-03",
+ "key": "ax_tank_03",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "5 m / 7.5 m stainless methalox barrels with common bulkhead, 3 lengths"
+}

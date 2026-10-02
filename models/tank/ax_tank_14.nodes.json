@@ -1,0 +1,90 @@
+{
+ "id": "ax_tank_14",
+ "name": "T-HE Helium COPV (radial)",
+ "category": "tank",
+ "short_name": "helium_copv",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_tank_14_helium_copv",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.266,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_14_helium_copv": {
+   "vid": "ax_tank_14_helium_copv",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-HE Helium COPV (radial)",
+   "primary": true,
+   "dims": {
+    "bottle_d_m": 0.4,
+    "length_m": 0.98,
+    "pressure_bar": 400
+   },
+   "notes": "Radial helium COPV: carbon-overwrapped bottle with steel bosses and straps on a chamfered grey saddle; node_attach on -X.",
+   "bbox_cad_zup": [
+    [
+     -0.26600000000000007,
+     -0.23,
+     -0.49
+    ],
+    [
+     0.266,
+     0.23,
+     0.49
+    ]
+   ],
+   "bbox_godot_size": [
+    0.532,
+    0.98,
+    0.46
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.266,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_14_helium_copv.step",
+    "glb": "glb/ax_tank_14_helium_copv.glb",
+    "preview": "renders/ax_tank_14_helium_copv.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-14",
+ "key": "ax_tank_14",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Radial pressurant COPV on a chamfered saddle"
+}

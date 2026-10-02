@@ -1,0 +1,274 @@
+{
+ "id": "ax_tank_10",
+ "name": "T-DPX Propellant Depot Core",
+ "category": "tank",
+ "short_name": "depot_core",
+ "sizes": [
+  "XL"
+ ],
+ "primary": "ax_tank_10_depot_core",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    6.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -6.0,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -1.7395,
+    -4.56,
+    -1.7395
+   ],
+   "direction": [
+    -0.7071,
+    0.0,
+    -0.7071
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    1.7395,
+    -4.56,
+    1.7395
+   ],
+   "direction": [
+    0.7071,
+    0.0,
+    0.7071
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    2.49,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -2.49
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -2.49,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    2.49
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_10_depot_core": {
+   "vid": "ax_tank_10_depot_core",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-DPX Propellant Depot Core",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "length_m": 12.0,
+    "prop_t": 180,
+    "boiloff": "zero (2 cryocooler bays)",
+    "ports": 2
+   },
+   "notes": "Zero-boil-off depot core (5 m): MLI-wrapped barrel (recessed blanket seams, gold bands), stowed sunshield petals, 2 bevelled cryocooler slot bays (Medium), 2 recessed transfer umbilical panels (node_port_1/2), steel end rings.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -6.0
+    ],
+    [
+     2.5,
+     2.5,
+     6.0
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    12.0,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -6.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      -1.7395,
+      -4.56,
+      -1.7395
+     ],
+     "direction": [
+      -0.7071,
+      0.0,
+      -0.7071
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      1.7395,
+      -4.56,
+      1.7395
+     ],
+     "direction": [
+      0.7071,
+      0.0,
+      0.7071
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      2.49,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -2.49
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -2.49,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      2.49
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_10_depot_core.step",
+    "glb": "glb/ax_tank_10_depot_core.glb",
+    "preview": "renders/ax_tank_10_depot_core.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-10",
+ "key": "ax_tank_10",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Zero-boil-off depot tank with sunshield, cryocooler slots and transfer ports"
+}

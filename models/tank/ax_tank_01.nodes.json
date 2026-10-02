@@ -1,0 +1,838 @@
+{
+ "id": "ax_tank_01",
+ "name": "T-M4 Modern Methalox Tanks",
+ "category": "tank",
+ "short_name": "modern_methalox",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_tank_01_modern_methalox_l_long",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -4.5,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    0.0,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    0.0,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_tank_01_modern_methalox_s_short": {
+   "vid": "ax_tank_01_modern_methalox_s_short",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 1.5,
+    "prop_volume_m3": 1.42,
+    "prop_t": 1.2,
+    "dry_t": 0.1,
+    "wet_t": 1.3,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -0.645,
+     -0.645,
+     -0.75
+    ],
+    [
+     0.645,
+     0.645,
+     0.75
+    ]
+   ],
+   "bbox_godot_size": [
+    1.29,
+    1.5,
+    1.29
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.75,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_s_short.step",
+    "glb": "glb/ax_tank_01_modern_methalox_s_short.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_s_short.png"
+   }
+  },
+  "ax_tank_01_modern_methalox_s_long": {
+   "vid": "ax_tank_01_modern_methalox_s_long",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 3.0,
+    "prop_volume_m3": 3.03,
+    "prop_t": 2.5,
+    "dry_t": 0.17,
+    "wet_t": 2.7,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -0.645,
+     -0.645,
+     -1.5
+    ],
+    [
+     0.645,
+     0.645,
+     1.5
+    ]
+   ],
+   "bbox_godot_size": [
+    1.29,
+    3.0,
+    1.29
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_s_long.step",
+    "glb": "glb/ax_tank_01_modern_methalox_s_long.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_s_long.png"
+   }
+  },
+  "ax_tank_01_modern_methalox_m_short": {
+   "vid": "ax_tank_01_modern_methalox_m_short",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 3.0,
+    "prop_volume_m3": 11.81,
+    "prop_t": 9.9,
+    "dry_t": 0.67,
+    "wet_t": 10.5,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -1.27,
+     -1.27,
+     -1.535
+    ],
+    [
+     1.27,
+     1.27,
+     1.535
+    ]
+   ],
+   "bbox_godot_size": [
+    2.54,
+    3.07,
+    2.54
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_m_short.step",
+    "glb": "glb/ax_tank_01_modern_methalox_m_short.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_m_short.png"
+   }
+  },
+  "ax_tank_01_modern_methalox_m_long": {
+   "vid": "ax_tank_01_modern_methalox_m_long",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 6.0,
+    "prop_volume_m3": 24.7,
+    "prop_t": 20.6,
+    "dry_t": 1.26,
+    "wet_t": 21.9,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -1.27,
+     -1.27,
+     -3.0349999999999997
+    ],
+    [
+     1.27,
+     1.27,
+     3.035
+    ]
+   ],
+   "bbox_godot_size": [
+    2.54,
+    6.07,
+    2.54
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.0,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_m_long.step",
+    "glb": "glb/ax_tank_01_modern_methalox_m_long.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_m_long.png"
+   }
+  },
+  "ax_tank_01_modern_methalox_l_short": {
+   "vid": "ax_tank_01_modern_methalox_l_short",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 4.5,
+    "prop_volume_m3": 40.35,
+    "prop_t": 33.7,
+    "dry_t": 2.13,
+    "wet_t": 35.8,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -1.895,
+     -1.895,
+     -2.3225
+    ],
+    [
+     1.895,
+     1.895,
+     2.3225
+    ]
+   ],
+   "bbox_godot_size": [
+    3.79,
+    4.645,
+    3.79
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.25,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_l_short.step",
+    "glb": "glb/ax_tank_01_modern_methalox_l_short.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_l_short.png"
+   }
+  },
+  "ax_tank_01_modern_methalox_l_long": {
+   "vid": "ax_tank_01_modern_methalox_l_long",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "T-M4 Modern Methalox Tanks",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 9.0,
+    "prop_volume_m3": 83.84,
+    "prop_t": 69.9,
+    "dry_t": 4.13,
+    "wet_t": 74.0,
+    "o_f": 3.6
+   },
+   "notes": "Modern methalox tank: chamfered steel end rings, recessed dome caps, recessed weld-seam grooves, bevelled plumbing raceways with feed lines, gold MLI patch.",
+   "bbox_cad_zup": [
+    [
+     -1.895,
+     -1.895,
+     -4.5725
+    ],
+    [
+     1.895,
+     1.895,
+     4.5725
+    ]
+   ],
+   "bbox_godot_size": [
+    3.79,
+    9.145,
+    3.79
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.5,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      0.0,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      0.0,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_tank_01_modern_methalox_l_long.step",
+    "glb": "glb/ax_tank_01_modern_methalox_l_long.glb",
+    "preview": "renders/ax_tank_01_modern_methalox_l_long.png"
+   }
+  }
+ },
+ "display_id": "AX-tank-01",
+ "key": "ax_tank_01",
+ "line": "AX",
+ "ax_category": "tank",
+ "aliases": [
+  "tank14"
+ ],
+ "batch": "B3",
+ "slot": null,
+ "interior": null,
+ "summary": "Stainless methalox tanks with chamfered end rings, recessed raceways, short/long"
+}
