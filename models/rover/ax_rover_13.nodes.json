@@ -1,0 +1,1494 @@
+{
+ "id": "ax_rover_13",
+ "name": "RC-S Chassis Frame S (2 wheels)",
+ "category": "rover",
+ "short_name": "chassis_s",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_rover_13_chassis_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_grid_0_0",
+   "position": [
+    1.0,
+    0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_0",
+   "position": [
+    1.0,
+    -0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_1",
+   "position": [
+    0.5,
+    0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_1",
+   "position": [
+    0.5,
+    -0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_2",
+   "position": [
+    0.0,
+    0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_2",
+   "position": [
+    0.0,
+    -0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_3",
+   "position": [
+    -0.5,
+    0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_3",
+   "position": [
+    -0.5,
+    -0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_0_4",
+   "position": [
+    -1.0,
+    0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_0_4",
+   "position": [
+    -1.0,
+    -0.15,
+    0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_0",
+   "position": [
+    1.0,
+    0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_0",
+   "position": [
+    1.0,
+    -0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_1",
+   "position": [
+    0.5,
+    0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_1",
+   "position": [
+    0.5,
+    -0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_2",
+   "position": [
+    0.0,
+    0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_2",
+   "position": [
+    0.0,
+    -0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_3",
+   "position": [
+    -0.5,
+    0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_3",
+   "position": [
+    -0.5,
+    -0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_1_4",
+   "position": [
+    -1.0,
+    0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_1_4",
+   "position": [
+    -1.0,
+    -0.15,
+    0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_0",
+   "position": [
+    1.0,
+    0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_0",
+   "position": [
+    1.0,
+    -0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_1",
+   "position": [
+    0.5,
+    0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_1",
+   "position": [
+    0.5,
+    -0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_2",
+   "position": [
+    0.0,
+    0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_2",
+   "position": [
+    0.0,
+    -0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_3",
+   "position": [
+    -0.5,
+    0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_3",
+   "position": [
+    -0.5,
+    -0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_2_4",
+   "position": [
+    -1.0,
+    0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_2_4",
+   "position": [
+    -1.0,
+    -0.15,
+    -0.25
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_3_0",
+   "position": [
+    1.0,
+    0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_3_0",
+   "position": [
+    1.0,
+    -0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_3_1",
+   "position": [
+    0.5,
+    0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_3_1",
+   "position": [
+    0.5,
+    -0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_3_2",
+   "position": [
+    0.0,
+    0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_3_2",
+   "position": [
+    0.0,
+    -0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_3_3",
+   "position": [
+    -0.5,
+    0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_3_3",
+   "position": [
+    -0.5,
+    -0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_grid_3_4",
+   "position": [
+    -1.0,
+    0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_under_3_4",
+   "position": [
+    -1.0,
+    -0.15,
+    -0.75
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_0",
+   "position": [
+    1.25,
+    0.0,
+    0.75
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_0",
+   "position": [
+    -1.25,
+    0.0,
+    0.75
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_1",
+   "position": [
+    1.25,
+    0.0,
+    0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_1",
+   "position": [
+    -1.25,
+    0.0,
+    0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_2",
+   "position": [
+    1.25,
+    0.0,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_2",
+   "position": [
+    -1.25,
+    0.0,
+    -0.25
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_3",
+   "position": [
+    1.25,
+    0.0,
+    -0.75
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_3",
+   "position": [
+    -1.25,
+    0.0,
+    -0.75
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_l_c",
+   "position": [
+    1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rail_r_c",
+   "position": [
+    -1.25,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_axle_l_1",
+   "position": [
+    1.35,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_axle_r_1",
+   "position": [
+    -1.35,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_13_chassis_s": {
+   "vid": "ax_rover_13_chassis_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RC-S Chassis Frame S (2 wheels)",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 2.0,
+    "height": 0.3
+   },
+   "notes": "Chassis frame 2.5 x 2.0 m: chamfered side beams, cross members, 0.5 m deck grid (node_grid_R_C / node_under_R_C), side rails, 1 axle station(s) with bevelled mount pockets. Rover bus in every node; no battery packs.",
+   "bbox_cad_zup": [
+    [
+     -1.35,
+     -1.0,
+     -0.15000000000000002
+    ],
+    [
+     1.35,
+     1.0,
+     0.15000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.7,
+    0.3,
+    2.0
+   ],
+   "nodes": [
+    {
+     "name": "node_grid_0_0",
+     "position": [
+      1.0,
+      0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_0",
+     "position": [
+      1.0,
+      -0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_1",
+     "position": [
+      0.5,
+      0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_1",
+     "position": [
+      0.5,
+      -0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_2",
+     "position": [
+      0.0,
+      0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_2",
+     "position": [
+      0.0,
+      -0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_3",
+     "position": [
+      -0.5,
+      0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_3",
+     "position": [
+      -0.5,
+      -0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_0_4",
+     "position": [
+      -1.0,
+      0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_0_4",
+     "position": [
+      -1.0,
+      -0.15,
+      0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_0",
+     "position": [
+      1.0,
+      0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_0",
+     "position": [
+      1.0,
+      -0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_1",
+     "position": [
+      0.5,
+      0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_1",
+     "position": [
+      0.5,
+      -0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_2",
+     "position": [
+      0.0,
+      0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_2",
+     "position": [
+      0.0,
+      -0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_3",
+     "position": [
+      -0.5,
+      0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_3",
+     "position": [
+      -0.5,
+      -0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_1_4",
+     "position": [
+      -1.0,
+      0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_1_4",
+     "position": [
+      -1.0,
+      -0.15,
+      0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_0",
+     "position": [
+      1.0,
+      0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_0",
+     "position": [
+      1.0,
+      -0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_1",
+     "position": [
+      0.5,
+      0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_1",
+     "position": [
+      0.5,
+      -0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_2",
+     "position": [
+      0.0,
+      0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_2",
+     "position": [
+      0.0,
+      -0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_3",
+     "position": [
+      -0.5,
+      0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_3",
+     "position": [
+      -0.5,
+      -0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_2_4",
+     "position": [
+      -1.0,
+      0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_2_4",
+     "position": [
+      -1.0,
+      -0.15,
+      -0.25
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_0",
+     "position": [
+      1.0,
+      0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_0",
+     "position": [
+      1.0,
+      -0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_1",
+     "position": [
+      0.5,
+      0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_1",
+     "position": [
+      0.5,
+      -0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_2",
+     "position": [
+      0.0,
+      0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_2",
+     "position": [
+      0.0,
+      -0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_3",
+     "position": [
+      -0.5,
+      0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_3",
+     "position": [
+      -0.5,
+      -0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_grid_3_4",
+     "position": [
+      -1.0,
+      0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_under_3_4",
+     "position": [
+      -1.0,
+      -0.15,
+      -0.75
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_0",
+     "position": [
+      1.25,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_0",
+     "position": [
+      -1.25,
+      0.0,
+      0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_1",
+     "position": [
+      1.25,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_1",
+     "position": [
+      -1.25,
+      0.0,
+      0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_2",
+     "position": [
+      1.25,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_2",
+     "position": [
+      -1.25,
+      0.0,
+      -0.25
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_3",
+     "position": [
+      1.25,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_3",
+     "position": [
+      -1.25,
+      0.0,
+      -0.75
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_l_c",
+     "position": [
+      1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rail_r_c",
+     "position": [
+      -1.25,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_axle_l_1",
+     "position": [
+      1.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_axle_r_1",
+     "position": [
+      -1.35,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_13_chassis_s.step",
+    "glb": "glb/ax_rover_13_chassis_s.glb",
+    "preview": "renders/ax_rover_13_chassis_s.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-13",
+ "key": "ax_rover_13",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Short frame with a 0.5 m deck grid, 1 axle station"
+}

@@ -1,0 +1,254 @@
+{
+ "id": "ax_rover_11",
+ "name": "RH-DC Articulated Hub Connector",
+ "category": "rover",
+ "short_name": "connector",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_11_connector",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    0.0,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_11_connector": {
+   "vid": "ax_rover_11_connector",
+   "size": "M",
+   "state": "straight",
+   "default_state": true,
+   "label": "RH-DC Articulated Hub Connector",
+   "primary": true,
+   "dims": {
+    "length": 1.0
+   },
+   "notes": "Articulated hub connector: ti flanges on both ends, 9 convolute bellows (cloth) over a foil liner, 4 tension struts; _flexed = 12 deg pitch.",
+   "bbox_cad_zup": [
+    [
+     -0.78,
+     -0.5000000000000001,
+     -0.78
+    ],
+    [
+     0.78,
+     0.5000000000000001,
+     0.78
+    ]
+   ],
+   "bbox_godot_size": [
+    1.56,
+    1.56,
+    1.0
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bellows",
+    "ring_rear_flange"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_11_connector.step",
+    "glb": "glb/ax_rover_11_connector.glb",
+    "preview": "renders/ax_rover_11_connector.png"
+   }
+  },
+  "ax_rover_11_connector_flexed": {
+   "vid": "ax_rover_11_connector_flexed",
+   "size": "M",
+   "state": "flexed",
+   "default_state": false,
+   "label": "RH-DC Articulated Hub Connector",
+   "primary": false,
+   "dims": {
+    "length": 1.0,
+    "pitch_deg": 12
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -0.78,
+     -0.5000000000000001,
+     -0.78
+    ],
+    [
+     0.78,
+     0.6450075684802224,
+     0.8606736232567153
+    ]
+   ],
+   "bbox_godot_size": [
+    1.56,
+    1.641,
+    1.145
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.104,
+      -0.4891
+     ],
+     "direction": [
+      0.0,
+      0.2079,
+      -0.9781
+     ],
+     "up": [
+      0.0,
+      0.9781,
+      0.2079
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "bellows",
+    "ring_rear_flange"
+   ],
+   "default_of": "ax_rover_11_connector",
+   "files": {
+    "step": "step/ax_rover_11_connector_flexed.step",
+    "glb": "glb/ax_rover_11_connector_flexed.glb",
+    "preview": "renders/ax_rover_11_connector_flexed.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-11",
+ "key": "ax_rover_11",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "light",
+ "summary": "Pressurised flexible tunnel between hubs (pitch/yaw articulation)"
+}

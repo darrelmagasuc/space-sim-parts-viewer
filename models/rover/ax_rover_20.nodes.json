@@ -1,0 +1,115 @@
+{
+ "id": "ax_rover_20",
+ "name": "RM-1X Hub Drive Motor",
+ "category": "rover",
+ "short_name": "hub_motor",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_20_hub_motor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.34,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_20_hub_motor": {
+   "vid": "ax_rover_20_hub_motor",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RM-1X Hub Drive Motor",
+   "primary": true,
+   "dims": {
+    "diameter": 0.4,
+    "length": 0.34
+   },
+   "notes": "In-wheel drive motor: grooved cooling-fin housing between a mount flange and the wheel output flange.",
+   "bbox_cad_zup": [
+    [
+     0.0,
+     -0.2,
+     -0.2
+    ],
+    [
+     0.34,
+     0.2,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    0.34,
+    0.4,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.34,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_20_hub_motor.step",
+    "glb": "glb/ax_rover_20_hub_motor.glb",
+    "preview": "renders/ax_rover_20_hub_motor.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-20",
+ "key": "ax_rover_20",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "In-wheel drive motor module"
+}

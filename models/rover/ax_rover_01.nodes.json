@@ -1,0 +1,324 @@
+{
+ "id": "ax_rover_01",
+ "name": "RH-F2 Front Cab Hub, 2-Seat",
+ "category": "rover",
+ "short_name": "cab2",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_01_cab2",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    -0.62,
+    2.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    -0.62,
+    -1.33
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    1.13,
+    -0.25,
+    -0.55
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.28,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.55,
+    -0.38,
+    0.9
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.55,
+    0.37,
+    1.04
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.55,
+    -0.38,
+    0.9
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.55,
+    0.37,
+    1.04
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_01_cab2": {
+   "vid": "ax_rover_01_cab2",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-F2 Front Cab Hub, 2-Seat",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "height": 2.5,
+    "length": 3.5
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -2.2500001,
+     -1.28000005
+    ],
+    [
+     1.326,
+     1.33,
+     1.2800000500000002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.576,
+    2.56,
+    3.58
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.62,
+      2.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.62,
+      -1.33
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      1.13,
+      -0.25,
+      -0.55
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.28,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.55,
+      -0.38,
+      0.9
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.55,
+      0.37,
+      1.04
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.55,
+      -0.38,
+      0.9
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.55,
+      0.37,
+      1.04
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_01_cab2.step",
+    "glb": "glb/ax_rover_01_cab2.glb",
+    "preview": "renders/ax_rover_01_cab2.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-01",
+ "key": "ax_rover_01",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "full",
+ "summary": "Pressurised front cab: 2 seats, faceted window band, life support, suitports at rear"
+}

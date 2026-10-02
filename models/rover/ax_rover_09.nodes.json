@@ -1,0 +1,142 @@
+{
+ "id": "ax_rover_09",
+ "name": "RH-MU Mid Hub: Utility",
+ "category": "rover",
+ "short_name": "mid_utility",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_09_mid_utility",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    -0.074,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    -0.074,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.284,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_09_mid_utility": {
+   "vid": "ax_rover_09_mid_utility",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-MU Mid Hub: Utility",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "height": 2.5,
+    "length": 2.5
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.25,
+     -1.2839999999999998
+    ],
+    [
+     1.2500001,
+     1.25,
+     1.2839999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.568,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.074,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.074,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.284,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_09_mid_utility.step",
+    "glb": "glb/ax_rover_09_mid_utility.glb",
+    "preview": "renders/ax_rover_09_mid_utility.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-09",
+ "key": "ax_rover_09",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Unpressurised utility hub: internal battery and fuel-cell slot bays, conformal radiators"
+}

@@ -1,0 +1,141 @@
+{
+ "id": "ax_rover_21",
+ "name": "RT-BL Regolith Blade",
+ "category": "rover",
+ "short_name": "regolith_blade",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_21_regolith_blade",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.06,
+    -0.05
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_21_regolith_blade": {
+   "vid": "ax_rover_21_regolith_blade",
+   "size": "M",
+   "state": "raised",
+   "default_state": true,
+   "label": "RT-BL Regolith Blade",
+   "primary": true,
+   "dims": {},
+   "notes": "Regolith blade: chamfered push frame, curved moldboard with steel cutting edge, 2 lift actuators; _lowered pose.",
+   "bbox_cad_zup": [
+    [
+     -1.4000000000000001,
+     -0.85,
+     -0.31000000000000005
+    ],
+    [
+     1.4000000000000001,
+     0.05415648086563932,
+     0.3100000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    2.8,
+    0.62,
+    0.904
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.06,
+      -0.05
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "blade",
+    "cutting_edge"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_21_regolith_blade.step",
+    "glb": "glb/ax_rover_21_regolith_blade.glb",
+    "preview": "renders/ax_rover_21_regolith_blade.png"
+   }
+  },
+  "ax_rover_21_regolith_blade_lowered": {
+   "vid": "ax_rover_21_regolith_blade_lowered",
+   "size": "M",
+   "state": "lowered",
+   "default_state": false,
+   "label": "RT-BL Regolith Blade",
+   "primary": false,
+   "dims": {},
+   "notes": "Regolith blade: chamfered push frame, curved moldboard with steel cutting edge, 2 lift actuators; _lowered pose.",
+   "bbox_cad_zup": [
+    [
+     -1.4000000000000001,
+     -0.85,
+     -0.66
+    ],
+    [
+     1.4000000000000001,
+     0.06542372015959638,
+     0.22690675895332002
+    ]
+   ],
+   "bbox_godot_size": [
+    2.8,
+    0.887,
+    0.915
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.06,
+      -0.05
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "blade",
+    "cutting_edge"
+   ],
+   "default_of": "ax_rover_21_regolith_blade",
+   "files": {
+    "step": "step/ax_rover_21_regolith_blade_lowered.step",
+    "glb": "glb/ax_rover_21_regolith_blade_lowered.glb",
+    "preview": "renders/ax_rover_21_regolith_blade_lowered.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-21",
+ "key": "ax_rover_21",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Front dozer blade for berm building (raised / lowered)"
+}

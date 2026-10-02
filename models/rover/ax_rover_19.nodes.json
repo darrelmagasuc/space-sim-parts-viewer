@@ -1,0 +1,178 @@
+{
+ "id": "ax_rover_19",
+ "name": "RS-2 Steering Module",
+ "category": "rover",
+ "short_name": "steering_module",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_19_steering_module",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.365,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_19_steering_module": {
+   "vid": "ax_rover_19_steering_module",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RS-2 Steering Module",
+   "primary": true,
+   "dims": {},
+   "notes": "Steering module: vertical-axis actuator between a mount plate and the steer plate; pose _steer_left (25 deg).",
+   "bbox_cad_zup": [
+    [
+     -1.5612511283791264e-17,
+     -0.18000000000000002,
+     -0.18000000000000002
+    ],
+    [
+     0.36500000000000005,
+     0.18000000000000002,
+     0.18000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.365,
+    0.36,
+    0.36
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.365,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "steer_plate"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_19_steering_module.step",
+    "glb": "glb/ax_rover_19_steering_module.glb",
+    "preview": "renders/ax_rover_19_steering_module.png"
+   }
+  },
+  "ax_rover_19_steering_module_steer_left": {
+   "vid": "ax_rover_19_steering_module_steer_left",
+   "size": "M",
+   "state": "steer_left",
+   "default_state": false,
+   "label": "RS-2 Steering Module",
+   "primary": false,
+   "dims": {},
+   "notes": "Steering module: vertical-axis actuator between a mount plate and the steer plate; pose _steer_left (25 deg).",
+   "bbox_cad_zup": [
+    [
+     -1.5612511283791264e-17,
+     -0.18000000000000002,
+     -0.18000000000000002
+    ],
+    [
+     0.41012275773325174,
+     0.22319362434789344,
+     0.18000000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.41,
+    0.36,
+    0.403
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.3467,
+      0.0,
+      -0.0824
+     ],
+     "direction": [
+      0.9063,
+      0.0,
+      -0.4226
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "steer_plate"
+   ],
+   "default_of": "ax_rover_19_steering_module",
+   "files": {
+    "step": "step/ax_rover_19_steering_module_steer_left.step",
+    "glb": "glb/ax_rover_19_steering_module_steer_left.glb",
+    "preview": "renders/ax_rover_19_steering_module_steer_left.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-19",
+ "key": "ax_rover_19",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Steering actuator module (poses)"
+}

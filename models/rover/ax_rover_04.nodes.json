@@ -1,0 +1,403 @@
+{
+ "id": "ax_rover_04",
+ "name": "RH-RC Rear Hub: Cabin",
+ "category": "rover",
+ "short_name": "rear_cabin",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_rover_04_rear_cabin_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    -0.074,
+    1.37
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.074,
+    1.31
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    -0.074,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.284,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -0.054,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.0,
+    0.696,
+    0.14
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_04_rear_cabin_m": {
+   "vid": "ax_rover_04_rear_cabin_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-RC Rear Hub: Cabin",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "height": 2.5,
+    "length": 2.5
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -1.43,
+     -1.2839999999999998
+    ],
+    [
+     1.2500001,
+     1.25,
+     1.2839999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.568,
+    2.68
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.074,
+      1.37
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.074,
+      1.31
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.074,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.284,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.054,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      0.696,
+      0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_04_rear_cabin_m.step",
+    "glb": "glb/ax_rover_04_rear_cabin_m.glb",
+    "preview": "renders/ax_rover_04_rear_cabin_m.png"
+   }
+  },
+  "ax_rover_04_rear_cabin_l": {
+   "vid": "ax_rover_04_rear_cabin_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-RC Rear Hub: Cabin",
+   "primary": false,
+   "dims": {
+    "width": 2.5,
+    "height": 2.5,
+    "length": 3.75
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.2500001,
+     -2.055,
+     -1.2839999999999998
+    ],
+    [
+     1.2500001,
+     1.875,
+     1.2839999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.568,
+    3.93
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.074,
+      1.995
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.074,
+      1.935
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.074,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.284,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.054,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      0.696,
+      0.14
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_04_rear_cabin_l.step",
+    "glb": "glb/ax_rover_04_rear_cabin_l.glb",
+    "preview": "renders/ax_rover_04_rear_cabin_l.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-04",
+ "key": "ax_rover_04",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "full",
+ "summary": "Rear cabin hub with 2 bunks, hygiene, galley"
+}

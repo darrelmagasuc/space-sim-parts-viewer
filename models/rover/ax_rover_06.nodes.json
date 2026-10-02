@@ -1,0 +1,518 @@
+{
+ "id": "ax_rover_06",
+ "name": "RH-RT Rear Hub: Temporary Station",
+ "category": "rover",
+ "short_name": "temp_station",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_rover_06_temp_station",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    -0.07,
+    1.995
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.07,
+    1.935
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    -0.07,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.28,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -0.05,
+    0.5
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.0,
+    0.7,
+    0.64
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    -0.05,
+    -0.8
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.0,
+    0.7,
+    -0.66
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_06_temp_station": {
+   "vid": "ax_rover_06_temp_station",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "RH-RT Rear Hub: Temporary Station",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 3.75
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.5199999999999998,
+     -2.055,
+     -1.28
+    ],
+    [
+     1.5199999999999998,
+     1.875,
+     1.28
+    ]
+   ],
+   "bbox_godot_size": [
+    3.04,
+    2.56,
+    3.93
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.07,
+      1.995
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.07,
+      1.935
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.07,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.28,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.05,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      0.7,
+      0.64
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -0.05,
+      -0.8
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      0.7,
+      -0.66
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "panel_awning_radiator",
+    "leg_1",
+    "leg_2",
+    "leg_3",
+    "leg_4"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_06_temp_station.step",
+    "glb": "glb/ax_rover_06_temp_station.glb",
+    "preview": "renders/ax_rover_06_temp_station.png"
+   }
+  },
+  "ax_rover_06_temp_station_deployed": {
+   "vid": "ax_rover_06_temp_station_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "RH-RT Rear Hub: Temporary Station",
+   "primary": false,
+   "dims": {
+    "width": 2.5,
+    "length": 3.75
+   },
+   "notes": "",
+   "bbox_cad_zup": [
+    [
+     -1.5199999999999998,
+     -2.055,
+     -2.18
+    ],
+    [
+     2.876622946707793,
+     1.875,
+     1.3586151912882183
+    ]
+   ],
+   "bbox_godot_size": [
+    4.397,
+    3.539,
+    3.93
+   ],
+   "nodes": [
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.07,
+      1.995
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.07,
+      1.935
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.07,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.28,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.05,
+      0.5
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.0,
+      0.7,
+      0.64
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      -0.05,
+      -0.8
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.0,
+      0.7,
+      -0.66
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1",
+    "panel_awning_radiator",
+    "leg_1",
+    "leg_2",
+    "leg_3",
+    "leg_4"
+   ],
+   "default_of": "ax_rover_06_temp_station",
+   "files": {
+    "step": "step/ax_rover_06_temp_station_deployed.step",
+    "glb": "glb/ax_rover_06_temp_station_deployed.glb",
+    "preview": "renders/ax_rover_06_temp_station_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-06",
+ "key": "ax_rover_06",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "full",
+ "summary": "Rear hub that parks as a hab: levelling jacks, deployable awning-radiator, lab bench (stowed + deployed)"
+}

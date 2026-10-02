@@ -1,0 +1,154 @@
+{
+ "id": "ax_rover_12",
+ "name": "RH-DK Hub Docking Ring",
+ "category": "rover",
+ "short_name": "dock_ring",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_rover_12_dock_ring",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.3754
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    0.0,
+    0.275
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_12_dock_ring": {
+   "vid": "ax_rover_12_dock_ring",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-DK Hub Docking Ring",
+   "primary": true,
+   "dims": {
+    "length": 0.88,
+    "hub_ring": 1.3,
+    "station_collar": 1.6
+   },
+   "notes": "Hub docking ring: 1.3 m hub-ring flange (node_front) -> white grooved adapter -> standard 1.6 m AX station collar (node_rear), so hubs dock to station ports.",
+   "bbox_cad_zup": [
+    [
+     -0.82,
+     -0.2750000000000001,
+     -0.82
+    ],
+    [
+     0.82,
+     0.529,
+     0.82
+    ]
+   ],
+   "bbox_godot_size": [
+    1.64,
+    1.64,
+    0.804
+   ],
+   "nodes": [
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.3754
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      0.0,
+      0.275
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_12_dock_ring.step",
+    "glb": "glb/ax_rover_12_dock_ring.glb",
+    "preview": "renders/ax_rover_12_dock_ring.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-12",
+ "key": "ax_rover_12",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "light",
+ "summary": "Rigid AX hub-to-hub docking collar (1.0 m hatch), also mates station ports"
+}

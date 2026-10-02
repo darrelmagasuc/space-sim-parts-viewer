@@ -1,0 +1,242 @@
+{
+ "id": "ax_rover_16",
+ "name": "RC-AJ Chassis Articulation Joint",
+ "category": "rover",
+ "short_name": "articulation_joint",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_16_articulation_joint",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.4
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    0.0,
+    -0.4
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_16_articulation_joint": {
+   "vid": "ax_rover_16_articulation_joint",
+   "size": "M",
+   "state": "straight",
+   "default_state": true,
+   "label": "RC-AJ Chassis Articulation Joint",
+   "primary": true,
+   "dims": {},
+   "notes": "Chassis articulation joint: chamfered front / rear clevis plates on a 2-axis gimbal block, cable boot; poses straight / _yaw_left (25 deg) / _pitch_up (15 deg).",
+   "bbox_cad_zup": [
+    [
+     -0.45,
+     -0.4000000000000001,
+     -0.32000000000000006
+    ],
+    [
+     0.45,
+     0.4,
+     0.3200000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.9,
+    0.64,
+    0.8
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.0,
+      -0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rear_clevis"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_16_articulation_joint.step",
+    "glb": "glb/ax_rover_16_articulation_joint.glb",
+    "preview": "renders/ax_rover_16_articulation_joint.png"
+   }
+  },
+  "ax_rover_16_articulation_joint_yaw_left": {
+   "vid": "ax_rover_16_articulation_joint_yaw_left",
+   "size": "M",
+   "state": "yaw_left",
+   "default_state": false,
+   "label": "RC-AJ Chassis Articulation Joint",
+   "primary": false,
+   "dims": {},
+   "notes": "Chassis articulation joint: chamfered front / rear clevis plates on a 2-axis gimbal block, cable boot; poses straight / _yaw_left (25 deg) / _pitch_up (15 deg).",
+   "bbox_cad_zup": [
+    [
+     -0.5684334436279583,
+     -0.4000000000000001,
+     -0.32000000000000006
+    ],
+    [
+     0.45,
+     0.5442489673631609,
+     0.3200000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.018,
+    0.64,
+    0.944
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      -0.169,
+      0.0,
+      -0.3625
+     ],
+     "direction": [
+      -0.4226,
+      0.0,
+      -0.9063
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rear_clevis"
+   ],
+   "default_of": "ax_rover_16_articulation_joint",
+   "files": {
+    "step": "step/ax_rover_16_articulation_joint_yaw_left.step",
+    "glb": "glb/ax_rover_16_articulation_joint_yaw_left.glb",
+    "preview": "renders/ax_rover_16_articulation_joint_yaw_left.png"
+   }
+  },
+  "ax_rover_16_articulation_joint_pitch_up": {
+   "vid": "ax_rover_16_articulation_joint_pitch_up",
+   "size": "M",
+   "state": "pitch_up",
+   "default_state": false,
+   "label": "RC-AJ Chassis Articulation Joint",
+   "primary": false,
+   "dims": {},
+   "notes": "Chassis articulation joint: chamfered front / rear clevis plates on a 2-axis gimbal block, cable boot; poses straight / _yaw_left (25 deg) / _pitch_up (15 deg).",
+   "bbox_cad_zup": [
+    [
+     -0.45,
+     -0.4000000000000001,
+     -0.30650807396147667
+    ],
+    [
+     0.45,
+     0.44589871088920713,
+     0.384153787492233
+    ]
+   ],
+   "bbox_godot_size": [
+    0.9,
+    0.691,
+    0.846
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.4
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      0.1035,
+      -0.3864
+     ],
+     "direction": [
+      0.0,
+      0.2588,
+      -0.9659
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rear_clevis"
+   ],
+   "default_of": "ax_rover_16_articulation_joint",
+   "files": {
+    "step": "step/ax_rover_16_articulation_joint_pitch_up.step",
+    "glb": "glb/ax_rover_16_articulation_joint_pitch_up.glb",
+    "preview": "renders/ax_rover_16_articulation_joint_pitch_up.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-16",
+ "key": "ax_rover_16",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Pitch/yaw joint between frames (poses)"
+}

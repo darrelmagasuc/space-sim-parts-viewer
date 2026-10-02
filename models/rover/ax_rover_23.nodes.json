@@ -1,0 +1,141 @@
+{
+ "id": "ax_rover_23",
+ "name": "RT-DR Coring Drill",
+ "category": "rover",
+ "short_name": "coring_drill",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_23_coring_drill",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.84,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_23_coring_drill": {
+   "vid": "ax_rover_23_coring_drill",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "RT-DR Coring Drill",
+   "primary": true,
+   "dims": {},
+   "notes": "1 m coring drill on a chamfered mast; _digging pose = head lowered with the core barrel 1 m below the base.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.8400000000000001
+    ],
+    [
+     0.25,
+     0.25,
+     0.8400000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    1.68,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.84,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "drill_head"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_23_coring_drill.step",
+    "glb": "glb/ax_rover_23_coring_drill.glb",
+    "preview": "renders/ax_rover_23_coring_drill.png"
+   }
+  },
+  "ax_rover_23_coring_drill_digging": {
+   "vid": "ax_rover_23_coring_drill_digging",
+   "size": "M",
+   "state": "digging",
+   "default_state": false,
+   "label": "RT-DR Coring Drill",
+   "primary": false,
+   "dims": {},
+   "notes": "1 m coring drill on a chamfered mast; _digging pose = head lowered with the core barrel 1 m below the base.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -1.5900000000000003
+    ],
+    [
+     0.25,
+     0.25,
+     0.8400000000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    2.43,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.84,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "mast",
+    "drill_head"
+   ],
+   "default_of": "ax_rover_23_coring_drill",
+   "files": {
+    "step": "step/ax_rover_23_coring_drill_digging.step",
+    "glb": "glb/ax_rover_23_coring_drill_digging.glb",
+    "preview": "renders/ax_rover_23_coring_drill_digging.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-23",
+ "key": "ax_rover_23",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "1 m coring drill on a mast (stowed / drilling)"
+}

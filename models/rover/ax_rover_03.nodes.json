@@ -1,0 +1,358 @@
+{
+ "id": "ax_rover_03",
+ "name": "RH-FO Front Open Driving Station",
+ "category": "rover",
+ "short_name": "open_station",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_03_open_station",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_crew_1",
+   "position": [
+    -0.55,
+    -0.33,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_crew_2",
+   "position": [
+    0.55,
+    -0.33,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.06,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_front",
+   "position": [
+    0.0,
+    -0.4,
+    1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_rear",
+   "position": [
+    0.0,
+    -0.4,
+    -1.25
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.55,
+    -0.33,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.55,
+    0.42,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.55,
+    -0.33,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.55,
+    0.42,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_03_open_station": {
+   "vid": "ax_rover_03_open_station",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RH-FO Front Open Driving Station",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 2.5,
+    "height": 2.06
+   },
+   "notes": "Open driving station: grey deck, chamfered white roll cage + sunshade radiator, bevelled console, 2 seats with hand controllers (node_crew_N).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.0600000000000003
+    ],
+    [
+     1.25,
+     1.25,
+     1.06
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.12,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_crew_1",
+     "position": [
+      -0.55,
+      -0.33,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_crew_2",
+     "position": [
+      0.55,
+      -0.33,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_front",
+     "position": [
+      0.0,
+      -0.4,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_rear",
+     "position": [
+      0.0,
+      -0.4,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.55,
+      -0.33,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.55,
+      0.42,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.55,
+      -0.33,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.55,
+      0.42,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_03_open_station.step",
+    "glb": "glb/ax_rover_03_open_station.glb",
+    "preview": "renders/ax_rover_03_open_station.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-03",
+ "key": "ax_rover_03",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": "full",
+ "summary": "Unpressurised front hub: 2 open seats, consoles, hand controllers"
+}

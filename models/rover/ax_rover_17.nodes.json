@@ -1,0 +1,207 @@
+{
+ "id": "ax_rover_17",
+ "name": "RW-1X Airless Wheel",
+ "category": "rover",
+ "short_name": "airless_wheel",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_rover_17_airless_wheel_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_17_airless_wheel_s": {
+   "vid": "ax_rover_17_airless_wheel_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1X Airless Wheel",
+   "primary": false,
+   "dims": {
+    "diameter": 0.6,
+    "width": 0.25
+   },
+   "notes": "Airless wheel 0.6 m x 0.25 m: chamfered rims, 12 flexible spokes, recessed chevron tread; mount plate on -X, axle along X.",
+   "bbox_cad_zup": [
+    [
+     -1.734723475976807e-18,
+     -0.3,
+     -0.3
+    ],
+    [
+     0.29000000000000004,
+     0.3,
+     0.3
+    ]
+   ],
+   "bbox_godot_size": [
+    0.29,
+    0.6,
+    0.6
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_rim",
+    "wheel_flex_spokes",
+    "wheel_tread"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_17_airless_wheel_s.step",
+    "glb": "glb/ax_rover_17_airless_wheel_s.glb",
+    "preview": "renders/ax_rover_17_airless_wheel_s.png"
+   }
+  },
+  "ax_rover_17_airless_wheel_m": {
+   "vid": "ax_rover_17_airless_wheel_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1X Airless Wheel",
+   "primary": true,
+   "dims": {
+    "diameter": 0.9,
+    "width": 0.35
+   },
+   "notes": "Airless wheel 0.9 m x 0.35 m: chamfered rims, 12 flexible spokes, recessed chevron tread; mount plate on -X, axle along X.",
+   "bbox_cad_zup": [
+    [
+     -2.6020852139652106e-18,
+     -0.45,
+     -0.45
+    ],
+    [
+     0.39,
+     0.45,
+     0.45
+    ]
+   ],
+   "bbox_godot_size": [
+    0.39,
+    0.9,
+    0.9
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_rim",
+    "wheel_flex_spokes",
+    "wheel_tread"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_17_airless_wheel_m.step",
+    "glb": "glb/ax_rover_17_airless_wheel_m.glb",
+    "preview": "renders/ax_rover_17_airless_wheel_m.png"
+   }
+  },
+  "ax_rover_17_airless_wheel_l": {
+   "vid": "ax_rover_17_airless_wheel_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "RW-1X Airless Wheel",
+   "primary": false,
+   "dims": {
+    "diameter": 1.3,
+    "width": 0.45
+   },
+   "notes": "Airless wheel 1.3 m x 0.45 m: chamfered rims, 12 flexible spokes, recessed chevron tread; mount plate on -X, axle along X.",
+   "bbox_cad_zup": [
+    [
+     -1.9081958235744878e-17,
+     -0.65,
+     -0.65
+    ],
+    [
+     0.4900000000000001,
+     0.65,
+     0.65
+    ]
+   ],
+   "bbox_godot_size": [
+    0.49,
+    1.3,
+    1.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "wheel_rim",
+    "wheel_flex_spokes",
+    "wheel_tread"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_17_airless_wheel_l.step",
+    "glb": "glb/ax_rover_17_airless_wheel_l.glb",
+    "preview": "renders/ax_rover_17_airless_wheel_l.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-17",
+ "key": "ax_rover_17",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Chamfered-rim airless wheel with recessed tread pattern"
+}

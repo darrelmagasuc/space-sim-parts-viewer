@@ -1,0 +1,242 @@
+{
+ "id": "ax_rover_18",
+ "name": "RS-1 Active Suspension Module",
+ "category": "rover",
+ "short_name": "active_suspension",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_rover_18_active_suspension",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.0146,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_outboard",
+   "position": [
+    0.57,
+    -0.0146,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_rover_18_active_suspension": {
+   "vid": "ax_rover_18_active_suspension",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RS-1 Active Suspension Module",
+   "primary": true,
+   "dims": {},
+   "notes": "Active double-wishbone suspension: chamfered square-section wishbones, damper/actuator, upright; poses _susp_up / _susp_down (+/-0.15 m).",
+   "bbox_cad_zup": [
+    [
+     -8.673617379884035e-18,
+     -0.25,
+     -0.23963441130340044
+    ],
+    [
+     0.5700000000000001,
+     0.25,
+     0.23963441130340046
+    ]
+   ],
+   "bbox_godot_size": [
+    0.57,
+    0.479,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0146,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.57,
+      -0.0146,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_wishbones"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_rover_18_active_suspension.step",
+    "glb": "glb/ax_rover_18_active_suspension.glb",
+    "preview": "renders/ax_rover_18_active_suspension.png"
+   }
+  },
+  "ax_rover_18_active_suspension_susp_up": {
+   "vid": "ax_rover_18_active_suspension_susp_up",
+   "size": "M",
+   "state": "susp_up",
+   "default_state": false,
+   "label": "RS-1 Active Suspension Module",
+   "primary": false,
+   "dims": {},
+   "notes": "Active double-wishbone suspension: chamfered square-section wishbones, damper/actuator, upright; poses _susp_up / _susp_down (+/-0.15 m).",
+   "bbox_cad_zup": [
+    [
+     -8.673617379884035e-18,
+     -0.25,
+     -0.23963441130340044
+    ],
+    [
+     0.5700000000000001,
+     0.25,
+     0.34536558869659967
+    ]
+   ],
+   "bbox_godot_size": [
+    0.57,
+    0.585,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0146,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.57,
+      0.1354,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_wishbones"
+   ],
+   "default_of": "ax_rover_18_active_suspension",
+   "files": {
+    "step": "step/ax_rover_18_active_suspension_susp_up.step",
+    "glb": "glb/ax_rover_18_active_suspension_susp_up.glb",
+    "preview": "renders/ax_rover_18_active_suspension_susp_up.png"
+   }
+  },
+  "ax_rover_18_active_suspension_susp_down": {
+   "vid": "ax_rover_18_active_suspension_susp_down",
+   "size": "M",
+   "state": "susp_down",
+   "default_state": false,
+   "label": "RS-1 Active Suspension Module",
+   "primary": false,
+   "dims": {},
+   "notes": "Active double-wishbone suspension: chamfered square-section wishbones, damper/actuator, upright; poses _susp_up / _susp_down (+/-0.15 m).",
+   "bbox_cad_zup": [
+    [
+     -8.673617379884035e-18,
+     -0.25,
+     -0.3746344113034004
+    ],
+    [
+     0.5700000000000001,
+     0.25,
+     0.23507414639490842
+    ]
+   ],
+   "bbox_godot_size": [
+    0.57,
+    0.61,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0146,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_outboard",
+     "position": [
+      0.57,
+      -0.1646,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_wishbones"
+   ],
+   "default_of": "ax_rover_18_active_suspension",
+   "files": {
+    "step": "step/ax_rover_18_active_suspension_susp_down.step",
+    "glb": "glb/ax_rover_18_active_suspension_susp_down.glb",
+    "preview": "renders/ax_rover_18_active_suspension_susp_down.png"
+   }
+  }
+ },
+ "display_id": "AX-rover-18",
+ "key": "ax_rover_18",
+ "line": "AX",
+ "ax_category": "rover",
+ "aliases": [],
+ "batch": "B8",
+ "slot": null,
+ "interior": null,
+ "summary": "Double-wishbone active suspension (poses)"
+}
