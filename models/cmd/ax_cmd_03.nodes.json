@@ -255,8 +255,8 @@
    "name": "node_hatch_1",
    "position": [
     0.0,
-    -0.6519,
-    1.9473
+    -0.6504,
+    1.9508
    ],
    "direction": [
     0.0,
@@ -569,8 +569,8 @@
      "name": "node_hatch_1",
      "position": [
       0.0,
-      -0.6519,
-      1.9473
+      -0.6504,
+      1.9508
      ],
      "direction": [
       0.0,
@@ -612,14 +612,5 @@
     "preview": "renders/ax_cmd_03_ares_heavy_capsule.png"
    }
   }
- },
- "display_id": "AX-cmd-03",
- "key": "ax_cmd_03",
- "line": "AX",
- "ax_category": "cmd",
- "aliases": [],
- "code": "CM-12",
- "interior": "full",
- "batch": "B1",
- "summary": "6-7 crew deep-space capsule, 2 decks of couches, aft docking tunnel"
+ }
 }

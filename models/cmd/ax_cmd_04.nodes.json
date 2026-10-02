@@ -184,7 +184,7 @@
    "position": [
     0.0,
     -0.405,
-    1.098
+    1.1
    ],
    "direction": [
     0.0,
@@ -425,7 +425,7 @@
      "position": [
       0.0,
       -0.405,
-      1.098
+      1.1
      ],
      "direction": [
       0.0,
@@ -467,14 +467,5 @@
     "preview": "renders/ax_cmd_04_mav_ascent_cabin.png"
    }
   }
- },
- "display_id": "AX-cmd-04",
- "key": "ax_cmd_04",
- "line": "AX",
- "ax_category": "cmd",
- "aliases": [],
- "code": "AC-4",
- "interior": "full",
- "batch": "B1",
- "summary": "Lightweight 4-seat ascent cabin, standing/strapped crew, minimal windows, sits on an ascent stage"
+ }
 }
