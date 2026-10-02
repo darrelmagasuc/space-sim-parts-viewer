@@ -1,0 +1,119 @@
+{
+ "id": "ax_prop_03",
+ "name": "LE-14 'Spike-L' Aerospike Booster",
+ "category": "prop",
+ "short_name": "aerospike_booster",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_prop_03_aerospike_booster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_03_aerospike_booster": {
+   "vid": "ax_prop_03_aerospike_booster",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-14 'Spike-L' Aerospike Booster",
+   "primary": true,
+   "dims": {
+    "chambers": 20,
+    "thrust_kN": 2200,
+    "mass_t": 4.6,
+    "diameter_m": 3.75
+   },
+   "notes": "Aerospike booster: 20 chambers on a ring firing onto a truncated plug (recessed chamfered circumferential panel joints, chamfered base), white aeroshell with chamfered top shoulder, recessed panel lines and bevelled access hatches, chamfered steel base skirt with vent pockets.",
+   "bbox_cad_zup": [
+    [
+     -1.885,
+     -1.8850001,
+     -2.2
+    ],
+    [
+     1.885,
+     1.8850001,
+     2.2
+    ]
+   ],
+   "bbox_godot_size": [
+    3.77,
+    4.4,
+    3.77
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_03_aerospike_booster.step",
+    "glb": "glb/ax_prop_03_aerospike_booster.glb",
+    "preview": "renders/ax_prop_03_aerospike_booster.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-03",
+ "key": "ax_prop_03",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [
+  "prop29"
+ ],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "20-chamber annular aerospike with truncated plug, altitude compensating"
+}

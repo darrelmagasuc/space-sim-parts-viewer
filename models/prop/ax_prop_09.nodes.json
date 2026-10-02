@@ -1,0 +1,119 @@
+{
+ "id": "ax_prop_09",
+ "name": "LE-15 'Descent' Deep-Throttle Lander Engine",
+ "category": "prop",
+ "short_name": "descent_engine",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_prop_09_descent_engine",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.0662,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.0662,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_09_descent_engine": {
+   "vid": "ax_prop_09_descent_engine",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-15 'Descent' Deep-Throttle Lander Engine",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 180,
+    "throttle": "10-100 %",
+    "isp_vac_s": 345,
+    "mass_t": 0.55,
+    "exit_d_m": 1.5,
+    "mount_d_m": 2.5
+   },
+   "notes": "Deep-throttle lander engine: short wide regen bell with chamfered lip, expander-cycle pumps, gimbal, white M mount ring (pintle injector under the dome).",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.0662000000000003
+    ],
+    [
+     1.25,
+     1.25,
+     1.0662000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.132,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.0662,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.0662,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_09_descent_engine.step",
+    "glb": "glb/ax_prop_09_descent_engine.glb",
+    "preview": "renders/ax_prop_09_descent_engine.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-09",
+ "key": "ax_prop_09",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Single hydrolox/methalox lander engine, 10-100% throttle, short bell"
+}

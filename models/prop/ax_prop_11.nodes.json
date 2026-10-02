@@ -1,0 +1,119 @@
+{
+ "id": "ax_prop_11",
+ "name": "HB-1 Hydrolox Booster Engine",
+ "category": "prop",
+ "short_name": "hydrolox_booster",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_prop_11_hydrolox_booster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.1392,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.1392,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_11_hydrolox_booster": {
+   "vid": "ax_prop_11_hydrolox_booster",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "HB-1 Hydrolox Booster Engine",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 2200,
+    "isp_sl_s": 366,
+    "isp_vac_s": 452,
+    "mass_t": 3.5,
+    "exit_d_m": 2.3,
+    "mount_d_m": 3.75
+   },
+   "notes": "Staged-combustion hydrolox main engine: large regen bell with chamfered lip and coolant manifold, 2 turbopumps + preburners, gimbal, L mount ring.",
+   "bbox_cad_zup": [
+    [
+     -1.875,
+     -1.875,
+     -2.1392
+    ],
+    [
+     1.875,
+     1.875,
+     2.1392
+    ]
+   ],
+   "bbox_godot_size": [
+    3.75,
+    4.278,
+    3.75
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.1392,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.1392,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_11_hydrolox_booster.step",
+    "glb": "glb/ax_prop_11_hydrolox_booster.glb",
+    "preview": "renders/ax_prop_11_hydrolox_booster.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-11",
+ "key": "ax_prop_11",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Staged-combustion hydrolox main engine, ~2,200 kN"
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ax_prop_19",
+ "name": "VR-1 Vernier / Roll-Control Engine",
+ "category": "prop",
+ "short_name": "vernier",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_prop_19_vernier",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2853,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2853,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_19_vernier": {
+   "vid": "ax_prop_19_vernier",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "VR-1 Vernier / Roll-Control Engine",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 4.5,
+    "gimbal_deg": 45,
+    "mass_t": 0.02,
+    "mount_d_m": 0.4
+   },
+   "notes": "Small gimballed methalox vernier: regen chamber + bell, pressure-fed valve block, gimbal yoke, chamfered mount ring.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -0.2853
+    ],
+    [
+     0.2,
+     0.2,
+     0.2853
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    0.571,
+    0.4
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2853,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2853,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_19_vernier.step",
+    "glb": "glb/ax_prop_19_vernier.glb",
+    "preview": "renders/ax_prop_19_vernier.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-19",
+ "key": "ax_prop_19",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Small gimballed methalox vernier for roll control and fine landing"
+}

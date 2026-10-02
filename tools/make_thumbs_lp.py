@@ -2,10 +2,20 @@
 import json, glob, os, subprocess, http.server, threading, functools
 from PIL import Image
 LP = "/workspace/space-sim/parts_lowpoly"; OUT = "/workspace/space-sim/viewer/site/thumbs/lp"; PORT = 8783; CELL = 320; COLS = 6
+import sys
+AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
+SKIP = {"interiors", "np_lib", "modern_set", "interiors_modern", "ax_kit"}
+ALL = "--all" in sys.argv          # default: only (re)render thumbs that are missing or older than their low-poly GLB
 items = []
 for f in sorted(glob.glob("/workspace/space-sim/parts/*/*[0-9][0-9].nodes.json")):
-    js = json.load(open(f)); items += [(v, f"/space-sim/parts_lowpoly/{js['id']}/{v}.glb") for v in js["variants"]]
-items += [(a, f"/space-sim/parts_lowpoly/assemblies/{a}.glb") for a in ("gravity_ring_assembly", "counter_rotating_assembly")]
+    d = f.split(os.sep)[-2]
+    if d in SKIP or (d.startswith("ax_") and d not in AX_FOLDERS): continue
+    js = json.load(open(f))
+    for v in js["variants"]:
+        src = f"/workspace/space-sim/parts_lowpoly/{js['id']}/{v}.glb"; dst = f"{OUT}/{v}.jpg"
+        if not os.path.exists(src): continue
+        if ALL or not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src): items.append((v, "/space-sim/parts_lowpoly/" + src.split("/parts_lowpoly/")[1]))
+if ALL: items += [(a, f"/space-sim/parts_lowpoly/assemblies/{a}.glb") for a in ("gravity_ring_assembly", "counter_rotating_assembly")]
 h = functools.partial(http.server.SimpleHTTPRequestHandler, directory="/workspace")
 http.server.ThreadingHTTPServer.allow_reuse_address = True
 srv = http.server.ThreadingHTTPServer(("127.0.0.1", PORT), lambda *a: h(*a)); srv.RequestHandlerClass.log_message = lambda *a: None

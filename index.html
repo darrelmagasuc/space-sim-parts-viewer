@@ -7,7 +7,7 @@
 <nav class="cats" id="cats"></nav><main id="main"><p class="muted">Loading…</p></main>
 <script>
 (async()=>{
- let lod=new URLSearchParams(location.search).get('lod')==='cad'?'cad':'lp';
+ let lod=new URLSearchParams(location.search).get('lod')==='cad'?'cad':'lp'; const q0=new URLSearchParams(location.search).get('q')||'';
  const m=await (await fetch('manifest.json')).json(), main=document.getElementById('main'), nav=document.getElementById('cats');
  if(m.zip_lp){const a=document.getElementById('zlp');a.href=m.zip_lp;a.title=`${m.zip_lp} (${(m.zip_lp_bytes/1e6).toFixed(1)} MB)`;}
  if(m.zip){const a=document.getElementById('zcad');a.href=m.zip;a.title=`${m.zip} (${(m.zip_bytes/1e6).toFixed(1)} MB)`;}
@@ -17,14 +17,14 @@
  let h=`<section class="banner" id="vehicle"><h2>Vehicle Creation <small>— build a craft from a prompt</small></h2><p>Assemble these parts into a rocket, rover, or spaceplane. A prompt (your own API key, kept in this browser) returns a plan; the page snaps the GLBs together and writes a flight manual. The built-in examples need no key. <a href="vehicle.html">Open Vehicle Creation</a>.</p></section>`;
  const card=p=>{const pv=p.variants.find(v=>v.vid===p.primary)||p.variants[0];
    const sizes=[...new Set(p.variants.map(v=>v.size))].join(' / '), poses=[...new Set(p.variants.map(v=>v.state))].filter(s=>s!=='flight');
-   const key=(p.id+' '+p.name+' '+(p.group||'')+' '+(p.new?'new ':'')+p.variants.map(v=>v.vid+' '+v.size+' '+v.state).join(' ')).toLowerCase();
+   const key=(p.id+' '+(p.display_id||'')+' '+(p.aliases||[]).join(' ')+' '+p.name+' '+(p.group||'')+' '+(p.new?'new ':'')+p.variants.map(v=>v.vid+' '+v.size+' '+v.state).join(' ')).toLowerCase();
    return `<a class="card" data-k="${esc(key)}" data-v="${esc(pv.vid)}" data-lp="${pv.thumb_lp||''}" data-cad="${pv.thumb}" href="view.html?part=${encodeURIComponent(pv.vid)}${lod==='cad'?'&lod=cad':''}"${p.summary?` title="${esc(p.summary)}"`:''}><img loading="lazy" src="${lod==='cad'||!pv.thumb_lp?pv.thumb:pv.thumb_lp}" alt="${esc(p.name)}" width="320" height="320">
    <div class="t"><b>${esc(p.id)} · ${esc(p.name)}${p.new?' <em class="new">new</em>':''}</b><span>${esc(sizes)} · ${p.variants.length} variant${p.variants.length>1?'s':''}${poses.length?' · '+esc(poses.join(', ')):''}</span></div></a>`;};
  for(const c of m.categories){h+=`<section data-cat="${c.key}"><h2 id="${c.key}">${esc(c.key)} <small>— ${esc(c.title)}</small></h2>`;
   const groups=[...new Set(c.parts.map(p=>p.group).filter(Boolean))];
   h+=`<div class="grid">${c.parts.filter(p=>!p.group).map(card).join('')}</div>`;
   for(const g of groups){const ps=c.parts.filter(p=>p.group===g);
-   h+=`<h3 class="grp" id="${c.key}-${g.toLowerCase().replace(/\W+/g,'-')}">${esc(g)} <small>— ${ps.length} parts (${esc(ps[0].id)}–${esc(ps[ps.length-1].id)}), snap together on a 0.5 m node grid</small></h3><div class="grid">${ps.map(card).join('')}</div>`;}
+   h+=`<h3 class="grp" id="${c.key}-${g.toLowerCase().replace(/\W+/g,'-')}">${esc(g)} <small>— ${ps.length} parts (${esc(ps[0].display_id||ps[0].id)}–${esc(ps[ps.length-1].display_id||ps[ps.length-1].id)})${g==='AX line'?', AX (Ares-line) house style: chamfered facets, recessed grooves, bevelled pockets':', snap together on a 0.5 m node grid'}</small></h3><div class="grid">${ps.map(card).join('')}</div>`;}
   h+='</section>';}
  h+=`<p class="foot">Generated ${esc(m.generated)}. Click a part to orbit / zoom it, toggle attach nodes and switch sizes or poses. Every variant has its own link (<code>view.html?part=&lt;variant&gt;</code>). Models open as the game-ready low-poly mesh (≤5,000 triangles, shared PBR materials); switch to the original CAD blockout with the toggle or <code>&amp;lod=cad</code>.</p>`;
  main.innerHTML=h;
@@ -36,5 +36,6 @@
  const q=document.getElementById('q');q.oninput=()=>{const t=q.value.trim().toLowerCase();
   document.querySelectorAll('.card').forEach(a=>a.style.display=!t||a.dataset.k.includes(t)?'':'none');
   document.querySelectorAll('section[data-cat]').forEach(s=>s.style.display=[...s.querySelectorAll('.card')].some(a=>a.style.display!=='none')?'':'none');};
+ if(q0){q.value=q0;q.oninput();}
 })().catch(e=>{document.getElementById('main').innerHTML='<p>Could not load manifest.json: '+e+'</p>'});
 </script></body></html>

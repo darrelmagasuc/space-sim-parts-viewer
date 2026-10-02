@@ -1,0 +1,121 @@
+{
+ "id": "ax_prop_12",
+ "name": "LS-1X Linear Aerospike",
+ "category": "prop",
+ "short_name": "linear_aerospike",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_prop_12_linear_aerospike",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.085,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.085,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_12_linear_aerospike": {
+   "vid": "ax_prop_12_linear_aerospike",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LS-1X Linear Aerospike",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 1000,
+    "isp_sl_s": 339,
+    "isp_vac_s": 428,
+    "mass_t": 2.1,
+    "width_m": 2.4,
+    "depth_m": 1.3
+   },
+   "notes": "Linear aerospike block: 2 rows of 10 thrust cells firing onto a truncated steel ramp (chamfered V panel joints), chamfered white housing with a recessed groove and bevelled access strips, dark side fences, M mount ring.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -1.085
+    ],
+    [
+     1.25,
+     1.25,
+     1.085
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    2.17,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.085,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.085,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "ramp"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_12_linear_aerospike.step",
+    "glb": "glb/ax_prop_12_linear_aerospike.glb",
+    "preview": "renders/ax_prop_12_linear_aerospike.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-12",
+ "key": "ax_prop_12",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Linear aerospike engine block for Mk3 spaceplanes and SSTO testbeds"
+}

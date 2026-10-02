@@ -1,0 +1,189 @@
+{
+ "id": "ax_prop_16",
+ "name": "HT-1X Hall Thruster Cluster",
+ "category": "prop",
+ "short_name": "hall_cluster",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_prop_16_hall_cluster_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3224,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2852,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_16_hall_cluster_xs": {
+   "vid": "ax_prop_16_hall_cluster_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "HT-1X Hall Thruster Cluster",
+   "primary": false,
+   "dims": {
+    "thrusters": 4,
+    "power_kW": 12,
+    "thrust_N": 0.6,
+    "isp_s": 2600,
+    "mass_t": 0.1,
+    "mount_d_m": 0.625
+   },
+   "notes": "Hall-effect thruster cluster: 4 annular thrusters (dark discharge channels, steel pole pieces) under an 8-facet chamfered gimbal plate; central cathode; electric propulsion (needs a xenon/krypton tank + power via the stack).",
+   "bbox_cad_zup": [
+    [
+     -0.32314168209064215,
+     -0.32314168209064215,
+     -0.16119999999999998
+    ],
+    [
+     0.32314168209064215,
+     0.3231416820906421,
+     0.16119999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    0.646,
+    0.322,
+    0.646
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1612,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1426,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_16_hall_cluster_xs.step",
+    "glb": "glb/ax_prop_16_hall_cluster_xs.glb",
+    "preview": "renders/ax_prop_16_hall_cluster_xs.png"
+   }
+  },
+  "ax_prop_16_hall_cluster_s": {
+   "vid": "ax_prop_16_hall_cluster_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "HT-1X Hall Thruster Cluster",
+   "primary": true,
+   "dims": {
+    "thrusters": 4,
+    "power_kW": 50,
+    "thrust_N": 2.4,
+    "isp_s": 2800,
+    "mass_t": 0.35,
+    "mount_d_m": 1.25
+   },
+   "notes": "Hall-effect thruster cluster: 4 annular thrusters (dark discharge channels, steel pole pieces) under an 8-facet chamfered gimbal plate; central cathode; electric propulsion (needs a xenon/krypton tank + power via the stack).",
+   "bbox_cad_zup": [
+    [
+     -0.6462832641812842,
+     -0.6462832641812842,
+     -0.32239999999999996
+    ],
+    [
+     0.6462832641812842,
+     0.6462832641812841,
+     0.32239999999999996
+    ]
+   ],
+   "bbox_godot_size": [
+    1.293,
+    0.645,
+    1.293
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3224,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2852,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_16_hall_cluster_s.step",
+    "glb": "glb/ax_prop_16_hall_cluster_s.glb",
+    "preview": "renders/ax_prop_16_hall_cluster_s.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-16",
+ "key": "ax_prop_16",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Four Hall-effect thrusters on a gimbal plate, needs xenon/krypton tank + power"
+}

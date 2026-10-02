@@ -1,0 +1,118 @@
+{
+ "id": "ax_prop_06",
+ "name": "LE-21 'Kite' Small Vacuum Methalox",
+ "category": "prop",
+ "short_name": "kite_vac",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_prop_06_kite_vac",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.8956,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.8956,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_06_kite_vac": {
+   "vid": "ax_prop_06_kite_vac",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-21 'Kite' Small Vacuum Methalox",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 100,
+    "isp_vac_s": 365,
+    "mass_t": 0.16,
+    "exit_d_m": 1.1,
+    "mount_d_m": 1.25
+   },
+   "notes": "Small vacuum methalox (gas generator): regen chamber + bell, dark bronze extension with chamfered hoops, white S mount ring.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.8956
+    ],
+    [
+     0.625,
+     0.625,
+     0.8956
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.791,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.8956,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.8956,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_06_kite_vac.step",
+    "glb": "glb/ax_prop_06_kite_vac.glb",
+    "preview": "renders/ax_prop_06_kite_vac.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-06",
+ "key": "ax_prop_06",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Upper-stage methalox vacuum engine, ~100 kN, many restarts"
+}

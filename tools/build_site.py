@@ -21,15 +21,32 @@ CATS = [("cmd", "Command modules & probes", "cmd_prop"), ("prop", "Propulsion", 
         ("aero", "Airframe: fuselages, cargo bays, fins & airbrakes", "aero"), ("struct", "Structure: girders, trusses, struts, ladders & pylons", "struct_robo"),
         ("robo", "Robotics: hinges, rotors, pistons & booms", "struct_robo"), ("sci", "Science instruments", "sci_power"),
         ("assemblies", "Reference assemblies", "station_power")]
-SKIP = {"interiors", "np_lib"}                      # IVA interiors and the shared node library are not gallery parts
-def part_files(key):                                # <key>NN.nodes.json from every part folder (new parts live in rover_kit/, aero/, ...)
-    return sorted((f for f in glob.glob(os.path.join(PARTS, "*", f"{key}[0-9][0-9].nodes.json")) if f.split(os.sep)[-2] not in SKIP), key=os.path.basename)
+SKIP = {"interiors", "np_lib", "modern_set", "interiors_modern", "ax_kit"}   # IVA interiors, shared libraries and the (re-coded) modern set are not gallery parts
+# AX (Ares-line) source folders published in the gallery (parts/<folder>/ax_<axcat>_NN.nodes.json; category from the nodes.json).
+# B1 adds "ax_cmd" here when its parts are ready (thumbs + low-poly present); AX parts missing a thumb / low-poly GLB are skipped with a warning.
+AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]
+AX_FILES = {}
+for _d in AX_FOLDERS:
+    for _f in sorted(glob.glob(os.path.join(PARTS, _d, "ax_*_[0-9][0-9].nodes.json"))):
+        AX_FILES.setdefault(json.load(open(_f))["category"], []).append(_f)
+def part_files(key):                                # <key>NN.nodes.json from every part folder (new parts live in rover_kit/, aero/, ...), then AX parts of that category
+    base = sorted((f for f in glob.glob(os.path.join(PARTS, "*", f"{key}[0-9][0-9].nodes.json")) if f.split(os.sep)[-2] not in SKIP and not f.split(os.sep)[-2].startswith("ax_")), key=os.path.basename)
+    return base + sorted(AX_FILES.get(key, []), key=os.path.basename)
+def ax_ready(f, js):
+    """AX part is publishable when every variant has a CAD thumb, a low-poly GLB + thumb and low-poly stats."""
+    miss = [v for v in js["variants"] if not (os.path.exists(os.path.join(SITE, "thumbs", v + ".jpg")) and os.path.exists(os.path.join(SITE, "thumbs", "lp", v + ".jpg"))
+                                              and os.path.exists(os.path.join(LP, js["id"], v + ".glb")))]
+    if miss: print("WARN skipping AX part", js["id"], "missing thumb/low-poly for", miss[:3])
+    return not miss
 SPEC = {p["id"]: p for p in json.load(open("/workspace/space-sim/new_parts_spec.json"))["parts"]}   # 80 parts added 2026-09-30
 GROUPS = {"rover kit": "Rover kit"}                 # sub-groupings shown inside a category
 ASSEMBLY_NAMES = {"gravity_ring_assembly": "Gravity ring assembly (hub + 6 spokes + 12 segments + despun core)",
                   "counter_rotating_assembly": "Counter-rotating gravity ring assembly (2 rings)"}
 MODELS = os.path.join(SITE, "models")
-if os.path.isdir(MODELS): shutil.rmtree(MODELS)
+KEEP = {"interiors"}                                # models/interiors/ is written by handoff/tools/import_interiors.py, not by this script
+if os.path.isdir(MODELS):
+    for _e in os.listdir(MODELS):
+        if _e not in KEEP: shutil.rmtree(os.path.join(MODELS, _e))
 cats_out = []; n_glb = 0; total = 0
 for key, title, folder in CATS:
     os.makedirs(os.path.join(MODELS, key), exist_ok=True); parts = []
@@ -47,6 +64,7 @@ for key, title, folder in CATS:
     else:
         for f in part_files(key):
             js = json.load(open(f)); pid = js["id"]
+            if js.get("line") == "AX" and not ax_ready(f, js): continue
             shutil.copy2(f, os.path.join(MODELS, key, os.path.basename(f)))
             vs = []
             for vid, v in js["variants"].items():
@@ -57,8 +75,12 @@ for key, title, folder in CATS:
                                primary=vid == js["primary"], dims=v.get("dims", {}), bbox=v.get("bbox_godot_size"),
                                nodes=v.get("nodes"), glb=f"models/{key}/{vid}.glb", thumb=f"thumbs/{vid}.jpg", bytes=b, **lp_info(pid, vid, key)))
             sp = SPEC.get(pid, {})
+            if js.get("line") == "AX":
+                sp = dict(group="AX line", summary=f"{js.get('display_id')} (AX line{', alias ' + '/'.join(js['aliases']) if js.get('aliases') else ''}): {js.get('summary') or ''}")
+                GROUPS.setdefault("AX line", "AX line")
             parts.append(dict(id=pid, name=js["name"], primary=js["primary"], json=f"models/{key}/{os.path.basename(f)}", variants=vs,
-                              group=GROUPS.get(sp.get("group")), new=bool(sp), summary=sp.get("summary")))
+                              group=GROUPS.get(sp.get("group")), new=bool(sp), summary=sp.get("summary"),
+                              **({"line": "AX", "display_id": js.get("display_id"), "ax_category": js.get("ax_category"), "aliases": js.get("aliases") or []} if js.get("line") == "AX" else {})))
     cats_out.append(dict(key=key, title=title, parts=parts))
 for old in glob.glob(os.path.join(SITE, "space_sim_*glb_v*.zip")): os.remove(old)
 shutil.copy2(ZIP, os.path.join(SITE, os.path.basename(ZIP))); shutil.copy2(ZIP_LP, os.path.join(SITE, os.path.basename(ZIP_LP)))

@@ -1,0 +1,91 @@
+{
+ "id": "ax_prop_18",
+ "name": "AP-1 Abort Engine Pod",
+ "category": "prop",
+ "short_name": "abort_pod",
+ "sizes": [
+  "radial"
+ ],
+ "primary": "ax_prop_18_abort_pod",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    -0.2,
+    0.0,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_18_abort_pod": {
+   "vid": "ax_prop_18_abort_pod",
+   "size": "radial",
+   "state": "flight",
+   "default_state": true,
+   "label": "AP-1 Abort Engine Pod",
+   "primary": true,
+   "dims": {
+    "engines": 2,
+    "thrust_kN_each": 71,
+    "mass_t": 0.18,
+    "length_m": 1.4
+   },
+   "notes": "Surface abort-engine pod: chamfered white fairing, recessed groove with an orange stripe, bevelled bay with dark liner and 2 canted abort nozzles; radial (node_attach on -X).",
+   "bbox_cad_zup": [
+    [
+     -0.20000005,
+     -0.31000000000000005,
+     -0.7
+    ],
+    [
+     0.20000005000000004,
+     0.31000000000000005,
+     0.7
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    1.4,
+    0.62
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      -0.2,
+      0.0,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_18_abort_pod.step",
+    "glb": "glb/ax_prop_18_abort_pod.glb",
+    "preview": "renders/ax_prop_18_abort_pod.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-18",
+ "key": "ax_prop_18",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Surface-flush pod of 2 abort engines with bevelled bay (radial, for custom capsules)"
+}

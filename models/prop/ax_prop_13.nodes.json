@@ -1,0 +1,467 @@
+{
+ "id": "ax_prop_13",
+ "name": "SRB-AX Segmented Solid Booster",
+ "category": "prop",
+ "short_name": "segmented_srb",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_prop_13_segmented_srb_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    13.6437,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -13.6438,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_1",
+   "position": [
+    1.875,
+    -0.2313,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_2",
+   "position": [
+    0.0,
+    -0.2313,
+    -1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_side_3",
+   "position": [
+    -1.875,
+    -0.2313,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_side_4",
+   "position": [
+    0.0,
+    -0.2313,
+    1.875
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_13_segmented_srb_s": {
+   "vid": "ax_prop_13_segmented_srb_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "SRB-AX Segmented Solid Booster",
+   "primary": false,
+   "dims": {
+    "diameter_m": 1.25,
+    "length_m": 8.6,
+    "segments": 2,
+    "thrust_kN": 1200,
+    "burn_s": 80,
+    "mass_t": 14
+   },
+   "notes": "Segmented solid booster: 2 steel case segments with chamfered field-joint rings between paired recessed grooves, longitudinal seam groove, 8-facet nose cap, chamfered aft skirt flare, dark ablative nozzle.",
+   "bbox_cad_zup": [
+    [
+     -0.8250000000000001,
+     -0.8250000000000001,
+     -4.556250050000001
+    ],
+    [
+     0.8250000000000001,
+     0.8250000000000001,
+     4.556250050000001
+    ]
+   ],
+   "bbox_godot_size": [
+    1.65,
+    9.113,
+    1.65
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      4.5562,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -4.5563,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      0.625,
+      -0.0688,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.0688,
+      -0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -0.625,
+      -0.0688,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.0688,
+      0.625
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_13_segmented_srb_s.step",
+    "glb": "glb/ax_prop_13_segmented_srb_s.glb",
+    "preview": "renders/ax_prop_13_segmented_srb_s.png"
+   }
+  },
+  "ax_prop_13_segmented_srb_m": {
+   "vid": "ax_prop_13_segmented_srb_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "SRB-AX Segmented Solid Booster",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "length_m": 17.6,
+    "segments": 3,
+    "thrust_kN": 4800,
+    "burn_s": 110,
+    "mass_t": 110
+   },
+   "notes": "Segmented solid booster: 3 steel case segments with chamfered field-joint rings between paired recessed grooves, longitudinal seam groove, 8-facet nose cap, chamfered aft skirt flare, dark ablative nozzle.",
+   "bbox_cad_zup": [
+    [
+     -1.6500000000000001,
+     -1.6500000000000001,
+     -9.112500050000001
+    ],
+    [
+     1.6500000000000001,
+     1.6500000000000001,
+     9.11250005
+    ]
+   ],
+   "bbox_godot_size": [
+    3.3,
+    18.225,
+    3.3
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      9.1125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -9.1125,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.25,
+      -0.1375,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.1375,
+      -1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.25,
+      -0.1375,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.1375,
+      1.25
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_13_segmented_srb_m.step",
+    "glb": "glb/ax_prop_13_segmented_srb_m.glb",
+    "preview": "renders/ax_prop_13_segmented_srb_m.png"
+   }
+  },
+  "ax_prop_13_segmented_srb_l": {
+   "vid": "ax_prop_13_segmented_srb_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "SRB-AX Segmented Solid Booster",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "length_m": 26.0,
+    "segments": 4,
+    "thrust_kN": 11000,
+    "burn_s": 125,
+    "mass_t": 380
+   },
+   "notes": "Segmented solid booster: 4 steel case segments with chamfered field-joint rings between paired recessed grooves, longitudinal seam groove, 8-facet nose cap, chamfered aft skirt flare, dark ablative nozzle.",
+   "bbox_cad_zup": [
+    [
+     -2.475,
+     -2.475,
+     -13.643750050000001
+    ],
+    [
+     2.475,
+     2.475,
+     13.64375005
+    ]
+   ],
+   "bbox_godot_size": [
+    4.95,
+    27.288,
+    4.95
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      13.6437,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -13.6438,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_1",
+     "position": [
+      1.875,
+      -0.2313,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_2",
+     "position": [
+      0.0,
+      -0.2313,
+      -1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_side_3",
+     "position": [
+      -1.875,
+      -0.2313,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_side_4",
+     "position": [
+      0.0,
+      -0.2313,
+      1.875
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_13_segmented_srb_l.step",
+    "glb": "glb/ax_prop_13_segmented_srb_l.glb",
+    "preview": "renders/ax_prop_13_segmented_srb_l.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-13",
+ "key": "ax_prop_13",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Steel-case segmented solid with faceted nose cap and chamfered joints"
+}

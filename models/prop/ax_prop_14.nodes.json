@@ -1,0 +1,187 @@
+{
+ "id": "ax_prop_14",
+ "name": "KM-1 Solid Kick Motor",
+ "category": "prop",
+ "short_name": "kick_motor",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_prop_14_kick_motor_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.9507,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.9507,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_14_kick_motor_xs": {
+   "vid": "ax_prop_14_kick_motor_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "KM-1 Solid Kick Motor",
+   "primary": false,
+   "dims": {
+    "case_d_m": 0.62,
+    "thrust_kN": 30,
+    "isp_vac_s": 286,
+    "mass_t": 0.25,
+    "mount_d_m": 0.625
+   },
+   "notes": "Solid kick motor: spherical composite case with chamfered girth ring, carbon nozzle (hot lip), chamfered conical mount to a steel interface ring.",
+   "bbox_cad_zup": [
+    [
+     -0.3255,
+     -0.3255,
+     -0.4753333333333334
+    ],
+    [
+     0.3255,
+     0.3255,
+     0.4753333333333334
+    ]
+   ],
+   "bbox_godot_size": [
+    0.651,
+    0.951,
+    0.651
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.4753,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.4753,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_14_kick_motor_xs.step",
+    "glb": "glb/ax_prop_14_kick_motor_xs.glb",
+    "preview": "renders/ax_prop_14_kick_motor_xs.png"
+   }
+  },
+  "ax_prop_14_kick_motor_s": {
+   "vid": "ax_prop_14_kick_motor_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "KM-1 Solid Kick Motor",
+   "primary": true,
+   "dims": {
+    "case_d_m": 1.24,
+    "thrust_kN": 78,
+    "isp_vac_s": 292,
+    "mass_t": 2.1,
+    "mount_d_m": 1.25
+   },
+   "notes": "Solid kick motor: spherical composite case with chamfered girth ring, carbon nozzle (hot lip), chamfered conical mount to a steel interface ring.",
+   "bbox_cad_zup": [
+    [
+     -0.651,
+     -0.651,
+     -0.9506666666666668
+    ],
+    [
+     0.651,
+     0.651,
+     0.9506666666666668
+    ]
+   ],
+   "bbox_godot_size": [
+    1.302,
+    1.901,
+    1.302
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.9507,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.9507,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_14_kick_motor_s.step",
+    "glb": "glb/ax_prop_14_kick_motor_s.glb",
+    "preview": "renders/ax_prop_14_kick_motor_s.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-14",
+ "key": "ax_prop_14",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Spherical-case solid apogee / kick motor"
+}

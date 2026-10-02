@@ -1,0 +1,120 @@
+{
+ "id": "ax_prop_01",
+ "name": "LE-13 'Raptor-V' Vacuum Methalox",
+ "category": "prop",
+ "short_name": "methalox_vacuum",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_prop_01_methalox_vacuum",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    2.485,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.485,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_01_methalox_vacuum": {
+   "vid": "ax_prop_01_methalox_vacuum",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-13 'Raptor-V' Vacuum Methalox",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 2600,
+    "isp_s": 378,
+    "mass_t": 1.65,
+    "exit_d_m": 2.43,
+    "mount_d_m": 2.0
+   },
+   "notes": "Vacuum methalox (full-flow staged): powerhead with 2 turbopumps + preburners, regen nozzle to a chamfered joint flange, dark bronze radiatively cooled extension with chamfered hoop stiffeners, white thermal-blanket mount ring.",
+   "bbox_cad_zup": [
+    [
+     -1.217355838468372,
+     -1.217355838468372,
+     -2.485
+    ],
+    [
+     1.217355838468372,
+     1.217355838468372,
+     2.485
+    ]
+   ],
+   "bbox_godot_size": [
+    2.435,
+    4.97,
+    2.435
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      2.485,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.485,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_01_methalox_vacuum.step",
+    "glb": "glb/ax_prop_01_methalox_vacuum.glb",
+    "preview": "renders/ax_prop_01_methalox_vacuum.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-01",
+ "key": "ax_prop_01",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [
+  "prop27"
+ ],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Full-flow staged vacuum engine, dark bronze extension, ~2,600 kN, Isp 378 s"
+}

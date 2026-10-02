@@ -1,0 +1,119 @@
+{
+ "id": "ax_prop_02",
+ "name": "LC-1 'Hopper' Landing Cluster",
+ "category": "prop",
+ "short_name": "hopper_cluster",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_prop_02_hopper_cluster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.925,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.925,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_02_hopper_cluster": {
+   "vid": "ax_prop_02_hopper_cluster",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "LC-1 'Hopper' Landing Cluster",
+   "primary": true,
+   "dims": {
+    "engines": 4,
+    "thrust_kN_each": 60,
+    "mass_t": 1.25,
+    "diameter_m": 3.75
+   },
+   "notes": "Hopper landing cluster: faceted octagonal thrust plate (chamfered corners + bevelled top rim, recessed panel lines, bevelled access panels), gold MLI skirt, 4 deep-throttling methalox engines, 4 canted plume-deflector skirts with chamfered edges.",
+   "bbox_cad_zup": [
+    [
+     -2.0764231931611477,
+     -2.0764231931611477,
+     -0.9250000500000001
+    ],
+    [
+     2.0764231931611477,
+     2.0764231931611477,
+     0.92500005
+    ]
+   ],
+   "bbox_godot_size": [
+    4.153,
+    1.85,
+    4.153
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.925,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.925,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_02_hopper_cluster.step",
+    "glb": "glb/ax_prop_02_hopper_cluster.glb",
+    "preview": "renders/ax_prop_02_hopper_cluster.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-02",
+ "key": "ax_prop_02",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [
+  "prop28"
+ ],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "4 deep-throttling methalox engines under a faceted thrust plate with plume-deflector skirts"
+}

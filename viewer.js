@@ -73,7 +73,7 @@ async function init() {
   const q = (new URLSearchParams(location.search).get('part') || '').trim().toLowerCase();
   let hit = idx.get(q), note = '';
   if (!hit && q) {                       // aliases: <id>, <id>_<size>[_<state>], <id>_<short> prefixes
-    const m = q.match(/^([a-z]+\d\d)(?:_(.*))?$/); const p = m && parts.find(p => p.id === m[1]);
+    const m = q.match(/^(ax_[a-z]+_\d\d|[a-z]+\d\d)(?:_(.*))?$/); const p = m && parts.find(p => p.id === m[1] || (p.aliases || []).includes(m[1]));
     if (p) {
       const rest = (m[2] || '').split('_').filter(Boolean);
       const sc = v => rest.reduce((s, t) => s + (v.size.toLowerCase() === t ? 2 : 0) + (v.state.toLowerCase() === t ? 2 : 0) + (v.vid.toLowerCase().split('_').includes(t) ? 1 : 0), 0) + (v.primary ? 0.5 : 0);

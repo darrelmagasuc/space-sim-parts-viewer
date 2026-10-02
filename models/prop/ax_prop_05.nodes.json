@@ -1,0 +1,811 @@
+{
+ "id": "ax_prop_05",
+ "name": "BC-9 Booster Engine Cluster Plate",
+ "category": "prop",
+ "short_name": "cluster_plate",
+ "sizes": [
+  "XL",
+  "XXL"
+ ],
+ "primary": "ax_prop_05_cluster_plate_xl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom_1",
+   "position": [
+    0.0,
+    0.465,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_2",
+   "position": [
+    1.626,
+    0.465,
+    -0.6735
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_3",
+   "position": [
+    0.6735,
+    0.465,
+    -1.626
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_4",
+   "position": [
+    -0.6735,
+    0.465,
+    -1.626
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_5",
+   "position": [
+    -1.626,
+    0.465,
+    -0.6735
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_6",
+   "position": [
+    -1.626,
+    0.465,
+    0.6735
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_7",
+   "position": [
+    -0.6735,
+    0.465,
+    1.626
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_8",
+   "position": [
+    0.6735,
+    0.465,
+    1.626
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_9",
+   "position": [
+    1.626,
+    0.465,
+    0.6735
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.015,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_05_cluster_plate_xl": {
+   "vid": "ax_prop_05_cluster_plate_xl",
+   "size": "XL",
+   "state": "flight",
+   "default_state": true,
+   "label": "BC-9 Booster Engine Cluster Plate",
+   "primary": true,
+   "dims": {
+    "diameter_m": 5.0,
+    "engine_mounts": 9,
+    "mount_pad_d_m": 1.3,
+    "for_engine": "AX-prop-04 Raptor-S",
+    "mass_t": 3.2
+   },
+   "notes": "Booster thrust plate, 12 chamfered facets, bevelled load-bearing top rim, recessed octagon groove, access pockets; 9 engine mounts node_bottom_1..9 (pad r 0.65 m) under the plate inside a vented aft skirt. Mounts AX-prop-04 (exit 1.3 m): 1 centre + 8 at r 1.76 m (chord 1.35 m).",
+   "bbox_cad_zup": [
+    [
+     -2.5000001,
+     -2.5000001,
+     -1.015
+    ],
+    [
+     2.5000001,
+     2.5000001,
+     1.015
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    2.03,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.0,
+      0.465,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      1.626,
+      0.465,
+      -0.6735
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      0.6735,
+      0.465,
+      -1.626
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      -0.6735,
+      0.465,
+      -1.626
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_5",
+     "position": [
+      -1.626,
+      0.465,
+      -0.6735
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_6",
+     "position": [
+      -1.626,
+      0.465,
+      0.6735
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_7",
+     "position": [
+      -0.6735,
+      0.465,
+      1.626
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_8",
+     "position": [
+      0.6735,
+      0.465,
+      1.626
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_9",
+     "position": [
+      1.626,
+      0.465,
+      0.6735
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.015,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_05_cluster_plate_xl.step",
+    "glb": "glb/ax_prop_05_cluster_plate_xl.glb",
+    "preview": "renders/ax_prop_05_cluster_plate_xl.png"
+   }
+  },
+  "ax_prop_05_cluster_plate_xxl": {
+   "vid": "ax_prop_05_cluster_plate_xxl",
+   "size": "XXL",
+   "state": "flight",
+   "default_state": true,
+   "label": "BC-9 Booster Engine Cluster Plate",
+   "primary": false,
+   "dims": {
+    "diameter_m": 7.5,
+    "engine_mounts": 33,
+    "mount_pad_d_m": 0.9,
+    "for_engine": "AX-prop-07 Kite-S",
+    "mass_t": 7.8
+   },
+   "notes": "Booster thrust plate, 16 chamfered facets, bevelled load-bearing top rim, recessed octagon groove, access pockets; 33 engine mounts node_bottom_1..33 (pad r 0.45 m) under the plate inside a vented aft skirt. Mounts AX-prop-07 (exit 0.9 m): 3 + 10 (r 1.85) + 20 (r 3.18, chord 1.0 m).",
+   "bbox_cad_zup": [
+    [
+     -3.7500001,
+     -3.7500001,
+     -1.315
+    ],
+    [
+     3.7500001,
+     3.7500001,
+     1.315
+    ]
+   ],
+   "bbox_godot_size": [
+    7.5,
+    2.63,
+    7.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.0,
+      0.665,
+      -0.62
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.5369,
+      0.665,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      0.5369,
+      0.665,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      1.85,
+      0.665,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_5",
+     "position": [
+      1.4967,
+      0.665,
+      -1.0874
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_6",
+     "position": [
+      0.5717,
+      0.665,
+      -1.7595
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_7",
+     "position": [
+      -0.5717,
+      0.665,
+      -1.7595
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_8",
+     "position": [
+      -1.4967,
+      0.665,
+      -1.0874
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_9",
+     "position": [
+      -1.85,
+      0.665,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_10",
+     "position": [
+      -1.4967,
+      0.665,
+      1.0874
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_11",
+     "position": [
+      -0.5717,
+      0.665,
+      1.7595
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_12",
+     "position": [
+      0.5717,
+      0.665,
+      1.7595
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_13",
+     "position": [
+      1.4967,
+      0.665,
+      1.0874
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_14",
+     "position": [
+      3.1408,
+      0.665,
+      -0.4975
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_15",
+     "position": [
+      2.8334,
+      0.665,
+      -1.4437
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_16",
+     "position": [
+      2.2486,
+      0.665,
+      -2.2486
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_17",
+     "position": [
+      1.4437,
+      0.665,
+      -2.8334
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_18",
+     "position": [
+      0.4975,
+      0.665,
+      -3.1408
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_19",
+     "position": [
+      -0.4975,
+      0.665,
+      -3.1408
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_20",
+     "position": [
+      -1.4437,
+      0.665,
+      -2.8334
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_21",
+     "position": [
+      -2.2486,
+      0.665,
+      -2.2486
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_22",
+     "position": [
+      -2.8334,
+      0.665,
+      -1.4437
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_23",
+     "position": [
+      -3.1408,
+      0.665,
+      -0.4975
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_24",
+     "position": [
+      -3.1408,
+      0.665,
+      0.4975
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_25",
+     "position": [
+      -2.8334,
+      0.665,
+      1.4437
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_26",
+     "position": [
+      -2.2486,
+      0.665,
+      2.2486
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_27",
+     "position": [
+      -1.4437,
+      0.665,
+      2.8334
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_28",
+     "position": [
+      -0.4975,
+      0.665,
+      3.1408
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_29",
+     "position": [
+      0.4975,
+      0.665,
+      3.1408
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_30",
+     "position": [
+      1.4437,
+      0.665,
+      2.8334
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_31",
+     "position": [
+      2.2486,
+      0.665,
+      2.2486
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_32",
+     "position": [
+      2.8334,
+      0.665,
+      1.4437
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_33",
+     "position": [
+      3.1408,
+      0.665,
+      0.4975
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.315,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_05_cluster_plate_xxl.step",
+    "glb": "glb/ax_prop_05_cluster_plate_xxl.glb",
+    "preview": "renders/ax_prop_05_cluster_plate_xxl.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-05",
+ "key": "ax_prop_05",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Faceted thrust plate with 9 (XL) / 33 (XXL) sea-level engine mounts + skirt"
+}

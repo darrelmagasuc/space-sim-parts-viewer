@@ -1,0 +1,118 @@
+{
+ "id": "ax_prop_07",
+ "name": "LE-22 'Kite-S' Small Sea-Level Methalox",
+ "category": "prop",
+ "short_name": "kite_sl",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_prop_07_kite_sl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.729,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.729,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_07_kite_sl": {
+   "vid": "ax_prop_07_kite_sl",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-22 'Kite-S' Small Sea-Level Methalox",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 200,
+    "isp_sl_s": 310,
+    "mass_t": 0.22,
+    "exit_d_m": 0.9,
+    "mount_d_m": 0.9
+   },
+   "notes": "Small sea-level methalox: regen bell, chamfered exit lip, gas-generator turbopump + exhaust duct, gimbal. Mount 0.9 m (fits the BC-9 XXL plate, 33 x).",
+   "bbox_cad_zup": [
+    [
+     -0.45,
+     -0.45,
+     -0.7290000000000001
+    ],
+    [
+     0.45,
+     0.45,
+     0.7290000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.9,
+    1.458,
+    0.9
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.729,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.729,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_07_kite_sl.step",
+    "glb": "glb/ax_prop_07_kite_sl.glb",
+    "preview": "renders/ax_prop_07_kite_sl.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-07",
+ "key": "ax_prop_07",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Small methalox booster engine ~200 kN for S-class first stages"
+}

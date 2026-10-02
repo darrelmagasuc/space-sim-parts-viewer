@@ -1,0 +1,187 @@
+{
+ "id": "ax_prop_08",
+ "name": "OE-1 Hypergolic OMS Engine",
+ "category": "prop",
+ "short_name": "oms_hypergolic",
+ "sizes": [
+  "XS",
+  "S"
+ ],
+ "primary": "ax_prop_08_oms_hypergolic_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.7456,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.7456,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_08_oms_hypergolic_xs": {
+   "vid": "ax_prop_08_oms_hypergolic_xs",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "OE-1 Hypergolic OMS Engine",
+   "primary": false,
+   "dims": {
+    "thrust_kN": 6,
+    "isp_vac_s": 316,
+    "mass_t": 0.05,
+    "exit_d_m": 0.42,
+    "mount_d_m": 0.625
+   },
+   "notes": "Pressure-fed MMH/NTO OMS engine: radiatively cooled bronze nozzle with chamfered hoops, valve block, gimbal.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.3976
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.3976
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.795,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3976,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.3976,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_08_oms_hypergolic_xs.step",
+    "glb": "glb/ax_prop_08_oms_hypergolic_xs.glb",
+    "preview": "renders/ax_prop_08_oms_hypergolic_xs.png"
+   }
+  },
+  "ax_prop_08_oms_hypergolic_s": {
+   "vid": "ax_prop_08_oms_hypergolic_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "OE-1 Hypergolic OMS Engine",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 27,
+    "isp_vac_s": 316,
+    "mass_t": 0.12,
+    "exit_d_m": 0.82,
+    "mount_d_m": 1.25
+   },
+   "notes": "Pressure-fed MMH/NTO OMS engine (Shuttle OMS class): radiatively cooled bronze nozzle with chamfered hoops, valve block, gimbal.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.7455999999999999
+    ],
+    [
+     0.625,
+     0.625,
+     0.7455999999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    1.491,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7456,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.7456,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_08_oms_hypergolic_s.step",
+    "glb": "glb/ax_prop_08_oms_hypergolic_s.glb",
+    "preview": "renders/ax_prop_08_oms_hypergolic_s.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-08",
+ "key": "ax_prop_08",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Pressure-fed MMH/NTO orbital manoeuvring engine, radiatively cooled nozzle"
+}

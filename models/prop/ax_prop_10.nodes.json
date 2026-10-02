@@ -1,0 +1,323 @@
+{
+ "id": "ax_prop_10",
+ "name": "HV-1 Hydrolox Vacuum Engine",
+ "category": "prop",
+ "short_name": "hydrolox_vac",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_prop_10_hydrolox_vac_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.995,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -2.5922,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_10_hydrolox_vac_s": {
+   "vid": "ax_prop_10_hydrolox_vac_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "HV-1 Hydrolox Vacuum Engine",
+   "primary": false,
+   "dims": {
+    "thrust_kN": 110,
+    "isp_vac_s": 462,
+    "mass_t": 0.3,
+    "exit_d_m": 1.6,
+    "mount_d_m": 1.25,
+    "extension": "stowed"
+   },
+   "notes": "Expander-cycle hydrolox vacuum engine: regen bell + translating radiative extension (stowed nested over the bell; _deployed = extended). Moving mesh: nozzle_extension (+ extension_hoops), translates along the axis.",
+   "bbox_cad_zup": [
+    [
+     -0.8185728493092723,
+     -0.8185728493092723,
+     -0.7462799999999998
+    ],
+    [
+     0.8185728493092723,
+     0.8185728493092723,
+     0.74628
+    ]
+   ],
+   "bbox_godot_size": [
+    1.637,
+    1.493,
+    1.637
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7463,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.9441,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_10_hydrolox_vac_s.step",
+    "glb": "glb/ax_prop_10_hydrolox_vac_s.glb",
+    "preview": "renders/ax_prop_10_hydrolox_vac_s.png"
+   }
+  },
+  "ax_prop_10_hydrolox_vac_s_deployed": {
+   "vid": "ax_prop_10_hydrolox_vac_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HV-1 Hydrolox Vacuum Engine",
+   "primary": false,
+   "dims": {
+    "thrust_kN": 110,
+    "isp_vac_s": 465,
+    "exit_d_m": 1.6,
+    "extension": "deployed"
+   },
+   "notes": "Expander-cycle hydrolox vacuum engine: regen bell + translating radiative extension (stowed nested over the bell; _deployed = extended). Moving mesh: nozzle_extension (+ extension_hoops), translates along the axis.",
+   "bbox_cad_zup": [
+    [
+     -0.8185728493092723,
+     -0.8185728493092723,
+     -1.9441199999999998
+    ],
+    [
+     0.8185728493092723,
+     0.8185728493092723,
+     0.74628
+    ]
+   ],
+   "bbox_godot_size": [
+    1.637,
+    2.69,
+    1.637
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.7463,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.9441,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "ax_prop_10_hydrolox_vac_s",
+   "files": {
+    "step": "step/ax_prop_10_hydrolox_vac_s_deployed.step",
+    "glb": "glb/ax_prop_10_hydrolox_vac_s_deployed.glb",
+    "preview": "renders/ax_prop_10_hydrolox_vac_s_deployed.png"
+   }
+  },
+  "ax_prop_10_hydrolox_vac_m": {
+   "vid": "ax_prop_10_hydrolox_vac_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "HV-1 Hydrolox Vacuum Engine",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 180,
+    "isp_vac_s": 465,
+    "mass_t": 0.55,
+    "exit_d_m": 2.15,
+    "mount_d_m": 2.5,
+    "extension": "stowed"
+   },
+   "notes": "Expander-cycle hydrolox vacuum engine: regen bell + translating radiative extension (stowed nested over the bell; _deployed = extended). Moving mesh: nozzle_extension (+ extension_hoops), translates along the axis.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.9950399999999997
+    ],
+    [
+     1.25,
+     1.25,
+     0.9950399999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.99,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.995,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5922,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_10_hydrolox_vac_m.step",
+    "glb": "glb/ax_prop_10_hydrolox_vac_m.glb",
+    "preview": "renders/ax_prop_10_hydrolox_vac_m.png"
+   }
+  },
+  "ax_prop_10_hydrolox_vac_m_deployed": {
+   "vid": "ax_prop_10_hydrolox_vac_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "HV-1 Hydrolox Vacuum Engine",
+   "primary": false,
+   "dims": {
+    "thrust_kN": 180,
+    "isp_vac_s": 465,
+    "exit_d_m": 2.15,
+    "extension": "deployed"
+   },
+   "notes": "Expander-cycle hydrolox vacuum engine: regen bell + translating radiative extension (stowed nested over the bell; _deployed = extended). Moving mesh: nozzle_extension (+ extension_hoops), translates along the axis.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -2.59216
+    ],
+    [
+     1.25,
+     1.25,
+     0.9950399999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    3.587,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.995,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -2.5922,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": "ax_prop_10_hydrolox_vac_m",
+   "files": {
+    "step": "step/ax_prop_10_hydrolox_vac_m_deployed.step",
+    "glb": "glb/ax_prop_10_hydrolox_vac_m_deployed.glb",
+    "preview": "renders/ax_prop_10_hydrolox_vac_m_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-10",
+ "key": "ax_prop_10",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Expander-cycle hydrolox upper-stage engine, deployable extension (stowed / deployed)"
+}

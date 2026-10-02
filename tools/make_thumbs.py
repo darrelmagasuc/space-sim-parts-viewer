@@ -11,14 +11,18 @@ spec = importlib.util.spec_from_file_location("sp_render", os.path.join(PARTS, "
 sys.path.insert(0, os.path.join(PARTS, "station_power"))
 R = importlib.util.module_from_spec(spec); spec.loader.exec_module(R)
 jobs = []
-for d in ("cmd_prop", "tank_stage", "station_power", "rover_jet", "cockpit", "rover_kit", "prop_stage_ext", "aero", "struct_robo", "sci_power"):
+AX_FOLDERS = ["ax_prop", "ax_tank", "ax_struct", "ax_gear", "ax_station", "ax_grav", "ax_util", "ax_power", "ax_rover", "ax_aero"]   # keep in sync with build_site.py
+for d in ("cmd_prop", "tank_stage", "station_power", "rover_jet", "cockpit", "rover_kit", "prop_stage_ext", "aero", "struct_robo", "sci_power", *AX_FOLDERS):
     for f in sorted(glob.glob(f"{PARTS}/{d}/*[0-9][0-9].nodes.json")):
         for vid in json.load(open(f))["variants"]: jobs.append((d, vid, os.path.join(PARTS, d, "renders", vid + ".png")))
 for vid in ("gravity_ring_assembly", "counter_rotating_assembly"):
     jobs.append(("station_power", vid, os.path.join(PARTS, "station_power", "assembly", vid + ".png")))
 reused = made = 0
+ALL = "--all" in sys.argv          # default: skip thumbs newer than their render / cache (re-running is then cheap)
 for d, vid, png in jobs:
     dst = os.path.join(OUT, vid + ".jpg")
+    srcf = png if os.path.exists(png) else os.path.join(PARTS, d, "_cache", vid + ".npz")
+    if not ALL and os.path.exists(dst) and os.path.exists(srcf) and os.path.getmtime(dst) >= os.path.getmtime(srcf): continue
     if os.path.exists(png):
         im = Image.open(png).convert("RGB"); w = im.width
         im = im.crop((20, 36, w - 20, w)); reused += 1   # drop the top-right caption

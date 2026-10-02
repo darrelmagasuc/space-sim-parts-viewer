@@ -1,0 +1,120 @@
+{
+ "id": "ax_prop_04",
+ "name": "LE-11X 'Raptor-S' Sea-Level Methalox",
+ "category": "prop",
+ "short_name": "raptor_sl",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_prop_04_raptor_sl",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    1.4142,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -1.4142,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_04_raptor_sl": {
+   "vid": "ax_prop_04_raptor_sl",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "LE-11X 'Raptor-S' Sea-Level Methalox",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 2300,
+    "isp_sl_s": 327,
+    "isp_vac_s": 350,
+    "mass_t": 1.6,
+    "exit_d_m": 1.3,
+    "mount_d_m": 1.3,
+    "gimbal_deg": 15
+   },
+   "notes": "Sea-level full-flow methalox: regen bell to a chamfered steel exit lip, 2 turbopumps + preburners, gimbal (+/-15 deg), white mount ring. Mount 1.3 m (fits the BC-9 XL plate, 9 x).",
+   "bbox_cad_zup": [
+    [
+     -0.6696,
+     -0.65,
+     -1.4142
+    ],
+    [
+     0.6696,
+     0.65,
+     1.4142
+    ]
+   ],
+   "bbox_godot_size": [
+    1.339,
+    2.828,
+    1.3
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.4142,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -1.4142,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_04_raptor_sl.step",
+    "glb": "glb/ax_prop_04_raptor_sl.glb",
+    "preview": "renders/ax_prop_04_raptor_sl.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-04",
+ "key": "ax_prop_04",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Sea-level full-flow methalox engine, regen bell, ~2,300 kN, gimbal +/-15 deg"
+}

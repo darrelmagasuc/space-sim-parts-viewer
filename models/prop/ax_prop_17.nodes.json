@@ -1,0 +1,118 @@
+{
+ "id": "ax_prop_17",
+ "name": "GI-1 Gridded Ion Thruster",
+ "category": "prop",
+ "short_name": "gridded_ion",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_prop_17_gridded_ion",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.34,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.315,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_17_gridded_ion": {
+   "vid": "ax_prop_17_gridded_ion",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "GI-1 Gridded Ion Thruster",
+   "primary": true,
+   "dims": {
+    "power_kW": 7,
+    "thrust_N": 0.24,
+    "isp_s": 3500,
+    "mass_t": 0.06,
+    "mount_d_m": 0.625
+   },
+   "notes": "Gridded ion engine: white discharge chamber with a recessed groove, chamfered steel grid ring around a dark grid set, side neutraliser, gimbal, XS mount ring.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.34
+    ],
+    [
+     0.36500000000000005,
+     0.3125,
+     0.33999999999999997
+    ]
+   ],
+   "bbox_godot_size": [
+    0.677,
+    0.68,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.34,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.315,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_17_gridded_ion.step",
+    "glb": "glb/ax_prop_17_gridded_ion.glb",
+    "preview": "renders/ax_prop_17_gridded_ion.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-17",
+ "key": "ax_prop_17",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Gridded ion engine, very low thrust, Isp ~3,500 s"
+}

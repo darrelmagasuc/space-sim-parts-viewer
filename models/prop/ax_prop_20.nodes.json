@@ -1,0 +1,641 @@
+{
+ "id": "ax_prop_20",
+ "name": "EM-3 Multi-Engine Thrust Structure",
+ "category": "prop",
+ "short_name": "thrust_structure",
+ "sizes": [
+  "M",
+  "L"
+ ],
+ "primary": "ax_prop_20_thrust_structure_l_x3",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom_1",
+   "position": [
+    0.0,
+    -0.69,
+    -0.95
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_2",
+   "position": [
+    -0.8227,
+    -0.69,
+    0.475
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom_3",
+   "position": [
+    0.8227,
+    -0.69,
+    0.475
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.81,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_20_thrust_structure_m_x2": {
+   "vid": "ax_prop_20_thrust_structure_m_x2",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "engine_mounts": 2,
+    "mount_spacing_m": 1.32,
+    "for_engines": "S engines (AX-prop-07 exit 0.9 m)",
+    "mass_t": 0.42
+   },
+   "notes": "Thrust structure: 8-facet chamfered skirt (flares to r 1.35 m), recessed groove + access panels, 2 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 1.32 m for S engines (AX-prop-07 exit 0.9 m).",
+   "bbox_cad_zup": [
+    [
+     -1.3500001000000004,
+     -1.3500001000000004,
+     -0.6350000499999999
+    ],
+    [
+     1.3500001000000004,
+     1.3500001000000001,
+     0.63500005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.7,
+    1.27,
+    2.7
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.66,
+      -0.515,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.66,
+      -0.515,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.635,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_m_x2.step",
+    "glb": "glb/ax_prop_20_thrust_structure_m_x2.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_m_x2.png"
+   }
+  },
+  "ax_prop_20_thrust_structure_m_x3": {
+   "vid": "ax_prop_20_thrust_structure_m_x3",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "engine_mounts": 3,
+    "mount_spacing_m": 1.07,
+    "for_engines": "S engines (AX-prop-07 exit 0.9 m)",
+    "mass_t": 0.62
+   },
+   "notes": "Thrust structure: 8-facet chamfered skirt (flares to r 1.35 m), recessed groove + access panels, 3 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 1.07 m for S engines (AX-prop-07 exit 0.9 m).",
+   "bbox_cad_zup": [
+    [
+     -1.3500001000000004,
+     -1.3500001000000004,
+     -0.6350000499999999
+    ],
+    [
+     1.3500001000000004,
+     1.3500001000000001,
+     0.63500005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.7,
+    1.27,
+    2.7
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.0,
+      -0.515,
+      -0.62
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.5369,
+      -0.515,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      0.5369,
+      -0.515,
+      0.31
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.635,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_m_x3.step",
+    "glb": "glb/ax_prop_20_thrust_structure_m_x3.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_m_x3.png"
+   }
+  },
+  "ax_prop_20_thrust_structure_m_x4": {
+   "vid": "ax_prop_20_thrust_structure_m_x4",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": false,
+   "dims": {
+    "diameter_m": 2.5,
+    "engine_mounts": 4,
+    "mount_spacing_m": 0.99,
+    "for_engines": "S engines (AX-prop-07 exit 0.9 m)",
+    "mass_t": 0.83
+   },
+   "notes": "Thrust structure: 8-facet chamfered skirt (flares to r 1.35 m), recessed groove + access panels, 4 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 0.99 m for S engines (AX-prop-07 exit 0.9 m).",
+   "bbox_cad_zup": [
+    [
+     -1.3500001000000004,
+     -1.3500001000000004,
+     -0.6350000499999999
+    ],
+    [
+     1.3500001000000004,
+     1.3500001000000001,
+     0.63500005
+    ]
+   ],
+   "bbox_godot_size": [
+    2.7,
+    1.27,
+    2.7
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.495,
+      -0.515,
+      -0.495
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.495,
+      -0.515,
+      -0.495
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -0.495,
+      -0.515,
+      0.495
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      0.495,
+      -0.515,
+      0.495
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.635,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_m_x4.step",
+    "glb": "glb/ax_prop_20_thrust_structure_m_x4.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_m_x4.png"
+   }
+  },
+  "ax_prop_20_thrust_structure_l_x2": {
+   "vid": "ax_prop_20_thrust_structure_l_x2",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "engine_mounts": 2,
+    "mount_spacing_m": 1.9,
+    "for_engines": "M engines (AX-prop-04 exit 1.3 m)",
+    "mass_t": 0.62
+   },
+   "notes": "Thrust structure: 12-facet chamfered skirt (flares to r 2.0 m), recessed groove + access panels, 2 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 1.90 m for M engines (AX-prop-04 exit 1.3 m).",
+   "bbox_cad_zup": [
+    [
+     -2.0000001,
+     -2.0000001,
+     -0.81000005
+    ],
+    [
+     2.0000001,
+     2.0000001,
+     0.8100000500000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.0,
+    1.62,
+    4.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.95,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.95,
+      -0.69,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.81,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_l_x2.step",
+    "glb": "glb/ax_prop_20_thrust_structure_l_x2.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_l_x2.png"
+   }
+  },
+  "ax_prop_20_thrust_structure_l_x3": {
+   "vid": "ax_prop_20_thrust_structure_l_x3",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": true,
+   "dims": {
+    "diameter_m": 3.75,
+    "engine_mounts": 3,
+    "mount_spacing_m": 1.65,
+    "for_engines": "M engines (AX-prop-04 exit 1.3 m)",
+    "mass_t": 0.94
+   },
+   "notes": "Thrust structure: 12-facet chamfered skirt (flares to r 2.0 m), recessed groove + access panels, 3 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 1.65 m for M engines (AX-prop-04 exit 1.3 m).",
+   "bbox_cad_zup": [
+    [
+     -2.0000001,
+     -2.0000001,
+     -0.81000005
+    ],
+    [
+     2.0000001,
+     2.0000001,
+     0.8100000500000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.0,
+    1.62,
+    4.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.0,
+      -0.69,
+      -0.95
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.8227,
+      -0.69,
+      0.475
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      0.8227,
+      -0.69,
+      0.475
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.81,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_l_x3.step",
+    "glb": "glb/ax_prop_20_thrust_structure_l_x3.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_l_x3.png"
+   }
+  },
+  "ax_prop_20_thrust_structure_l_x4": {
+   "vid": "ax_prop_20_thrust_structure_l_x4",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "EM-3 Multi-Engine Thrust Structure",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.75,
+    "engine_mounts": 4,
+    "mount_spacing_m": 1.41,
+    "for_engines": "M engines (AX-prop-04 exit 1.3 m)",
+    "mass_t": 1.25
+   },
+   "notes": "Thrust structure: 12-facet chamfered skirt (flares to r 2.0 m), recessed groove + access panels, 4 engine mount pads (node_bottom_N) on chamfered beams, MLI floor. Mount spacing 1.41 m for M engines (AX-prop-04 exit 1.3 m).",
+   "bbox_cad_zup": [
+    [
+     -2.0000001,
+     -2.0000001,
+     -0.81000005
+    ],
+    [
+     2.0000001,
+     2.0000001,
+     0.8100000500000001
+    ]
+   ],
+   "bbox_godot_size": [
+    4.0,
+    1.62,
+    4.0
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom_1",
+     "position": [
+      0.7071,
+      -0.69,
+      -0.7071
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_2",
+     "position": [
+      -0.7071,
+      -0.69,
+      -0.7071
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_3",
+     "position": [
+      -0.7071,
+      -0.69,
+      0.7071
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom_4",
+     "position": [
+      0.7071,
+      -0.69,
+      0.7071
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.81,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_20_thrust_structure_l_x4.step",
+    "glb": "glb/ax_prop_20_thrust_structure_l_x4.glb",
+    "preview": "renders/ax_prop_20_thrust_structure_l_x4.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-20",
+ "key": "ax_prop_20",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Thrust frame for 2, 3 or 4 engines of the next size down (chamfered skirt, MLI floor)"
+}

@@ -1,0 +1,119 @@
+{
+ "id": "ax_prop_15",
+ "name": "NTR-1X Nuclear Thermal Rocket",
+ "category": "prop",
+ "short_name": "ntr",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_prop_15_ntr",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    3.055,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -3.055,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_prop_15_ntr": {
+   "vid": "ax_prop_15_ntr",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "NTR-1X Nuclear Thermal Rocket",
+   "primary": true,
+   "dims": {
+    "thrust_kN": 110,
+    "isp_vac_s": 900,
+    "mass_t": 4.8,
+    "exit_d_m": 1.9,
+    "mount_d_m": 2.5,
+    "reactor_MWt": 550
+   },
+   "notes": "Solid-core NTR: steel reactor vessel with recessed grooves and chamfered end rings, 8 control-drum housings, grey shadow shield (chamfered), 2 hydrogen turbopumps, regen nozzle + dark bronze extension.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -3.055
+    ],
+    [
+     1.25,
+     1.25,
+     3.055
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    6.11,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      3.055,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -3.055,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_prop_15_ntr.step",
+    "glb": "glb/ax_prop_15_ntr.glb",
+    "preview": "renders/ax_prop_15_ntr.png"
+   }
+  }
+ },
+ "display_id": "AX-prop-15",
+ "key": "ax_prop_15",
+ "line": "AX",
+ "ax_category": "prop",
+ "aliases": [],
+ "batch": "B2",
+ "slot": null,
+ "interior": null,
+ "summary": "Solid-core hydrogen NTR, shadow shield, Isp ~900 s"
+}
