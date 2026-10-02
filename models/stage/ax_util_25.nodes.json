@@ -1,0 +1,381 @@
+{
+ "id": "ax_util_25",
+ "name": "UT-PC Parachute Pack",
+ "category": "stage",
+ "short_name": "parachute_pack",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_util_25_parachute_pack_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.27,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_25_parachute_pack_s": {
+   "vid": "ax_util_25_parachute_pack_s",
+   "size": "S",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-PC Parachute Pack",
+   "primary": false,
+   "dims": {
+    "diameter": 0.4,
+    "canopy": 5.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 5 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.16999999999999998
+    ],
+    [
+     0.25,
+     0.25,
+     0.16999999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.34,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.17,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid",
+    "canopy",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_s.step",
+    "glb": "glb/ax_util_25_parachute_pack_s.glb",
+    "preview": "renders/ax_util_25_parachute_pack_s.png"
+   }
+  },
+  "ax_util_25_parachute_pack_s_deployed": {
+   "vid": "ax_util_25_parachute_pack_s_deployed",
+   "size": "S",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-PC Parachute Pack",
+   "primary": false,
+   "dims": {
+    "diameter": 0.4,
+    "canopy": 5.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 5 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -2.5,
+     -2.5,
+     -0.16999999999999998
+    ],
+    [
+     2.5,
+     2.5,
+     7.03
+    ]
+   ],
+   "bbox_godot_size": [
+    5.0,
+    7.2,
+    5.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.17,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canopy",
+    "lid",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": "ax_util_25_parachute_pack_s",
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_s_deployed.step",
+    "glb": "glb/ax_util_25_parachute_pack_s_deployed.glb",
+    "preview": "renders/ax_util_25_parachute_pack_s_deployed.png"
+   }
+  },
+  "ax_util_25_parachute_pack_m": {
+   "vid": "ax_util_25_parachute_pack_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-PC Parachute Pack",
+   "primary": true,
+   "dims": {
+    "diameter": 0.8,
+    "canopy": 12.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 12 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -0.45,
+     -0.45,
+     -0.27
+    ],
+    [
+     0.45,
+     0.45,
+     0.27
+    ]
+   ],
+   "bbox_godot_size": [
+    0.9,
+    0.54,
+    0.9
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.27,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid",
+    "canopy",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_m.step",
+    "glb": "glb/ax_util_25_parachute_pack_m.glb",
+    "preview": "renders/ax_util_25_parachute_pack_m.png"
+   }
+  },
+  "ax_util_25_parachute_pack_m_deployed": {
+   "vid": "ax_util_25_parachute_pack_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-PC Parachute Pack",
+   "primary": false,
+   "dims": {
+    "diameter": 0.8,
+    "canopy": 12.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 12 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -6.0,
+     -6.0,
+     -0.27
+    ],
+    [
+     6.0,
+     6.0,
+     16.790000000000003
+    ]
+   ],
+   "bbox_godot_size": [
+    12.0,
+    17.06,
+    12.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.27,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canopy",
+    "lid",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": "ax_util_25_parachute_pack_m",
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_m_deployed.step",
+    "glb": "glb/ax_util_25_parachute_pack_m_deployed.glb",
+    "preview": "renders/ax_util_25_parachute_pack_m_deployed.png"
+   }
+  },
+  "ax_util_25_parachute_pack_l": {
+   "vid": "ax_util_25_parachute_pack_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-PC Parachute Pack",
+   "primary": false,
+   "dims": {
+    "diameter": 1.2,
+    "canopy": 24.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 24 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -0.65,
+     -0.65,
+     -0.37
+    ],
+    [
+     0.65,
+     0.65,
+     0.37
+    ]
+   ],
+   "bbox_godot_size": [
+    1.3,
+    0.74,
+    1.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.37,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "lid",
+    "canopy",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_l.step",
+    "glb": "glb/ax_util_25_parachute_pack_l.glb",
+    "preview": "renders/ax_util_25_parachute_pack_l.png"
+   }
+  },
+  "ax_util_25_parachute_pack_l_deployed": {
+   "vid": "ax_util_25_parachute_pack_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-PC Parachute Pack",
+   "primary": false,
+   "dims": {
+    "diameter": 1.2,
+    "canopy": 24.0
+   },
+   "notes": "Parachute pack in a bevelled recess flange (grooved canister); _deployed: 24 m canopy with vent band and 12 risers.",
+   "bbox_cad_zup": [
+    [
+     -12.0,
+     -12.0,
+     -0.37
+    ],
+    [
+     12.0,
+     12.0,
+     33.45
+    ]
+   ],
+   "bbox_godot_size": [
+    24.0,
+    33.82,
+    24.0
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.37,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "canopy",
+    "lid",
+    "risers",
+    "vent_band"
+   ],
+   "default_of": "ax_util_25_parachute_pack_l",
+   "files": {
+    "step": "step/ax_util_25_parachute_pack_l_deployed.step",
+    "glb": "glb/ax_util_25_parachute_pack_l_deployed.glb",
+    "preview": "renders/ax_util_25_parachute_pack_l_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-util-25",
+ "key": "ax_util_25",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Drogue / main chute pack in a bevelled recess (stowed / deployed)"
+}

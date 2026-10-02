@@ -1,0 +1,116 @@
+{
+ "id": "ax_util_27",
+ "name": "UT-IS ISRU Sabatier Plant",
+ "category": "rover",
+ "short_name": "isru_plant",
+ "sizes": [
+  "M"
+ ],
+ "primary": "ax_util_27_isru_plant",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.775,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    -0.475,
+    -1.05
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_27_isru_plant": {
+   "vid": "ax_util_27_isru_plant",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-IS ISRU Sabatier Plant",
+   "primary": true,
+   "dims": {
+    "width": 2.5,
+    "length": 2.5,
+    "height": 1.6
+   },
+   "notes": "Surface methalox ISRU plant (MOXIE / Sabatier class): grooved Sabatier reactor, electrolyser, 2 product tanks, cryocooler, side radiators, skid frame.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.775
+    ],
+    [
+     1.25,
+     1.25,
+     0.775
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    1.55,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.775,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.0,
+      -0.475,
+      -1.05
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_27_isru_plant.step",
+    "glb": "glb/ax_util_27_isru_plant.glb",
+    "preview": "renders/ax_util_27_isru_plant.png"
+   }
+  }
+ },
+ "display_id": "AX-util-27",
+ "key": "ax_util_27",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Surface methalox ISRU plant (Sabatier + electrolysis + cryocooler)"
+}

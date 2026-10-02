@@ -1,0 +1,253 @@
+{
+ "id": "ax_util_13",
+ "name": "RB-R Rotary Bearing",
+ "category": "robo",
+ "short_name": "rotary_bearing",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_util_13_rotary_bearing_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.15,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_13_rotary_bearing_s": {
+   "vid": "ax_util_13_rotary_bearing_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RB-R Rotary Bearing",
+   "primary": false,
+   "dims": {
+    "diameter": 0.625,
+    "height": 0.2
+   },
+   "notes": "Rotary joint / bearing: stator + rotor separated by a recessed dark seal seam; the rotor turns about Z.",
+   "bbox_cad_zup": [
+    [
+     -0.3125,
+     -0.3125,
+     -0.1
+    ],
+    [
+     0.3125,
+     0.3125,
+     0.1
+    ]
+   ],
+   "bbox_godot_size": [
+    0.625,
+    0.2,
+    0.625
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rotor"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_13_rotary_bearing_s.step",
+    "glb": "glb/ax_util_13_rotary_bearing_s.glb",
+    "preview": "renders/ax_util_13_rotary_bearing_s.png"
+   }
+  },
+  "ax_util_13_rotary_bearing_m": {
+   "vid": "ax_util_13_rotary_bearing_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RB-R Rotary Bearing",
+   "primary": true,
+   "dims": {
+    "diameter": 1.25,
+    "height": 0.3
+   },
+   "notes": "Rotary joint / bearing: stator + rotor separated by a recessed dark seal seam; the rotor turns about Z.",
+   "bbox_cad_zup": [
+    [
+     -0.625,
+     -0.625,
+     -0.15
+    ],
+    [
+     0.625,
+     0.625,
+     0.15
+    ]
+   ],
+   "bbox_godot_size": [
+    1.25,
+    0.3,
+    1.25
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.15,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rotor"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_13_rotary_bearing_m.step",
+    "glb": "glb/ax_util_13_rotary_bearing_m.glb",
+    "preview": "renders/ax_util_13_rotary_bearing_m.png"
+   }
+  },
+  "ax_util_13_rotary_bearing_l": {
+   "vid": "ax_util_13_rotary_bearing_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "RB-R Rotary Bearing",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "height": 0.4
+   },
+   "notes": "Rotary joint / bearing: stator + rotor separated by a recessed dark seal seam; the rotor turns about Z.",
+   "bbox_cad_zup": [
+    [
+     -1.25,
+     -1.25,
+     -0.2
+    ],
+    [
+     1.25,
+     1.25,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    2.5,
+    0.4,
+    2.5
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rotor"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_13_rotary_bearing_l.step",
+    "glb": "glb/ax_util_13_rotary_bearing_l.glb",
+    "preview": "renders/ax_util_13_rotary_bearing_l.png"
+   }
+  }
+ },
+ "display_id": "AX-util-13",
+ "key": "ax_util_13",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Rotary joint / bearing with recessed seam"
+}

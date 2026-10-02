@@ -1,0 +1,460 @@
+{
+ "id": "ax_util_30",
+ "name": "UT-SS Deployable Sunshade",
+ "category": "struct",
+ "short_name": "sunshade",
+ "sizes": [
+  "M",
+  "L",
+  "XL"
+ ],
+ "primary": "ax_util_30_sunshade_l",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.2,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_30_sunshade_m": {
+   "vid": "ax_util_30_sunshade_m",
+   "size": "M",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "span_deployed": 8.5
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (stowed8 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -1.31,
+     -1.31,
+     -0.2
+    ],
+    [
+     1.31,
+     1.31,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    2.62,
+    0.4,
+    2.62
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_30_sunshade_m.step",
+    "glb": "glb/ax_util_30_sunshade_m.glb",
+    "preview": "renders/ax_util_30_sunshade_m.png"
+   }
+  },
+  "ax_util_30_sunshade_m_deployed": {
+   "vid": "ax_util_30_sunshade_m_deployed",
+   "size": "M",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": false,
+   "dims": {
+    "diameter": 2.5,
+    "span_deployed": 8.5
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (deployed, 8 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -3.026443457387042,
+     -3.026443457387042,
+     -0.2
+    ],
+    [
+     3.0264434573870416,
+     3.0264434573870416,
+     0.22399999999999998
+    ]
+   ],
+   "bbox_godot_size": [
+    6.053,
+    0.424,
+    6.053
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": "ax_util_30_sunshade_m",
+   "files": {
+    "step": "step/ax_util_30_sunshade_m_deployed.step",
+    "glb": "glb/ax_util_30_sunshade_m_deployed.glb",
+    "preview": "renders/ax_util_30_sunshade_m_deployed.png"
+   }
+  },
+  "ax_util_30_sunshade_l": {
+   "vid": "ax_util_30_sunshade_l",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": true,
+   "dims": {
+    "diameter": 3.75,
+    "span_deployed": 12.75
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (stowed13 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -1.935,
+     -1.935,
+     -0.2
+    ],
+    [
+     1.935,
+     1.935,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    3.87,
+    0.4,
+    3.87
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_30_sunshade_l.step",
+    "glb": "glb/ax_util_30_sunshade_l.glb",
+    "preview": "renders/ax_util_30_sunshade_l.png"
+   }
+  },
+  "ax_util_30_sunshade_l_deployed": {
+   "vid": "ax_util_30_sunshade_l_deployed",
+   "size": "L",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": false,
+   "dims": {
+    "diameter": 3.75,
+    "span_deployed": 12.75
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (deployed, 13 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -4.529045367408456,
+     -4.529045367408456,
+     -0.2
+    ],
+    [
+     4.529045367408455,
+     4.529045367408455,
+     0.2549625701663355
+    ]
+   ],
+   "bbox_godot_size": [
+    9.058,
+    0.455,
+    9.058
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": "ax_util_30_sunshade_l",
+   "files": {
+    "step": "step/ax_util_30_sunshade_l_deployed.step",
+    "glb": "glb/ax_util_30_sunshade_l_deployed.glb",
+    "preview": "renders/ax_util_30_sunshade_l_deployed.png"
+   }
+  },
+  "ax_util_30_sunshade_xl": {
+   "vid": "ax_util_30_sunshade_xl",
+   "size": "XL",
+   "state": "stowed",
+   "default_state": true,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": false,
+   "dims": {
+    "diameter": 5.0,
+    "span_deployed": 17.0
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (stowed17 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -2.56,
+     -2.56,
+     -0.2
+    ],
+    [
+     2.56,
+     2.56,
+     0.2
+    ]
+   ],
+   "bbox_godot_size": [
+    5.12,
+    0.4,
+    5.12
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_30_sunshade_xl.step",
+    "glb": "glb/ax_util_30_sunshade_xl.glb",
+    "preview": "renders/ax_util_30_sunshade_xl.png"
+   }
+  },
+  "ax_util_30_sunshade_xl_deployed": {
+   "vid": "ax_util_30_sunshade_xl_deployed",
+   "size": "XL",
+   "state": "deployed",
+   "default_state": false,
+   "label": "UT-SS Deployable Sunshade",
+   "primary": false,
+   "dims": {
+    "diameter": 5.0,
+    "span_deployed": 17.0
+   },
+   "notes": "Deployable sunshield for cryogenic stages / depots: canister ring, 4 booms, 4-layer membrane (deployed, 17 m across deployed).",
+   "bbox_cad_zup": [
+    [
+     -6.03164727742987,
+     -6.03164727742987,
+     -0.2
+    ],
+    [
+     6.031647277429869,
+     6.031647277429869,
+     0.32996257016633534
+    ]
+   ],
+   "bbox_godot_size": [
+    12.063,
+    0.53,
+    12.063
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.2,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "booms",
+    "membrane_layers"
+   ],
+   "default_of": "ax_util_30_sunshade_xl",
+   "files": {
+    "step": "step/ax_util_30_sunshade_xl_deployed.step",
+    "glb": "glb/ax_util_30_sunshade_xl_deployed.glb",
+    "preview": "renders/ax_util_30_sunshade_xl_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-util-30",
+ "key": "ax_util_30",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Sunshield for cryogenic stages / depots (stowed / deployed)"
+}

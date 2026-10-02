@@ -1,0 +1,89 @@
+{
+ "id": "ax_util_08",
+ "name": "RCS-QX Recessed RCS Quad",
+ "category": "prop",
+ "short_name": "rcs_quad",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_08_rcs_quad",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.1,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_08_rcs_quad": {
+   "vid": "ax_util_08_rcs_quad",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-QX Recessed RCS Quad",
+   "primary": true,
+   "dims": {
+    "width": 0.3,
+    "height": 0.2
+   },
+   "notes": "4-way (+1 axial) RCS block, thrusters recessed in bevelled pockets of a chamfered housing (Apollo SM quad class, flush).",
+   "bbox_cad_zup": [
+    [
+     -0.1500001,
+     -0.1500001,
+     -0.10000005000000002
+    ],
+    [
+     0.1500001,
+     0.1500001,
+     0.10000005000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.2,
+    0.3
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.1,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_08_rcs_quad.step",
+    "glb": "glb/ax_util_08_rcs_quad.glb",
+    "preview": "renders/ax_util_08_rcs_quad.png"
+   }
+  }
+ },
+ "display_id": "AX-util-08",
+ "key": "ax_util_08",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "4-way RCS block in a chamfered housing"
+}

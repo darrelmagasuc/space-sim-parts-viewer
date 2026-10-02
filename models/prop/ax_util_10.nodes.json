@@ -1,0 +1,88 @@
+{
+ "id": "ax_util_10",
+ "name": "RCS-C Cold-Gas Thruster",
+ "category": "prop",
+ "short_name": "cold_gas_thruster",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_10_cold_gas_thruster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.065,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_10_cold_gas_thruster": {
+   "vid": "ax_util_10_cold_gas_thruster",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-C Cold-Gas Thruster",
+   "primary": true,
+   "dims": {
+    "length": 0.13
+   },
+   "notes": "Nitrogen cold-gas thruster (proximity ops), solenoid valve + conical nozzle.",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.09,
+     -0.065
+    ],
+    [
+     0.09,
+     0.09,
+     0.065
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.13,
+    0.18
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.065,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_10_cold_gas_thruster.step",
+    "glb": "glb/ax_util_10_cold_gas_thruster.glb",
+    "preview": "renders/ax_util_10_cold_gas_thruster.png"
+   }
+  }
+ },
+ "display_id": "AX-util-10",
+ "key": "ax_util_10",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Nitrogen cold-gas thruster (proximity ops)"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "ax_util_17",
+ "name": "SC-SP Spectrometer",
+ "category": "sci",
+ "short_name": "spectrometer",
+ "sizes": [
+  "Small"
+ ],
+ "primary": "ax_util_17_spectrometer",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.325,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.12,
+    0.265,
+    -0.12
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_17_spectrometer": {
+   "vid": "ax_util_17_spectrometer",
+   "size": "Small",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-SP Spectrometer",
+   "primary": true,
+   "dims": {
+    "width": 0.5,
+    "depth": 0.5,
+    "height": 0.6
+   },
+   "notes": "Mass / IR spectrometer: views through a flush bevelled port on the top face (aligns with a hull port). Small slot item (0.5 x 0.5 x 0.6 m envelope), front = CAD -Y.",
+   "bbox_cad_zup": [
+    [
+     -0.24000000000000005,
+     -0.2400001,
+     -0.32500005000000004
+    ],
+    [
+     0.24000000000000005,
+     0.24000000000000005,
+     0.32500005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.65,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.325,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.12,
+      0.265,
+      -0.12
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_17_spectrometer.step",
+    "glb": "glb/ax_util_17_spectrometer.glb",
+    "preview": "renders/ax_util_17_spectrometer.png"
+   }
+  }
+ },
+ "display_id": "AX-util-17",
+ "key": "ax_util_17",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": "Small",
+ "interior": null,
+ "summary": "Mass / IR spectrometer slot item, views through a flush port"
+}

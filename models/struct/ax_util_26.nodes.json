@@ -1,0 +1,89 @@
+{
+ "id": "ax_util_26",
+ "name": "UT-LT Flush Flood Light",
+ "category": "struct",
+ "short_name": "flood_light",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_26_flood_light",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.02,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_26_flood_light": {
+   "vid": "ax_util_26_flood_light",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-LT Flush Flood Light",
+   "primary": true,
+   "dims": {
+    "width": 0.3,
+    "height": 0.2
+   },
+   "notes": "Recessed LED flood panel (8 emitters in a bevelled pocket).",
+   "bbox_cad_zup": [
+    [
+     -0.15,
+     -0.1,
+     -0.020000050000000005
+    ],
+    [
+     0.15,
+     0.1,
+     0.020000050000000002
+    ]
+   ],
+   "bbox_godot_size": [
+    0.3,
+    0.04,
+    0.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.02,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_26_flood_light.step",
+    "glb": "glb/ax_util_26_flood_light.glb",
+    "preview": "renders/ax_util_26_flood_light.png"
+   }
+  }
+ },
+ "display_id": "AX-util-26",
+ "key": "ax_util_26",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Recessed LED flood panel"
+}

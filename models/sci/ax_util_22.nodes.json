@@ -1,0 +1,116 @@
+{
+ "id": "ax_util_22",
+ "name": "SC-RM Radiation Monitor",
+ "category": "sci",
+ "short_name": "radiation_monitor",
+ "sizes": [
+  "Small"
+ ],
+ "primary": "ax_util_22_radiation_monitor",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.295,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.12,
+    0.295,
+    -0.12
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_22_radiation_monitor": {
+   "vid": "ax_util_22_radiation_monitor",
+   "size": "Small",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-RM Radiation Monitor",
+   "primary": true,
+   "dims": {
+    "width": 0.5,
+    "depth": 0.5,
+    "height": 0.6
+   },
+   "notes": "Radiation assessment detector (RAD class): detector stack under a bevelled aperture. Small slot item (0.5 x 0.5 x 0.6 m envelope), front = CAD -Y.",
+   "bbox_cad_zup": [
+    [
+     -0.24000000000000005,
+     -0.2400001,
+     -0.29500004999999996
+    ],
+    [
+     0.24000000000000005,
+     0.24000000000000005,
+     0.29500005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.59,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.295,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.12,
+      0.295,
+      -0.12
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_22_radiation_monitor.step",
+    "glb": "glb/ax_util_22_radiation_monitor.glb",
+    "preview": "renders/ax_util_22_radiation_monitor.png"
+   }
+  }
+ },
+ "display_id": "AX-util-22",
+ "key": "ax_util_22",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": "Small",
+ "interior": null,
+ "summary": "Radiation assessment detector"
+}

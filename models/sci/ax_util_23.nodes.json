@@ -1,0 +1,116 @@
+{
+ "id": "ax_util_23",
+ "name": "SC-GR Ground-Penetrating Radar",
+ "category": "sci",
+ "short_name": "ground_radar",
+ "sizes": [
+  "Small"
+ ],
+ "primary": "ax_util_23_ground_radar",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.301,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.12,
+    0.289,
+    -0.12
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_23_ground_radar": {
+   "vid": "ax_util_23_ground_radar",
+   "size": "Small",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-GR Ground-Penetrating Radar",
+   "primary": true,
+   "dims": {
+    "width": 0.5,
+    "depth": 0.5,
+    "height": 0.6
+   },
+   "notes": "Ground-penetrating radar (RIMFAX class): antenna face on the top face; installed in an underside slot so it faces the ground. Small slot item (0.5 x 0.5 x 0.6 m envelope), front = CAD -Y.",
+   "bbox_cad_zup": [
+    [
+     -0.24000000000000005,
+     -0.2400001,
+     -0.301
+    ],
+    [
+     0.24000000000000005,
+     0.24000000000000005,
+     0.301
+    ]
+   ],
+   "bbox_godot_size": [
+    0.48,
+    0.602,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.301,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.12,
+      0.289,
+      -0.12
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_23_ground_radar.step",
+    "glb": "glb/ax_util_23_ground_radar.glb",
+    "preview": "renders/ax_util_23_ground_radar.png"
+   }
+  }
+ },
+ "display_id": "AX-util-23",
+ "key": "ax_util_23",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": "Small",
+ "interior": null,
+ "summary": "GPR in an underside slot"
+}

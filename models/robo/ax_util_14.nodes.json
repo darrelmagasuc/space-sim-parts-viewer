@@ -1,0 +1,319 @@
+{
+ "id": "ax_util_14",
+ "name": "RB-P Linear Actuator",
+ "category": "robo",
+ "short_name": "linear_actuator",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_util_14_linear_actuator_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.3,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_14_linear_actuator_s": {
+   "vid": "ax_util_14_linear_actuator_s",
+   "size": "S",
+   "state": "retracted",
+   "default_state": true,
+   "label": "RB-P Linear Actuator",
+   "primary": true,
+   "dims": {
+    "length": 0.4
+   },
+   "notes": "Telescoping piston actuator (base clevis, grooved cylinder, steel rod); _extended = +80 % stroke.",
+   "bbox_cad_zup": [
+    [
+     -0.063,
+     -0.06,
+     -0.30000000000000004
+    ],
+    [
+     0.063,
+     0.06,
+     0.30000000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.126,
+    0.6,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_eye"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_14_linear_actuator_s.step",
+    "glb": "glb/ax_util_14_linear_actuator_s.glb",
+    "preview": "renders/ax_util_14_linear_actuator_s.png"
+   }
+  },
+  "ax_util_14_linear_actuator_s_extended": {
+   "vid": "ax_util_14_linear_actuator_s_extended",
+   "size": "S",
+   "state": "extended",
+   "default_state": false,
+   "label": "RB-P Linear Actuator",
+   "primary": false,
+   "dims": {
+    "length": 0.4
+   },
+   "notes": "Telescoping piston actuator (base clevis, grooved cylinder, steel rod); _extended = +80 % stroke.",
+   "bbox_cad_zup": [
+    [
+     -0.063,
+     -0.06,
+     -0.30000000000000004
+    ],
+    [
+     0.063,
+     0.06,
+     0.6200000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.126,
+    0.92,
+    0.12
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.3,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.62,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_eye"
+   ],
+   "default_of": "ax_util_14_linear_actuator_s",
+   "files": {
+    "step": "step/ax_util_14_linear_actuator_s_extended.step",
+    "glb": "glb/ax_util_14_linear_actuator_s_extended.glb",
+    "preview": "renders/ax_util_14_linear_actuator_s_extended.png"
+   }
+  },
+  "ax_util_14_linear_actuator_m": {
+   "vid": "ax_util_14_linear_actuator_m",
+   "size": "M",
+   "state": "retracted",
+   "default_state": true,
+   "label": "RB-P Linear Actuator",
+   "primary": false,
+   "dims": {
+    "length": 0.8
+   },
+   "notes": "Telescoping piston actuator (base clevis, grooved cylinder, steel rod); _extended = +80 % stroke.",
+   "bbox_cad_zup": [
+    [
+     -0.10500000000000001,
+     -0.10500000000000001,
+     -0.5449999999999999
+    ],
+    [
+     0.10500000000000001,
+     0.10500000000000001,
+     0.5449999999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    0.21,
+    1.09,
+    0.21
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.545,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.545,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_eye"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_14_linear_actuator_m.step",
+    "glb": "glb/ax_util_14_linear_actuator_m.glb",
+    "preview": "renders/ax_util_14_linear_actuator_m.png"
+   }
+  },
+  "ax_util_14_linear_actuator_m_extended": {
+   "vid": "ax_util_14_linear_actuator_m_extended",
+   "size": "M",
+   "state": "extended",
+   "default_state": false,
+   "label": "RB-P Linear Actuator",
+   "primary": false,
+   "dims": {
+    "length": 0.8
+   },
+   "notes": "Telescoping piston actuator (base clevis, grooved cylinder, steel rod); _extended = +80 % stroke.",
+   "bbox_cad_zup": [
+    [
+     -0.10500000000000001,
+     -0.10500000000000001,
+     -0.5449999999999999
+    ],
+    [
+     0.10500000000000001,
+     0.10500000000000001,
+     1.185
+    ]
+   ],
+   "bbox_godot_size": [
+    0.21,
+    1.73,
+    0.21
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.545,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      1.185,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "rod",
+    "rod_eye"
+   ],
+   "default_of": "ax_util_14_linear_actuator_m",
+   "files": {
+    "step": "step/ax_util_14_linear_actuator_m_extended.step",
+    "glb": "glb/ax_util_14_linear_actuator_m_extended.glb",
+    "preview": "renders/ax_util_14_linear_actuator_m_extended.png"
+   }
+  }
+ },
+ "display_id": "AX-util-14",
+ "key": "ax_util_14",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Telescoping piston"
+}

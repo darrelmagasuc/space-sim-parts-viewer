@@ -1,0 +1,179 @@
+{
+ "id": "ax_util_12",
+ "name": "RB-H Hinge",
+ "category": "robo",
+ "short_name": "hinge",
+ "sizes": [
+  "S",
+  "M"
+ ],
+ "primary": "ax_util_12_hinge_s",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.105,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_top",
+   "position": [
+    0.0,
+    0.105,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_12_hinge_s": {
+   "vid": "ax_util_12_hinge_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RB-H Hinge",
+   "primary": true,
+   "dims": {
+    "width": 0.4
+   },
+   "notes": "Chamfered hinge actuator: base leaf, lugs, grooved knuckle actuator, top leaf + plate (rotates about X).",
+   "bbox_cad_zup": [
+    [
+     -0.20000000000000004,
+     -0.12000000000000001,
+     -0.10500000000000001
+    ],
+    [
+     0.20000000000000004,
+     0.12000000000000001,
+     0.10500000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    0.21,
+    0.24
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.105,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.105,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_12_hinge_s.step",
+    "glb": "glb/ax_util_12_hinge_s.glb",
+    "preview": "renders/ax_util_12_hinge_s.png"
+   }
+  },
+  "ax_util_12_hinge_m": {
+   "vid": "ax_util_12_hinge_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RB-H Hinge",
+   "primary": false,
+   "dims": {
+    "width": 0.8
+   },
+   "notes": "Chamfered hinge actuator: base leaf, lugs, grooved knuckle actuator, top leaf + plate (rotates about X).",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.24000000000000002,
+     -0.17300000000000001
+    ],
+    [
+     0.4,
+     0.24000000000000002,
+     0.17300000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.8,
+    0.346,
+    0.48
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.173,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.173,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_12_hinge_m.step",
+    "glb": "glb/ax_util_12_hinge_m.glb",
+    "preview": "renders/ax_util_12_hinge_m.png"
+   }
+  }
+ },
+ "display_id": "AX-util-12",
+ "key": "ax_util_12",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Chamfered hinge actuator"
+}

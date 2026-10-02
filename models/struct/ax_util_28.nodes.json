@@ -1,0 +1,141 @@
+{
+ "id": "ax_util_28",
+ "name": "UT-UM Propellant Transfer Umbilical",
+ "category": "struct",
+ "short_name": "prop_umbilical",
+ "sizes": [
+  "S"
+ ],
+ "primary": "ax_util_28_prop_umbilical",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.05,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.15,
+    0.01,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.15,
+    0.01,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_28_prop_umbilical": {
+   "vid": "ax_util_28_prop_umbilical",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-UM Propellant Transfer Umbilical",
+   "primary": true,
+   "dims": {
+    "width": 0.6,
+    "depth": 0.35
+   },
+   "notes": "Recessed propellant-transfer umbilical pair (fuel / oxidiser couplings in bevelled pockets, 2 guide cones).",
+   "bbox_cad_zup": [
+    [
+     -0.3,
+     -0.175,
+     -0.05
+    ],
+    [
+     0.3,
+     0.175,
+     0.05000000000000001
+    ]
+   ],
+   "bbox_godot_size": [
+    0.6,
+    0.1,
+    0.35
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.05,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      -0.15,
+      0.01,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      0.15,
+      0.01,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_28_prop_umbilical.step",
+    "glb": "glb/ax_util_28_prop_umbilical.glb",
+    "preview": "renders/ax_util_28_prop_umbilical.png"
+   }
+  }
+ },
+ "display_id": "AX-util-28",
+ "key": "ax_util_28",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Recessed fluid-transfer umbilical port pair"
+}

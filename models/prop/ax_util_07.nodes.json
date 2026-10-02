@@ -1,0 +1,192 @@
+{
+ "id": "ax_util_07",
+ "name": "RCS-P Flush RCS Pocket Panel",
+ "category": "prop",
+ "short_name": "rcs_pocket_panel",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_util_07_rcs_pocket_panel_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.0648,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_07_rcs_pocket_panel_s": {
+   "vid": "ax_util_07_rcs_pocket_panel_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-P Flush RCS Pocket Panel",
+   "primary": false,
+   "dims": {
+    "width": 0.5
+   },
+   "notes": "Hull facet panel with 4 thrusters recessed in bevelled pockets (Dragon Draco class), cross seam groove.",
+   "bbox_cad_zup": [
+    [
+     -0.25,
+     -0.25,
+     -0.04320005
+    ],
+    [
+     0.25,
+     0.25,
+     0.04320004999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    0.5,
+    0.086,
+    0.5
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0432,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_07_rcs_pocket_panel_s.step",
+    "glb": "glb/ax_util_07_rcs_pocket_panel_s.glb",
+    "preview": "renders/ax_util_07_rcs_pocket_panel_s.png"
+   }
+  },
+  "ax_util_07_rcs_pocket_panel_m": {
+   "vid": "ax_util_07_rcs_pocket_panel_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-P Flush RCS Pocket Panel",
+   "primary": true,
+   "dims": {
+    "width": 0.8
+   },
+   "notes": "Hull facet panel with 4 thrusters recessed in bevelled pockets (Dragon Draco class), cross seam groove.",
+   "bbox_cad_zup": [
+    [
+     -0.4,
+     -0.4,
+     -0.06480005000000001
+    ],
+    [
+     0.4,
+     0.4,
+     0.06480005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.8,
+    0.13,
+    0.8
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0648,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_07_rcs_pocket_panel_m.step",
+    "glb": "glb/ax_util_07_rcs_pocket_panel_m.glb",
+    "preview": "renders/ax_util_07_rcs_pocket_panel_m.png"
+   }
+  },
+  "ax_util_07_rcs_pocket_panel_l": {
+   "vid": "ax_util_07_rcs_pocket_panel_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-P Flush RCS Pocket Panel",
+   "primary": false,
+   "dims": {
+    "width": 1.2
+   },
+   "notes": "Hull facet panel with 4 thrusters recessed in bevelled pockets (Dragon Draco class), cross seam groove.",
+   "bbox_cad_zup": [
+    [
+     -0.6,
+     -0.6,
+     -0.09360005000000002
+    ],
+    [
+     0.6,
+     0.6,
+     0.09360004999999999
+    ]
+   ],
+   "bbox_godot_size": [
+    1.2,
+    0.187,
+    1.2
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0936,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_07_rcs_pocket_panel_l.step",
+    "glb": "glb/ax_util_07_rcs_pocket_panel_l.glb",
+    "preview": "renders/ax_util_07_rcs_pocket_panel_l.png"
+   }
+  }
+ },
+ "display_id": "AX-util-07",
+ "key": "ax_util_07",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Hull facet panel with 4 recessed thrusters (Draco-style)"
+}

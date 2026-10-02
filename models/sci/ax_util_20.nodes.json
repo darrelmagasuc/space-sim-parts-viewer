@@ -1,0 +1,142 @@
+{
+ "id": "ax_util_20",
+ "name": "SC-LB Sample Analysis Rack",
+ "category": "sci",
+ "short_name": "sample_analysis_rack",
+ "sizes": [
+  "Rack"
+ ],
+ "primary": "ax_util_20_sample_analysis_rack",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.895,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.3,
+    0.895,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    -0.3,
+    0.895,
+    -0.3
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_20_sample_analysis_rack": {
+   "vid": "ax_util_20_sample_analysis_rack",
+   "size": "Rack",
+   "state": "flight",
+   "default_state": true,
+   "label": "SC-LB Sample Analysis Rack",
+   "primary": true,
+   "dims": {
+    "width": 1.0,
+    "depth": 1.0,
+    "height": 1.8
+   },
+   "notes": "Pressurised sample-analysis rack: glovebox (window + 2 glove ports) in a bevelled front recess, 3 drawers. Rack slot item (1.0 x 1.0 x 1.8 m envelope), front = CAD -Y.",
+   "bbox_cad_zup": [
+    [
+     -0.49000000000000005,
+     -0.5,
+     -0.895
+    ],
+    [
+     0.49000000000000005,
+     0.49000000000000005,
+     0.895
+    ]
+   ],
+   "bbox_godot_size": [
+    0.98,
+    1.79,
+    0.99
+   ],
+   "nodes": [
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      -0.895,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_1",
+     "position": [
+      0.3,
+      0.895,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_port_2",
+     "position": [
+      -0.3,
+      0.895,
+      -0.3
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_20_sample_analysis_rack.step",
+    "glb": "glb/ax_util_20_sample_analysis_rack.glb",
+    "preview": "renders/ax_util_20_sample_analysis_rack.png"
+   }
+  }
+ },
+ "display_id": "AX-util-20",
+ "key": "ax_util_20",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": "Rack",
+ "interior": null,
+ "summary": "Pressurised sample-analysis rack with glovebox"
+}

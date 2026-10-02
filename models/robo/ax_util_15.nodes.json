@@ -1,0 +1,223 @@
+{
+ "id": "ax_util_15",
+ "name": "RB-A Station Robotic Arm",
+ "category": "robo",
+ "short_name": "station_arm",
+ "sizes": [
+  "L"
+ ],
+ "primary": "ax_util_15_station_arm",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_tool",
+   "position": [
+    0.0,
+    -0.55,
+    -0.4
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.55,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_15_station_arm": {
+   "vid": "ax_util_15_station_arm",
+   "size": "L",
+   "state": "stowed",
+   "default_state": true,
+   "label": "RB-A Station Robotic Arm",
+   "primary": true,
+   "dims": {
+    "reach": 17.0
+   },
+   "notes": "7-DOF walking station arm (Canadarm2 class): 2 identical end effectors (either end can be the base), 2 x 3.6 m booms, 7 grooved joints. _arm_deployed pose.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -0.55
+    ],
+    [
+     0.65,
+     4.2,
+     0.55
+    ]
+   ],
+   "bbox_godot_size": [
+    0.85,
+    1.1,
+    4.4
+   ],
+   "nodes": [
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      -0.55,
+      -0.4
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.55,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_link_1",
+    "arm_link_2",
+    "arm_link_3",
+    "arm_link_4",
+    "arm_link_5",
+    "arm_link_6",
+    "arm_link_7",
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6",
+    "end_effector_b"
+   ],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_15_station_arm.step",
+    "glb": "glb/ax_util_15_station_arm.glb",
+    "preview": "renders/ax_util_15_station_arm.png"
+   }
+  },
+  "ax_util_15_station_arm_arm_deployed": {
+   "vid": "ax_util_15_station_arm_arm_deployed",
+   "size": "L",
+   "state": "arm_deployed",
+   "default_state": false,
+   "label": "RB-A Station Robotic Arm",
+   "primary": false,
+   "dims": {
+    "reach": 17.0
+   },
+   "notes": "7-DOF walking station arm (Canadarm2 class): 2 identical end effectors (either end can be the base), 2 x 3.6 m booms, 7 grooved joints. _arm_deployed pose.",
+   "bbox_cad_zup": [
+    [
+     -0.2,
+     -0.2,
+     -0.55
+    ],
+    [
+     0.2,
+     6.860000000000001,
+     3.6900000000000004
+    ]
+   ],
+   "bbox_godot_size": [
+    0.4,
+    4.24,
+    7.06
+   ],
+   "nodes": [
+    {
+     "name": "node_tool",
+     "position": [
+      0.0,
+      -0.05,
+      -6.66
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.55,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [
+    "arm_link_1",
+    "arm_link_2",
+    "arm_link_3",
+    "arm_link_4",
+    "arm_link_5",
+    "arm_link_6",
+    "arm_link_7",
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6",
+    "end_effector_b"
+   ],
+   "default_of": "ax_util_15_station_arm",
+   "files": {
+    "step": "step/ax_util_15_station_arm_arm_deployed.step",
+    "glb": "glb/ax_util_15_station_arm_arm_deployed.glb",
+    "preview": "renders/ax_util_15_station_arm_arm_deployed.png"
+   }
+  }
+ },
+ "display_id": "AX-util-15",
+ "key": "ax_util_15",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "7-DOF walking arm with 2 end effectors (stowed / deployed)"
+}

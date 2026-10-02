@@ -1,0 +1,195 @@
+{
+ "id": "ax_util_29",
+ "name": "UT-WS Whipple MMOD Shield Panel",
+ "category": "struct",
+ "short_name": "whipple_panel",
+ "sizes": [
+  "S",
+  "M",
+  "L"
+ ],
+ "primary": "ax_util_29_whipple_panel_m",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    0.0559,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_29_whipple_panel_s": {
+   "vid": "ax_util_29_whipple_panel_s",
+   "size": "S",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-WS Whipple MMOD Shield Panel",
+   "primary": false,
+   "dims": {
+    "module_diameter": 1.25,
+    "height": 1.0
+   },
+   "notes": "Whipple MMOD shield panel: 80 deg bumper sheet at a 0.10 m stand-off around a 1.25 m module (4 panels wrap it), 6 stand-off struts, 2 seams.",
+   "bbox_cad_zup": [
+    [
+     -0.5,
+     -0.46859216746148735,
+     -0.10266448553651619
+    ],
+    [
+     0.5,
+     0.46859216746148724,
+     0.10266448553651619
+    ]
+   ],
+   "bbox_godot_size": [
+    1.0,
+    0.205,
+    0.937
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.0013,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_29_whipple_panel_s.step",
+    "glb": "glb/ax_util_29_whipple_panel_s.glb",
+    "preview": "renders/ax_util_29_whipple_panel_s.png"
+   }
+  },
+  "ax_util_29_whipple_panel_m": {
+   "vid": "ax_util_29_whipple_panel_m",
+   "size": "M",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-WS Whipple MMOD Shield Panel",
+   "primary": true,
+   "dims": {
+    "module_diameter": 2.5,
+    "height": 2.0
+   },
+   "notes": "Whipple MMOD shield panel: 80 deg bumper sheet at a 0.10 m stand-off around a 2.50 m module (4 panels wrap it), 6 stand-off struts, 2 seams.",
+   "bbox_cad_zup": [
+    [
+     -1.0,
+     -0.8703344235155747,
+     -0.15992000089469016
+    ],
+    [
+     1.0,
+     0.8703344235155746,
+     0.1599200008946901
+    ]
+   ],
+   "bbox_godot_size": [
+    2.0,
+    0.32,
+    1.741
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.0559,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_29_whipple_panel_m.step",
+    "glb": "glb/ax_util_29_whipple_panel_m.glb",
+    "preview": "renders/ax_util_29_whipple_panel_m.png"
+   }
+  },
+  "ax_util_29_whipple_panel_l": {
+   "vid": "ax_util_29_whipple_panel_l",
+   "size": "L",
+   "state": "flight",
+   "default_state": true,
+   "label": "UT-WS Whipple MMOD Shield Panel",
+   "primary": false,
+   "dims": {
+    "module_diameter": 3.75,
+    "height": 3.0
+   },
+   "notes": "Whipple MMOD shield panel: 80 deg bumper sheet at a 0.10 m stand-off around a 3.75 m module (4 panels wrap it), 6 stand-off struts, 2 seams.",
+   "bbox_cad_zup": [
+    [
+     -1.5,
+     -1.2720766795696619,
+     -0.2330311124200093
+    ],
+    [
+     1.5,
+     1.2720766795696616,
+     0.2330311124200093
+    ]
+   ],
+   "bbox_godot_size": [
+    3.0,
+    0.466,
+    2.544
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      0.129,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_29_whipple_panel_l.step",
+    "glb": "glb/ax_util_29_whipple_panel_l.glb",
+    "preview": "renders/ax_util_29_whipple_panel_l.png"
+   }
+  }
+ },
+ "display_id": "AX-util-29",
+ "key": "ax_util_29",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Stand-off MMOD shield panels that wrap a module"
+}

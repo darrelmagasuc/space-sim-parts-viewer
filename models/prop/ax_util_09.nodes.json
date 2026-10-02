@@ -1,0 +1,88 @@
+{
+ "id": "ax_util_09",
+ "name": "RCS-G Methalox Gas-Gas Thruster",
+ "category": "prop",
+ "short_name": "methalox_thruster",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_09_methalox_thruster",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.16,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_09_methalox_thruster": {
+   "vid": "ax_util_09_methalox_thruster",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-G Methalox Gas-Gas Thruster",
+   "primary": true,
+   "dims": {
+    "length": 0.32
+   },
+   "notes": "Gaseous methane / oxygen RCS thruster: valve body, chamber, igniter, bell.",
+   "bbox_cad_zup": [
+    [
+     -0.09,
+     -0.09,
+     -0.16
+    ],
+    [
+     0.09,
+     0.09,
+     0.16
+    ]
+   ],
+   "bbox_godot_size": [
+    0.18,
+    0.32,
+    0.18
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.16,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_09_methalox_thruster.step",
+    "glb": "glb/ax_util_09_methalox_thruster.glb",
+    "preview": "renders/ax_util_09_methalox_thruster.png"
+   }
+  }
+ },
+ "display_id": "AX-util-09",
+ "key": "ax_util_09",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Gaseous methane/oxygen RCS thruster"
+}

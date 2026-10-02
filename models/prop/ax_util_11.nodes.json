@@ -1,0 +1,89 @@
+{
+ "id": "ax_util_11",
+ "name": "RCS-V Vernier Pod",
+ "category": "prop",
+ "short_name": "vernier_pod",
+ "sizes": [
+  "XS"
+ ],
+ "primary": "ax_util_11_vernier_pod",
+ "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
+ "nodes": [
+  {
+   "name": "node_attach",
+   "position": [
+    0.0,
+    -0.06,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  }
+ ],
+ "variants": {
+  "ax_util_11_vernier_pod": {
+   "vid": "ax_util_11_vernier_pod",
+   "size": "XS",
+   "state": "flight",
+   "default_state": true,
+   "label": "RCS-V Vernier Pod",
+   "primary": true,
+   "dims": {
+    "width": 0.26,
+    "height": 0.12
+   },
+   "notes": "Vernier pod: 2 small verniers recessed in a chamfered pod (fine translation).",
+   "bbox_cad_zup": [
+    [
+     -0.13,
+     -0.07000000000000002,
+     -0.06000005
+    ],
+    [
+     0.13,
+     0.07000000000000002,
+     0.06000005
+    ]
+   ],
+   "bbox_godot_size": [
+    0.26,
+    0.12,
+    0.14
+   ],
+   "nodes": [
+    {
+     "name": "node_attach",
+     "position": [
+      0.0,
+      -0.06,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_util_11_vernier_pod.step",
+    "glb": "glb/ax_util_11_vernier_pod.glb",
+    "preview": "renders/ax_util_11_vernier_pod.png"
+   }
+  }
+ },
+ "display_id": "AX-util-11",
+ "key": "ax_util_11",
+ "line": "AX",
+ "ax_category": "util",
+ "aliases": [],
+ "batch": "B10",
+ "slot": null,
+ "interior": null,
+ "summary": "Pod of 2 small verniers for fine translation"
+}
