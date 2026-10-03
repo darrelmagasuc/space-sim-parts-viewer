@@ -1,0 +1,215 @@
+{
+ "id": "eqm08",
+ "vid": "eqm08_co2_scrubber",
+ "name": "CO2 scrubber, twin swing-bed (Small slot)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.49,
+  "height_y": 0.6,
+  "depth_z": 0.495
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.49,
+  "height_y": 0.635,
+  "depth_z": 0.495
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "floor",
+ "slot_units_xyz": [
+  0.98,
+  1.0,
+  0.99
+ ],
+ "glb": "eqm08_co2_scrubber.glb",
+ "step": "eqm08_co2_scrubber.step",
+ "tris": 1904,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_led_amber",
+  "m_led_green",
+  "m_screen",
+  "m_white",
+  "m_yellow"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    -0.3,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.3,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.0,
+    -0.238,
+    0.2285
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "air_in"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.09,
+    0.335,
+    -0.0825
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "air_out"
+  },
+  {
+   "name": "node_port_3",
+   "position": [
+    -0.16,
+    0.328,
+    -0.1825
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "power"
+  },
+  {
+   "name": "node_port_4",
+   "position": [
+    -0.1,
+    0.328,
+    -0.1825
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "data"
+  }
+ ],
+ "meshes": [
+  "eqm08_enclosure",
+  "eqm08_intake_grille",
+  "eqm08_status_display",
+  "eqm08_status_leds",
+  "eqm08_canister_door_1",
+  "eqm08_canister_door_2",
+  "eqm08_port_outlet",
+  "eqm08_port_connectors"
+ ],
+ "moving_meshes": {
+  "eqm08_canister_door_1": "hinge, outer (-X) vertical edge",
+  "eqm08_canister_door_2": "hinge, outer (+X) vertical edge"
+ },
+ "legacy_blockout": "eq08",
+ "notes": "two sorbent-bed canister doors (canister_door_1/2, hinge on the outer vertical edge), front intake grille, top outlet collar, power + data on top",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {
+  "canister_door_1": {
+   "subs": [
+    "eqm08_canister_door_1"
+   ],
+   "pivot": [
+    -0.2,
+    0.075,
+    0.2405
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": -105
+   }
+  },
+  "canister_door_2": {
+   "subs": [
+    "eqm08_canister_door_2"
+   ],
+   "pivot": [
+    0.2,
+    0.075,
+    0.2405
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 105
+   }
+  }
+ }
+}

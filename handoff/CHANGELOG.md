@@ -8,6 +8,30 @@ How versions are bumped (`handoff/tools/publish_update.py`):
 
 Each entry lists the ids that were added, changed or removed. Re-sync those ids by hash (see "Updates" in `AGENT_HANDOFF.md`).
 
+## [0.5.0] - 2026-10-03
+
+405 parts / 935 variants, 76 interiors (82 variants), 2 assemblies. Tag `parts-v0.5.0`. Published on Darrel's request (backup of the current state).
+
+### AX interiors (new: 50)
+The first AX interiors from Sergei's / Anastasia's interior team (`parts/interiors_modern/ax`), imported with the new `handoff/tools/import_ax_interiors.py`. `glb_interior` is the **baked** interior GLB (props embedded, same origin as the exterior). Each one was built against this release's exterior GLB (sha256 checked).
+- **Finished (42):** AX-cmd-01, -02, -03, -04, -06, -07, -08; AX-aero-01 (round 4, 13:11); AX-rover-01, -03, -05, -06, -07, -08, -10, -11, -12; AX-aero-02, -04, -10; AX-grav-01, -02, -03; AX-util-01, -03, -04, -05; AX-station-01 to -08 and -10 to -17 (except -05, see below).
+- **Included, round-4 updates pending (8):** AX-cmd-05 (jump-seat fold), AX-grav-05 to -09 (spin gravity), AX-aero-05 (aft-bulkhead handrails), AX-station-05 (hand-controller stow / workstation over the hip). Each carries `known_issue` with the pending item.
+- **Not included (`interiors_skipped`):** AX-rover-02, AX-rover-04 (in progress: mid-rebuild, mixed LODs); AX-aero-06 (still building); AX-aero-03, -14 (not built yet). Base-line `rover12_interior` stays skipped, as before.
+- **Props library:** Anastasia's 14 eqm props (`models/interiors/props/`, GLB + nodes.json + `props.index.json`; listed in `interiors.json` `props_library`) for runtime instancing. The baked interior GLBs already embed them.
+- The interior team's own check results are in `validation.open_findings` (not gated). These include aisle findings on AX-cmd-03 / -07 seat-to-hatch paths, AX-cmd-06 (0.402 m to the docking hatch, seat-fold parts in the keep-out), AX-cmd-05 (0.478 m side-hatch path), and AX-station-16 storm-shelter / ECLSS rings 0.55 / 0.564 m (accepted as secondary paths). There are small hatch keep-out overlaps on AX-cmd-01 / -02 / -04 / AX-grav-03, and liner / bezel items 5 mm or more past the IML on several stations.
+
+### AX exteriors (changed: 57)
+The current AX exteriors and nodes.json from the B1 / B5 / B6 / B8 / B9 work of 2026-10-03 (hip 0.90 interior standard, station-16 core racks / entry tunnel / ladder keep-out, station-17 racks, suitport bores, mass estimates, spin-gravity blocks, rover-04 bunks / racks, rover-02 windows, aero-01 canopy hinge, aero-03 dorsal hatch, aero-05 handrails, cmd-02 / -04 / -05 consoles and seats). Both zips were refreshed (117 replaced + 2 added per zip).
+
+### Unfinished (not in this release, next round)
+- AX-cmd-02 / -04 interior round-4 updates (displays 0.32 x 0.12 x 0.18 on cmd-02, 0.12 m deep front console on cmd-04).
+- Load re-checks for AX-station-08 / -15 / -16 (racks with the new attach / deck ratings).
+- 6 mm tunnel-liner trims on AX-station-01 / -03 / -04 / -06 / -07 (liners 5 mm past the IML).
+- AX-station-05 workstation: shoulder over the hip, controller deployed / stowed poses, panel trim for the window view prisms.
+- Load ratings: rack attach points (5 kN ultimate, +30 %), handrails 890 / 1,330 N, rack hard-point deck zones 1,200 kg/m2.
+- AX-station-15 rack_4 (ECLSS): 6 attach points.
+- AX-station-16: the R5 source edits (tile-top datum, measured walkways, ladder stops below the hatch keep-out; source commit ba4265d) are **not rebuilt yet**. The released station-16 still has the earlier ladder allowance band and quotes the slab datum.
+
 ## [0.4.0] - 2026-10-02
 
 405 parts / 934 variants, 26 interiors (32 variants), 2 assemblies. Tag `parts-v0.4.0`.

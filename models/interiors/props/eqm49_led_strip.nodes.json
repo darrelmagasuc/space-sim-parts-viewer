@@ -1,0 +1,117 @@
+{
+ "id": "eqm49",
+ "vid": "eqm49_led_strip",
+ "name": "LED light strip 0.48 m (surface mount, chainable)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.484,
+  "height_y": 0.042,
+  "depth_z": 0.029
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.484,
+  "height_y": 0.042,
+  "depth_z": 0.029
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.97,
+  0.07,
+  0.06
+ ],
+ "glb": "eqm49_led_strip.glb",
+ "step": "eqm49_led_strip.step",
+ "tris": 240,
+ "materials": [
+  "m_black",
+  "m_led",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.0145
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.242,
+    0.0,
+    -0.0015
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "power"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.242,
+    0.0,
+    -0.0015
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "power"
+  }
+ ],
+ "meshes": [
+  "eqm49_housing",
+  "eqm49_diffuser",
+  "eqm49_end_caps"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": null,
+ "notes": "aluminium extrusion with frosted emissive diffuser (material m_led); chain end-to-end via node_port_1/2. Godot: put a light at the diffuser face, emitting along node_mount's opposite direction (+Z Godot)",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {},
+ "light_emitter": {
+  "face": "diffuser",
+  "normal_godot": [
+   0,
+   0,
+   1
+  ],
+  "length_m": 0.456
+ }
+}

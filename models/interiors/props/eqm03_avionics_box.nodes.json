@@ -1,0 +1,136 @@
+{
+ "id": "eqm03",
+ "vid": "eqm03_avionics_box",
+ "name": "Avionics box (LRU) on cold plate, with cable harness (Small slot, half height)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.462,
+  "height_y": 0.262,
+  "depth_z": 0.4815
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.462,
+  "height_y": 0.262,
+  "depth_z": 0.4895
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "floor",
+ "slot_units_xyz": [
+  0.92,
+  0.44,
+  0.96
+ ],
+ "glb": "eqm03_avionics_box.glb",
+ "step": "eqm03_avionics_box.step",
+ "tris": 4476,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_graphite",
+  "m_led_amber",
+  "m_led_green",
+  "m_strap",
+  "m_white",
+  "m_yellow"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    -0.131,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.131,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.199,
+    -0.081,
+    -0.2488
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "power"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.199,
+    -0.041,
+    -0.2488
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "data"
+  }
+ ],
+ "meshes": [
+  "eqm03_cold_plate",
+  "eqm03_chassis",
+  "eqm03_front_panel",
+  "eqm03_handles",
+  "eqm03_connectors",
+  "eqm03_harness",
+  "eqm03_bulkhead_bracket",
+  "eqm03_port_bulkhead"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": "eq03",
+ "notes": "ATR-style LRU on a cold-plate tray with front hold-down knobs; 3 circular connectors whose harness runs along the right side (cable ties) to a rear bulkhead bracket (power + data receptacles face the back wall)",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {}
+}

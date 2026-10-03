@@ -1,0 +1,445 @@
+{
+ "id": "ax_util_03",
+ "name": "AX-util-03 DP-CB Common Berthing Ring -- modern interior (light)",
+ "display_id": "AX-util-03",
+ "kind": "light",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 0,
+ "crew_virtual": [
+  {
+   "n": 101,
+   "srp": [
+    0.0,
+    -1.245,
+    0.0
+   ],
+   "facing": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "floating": true,
+   "note": "light part: no exterior seat; 1.8 m floating figure in transit along the port axis, head 0.17 m below the door trim face (fit = square bore clearance)"
+  }
+ ],
+ "gravity": {
+  "type": "zero_g",
+  "note": "CBM berthing ring (zero-g transit): free-floating crew pass along the axis; 2 grab handles on the hatch coaming"
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays)",
+ "tris": {
+  "total_baked": 1536,
+  "own_geometry": 1536,
+  "props": 0,
+  "by_group": {
+   "other": 368,
+   "hatches_windows": 1168
+  },
+  "runtime_glb": 1536,
+  "exterior": 3474,
+  "combined": 5010
+ },
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.145,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_1_hinge",
+   "position": [
+    0.0,
+    -0.167,
+    -0.532
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    0.0,
+    -0.181,
+    -0.589
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    0.0,
+    -0.181,
+    0.589
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ]
+  }
+ ],
+ "moving": {
+  "hatch_door_1": {
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handle",
+    "hatch_door_1_valve"
+   ],
+   "pivot": [
+    0.0,
+    -0.167,
+    -0.532
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "interior trim of the square CBM hatch (on the exterior hatch_door_1 cabin face); rotate with the exterior door about node_hatch_door_1_hinge (CAD +y edge)"
+  }
+ },
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 101,
+    "pose": "floating",
+    "virtual": true,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.48,
+      "at_iml_godot": [
+       0.11,
+       -0.585,
+       -0.14
+      ],
+      "to_panel_face_m": 0.46
+     },
+     "shoulders": {
+      "to_iml_m": 0.38,
+      "at_iml_godot": [
+       0.24,
+       -0.745,
+       0.15
+      ],
+      "to_panel_face_m": 0.36
+     },
+     "knees": {
+      "to_iml_m": 0.43,
+      "at_iml_godot": [
+       0.19,
+       -1.795,
+       0.14
+      ],
+      "to_panel_face_m": 0.41
+     },
+     "torso": {
+      "to_iml_m": 0.38,
+      "at_iml_godot": [
+       0.24,
+       -1.225,
+       0.15
+      ],
+      "to_panel_face_m": 0.36
+     },
+     "thighs": {
+      "to_iml_m": 0.43,
+      "at_iml_godot": [
+       0.19,
+       -1.715,
+       0.14
+      ],
+      "to_panel_face_m": 0.41
+     },
+     "shins": {
+      "to_iml_m": 0.44,
+      "at_iml_godot": [
+       0.18,
+       -2.125,
+       0.12
+      ],
+      "to_panel_face_m": 0.42
+     },
+     "feet": {
+      "to_iml_m": 0.38,
+      "at_iml_godot": [
+       0.15,
+       -2.175,
+       -0.24
+      ],
+      "to_panel_face_m": 0.36
+     }
+    },
+    "min_clearance_to_iml_m": 0.38,
+    "worst_part": "shoulders",
+    "fits": true,
+    "note": "standing: feet / shins rest on the floor, excluded from the minimum"
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 101,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.146,
+      "item": "hatch_door_1_valve"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.408,
+      "item": "hatch_door_1_valve"
+     },
+     "knees": {
+      "to_nearest_item_m": 1.46,
+      "item": "hatch_door_1_handle"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.408,
+      "item": "hatch_door_1_valve"
+     },
+     "thighs": {
+      "to_nearest_item_m": 1.042,
+      "item": "hatch_door_1_handle"
+     },
+     "shins": {
+      "to_nearest_item_m": 1.532,
+      "item": "hatch_door_1_handle"
+     },
+     "feet": {
+      "to_nearest_item_m": 1.943,
+      "item": "hatch_door_1_handle"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": 0.002,
+   "items_outside_cavity": [],
+   "items_within_2mm": [],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [],
+  "crew_clash_m3": [],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "name": "open_end_to_hatch1",
+    "clear_diameter_m": 1.082,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "hatch_seal_1",
+    "pinch_point_cad": [
+     0.541,
+     -0.0,
+     null
+    ],
+    "passage_centre_cad": [
+     -0.0,
+     -0.0
+    ],
+    "note": "transit, door open: widest axis-parallel clear cylinder from the open end to the door face (0.050 m), fixed items + IML side wall; moving door meshes excluded"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 101,
+    "virtual": true,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.647,
+      "item": "coaming_grab_a",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": 0.571,
+      "item": "hatch_door_1_handle",
+      "within_reach": true
+     }
+    },
+    "required": "handhold",
+    "ok": true,
+    "note": "zero-g / floating: a handhold must be within arm reach of the station"
+   }
+  ],
+  "elapsed_s": 3
+ },
+ "contents": "square 1.24 m CBM passage (50 mm cabin side, all flush): black square trim frame at the mating end, white hatch coaming frame (2 LED bars, 2 recessed alu grab bars), rubber seal frame, interior trim plate on the exterior square hatch door (white, alu handle on standoffs, yellow equalisation valve, graphite hinge knuckles)",
+ "notes": [],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": [
+   "node_hatch_1"
+  ]
+ },
+ "lod1": {
+  "tris": 259,
+  "lod0_tris": 1536,
+  "ratio": 0.1,
+  "file": "lod/ax_util_03_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_util_03/ax_util_03_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [],
+ "moving_meshes": [
+  {
+   "name": "hatch_door_1",
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handle",
+    "hatch_door_1_valve"
+   ],
+   "pivot": [
+    0.0,
+    -0.167,
+    -0.532
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "interior trim of the square CBM hatch (on the exterior hatch_door_1 cabin face); rotate with the exterior door about node_hatch_door_1_hinge (CAD +y edge)"
+  }
+ ],
+ "variants": {
+  "ax_util_03_berthing_ring_interior": {
+   "exterior_variant": "ax_util_03_berthing_ring",
+   "primary": true,
+   "crew": 0,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.145,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_1_hinge",
+     "position": [
+      0.0,
+      -0.167,
+      -0.532
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      0.0,
+      -0.181,
+      -0.589
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      0.0,
+      -0.181,
+      0.589
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

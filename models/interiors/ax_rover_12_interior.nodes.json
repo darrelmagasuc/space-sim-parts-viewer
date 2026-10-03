@@ -1,0 +1,459 @@
+{
+ "id": "ax_rover_12",
+ "name": "AX-rover-12 RH-DK Hub Docking Ring -- modern interior (light)",
+ "display_id": "AX-rover-12",
+ "kind": "light",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 0,
+ "crew_virtual": [
+  {
+   "n": 101,
+   "srp": [
+    0.0,
+    -0.224,
+    0.895
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "floating": true,
+   "note": "light part: no exterior seat; 1.8 m figure prone on the mat, crawling toward the collar door, head 0.13 m short of the door (fit = radial bore clearance)"
+  }
+ ],
+ "gravity": {
+  "type": "planetary",
+  "down_godot": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "note": "surface rover dock ring; gravity -Y Godot (CAD -Z): crew crawl prone through the 0.99 m ring to the station collar door"
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays)",
+ "tris": {
+  "total_baked": 3628,
+  "own_geometry": 3628,
+  "props": 0,
+  "by_group": {
+   "hatches_windows": 3516,
+   "panels": 88,
+   "racks_fit_out": 24
+  },
+  "runtime_glb": 3628,
+  "exterior": 4366,
+  "combined": 7994
+ },
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -0.024,
+    -0.165
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_1_hinge",
+   "position": [
+    0.0,
+    0.4264,
+    -0.105
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    0.0,
+    0.427,
+    0.155
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    0.0,
+    0.427,
+    -0.025
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "moving": {
+  "hatch_door_1": {
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.0,
+    0.4264,
+    -0.105
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch, interior trim opens into the cabin about node_hatch_door_N_hinge (tunnel-local +Y edge)"
+  }
+ },
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 101,
+    "pose": "floating",
+    "virtual": true,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.114,
+      "at_iml_godot": [
+       0.11,
+       -0.364,
+       0.235
+      ],
+      "to_panel_face_m": 0.094
+     },
+     "shoulders": {
+      "to_iml_m": 0.047,
+      "at_iml_godot": [
+       0.24,
+       -0.374,
+       0.395
+      ],
+      "to_panel_face_m": 0.027
+     },
+     "knees": {
+      "to_iml_m": 0.082,
+      "at_iml_godot": [
+       0.19,
+       -0.364,
+       1.445
+      ],
+      "to_panel_face_m": 0.062
+     },
+     "torso": {
+      "to_iml_m": 0.047,
+      "at_iml_godot": [
+       0.24,
+       -0.374,
+       0.875
+      ],
+      "to_panel_face_m": 0.027
+     },
+     "thighs": {
+      "to_iml_m": 0.082,
+      "at_iml_godot": [
+       0.19,
+       -0.364,
+       1.365
+      ],
+      "to_panel_face_m": 0.062
+     },
+     "shins": {
+      "to_iml_m": 0.104,
+      "at_iml_godot": [
+       0.18,
+       -0.344,
+       1.775
+      ],
+      "to_panel_face_m": 0.084
+     },
+     "feet": {
+      "to_iml_m": 0.006,
+      "at_iml_godot": [
+       0.15,
+       -0.464,
+       1.825
+      ],
+      "to_panel_face_m": -0.014
+     }
+    },
+    "min_clearance_to_iml_m": 0.006,
+    "worst_part": "feet",
+    "fits": true,
+    "note": "standing: feet / shins rest on the floor, excluded from the minimum"
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 101,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.015,
+      "item": "hatch_door_1_handwheel"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.047,
+      "item": "tunnel_trim_ring_1"
+     },
+     "knees": {
+      "to_nearest_item_m": 1.023,
+      "item": "tunnel_trim_ring_1"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.047,
+      "item": "tunnel_trim_ring_1"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.606,
+      "item": "tunnel_trim_ring_1"
+     },
+     "shins": {
+      "to_nearest_item_m": 1.095,
+      "item": "tunnel_trim_ring_1"
+     },
+     "feet": {
+      "to_nearest_item_m": 1.5,
+      "item": "tunnel_trim_ring_1"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": -0.0002,
+   "items_outside_cavity": [],
+   "items_within_2mm": [
+    [
+     "tunnel_trim_ring_1",
+     -0.0002
+    ]
+   ],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [],
+  "crew_clash_m3": [],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "name": "hub_end_to_collar_door",
+    "clear_diameter_m": 0.837,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "tunnel_handhold_235",
+    "pinch_point_cad": [
+     -0.344,
+     null,
+     -0.265
+    ],
+    "passage_centre_cad": [
+     -0.001,
+     null,
+     -0.025
+    ],
+    "note": "transit (crawl): widest axis-parallel clear cylinder along the tube, Godot z +0.275..-0.165, fixed items + IML side wall; moving door meshes excluded"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 101,
+    "virtual": true,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.234,
+      "item": "tunnel_handhold_235",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": 0.416,
+      "item": "hatch_door_1_handwheel",
+      "within_reach": true
+     }
+    },
+    "required": "handhold",
+    "ok": true,
+    "note": "zero-g / floating: a handhold must be within arm reach of the station"
+   }
+  ],
+  "elapsed_s": 4
+ },
+ "contents": "0.99 m dock ring (light): white tunnel liner sleeve (18 mm), trim ring at the hub-side mouth, interior door trim on the collar door (white, alu handwheel, rubber seal, graphite hinge), 4 alu grab handles, 2 LED task lights, 2 yellow door caution labels",
+ "notes": [
+  "RE-EXPORT: Chief Designer re-exported this part at 00:00 CAT (commit 7e3539e): the IML now ends at the collar door's hub-side face, one body (was 2 bodies split by hatch_door_1). This build uses the re-exported files.",
+  "frame (R3 re-export): tunnel axis at Godot y -0.024 (node_front / node_rear / node_hatch_1 y -0.024, node_bottom y -1.174); mates to the hub-ring nodes (y -0.07) by node, no offset applied",
+  "R3: the collar door now has exterior node_hatch_1 (0, -0.024, -0.165) and iva hatch station_collar_hatch (kind dock_collar, r 0.495) -> interior door trim on its hub-side face (IML end, z -0.165) as hatch 1; the hinge node is interior-only"
+ ],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": [
+   "node_hatch_1"
+  ]
+ },
+ "lod1": {
+  "tris": 1084,
+  "lod0_tris": 3628,
+  "ratio": 0.1,
+  "file": "lod/ax_rover_12_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_rover_12/ax_rover_12_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [],
+ "moving_meshes": [
+  {
+   "name": "hatch_door_1",
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.0,
+    0.4264,
+    -0.105
+   ],
+   "axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch, interior trim opens into the cabin about node_hatch_door_N_hinge (tunnel-local +Y edge)"
+  }
+ ],
+ "variants": {
+  "ax_rover_12_dock_ring_interior": {
+   "exterior_variant": "ax_rover_12_dock_ring",
+   "primary": true,
+   "crew": 0,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -0.024,
+      -0.165
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_1_hinge",
+     "position": [
+      0.0,
+      0.4264,
+      -0.105
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      0.0,
+      0.427,
+      0.155
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      0.0,
+      0.427,
+      -0.025
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

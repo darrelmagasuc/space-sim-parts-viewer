@@ -1,0 +1,1391 @@
+{
+ "id": "ax_aero_05",
+ "name": "AX-aero-05 CK-3S Mk3 Spaceplane Nose -- modern interior (full)",
+ "display_id": "AX-aero-05",
+ "kind": "full",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 2,
+ "crew_virtual": [],
+ "gravity": {
+  "type": "aircraft",
+  "down_godot": [
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "note": "level flight: crew posture gravity = Godot -Z (ventral; iva dorsal = Godot +Z, nose = Godot +Y). In a vertical stack / on the pad (gravity -Y Godot) the crew lie on their backs (launch posture). 2 seated pilots facing +Y on the flight deck (Godot z -1.27); walk aft and climb the iva ladder (node_ladder_1 -> node_ladder_2) to the dorsal hatch"
+ },
+ "exterior_hide": [
+  "window_glass"
+ ],
+ "exterior_hide_note": "optional per the handoff: the interior provides its own inner panes",
+ "tris": {
+  "total_baked": 55360,
+  "own_geometry": 25524,
+  "props": 29836,
+  "by_group": {
+   "liner": 2756,
+   "panels": 8032,
+   "hatches_windows": 3448,
+   "racks_fit_out": 10624,
+   "other": 664,
+   "props": 29836
+  },
+  "runtime_glb": 25524,
+  "exterior": 25048,
+  "combined": 80408
+ },
+ "nodes": [
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.62,
+    -0.5589,
+    0.1607
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    -0.62,
+    -0.5589,
+    0.1607
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -1.4291,
+    1.7575
+   ],
+   "direction": [
+    0.0,
+    0.3338,
+    0.9426
+   ],
+   "up": [
+    0.0,
+    0.9426,
+    -0.3338
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.62,
+    -0.5,
+    -0.6
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    -0.62,
+    -0.5,
+    -0.6
+   ],
+   "direction": [
+    0.0,
+    0.9659,
+    0.2588
+   ],
+   "up": [
+    0.0,
+    -0.2588,
+    0.9659
+   ]
+  },
+  {
+   "name": "node_view_1",
+   "position": [
+    0.0,
+    0.3673,
+    0.7341
+   ],
+   "direction": [
+    0.0,
+    -0.6341,
+    -0.7733
+   ],
+   "up": [
+    0.0,
+    0.7733,
+    -0.6341
+   ]
+  },
+  {
+   "name": "node_view_2",
+   "position": [
+    0.6833,
+    0.3154,
+    0.6049
+   ],
+   "direction": [
+    -0.362,
+    -0.6039,
+    -0.7101
+   ],
+   "up": [
+    -0.2743,
+    0.7971,
+    -0.538
+   ]
+  },
+  {
+   "name": "node_view_3",
+   "position": [
+    -0.6833,
+    0.3155,
+    0.605
+   ],
+   "direction": [
+    0.362,
+    -0.6039,
+    -0.7101
+   ],
+   "up": [
+    0.2743,
+    0.7971,
+    -0.538
+   ]
+  },
+  {
+   "name": "node_view_4",
+   "position": [
+    1.1778,
+    0.1259,
+    0.3471
+   ],
+   "direction": [
+    -0.704,
+    -0.5238,
+    -0.4796
+   ],
+   "up": [
+    -0.4329,
+    0.8519,
+    -0.2949
+   ]
+  },
+  {
+   "name": "node_view_5",
+   "position": [
+    -1.1777,
+    0.1258,
+    0.3471
+   ],
+   "direction": [
+    0.704,
+    -0.5238,
+    -0.4796
+   ],
+   "up": [
+    0.4329,
+    0.8519,
+    -0.2949
+   ]
+  },
+  {
+   "name": "node_hatch_door_1_hinge",
+   "position": [
+    0.47,
+    -1.4,
+    1.8396
+   ],
+   "direction": [
+    0.0,
+    0.9426,
+    -0.3338
+   ],
+   "up": [
+    0.0,
+    0.3338,
+    0.9426
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    -0.3041,
+    -0.5269,
+    1.3731
+   ],
+   "direction": [
+    0.1671,
+    -0.2973,
+    -0.94
+   ],
+   "up": [
+    0.052,
+    0.9548,
+    -0.2928
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    -0.3713,
+    0.7666,
+    0.3841
+   ],
+   "direction": [
+    0.1915,
+    -0.664,
+    -0.7228
+   ],
+   "up": [
+    0.1701,
+    0.7478,
+    -0.6418
+   ]
+  },
+  {
+   "name": "node_light_3",
+   "position": [
+    0.2808,
+    -0.2553,
+    1.2423
+   ],
+   "direction": [
+    -0.1316,
+    -0.6292,
+    -0.766
+   ],
+   "up": [
+    -0.1066,
+    0.7772,
+    -0.6201
+   ]
+  }
+ ],
+ "moving": {
+  "hatch_door_1": {
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handle",
+    "hatch_door_1_valve"
+   ],
+   "pivot": [
+    0.47,
+    -1.4,
+    1.8396
+   ],
+   "axis": [
+    0.0,
+    0.9426,
+    -0.3338
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 110
+   },
+   "note": "outward-opening hatch, hinge on the HX edge (outer face); rotate with the exterior mesh hatch_door_1 about node_hatch_door_1_hinge"
+  }
+ },
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 1,
+    "pose": "seated",
+    "virtual": false,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.666,
+      "at_iml_godot": [
+       0.73,
+       -0.4799,
+       0.3682
+      ],
+      "to_panel_face_m": 0.646
+     },
+     "shoulders": {
+      "to_iml_m": 0.652,
+      "at_iml_godot": [
+       0.86,
+       -0.381,
+       0.1152
+      ],
+      "to_panel_face_m": 0.632
+     },
+     "knees": {
+      "to_iml_m": 0.533,
+      "at_iml_godot": [
+       0.8,
+       0.0925,
+       -0.493
+      ],
+      "to_panel_face_m": 0.513
+     },
+     "torso": {
+      "to_iml_m": 0.585,
+      "at_iml_godot": [
+       0.86,
+       -0.2154,
+       -0.503
+      ],
+      "to_panel_face_m": 0.565
+     },
+     "thighs": {
+      "to_iml_m": 0.541,
+      "at_iml_godot": [
+       0.81,
+       0.0796,
+       -0.4447
+      ],
+      "to_panel_face_m": 0.521
+     },
+     "shins": {
+      "to_iml_m": 0.312,
+      "at_iml_godot": [
+       0.8,
+       0.2038,
+       -0.9084
+      ],
+      "to_panel_face_m": 0.292
+     },
+     "feet": {
+      "to_iml_m": 0.27,
+      "at_iml_godot": [
+       0.77,
+       0.3211,
+       -0.9598
+      ],
+      "to_panel_face_m": 0.25
+     }
+    },
+    "min_clearance_to_iml_m": 0.27,
+    "worst_part": "feet",
+    "fits": true,
+    "note": ""
+   },
+   {
+    "seat": 2,
+    "pose": "seated",
+    "virtual": false,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.666,
+      "at_iml_godot": [
+       -0.73,
+       -0.4799,
+       0.3682
+      ],
+      "to_panel_face_m": 0.646
+     },
+     "shoulders": {
+      "to_iml_m": 0.652,
+      "at_iml_godot": [
+       -0.86,
+       -0.381,
+       0.1152
+      ],
+      "to_panel_face_m": 0.632
+     },
+     "knees": {
+      "to_iml_m": 0.533,
+      "at_iml_godot": [
+       -0.8,
+       0.0925,
+       -0.493
+      ],
+      "to_panel_face_m": 0.513
+     },
+     "torso": {
+      "to_iml_m": 0.585,
+      "at_iml_godot": [
+       -0.86,
+       -0.2154,
+       -0.503
+      ],
+      "to_panel_face_m": 0.565
+     },
+     "thighs": {
+      "to_iml_m": 0.54,
+      "at_iml_godot": [
+       -0.81,
+       0.0796,
+       -0.4447
+      ],
+      "to_panel_face_m": 0.52
+     },
+     "shins": {
+      "to_iml_m": 0.312,
+      "at_iml_godot": [
+       -0.8,
+       0.2038,
+       -0.9084
+      ],
+      "to_panel_face_m": 0.292
+     },
+     "feet": {
+      "to_iml_m": 0.269,
+      "at_iml_godot": [
+       -0.77,
+       0.3211,
+       -0.9598
+      ],
+      "to_panel_face_m": 0.249
+     }
+    },
+    "min_clearance_to_iml_m": 0.269,
+    "worst_part": "feet",
+    "fits": true,
+    "note": ""
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 1,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.466,
+      "item": "ped1__top"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.261,
+      "item": "ped1__top"
+     },
+     "knees": {
+      "to_nearest_item_m": 0.15,
+      "item": "con1__body"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.1,
+      "item": "con1__body"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.15,
+      "item": "con1__body"
+     },
+     "shins": {
+      "to_nearest_item_m": 0.126,
+      "item": "pedal1__pads"
+     },
+     "feet": {
+      "to_nearest_item_m": 0.026,
+      "item": "pedal1__pads"
+     }
+    }
+   },
+   {
+    "seat": 2,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.496,
+      "item": "ped1__sw_guards"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.289,
+      "item": "ped1__sw_guards"
+     },
+     "knees": {
+      "to_nearest_item_m": 0.15,
+      "item": "con2__body"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.1,
+      "item": "con2__body"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.15,
+      "item": "con2__body"
+     },
+     "shins": {
+      "to_nearest_item_m": 0.126,
+      "item": "pedal2__pads"
+     },
+     "feet": {
+      "to_nearest_item_m": 0.026,
+      "item": "pedal2__pads"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": 0.0004,
+   "items_outside_cavity": [],
+   "items_within_2mm": [
+    [
+     "panel_b0_f00",
+     0.0017
+    ],
+    [
+     "panel_b1_f00",
+     0.0019
+    ],
+    [
+     "panel_b28_f00",
+     0.0018
+    ],
+    [
+     "panel_b29_f00",
+     0.0016
+    ],
+    [
+     "panel_b30_f00",
+     0.0016
+    ],
+    [
+     "panel_b31_f00",
+     0.0017
+    ],
+    [
+     "endwall_aft_01",
+     0.001
+    ],
+    [
+     "endwall_aft_02",
+     0.001
+    ],
+    [
+     "endwall_aft_03",
+     0.001
+    ],
+    [
+     "endwall_aft_04",
+     0.001
+    ],
+    [
+     "endwall_aft_05",
+     0.001
+    ],
+    [
+     "endwall_aft_06",
+     0.001
+    ],
+    [
+     "endwall_aft_07",
+     0.001
+    ],
+    [
+     "endwall_aft_08",
+     0.001
+    ],
+    [
+     "endwall_aft_09",
+     0.001
+    ],
+    [
+     "endwall_aft_10",
+     0.001
+    ],
+    [
+     "endwall_aft_11",
+     0.001
+    ],
+    [
+     "endwall_aft_12",
+     0.001
+    ],
+    [
+     "endwall_aft_13",
+     0.001
+    ],
+    [
+     "endwall_aft_14",
+     0.001
+    ],
+    [
+     "endwall_aft_15",
+     0.001
+    ],
+    [
+     "endwall_aft_16",
+     0.001
+    ],
+    [
+     "endwall_aft_17",
+     0.001
+    ],
+    [
+     "endwall_aft_18",
+     0.001
+    ],
+    [
+     "endwall_aft_19",
+     0.001
+    ],
+    [
+     "endwall_aft_20",
+     0.001
+    ],
+    [
+     "endwall_aft_21",
+     0.001
+    ],
+    [
+     "endwall_aft_22",
+     0.001
+    ],
+    [
+     "endwall_aft_23",
+     0.001
+    ],
+    [
+     "endwall_aft_24",
+     0.001
+    ],
+    [
+     "endwall_aft_25",
+     0.001
+    ],
+    [
+     "endwall_aft_26",
+     0.001
+    ],
+    [
+     "endwall_aft_27",
+     0.001
+    ],
+    [
+     "endwall_aft_28",
+     0.001
+    ],
+    [
+     "endwall_aft_29",
+     0.001
+    ],
+    [
+     "endwall_aft_30",
+     0.001
+    ],
+    [
+     "endwall_aft_31",
+     0.001
+    ],
+    [
+     "endwall_aft_32",
+     0.001
+    ],
+    [
+     "endwall_aft_33",
+     0.001
+    ],
+    [
+     "endwall_aft_34",
+     0.001
+    ],
+    [
+     "endwall_aft_35",
+     0.001
+    ],
+    [
+     "endwall_aft_36",
+     0.001
+    ],
+    [
+     "endwall_fore_37",
+     0.001
+    ],
+    [
+     "endwall_fore_38",
+     0.001
+    ],
+    [
+     "endwall_fore_39",
+     0.001
+    ],
+    [
+     "endwall_fore_40",
+     0.001
+    ],
+    [
+     "endwall_fore_41",
+     0.001
+    ],
+    [
+     "endwall_fore_42",
+     0.001
+    ],
+    [
+     "window_bezel_4",
+     0.0004
+    ],
+    [
+     "window_bezel_5",
+     0.001
+    ],
+    [
+     "hatch_coaming_1",
+     0.0013
+    ],
+    [
+     "hatch_seal_1",
+     0.001
+    ],
+    [
+     "hatch_door_1",
+     0.0009
+    ],
+    [
+     "hatch_hinge_fairing_1",
+     0.0005
+    ]
+   ],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [
+   {
+    "window": 1,
+    "clear": true,
+    "blocking": []
+   },
+   {
+    "window": 2,
+    "clear": true,
+    "blocking": []
+   },
+   {
+    "window": 3,
+    "clear": true,
+    "blocking": []
+   },
+   {
+    "window": 4,
+    "clear": true,
+    "blocking": []
+   },
+   {
+    "window": 5,
+    "clear": true,
+    "blocking": []
+   }
+  ],
+  "eye_sight": [
+   {
+    "window": 1,
+    "eye_godot": [
+     0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 1,
+    "eye_godot": [
+     -0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 2,
+    "eye_godot": [
+     0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 2,
+    "eye_godot": [
+     -0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 3,
+    "eye_godot": [
+     0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 3,
+    "eye_godot": [
+     -0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 4,
+    "eye_godot": [
+     0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 4,
+    "eye_godot": [
+     -0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 5,
+    "eye_godot": [
+     0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   },
+   {
+    "window": 5,
+    "eye_godot": [
+     -0.62,
+     -0.5589,
+     0.1607
+    ],
+    "samples": 400,
+    "blocked": 0,
+    "blocked_pct": 0.0,
+    "by_item": {}
+   }
+  ],
+  "crew_clash_m3": [
+   {
+    "item": "mq01_1",
+    "crew": 1,
+    "m3": 0.00284,
+    "expected": true
+   },
+   {
+    "item": "mq01_2",
+    "crew": 2,
+    "m3": 0.00284,
+    "expected": true
+   }
+  ],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "clear_diameter_m": 0.546,
+    "limiting_item": "mq01_1",
+    "pinch_point_cad": [
+     0.626,
+     -0.082,
+     -0.4
+    ],
+    "path_len_m": 1.69,
+    "name": "seat1_exit",
+    "required_m": 0.4,
+    "ok": true,
+    "note": "climb out of the seat -> stand-up column at the foot of the ladder (iva ladder line, Godot (0, -1.43))"
+   },
+   {
+    "clear_diameter_m": 0.546,
+    "limiting_item": "mq01_2",
+    "pinch_point_cad": [
+     -0.614,
+     -0.082,
+     -0.4
+    ],
+    "path_len_m": 1.71,
+    "name": "seat2_exit",
+    "required_m": 0.4,
+    "ok": true,
+    "note": "climb out of the seat -> stand-up column at the foot of the ladder (iva ladder line, Godot (0, -1.43))"
+   },
+   {
+    "clear_diameter_m": 1.031,
+    "limiting_item": "lad1__stiles",
+    "pinch_point_cad": [
+     -0.014,
+     -0.882,
+     -1.28
+    ],
+    "path_len_m": 0.77,
+    "name": "ladder_to_hatch1",
+    "required_m": 0.6,
+    "ok": true,
+    "note": "foot of the ladder -> up the ladder clear column (iva: 0.6 m dia.) -> dorsal hatch keep-out"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 1,
+    "virtual": false,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.701,
+      "item": "eqm48_2",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": 0.717,
+      "item": "eqm50l_1",
+      "within_reach": true
+     },
+     "hatch_control": {
+      "dist_m": 2.035,
+      "item": "hatch_door_1_handle",
+      "within_reach": false
+     }
+    },
+    "required": null,
+    "ok": true,
+    "note": "gravity: crew walk / climb (egress paths); distances are from the station without moving, informational"
+   },
+   {
+    "seat": 2,
+    "virtual": false,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.701,
+      "item": "eqm48_4",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": 0.716,
+      "item": "eqm50l_2",
+      "within_reach": true
+     },
+     "hatch_control": {
+      "dist_m": 1.938,
+      "item": "hatch_door_1_handle",
+      "within_reach": false
+     }
+    },
+    "required": null,
+    "ok": true,
+    "note": "gravity: crew walk / climb (egress paths); distances are from the station without moving, informational"
+   }
+  ],
+  "elapsed_s": 177
+ },
+ "contents": "CK-3S Mk3 spaceplane nose flight deck: 32-gon white chamfered panel liner on the smooth IML (20 mm, 8 mm seams) over the dark pressure-vessel liner, panelled aft bulkhead / nose cap, LED inlays; tiled flight deck (Godot z -1.27); 2 pilot seats (mq01 command seats with hand controllers / keypad) on graphite seat bases; glass-cockpit main panel (4 MFDs, guarded switch strip, glare shield); centre pedestal (2-lever throttle quadrant, FMS display, switch plate); overhead panel (3 switch rows) + LED wash; rudder pedals; outboard side consoles with switch plates; 2 wall displays; vertical ladder on the iva ladder line (alu stiles on stand-off brackets, black rungs) to the dorsal crew hatch (coaming, seal, door trim), 2 ceiling handrails; 5 nose windows with tight black bezels and inner panes; extinguisher, first aid",
+ "notes": [
+  "frame: crew posture gravity Godot -Z (aircraft level flight; seats recline 15 deg about X); the request said -Y gravity -> see the B9 frame flag",
+  "R3 deck: the iva deck (y_cad 1.27 = Godot z -1.27, node_ladder_1) -> tiled flight deck; liner bands below the deck are not panelled",
+  "R3 ladder: on the iva ladder line (node_ladder_1 floor -> node_ladder_2 = hatch inner face, Godot x 0, y -1.43): rungs / stiles on the aft edge of the 0.6 m clear column, stand-off brackets to the aft bulkhead; the stiles stop below the hatch keep-out (2 handrails on the aft bulkhead for the last step)",
+  "pilot seats = mq01 command seats (dual hand controllers act as the sidesticks); 2-lever throttle on the centre pedestal",
+  "windows 1-5: tight bezels opened toward both pilot eyes; furniture clipped out of the sight cones"
+ ],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": [
+   "node_camera_1",
+   "node_camera_2",
+   "node_hatch_1",
+   "node_seat_1",
+   "node_seat_2"
+  ]
+ },
+ "lod1": {
+  "tris": 12987,
+  "lod0_tris": 55360,
+  "ratio": 0.1,
+  "file": "lod/ax_aero_05_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_aero_05/ax_aero_05_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [
+  {
+   "instance": "mq01_1",
+   "prop": "mq01_command_seat",
+   "role": "seat_1"
+  },
+  {
+   "instance": "mq01_2",
+   "prop": "mq01_command_seat",
+   "role": "seat_2"
+  },
+  {
+   "instance": "eqm50l_1",
+   "prop": "eqm50_touchscreen_large",
+   "role": "wall_display_1"
+  },
+  {
+   "instance": "eqm48_1",
+   "prop": "eqm48_handrail",
+   "role": "hatch_handrail_1"
+  },
+  {
+   "instance": "eqm48_2",
+   "prop": "eqm48_handrail",
+   "role": "seat_handrail_1"
+  },
+  {
+   "instance": "eqm50l_2",
+   "prop": "eqm50_touchscreen_large",
+   "role": "wall_display_2"
+  },
+  {
+   "instance": "eqm48_3",
+   "prop": "eqm48_handrail",
+   "role": "hatch_handrail_2"
+  },
+  {
+   "instance": "eqm48_4",
+   "prop": "eqm48_handrail",
+   "role": "seat_handrail_2"
+  },
+  {
+   "instance": "eqm13_1",
+   "prop": "eqm13_fire_extinguisher",
+   "role": "fire_extinguisher"
+  },
+  {
+   "instance": "eqm14_1",
+   "prop": "eqm14_first_aid_kit",
+   "role": "first_aid"
+  }
+ ],
+ "moving_meshes": [
+  {
+   "name": "hatch_door_1",
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handle",
+    "hatch_door_1_valve"
+   ],
+   "pivot": [
+    0.47,
+    -1.4,
+    1.8396
+   ],
+   "axis": [
+    0.0,
+    0.9426,
+    -0.3338
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 110
+   },
+   "note": "outward-opening hatch, hinge on the HX edge (outer face); rotate with the exterior mesh hatch_door_1 about node_hatch_door_1_hinge"
+  }
+ ],
+ "variants": {
+  "ax_aero_05_ck3s_spaceplane_nose_interior": {
+   "exterior_variant": "ax_aero_05_ck3s_spaceplane_nose",
+   "primary": true,
+   "crew": 2,
+   "nodes": [
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.62,
+      -0.5589,
+      0.1607
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      -0.62,
+      -0.5589,
+      0.1607
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -1.4291,
+      1.7575
+     ],
+     "direction": [
+      0.0,
+      0.3338,
+      0.9426
+     ],
+     "up": [
+      0.0,
+      0.9426,
+      -0.3338
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.62,
+      -0.5,
+      -0.6
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      -0.62,
+      -0.5,
+      -0.6
+     ],
+     "direction": [
+      0.0,
+      0.9659,
+      0.2588
+     ],
+     "up": [
+      0.0,
+      -0.2588,
+      0.9659
+     ]
+    },
+    {
+     "name": "node_view_1",
+     "position": [
+      0.0,
+      0.3673,
+      0.7341
+     ],
+     "direction": [
+      0.0,
+      -0.6341,
+      -0.7733
+     ],
+     "up": [
+      0.0,
+      0.7733,
+      -0.6341
+     ]
+    },
+    {
+     "name": "node_view_2",
+     "position": [
+      0.6833,
+      0.3154,
+      0.6049
+     ],
+     "direction": [
+      -0.362,
+      -0.6039,
+      -0.7101
+     ],
+     "up": [
+      -0.2743,
+      0.7971,
+      -0.538
+     ]
+    },
+    {
+     "name": "node_view_3",
+     "position": [
+      -0.6833,
+      0.3155,
+      0.605
+     ],
+     "direction": [
+      0.362,
+      -0.6039,
+      -0.7101
+     ],
+     "up": [
+      0.2743,
+      0.7971,
+      -0.538
+     ]
+    },
+    {
+     "name": "node_view_4",
+     "position": [
+      1.1778,
+      0.1259,
+      0.3471
+     ],
+     "direction": [
+      -0.704,
+      -0.5238,
+      -0.4796
+     ],
+     "up": [
+      -0.4329,
+      0.8519,
+      -0.2949
+     ]
+    },
+    {
+     "name": "node_view_5",
+     "position": [
+      -1.1777,
+      0.1258,
+      0.3471
+     ],
+     "direction": [
+      0.704,
+      -0.5238,
+      -0.4796
+     ],
+     "up": [
+      0.4329,
+      0.8519,
+      -0.2949
+     ]
+    },
+    {
+     "name": "node_hatch_door_1_hinge",
+     "position": [
+      0.47,
+      -1.4,
+      1.8396
+     ],
+     "direction": [
+      0.0,
+      0.9426,
+      -0.3338
+     ],
+     "up": [
+      0.0,
+      0.3338,
+      0.9426
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      -0.3041,
+      -0.5269,
+      1.3731
+     ],
+     "direction": [
+      0.1671,
+      -0.2973,
+      -0.94
+     ],
+     "up": [
+      0.052,
+      0.9548,
+      -0.2928
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      -0.3713,
+      0.7666,
+      0.3841
+     ],
+     "direction": [
+      0.1915,
+      -0.664,
+      -0.7228
+     ],
+     "up": [
+      0.1701,
+      0.7478,
+      -0.6418
+     ]
+    },
+    {
+     "name": "node_light_3",
+     "position": [
+      0.2808,
+      -0.2553,
+      1.2423
+     ],
+     "direction": [
+      -0.1316,
+      -0.6292,
+      -0.766
+     ],
+     "up": [
+      -0.1066,
+      0.7772,
+      -0.6201
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

@@ -1,0 +1,803 @@
+{
+ "id": "ax_rover_03",
+ "name": "AX-rover-03 RH-FO Front Open Driving Station -- modern interior (full)",
+ "display_id": "AX-rover-03",
+ "kind": "full",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 2,
+ "crew_virtual": [],
+ "gravity": {
+  "type": "planetary",
+  "down_godot": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "note": "lunar / planetary surface, gravity -Y Godot: suited crew seated on the exterior seats; ingress / egress over the open cage sides"
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays)",
+ "tris": {
+  "total_baked": 4716,
+  "own_geometry": 3516,
+  "props": 1200,
+  "by_group": {
+   "floor_lockers": 480,
+   "racks_fit_out": 2684,
+   "panels": 352,
+   "props": 1200
+  },
+  "runtime_glb": 3516,
+  "exterior": 1846,
+  "combined": 6562
+ },
+ "nodes": [
+  {
+   "name": "node_camera_1",
+   "position": [
+    -0.55,
+    0.425,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.55,
+    0.425,
+    -0.18
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    -0.55,
+    -0.325,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.55,
+    -0.325,
+    -0.32
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    -0.4,
+    0.9,
+    0.6
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    0.4,
+    0.9,
+    0.6
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_light_3",
+   "position": [
+    -0.4,
+    0.9,
+    -1.062
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_4",
+   "position": [
+    0.4,
+    0.9,
+    -1.062
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "moving": {},
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 1,
+    "pose": "seated",
+    "virtual": false,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.314,
+      "at_iml_godot": [
+       -0.66,
+       0.335,
+       -0.29
+      ],
+      "to_panel_face_m": 0.294
+     },
+     "shoulders": {
+      "to_iml_m": 0.246,
+      "at_iml_godot": [
+       -0.79,
+       0.175,
+       -0.1
+      ],
+      "to_panel_face_m": 0.226
+     },
+     "knees": {
+      "to_iml_m": 0.219,
+      "at_iml_godot": [
+       -0.74,
+       -0.325,
+       0.1
+      ],
+      "to_panel_face_m": 0.199
+     },
+     "torso": {
+      "to_iml_m": 0.11,
+      "at_iml_godot": [
+       -0.79,
+       -0.305,
+       -0.14
+      ],
+      "to_panel_face_m": 0.09
+     },
+     "thighs": {
+      "to_iml_m": 0.14,
+      "at_iml_godot": [
+       -0.74,
+       -0.325,
+       -0.32
+      ],
+      "to_panel_face_m": 0.12
+     },
+     "shins": {
+      "to_iml_m": 0.095,
+      "at_iml_godot": [
+       -0.73,
+       -0.805,
+       0.12
+      ],
+      "to_panel_face_m": 0.075
+     },
+     "feet": {
+      "to_iml_m": 0.015,
+      "at_iml_godot": [
+       -0.7,
+       -0.885,
+       0.06
+      ],
+      "to_panel_face_m": -0.005
+     }
+    },
+    "min_clearance_to_iml_m": 0.015,
+    "worst_part": "feet",
+    "fits": true,
+    "note": ""
+   },
+   {
+    "seat": 2,
+    "pose": "seated",
+    "virtual": false,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.314,
+      "at_iml_godot": [
+       0.44,
+       0.335,
+       -0.29
+      ],
+      "to_panel_face_m": 0.294
+     },
+     "shoulders": {
+      "to_iml_m": 0.246,
+      "at_iml_godot": [
+       0.79,
+       0.175,
+       -0.1
+      ],
+      "to_panel_face_m": 0.226
+     },
+     "knees": {
+      "to_iml_m": 0.219,
+      "at_iml_godot": [
+       0.74,
+       -0.325,
+       0.1
+      ],
+      "to_panel_face_m": 0.199
+     },
+     "torso": {
+      "to_iml_m": 0.11,
+      "at_iml_godot": [
+       0.79,
+       -0.305,
+       -0.14
+      ],
+      "to_panel_face_m": 0.09
+     },
+     "thighs": {
+      "to_iml_m": 0.14,
+      "at_iml_godot": [
+       0.36,
+       -0.325,
+       -0.32
+      ],
+      "to_panel_face_m": 0.12
+     },
+     "shins": {
+      "to_iml_m": 0.095,
+      "at_iml_godot": [
+       0.37,
+       -0.805,
+       0.12
+      ],
+      "to_panel_face_m": 0.075
+     },
+     "feet": {
+      "to_iml_m": 0.015,
+      "at_iml_godot": [
+       0.4,
+       -0.885,
+       0.06
+      ],
+      "to_panel_face_m": -0.005
+     }
+    },
+    "min_clearance_to_iml_m": 0.015,
+    "worst_part": "feet",
+    "fits": true,
+    "note": ""
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 1,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.707,
+      "item": "led_bar_front_l_housing"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.625,
+      "item": "eqm50s_1"
+     },
+     "knees": {
+      "to_nearest_item_m": 0.323,
+      "item": "eqm50s_1"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.427,
+      "item": "rack_tool_stowage_strap_l"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.323,
+      "item": "eqm50s_1"
+     },
+     "shins": {
+      "to_nearest_item_m": 0.08,
+      "item": "floor_tile_06"
+     },
+     "feet": {
+      "to_nearest_item_m": 0.0,
+      "item": "floor_tile_01"
+     }
+    }
+   },
+   {
+    "seat": 2,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.707,
+      "item": "led_bar_front_r_housing"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.625,
+      "item": "eqm50s_2"
+     },
+     "knees": {
+      "to_nearest_item_m": 0.323,
+      "item": "eqm50s_2"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.427,
+      "item": "rack_tool_stowage_strap_r"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.323,
+      "item": "eqm50s_2"
+     },
+     "shins": {
+      "to_nearest_item_m": 0.08,
+      "item": "floor_tile_03"
+     },
+     "feet": {
+      "to_nearest_item_m": 0.0,
+      "item": "floor_tile_03"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": -0.04,
+   "items_outside_cavity": [
+    [
+     "cage_clamp_rear_l_lo",
+     -0.0391
+    ],
+    [
+     "cage_clamp_rear_l_hi",
+     -0.0391
+    ],
+    [
+     "cage_clamp_front_l_lo",
+     -0.028
+    ],
+    [
+     "cage_clamp_front_l_hi",
+     -0.028
+    ],
+    [
+     "cage_clamp_rear_r_lo",
+     -0.0391
+    ],
+    [
+     "cage_clamp_rear_r_hi",
+     -0.0391
+    ],
+    [
+     "cage_clamp_front_r_lo",
+     -0.028
+    ],
+    [
+     "cage_clamp_front_r_hi",
+     -0.028
+    ],
+    [
+     "led_bar_rear_l_housing",
+     -0.04
+    ],
+    [
+     "led_bar_rear_l",
+     -0.03
+    ],
+    [
+     "led_bar_rear_r_housing",
+     -0.04
+    ],
+    [
+     "led_bar_rear_r",
+     -0.03
+    ]
+   ],
+   "items_within_2mm": [
+    [
+     "floor_tile_01",
+     -0.0
+    ],
+    [
+     "floor_tile_02",
+     -0.0
+    ],
+    [
+     "floor_tile_03",
+     -0.0
+    ],
+    [
+     "floor_tile_04",
+     -0.0
+    ],
+    [
+     "floor_tile_05",
+     -0.0
+    ],
+    [
+     "floor_tile_06",
+     -0.0
+    ],
+    [
+     "floor_tile_07",
+     -0.0
+    ],
+    [
+     "floor_tile_08",
+     -0.0
+    ],
+    [
+     "floor_tile_09",
+     -0.0
+    ],
+    [
+     "floor_tile_10",
+     -0.0
+    ],
+    [
+     "floor_tile_11",
+     -0.0
+    ],
+    [
+     "floor_tile_12",
+     -0.0
+    ],
+    [
+     "led_bar_front_l_housing",
+     0.0
+    ],
+    [
+     "led_bar_front_r_housing",
+     0.0
+    ],
+    [
+     "rack_tool_stowage_body",
+     -0.0
+    ]
+   ],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [],
+  "crew_clash_m3": [],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "clear_diameter_m": 0.68,
+    "limiting_item": "cavity wall (IML)",
+    "pinch_point_cad": [
+     -0.76,
+     0.37,
+     0.56
+    ],
+    "path_len_m": 0.17,
+    "name": "seat1_exit",
+    "required_m": 0.4,
+    "ok": true,
+    "note": "climb out of the seat -> stand-up column outboard (Godot x -0.92, z -0.40), 0.18 m inboard of the open cage side"
+   },
+   {
+    "clear_diameter_m": 0.68,
+    "limiting_item": "cavity wall (IML)",
+    "pinch_point_cad": [
+     0.76,
+     0.41,
+     0.56
+    ],
+    "path_len_m": 0.18,
+    "name": "seat2_exit",
+    "required_m": 0.4,
+    "ok": true,
+    "note": "climb out of the seat -> stand-up column outboard (Godot x +0.92, z -0.40), 0.18 m inboard of the open cage side"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 1,
+    "virtual": false,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.87,
+      "item": "cage_rear_l_handrail",
+      "within_reach": false
+     },
+     "control": {
+      "dist_m": 0.812,
+      "item": "eqm50s_1",
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     }
+    },
+    "required": null,
+    "ok": true,
+    "note": "gravity: crew walk / climb (egress paths); distances are from the station without moving, informational"
+   },
+   {
+    "seat": 2,
+    "virtual": false,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.87,
+      "item": "cage_rear_r_handrail",
+      "within_reach": false
+     },
+     "control": {
+      "dist_m": 0.812,
+      "item": "eqm50s_2",
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     }
+    },
+    "required": null,
+    "ok": true,
+    "note": "gravity: crew walk / climb (egress paths); distances are from the station without moving, informational"
+   }
+  ],
+  "elapsed_s": 10
+ },
+ "contents": "unpressurised open driving station: rubber deck tread tiles (cut around the seat pedestals / controller columns / console), 4 alu cage handrails with black grips on graphite clamps to the roll-cage posts, 4 LED task-light bars under the top cross rails, graphite tool / sample stowage box (off-white lid, 2 black tie-down straps, 2 alu latches, yellow label), 2 small touchscreens on the console top",
+ "notes": [
+  "unpressurised open station: no wall / ceiling panels, end walls or pressure vessel; the 'IML' is the crew envelope box inside the roll cage (iva note)",
+  "cage clamps (graphite) and the rear LED-bar housings reach up to 40 mm (corner, 28-30 mm per axis) out of the envelope box onto the roll-cage tubes (inner faces x +-1.12, rear rail z -1.07) by design: the cage is outside the envelope (containment flags = these only)",
+  "seats, hand controllers and console are exterior meshes (kept); deck tiles are cut around their footprints (10 mm)",
+  "2 small touchscreens sit on top of the exterior console (tilted to the crew)",
+  "egress: no hatches -> seat exit to an outboard stand-up column (0.40 m), 0.18 m inboard of the open side; side opening (envelope side face) clear z -1.05..~+0.68 (front post) x floor..top rail (1.87 m) = ~1.7 m wide, minus the exterior hand-controller column (x +-0.9..1.0, z -0.15..-0.05, up to y 0.05) which splits it into 0.9 m (aft) and 0.72 m (fwd, back to the console face z 0.675) at foot level",
+  "R3 re-export: seat / camera nodes lowered 0.095 m (node_seat y -0.325, node_camera y 0.425); seated feet now rest on the deck tread tiles (0.015 m to the envelope floor, as the iva note states)",
+  "R3 re-export: the IML GLB is no longer a plain box: it cuts out the exterior seats (x +-0.30..0.80, z -0.66..-0.14), hand-controller columns (x +-0.90..1.00, z -0.15..-0.05) and console (x +-1.0, z 0.50..0.85) (vol 6.90 vs box 7.82 m3); deck-tile cutters follow these footprints (console cut moved from z 0.665 to 0.49)"
+ ],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": [
+   "node_camera_1",
+   "node_camera_2",
+   "node_seat_1",
+   "node_seat_2"
+  ]
+ },
+ "lod1": {
+  "tris": 818,
+  "lod0_tris": 4716,
+  "ratio": 0.1,
+  "file": "lod/ax_rover_03_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_rover_03/ax_rover_03_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [
+  {
+   "instance": "eqm50s_1",
+   "prop": "eqm50_touchscreen_small",
+   "role": "driving display left"
+  },
+  {
+   "instance": "eqm50s_2",
+   "prop": "eqm50_touchscreen_small",
+   "role": "driving display right"
+  }
+ ],
+ "moving_meshes": [],
+ "variants": {
+  "ax_rover_03_open_station_interior": {
+   "exterior_variant": "ax_rover_03_open_station",
+   "primary": true,
+   "crew": 2,
+   "nodes": [
+    {
+     "name": "node_camera_1",
+     "position": [
+      -0.55,
+      0.425,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.55,
+      0.425,
+      -0.18
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      -0.55,
+      -0.325,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.55,
+      -0.325,
+      -0.32
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      -0.4,
+      0.9,
+      0.6
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      0.4,
+      0.9,
+      0.6
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_light_3",
+     "position": [
+      -0.4,
+      0.9,
+      -1.062
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_4",
+     "position": [
+      0.4,
+      0.9,
+      -1.062
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

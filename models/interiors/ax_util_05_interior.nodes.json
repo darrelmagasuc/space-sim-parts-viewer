@@ -1,0 +1,538 @@
+{
+ "id": "ax_util_05",
+ "name": "AX-util-05 DP-L Heavy Cargo Port -- modern interior (light)",
+ "display_id": "AX-util-05",
+ "kind": "light",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 0,
+ "crew_virtual": [
+  {
+   "n": 101,
+   "srp": [
+    0.5,
+    -1.055,
+    0.0
+   ],
+   "facing": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "floating": true,
+   "note": "light part: 1.8 m floating figure in transit 0.50 m off-axis beside the az 0 handrail, head 0.17 m below the door trim face (fit = radial bore clearance)"
+  }
+ ],
+ "gravity": {
+  "type": "zero_g",
+  "note": "heavy cargo port (zero-g transit): free-floating crew / cargo pass along the axis; 4 axial handrails"
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays)",
+ "tris": {
+  "total_baked": 14972,
+  "own_geometry": 12588,
+  "props": 2384,
+  "by_group": {
+   "panels": 1920,
+   "hatches_windows": 2068,
+   "other": 8600,
+   "props": 2384
+  },
+  "runtime_glb": 12588,
+  "exterior": 6266,
+  "combined": 21238
+ },
+ "nodes": [
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    0.045,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_1_hinge",
+   "position": [
+    0.9554,
+    -0.015,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    0.9586,
+    -0.2025,
+    0.0
+   ],
+   "direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    0.0,
+    -0.2025,
+    -0.9586
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_3",
+   "position": [
+    -0.9586,
+    -0.2025,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_4",
+   "position": [
+    0.0,
+    -0.2025,
+    0.9586
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "moving": {
+  "hatch_door_1": {
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.9554,
+    -0.015,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch, interior trim opens into the cabin about node_hatch_door_N_hinge (tunnel-local +Y edge)"
+  }
+ },
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 101,
+    "pose": "floating",
+    "virtual": true,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.364,
+      "at_iml_godot": [
+       0.61,
+       -0.395,
+       -0.14
+      ],
+      "to_panel_face_m": 0.344
+     },
+     "shoulders": {
+      "to_iml_m": 0.235,
+      "at_iml_godot": [
+       0.74,
+       -0.555,
+       0.15
+      ],
+      "to_panel_face_m": 0.215
+     },
+     "knees": {
+      "to_iml_m": 0.286,
+      "at_iml_godot": [
+       0.69,
+       -1.605,
+       0.14
+      ],
+      "to_panel_face_m": 0.266
+     },
+     "torso": {
+      "to_iml_m": 0.235,
+      "at_iml_godot": [
+       0.74,
+       -1.035,
+       0.15
+      ],
+      "to_panel_face_m": 0.215
+     },
+     "thighs": {
+      "to_iml_m": 0.286,
+      "at_iml_godot": [
+       0.69,
+       -1.525,
+       0.14
+      ],
+      "to_panel_face_m": 0.266
+     },
+     "shins": {
+      "to_iml_m": 0.299,
+      "at_iml_godot": [
+       0.68,
+       -1.935,
+       0.12
+      ],
+      "to_panel_face_m": 0.279
+     },
+     "feet": {
+      "to_iml_m": 0.297,
+      "at_iml_godot": [
+       0.65,
+       -1.985,
+       -0.24
+      ],
+      "to_panel_face_m": 0.277
+     }
+    },
+    "min_clearance_to_iml_m": 0.235,
+    "worst_part": "shoulders",
+    "fits": true,
+    "note": "standing: feet / shins rest on the floor, excluded from the minimum"
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 101,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.13,
+      "item": "hatch_door_1"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.026,
+      "item": "eqm48_1"
+     },
+     "knees": {
+      "to_nearest_item_m": 1.054,
+      "item": "eqm48_1"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.026,
+      "item": "eqm48_1"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.641,
+      "item": "eqm48_1"
+     },
+     "shins": {
+      "to_nearest_item_m": 1.125,
+      "item": "eqm48_1"
+     },
+     "feet": {
+      "to_nearest_item_m": 1.535,
+      "item": "eqm48_1"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": 0.003,
+   "items_outside_cavity": [],
+   "items_within_2mm": [],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [],
+  "crew_clash_m3": [],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "name": "open_end_to_hatch1",
+    "clear_diameter_m": 1.5,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "eqm48_4",
+    "pinch_point_cad": [
+     -0.0,
+     -0.751,
+     null
+    ],
+    "passage_centre_cad": [
+     -0.001,
+     -0.001
+    ],
+    "note": "transit, door open: widest axis-parallel clear cylinder from the open end to the door face (0.460 m), fixed items + IML side wall; moving door meshes excluded"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 101,
+    "virtual": true,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.133,
+      "item": "eqm48_1",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": 0.452,
+      "item": "hatch_door_1_handwheel",
+      "within_reach": true
+     }
+    },
+    "required": "handhold",
+    "ok": true,
+    "note": "zero-g / floating: a handhold must be within arm reach of the station"
+   }
+  ],
+  "elapsed_s": 16
+ },
+ "contents": "24-facet white panel band (20 mm, chamfered, seams) with LED inlays, black trim ring at the open end, 4 coupler panels (graphite plate, 2 alu couplers, yellow propellant / blue water caps, label), 4 axial handrails, 1.98 m round hatch door (white, alu handwheel, graphite hinge, rubber seal)",
+ "notes": [],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": [
+   "node_hatch_1"
+  ]
+ },
+ "lod1": {
+  "tris": 3406,
+  "lod0_tris": 14972,
+  "ratio": 0.1,
+  "file": "lod/ax_util_05_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_util_05/ax_util_05_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [
+  {
+   "instance": "eqm48_1",
+   "prop": "eqm48_handrail",
+   "role": "handrail_0"
+  },
+  {
+   "instance": "eqm48_2",
+   "prop": "eqm48_handrail",
+   "role": "handrail_90"
+  },
+  {
+   "instance": "eqm48_3",
+   "prop": "eqm48_handrail",
+   "role": "handrail_180"
+  },
+  {
+   "instance": "eqm48_4",
+   "prop": "eqm48_handrail",
+   "role": "handrail_270"
+  }
+ ],
+ "moving_meshes": [
+  {
+   "name": "hatch_door_1",
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.9554,
+    -0.015,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch, interior trim opens into the cabin about node_hatch_door_N_hinge (tunnel-local +Y edge)"
+  }
+ ],
+ "variants": {
+  "ax_util_05_heavy_port_interior": {
+   "exterior_variant": "ax_util_05_heavy_port",
+   "primary": true,
+   "crew": 0,
+   "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.045,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_1_hinge",
+     "position": [
+      0.9554,
+      -0.015,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      0.9586,
+      -0.2025,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      0.0,
+      -0.2025,
+      -0.9586
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_3",
+     "position": [
+      -0.9586,
+      -0.2025,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_4",
+     "position": [
+      0.0,
+      -0.2025,
+      0.9586
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

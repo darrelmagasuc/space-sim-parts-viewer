@@ -1,0 +1,117 @@
+{
+ "id": "eqm12",
+ "vid": "eqm12_water_dispenser",
+ "name": "Potable water dispenser, hot / ambient (wall-mount)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.3,
+  "height_y": 0.42,
+  "depth_z": 0.165
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.3,
+  "height_y": 0.43,
+  "depth_z": 0.165
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.6,
+  0.7,
+  0.33
+ ],
+ "glb": "eqm12_water_dispenser.glb",
+ "step": "eqm12_water_dispenser.step",
+ "tris": 1276,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_blue",
+  "m_led_green",
+  "m_red",
+  "m_rubber",
+  "m_screen",
+  "m_seam",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.0825
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    0.07,
+    -0.22,
+    -0.0025
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "fluid_water"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    -0.07,
+    -0.22,
+    -0.0025
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "power"
+  }
+ ],
+ "meshes": [
+  "eqm12_body",
+  "eqm12_nozzle",
+  "eqm12_drip_tray",
+  "eqm12_buttons",
+  "eqm12_display",
+  "eqm12_port_stubs"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": "eq12",
+ "notes": "drink-bag nozzle in a lit alcove, removable drip grate, hot / ambient / dispense keys, small status display; water + power stubs on the bottom face",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {}
+}

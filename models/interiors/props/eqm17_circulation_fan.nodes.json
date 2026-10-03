@@ -1,0 +1,152 @@
+{
+ "id": "eqm17",
+ "vid": "eqm17_circulation_fan",
+ "name": "Cabin circulation fan (wall-mount over a duct opening)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.301,
+  "height_y": 0.3,
+  "depth_z": 0.176
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.301,
+  "height_y": 0.3,
+  "depth_z": 0.176
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.6,
+  0.5,
+  0.35
+ ],
+ "glb": "eqm17_circulation_fan.glb",
+ "step": "eqm17_circulation_fan.step",
+ "tris": 2694,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_led_green",
+  "m_rubber",
+  "m_white",
+  "m_yellow"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.088
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.0005,
+    0.0,
+    0.088
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "air_out"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    -0.0005,
+    0.0,
+    -0.088
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "air_in"
+  },
+  {
+   "name": "node_port_3",
+   "position": [
+    0.1505,
+    -0.05,
+    0.012
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "power"
+  }
+ ],
+ "meshes": [
+  "eqm17_housing",
+  "eqm17_impeller",
+  "eqm17_grille"
+ ],
+ "moving_meshes": {
+  "eqm17_impeller": "spin about Godot Z (fan axis)"
+ },
+ "legacy_blockout": "eq17",
+ "notes": "axial fan 0.224 m bore, 7-blade impeller (sub-mesh 'impeller', spin axis = Godot Z), finger guard, rubber isolators; draws from the wall duct (air_in, back) and blows into the cabin (air_out, front)",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {
+  "impeller": {
+   "subs": [
+    "eqm17_impeller"
+   ],
+   "pivot": [
+    -0.0005,
+    0.0,
+    0.032
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "angles_deg": {
+    "stopped": 0
+   },
+   "spin": "continuous about axis"
+  }
+ }
+}

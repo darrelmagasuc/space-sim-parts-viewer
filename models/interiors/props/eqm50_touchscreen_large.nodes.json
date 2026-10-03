@@ -1,0 +1,125 @@
+{
+ "id": "eqm50",
+ "vid": "eqm50_touchscreen_large",
+ "name": "Touchscreen panel, large (38-inch class, Dragon-style console)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.9,
+  "height_y": 0.54,
+  "depth_z": 0.058
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.9,
+  "height_y": 0.54,
+  "depth_z": 0.058
+ },
+ "slot": "Medium (2x2x1 units)",
+ "slot_class": "Medium",
+ "slot_envelope_m": {
+  "width_x": 1.0,
+  "height_y": 0.6,
+  "depth_z": 1.0
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  1.8,
+  0.9,
+  0.12
+ ],
+ "glb": "eqm50_touchscreen_large.glb",
+ "step": "eqm50_touchscreen_large.step",
+ "tris": 840,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_led_green",
+  "m_screen",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.029
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.03,
+    -0.13,
+    -0.029
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "power"
+  },
+  {
+   "name": "node_port_2",
+   "position": [
+    0.03,
+    -0.13,
+    -0.029
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "kind": "data"
+  }
+ ],
+ "meshes": [
+  "eqm50_housing",
+  "eqm50_screen",
+  "eqm50_keys"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": null,
+ "notes": "matte-black bezel, 0.852 x 0.438 m active area (in a bevelled pocket) (UI texture textures/ui_large.png), 8 hard keys + status LED, back mount; 2 grid units wide -> Medium class; variant of eqm50",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {},
+ "variant_of": "eqm50",
+ "ui_texture": "textures/ui_large.png",
+ "primary": "eqm50_touchscreen_small",
+ "variants": {
+  "eqm50_touchscreen_small": {
+   "slot": "Small",
+   "glb": "eqm50_touchscreen_small.glb",
+   "nodes_json": "eqm50_touchscreen_small.nodes.json"
+  },
+  "eqm50_touchscreen_large": {
+   "slot": "Medium",
+   "glb": "eqm50_touchscreen_large.glb",
+   "nodes_json": "eqm50_touchscreen_large.nodes.json"
+  }
+ }
+}

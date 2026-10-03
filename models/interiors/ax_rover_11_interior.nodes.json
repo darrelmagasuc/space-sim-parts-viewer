@@ -1,0 +1,353 @@
+{
+ "id": "ax_rover_11",
+ "name": "AX-rover-11 RH-DC Articulated Hub Connector -- modern interior (light)",
+ "display_id": "AX-rover-11",
+ "kind": "light",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 0,
+ "crew_virtual": [
+  {
+   "n": 101,
+   "srp": [
+    0.0,
+    -0.2,
+    0.0
+   ],
+   "facing": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "floating": true,
+   "note": "light part: no exterior seat; 1.8 m figure prone along the tunnel axis on the crawl mat (fit = radial bore clearance)"
+  }
+ ],
+ "gravity": {
+  "type": "planetary",
+  "down_godot": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "note": "surface rover connector; gravity -Y Godot (CAD -Z): crew crawl prone on the rubber mat through the 0.99 m tunnel; no standing station"
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays)",
+ "tris": {
+  "total_baked": 8848,
+  "own_geometry": 8848,
+  "props": 0,
+  "by_group": {
+   "other": 6996,
+   "hatches_windows": 1056,
+   "panels": 88,
+   "racks_fit_out": 708
+  },
+  "runtime_glb": 8848,
+  "exterior": 11134,
+  "combined": 19982
+ },
+ "nodes": [
+  {
+   "name": "node_light_1",
+   "position": [
+    0.0,
+    0.45,
+    0.435
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    0.0,
+    0.45,
+    -0.435
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ],
+ "moving": {},
+ "checks": {
+  "crew_fit_iml": [
+   {
+    "seat": 101,
+    "pose": "floating",
+    "virtual": true,
+    "regions": {
+     "head": {
+      "to_iml_m": 0.108,
+      "at_iml_godot": [
+       -0.11,
+       -0.34,
+       0.66
+      ],
+      "to_panel_face_m": 0.088
+     },
+     "shoulders": {
+      "to_iml_m": 0.041,
+      "at_iml_godot": [
+       -0.24,
+       -0.35,
+       0.5
+      ],
+      "to_panel_face_m": 0.021
+     },
+     "knees": {
+      "to_iml_m": 0.076,
+      "at_iml_godot": [
+       -0.19,
+       -0.34,
+       -0.55
+      ],
+      "to_panel_face_m": 0.056
+     },
+     "torso": {
+      "to_iml_m": 0.041,
+      "at_iml_godot": [
+       -0.24,
+       -0.35,
+       0.02
+      ],
+      "to_panel_face_m": 0.021
+     },
+     "thighs": {
+      "to_iml_m": 0.076,
+      "at_iml_godot": [
+       -0.19,
+       -0.34,
+       -0.47
+      ],
+      "to_panel_face_m": 0.056
+     },
+     "shins": {
+      "to_iml_m": 0.098,
+      "at_iml_godot": [
+       -0.18,
+       -0.32,
+       -0.88
+      ],
+      "to_panel_face_m": 0.078
+     },
+     "feet": {
+      "to_iml_m": 0.0,
+      "at_iml_godot": [
+       -0.15,
+       -0.44,
+       -0.93
+      ],
+      "to_panel_face_m": -0.02
+     }
+    },
+    "min_clearance_to_iml_m": 0.0,
+    "worst_part": "feet",
+    "fits": true,
+    "note": "standing: feet / shins rest on the floor, excluded from the minimum"
+   }
+  ],
+  "crew_clearance_items": [
+   {
+    "seat": 101,
+    "regions": {
+     "head": {
+      "to_nearest_item_m": 0.187,
+      "item": "trim_lip_front"
+     },
+     "shoulders": {
+      "to_nearest_item_m": 0.029,
+      "item": "trim_lip_front"
+     },
+     "knees": {
+      "to_nearest_item_m": 0.063,
+      "item": "trim_lip_rear"
+     },
+     "torso": {
+      "to_nearest_item_m": 0.029,
+      "item": "trim_lip_front"
+     },
+     "thighs": {
+      "to_nearest_item_m": 0.066,
+      "item": "trim_lip_rear"
+     },
+     "shins": {
+      "to_nearest_item_m": 0.085,
+      "item": "trim_lip_rear"
+     },
+     "feet": {
+      "to_nearest_item_m": 0.38,
+      "item": "trim_ring_rear"
+     }
+    }
+   }
+  ],
+  "crew_vs_crew_m3": [],
+  "containment": {
+   "min_wall_gap_m": 0.0,
+   "items_outside_cavity": [],
+   "items_within_2mm": [
+    [
+     "trim_ring_front",
+     0.0
+    ],
+    [
+     "trim_lip_front",
+     0.001
+    ],
+    [
+     "trim_ring_rear",
+     0.0
+    ],
+    [
+     "trim_lip_rear",
+     0.001
+    ]
+   ],
+   "note": "signed distance of every tessellated vertex to the handoff IML mesh (inside > 0)"
+  },
+  "window_paths": [],
+  "crew_clash_m3": [],
+  "item_overlaps_m3": [],
+  "hatch_keepouts_m3": [],
+  "egress_paths": [
+   {
+    "name": "end_to_end_crawl",
+    "clear_diameter_m": 0.834,
+    "required_m": 0.8,
+    "ok": true,
+    "limiting_item": "tunnel_handhold_rear_305",
+    "pinch_point_cad": [
+     -0.343,
+     null,
+     0.241
+    ],
+    "passage_centre_cad": [
+     -0.001,
+     null,
+     0.002
+    ],
+    "note": "transit (crawl): widest axis-parallel clear cylinder along the tube, Godot z -0.500..+0.500, fixed items + IML side wall; moving door meshes excluded"
+   }
+  ],
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "note": "exterior meshes with vertices inside the IML; hidden ones are listed in exterior_hide"
+  },
+  "reach": [
+   {
+    "seat": 101,
+    "virtual": true,
+    "reach_limit_m": 0.75,
+    "by_category": {
+     "handhold": {
+      "dist_m": 0.166,
+      "item": "tunnel_handhold_front_235",
+      "within_reach": true
+     },
+     "control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     },
+     "hatch_control": {
+      "dist_m": null,
+      "item": null,
+      "within_reach": false
+     }
+    },
+    "required": "handhold",
+    "ok": true,
+    "note": "zero-g / floating: a handhold must be within arm reach of the station"
+   }
+  ],
+  "elapsed_s": 6
+ },
+ "contents": "0.99 m crawl-through connector (light): 2 rigid white trim rings on the flanges with black lips at the open ends, flexible corrugated off-white bellows liner (12 folds) across the articulation, 3-piece rubber crawl mat with graphite ribs (split at the articulation), 8 alu grab handles, 2 LED task lights, 4 yellow articulation caution labels",
+ "notes": [
+  "frame: the connector's own origin is on the tunnel axis (node_front / node_rear y 0, node_bottom y -1.15): the iva 'axis at CAD z 1.15' is above node_bottom; it mates to the hub ring nodes (y -0.07) by node, no offset applied",
+  "no hatches / seats in iva or exterior nodes (light connector): egress = widest axial clear passage end to end (need 0.8 m)",
+  "the flexed pose (ax_rover_11_connector_flexed) pitches the rear flange 12 deg: the interior is split at the articulation (rigid trim rings on the flanges, flexible bellows liner + 3-piece crawl mat across it); the rear ring / mat piece would follow the flange (not animated here)"
+ ],
+ "node_check_vs_exterior": {
+  "mismatched": [],
+  "checked": []
+ },
+ "lod1": {
+  "tris": 2740,
+  "lod0_tris": 8848,
+  "ratio": 0.1,
+  "file": "lod/ax_rover_11_interior_lod1.glb",
+  "note": "lod_b68 v2: blender collapse decimate (ratio R, seam meshes >= 0.30, meshes <= 16 tris kept, parts < 60 mm dropped, bbox guard); same node empties"
+ },
+ "source_note": "site copy of parts/interiors_modern/ax/ax_rover_11/ax_rover_11_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [],
+ "moving_meshes": [],
+ "variants": {
+  "ax_rover_11_connector_interior": {
+   "exterior_variant": "ax_rover_11_connector",
+   "primary": true,
+   "crew": 0,
+   "nodes": [
+    {
+     "name": "node_light_1",
+     "position": [
+      0.0,
+      0.45,
+      0.435
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      0.0,
+      0.45,
+      -0.435
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

@@ -524,12 +524,1192 @@
         "clash_with_crew_items": 0
       },
       "known_issue": null
+    },
+    {
+      "id": "ax_cmd_01",
+      "name": "CM-8 'Ares' Crew Capsule (AX-cmd-01) -- modern interior (option A)",
+      "reference": "AX-cmd-01",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_01_ares_capsule_interior": "ax_cmd_01_ares_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 13,
+        "hatch_keepout_intrusions": 2,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: window_bezel_1 -0.0031, window_glass_inner_1 -0.0086, window_bezel_2 -0.0031, window_glass_inner_2 -0.0086, window_bezel_3 -0.0031, window_glass_inner_3 -0.0086",
+          "hatch keep-out node_hatch_1: mq01_1 0.00609 m3",
+          "hatch keep-out node_hatch_1: mq00_1 0.00609 m3",
+          "aisle seats_to_docking_hatch: 0.04 m clear (< 0.8 m)",
+          "aisle seats_to_side_hatch: 0.301 m clear (< 0.6 m)",
+          "aisle side_hatch_approach: 0.301 m clear (< 0.6 m)"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_02",
+      "name": "AX-cmd-02 CM-2X 'Kestrel' Two-Seat Capsule -- modern interior (full)",
+      "reference": "AX-cmd-02",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_02_kestrel_capsule_interior": "ax_cmd_02_kestrel_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 2,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "hatch keep-out node_hatch_1: seat_1_shell_pan 0.00024 m3",
+          "hatch keep-out node_hatch_1: seat_2_shell_pan 0.00024 m3"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_03",
+      "name": "AX-cmd-03 CM-12 'Ares Heavy' Six-Seat Capsule -- modern interior (full)",
+      "reference": "AX-cmd-03",
+      "crew": 6,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_03_ares_heavy_capsule_interior": "ax_cmd_03_ares_heavy_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 6,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 2,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "hatch keep-out node_hatch_1: seat_2_legrest 9e-05 m3",
+          "hatch keep-out node_hatch_1: seat_3_legrest 9e-05 m3",
+          "aisle seat_1_to_side_hatch: 0.06 m clear (< 0.6 m)",
+          "aisle seat_2_to_side_hatch: 0.06 m clear (< 0.6 m)",
+          "aisle seat_3_to_side_hatch: 0.06 m clear (< 0.6 m)",
+          "aisle seat_4_to_side_hatch: 0.06 m clear (< 0.6 m)",
+          "aisle seat_5_to_side_hatch: 0.008 m clear (< 0.6 m)",
+          "aisle seat_6_to_side_hatch: 0.009 m clear (< 0.6 m)",
+          "aisle seats_to_docking_hatch: 0.322 m clear (< 0.8 m)"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_04",
+      "name": "AX-cmd-04 AC-4 'MAV' Ascent Cabin -- modern interior (full)",
+      "reference": "AX-cmd-04",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_04_mav_ascent_cabin_interior": "ax_cmd_04_mav_ascent_cabin"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 10,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "hatch keep-out node_hatch_1: seat_1_shell_pan 0.00023 m3",
+          "hatch keep-out node_hatch_1: seat_1_bolsters 0.00018 m3",
+          "hatch keep-out node_hatch_1: seat_1_armrests 1e-05 m3",
+          "hatch keep-out node_hatch_1: seat_1_hc_pods 0.00013 m3",
+          "hatch keep-out node_hatch_1: hand_controller_1r 0.00014 m3",
+          "hatch keep-out node_hatch_1: seat_2_shell_pan 0.00023 m3"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_06",
+      "name": "AX-cmd-06 OT-1 Orbital Tug Cab -- modern interior (full)",
+      "reference": "AX-cmd-06",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_06_tug_cab_interior": "ax_cmd_06_tug_cab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 20,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "hatch keep-out node_hatch_1: seat_1_shell_back 0.00152 m3",
+          "hatch keep-out node_hatch_1: seat_1_shell_back_fold 0.00938 m3",
+          "hatch keep-out node_hatch_1: seat_1_shell_corner 0.00035 m3",
+          "hatch keep-out node_hatch_1: seat_1_bolsters 8e-05 m3",
+          "hatch keep-out node_hatch_1: seat_1_bolsters_fold 0.00125 m3",
+          "hatch keep-out node_hatch_1: seat_1_cushions 0.00032 m3",
+          "aisle seat_1_to_docking_hatch: 0.402 m clear (< 0.8 m)",
+          "aisle seat_2_to_docking_hatch: 0.402 m clear (< 0.8 m)"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_07",
+      "name": "AX-cmd-07 CD-7 Command Deck Section -- modern interior (full)",
+      "reference": "AX-cmd-07",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_07_command_deck_interior": "ax_cmd_07_command_deck"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "aisle seat_1_to_crew_hatch: 0.008 m clear (< 0.6 m)",
+          "aisle seat_2_to_crew_hatch: 0.008 m clear (< 0.6 m)",
+          "aisle seat_3_to_crew_hatch: 0.008 m clear (< 0.6 m)",
+          "aisle seat_4_to_crew_hatch: 0.008 m clear (< 0.6 m)"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_cmd_08",
+      "name": "AX-cmd-08 CG-L 'Ares' Cargo Capsule -- modern interior (light)",
+      "reference": "AX-cmd-08",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_08_ares_cargo_capsule_interior": "ax_cmd_08_ares_cargo_capsule"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 0,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_aero_01",
+      "name": "AX-aero-01 CK-1X Single-Seat Jet Cockpit -- modern interior (full)",
+      "reference": "AX-aero-01",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_aero_01_ck1x_cockpit_interior": "ax_aero_01_ck1x_cockpit"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_01",
+      "name": "AX-rover-01 RH-F2 Front Cab Hub, 2-Seat -- modern interior (full)",
+      "reference": "AX-rover-01",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_rover_01_cab2_interior": "ax_rover_01_cab2"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_03",
+      "name": "AX-rover-03 RH-FO Front Open Driving Station -- modern interior (full)",
+      "reference": "AX-rover-03",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_rover_03_open_station_interior": "ax_rover_03_open_station"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 12,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: cage_clamp_rear_l_lo -0.0391, cage_clamp_rear_l_hi -0.0391, cage_clamp_front_l_lo -0.028, cage_clamp_front_l_hi -0.028, cage_clamp_rear_r_lo -0.0391, cage_clamp_rear_r_hi -0.0391"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_05",
+      "name": "AX-rover-05 RH-RS Rear Hub: Back Seats -- modern interior (full)",
+      "reference": "AX-rover-05",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_rover_05_back_seats_interior": "ax_rover_05_back_seats"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_06",
+      "name": "AX-rover-06 RH-RT Rear Hub: Temporary Station -- modern interior (full)",
+      "reference": "AX-rover-06",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_rover_06_temp_station_deployed_interior": "ax_rover_06_temp_station_deployed"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_07",
+      "name": "AX-rover-07 RH-MA Mid Hub: Airlock / Suitports -- modern interior (full)",
+      "reference": "AX-rover-07",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_rover_07_mid_airlock_interior": "ax_rover_07_mid_airlock"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_08",
+      "name": "AX-rover-08 RH-MC Mid Hub: Pressurised Cargo -- modern interior (light)",
+      "reference": "AX-rover-08",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_rover_08_mid_cargo_interior": "ax_rover_08_mid_cargo"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_10",
+      "name": "AX-rover-10 RH-ML Mid Hub: Science Lab -- modern interior (full)",
+      "reference": "AX-rover-10",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_rover_10_mid_lab_interior": "ax_rover_10_mid_lab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_11",
+      "name": "AX-rover-11 RH-DC Articulated Hub Connector -- modern interior (light)",
+      "reference": "AX-rover-11",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_rover_11_connector_interior": "ax_rover_11_connector"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_rover_12",
+      "name": "AX-rover-12 RH-DK Hub Docking Ring -- modern interior (light)",
+      "reference": "AX-rover-12",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_rover_12_dock_ring_interior": "ax_rover_12_dock_ring"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_aero_02",
+      "name": "AX-aero-02 CK-2X Mk2 Two-Seat Cockpit -- modern interior (full)",
+      "reference": "AX-aero-02",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_aero_02_ck2x_cockpit_interior": "ax_aero_02_ck2x_cockpit"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_aero_04",
+      "name": "AX-aero-04 CK-3X Mk3 Flight Deck -- modern interior (full)",
+      "reference": "AX-aero-04",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_aero_04_ck3x_flight_deck_interior": "ax_aero_04_ck3x_flight_deck"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_aero_10",
+      "name": "AX-aero-10 FS-2P Mk2 Passenger Cabin -- modern interior (full)",
+      "reference": "AX-aero-10",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_aero_10_fs2p_passenger_cabin_interior": "ax_aero_10_fs2p_passenger_cabin"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_grav_01",
+      "name": "AX-grav-01 GR-HB Despun Hub -- modern interior (full)",
+      "reference": "AX-grav-01",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_grav_01_despun_hub_interior": "ax_grav_01_despun_hub"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_grav_02",
+      "name": "AX-grav-02 GR-CRX Counter-Rotating Bearing Assembly -- modern interior (light)",
+      "reference": "AX-grav-02",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_grav_02_counter_bearing_interior": "ax_grav_02_counter_bearing"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_grav_03",
+      "name": "AX-grav-03 GR-SP Pressurised Spoke / Elevator -- modern interior (full)",
+      "reference": "AX-grav-03",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_grav_03_pressurised_spoke_interior": "ax_grav_03_pressurised_spoke"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 2,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "hatch keep-out node_hatch_1: elevator_car_floor_hatch 0.0183 m3",
+          "hatch keep-out node_hatch_1: elevator_car_floor_hatch_pull 4e-05 m3"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_util_01",
+      "name": "AX-util-01 DP-S IDSS Androgynous Docking Port -- modern interior (light)",
+      "reference": "AX-util-01",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_util_01_idss_port_interior": "ax_util_01_idss_port"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_util_03",
+      "name": "AX-util-03 DP-CB Common Berthing Ring -- modern interior (light)",
+      "reference": "AX-util-03",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_util_03_berthing_ring_interior": "ax_util_03_berthing_ring"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_util_04",
+      "name": "AX-util-04 DP-AD Docking Adapter -- modern interior (light)",
+      "reference": "AX-util-04",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_util_04_docking_adapter_interior": "ax_util_04_docking_adapter"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_util_05",
+      "name": "AX-util-05 DP-L Heavy Cargo Port -- modern interior (light)",
+      "reference": "AX-util-05",
+      "crew": 0,
+      "line": "AX",
+      "variants": {
+        "ax_util_05_heavy_port_interior": "ax_util_05_heavy_port"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_01",
+      "name": "AX-station-01 HB-L 'Harbor' Core Hab -- modern interior (full)",
+      "reference": "AX-station-01",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_station_01_core_hab_interior": "ax_station_01_core_hab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_02",
+      "name": "AX-station-02 HB-M Compact Hab -- modern interior (full)",
+      "reference": "AX-station-02",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_02_compact_hab_interior": "ax_station_02_compact_hab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_03",
+      "name": "AX-station-03 ND-6 Six-Port Node -- modern interior (full)",
+      "reference": "AX-station-03",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_station_03_node6_interior": "ax_station_03_node6"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_04",
+      "name": "AX-station-04 AL-2 Dual Airlock -- modern interior (full)",
+      "reference": "AX-station-04",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_04_dual_airlock_interior": "ax_station_04_dual_airlock"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 1,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_06",
+      "name": "AX-station-06 LB-L Laboratory Module -- modern interior (full)",
+      "reference": "AX-station-06",
+      "crew": 3,
+      "line": "AX",
+      "variants": {
+        "ax_station_06_lab_interior": "ax_station_06_lab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 3,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_07",
+      "name": "AX-station-07 LG-L Pressurised Logistics Module -- modern interior (light)",
+      "reference": "AX-station-07",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_station_07_logistics_interior": "ax_station_07_logistics"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_08",
+      "name": "AX-station-08 IH-XL Inflatable Hab -- modern interior (full)",
+      "reference": "AX-station-08",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_station_08_inflatable_hab_interior": "ax_station_08_inflatable_hab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_10",
+      "name": "AX-station-10 GH-L Greenhouse Module -- modern interior (full)",
+      "reference": "AX-station-10",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_10_greenhouse_interior": "ax_station_10_greenhouse"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_11",
+      "name": "AX-station-11 WS-L Workshop / Fabrication Module -- modern interior (full)",
+      "reference": "AX-station-11",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_11_workshop_interior": "ax_station_11_workshop"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_12",
+      "name": "AX-station-12 CC-L Station Command Module -- modern interior (full)",
+      "reference": "AX-station-12",
+      "crew": 3,
+      "line": "AX",
+      "variants": {
+        "ax_station_12_command_interior": "ax_station_12_command"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 3,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_13",
+      "name": "AX-station-13 CQ-L Crew Quarters Module -- modern interior (full)",
+      "reference": "AX-station-13",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_13_crew_quarters_interior": "ax_station_13_crew_quarters"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_14",
+      "name": "AX-station-14 SS-M Storm Shelter -- modern interior (full)",
+      "reference": "AX-station-14",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_station_14_storm_shelter_interior": "ax_station_14_storm_shelter"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 24,
+        "open_findings": [
+          "items outside the cavity: tunnel_liner_1 -0.005, tunnel_liner_2 -0.005"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_15",
+      "name": "AX-station-15 SH-L Surface Hab -- modern interior (full)",
+      "reference": "AX-station-15",
+      "crew": 3,
+      "line": "AX",
+      "variants": {
+        "ax_station_15_surface_hab_deployed_interior": "ax_station_15_surface_hab_deployed"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 3,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: suitport_bore_liner_1 -0.23, suitport_bore_liner_2 -0.23"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_16",
+      "name": "AX-station-16 DM-XL Inflatable Surface Dome -- modern interior (full)",
+      "reference": "AX-station-16",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_station_16_dome_deployed_interior": "ax_station_16_dome_deployed"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 4,
+        "open_findings": [
+          "aisle storm_shelter_ring_r0.725: 0.55 m clear (< 0.8 m)",
+          "aisle eclss_ring_r0.778: 0.564 m clear (< 0.8 m)"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_station_17",
+      "name": "AX-station-17 SA-M Surface Airlock / Suitport -- modern interior (full)",
+      "reference": "AX-station-17",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_station_17_surface_airlock_interior": "ax_station_17_surface_airlock"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "items outside the cavity: suitport_bore_liner_1 -0.145, suitport_bore_liner_2 -0.145"
+        ]
+      },
+      "known_issue": null
+    },
+    {
+      "id": "ax_aero_05",
+      "name": "AX-aero-05 CK-3S Mk3 Spaceplane Nose -- modern interior (full)",
+      "reference": "AX-aero-05",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_aero_05_ck3s_spaceplane_nose_interior": "ax_aero_05_ck3s_spaceplane_nose"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: aft-bulkhead interior handrails"
+    },
+    {
+      "id": "ax_cmd_05",
+      "name": "AX-cmd-05 LC-3 Lunar Lander Crew Cabin -- modern interior (full)",
+      "reference": "AX-cmd-05",
+      "crew": 4,
+      "line": "AX",
+      "variants": {
+        "ax_cmd_05_lander_crew_cabin_interior": "ax_cmd_05_lander_crew_cabin"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 4,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 0,
+        "open_findings": [
+          "aisle seat_1_to_side_hatch: 0.478 m clear (< 0.6 m)",
+          "aisle seat_2_to_side_hatch: 0.478 m clear (< 0.6 m)",
+          "aisle cabin_to_docking_hatch: 0.779 m clear (< 0.8 m)"
+        ]
+      },
+      "known_issue": "round-4 update pending: jump-seat fold"
+    },
+    {
+      "id": "ax_grav_05",
+      "name": "AX-grav-05 GR-RH Ring Segment: Habitat -- modern interior (full)",
+      "reference": "AX-grav-05",
+      "crew": 3,
+      "line": "AX",
+      "variants": {
+        "ax_grav_05_ring_hab_interior": "ax_grav_05_ring_hab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 3,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: spin-gravity block (exterior gravity data)"
+    },
+    {
+      "id": "ax_grav_06",
+      "name": "AX-grav-06 GR-RL Ring Segment: Laboratory -- modern interior (full)",
+      "reference": "AX-grav-06",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_grav_06_ring_lab_interior": "ax_grav_06_ring_lab"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: spin-gravity block (exterior gravity data)"
+    },
+    {
+      "id": "ax_grav_07",
+      "name": "AX-grav-07 GR-RG Ring Segment: Greenhouse -- modern interior (full)",
+      "reference": "AX-grav-07",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_grav_07_ring_greenhouse_interior": "ax_grav_07_ring_greenhouse"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: spin-gravity block (exterior gravity data)"
+    },
+    {
+      "id": "ax_grav_08",
+      "name": "AX-grav-08 GR-RS Ring Segment: Storage / Utility -- modern interior (light)",
+      "reference": "AX-grav-08",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_grav_08_ring_storage_interior": "ax_grav_08_ring_storage"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: spin-gravity block (exterior gravity data)"
+    },
+    {
+      "id": "ax_grav_09",
+      "name": "AX-grav-09 GR-RB Ring Segment: Bulkhead / Airlock -- modern interior (full)",
+      "reference": "AX-grav-09",
+      "crew": 2,
+      "line": "AX",
+      "variants": {
+        "ax_grav_09_ring_bulkhead_airlock_interior": "ax_grav_09_ring_bulkhead_airlock"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 2,
+        "items_outside_cavity": 0,
+        "hatch_keepout_intrusions": 0,
+        "crew_vs_crew": 0,
+        "aisles_ok": true,
+        "unexpected_crew_clash": 0,
+        "open_findings": []
+      },
+      "known_issue": "round-4 update pending: spin-gravity block (exterior gravity data)"
+    },
+    {
+      "id": "ax_station_05",
+      "name": "AX-station-05 CU-1 Faceted Cupola -- modern interior (full)",
+      "reference": "AX-station-05",
+      "crew": 1,
+      "line": "AX",
+      "variants": {
+        "ax_station_05_cupola_interior": "ax_station_05_cupola"
+      },
+      "skipped_variants": [],
+      "validation": {
+        "crew_stations": 1,
+        "items_outside_cavity": 2,
+        "hatch_keepout_intrusions": 5,
+        "crew_vs_crew": 0,
+        "aisles_ok": false,
+        "unexpected_crew_clash": 3,
+        "open_findings": [
+          "items outside the cavity: foot_restraint_strap -0.575, foot_restraint_bar -0.564",
+          "hatch keep-out node_hatch_1: hand_controller_l 0.00022 m3",
+          "hatch keep-out node_hatch_1: hand_controller_l_pod 9e-05 m3",
+          "hatch keep-out node_hatch_1: hand_controller_l_arm 4e-05 m3",
+          "hatch keep-out node_hatch_1: hand_controller_r 0.00022 m3",
+          "hatch keep-out node_hatch_1: hand_controller_r_pod 9e-05 m3",
+          "aisle nadir_hatch_to_window_ring: 0.785 m clear (< 0.8 m)"
+        ]
+      },
+      "known_issue": "round-4 update pending: hand-controller stow pose / workstation over the hip"
     }
   ],
   "skipped": [
     {
       "id": "rover12",
       "reason": "built against an unreleased rover12 exterior revision (hull-axis hatch openings); released with that exterior"
+    },
+    {
+      "id": "ax_aero_03",
+      "reason": "not built yet"
+    },
+    {
+      "id": "ax_aero_06",
+      "reason": "still building (no REPORT.md)"
+    },
+    {
+      "id": "ax_aero_14",
+      "reason": "not built yet"
+    },
+    {
+      "id": "ax_rover_02",
+      "reason": "in progress (mid-rebuild, mixed LODs)"
+    },
+    {
+      "id": "ax_rover_04",
+      "reason": "in progress (mid-rebuild, mixed LODs)"
     }
-  ]
+  ],
+  "ax_source": "/workspace/space-sim/parts/interiors_modern/ax",
+  "ax_imported_at": "2026-10-03T13:15:08+02:00",
+  "props_library": {
+    "source": "/workspace/space-sim/parts/interiors_modern/props_anastasia",
+    "path": "models/interiors/props/",
+    "props": [
+      "eqm03_avionics_box",
+      "eqm08_co2_scrubber",
+      "eqm09_o2_tank",
+      "eqm10_n2_tank",
+      "eqm12_water_dispenser",
+      "eqm13_fire_extinguisher",
+      "eqm14_first_aid_kit",
+      "eqm17_circulation_fan",
+      "eqm20_cargo_bag_strapped",
+      "eqm21_stowage_locker_flush",
+      "eqm48_handrail",
+      "eqm49_led_strip",
+      "eqm50_touchscreen_large",
+      "eqm50_touchscreen_small"
+    ],
+    "note": "Anastasia's interior props (eqm*): GLB + nodes.json each; the AX interior GLBs in this release are baked (props embedded), so these are only needed to instance props at runtime (see nodes.json props_baked)"
+  }
 }

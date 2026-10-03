@@ -1,0 +1,2360 @@
+{
+ "id": "ax_station_04",
+ "name": "AX-station-04 AL-2 Dual Airlock -- modern interior (full)",
+ "display_id": "AX-station-04",
+ "frame": "Godot Y-up, metres; same origin as the exterior GLB; node +Y = direction, node +Z = up",
+ "crew": 2,
+ "gravity": {
+  "type": "zero_g",
+  "accel_axis_godot": null,
+  "note": "orbital dual airlock: microgravity, hand-off iva gravity block (05:56): environment orbital, design_g 0.0 (microgravity), direction none; crew stations standing / free-floating (1.8 m figure upright, node_seat = hip, feet at -0.90 m). Crew 2's feet rest on the internal bulkhead (not a clearance surface)."
+ },
+ "exterior_hide": [],
+ "exterior_hide_note": "none needed: the interior adds its own inner panes (window_glass stays; optional hide listed in the handoff iva.json)",
+ "tris": {
+  "total_baked": 30910,
+  "own_geometry": 27042,
+  "props": 3868,
+  "by_group": {
+   "other": 9184,
+   "panels": 6622,
+   "hatches_windows": 11236,
+   "props": 3868
+  },
+  "runtime_glb": 27042,
+  "exterior": 12710,
+  "combined": 43620
+ },
+ "nodes": [
+  {
+   "name": "node_camera_1",
+   "position": [
+    0.14,
+    -0.208,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_camera_2",
+   "position": [
+    0.14,
+    1.754,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    -2.178,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    1.11,
+    0.984,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_1",
+   "position": [
+    0.0,
+    -0.958,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_seat_2",
+   "position": [
+    0.0,
+    1.004,
+    -0.25
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_view_1",
+   "position": [
+    -1.062,
+    -0.708,
+    0.0
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_2_hinge",
+   "position": [
+    1.25,
+    0.984,
+    -0.45
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "up": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_1_hinge",
+   "position": [
+    0.0,
+    -2.118,
+    -0.4638
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_door_7_hinge",
+   "position": [
+    -0.508,
+    0.039,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_1",
+   "position": [
+    0.0,
+    -1.0,
+    1.0242
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "node_light_2",
+   "position": [
+    -0.7242,
+    1.0,
+    -0.7242
+   ],
+   "direction": [
+    0.7071,
+    0.0,
+    0.7071
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  }
+ ],
+ "moving": {
+  "hatch_door_2": {
+   "meshes": [
+    "hatch_door_2",
+    "hatch_door_2_handle",
+    "hatch_door_2_valve"
+   ],
+   "pivot": [
+    1.25,
+    0.984,
+    -0.45
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 110
+   },
+   "note": "outward-opening side hatch, hinge on the +X edge (outer face); rotate with the exterior mesh hatch_door_2 about node_hatch_door_2_hinge"
+  },
+  "hatch_door_1": {
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.0,
+    -2.118,
+    -0.4638
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch opens into the cabin, hinge on the CAD +Y edge of the tunnel"
+  },
+  "hatch_door_7": {
+   "meshes": [
+    "hatch_door_7",
+    "hatch_door_7_handwheel"
+   ],
+   "pivot": [
+    -0.508,
+    0.039,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": -95
+   },
+   "note": "internal bulkhead plug hatch (equipment lock / crew lock), flush in the bulkhead, opens up into the crew lock about its -X edge; no exterior node (internal)"
+  }
+ },
+ "checks": {
+  "flight": {
+   "crew_fit_iml": [
+    {
+     "seat": 1,
+     "regions": {
+      "head": {
+       "to_iml_m": 0.908,
+       "at_iml_godot": [
+        0.17,
+        -0.398,
+        0.11
+       ],
+       "to_panel_face_m": 0.87
+      },
+      "shoulders": {
+       "to_iml_m": 0.827,
+       "at_iml_godot": [
+        0.15,
+        -0.558,
+        0.24
+       ],
+       "to_panel_face_m": 0.79
+      },
+      "knees": {
+       "to_iml_m": 0.7,
+       "at_iml_godot": [
+        -0.11,
+        -1.478,
+        0.19
+       ],
+       "to_panel_face_m": 0.68
+      },
+      "torso": {
+       "to_iml_m": 0.827,
+       "at_iml_godot": [
+        0.15,
+        -0.978,
+        0.24
+       ],
+       "to_panel_face_m": 0.79
+      },
+      "thighs": {
+       "to_iml_m": 0.76,
+       "at_iml_godot": [
+        -0.11,
+        -1.418,
+        0.19
+       ],
+       "to_panel_face_m": 0.74
+      },
+      "shins": {
+       "to_iml_m": 0.38,
+       "at_iml_godot": [
+        -0.09,
+        -1.798,
+        0.17
+       ],
+       "to_panel_face_m": 0.36
+      },
+      "feet": {
+       "to_iml_m": 0.32,
+       "at_iml_godot": [
+        -0.07,
+        -1.858,
+        0.15
+       ],
+       "to_panel_face_m": 0.3
+      }
+     },
+     "min_clearance_to_iml_m": 0.32,
+     "worst_part": "feet",
+     "worst_point_godot": [
+      -0.07,
+      -1.858,
+      0.15
+     ],
+     "fits": true
+    },
+    {
+     "seat": 2,
+     "regions": {
+      "head": {
+       "to_iml_m": 0.481,
+       "at_iml_godot": [
+        -0.1,
+        1.904,
+        -0.14
+       ],
+       "to_panel_face_m": 0.461
+      },
+      "shoulders": {
+       "to_iml_m": 0.598,
+       "at_iml_godot": [
+        0.15,
+        1.404,
+        -0.49
+       ],
+       "to_panel_face_m": 0.559
+      },
+      "knees": {
+       "to_iml_m": 0.651,
+       "at_iml_godot": [
+        0.13,
+        0.484,
+        -0.44
+       ],
+       "to_panel_face_m": 0.612
+      },
+      "torso": {
+       "to_iml_m": 0.598,
+       "at_iml_godot": [
+        0.15,
+        0.984,
+        -0.49
+       ],
+       "to_panel_face_m": 0.559
+      },
+      "thighs": {
+       "to_iml_m": 0.651,
+       "at_iml_godot": [
+        0.13,
+        0.544,
+        -0.44
+       ],
+       "to_panel_face_m": 0.612
+      },
+      "shins": {
+       "to_iml_m": 0.676,
+       "at_iml_godot": [
+        0.11,
+        0.164,
+        -0.42
+       ],
+       "to_panel_face_m": 0.639
+      },
+      "feet": {
+       "to_iml_m": 0.653,
+       "at_iml_godot": [
+        0.22,
+        0.104,
+        -0.4
+       ],
+       "to_panel_face_m": 0.615
+      }
+     },
+     "min_clearance_to_iml_m": 0.481,
+     "worst_part": "head",
+     "worst_point_godot": [
+      -0.1,
+      1.904,
+      -0.14
+     ],
+     "fits": true
+    }
+   ],
+   "crew_clearance_items": [
+    {
+     "seat": 1,
+     "regions": {
+      "head": {
+       "to_nearest_item_m": 0.065,
+       "item": "hatch_door_7"
+      },
+      "shoulders": {
+       "to_nearest_item_m": 0.238,
+       "item": "suit_stowage_2_body"
+      },
+      "knees": {
+       "to_nearest_item_m": 0.278,
+       "item": "suit_stowage_1_pulls"
+      },
+      "torso": {
+       "to_nearest_item_m": 0.226,
+       "item": "suit_stowage_1_pulls"
+      },
+      "thighs": {
+       "to_nearest_item_m": 0.276,
+       "item": "suit_stowage_1_pulls"
+      },
+      "shins": {
+       "to_nearest_item_m": 0.206,
+       "item": "hatch_door_1_handwheel"
+      },
+      "feet": {
+       "to_nearest_item_m": 0.145,
+       "item": "hatch_door_1_handwheel"
+      }
+     }
+    },
+    {
+     "seat": 2,
+     "regions": {
+      "head": {
+       "to_nearest_item_m": 0.456,
+       "item": "end_cap_led"
+      },
+      "shoulders": {
+       "to_nearest_item_m": 0.481,
+       "item": "eqm48_2"
+      },
+      "knees": {
+       "to_nearest_item_m": 0.405,
+       "item": "hatch_coaming_7"
+      },
+      "torso": {
+       "to_nearest_item_m": 0.481,
+       "item": "eqm48_2"
+      },
+      "thighs": {
+       "to_nearest_item_m": 0.464,
+       "item": "hatch_coaming_7"
+      },
+      "shins": {
+       "to_nearest_item_m": 0.112,
+       "item": "hatch_coaming_7"
+      },
+      "feet": {
+       "to_nearest_item_m": 0.06,
+       "item": "hatch_coaming_7"
+      }
+     }
+    }
+   ],
+   "crew_vs_crew_m3": [],
+   "containment": {
+    "min_wall_gap_m": -0.005,
+    "items_outside_cavity": [
+     [
+      "tunnel_liner_1",
+      -0.005
+     ]
+    ],
+    "items_within_2mm": [
+     [
+      "panel_b0_f00",
+      0.0002
+     ],
+     [
+      "panel_b0_f01",
+      0.0002
+     ],
+     [
+      "panel_b0_f02",
+      0.0002
+     ],
+     [
+      "panel_b0_f03",
+      0.0002
+     ],
+     [
+      "panel_b0_f04",
+      0.0002
+     ],
+     [
+      "panel_b0_f05",
+      0.0002
+     ],
+     [
+      "panel_b0_f06",
+      0.0002
+     ],
+     [
+      "panel_b0_f07",
+      0.0002
+     ],
+     [
+      "panel_b0_f08",
+      0.0002
+     ],
+     [
+      "panel_b0_f09",
+      0.0002
+     ],
+     [
+      "panel_b0_f10",
+      0.0002
+     ],
+     [
+      "panel_b0_f11",
+      0.0002
+     ],
+     [
+      "panel_b0_f12",
+      0.0002
+     ],
+     [
+      "panel_b0_f13",
+      0.0002
+     ],
+     [
+      "panel_b0_f14",
+      0.0002
+     ],
+     [
+      "panel_b0_f15",
+      0.0002
+     ],
+     [
+      "panel_b1_f00",
+      0.0007
+     ],
+     [
+      "panel_b1_f01",
+      0.0007
+     ],
+     [
+      "panel_b1_f02",
+      0.0007
+     ],
+     [
+      "panel_b1_f03",
+      0.0007
+     ],
+     [
+      "panel_b1_f04",
+      0.0007
+     ],
+     [
+      "panel_b1_f05",
+      0.0007
+     ],
+     [
+      "panel_b1_f06",
+      0.0007
+     ],
+     [
+      "panel_b1_f07",
+      0.0007
+     ],
+     [
+      "panel_b1_f08",
+      0.0007
+     ],
+     [
+      "panel_b1_f09",
+      0.0007
+     ],
+     [
+      "panel_b1_f10",
+      0.0007
+     ],
+     [
+      "panel_b1_f11",
+      0.0007
+     ],
+     [
+      "panel_b1_f12",
+      0.0007
+     ],
+     [
+      "panel_b1_f13",
+      0.0007
+     ],
+     [
+      "panel_b1_f14",
+      0.0007
+     ],
+     [
+      "panel_b1_f15",
+      0.0007
+     ],
+     [
+      "panel_b2_f00",
+      0.0007
+     ],
+     [
+      "panel_b2_f01",
+      0.0007
+     ],
+     [
+      "panel_b2_f02",
+      0.0007
+     ],
+     [
+      "panel_b2_f03",
+      0.0007
+     ],
+     [
+      "panel_b2_f04",
+      0.0007
+     ],
+     [
+      "panel_b2_f05",
+      0.0007
+     ],
+     [
+      "panel_b2_f07",
+      0.0007
+     ],
+     [
+      "panel_b2_f08",
+      0.0007
+     ],
+     [
+      "panel_b2_f09",
+      0.0007
+     ],
+     [
+      "panel_b2_f11",
+      0.0007
+     ],
+     [
+      "panel_b2_f12",
+      0.0007
+     ],
+     [
+      "panel_b2_f13",
+      0.0007
+     ],
+     [
+      "panel_b2_f14",
+      0.0007
+     ],
+     [
+      "panel_b2_f15",
+      0.0007
+     ],
+     [
+      "panel_b3_f00",
+      0.0008
+     ],
+     [
+      "panel_b3_f01",
+      0.0008
+     ],
+     [
+      "panel_b3_f02",
+      0.0008
+     ],
+     [
+      "panel_b3_f03",
+      0.0008
+     ],
+     [
+      "panel_b3_f04",
+      0.0008
+     ],
+     [
+      "panel_b3_f05",
+      0.0008
+     ],
+     [
+      "panel_b3_f07",
+      0.0008
+     ],
+     [
+      "panel_b3_f08",
+      0.0008
+     ],
+     [
+      "panel_b3_f09",
+      0.0008
+     ],
+     [
+      "panel_b3_f11",
+      0.0008
+     ],
+     [
+      "panel_b3_f12",
+      0.0008
+     ],
+     [
+      "panel_b3_f13",
+      0.0008
+     ],
+     [
+      "panel_b3_f14",
+      0.0008
+     ],
+     [
+      "panel_b3_f15",
+      0.0008
+     ],
+     [
+      "panel_b4_f00",
+      0.0008
+     ],
+     [
+      "panel_b4_f01",
+      0.0008
+     ],
+     [
+      "panel_b4_f02",
+      0.0008
+     ],
+     [
+      "panel_b4_f03",
+      0.0008
+     ],
+     [
+      "panel_b4_f04",
+      0.0008
+     ],
+     [
+      "panel_b4_f05",
+      0.0008
+     ],
+     [
+      "panel_b4_f07",
+      0.0008
+     ],
+     [
+      "panel_b4_f08",
+      0.0008
+     ],
+     [
+      "panel_b4_f09",
+      0.0008
+     ],
+     [
+      "panel_b4_f11",
+      0.0008
+     ],
+     [
+      "panel_b4_f12",
+      0.0008
+     ],
+     [
+      "panel_b4_f13",
+      0.0008
+     ],
+     [
+      "panel_b4_f14",
+      0.0008
+     ],
+     [
+      "panel_b4_f15",
+      0.0008
+     ],
+     [
+      "panel_b5_f00",
+      0.0008
+     ],
+     [
+      "panel_b5_f01",
+      0.0008
+     ],
+     [
+      "panel_b5_f02",
+      0.0008
+     ],
+     [
+      "panel_b5_f03",
+      0.0008
+     ],
+     [
+      "panel_b5_f04",
+      0.0008
+     ],
+     [
+      "panel_b5_f05",
+      0.0008
+     ],
+     [
+      "panel_b5_f06",
+      0.0008
+     ],
+     [
+      "panel_b5_f07",
+      0.0008
+     ],
+     [
+      "panel_b5_f08",
+      0.0008
+     ],
+     [
+      "panel_b5_f09",
+      0.0008
+     ],
+     [
+      "panel_b5_f10",
+      0.0008
+     ],
+     [
+      "panel_b5_f11",
+      0.0008
+     ],
+     [
+      "panel_b5_f12",
+      0.0008
+     ],
+     [
+      "panel_b5_f13",
+      0.0008
+     ],
+     [
+      "panel_b5_f14",
+      0.0008
+     ],
+     [
+      "panel_b5_f15",
+      0.0008
+     ],
+     [
+      "panel_b6_f00",
+      0.0008
+     ],
+     [
+      "panel_b6_f01",
+      0.0008
+     ],
+     [
+      "panel_b6_f02",
+      0.0008
+     ],
+     [
+      "panel_b6_f03",
+      0.0008
+     ],
+     [
+      "panel_b6_f04",
+      0.0008
+     ],
+     [
+      "panel_b6_f05",
+      0.0008
+     ],
+     [
+      "panel_b6_f06",
+      0.0008
+     ],
+     [
+      "panel_b6_f07",
+      0.0008
+     ],
+     [
+      "panel_b6_f08",
+      0.0008
+     ],
+     [
+      "panel_b6_f09",
+      0.0008
+     ],
+     [
+      "panel_b6_f10",
+      0.0008
+     ],
+     [
+      "panel_b6_f11",
+      0.0008
+     ],
+     [
+      "panel_b6_f12",
+      0.0008
+     ],
+     [
+      "panel_b6_f13",
+      0.0008
+     ],
+     [
+      "panel_b6_f14",
+      0.0008
+     ],
+     [
+      "panel_b6_f15",
+      0.0008
+     ],
+     [
+      "panel_b7_f01",
+      0.0008
+     ],
+     [
+      "panel_b7_f02",
+      0.0008
+     ],
+     [
+      "panel_b7_f03",
+      0.0008
+     ],
+     [
+      "panel_b7_f04",
+      0.0008
+     ],
+     [
+      "panel_b7_f05",
+      0.0008
+     ],
+     [
+      "panel_b7_f06",
+      0.0008
+     ],
+     [
+      "panel_b7_f07",
+      0.0008
+     ],
+     [
+      "panel_b7_f08",
+      0.0008
+     ],
+     [
+      "panel_b7_f09",
+      0.0008
+     ],
+     [
+      "panel_b7_f10",
+      0.0008
+     ],
+     [
+      "panel_b7_f11",
+      0.0008
+     ],
+     [
+      "panel_b7_f12",
+      0.0008
+     ],
+     [
+      "panel_b7_f13",
+      0.0008
+     ],
+     [
+      "panel_b7_f14",
+      0.0008
+     ],
+     [
+      "panel_b7_f15",
+      0.0008
+     ],
+     [
+      "panel_b8_f00",
+      0.0008
+     ],
+     [
+      "panel_b8_f01",
+      0.0008
+     ],
+     [
+      "panel_b8_f02",
+      0.0008
+     ],
+     [
+      "panel_b8_f03",
+      0.0008
+     ],
+     [
+      "panel_b8_f04",
+      0.0008
+     ],
+     [
+      "panel_b8_f05",
+      0.0008
+     ],
+     [
+      "panel_b8_f06",
+      0.0008
+     ],
+     [
+      "panel_b8_f07",
+      0.0008
+     ],
+     [
+      "panel_b8_f08",
+      0.0008
+     ],
+     [
+      "panel_b8_f09",
+      0.0008
+     ],
+     [
+      "panel_b8_f10",
+      0.0008
+     ],
+     [
+      "panel_b8_f11",
+      0.0008
+     ],
+     [
+      "panel_b8_f12",
+      0.0008
+     ],
+     [
+      "panel_b8_f13",
+      0.0008
+     ],
+     [
+      "panel_b8_f14",
+      0.0008
+     ],
+     [
+      "panel_b8_f15",
+      0.0008
+     ],
+     [
+      "panel_b9_f00",
+      0.0008
+     ],
+     [
+      "panel_b9_f01",
+      0.0008
+     ],
+     [
+      "panel_b9_f02",
+      0.0008
+     ],
+     [
+      "panel_b9_f03",
+      0.0008
+     ],
+     [
+      "panel_b9_f04",
+      0.0008
+     ],
+     [
+      "panel_b9_f05",
+      0.0008
+     ],
+     [
+      "panel_b9_f06",
+      0.0008
+     ],
+     [
+      "panel_b9_f07",
+      0.0008
+     ],
+     [
+      "panel_b9_f08",
+      0.0008
+     ],
+     [
+      "panel_b9_f09",
+      0.0008
+     ],
+     [
+      "panel_b9_f10",
+      0.0008
+     ],
+     [
+      "panel_b9_f11",
+      0.0008
+     ],
+     [
+      "panel_b9_f12",
+      0.0008
+     ],
+     [
+      "panel_b9_f13",
+      0.0008
+     ],
+     [
+      "panel_b9_f14",
+      0.0008
+     ],
+     [
+      "panel_b9_f15",
+      0.0008
+     ],
+     [
+      "panel_b10_f00",
+      0.0007
+     ],
+     [
+      "panel_b10_f01",
+      0.0007
+     ],
+     [
+      "panel_b10_f02",
+      0.0007
+     ],
+     [
+      "panel_b10_f03",
+      0.0007
+     ],
+     [
+      "panel_b10_f04",
+      0.0007
+     ],
+     [
+      "panel_b10_f05",
+      0.0007
+     ],
+     [
+      "panel_b10_f06",
+      0.0007
+     ],
+     [
+      "panel_b10_f07",
+      0.0007
+     ],
+     [
+      "panel_b10_f08",
+      0.0007
+     ],
+     [
+      "panel_b10_f09",
+      0.0007
+     ],
+     [
+      "panel_b10_f10",
+      0.0007
+     ],
+     [
+      "panel_b10_f11",
+      0.0007
+     ],
+     [
+      "panel_b10_f12",
+      0.0007
+     ],
+     [
+      "panel_b10_f13",
+      0.0007
+     ],
+     [
+      "panel_b10_f14",
+      0.0007
+     ],
+     [
+      "panel_b10_f15",
+      0.0007
+     ],
+     [
+      "window_bezel_1",
+      -0.0
+     ],
+     [
+      "hatch_coaming_2",
+      -0.0
+     ],
+     [
+      "hatch_seal_2",
+      -0.0
+     ],
+     [
+      "hatch_door_2",
+      -0.0
+     ],
+     [
+      "hatch_hinge_fairing_2",
+      -0.0
+     ],
+     [
+      "tunnel_trim_ring_1",
+      -0.0
+     ]
+    ]
+   },
+   "window_paths": [
+    {
+     "window": 1,
+     "clear": true,
+     "blocking": [],
+     "path": "clear aperture prism, 0.5 m inward from the bezel face"
+    }
+   ],
+   "control_reach": [
+    {
+     "seat": 1,
+     "targets": []
+    },
+    {
+     "seat": 2,
+     "targets": []
+    }
+   ],
+   "crew_clash_m3": [],
+   "item_overlaps_m3": [],
+   "hatch_keepouts_m3": [],
+   "aisles": [
+    {
+     "aisle": "hatch_1_to_bulkhead_hatch",
+     "clear_diameter_m": 0.86,
+     "required_m": 0.8,
+     "ok": true,
+     "limiting_item": "panel faces (IML - 20 mm)",
+     "item_clear_diameter_m": 0.982,
+     "path_to_panel_min_m": 0.43,
+     "note": "station collar (node_hatch_1) up the equipment lock to the internal bulkhead hatch"
+    },
+    {
+     "aisle": "bulkhead_hatch_to_eva_hatch_2",
+     "clear_diameter_m": 0.86,
+     "required_m": 0.8,
+     "ok": true,
+     "limiting_item": "panel faces (IML - 20 mm)",
+     "item_clear_diameter_m": 1.198,
+     "path_to_panel_min_m": 0.43,
+     "note": "through the bulkhead hatch into the crew lock and out to the EVA hatch (node_hatch_2, 0.86 x 1.10)"
+    }
+   ]
+  },
+  "egress": {
+   "crew_clash_m3": [],
+   "item_overlaps_m3": [],
+   "hatch_keepouts_m3": [],
+   "aisles": [
+    {
+     "aisle": "hatch_1_to_bulkhead_hatch",
+     "clear_diameter_m": 0.86,
+     "required_m": 0.8,
+     "ok": true,
+     "limiting_item": "panel faces (IML - 20 mm)",
+     "item_clear_diameter_m": 0.982,
+     "path_to_panel_min_m": 0.43,
+     "note": "station collar (node_hatch_1) up the equipment lock to the internal bulkhead hatch"
+    },
+    {
+     "aisle": "bulkhead_hatch_to_eva_hatch_2",
+     "clear_diameter_m": 0.86,
+     "required_m": 0.8,
+     "ok": true,
+     "limiting_item": "panel faces (IML - 20 mm)",
+     "item_clear_diameter_m": 1.198,
+     "path_to_panel_min_m": 0.43,
+     "note": "through the bulkhead hatch into the crew lock and out to the EVA hatch (node_hatch_2, 0.86 x 1.10)"
+    }
+   ]
+  },
+  "exterior": {
+   "exterior_vertices_inside_iml": [],
+   "interior_min_distance_to_exterior_m": 0.0,
+   "items_within_3mm_of_exterior": [
+    [
+     "panel_b0_f00",
+     0.0003
+    ],
+    [
+     "panel_b0_f01",
+     0.0009
+    ],
+    [
+     "panel_b0_f02",
+     0.0008
+    ],
+    [
+     "panel_b0_f03",
+     0.0008
+    ],
+    [
+     "panel_b0_f04",
+     0.0005
+    ],
+    [
+     "panel_b0_f05",
+     0.0008
+    ],
+    [
+     "panel_b0_f06",
+     0.0007
+    ],
+    [
+     "panel_b0_f07",
+     0.0006
+    ],
+    [
+     "panel_b0_f08",
+     0.0007
+    ],
+    [
+     "panel_b0_f09",
+     0.0004
+    ],
+    [
+     "panel_b0_f10",
+     0.0004
+    ],
+    [
+     "panel_b0_f11",
+     0.0006
+    ],
+    [
+     "panel_b0_f12",
+     0.0003
+    ],
+    [
+     "panel_b0_f13",
+     0.0004
+    ],
+    [
+     "panel_b0_f14",
+     0.0008
+    ],
+    [
+     "panel_b0_f15",
+     0.0004
+    ],
+    [
+     "panel_b1_f00",
+     0.0008
+    ],
+    [
+     "panel_b1_f01",
+     0.001
+    ],
+    [
+     "panel_b1_f02",
+     0.001
+    ],
+    [
+     "panel_b1_f03",
+     0.0008
+    ],
+    [
+     "panel_b1_f04",
+     0.0012
+    ],
+    [
+     "panel_b1_f05",
+     0.0005
+    ],
+    [
+     "panel_b1_f06",
+     0.001
+    ],
+    [
+     "panel_b1_f07",
+     0.0008
+    ],
+    [
+     "panel_b1_f08",
+     0.0005
+    ],
+    [
+     "panel_b1_f09",
+     0.0013
+    ],
+    [
+     "panel_b1_f10",
+     0.0012
+    ],
+    [
+     "panel_b1_f11",
+     0.0002
+    ],
+    [
+     "panel_b1_f12",
+     0.0005
+    ],
+    [
+     "panel_b1_f13",
+     0.0009
+    ],
+    [
+     "panel_b1_f14",
+     0.0009
+    ],
+    [
+     "panel_b1_f15",
+     0.0004
+    ],
+    [
+     "panel_b2_f00",
+     0.0024
+    ],
+    [
+     "panel_b2_f01",
+     0.0018
+    ],
+    [
+     "panel_b2_f02",
+     0.0014
+    ],
+    [
+     "panel_b2_f03",
+     0.0016
+    ],
+    [
+     "panel_b2_f04",
+     0.0012
+    ],
+    [
+     "panel_b2_f05",
+     0.0016
+    ],
+    [
+     "panel_b2_f07",
+     0.001
+    ],
+    [
+     "panel_b2_f08",
+     0.0022
+    ],
+    [
+     "panel_b2_f09",
+     0.0012
+    ],
+    [
+     "panel_b2_f11",
+     0.002
+    ],
+    [
+     "panel_b2_f12",
+     0.002
+    ],
+    [
+     "panel_b2_f13",
+     0.002
+    ],
+    [
+     "panel_b2_f14",
+     0.0019
+    ],
+    [
+     "panel_b2_f15",
+     0.0025
+    ],
+    [
+     "panel_b3_f00",
+     0.0011
+    ],
+    [
+     "panel_b3_f01",
+     0.0011
+    ],
+    [
+     "panel_b3_f02",
+     0.0006
+    ],
+    [
+     "panel_b3_f03",
+     0.001
+    ],
+    [
+     "panel_b3_f04",
+     0.0005
+    ],
+    [
+     "panel_b3_f05",
+     0.0007
+    ],
+    [
+     "panel_b3_f07",
+     0.0013
+    ],
+    [
+     "panel_b3_f08",
+     0.0009
+    ],
+    [
+     "panel_b3_f09",
+     0.0007
+    ],
+    [
+     "panel_b3_f11",
+     0.0007
+    ],
+    [
+     "panel_b3_f12",
+     0.0003
+    ],
+    [
+     "panel_b3_f13",
+     0.0006
+    ],
+    [
+     "panel_b3_f14",
+     0.0011
+    ],
+    [
+     "panel_b3_f15",
+     0.001
+    ],
+    [
+     "panel_b4_f00",
+     0.0018
+    ],
+    [
+     "panel_b4_f01",
+     0.0013
+    ],
+    [
+     "panel_b4_f02",
+     0.001
+    ],
+    [
+     "panel_b4_f03",
+     0.0013
+    ],
+    [
+     "panel_b4_f04",
+     0.0005
+    ],
+    [
+     "panel_b4_f05",
+     0.0008
+    ],
+    [
+     "panel_b4_f07",
+     0.0007
+    ],
+    [
+     "panel_b4_f08",
+     0.0013
+    ],
+    [
+     "panel_b4_f09",
+     0.001
+    ],
+    [
+     "panel_b4_f11",
+     0.0003
+    ],
+    [
+     "panel_b4_f12",
+     0.0007
+    ],
+    [
+     "panel_b4_f13",
+     0.0006
+    ],
+    [
+     "panel_b4_f14",
+     0.0009
+    ],
+    [
+     "panel_b4_f15",
+     0.0009
+    ],
+    [
+     "panel_b5_f00",
+     0.0016
+    ],
+    [
+     "panel_b5_f01",
+     0.0009
+    ],
+    [
+     "panel_b5_f02",
+     0.0007
+    ],
+    [
+     "panel_b5_f03",
+     0.001
+    ],
+    [
+     "panel_b5_f04",
+     0.0005
+    ],
+    [
+     "panel_b5_f05",
+     0.0003
+    ],
+    [
+     "panel_b5_f06",
+     0.0005
+    ],
+    [
+     "panel_b5_f07",
+     0.0006
+    ],
+    [
+     "panel_b5_f08",
+     0.0008
+    ],
+    [
+     "panel_b5_f09",
+     0.0006
+    ],
+    [
+     "panel_b5_f10",
+     0.0004
+    ],
+    [
+     "panel_b5_f11",
+     0.0003
+    ],
+    [
+     "panel_b5_f12",
+     0.0007
+    ],
+    [
+     "panel_b5_f13",
+     0.0008
+    ],
+    [
+     "panel_b5_f14",
+     0.0007
+    ],
+    [
+     "panel_b5_f15",
+     0.0008
+    ],
+    [
+     "panel_b6_f00",
+     0.001
+    ],
+    [
+     "panel_b6_f01",
+     0.0005
+    ],
+    [
+     "panel_b6_f02",
+     0.001
+    ],
+    [
+     "panel_b6_f03",
+     0.0006
+    ],
+    [
+     "panel_b6_f04",
+     0.0006
+    ],
+    [
+     "panel_b6_f05",
+     0.0005
+    ],
+    [
+     "panel_b6_f06",
+     0.0008
+    ],
+    [
+     "panel_b6_f07",
+     0.0004
+    ],
+    [
+     "panel_b6_f08",
+     0.0006
+    ],
+    [
+     "panel_b6_f09",
+     0.0008
+    ],
+    [
+     "panel_b6_f10",
+     0.0007
+    ],
+    [
+     "panel_b6_f11",
+     0.001
+    ],
+    [
+     "panel_b6_f12",
+     0.0007
+    ],
+    [
+     "panel_b6_f13",
+     0.0002
+    ],
+    [
+     "panel_b6_f14",
+     0.0005
+    ],
+    [
+     "panel_b6_f15",
+     0.0009
+    ],
+    [
+     "panel_b7_f01",
+     0.0008
+    ],
+    [
+     "panel_b7_f02",
+     0.0007
+    ],
+    [
+     "panel_b7_f03",
+     0.0009
+    ],
+    [
+     "panel_b7_f04",
+     0.0009
+    ],
+    [
+     "panel_b7_f05",
+     0.0009
+    ],
+    [
+     "panel_b7_f06",
+     0.0011
+    ],
+    [
+     "panel_b7_f07",
+     0.0006
+    ],
+    [
+     "panel_b7_f08",
+     0.0006
+    ],
+    [
+     "panel_b7_f09",
+     0.0009
+    ],
+    [
+     "panel_b7_f10",
+     0.0005
+    ],
+    [
+     "panel_b7_f11",
+     0.001
+    ],
+    [
+     "panel_b7_f12",
+     0.0008
+    ],
+    [
+     "panel_b7_f13",
+     0.0005
+    ],
+    [
+     "panel_b7_f14",
+     0.0006
+    ],
+    [
+     "panel_b7_f15",
+     0.0009
+    ],
+    [
+     "panel_b8_f00",
+     0.0009
+    ],
+    [
+     "panel_b8_f01",
+     0.0008
+    ],
+    [
+     "panel_b8_f02",
+     0.0009
+    ],
+    [
+     "panel_b8_f03",
+     0.0005
+    ],
+    [
+     "panel_b8_f04",
+     0.0009
+    ],
+    [
+     "panel_b8_f05",
+     0.0004
+    ],
+    [
+     "panel_b8_f06",
+     0.0009
+    ],
+    [
+     "panel_b8_f07",
+     0.0007
+    ],
+    [
+     "panel_b8_f08",
+     0.0003
+    ],
+    [
+     "panel_b8_f09",
+     0.0006
+    ],
+    [
+     "panel_b8_f10",
+     0.0005
+    ],
+    [
+     "panel_b8_f11",
+     0.0008
+    ],
+    [
+     "panel_b8_f12",
+     0.0006
+    ],
+    [
+     "panel_b8_f13",
+     0.0011
+    ],
+    [
+     "panel_b8_f14",
+     0.0009
+    ],
+    [
+     "panel_b8_f15",
+     0.0009
+    ],
+    [
+     "panel_b9_f00",
+     0.0014
+    ],
+    [
+     "panel_b9_f01",
+     0.0023
+    ],
+    [
+     "panel_b9_f02",
+     0.0022
+    ],
+    [
+     "panel_b9_f03",
+     0.0018
+    ],
+    [
+     "panel_b9_f04",
+     0.0021
+    ],
+    [
+     "panel_b9_f05",
+     0.0011
+    ],
+    [
+     "panel_b9_f06",
+     0.0026
+    ],
+    [
+     "panel_b9_f07",
+     0.0021
+    ],
+    [
+     "panel_b9_f08",
+     0.0011
+    ],
+    [
+     "panel_b9_f09",
+     0.0007
+    ],
+    [
+     "panel_b9_f10",
+     0.0019
+    ],
+    [
+     "panel_b9_f11",
+     0.0014
+    ],
+    [
+     "panel_b9_f12",
+     0.002
+    ],
+    [
+     "panel_b9_f13",
+     0.0013
+    ],
+    [
+     "panel_b9_f14",
+     0.0016
+    ],
+    [
+     "panel_b9_f15",
+     0.0013
+    ],
+    [
+     "panel_b10_f00",
+     0.0015
+    ],
+    [
+     "panel_b10_f01",
+     0.0009
+    ],
+    [
+     "panel_b10_f02",
+     0.0008
+    ],
+    [
+     "panel_b10_f03",
+     0.0006
+    ],
+    [
+     "panel_b10_f04",
+     0.001
+    ],
+    [
+     "panel_b10_f05",
+     0.0004
+    ],
+    [
+     "panel_b10_f06",
+     0.0006
+    ],
+    [
+     "panel_b10_f07",
+     0.0012
+    ],
+    [
+     "panel_b10_f08",
+     0.0005
+    ],
+    [
+     "panel_b10_f09",
+     0.0005
+    ],
+    [
+     "panel_b10_f10",
+     0.0009
+    ],
+    [
+     "panel_b10_f11",
+     0.0007
+    ],
+    [
+     "panel_b10_f12",
+     0.0006
+    ],
+    [
+     "panel_b10_f13",
+     0.0006
+    ],
+    [
+     "panel_b10_f14",
+     0.0007
+    ],
+    [
+     "panel_b10_f15",
+     0.0007
+    ],
+    [
+     "window_bezel_1",
+     0.0003
+    ],
+    [
+     "hatch_coaming_2",
+     0.0
+    ],
+    [
+     "hatch_seal_2",
+     0.0
+    ],
+    [
+     "hatch_hinge_fairing_2",
+     0.0013
+    ],
+    [
+     "tunnel_liner_1",
+     0.0008
+    ],
+    [
+     "tunnel_trim_ring_1",
+     0.0
+    ],
+    [
+     "hatch_door_1",
+     0.0021
+    ],
+    [
+     "end_cap_panel",
+     0.002
+    ]
+   ],
+   "note": "pressure_vessel liner (IML + 30 mm, m_seam) excluded: it is the vessel wall by definition (standard 3)"
+  },
+  "elapsed_s": 8
+ },
+ "notes": [],
+ "source_note": "site copy of parts/interiors_modern/ax/ax_station_04/ax_station_04_interior.nodes.json (build data dropped); glb_interior is the BAKED GLB (props embedded), so no prop instancing is needed; props_baked lists them",
+ "props_baked": [
+  {
+   "instance": "eqm48_1",
+   "prop": "eqm48_handrail",
+   "role": "handrail_equipment_lock"
+  },
+  {
+   "instance": "eqm49_1",
+   "prop": "eqm49_led_strip",
+   "role": "light_equipment_lock"
+  },
+  {
+   "instance": "eqm49_2",
+   "prop": "eqm49_led_strip",
+   "role": "light_crew_lock"
+  },
+  {
+   "instance": "eqm48_2",
+   "prop": "eqm48_handrail",
+   "role": "handrail_crew_lock"
+  },
+  {
+   "instance": "eqm13_1",
+   "prop": "eqm13_fire_extinguisher",
+   "role": "fire_extinguisher"
+  }
+ ],
+ "moving_meshes": [
+  {
+   "name": "hatch_door_2",
+   "meshes": [
+    "hatch_door_2",
+    "hatch_door_2_handle",
+    "hatch_door_2_valve"
+   ],
+   "pivot": [
+    1.25,
+    0.984,
+    -0.45
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 110
+   },
+   "note": "outward-opening side hatch, hinge on the +X edge (outer face); rotate with the exterior mesh hatch_door_2 about node_hatch_door_2_hinge"
+  },
+  {
+   "name": "hatch_door_1",
+   "meshes": [
+    "hatch_door_1",
+    "hatch_door_1_handwheel"
+   ],
+   "pivot": [
+    0.0,
+    -2.118,
+    -0.4638
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 95
+   },
+   "note": "docking hatch opens into the cabin, hinge on the CAD +Y edge of the tunnel"
+  },
+  {
+   "name": "hatch_door_7",
+   "meshes": [
+    "hatch_door_7",
+    "hatch_door_7_handwheel"
+   ],
+   "pivot": [
+    -0.508,
+    0.039,
+    0.0
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": -95
+   },
+   "note": "internal bulkhead plug hatch (equipment lock / crew lock), flush in the bulkhead, opens up into the crew lock about its -X edge; no exterior node (internal)"
+  }
+ ],
+ "variants": {
+  "ax_station_04_dual_airlock_interior": {
+   "exterior_variant": "ax_station_04_dual_airlock",
+   "primary": true,
+   "crew": 2,
+   "nodes": [
+    {
+     "name": "node_camera_1",
+     "position": [
+      0.14,
+      -0.208,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_camera_2",
+     "position": [
+      0.14,
+      1.754,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      -2.178,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      1.11,
+      0.984,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      0.0,
+      -0.958,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_2",
+     "position": [
+      0.0,
+      1.004,
+      -0.25
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_view_1",
+     "position": [
+      -1.062,
+      -0.708,
+      0.0
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_2_hinge",
+     "position": [
+      1.25,
+      0.984,
+      -0.45
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_1_hinge",
+     "position": [
+      0.0,
+      -2.118,
+      -0.4638
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_door_7_hinge",
+     "position": [
+      -0.508,
+      0.039,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_1",
+     "position": [
+      0.0,
+      -1.0,
+      1.0242
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_light_2",
+     "position": [
+      -0.7242,
+      1.0,
+      -0.7242
+     ],
+     "direction": [
+      0.7071,
+      0.0,
+      0.7071
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "props": []
+  }
+ }
+}

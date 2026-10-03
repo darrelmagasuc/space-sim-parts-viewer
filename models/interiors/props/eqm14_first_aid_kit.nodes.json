@@ -1,0 +1,94 @@
+{
+ "id": "eqm14",
+ "vid": "eqm14_first_aid_kit",
+ "name": "First-aid / medical kit, hard case on wall bracket",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.36,
+  "height_y": 0.3034,
+  "depth_z": 0.1475
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.36,
+  "height_y": 0.3034,
+  "depth_z": 0.1475
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.72,
+  0.51,
+  0.29
+ ],
+ "glb": "eqm14_first_aid_kit.glb",
+ "step": "eqm14_first_aid_kit.step",
+ "tris": 696,
+ "materials": [
+  "m_black",
+  "m_graphite",
+  "m_red",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.0738
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  }
+ ],
+ "meshes": [
+  "eqm14_case",
+  "eqm14_lid",
+  "eqm14_latches",
+  "eqm14_handle"
+ ],
+ "moving_meshes": {
+  "eqm14_lid": "hinge, bottom edge"
+ },
+ "legacy_blockout": "eq14",
+ "notes": "two-shell white case (sub-mesh 'lid' hinges on its bottom edge), black seam gasket, 2 latches, carry handle, red cross, recessed panel line; rear bracket slides onto a wall rail",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {
+  "lid": {
+   "subs": [
+    "eqm14_lid"
+   ],
+   "pivot": [
+    0.0,
+    -0.1519,
+    0.0073
+   ],
+   "axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": 100
+   }
+  }
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "eqm13",
+ "vid": "eqm13_fire_extinguisher",
+ "name": "Portable fire extinguisher with quick-release wall mount",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.1375,
+  "height_y": 0.4577,
+  "depth_z": 0.1923
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.1375,
+  "height_y": 0.4577,
+  "depth_z": 0.1923
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.28,
+  0.76,
+  0.38
+ ],
+ "glb": "eqm13_fire_extinguisher.glb",
+ "step": "eqm13_fire_extinguisher.step",
+ "tris": 2196,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_graphite",
+  "m_red",
+  "m_red_safety",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.0961
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  }
+ ],
+ "meshes": [
+  "eqm13_extinguisher",
+  "eqm13_wall_mount"
+ ],
+ "moving_meshes": {
+  "eqm13_extinguisher": "removable (lift out of the mount)"
+ },
+ "legacy_blockout": "eq13",
+ "notes": "water-mist PFE: red bottle (sub-mesh 'extinguisher', removable as one piece) with lever head, pressure gauge, safety pin, hose + nozzle; graphite wall mount with two quick-release bands (red pull tabs) and a bottom cradle",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {
+  "extinguisher": {
+   "subs": [
+    "eqm13_extinguisher"
+   ],
+   "pivot": [
+    -0.0067,
+    -0.0428,
+    -0.0181
+   ],
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "offsets_m": {
+    "mounted": 0.0,
+    "removed": 0.25
+   },
+   "note": "lift 0.03 m, then pull out along axis"
+  }
+ }
+}

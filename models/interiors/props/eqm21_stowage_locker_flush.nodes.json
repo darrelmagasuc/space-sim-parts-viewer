@@ -1,0 +1,106 @@
+{
+ "id": "eqm21",
+ "vid": "eqm21_stowage_locker_flush",
+ "name": "Flush stowage locker (Small slot, recessed into the wall)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall_flush",
+ "slot_units_xyz": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "glb": "eqm21_stowage_locker_flush.glb",
+ "step": "eqm21_stowage_locker_flush.step",
+ "tris": 672,
+ "materials": [
+  "m_black",
+  "m_seam",
+  "m_white",
+  "m_yellow"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    -0.0,
+    -0.0,
+    0.238
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  }
+ ],
+ "meshes": [
+  "eqm21_frame",
+  "eqm21_tub",
+  "eqm21_door"
+ ],
+ "moving_meshes": {
+  "eqm21_door": "hinge, left (-X) vertical edge"
+ },
+ "legacy_blockout": "eq21",
+ "notes": "recessed tub 0.47 x 0.49 x 0.58 m with one shelf, white bezel frame flush with the wall, flush door with a recessed black latch paddle and ID label; sub-mesh 'door' hinges about its left (-X) vertical edge. node_mount sits on the back of the bezel (= the wall surface); the tub goes 0.488 m into the wall",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {
+  "door": {
+   "subs": [
+    "eqm21_door"
+   ],
+   "pivot": [
+    -0.219,
+    -0.0,
+    0.2435
+   ],
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "angles_deg": {
+    "closed": 0,
+    "open": -110
+   }
+  }
+ },
+ "flush_recess_depth_m": 0.488,
+ "door_hinge": {
+  "point": [
+   -0.219,
+   0.3,
+   0.2435
+  ],
+  "axis": [
+   0.0,
+   1.0,
+   0.0
+  ]
+ }
+}

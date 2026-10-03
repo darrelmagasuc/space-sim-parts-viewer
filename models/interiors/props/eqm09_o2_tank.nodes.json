@@ -1,0 +1,111 @@
+{
+ "id": "eqm09",
+ "vid": "eqm09_o2_tank",
+ "name": "O2 tank with brackets (Small slot)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.46,
+  "height_y": 0.585,
+  "depth_z": 0.46
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.46,
+  "height_y": 0.605,
+  "depth_z": 0.46
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "floor",
+ "slot_units_xyz": [
+  0.92,
+  0.97,
+  0.92
+ ],
+ "glb": "eqm09_o2_tank.glb",
+ "step": "eqm09_o2_tank.step",
+ "tris": 2795,
+ "materials": [
+  "m_alu",
+  "m_black",
+  "m_graphite",
+  "m_green",
+  "m_rubber",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    -0.2925,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_bottom",
+   "position": [
+    0.0,
+    -0.2925,
+    -0.0
+   ],
+   "direction": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_port_1",
+   "position": [
+    -0.0,
+    0.3125,
+    0.0
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "kind": "fluid_o2"
+  }
+ ],
+ "meshes": [
+  "eqm09_bracket",
+  "eqm09_tank",
+  "eqm09_valve",
+  "eqm09_port_outlet"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": "eq09",
+ "notes": "O2 composite tank 0.29 m dia, ~23 L water volume, valve with handwheel + gauge, two clamp bands on a rear spine and a 0.46 m base plate; outlet fitting on top (inside the 0.1 m port allowance)",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {}
+}

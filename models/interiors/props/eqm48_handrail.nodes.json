@@ -1,0 +1,71 @@
+{
+ "id": "eqm48",
+ "vid": "eqm48_handrail",
+ "name": "Handrail 0.43 m (wall-mount, two stand-offs)",
+ "category": "interior_prop",
+ "style": "modern: interiors_modern/props standard (m_ palette, 10/6/3 mm bevels) + AX accents (recessed grooves, faceting, bevelled pockets; m_orange only on grab points / handles)",
+ "frame": "Godot Y-up, metres; origin = bounding-box centre (port stubs excluded); front/service face = +Z (CAD -Y)",
+ "dims_m": {
+  "width_x": 0.432,
+  "height_y": 0.056,
+  "depth_z": 0.0945
+ },
+ "dims_with_ports_m": {
+  "width_x": 0.432,
+  "height_y": 0.056,
+  "depth_z": 0.0945
+ },
+ "slot": "Small (1 unit)",
+ "slot_class": "Small",
+ "slot_envelope_m": {
+  "width_x": 0.5,
+  "height_y": 0.6,
+  "depth_z": 0.5
+ },
+ "fits_slot": true,
+ "mount_kind": "wall",
+ "slot_units_xyz": [
+  0.86,
+  0.09,
+  0.19
+ ],
+ "glb": "eqm48_handrail.glb",
+ "step": "eqm48_handrail.step",
+ "tris": 596,
+ "materials": [
+  "m_black",
+  "m_orange",
+  "m_rubber",
+  "m_white"
+ ],
+ "nodes": [
+  {
+   "name": "node_mount",
+   "position": [
+    0.0,
+    0.0,
+    -0.0473
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    -0.0
+   ]
+  }
+ ],
+ "meshes": [
+  "eqm48_rail",
+  "eqm48_orange_stripes",
+  "eqm48_standoffs"
+ ],
+ "moving_meshes": {},
+ "legacy_blockout": null,
+ "notes": "29 mm octagonal (faceted) matte-black grab bar with an inlaid orange stripe on two white stand-off bases, 70 mm from the wall; new prop (no blockout equivalent; eq41 ladder is the nearest)",
+ "node_basis": "node empty: local +Y = direction, +Z = up (same as the interior nodes)",
+ "moving": {}
+}

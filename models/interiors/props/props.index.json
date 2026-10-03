@@ -1,0 +1,239 @@
+{
+ "props": [
+  {
+   "id": "eqm03",
+   "vid": "eqm03_avionics_box",
+   "name": "Avionics box (LRU) on cold plate, with cable harness (Small slot, half height)",
+   "dims_m": {
+    "width_x": 0.462,
+    "height_y": 0.262,
+    "depth_z": 0.4815
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "floor",
+   "glb": "eqm03_avionics_box.glb",
+   "step": "eqm03_avionics_box.step",
+   "tris": 4476,
+   "legacy_blockout": "eq03"
+  },
+  {
+   "id": "eqm08",
+   "vid": "eqm08_co2_scrubber",
+   "name": "CO2 scrubber, twin swing-bed (Small slot)",
+   "dims_m": {
+    "width_x": 0.49,
+    "height_y": 0.6,
+    "depth_z": 0.495
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "floor",
+   "glb": "eqm08_co2_scrubber.glb",
+   "step": "eqm08_co2_scrubber.step",
+   "tris": 1904,
+   "legacy_blockout": "eq08"
+  },
+  {
+   "id": "eqm09",
+   "vid": "eqm09_o2_tank",
+   "name": "O2 tank with brackets (Small slot)",
+   "dims_m": {
+    "width_x": 0.46,
+    "height_y": 0.585,
+    "depth_z": 0.46
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "floor",
+   "glb": "eqm09_o2_tank.glb",
+   "step": "eqm09_o2_tank.step",
+   "tris": 2795,
+   "legacy_blockout": "eq09"
+  },
+  {
+   "id": "eqm10",
+   "vid": "eqm10_n2_tank",
+   "name": "N2 tank with brackets (Small slot)",
+   "dims_m": {
+    "width_x": 0.46,
+    "height_y": 0.585,
+    "depth_z": 0.46
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "floor",
+   "glb": "eqm10_n2_tank.glb",
+   "step": "eqm10_n2_tank.step",
+   "tris": 3087,
+   "legacy_blockout": "eq10"
+  },
+  {
+   "id": "eqm12",
+   "vid": "eqm12_water_dispenser",
+   "name": "Potable water dispenser, hot / ambient (wall-mount)",
+   "dims_m": {
+    "width_x": 0.3,
+    "height_y": 0.42,
+    "depth_z": 0.165
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm12_water_dispenser.glb",
+   "step": "eqm12_water_dispenser.step",
+   "tris": 1276,
+   "legacy_blockout": "eq12"
+  },
+  {
+   "id": "eqm13",
+   "vid": "eqm13_fire_extinguisher",
+   "name": "Portable fire extinguisher with quick-release wall mount",
+   "dims_m": {
+    "width_x": 0.1375,
+    "height_y": 0.4577,
+    "depth_z": 0.1923
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm13_fire_extinguisher.glb",
+   "step": "eqm13_fire_extinguisher.step",
+   "tris": 2196,
+   "legacy_blockout": "eq13"
+  },
+  {
+   "id": "eqm14",
+   "vid": "eqm14_first_aid_kit",
+   "name": "First-aid / medical kit, hard case on wall bracket",
+   "dims_m": {
+    "width_x": 0.36,
+    "height_y": 0.3034,
+    "depth_z": 0.1475
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm14_first_aid_kit.glb",
+   "step": "eqm14_first_aid_kit.step",
+   "tris": 696,
+   "legacy_blockout": "eq14"
+  },
+  {
+   "id": "eqm17",
+   "vid": "eqm17_circulation_fan",
+   "name": "Cabin circulation fan (wall-mount over a duct opening)",
+   "dims_m": {
+    "width_x": 0.301,
+    "height_y": 0.3,
+    "depth_z": 0.176
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm17_circulation_fan.glb",
+   "step": "eqm17_circulation_fan.step",
+   "tris": 2694,
+   "legacy_blockout": "eq17"
+  },
+  {
+   "id": "eqm20",
+   "vid": "eqm20_cargo_bag_strapped",
+   "name": "Cargo transfer bag, strapped to floor tie-down rails (Small slot)",
+   "dims_m": {
+    "width_x": 0.484,
+    "height_y": 0.458,
+    "depth_z": 0.49
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "floor",
+   "glb": "eqm20_cargo_bag_strapped.glb",
+   "step": "eqm20_cargo_bag_strapped.step",
+   "tris": 1264,
+   "legacy_blockout": "eq20"
+  },
+  {
+   "id": "eqm21",
+   "vid": "eqm21_stowage_locker_flush",
+   "name": "Flush stowage locker (Small slot, recessed into the wall)",
+   "dims_m": {
+    "width_x": 0.5,
+    "height_y": 0.6,
+    "depth_z": 0.5
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall_flush",
+   "glb": "eqm21_stowage_locker_flush.glb",
+   "step": "eqm21_stowage_locker_flush.step",
+   "tris": 672,
+   "legacy_blockout": "eq21"
+  },
+  {
+   "id": "eqm48",
+   "vid": "eqm48_handrail",
+   "name": "Handrail 0.43 m (wall-mount, two stand-offs)",
+   "dims_m": {
+    "width_x": 0.432,
+    "height_y": 0.056,
+    "depth_z": 0.0945
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm48_handrail.glb",
+   "step": "eqm48_handrail.step",
+   "tris": 596,
+   "legacy_blockout": null
+  },
+  {
+   "id": "eqm49",
+   "vid": "eqm49_led_strip",
+   "name": "LED light strip 0.48 m (surface mount, chainable)",
+   "dims_m": {
+    "width_x": 0.484,
+    "height_y": 0.042,
+    "depth_z": 0.029
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm49_led_strip.glb",
+   "step": "eqm49_led_strip.step",
+   "tris": 240,
+   "legacy_blockout": null
+  },
+  {
+   "id": "eqm50",
+   "vid": "eqm50_touchscreen_large",
+   "name": "Touchscreen panel, large (38-inch class, Dragon-style console)",
+   "dims_m": {
+    "width_x": 0.9,
+    "height_y": 0.54,
+    "depth_z": 0.058
+   },
+   "slot": "Medium (2x2x1 units)",
+   "mount_kind": "wall",
+   "glb": "eqm50_touchscreen_large.glb",
+   "step": "eqm50_touchscreen_large.step",
+   "tris": 840,
+   "legacy_blockout": null
+  },
+  {
+   "id": "eqm50",
+   "vid": "eqm50_touchscreen_small",
+   "name": "Touchscreen panel, small (12-inch class, wall / console)",
+   "dims_m": {
+    "width_x": 0.3,
+    "height_y": 0.21,
+    "depth_z": 0.048
+   },
+   "slot": "Small (1 unit)",
+   "mount_kind": "wall",
+   "glb": "eqm50_touchscreen_small.glb",
+   "step": "eqm50_touchscreen_small.step",
+   "tris": 600,
+   "legacy_blockout": null
+  }
+ ],
+ "total_tris": 23336,
+ "grid": {
+  "unit_m": [
+   0.5,
+   0.5,
+   0.6
+  ],
+  "small": "1x1x1",
+  "medium": "2x2x1",
+  "rack": "2x2x3"
+ }
+}
