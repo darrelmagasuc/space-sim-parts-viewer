@@ -167,7 +167,7 @@
     }
    ],
    "extra": {
-    "fits": "AX-cmd-02 Kestrel",
+    "fits": "generic 2.5 m (M) stacks / custom pods (AX-cmd-02 Kestrel grew to 3.05 m on 2026-10-03 and no longer nests on HS-1 M)",
     "inner_dome_clearance_m": 0.035,
     "ablator_t_m": 0.04,
     "dome_depth_below_node_bottom_m": 0.195
