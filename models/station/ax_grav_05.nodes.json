@@ -92,8 +92,8 @@
   {
    "name": "node_seat_1",
    "position": [
-    1.9532,
-    -0.4388,
+    1.8904,
+    -0.491,
     0.0
    ],
    "direction": [
@@ -110,8 +110,8 @@
   {
    "name": "node_camera_1",
    "position": [
-    1.7612,
-    0.2996,
+    1.6984,
+    0.2474,
     0.0
    ],
    "direction": [
@@ -129,7 +129,7 @@
    "name": "node_seat_2",
    "position": [
     0.0,
-    -0.507,
+    -0.557,
     0.0
    ],
    "direction": [
@@ -147,7 +147,7 @@
    "name": "node_camera_2",
    "position": [
     -0.14,
-    0.243,
+    0.193,
     0.0
    ],
    "direction": [
@@ -164,8 +164,8 @@
   {
    "name": "node_seat_3",
    "position": [
-    -1.9532,
-    -0.4388,
+    -1.8904,
+    -0.491,
     0.0
    ],
    "direction": [
@@ -182,8 +182,8 @@
   {
    "name": "node_camera_3",
    "position": [
-    -2.0405,
-    0.3191,
+    -1.9777,
+    0.267,
     0.0
    ],
    "direction": [
@@ -315,8 +315,8 @@
     {
      "name": "node_seat_1",
      "position": [
-      1.9532,
-      -0.4388,
+      1.8904,
+      -0.491,
       0.0
      ],
      "direction": [
@@ -333,8 +333,8 @@
     {
      "name": "node_camera_1",
      "position": [
-      1.7612,
-      0.2996,
+      1.6984,
+      0.2474,
       0.0
      ],
      "direction": [
@@ -352,7 +352,7 @@
      "name": "node_seat_2",
      "position": [
       0.0,
-      -0.507,
+      -0.557,
       0.0
      ],
      "direction": [
@@ -370,7 +370,7 @@
      "name": "node_camera_2",
      "position": [
       -0.14,
-      0.243,
+      0.193,
       0.0
      ],
      "direction": [
@@ -387,8 +387,8 @@
     {
      "name": "node_seat_3",
      "position": [
-      -1.9532,
-      -0.4388,
+      -1.8904,
+      -0.491,
       0.0
      ],
      "direction": [
@@ -405,8 +405,8 @@
     {
      "name": "node_camera_3",
      "position": [
-      -2.0405,
-      0.3191,
+      -1.9777,
+      0.267,
       0.0
      ],
      "direction": [
