@@ -70,8 +70,8 @@
    "notes": "1.25 m androgynous docking port: white collar with seam groove, 3 recessed soft-capture actuator pockets, ti capture ring + 3 guide petals, grey hatch.",
    "bbox_cad_zup": [
     [
-     -0.625,
-     -0.625,
+     -0.6796749881997092,
+     -0.6796749881997094,
      -0.325
     ],
     [
@@ -81,9 +81,9 @@
     ]
    ],
    "bbox_godot_size": [
-    1.25,
+    1.305,
     0.65,
-    1.25
+    1.305
    ],
    "nodes": [
     {

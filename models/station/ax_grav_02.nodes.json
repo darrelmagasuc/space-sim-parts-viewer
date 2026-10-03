@@ -204,14 +204,14 @@
    "notes": "Counter-rotating bearing assembly: 2 x 12-facet rotor drums (5.0 m) on chamfered steel bearing races around a 1.6 m transfer tunnel; 4 radial spoke collars per drum (node_spoke_<drum>_<n>), axial collars top / bottom.",
    "bbox_cad_zup": [
     [
-     -2.9440000000000004,
+     -2.944000000000001,
      -2.944000000000001,
      -2.484000000000001
     ],
     [
      2.9440000000000004,
-     2.9440000000000004,
-     2.484
+     2.944000000000001,
+     2.4840000000000013
     ]
    ],
    "bbox_godot_size": [

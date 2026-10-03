@@ -445,14 +445,14 @@
    "notes": "Despun zero-g hub: 12-facet 4.2 m node, 2 axial + 4 radial 1.6 m collars, steel bearing-interface race ring under the bottom collar.",
    "bbox_cad_zup": [
     [
-     -2.5440000000000005,
-     -2.5440000000000005,
+     -2.544000000000001,
+     -2.544000000000001,
      -2.5840000000000005
     ],
     [
      2.5440000000000005,
      2.5440000000000005,
-     2.5839999999999996
+     2.584000000000001
     ]
    ],
    "bbox_godot_size": [
