@@ -32,7 +32,7 @@
    "position": [
     0.0,
     -0.07,
-    1.31
+    1.259
    ],
    "direction": [
     0.0,
@@ -68,7 +68,7 @@
    "position": [
     0.0,
     -0.07,
-    -1.31
+    -1.259
    ],
    "direction": [
     0.0,
@@ -98,7 +98,7 @@
    "name": "node_seat_1",
    "position": [
     0.0,
-    -0.05,
+    -0.02,
     0.0
    ],
    "direction": [
@@ -116,7 +116,7 @@
    "name": "node_camera_1",
    "position": [
     0.0,
-    0.7,
+    0.73,
     0.14
    ],
    "direction": [
@@ -186,7 +186,7 @@
      "position": [
       0.0,
       -0.07,
-      1.31
+      1.259
      ],
      "direction": [
       0.0,
@@ -222,7 +222,7 @@
      "position": [
       0.0,
       -0.07,
-      -1.31
+      -1.259
      ],
      "direction": [
       0.0,
@@ -252,7 +252,7 @@
      "name": "node_seat_1",
      "position": [
       0.0,
-      -0.05,
+      -0.02,
       0.0
      ],
      "direction": [
@@ -270,7 +270,7 @@
      "name": "node_camera_1",
      "position": [
       0.0,
-      0.7,
+      0.73,
       0.14
      ],
      "direction": [

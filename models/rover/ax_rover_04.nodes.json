@@ -14,7 +14,7 @@
    "name": "node_front",
    "position": [
     0.0,
-    -0.074,
+    -0.07,
     1.37
    ],
    "direction": [
@@ -32,8 +32,8 @@
    "name": "node_hatch_1",
    "position": [
     0.0,
-    -0.074,
-    1.31
+    -0.07,
+    1.259
    ],
    "direction": [
     0.0,
@@ -50,7 +50,7 @@
    "name": "node_rear",
    "position": [
     0.0,
-    -0.074,
+    -0.07,
     -1.25
    ],
    "direction": [
@@ -63,7 +63,7 @@
    "name": "node_bottom",
    "position": [
     0.0,
-    -1.284,
+    -1.28,
     0.0
    ],
    "direction": [
@@ -76,7 +76,7 @@
    "name": "node_seat_1",
    "position": [
     0.0,
-    -0.054,
+    -0.02,
     0.0
    ],
    "direction": [
@@ -94,7 +94,7 @@
    "name": "node_camera_1",
    "position": [
     0.0,
-    0.696,
+    0.73,
     0.14
    ],
    "direction": [
@@ -127,17 +127,17 @@
     [
      -1.2500001,
      -1.43,
-     -1.2839999999999998
+     -1.28
     ],
     [
      1.2500001,
      1.25,
-     1.2839999999999998
+     1.28
     ]
    ],
    "bbox_godot_size": [
     2.5,
-    2.568,
+    2.56,
     2.68
    ],
    "nodes": [
@@ -145,7 +145,7 @@
      "name": "node_front",
      "position": [
       0.0,
-      -0.074,
+      -0.07,
       1.37
      ],
      "direction": [
@@ -163,8 +163,8 @@
      "name": "node_hatch_1",
      "position": [
       0.0,
-      -0.074,
-      1.31
+      -0.07,
+      1.259
      ],
      "direction": [
       0.0,
@@ -181,7 +181,7 @@
      "name": "node_rear",
      "position": [
       0.0,
-      -0.074,
+      -0.07,
       -1.25
      ],
      "direction": [
@@ -194,7 +194,7 @@
      "name": "node_bottom",
      "position": [
       0.0,
-      -1.284,
+      -1.28,
       0.0
      ],
      "direction": [
@@ -207,7 +207,7 @@
      "name": "node_seat_1",
      "position": [
       0.0,
-      -0.054,
+      -0.02,
       0.0
      ],
      "direction": [
@@ -225,7 +225,7 @@
      "name": "node_camera_1",
      "position": [
       0.0,
-      0.696,
+      0.73,
       0.14
      ],
      "direction": [
@@ -267,17 +267,17 @@
     [
      -1.2500001,
      -2.055,
-     -1.2839999999999998
+     -1.28
     ],
     [
      1.2500001,
      1.875,
-     1.2839999999999998
+     1.28
     ]
    ],
    "bbox_godot_size": [
     2.5,
-    2.568,
+    2.56,
     3.93
    ],
    "nodes": [
@@ -285,7 +285,7 @@
      "name": "node_front",
      "position": [
       0.0,
-      -0.074,
+      -0.07,
       1.995
      ],
      "direction": [
@@ -303,8 +303,8 @@
      "name": "node_hatch_1",
      "position": [
       0.0,
-      -0.074,
-      1.935
+      -0.07,
+      1.884
      ],
      "direction": [
       0.0,
@@ -321,7 +321,7 @@
      "name": "node_rear",
      "position": [
       0.0,
-      -0.074,
+      -0.07,
       -1.875
      ],
      "direction": [
@@ -334,7 +334,7 @@
      "name": "node_bottom",
      "position": [
       0.0,
-      -1.284,
+      -1.28,
       0.0
      ],
      "direction": [
@@ -347,7 +347,7 @@
      "name": "node_seat_1",
      "position": [
       0.0,
-      -0.054,
+      -0.02,
       0.0
      ],
      "direction": [
@@ -365,7 +365,7 @@
      "name": "node_camera_1",
      "position": [
       0.0,
-      0.696,
+      0.73,
       0.14
      ],
      "direction": [
