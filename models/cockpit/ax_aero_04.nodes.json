@@ -12,18 +12,36 @@
   {
    "name": "node_hatch_1",
    "position": [
-    1.7751,
-    -1.2152,
-    0.0
+    1.7552,
+    -1.0203,
+    -0.0133
    ],
    "direction": [
-    0.9986,
-    0.052,
+    0.9946,
+    0.1036,
     0.0
    ],
    "up": [
-    -0.052,
-    0.9986,
+    -0.1036,
+    0.9946,
+    0.0
+   ]
+  },
+  {
+   "name": "node_hatch_2",
+   "position": [
+    -1.7552,
+    -1.0203,
+    -0.0133
+   ],
+   "direction": [
+    -0.9946,
+    0.1036,
+    0.0
+   ],
+   "up": [
+    0.1036,
+    0.9946,
     0.0
    ]
   },
@@ -116,7 +134,7 @@
    "name": "node_seat_3",
    "position": [
     0.65,
-    -1.41,
+    -1.59,
     -0.38
    ],
    "direction": [
@@ -134,7 +152,7 @@
    "name": "node_camera_3",
    "position": [
     0.65,
-    -1.4024,
+    -1.5824,
     0.3829
    ],
    "direction": [
@@ -152,7 +170,7 @@
    "name": "node_seat_4",
    "position": [
     -0.65,
-    -1.41,
+    -1.59,
     -0.38
    ],
    "direction": [
@@ -170,7 +188,7 @@
    "name": "node_camera_4",
    "position": [
     -0.65,
-    -1.4024,
+    -1.5824,
     0.3829
    ],
    "direction": [
@@ -197,21 +215,21 @@
     "diameter": 3.75,
     "length": 4.42
    },
-   "notes": "Mk3 4-seat flight deck: upper window band, overhead docking window, +X side hatch.",
+   "notes": "Mk3 4-seat flight deck: upper window band, overhead docking window, +X / -X side hatches (each seat within ~1.5 m of a hatch).",
    "bbox_cad_zup": [
     [
-     -1.8750001,
+     -1.9712000994461334,
      -1.8750001,
      -2.2100001
     ],
     [
-     1.9717022613257942,
+     1.9712000994461334,
      1.8830001,
      2.2100001
     ]
    ],
    "bbox_godot_size": [
-    3.847,
+    3.942,
     4.42,
     3.758
    ],
@@ -219,18 +237,36 @@
     {
      "name": "node_hatch_1",
      "position": [
-      1.7751,
-      -1.2152,
-      0.0
+      1.7552,
+      -1.0203,
+      -0.0133
      ],
      "direction": [
-      0.9986,
-      0.052,
+      0.9946,
+      0.1036,
       0.0
      ],
      "up": [
-      -0.052,
-      0.9986,
+      -0.1036,
+      0.9946,
+      0.0
+     ]
+    },
+    {
+     "name": "node_hatch_2",
+     "position": [
+      -1.7552,
+      -1.0203,
+      -0.0133
+     ],
+     "direction": [
+      -0.9946,
+      0.1036,
+      0.0
+     ],
+     "up": [
+      0.1036,
+      0.9946,
       0.0
      ]
     },
@@ -323,7 +359,7 @@
      "name": "node_seat_3",
      "position": [
       0.65,
-      -1.41,
+      -1.59,
       -0.38
      ],
      "direction": [
@@ -341,7 +377,7 @@
      "name": "node_camera_3",
      "position": [
       0.65,
-      -1.4024,
+      -1.5824,
       0.3829
      ],
      "direction": [
@@ -359,7 +395,7 @@
      "name": "node_seat_4",
      "position": [
       -0.65,
-      -1.41,
+      -1.59,
       -0.38
      ],
      "direction": [
@@ -377,7 +413,7 @@
      "name": "node_camera_4",
      "position": [
       -0.65,
-      -1.4024,
+      -1.5824,
       0.3829
      ],
      "direction": [
@@ -393,7 +429,8 @@
     }
    ],
    "moving_meshes": [
-    "hatch_door_1"
+    "hatch_door_1",
+    "hatch_door_2"
    ],
    "default_of": null,
    "files": {

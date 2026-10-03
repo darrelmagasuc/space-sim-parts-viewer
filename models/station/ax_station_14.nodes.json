@@ -13,7 +13,7 @@
    "name": "node_bottom",
    "position": [
     0.0,
-    -2.2804,
+    -2.8804,
     0.0
    ],
    "direction": [
@@ -26,7 +26,7 @@
    "name": "node_hatch_1",
    "position": [
     0.0,
-    -2.07,
+    -2.67,
     0.0
    ],
    "direction": [
@@ -44,7 +44,7 @@
    "name": "node_top",
    "position": [
     0.0,
-    2.2804,
+    2.8804,
     0.0
    ],
    "direction": [
@@ -57,7 +57,7 @@
    "name": "node_hatch_2",
    "position": [
     0.0,
-    2.07,
+    2.67,
     0.0
    ],
    "direction": [
@@ -74,14 +74,14 @@
   {
    "name": "node_seat_1",
    "position": [
-    0.05,
     0.0,
-    0.0
+    -0.95,
+    0.74
    ],
    "direction": [
-    1.0,
     0.0,
-    0.0
+    0.0,
+    -1.0
    ],
    "up": [
     0.0,
@@ -92,14 +92,14 @@
   {
    "name": "node_camera_1",
    "position": [
-    0.19,
-    0.75,
-    0.0
+    0.0,
+    -0.2,
+    0.6
    ],
    "direction": [
-    1.0,
     0.0,
-    0.0
+    0.0,
+    -1.0
    ],
    "up": [
     0.0,
@@ -110,14 +110,14 @@
   {
    "name": "node_seat_2",
    "position": [
-    -0.05,
     0.0,
-    0.0
+    -0.95,
+    -0.74
    ],
    "direction": [
-    -1.0,
     0.0,
-    0.0
+    0.0,
+    1.0
    ],
    "up": [
     0.0,
@@ -128,14 +128,14 @@
   {
    "name": "node_camera_2",
    "position": [
-    -0.19,
-    0.75,
-    0.0
+    0.0,
+    -0.2,
+    -0.6
    ],
    "direction": [
-    -1.0,
     0.0,
-    0.0
+    0.0,
+    1.0
    ],
    "up": [
     0.0,
@@ -147,8 +147,8 @@
    "name": "node_seat_3",
    "position": [
     0.0,
-    0.0,
-    -0.29
+    0.95,
+    0.74
    ],
    "direction": [
     0.0,
@@ -165,8 +165,8 @@
    "name": "node_camera_3",
    "position": [
     0.0,
-    0.75,
-    -0.43
+    1.7,
+    0.6
    ],
    "direction": [
     0.0,
@@ -183,8 +183,8 @@
    "name": "node_seat_4",
    "position": [
     0.0,
-    0.0,
-    0.29
+    0.95,
+    -0.74
    ],
    "direction": [
     0.0,
@@ -201,8 +201,8 @@
    "name": "node_camera_4",
    "position": [
     0.0,
-    0.75,
-    0.43
+    1.7,
+    -0.6
    ],
    "direction": [
     0.0,
@@ -226,7 +226,7 @@
    "primary": true,
    "dims": {
     "hull_across_flats": 2.5,
-    "length": 4.0,
+    "length": 5.2,
     "water_wall": 0.3
    },
    "notes": "Faceted AX pressure hull (chamfered facets, bevelled end cones), 1.6 m docking collars (1.02 m clear hatch), recessed seam grooves, bevelled windows / RCS pockets.",
@@ -234,17 +234,17 @@
     [
      -1.2500001000000005,
      -1.2500001000000003,
-     -2.434000000000001
+     -3.0340000000000007
     ],
     [
      1.2500001000000003,
      1.2500001,
-     2.4340000000000006
+     3.0340000000000003
     ]
    ],
    "bbox_godot_size": [
     2.5,
-    4.868,
+    6.068,
     2.5
    ],
    "nodes": [
@@ -252,7 +252,7 @@
      "name": "node_bottom",
      "position": [
       0.0,
-      -2.2804,
+      -2.8804,
       0.0
      ],
      "direction": [
@@ -265,7 +265,7 @@
      "name": "node_hatch_1",
      "position": [
       0.0,
-      -2.07,
+      -2.67,
       0.0
      ],
      "direction": [
@@ -283,7 +283,7 @@
      "name": "node_top",
      "position": [
       0.0,
-      2.2804,
+      2.8804,
       0.0
      ],
      "direction": [
@@ -296,7 +296,7 @@
      "name": "node_hatch_2",
      "position": [
       0.0,
-      2.07,
+      2.67,
       0.0
      ],
      "direction": [
@@ -313,14 +313,14 @@
     {
      "name": "node_seat_1",
      "position": [
-      0.05,
       0.0,
-      0.0
+      -0.95,
+      0.74
      ],
      "direction": [
-      1.0,
       0.0,
-      0.0
+      0.0,
+      -1.0
      ],
      "up": [
       0.0,
@@ -331,14 +331,14 @@
     {
      "name": "node_camera_1",
      "position": [
-      0.19,
-      0.75,
-      0.0
+      0.0,
+      -0.2,
+      0.6
      ],
      "direction": [
-      1.0,
       0.0,
-      0.0
+      0.0,
+      -1.0
      ],
      "up": [
       0.0,
@@ -349,14 +349,14 @@
     {
      "name": "node_seat_2",
      "position": [
-      -0.05,
       0.0,
-      0.0
+      -0.95,
+      -0.74
      ],
      "direction": [
-      -1.0,
       0.0,
-      0.0
+      0.0,
+      1.0
      ],
      "up": [
       0.0,
@@ -367,14 +367,14 @@
     {
      "name": "node_camera_2",
      "position": [
-      -0.19,
-      0.75,
-      0.0
+      0.0,
+      -0.2,
+      -0.6
      ],
      "direction": [
-      -1.0,
       0.0,
-      0.0
+      0.0,
+      1.0
      ],
      "up": [
       0.0,
@@ -386,8 +386,8 @@
      "name": "node_seat_3",
      "position": [
       0.0,
-      0.0,
-      -0.29
+      0.95,
+      0.74
      ],
      "direction": [
       0.0,
@@ -404,8 +404,8 @@
      "name": "node_camera_3",
      "position": [
       0.0,
-      0.75,
-      -0.43
+      1.7,
+      0.6
      ],
      "direction": [
       0.0,
@@ -422,8 +422,8 @@
      "name": "node_seat_4",
      "position": [
       0.0,
-      0.0,
-      0.29
+      0.95,
+      -0.74
      ],
      "direction": [
       0.0,
@@ -440,8 +440,8 @@
      "name": "node_camera_4",
      "position": [
       0.0,
-      0.75,
-      0.43
+      1.7,
+      -0.6
      ],
      "direction": [
       0.0,

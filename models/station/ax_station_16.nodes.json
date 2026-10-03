@@ -115,7 +115,7 @@
     "dome_inner_r": 5.0,
     "height": 5.3
    },
-   "notes": "Deployed dome: 0.25 m membrane + 0.45 m regolith cover (closed revolves), +X entry tunnel with 1.6 m collar, 12-facet rigid core through the apex with top collar.",
+   "notes": "Deployed dome: 0.25 m membrane + 0.45 m regolith cover (closed revolves), +X entry tunnel with 1.6 m collar, 12-facet rigid core through the apex with top collar, core mid deck + 4 sliding core doors.",
    "bbox_cad_zup": [
     [
      -5.9,
@@ -210,9 +210,9 @@
      ]
     },
     {
-     "name": "node_seat_1",
+     "name": "node_core_door_1",
      "position": [
-      3.0,
+      1.45,
       -1.592,
       0.0
      ],
@@ -220,6 +220,114 @@
       1.0,
       0.0,
       0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_core_door_2",
+     "position": [
+      0.0,
+      -1.592,
+      -1.45
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_core_door_3",
+     "position": [
+      -1.45,
+      -1.592,
+      0.0
+     ],
+     "direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_core_door_4",
+     "position": [
+      0.0,
+      -1.592,
+      1.45
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_ladder_1",
+     "position": [
+      0.0,
+      -2.542,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_ladder_2",
+     "position": [
+      0.0,
+      2.158,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "up": [
+      1.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_seat_1",
+     "position": [
+      1.8385,
+      -1.592,
+      -1.8385
+     ],
+     "direction": [
+      0.7071,
+      0.0,
+      -0.7071
      ],
      "up": [
       0.0,
@@ -230,14 +338,14 @@
     {
      "name": "node_camera_1",
      "position": [
-      3.14,
+      1.9375,
       -0.842,
-      0.0
+      -1.9375
      ],
      "direction": [
-      1.0,
+      0.7071,
       0.0,
-      0.0
+      -0.7071
      ],
      "up": [
       0.0,
@@ -248,14 +356,14 @@
     {
      "name": "node_seat_2",
      "position": [
-      0.0,
+      -1.8385,
       -1.592,
-      -3.0
+      -1.8385
      ],
      "direction": [
-      1.0,
+      -0.7071,
       0.0,
-      0.0
+      -0.7071
      ],
      "up": [
       0.0,
@@ -266,14 +374,14 @@
     {
      "name": "node_camera_2",
      "position": [
-      0.14,
+      -1.9375,
       -0.842,
-      -3.0
+      -1.9375
      ],
      "direction": [
-      1.0,
+      -0.7071,
       0.0,
-      0.0
+      -0.7071
      ],
      "up": [
       0.0,
@@ -284,14 +392,14 @@
     {
      "name": "node_seat_3",
      "position": [
-      -3.0,
+      -1.8385,
       -1.592,
-      0.0
+      1.8385
      ],
      "direction": [
-      1.0,
+      -0.7071,
       0.0,
-      0.0
+      0.7071
      ],
      "up": [
       0.0,
@@ -302,14 +410,14 @@
     {
      "name": "node_camera_3",
      "position": [
-      -2.86,
+      -1.9375,
       -0.842,
-      0.0
+      1.9375
      ],
      "direction": [
-      1.0,
+      -0.7071,
       0.0,
-      0.0
+      0.7071
      ],
      "up": [
       0.0,
@@ -320,14 +428,14 @@
     {
      "name": "node_seat_4",
      "position": [
-      0.0,
+      1.8385,
       -1.592,
-      3.0
+      1.8385
      ],
      "direction": [
-      1.0,
+      0.7071,
       0.0,
-      0.0
+      0.7071
      ],
      "up": [
       0.0,
@@ -338,14 +446,14 @@
     {
      "name": "node_camera_4",
      "position": [
-      0.14,
+      1.9375,
       -0.842,
-      3.0
+      1.9375
      ],
      "direction": [
-      1.0,
+      0.7071,
       0.0,
-      0.0
+      0.7071
      ],
      "up": [
       0.0,

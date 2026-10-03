@@ -10,6 +10,42 @@
  "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
  "nodes": [
   {
+   "name": "node_canopy_hinge",
+   "position": [
+    0.0,
+    -0.75,
+    0.32
+   ],
+   "direction": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "up": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "node_canopy",
+   "position": [
+    0.0,
+    -0.1498,
+    0.7691
+   ],
+   "direction": [
+    0.0,
+    0.3836,
+    0.9235
+   ],
+   "up": [
+    0.0,
+    0.9235,
+    -0.3836
+   ]
+  },
+  {
    "name": "node_bottom",
    "position": [
     0.0,
@@ -71,7 +107,7 @@
     "diameter": 1.25,
     "length": 2.6
    },
-   "notes": "Mk1 fighter-style cockpit, faceted canopy frame (24 facets), 1 seat.",
+   "notes": "Mk1 fighter-style cockpit, faceted canopy frame (24 facets), 1 seat; rear-hinged opening canopy (moving mesh canopy, node_canopy_hinge).",
    "bbox_cad_zup": [
     [
      -0.6250001,
@@ -90,6 +126,42 @@
     1.485
    ],
    "nodes": [
+    {
+     "name": "node_canopy_hinge",
+     "position": [
+      0.0,
+      -0.75,
+      0.32
+     ],
+     "direction": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "up": [
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "name": "node_canopy",
+     "position": [
+      0.0,
+      -0.1498,
+      0.7691
+     ],
+     "direction": [
+      0.0,
+      0.3836,
+      0.9235
+     ],
+     "up": [
+      0.0,
+      0.9235,
+      -0.3836
+     ]
+    },
     {
      "name": "node_bottom",
      "position": [
@@ -140,7 +212,9 @@
      ]
     }
    ],
-   "moving_meshes": [],
+   "moving_meshes": [
+    "canopy"
+   ],
    "default_of": null,
    "files": {
     "step": "step/ax_aero_01_ck1x_cockpit.step",
