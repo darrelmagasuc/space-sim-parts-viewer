@@ -10,6 +10,24 @@
  "frame": "Godot Y-up, metres; origin per CONVENTIONS.md; direction = outward unit normal of the mating face",
  "nodes": [
   {
+   "name": "node_hatch_1",
+   "position": [
+    0.0,
+    0.66,
+    0.8733
+   ],
+   "direction": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0
+   ]
+  },
+  {
    "name": "node_bottom",
    "position": [
     0.0,
@@ -120,11 +138,11 @@
     "width": 2.5,
     "length": 2.5
    },
-   "notes": "Inline Mk2 cockpit (mid-fuselage), raised cabin roof, Mk2 lens at both ends.",
+   "notes": "Inline Mk2 cockpit (mid-fuselage), raised cabin roof, Mk2 lens at both ends, dorsal crew hatch over the couch legs.",
    "bbox_cad_zup": [
     [
      -1.2560118202908548,
-     -0.9551093210413792,
+     -1.026,
      -1.250000100000002
     ],
     [
@@ -136,9 +154,27 @@
    "bbox_godot_size": [
     2.506,
     2.5,
-    1.463
+    1.534
    ],
    "nodes": [
+    {
+     "name": "node_hatch_1",
+     "position": [
+      0.0,
+      0.66,
+      0.8733
+     ],
+     "direction": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "up": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
     {
      "name": "node_bottom",
      "position": [
@@ -238,7 +274,9 @@
      ]
     }
    ],
-   "moving_meshes": [],
+   "moving_meshes": [
+    "hatch_door_1"
+   ],
    "default_of": null,
    "files": {
     "step": "step/ax_aero_03_ck2i_cockpit.step",
