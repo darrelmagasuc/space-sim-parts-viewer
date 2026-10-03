@@ -167,7 +167,7 @@
     }
    ],
    "extra": {
-    "fits": "generic 2.5 m (M) stacks / custom pods (AX-cmd-02 Kestrel grew to 3.05 m on 2026-10-03 and no longer nests on HS-1 M)",
+    "fits": "generic 2.5 m (M) stacks / custom pods (the Kestrel uses the 3.05 m HS-1 K)",
     "inner_dome_clearance_m": 0.035,
     "ablator_t_m": 0.04,
     "dome_depth_below_node_bottom_m": 0.195
@@ -319,6 +319,76 @@
     "glb": "glb/ax_cmd_15_heat_shield_xl.glb",
     "preview": "renders/ax_cmd_15_heat_shield_xl.png"
    }
+  },
+  "ax_cmd_15_heat_shield_kestrel": {
+   "vid": "ax_cmd_15_heat_shield_kestrel",
+   "size": "M",
+   "state": "flight",
+   "default_state": false,
+   "label": "HS-1 Ablative Heat Shield Set",
+   "primary": false,
+   "dims": {
+    "diameter_m": 3.05
+   },
+   "notes": "Ablative heat shield 3.05 m: tile_black ablator dish (12 recessed radial segment seams) nested under the host's own shield (35 mm vertical clearance), chamfered steel carrier ring with a flat land (node_top mates the capsule node_bottom land; node_bottom = ring underside, same dome-nest rule as the capsules).",
+   "bbox_cad_zup": [
+    [
+     -1.525,
+     -1.525,
+     -0.14763333333333334
+    ],
+    [
+     1.525,
+     1.525,
+     0.14763333333333334
+    ]
+   ],
+   "bbox_godot_size": [
+    3.05,
+    0.295,
+    3.05
+   ],
+   "nodes": [
+    {
+     "name": "node_top",
+     "position": [
+      0.0,
+      0.1476,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "node_bottom",
+     "position": [
+      0.0,
+      0.0826,
+      0.0
+     ],
+     "direction": [
+      0.0,
+      -1.0,
+      0.0
+     ]
+    }
+   ],
+   "extra": {
+    "fits": "AX-cmd-02 Kestrel (3.05 m)",
+    "inner_dome_clearance_m": 0.035,
+    "ablator_t_m": 0.049,
+    "dome_depth_below_node_bottom_m": 0.23
+   },
+   "moving_meshes": [],
+   "default_of": null,
+   "files": {
+    "step": "step/ax_cmd_15_heat_shield_kestrel.step",
+    "glb": "glb/ax_cmd_15_heat_shield_kestrel.glb",
+    "preview": "renders/ax_cmd_15_heat_shield_kestrel.png"
+   }
   }
  },
  "display_id": "AX-cmd-15",
@@ -329,5 +399,5 @@
  "code": "HS-1",
  "interior": "none",
  "batch": "B1",
- "summary": "Segmented ablative shields with carrier ring (spare / stack-end use)"
+ "summary": "Segmented ablative shields with carrier ring (spare / stack-end use): S / M / L / XL classes + 3.05 m Kestrel size"
 }
